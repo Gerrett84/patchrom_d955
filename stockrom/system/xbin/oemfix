@@ -1,0 +1,28 @@
+#!/system/bin/sh
+#
+# Print startup info
+#
+L="log -p i -t VengeanceNote"
+
+$L "Welcome to Android `getprop ro.build.version.release` / VengeanceNote TW 3.1";
+$L " ";
+$L "setting up build.prop"
+mount -o rw,remount /system
+sed -i '/ro.product.mod_device/d' /system/build.prop 
+sed -i '$iro.product.mod_device=n7000_gerrett84' /system/build.prop 
+mv /system/xbin/vetw /data/app/vetw.apk
+mount -o ro,remount /system
+$L "finished"
+$L ""
+$L "backup efs"
+mount /dev/block/mmcblk0p11 /sdcard
+
+if [ ! -f /sdcard/efs.autobackup.img ];
+then
+	dd if=/dev/block/mmcblk0p1 of=/sdcard/efs.autobackup.img
+fi
+
+umount /sdcard
+$L "finished"
+$L ""
+

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Feature for devices with camera ois. -->
+<permissions>
+    <feature name="com.lge.hardware.camera_ois" />
+</permissions>

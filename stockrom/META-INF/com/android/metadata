@@ -1,0 +1,3 @@
+post-build=lge/z_open_com/zee:4.2.2/JDQ39B/D95510a.1387955739:user/release-keys
+post-timestamp=1387955815
+pre-device=zee

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+	Author : sw.maeng@lge.com
+
+	[Description] 
+    In this file, model dependent features are described.
+
+    [Extension and overriding "Model" element]
+    The "Model" elements can be extended using "extends" attribute.
+    If you define a new "DefaultComponents" element in child "Model" element,
+    the parent "DefaultComponents" which has same "module" value will be ignored by child.
+    The other "DefaultComponents" values will be succeeded from parent.
+    -->
+<Features>
+    <!-- Common exceptional packages and components for tangible action.
+         When one of these packages or component is displayed on the top of screen,
+         NO tangible UI will be displayed.
+         -->
+	<ExceptionalApps>
+		<Item>com.lge.camera</Item>
+		<Item>com.lge.videoplayer/.player.MediaView</Item>
+		<Item>com.lge.tdmb/.TdmbMainScreenActivity</Item>
+		<Item>com.lge.oneseg</Item>
+		<Item>com.muvee.ve4</Item>
+		<Item>com.lge.videotool</Item>
+		<Item>com.lge.allautotest</Item>
+		<Item>com.lge.foldertest</Item>
+		<Item>com.uplus.ipagent</Item>
+		<Item>com.google.android.videos/.activity.WatchActivity</Item>
+	</ExceptionalApps>
+
+	<Resource>
+	    <!-- Pen UI. List package which should be excluded from the AllAppsList. -->
+		<String-array name="pen_ui_exclude_apps">
+			<String>com.lge.settings.easy.EasySettings</String>
+		</String-array>
+
+		<String-array name="pen_ui_recommend_apps">
+			<String>com.lge.Notebook</String>
+			<String>com.android.browser</String>
+			<String>com.android.calendar</String>
+			<String>com.infraware.polarisviewer</String>
+		</String-array>
+
+		<String-array name="incoming_call_activities">
+			<String>com.android.phone.InCallScreen</String>
+			<String>com.lge.ltecall.volte.view.VoIPCallScreen</String>
+			<String>com.lge.ltecall.videocall.ui.IncomingCallActivity</String>
+		</String-array>
+
+		<String-array name="camera_activities">
+			<String>com.lge.camera.CameraApp</String>
+			<String>com.lge.camera.CameraAppLauncher</String>
+			<String>com.lge.camera.Camcorder</String>
+		</String-array>
+		<String name="pkg_vu_talk">com.lge.vmemo</String>
+
+		<String-array name="home_screen_activities">
+			<String>com.lge.launcher2.Launcher</String>
+			<String>com.lge.launcher2.plushome.kidshome.LGKidsHome</String>
+		</String-array>
+
+		<String name="comp_quick_clip">com.lge.QuickClip/.QuickClipActivity</String>
+		<String name="comp_camera">com.lge.camera/.CameraAppLauncher</String>
+	</Resource>
+
+    <!-- Default value, when model name was not found.-->
+	<Model name="default">
+		<DefaultComponents module="headset">
+			<Item>com.lge.music/.MusicBrowserActivity</Item>
+			<Item>com.lge.videoplayer/.list.VideoPlayerActivity</Item>
+			<Item>com.google.android.youtube/com.google.android.youtube.app.honeycomb.Shell$HomeActivity</Item>
+			<Item>com.android.contacts/.activities.DialtactsActivity</Item>
+		</DefaultComponents>
+
+		<DefaultComponents module="otgUsbStorage">
+			<Item>com.android.gallery3d/.app.Gallery</Item>
+			<Item>com.lge.videoplayer/.list.VideoPlayerActivity</Item>
+			<Item>com.lge.music/.MusicBrowserActivity</Item>
+			<Item>com.lge.filemanager/.view.LaunchActivity</Item>
+		</DefaultComponents>
+
+		<DefaultComponents module="dock">
+			<Item>com.lge.clock/.DefaultAlarmClockActivity</Item>
+			<Item>com.lge.music/.MusicBrowserActivity</Item>
+			<Item>com.lge.videoplayer/.list.VideoPlayerActivity</Item>
+			<Item>com.lge.pa/com.lge.pa.activity.LocalListViewActivity</Item>
+		</DefaultComponents>
+
+		<DefaultComponents module="penUI">
+			<Item>com.lge.QuickClip/.QuickClipActivity</Item>
+			<Item>com.lge.Notebook/.viewallnotes.RNote_AllNotesView</Item>
+			<Item>com.android.browser/.BrowserActivity</Item>
+			<Item>com.android.calendar/.AllInOneActivity</Item>
+			<Item>com.infraware.polarisviewer/com.infraware.polarisoffice5.OfficeHomeActivity</Item>
+		</DefaultComponents>
+
+		<PanelIconCount>5</PanelIconCount>
+	</Model>
+
+    <!-- G2 Korea, Other operator models follow the default -->
+	<Model name="LG-F320L,LG-F320S,LG-F320K" extends="default">
+		<DefaultComponents module="headset">
+			<Item>com.lge.music/.MusicBrowserActivity</Item>
+			<Item>com.lge.videoplayer/.list.VideoPlayerActivity</Item>
+			<Item>com.lge.tdmb/com.lge.tdmb.TdmbStartActivity </Item>
+			<Item>com.android.contacts/.activities.DialtactsActivity</Item>
+		</DefaultComponents>
+	</Model>
+
+	<!-- G2 Docomo. DMB package is different. -->
+	<Model name="L-01F" extends="default">
+		<DefaultComponents module="headset">
+			<Item>com.lge.music/.MusicBrowserActivity</Item>
+			<Item>com.lge.videoplayer/.list.VideoPlayerActivity</Item>
+			<Item>com.lge.oneseg/.TdmbStartActivity</Item>
+			<Item>com.android.contacts/.activities.DialtactsActivity</Item>
+		</DefaultComponents>
+	</Model>
+	
+	<!-- G2 KDDI -->
+	<Model name="LGL22" extends="default">
+		<DefaultComponents module="headset">
+			<Item>com.kddi.android.imp/.activity.IMPLibraryGroup</Item>
+			<Item>com.kddi.android.rcss/.HomeActivity</Item>
+			<Item>com.kddi.android.UtaPass/.HomeActivity</Item>
+			<Item>com.kddi.android.lismowave/.activity.InitialStartActivity</Item>
+			<Item>com.lge.music/.MusicBrowserActivity</Item>
+			<Item>com.kddi.android.videopass/.Bootstrap</Item>
+			<Item>com.lge.videoplayer/.list.VideoPlayerActivity</Item>
+			<Item>com.lge.oneseg/.TdmbStartActivity</Item>
+			<Item>com.android.contacts/.activities.DialtactsActivity</Item>
+		</DefaultComponents>
+
+		<DefaultComponents module="dock">
+			<Item>com.lge.clock/.DefaultAlarmClockActivity</Item>
+			<Item>com.lge.music/.MusicBrowserActivity</Item>
+			<Item>com.lge.videoplayer/.list.VideoPlayerActivity</Item>
+			<Item>com.android.gallery3d/.app.Gallery</Item>
+		</DefaultComponents>
+	</Model>
+
+    <!-- Vu3 Korea, Other operator models follow the default -->
+	<Model name="LG-F300L,LG-F300S,LG-F300K" extends="default">
+		<DefaultComponents module="headset">
+			<Item>com.lge.music/.MusicBrowserActivity</Item>
+			<Item>com.lge.videoplayer/.list.VideoPlayerActivity</Item>
+			<Item>com.lge.tdmb/com.lge.tdmb.TdmbStartActivity </Item>
+			<Item>com.android.contacts/.activities.DialtactsActivity</Item>
+		</DefaultComponents>
+	</Model>
+
+	<!-- A-Tablet, This model has wide screen. -->
+	<Model name="LG-V500" extends="default">
+		<PanelIconCount>6</PanelIconCount>
+	</Model>
+
+    <Model name="LG-V507L" extends="default">
+        <DefaultComponents module="headset">
+            <Item>com.lge.music/.MusicBrowserActivity</Item>
+            <Item>com.lge.videoplayer/.list.VideoPlayerActivity</Item>
+            <Item>com.google.android.youtube/com.google.android.youtube.app.honeycomb.Shell$HomeActivity</Item>
+            <Item>com.lguplus.u070pv507l/.gp5.UMCGP5DialerLaunch</Item>
+        </DefaultComponents>
+
+		<PanelIconCount>6</PanelIconCount>
+	</Model>
+	
+	<!-- Z, This model has wide screen. -->
+	<Model name="LG-F340L,LG-F340S,LG-F340K" extends="default">
+		<DefaultComponents module="headset">
+			<Item>com.lge.music/.MusicBrowserActivity</Item>
+			<Item>com.lge.videoplayer/.list.VideoPlayerActivity</Item>
+			<Item>com.lge.tdmb/com.lge.tdmb.TdmbStartActivity </Item>
+			<Item>com.android.contacts/.activities.DialtactsActivity</Item>
+		</DefaultComponents>
+	</Model>
+	
+</Features>
