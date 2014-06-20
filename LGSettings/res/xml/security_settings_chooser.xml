@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:persistent="false" android:title="@string/lock_settings_title" android:key="display_category">
+        <PreferenceScreen android:persistent="false" android:title="@string/lock_settings_picker_title" android:key="unlock_set_or_change" android:summary="@string/sp_swipe_screen_NORMAL" />
+        <ListPreference android:persistent="false" android:entries="@array/sp_lock_screen_effect_basic_entries_NORMAL" android:title="@string/lock_screen_effect" android:key="lock_screen_effect" android:summary="@string/sp_lock_screen_effect_summary_NORMAL" android:entryValues="@array/sp_lock_screen_effect_all_values_NORMAL" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/lock_settings_title_weather_animation" android:key="weather_animation" android:summary="@string/sp_weather_animation_summary" />
+        <Preference android:persistent="false" android:title="@string/sp_screen_wallpaper_NORMAL" android:key="screen_wallpaper" android:summary="@string/sp_select_wall_NORMAL">
+            <intent android:targetPackage="com.lge.lockscreensettings" android:action="android.intent.action.MAIN" android:targetClass="com.lge.lockscreensettings.LockscreenWallpaperSettingActivity" />
+        </Preference>
+        <Preference android:persistent="false" android:title="@string/quick_launch_display_mode_shortcuts" android:key="screen_theme" android:summary="@string/customize_shortcuts">
+            <intent android:targetPackage="com.lge.lockscreensettings" android:action="android.intent.action.MAIN" android:targetClass="com.lge.lockscreensettings.ThemeSetting" />
+        </Preference>
+        <com.android.lgesettings.lockscreen.ScreenCheckersPreference android:persistent="false" android:title="@string/owner_info_settings_title" android:key="owner_info_settings" android:summary="@string/show_owner_info_on_lockscreen_label" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/sp_lock_screen_portrait_NORMAL" android:key="portrait_view" android:summary="@string/sp_lock_screen_portrait_summary_NORMAL" />
+    </PreferenceCategory>
+    <PreferenceCategory android:persistent="false" android:title="@string/sp_lock_title_time_NORMAL" android:key="lock_timer_category">
+        <ListPreference android:persistent="false" android:entries="@array/lock_after_timeout_entries" android:title="@string/sp_lock_timeout_NORMAL" android:key="lock_after_timeout" android:summary="@string/sp_lock_after_timeout_summary_NORMAL" android:entryValues="@array/lock_after_timeout_values" />
+        <com.android.lgesettings.lge.MultilineLockscreenCheckboxPreference android:title="@string/lockpattern_settings_enable_power_button_instantly_locks" android:key="power_button_instantly_locks" />
+    </PreferenceCategory>
+</PreferenceScreen>

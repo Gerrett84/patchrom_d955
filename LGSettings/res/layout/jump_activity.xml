@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/applications_settings">
+        <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.Settings$ManageApplicationsActivity" />
+    </Preference>
+    <Preference android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/date_and_time_settings_title">
+        <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.Settings$DateTimeSettingsActivity" />
+    </Preference>
+    <Preference android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/storage_settings">
+        <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.Settings$StorageSettingsActivity" />
+    </Preference>
+    <Preference android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/account_settings">
+        <intent android:action="android.settings.SYNC_SETTINGS" />
+    </Preference>
+    <Preference android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/sp_power_save_battery_NORMAL">
+        <intent android:action="com.lge.settings.BATTERY_SETTINGS" />
+    </Preference>
+    <Preference android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/one_handed_operation">
+        <intent android:action="com.lge.settings.ONE_HAND_SETTINGS" />
+    </Preference>
+    <Preference android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/quick_button_title">
+        <intent android:action="com.lge.settings.HOTKEY_SETTINGS" />
+    </Preference>
+    <Preference android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/data_usage_enable_mobile">
+        <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.Settings$DataUsageSummaryActivity" />
+    </Preference>
+    <Preference android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/sound_settings">
+        <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.Settings$SoundSettingsActivity" />
+    </Preference>
+    <Preference android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/display_settings">
+        <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.Settings$DisplaySettingsActivity" />
+    </Preference>
+    <Preference android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/location_access">
+        <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.Settings$LocationSettingsActivity" />
+    </Preference>
+    <Preference android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/gesture_settings">
+        <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.Settings$GestureSettingsActivity" />
+    </Preference>
+    <Preference android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/language_keyboard_settings_title">
+        <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.Settings$InputMethodAndLanguageSettingsActivity" />
+    </Preference>
+    <Preference android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/privacy_settings_title">
+        <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.Settings$PrivacySettingsActivity" />
+    </Preference>
+    <Preference android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/accessibility_settings">
+        <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.Settings$AccessibilitySettingsActivity" />
+    </Preference>
+    <Preference android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/development_settings_title">
+        <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.Settings$DevelopmentSettingsActivity" />
+    </Preference>
+    <Preference android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/sp_usb_connection_type_NORMAL">
+        <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.Settings$ConnectivitySettingsActivity" />
+    </Preference>
+    <Preference android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/about_settings">
+        <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.Settings$DeviceInfoLgeActivity" />
+    </Preference>
+    <Preference android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/wireless_networks_settings_title" android:key="wireless_settings">
+        <intent android:action="android.settings.WIRELESS_SETTINGS" />
+    </Preference>
+    <Preference android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/sp_title_share_connect_NORMAL_jb_plus" android:key="share_connect">
+        <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.Settings$ShareConnectionActivity" />
+    </Preference>
+    <Preference android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/tether_network_label" android:key="tether_network_settings">
+        <intent android:action="android.settings.WIRELESS_SETTINGS" />
+    </Preference>
+</PreferenceScreen>

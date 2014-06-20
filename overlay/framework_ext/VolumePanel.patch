@@ -1,0 +1,182 @@
+diff -rup ../framework_ext/smali/miui/view/VolumePanel.smali ../framework_ext/smali/miui/view/VolumePanel.smali
+--- ../framework_ext/smali/miui/view/VolumePanel.smali	2014-05-13 19:17:04.000000000 +0200
++++ ../framework_ext/smali/miui/view/VolumePanel.smali	2014-05-13 20:59:23.000000000 +0200
+@@ -119,6 +119,8 @@
+ 
+ .field private mShowVolumeSettings:Z
+ 
++.field private final mSliderGroup:Landroid/view/ViewGroup;
++
+ .field private mStreamControls:Ljava/util/HashMap;
+     .annotation system Ldalvik/annotation/Signature;
+         value = {
+@@ -133,6 +135,8 @@
+ 
+ .field private mThemeChanged:I
+ 
++.field private mToast:Landroid/view/SafevolumeToast;
++
+ .field private mToneGenerators:[Landroid/media/ToneGenerator;
+ 
+ .field private mVibrator:Landroid/os/Vibrator;
+@@ -2435,6 +2439,48 @@
+ 
+ 
+ # virtual methods
++.method public destoryVolumePanel()V
++    .locals 2
++
++    .prologue
++    invoke-virtual {p0}, Lmiui/view/VolumePanel;->onFreeResources()V
++
++    iget-object v0, p0, Lmiui/view/VolumePanel;->mView:Landroid/view/View;
++
++    if-eqz v0, :cond_0
++
++    iget-object v0, p0, Lmiui/view/VolumePanel;->mView:Landroid/view/View;
++
++    const/4 v1, 0x0
++
++    invoke-virtual {v0, v1}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
++
++    iget-object v0, p0, Lmiui/view/VolumePanel;->mView:Landroid/view/View;
++
++    invoke-virtual {v0}, Landroid/view/View;->destroyDrawingCache()V
++
++    :cond_0
++    iget-object v0, p0, Lmiui/view/VolumePanel;->mSliderGroup:Landroid/view/ViewGroup;
++
++    if-eqz v0, :cond_1
++
++    iget-object v0, p0, Lmiui/view/VolumePanel;->mSliderGroup:Landroid/view/ViewGroup;
++
++    invoke-virtual {v0}, Landroid/view/ViewGroup;->removeAllViews()V
++
++    :cond_1
++    iget-object v0, p0, Lmiui/view/VolumePanel;->mDialog:Landroid/app/Dialog;
++
++    if-eqz v0, :cond_2
++
++    iget-object v0, p0, Lmiui/view/VolumePanel;->mDialog:Landroid/app/Dialog;
++
++    invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
++
++    :cond_2
++    return-void
++.end method
++
+ .method public handleMessage(Landroid/os/Message;)V
+     .locals 3
+     .parameter "msg"
+@@ -2610,6 +2656,19 @@
+     .end packed-switch
+ .end method
+ 
++.method public isShowing()Z
++    .locals 1
++
++    .prologue
++    iget-object v0, p0, Lmiui/view/VolumePanel;->mDialog:Landroid/app/Dialog;
++
++    invoke-virtual {v0}, Landroid/app/Dialog;->isShowing()Z
++
++    move-result v0
++
++    return v0
++.end method
++
+ .method public isVisible()Z
+     .locals 1
+ 
+@@ -4209,6 +4268,61 @@
+     throw v0
+ .end method
+ 
++.method public postDismissSafeVolumeWarning(I)V
++    .locals 2
++    .parameter "directon"
++
++    .prologue
++    const/16 v1, 0xd
++
++    invoke-virtual {p0, v1}, Lmiui/view/VolumePanel;->hasMessages(I)Z
++
++    move-result v0
++
++    if-eqz v0, :cond_0
++
++    :goto_0
++    return-void
++
++    :cond_0
++    const/4 v0, 0x0
++
++    invoke-virtual {p0, v1, p1, v0}, Lmiui/view/VolumePanel;->obtainMessage(III)Landroid/os/Message;
++
++    move-result-object v0
++
++    invoke-virtual {v0}, Landroid/os/Message;->sendToTarget()V
++
++    goto :goto_0
++.end method
++
++.method public postDisplayQuietModeWarning()V
++    .locals 3
++
++    .prologue
++    const/16 v2, 0xc
++
++    const/4 v1, 0x0
++
++    invoke-virtual {p0, v2}, Lmiui/view/VolumePanel;->hasMessages(I)Z
++
++    move-result v0
++
++    if-eqz v0, :cond_0
++
++    :goto_0
++    return-void
++
++    :cond_0
++    invoke-virtual {p0, v2, v1, v1}, Lmiui/view/VolumePanel;->obtainMessage(III)Landroid/os/Message;
++
++    move-result-object v0
++
++    invoke-virtual {v0}, Landroid/os/Message;->sendToTarget()V
++
++    goto :goto_0
++.end method
++
+ .method public postDisplaySafeVolumeWarning()V
+     .locals 3
+ 
+@@ -5075,3 +5189,29 @@
+ 
+     goto :goto_6
+ .end method
++
++.method public safeMediaVolumeToast(I)V
++    .locals 4
++    .parameter "toastName"
++
++    .prologue
++    .line 1563
++    iget-object v0, p0, Lmiui/view/VolumePanel;->mToast:Landroid/view/SafevolumeToast;
++
++    iget-object v1, p0, Lmiui/view/VolumePanel;->mContext:Landroid/content/Context;
++
++    invoke-virtual {v1, p1}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
++
++    move-result-object v1
++
++    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
++
++    move-result-object v1
++
++    const-wide/16 v2, 0xbb8
++
++    invoke-virtual {v0, v1, v2, v3}, Landroid/view/SafevolumeToast;->showToast(Ljava/lang/CharSequence;J)V
++
++    .line 1564
++    return-void
++.end method

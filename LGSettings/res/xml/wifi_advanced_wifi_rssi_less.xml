@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/wifi_advanced_wifi_rssi_less_setting_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.lgesettings.lge.RadioButtonPreference android:title="@string/wifi_advanced_wifi_rssi_less_general" android:key="wifi_advanced_wifi_rssi_less_general" android:summary="@string/wifi_advanced_wifi_rssi_less_general_summary" />
+    <com.android.lgesettings.lge.RadioButtonPreference android:title="@string/wifi_advanced_wifi_rssi_less_city" android:key="wifi_advanced_wifi_rssi_less_city" android:summary="@string/wifi_advanced_wifi_rssi_less_city_summary" />
+    <com.android.lgesettings.lge.RadioButtonPreference android:title="@string/wifi_advanced_wifi_rssi_less_home" android:key="wifi_advanced_wifi_rssi_less_home" android:summary="@string/wifi_advanced_wifi_rssi_less_home_summary" />
+</PreferenceScreen>

@@ -1,0 +1,12 @@
+diff -rup ../MiuiSystemUI/smali/com/android/systemui/statusbar/policy/NetworkController.smali ../MiuiSystemUI/smali/com/android/systemui/statusbar/policy/NetworkController.smali
+--- ../MiuiSystemUI/smali/com/android/systemui/statusbar/policy/NetworkController.smali	2014-06-07 23:44:48.000000000 +0200
++++ ../MiuiSystemUI/smali/com/android/systemui/statusbar/policy/NetworkController.smali	2014-06-07 23:44:48.000000000 +0200
+@@ -2498,7 +2498,7 @@
+ 
+     .line 595
+     :cond_5
+-    sget-object v2, Lcom/android/internal/telephony/IccCardConstants$State;->NETWORK_LOCKED:Lcom/android/internal/telephony/IccCardConstants$State;
++    sget-object v2, Lcom/android/internal/telephony/IccCardConstants$State;->PERSO_LOCKED:Lcom/android/internal/telephony/IccCardConstants$State;
+ 
+     iput-object v2, p0, Lcom/android/systemui/statusbar/policy/NetworkController;->mSimState:Ljava/lang/Object;
+ 

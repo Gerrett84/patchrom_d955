@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>America</item>
+        <item>Eropa</item>
+        <item>Afrika</item>
+        <item>Asia</item>
+        <item>Australia</item>
+        <item>Pasifik</item>
+        <item>Semua</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 detik</item>
+        <item>30 detik</item>
+        <item>1 menit</item>
+        <item>2 menit</item>
+        <item>5 menit</item>
+        <item>10 menit</item>
+        <item>30 menit</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries2_NORMAL">
+        <item>15 detik</item>
+        <item>30 detik</item>
+        <item>1 menit</item>
+        <item>2 menit</item>
+        <item>5 menit</item>
+        <item>10 menit</item>
+        <item>Tetap hidupkan layar</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL">
+        <item>15 detik</item>
+        <item>30 detik</item>
+        <item>1 menit</item>
+        <item>2 menit</item>
+        <item>5 menit</item>
+        <item>10 menit</item>
+        <item>15 menit</item>
+        <item>Tetap hidupkan layar</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL_ex">
+        <item>15 det.</item>
+        <item>30 dtk</item>
+        <item>1 Menit</item>
+        <item>2 mnt</item>
+        <item>5 mnt</item>
+        <item>10 mnt</item>
+        <item>15 mnt</item>
+        <item>Tetap hidupkan layar</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled">
+        <item>15 detik</item>
+        <item>30 detik</item>
+        <item>1 menit</item>
+        <item>2 menit</item>
+        <item>5 menit</item>
+        <item>10 menit</item>
+        <item>15 menit</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled_ex">
+        <item>15 det.</item>
+        <item>30 dtk</item>
+        <item>1 Menit</item>
+        <item>2 mnt</item>
+        <item>5 mnt</item>
+        <item>10 mnt</item>
+        <item>15 mnt</item>
+    </string-array>
+    <string-array name="sp_pouch_default_clock_entries2_NORMAL">
+        <item>Jam 1</item>
+        <item>Jam 2</item>
+        <item>Jam 3</item>
+        <item>Jam 4</item>
+        <item>Jam 5</item>
+        <item>Jam 6</item>
+        <item>Jam 7</item>
+        <item>Jam 8</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_position_entries1_NORMAL">
+        <item>Pusat</item>
+        <item>Kanan atas</item>
+        <item>Kiri atas</item>
+        <item>Kanan bawah</item>
+        <item>Kiri bawah</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_font_entries1_NORMAL">
+        <item>Nama font1</item>
+        <item>Nama font2</item>
+    </string-array>
+    <string-array name="sp_sound_profile_entries_NORMAL">
+        <item>Suara</item>
+        <item>"Hanya getar "</item>
+        <item>Sunyi</item>
+    </string-array>
+    <string-array name="dream_timeout_entries">
+        <item>Tidak pernah</item>
+        <item>15 detik</item>
+        <item>30 detik</item>
+        <item>1 menit</item>
+        <item>2 menit</item>
+        <item>5 menit</item>
+        <item>10 menit</item>
+        <item>30 menit</item>
+    </string-array>
+    <string-array name="lock_after_timeout_entries">
+        <item>Segera</item>
+        <item>5 detik</item>
+        <item>15 detik</item>
+        <item>30 detik</item>
+        <item>1 menit</item>
+        <item>2 menit</item>
+        <item>5 menit</item>
+        <item>10 menit</item>
+        <item>30 menit</item>
+    </string-array>
+    <string-array name="sp_lock_after_timeout_entries_NORMAL">
+        <item>Segera</item>
+        <item>15 detik</item>
+        <item>30 detik</item>
+        <item>1 menit</item>
+        <item>2 menit</item>
+        <item>10 menit</item>
+        <item>30 menit</item>
+    </string-array>
+    <string-array name="entries_font_size">
+        <item>&amp;lt;font size=16 align=middle>Kecil&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>Normal&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>Besar&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>Ekstra besar&amp;lt;/font></item>
+    </string-array>
+    <string-array name="sp_entries_font_size2">
+        <item>&amp;lt;font size=14 align=middle>Minimum&amp;lt;/font></item>
+        <item>&amp;lt;font size=16 align=middle>Kecil&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>Medium&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>Besar&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>Sangat besar&amp;lt;/font></item>
+        <item>&amp;lt;font size=27 align=middle>Maksimum&amp;lt;/font></item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>Sangat lambat</item>
+        <item>Lambat</item>
+        <item>Normal</item>
+        <item>Cepat</item>
+        <item>Sangat cepat</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>sangat rendah</item>
+        <item>Rendah</item>
+        <item>Normal</item>
+        <item>Tinggi</item>
+        <item>Sangat tinggi</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Memindai ...</item>
+        <item>Menghubungkan...</item>
+        <item>Mengotentikasi...</item>
+        <item>Sedang mengambil alamat IP...</item>
+        <item>Terhubung</item>
+        <item>Tertunda</item>
+        <item>Memutuskan...</item>
+        <item>Terputus</item>
+        <item>Gagal</item>
+        <item>Diblokir</item>
+        <item>Menghindari koneksi yang buruk untuk sementara waktu</item>
+        <item>Menghindari koneksi yang buruk untuk sementara waktu</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Memindai ...</item>
+        <item>Menyambung ke %1$s…</item>
+        <item>Mengotentikasi dengan %1$s…</item>
+        <item>Mendapatkan alamat IP dari %1$s…</item>
+        <item>Terhubung ke %1$s</item>
+        <item>Tertunda</item>
+        <item>Memutuskan dari %1$s…</item>
+        <item>Terputus</item>
+        <item>Gagal</item>
+        <item>Diblokir</item>
+        <item>Menghindari koneksi yang buruk untuk sementara waktu</item>
+    </string-array>
+    <string-array name="wifi_ap_security">
+        <item>Buka</item>
+        <item>WPA PSK</item>
+        <item>WPA2 PSK</item>
+    </string-array>
+    <string-array name="wifi_p2p_wps_setup">
+        <item>Tekan tombol</item>
+        <item>PIN dari perangkat ini</item>
+    </string-array>
+    <string-array name="wifi_p2p_status">
+        <item>Terhubung</item>
+        <item>Menghubungkan</item>
+        <item>Gagal</item>
+        <item>Tersedia</item>
+        <item>Di luar jangkauan</item>
+    </string-array>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>2 menit</item>
+        <item>5 menit</item>
+        <item>1 Jam</item>
+        <item>Tanpa waktu tunggu</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Buruk</item>
+        <item>Cukup</item>
+        <item>Baik</item>
+        <item>Bagus</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Selalu</item>
+        <item>Hanya saat trhbng ke smbr daya</item>
+        <item>Wi-Fi tidak aktif (karena penggunaan data)</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <item>Selalu</item>
+        <item>Hanya saat trhbng ke smbr daya</item>
+        <item>Wi-Fi tidak aktif</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_entries">
+        <item>Otomatis</item>
+        <item>5 GHz saja</item>
+        <item>2.4 GHz saja</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>Waktu pemakaian</item>
+        <item>Penghitungan peluncuran</item>
+        <item>Nama apl</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>Tidak ada</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_network_setup">
+        <item>Mati</item>
+        <item>Tekan tombol</item>
+        <item>PIN dari titik akses</item>
+        <item>PIN dari perangkat ini</item>
+    </string-array>
+    <string-array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>Statis</item>
+    </string-array>
+    <string-array name="wifi_proxy_settings">
+        <item>Tidak ada</item>
+        <item>Manual</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>Mati</item>
+        <item>Peringatan</item>
+        <item>Getar</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>Tidak ada</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP atau CHAP</item>
+    </string-array>
+    <string-array name="bearer_entries">
+        <item>LTE</item>
+        <item>eHRPD</item>
+        <item>Tidak ditentukan</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Penyimpan perangkat internal</item>
+        <item>Kartu SD lepas-pasang</item>
+        <item>Biar diputuskan sistem</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>Selalu</item>
+        <item>Tidak pernah</item>
+        <item>Hanya dalam mode Senyap</item>
+        <item>Hanya bila tidak dalam mode Senyap</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_titles">
+        <item>Pendek</item>
+        <item>Sedang</item>
+        <item>Panjang</item>
+    </string-array>
+    <string-array name="hdcp_checking_titles">
+        <item>Jangan periksa</item>
+        <item>Periksa hanya konten DRM</item>
+        <item>Selalu periksa</item>
+    </string-array>
+    <string-array name="hdcp_checking_summaries">
+        <item>Jangan gunakan pemeriksaan HDCP</item>
+        <item>Gunakan pemeriksaan HDCP untuk konten DRM saja</item>
+        <item>Selalu gunakan pemeriksaan HDCP</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>Animasi mati</item>
+        <item>Skala animasi 0,5x</item>
+        <item>Skala animasi 1x</item>
+        <item>Skala animasi 1,5x</item>
+        <item>Skala animasi 2x</item>
+        <item>Skala animasi 5x</item>
+        <item>Skala animasi 10x</item>
+    </string-array>
+    <string-array name="transition_animation_scale_entries">
+        <item>Animasi mati</item>
+        <item>Skala animasi 0,5x</item>
+        <item>Skala animasi 1x</item>
+        <item>Skala animasi 1,5x</item>
+        <item>Skala animasi 2x</item>
+        <item>Skala animasi 5x</item>
+        <item>Skala animasi 10x</item>
+    </string-array>
+    <string-array name="animator_duration_scale_entries">
+        <item>Animasi mati</item>
+        <item>Skala animasi 0,5x</item>
+        <item>Skala animasi 1x</item>
+        <item>Skala animasi 1,5x</item>
+        <item>Skala animasi 2x</item>
+        <item>Skala animasi 5x</item>
+        <item>Skala animasi 10x</item>
+    </string-array>
+    <string-array name="overlay_display_devices_entries">
+        <item>Tidak ada</item>
+        <item>720x480 mdpi</item>
+        <item>1280x720 tvdpi</item>
+        <item>1920x1080 xhdpi</item>
+        <item>1280x720 tvdpi dan 1920x1080 xhdpi</item>
+    </string-array>
+    <string-array name="enable_opengl_traces_entries">
+        <item>Tidak ada</item>
+        <item>Logcat</item>
+        <item>Jejak sistem (Grafis)</item>
+        <item>Penumpukan panggilan di glGetError</item>
+    </string-array>
+    <string-array name="app_process_limit_entries">
+        <item>Batas standar</item>
+        <item>Tanpa proses latar belakang</item>
+        <item>Maksimal 1 proses</item>
+        <item>Maksimal 2 proses</item>
+        <item>Maksimal 3 proses</item>
+        <item>Maksimal 4 proses</item>
+    </string-array>
+    <string-array name="vpn_types_long">
+        <item>PPTP VPN</item>
+        <item>L2TP/IPSec VPN dengan kunci pra-bagi</item>
+        <item>L2TP/IPSec VPN dengan sertifikat</item>
+        <item>IPSec VPN dengan kunci pra-berbagi dan autentikasi Xauth</item>
+        <item>IPSec VPN dengan sertifikat dan autentikasi Xauth</item>
+        <item>IPSec VPN dengan sertifikat dan autentikasi hibrida</item>
+    </string-array>
+    <string-array name="vpn_states">
+        <item>Terputus</item>
+        <item>Sedang inisialisasi...</item>
+        <item>Menghubungkan...</item>
+        <item>Terhubung</item>
+        <item>Habis Waktu</item>
+        <item>Gagal</item>
+    </string-array>
+    <string-array name="security_settings_premium_sms_values">
+        <item>Tanyakan</item>
+        <item>Jangan pernah izinkan</item>
+        <item>Izinkan selalu</item>
+    </string-array>
+    <string-array name="search_filter">
+        <item>Semua perangkat</item>
+        <item>Headset</item>
+        <item>PC</item>
+        <item>Telepon</item>
+        <item>Peripheral</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries_NORMAL">
+        <item>Gambar pengguna</item>
+        <item>Jam 1</item>
+        <item>Jam 2</item>
+        <item>Jam 3</item>
+        <item>Jam 4</item>
+        <item>Jam 5</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL">
+        <item>1.5 detik</item>
+        <item>3 detik</item>
+        <item>5 detik</item>
+        <item>Selalu hidup</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL_ex">
+        <item>1.5 dtk.</item>
+        <item>3 dtk.</item>
+        <item>5 dtk.</item>
+        <item>Selalu hidup</item>
+    </string-array>
+    <string-array name="sp_front_key_light_l1_NORMAL">
+        <item>3 detik</item>
+        <item>6 detik</item>
+        <item>10 detik</item>
+        <item>30 detik</item>
+        <item>Selalu hidup</item>
+    </string-array>
+    <string-array name="sp_front_key_light_att_NORMAL">
+        <item>3 dtk.</item>
+        <item>1 dtk.</item>
+        <item>10 dtk.</item>
+        <item>30 dtk</item>
+        <item>Selalu hidup</item>
+    </string-array>
+    <string-array name="sp_numlocdisp_entries_NORMAL">
+        <item>Nonaktifkan</item>
+        <item>Aktifkan</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_NORMAL">
+        <item>Peringatan pribadi</item>
+        <item>Jika Anda menggunakan aplikasi pihak ketiga, aplikasi tersebut bisa secara langsung mengumpulkan informasi pribadi Anda atau meminta operator Anda untuk mengungkapkan informasi pribadi Anda, termasuk informasi lokasi (jika ada), ke penyedia aplikasi atau beberapa pihak ketiga lainnya.</item>
+        <item>Kebijakan Privasi Mana yang Berlaku? Kebijakan Privasi dan Ketentuan Penggunaan dari operator Anda tidak berlaku untuk aplikasi pada handset yang hanya disediakan oleh pihak ketiga. Kebijakan pihak ketiga tersebut berlaku untuk penggunaan aplikasi ini.</item>
+        <item>Di mana Saya Bisa Menemukan Informasi Lebih Lanjut Tentang Kebijakan Pihak Ketiga? Periksa ketentuan penggunaan aplikasi dan/atau kebijakan penyedia aplikasi untuk informasi selengkapnya tentang bagaimana aplikasi tersebut akan mengumpulkan, mengakses, menggunakan dan mengungkapkan informasi Anda. Kebijakan Privasi, Ketentuan Penggunaan dan pemberitahuan konsumen lainnya MUNGKIN tersedia di situs web penyedia. Pastikan Anda merasa nyaman dengan kebijakan tersebut sebelum Anda menggunakan aplikasi.</item>
+        <item>Di mana Saya Bisa Menemukan Kebijakan Privasi operator saya? Secara terpisah, jika Anda memiliki pertanyaan tentang Kebijakan Privasi operator Anda, silakan kunjungi halaman situs operator Anda dan klik tautan \"Kebijakan Privasi\".</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_spr_NORMAL">
+        <item>Peringatan Privasi Sprint</item>
+        <item>Jika Anda menggunakan aplikasi pihak ke-3, aplikasi tersebut secara langsung bisa mengumpulkan informasi pribadi Anda atau memerlukan Sprint untuk mengungkapkan informasi pribadi Anda, termasuk informasi lokasi (jika ada), ke penyedia aplikasi atau beberapa pihak ke-3 lainnya.</item>
+        <item>Kebijakan Privasi Mana yang Berlaku? Kebijakan Privasi dan Ketentuan Penggunaan dari operator Anda tidak berlaku untuk aplikasi pada handset yang hanya disediakan oleh pihak ketiga. Kebijakan pihak ketiga tersebut berlaku untuk penggunaan aplikasi ini.</item>
+        <item>Di Mana Saya Dapat Menemukani Informasi Lebih Jauh Tentang Kebijakan Pihak Ketiga? Periksa ketentuan penggunaan aplikasi dan/atau kebijakan penyedia aplikasi untuk informasi lebih lanjut tentang bagaimana aplikasi akan mengumpulkan, mengakses, menggunakan dan mengungkapkan informasi Anda. Kebijakan Privasi, Ketentuan Penggunaan dan pemberitahuan konsumen lainnya MUNGKIN tersedia di situs penyedia. Pastikan Anda merasa nyaman dengan kebijakan tersebut sebelum Anda menggunakan aplikasi.</item>
+        <item>Di Mana Saya Dapat Menemukan Kebijakan Privasi Sprint? Secara terpisah, jika Anda memiliki pertanyaan tentang Kebijakan Privasi Sprint, silakan kunjungi Sprint.com dan klik tautan \"Kebijakan Privasi\".</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_bm_NORMAL">
+        <item>Percepat Peringatan Privasi Seluler</item>
+        <item>Jika Anda menggunakan aplikasi pihak ke-3, aplikasi tersebut secara langsung bisa mengumpulkan informasi pribadi Anda atau memerlukan Boost Mobile untuk mengungkapkan informasi pribadi Anda, termasuk informasi lokasi (jika ada), ke penyedia aplikasi atau beberapa pihak ke-3 lainnya.</item>
+        <item>Kebijakan Privasi Mana yang Berlaku? Kebijakan Privasi dan Ketentuan Penggunaan dari operator Anda tidak berlaku untuk aplikasi pada handset yang hanya disediakan oleh pihak ketiga. Kebijakan pihak ketiga tersebut berlaku untuk penggunaan aplikasi ini.</item>
+        <item>Di Mana Saya Dapat Menemukani Informasi Lebih Jauh Tentang Kebijakan Pihak Ketiga? Periksa ketentuan penggunaan aplikasi dan/atau kebijakan penyedia aplikasi untuk informasi lebih lanjut tentang bagaimana aplikasi akan mengumpulkan, mengakses, menggunakan dan mengungkapkan informasi Anda. Kebijakan Privasi, Ketentuan Penggunaan dan pemberitahuan konsumen lainnya MUNGKIN tersedia di situs penyedia. Pastikan Anda merasa nyaman dengan kebijakan tersebut sebelum Anda menggunakan aplikasi.</item>
+        <item>Di Mana Saya Dapat Menemukan Kebijakan Privasi Boost Mobile? Secara terpisah, jika Anda memiliki pertanyaan tentang Kebijakan Privasi Boost Mobile, silakan kunjungi Boost Mobile.com dan klik tautan \"Kebijakan Privasi\".</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_virgin_NORMAL">
+        <item>Peringatan Privasi Virgin Mobile</item>
+        <item>Jika Anda menggunakan aplikasi pihak ke-3, aplikasi tersebut secara langsung bisa mengumpulkan informasi pribadi Anda atau memerlukan Virgin Mobile untuk mengungkapkan informasi pribadi Anda, termasuk informasi lokasi (jika ada), ke penyedia aplikasi atau beberapa pihak ke-3 lainnya.</item>
+        <item>Kebijakan Privasi Manakah yang Berlaku? Kebijakan Privasi dan Syarat Penggunaan Virgin Mobile tidak berlaku untuk aplikasi pada handset Anda yang hanya disediakan oleh pihak ke-3. Kebijakan pihak ke-3 berlaku untuk penggunaan aplikasi ini.</item>
+        <item>Di Mana Saya Dapat Menemukani Informasi Lebih Jauh Tentang Kebijakan Pihak Ketiga? Periksa ketentuan penggunaan aplikasi dan/atau kebijakan penyedia aplikasi untuk informasi lebih lanjut tentang bagaimana aplikasi akan mengumpulkan, mengakses, menggunakan dan mengungkapkan informasi Anda. Kebijakan Privasi, Ketentuan Penggunaan dan pemberitahuan konsumen lainnya MUNGKIN tersedia di situs penyedia. Pastikan Anda merasa nyaman dengan kebijakan tersebut sebelum Anda menggunakan aplikasi.</item>
+        <item>Di Mana Saya Bisa Mencari Kebijakan Privasi Virgin Mobile? Secara terpisah, jika Anda memiliki pertanyaan tentang Kebijakan Privasi Virgin Mobile, silakan kunjungi VirginMobileUSA.com dan klik pada link \"Kebijakan Privasi\".</item>
+    </string-array>
+    <string-array name="sp_lock_screen_effect_entries_NORMAL">
+        <item>Dasar</item>
+        <item>Berdesir</item>
+        <item>Sebaran tinta</item>
+        <item>Titik embun</item>
+    </string-array>
+    <string-array name="sp_power_save_brightness_entries_NORMAL">
+        <item>Kecerahan 10%</item>
+        <item>Kecerahan 20%</item>
+        <item>"Kecerahan 30%  "</item>
+        <item>"Kecerahan 50% "</item>
+    </string-array>
+    <string-array name="sp_power_save_screen_timeout_entries_NORMAL">
+        <item>15 detik</item>
+        <item>30 detik</item>
+        <item>1 menit</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_NORMAL">
+        <item>1.5 detik</item>
+        <item>Selalu mati</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_att_NORMAL">
+        <item>3 detik</item>
+        <item>Selalu mati</item>
+    </string-array>
+    <string-array name="sp_power_save_mode_entries_NORMAL">
+        <item>Baterai 10%</item>
+        <item>Baterai 20%</item>
+        <item>Baterai 30%</item>
+        <item>Baterai 50%</item>
+    </string-array>
+    <string-array name="sp_power_save_mode2_entries_NORMAL">
+        <item>Segera</item>
+        <item>Baterai 10%</item>
+        <item>Baterai 20%</item>
+        <item>Baterai 30%</item>
+        <item>Baterai 50%</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries">
+        <item>5 menit</item>
+        <item>10 menit</item>
+        <item>15 menit</item>
+    </string-array>
+    <string-array name="sp_hotspot_timeout_entries_mx_NORMAL">
+        <item>Tiada batas waktu</item>
+        <item>5 mnt</item>
+        <item>10 mnt</item>
+        <item>15 mnt</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries_jb">
+        <item>5 mnt</item>
+        <item>10 mnt</item>
+        <item>15 mnt</item>
+        <item>30 mnt</item>
+        <item>Tidak pernah</item>
+    </string-array>
+    <string-array name="wifi_p2p_timeout_entries">
+        <item>15 mnt</item>
+        <item>30 mnt</item>
+        <item>Tidak pernah</item>
+    </string-array>
+    <string-array name="sp_wifi_ap_visibility_NORMAL">
+        <item>Tampilkan</item>
+        <item>Sembunyikan</item>
+    </string-array>
+    <string-array name="sp_bt_search_filter_SHORT">
+        <item>Semua perangkat</item>
+        <item>Headset</item>
+        <item>Ponsel</item>
+        <item>PC</item>
+        <item>Perangkat input (Keyboard, mouse, dsb)</item>
+    </string-array>
+    <string-array name="wifi_signal_strength_entries">
+        <item>Kuat</item>
+        <item>Sedang</item>
+        <item>Lemah</item>
+        <item>Mati</item>
+    </string-array>
+    <string-array name="wifi_Dual_band_AP_connection_entries">
+        <item>Otomatis</item>
+        <item>5 GHz</item>
+        <item>2.4 GHz</item>
+    </string-array>
+</resources>

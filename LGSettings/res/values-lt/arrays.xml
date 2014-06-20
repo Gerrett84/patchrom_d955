@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>Amerika</item>
+        <item>Europa</item>
+        <item>Afrika</item>
+        <item>Azija</item>
+        <item>Australija</item>
+        <item>Ramusis vandenynas</item>
+        <item>Visi</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 sekundžių</item>
+        <item>30 sekundžių</item>
+        <item>1 minutė</item>
+        <item>2 minutės</item>
+        <item>5 minutės</item>
+        <item>10 minučių</item>
+        <item>30 minučių</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries2_NORMAL">
+        <item>15 sekundžių</item>
+        <item>30 sekundžių</item>
+        <item>1 minutė</item>
+        <item>2 minutės</item>
+        <item>5 minutės</item>
+        <item>10 minučių</item>
+        <item>Išlaikyti ekraną įjungtą</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL">
+        <item>15 sekundžių</item>
+        <item>30 sekundžių</item>
+        <item>1 minutė</item>
+        <item>2 minutės</item>
+        <item>5 minutės</item>
+        <item>10 minučių</item>
+        <item>15 minučių</item>
+        <item>Išlaikyti ekraną įjungtą</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL_ex">
+        <item>15 sek.</item>
+        <item>30 sek.</item>
+        <item>1 min.</item>
+        <item>2 min.</item>
+        <item>5 min.</item>
+        <item>10 min.</item>
+        <item>15 min.</item>
+        <item>Išlaikyti ekraną įjungtą</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled">
+        <item>15 sekundžių</item>
+        <item>30 sekundžių</item>
+        <item>1 minutė</item>
+        <item>2 minutės</item>
+        <item>5 minutės</item>
+        <item>10 minučių</item>
+        <item>15 minučių</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled_ex">
+        <item>15 sek.</item>
+        <item>30 sek.</item>
+        <item>1 min.</item>
+        <item>2 min.</item>
+        <item>5 min.</item>
+        <item>10 min.</item>
+        <item>15 min.</item>
+    </string-array>
+    <string-array name="sp_pouch_default_clock_entries2_NORMAL">
+        <item>Laikrodis 1</item>
+        <item>Laikrodis 2</item>
+        <item>Laikrodis 3</item>
+        <item>Laikrodis 4</item>
+        <item>Laikrodis 5</item>
+        <item>Laikrodis 6</item>
+        <item>Laikrodis 7</item>
+        <item>Laikrodis 8</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries1_NORMAL">
+        <item>Analogas</item>
+        <item>Skaitmeninis</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_position_entries1_NORMAL">
+        <item>Centras</item>
+        <item>Viršuje dešinėje</item>
+        <item>Viršuje kairėje</item>
+        <item>Apačioje dešinėje</item>
+        <item>Apačioje kairėje</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_font_entries1_NORMAL">
+        <item>Šrifto pavadinimas 1</item>
+        <item>Šrifto pavadinimas 2</item>
+    </string-array>
+    <string-array name="sp_sound_profile_entries_NORMAL">
+        <item>Garsas</item>
+        <item>Tik vibruoti</item>
+        <item>Tyliai</item>
+    </string-array>
+    <string-array name="dream_timeout_entries">
+        <item>Niekada</item>
+        <item>15 sekundžių</item>
+        <item>30 sekundžių</item>
+        <item>1 minutė</item>
+        <item>2 minutės</item>
+        <item>5 minutės</item>
+        <item>10 minučių</item>
+        <item>30 minučių</item>
+    </string-array>
+    <string-array name="lock_after_timeout_entries">
+        <item>Nedelsiant</item>
+        <item>5 sekundės</item>
+        <item>15 sekundžių</item>
+        <item>30 sekundžių</item>
+        <item>1 minutė</item>
+        <item>2 minutės</item>
+        <item>5 minutės</item>
+        <item>10 minučių</item>
+        <item>30 minučių</item>
+    </string-array>
+    <string-array name="sp_lock_after_timeout_entries_NORMAL">
+        <item>Nedelsiant</item>
+        <item>15 sekundžių</item>
+        <item>30 sekundžių</item>
+        <item>1 minutė</item>
+        <item>2 minutės</item>
+        <item>10 minučių</item>
+        <item>30 minučių</item>
+    </string-array>
+    <string-array name="entries_font_size">
+        <item>&amp;lt;font size=16 align=middle>Mažas&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>Įprast.&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>Didelis&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>Ypač didelis&amp;lt;/font></item>
+    </string-array>
+    <string-array name="sp_entries_font_size2">
+        <item>&amp;lt;font size=14 align=middle>Mažiausias&amp;lt;/font></item>
+        <item>&amp;lt;font size=16 align=middle>Mažas&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>Vidutinis&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>Didelis&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>Labai didelis&amp;lt;/font></item>
+        <item>&amp;lt;font size=27 align=middle>Didžiausias&amp;lt;/font></item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>Labai lėtai</item>
+        <item>Lėtas</item>
+        <item>Įprast.</item>
+        <item>Greitas</item>
+        <item>Labai greitai</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>Labai lėtai</item>
+        <item>Žema</item>
+        <item>Įprast.</item>
+        <item>Aukšta</item>
+        <item>Labai aukštas</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Nuskaitoma...</item>
+        <item>Jungiamasi...</item>
+        <item>Atpažinimas...</item>
+        <item>Gaunamas IP adresas...</item>
+        <item>Prijungta</item>
+        <item>Atidėtas</item>
+        <item>Atjungimas…</item>
+        <item>Atjungta</item>
+        <item>Nesėkmingai</item>
+        <item>Užblokuotas</item>
+        <item>Laikinai vengiama prasto ryšio</item>
+        <item>Laikinai vengiama prasto ryšio</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Nuskaitoma...</item>
+        <item>Jungiamasi prie %1$s...</item>
+        <item>Atpažinimas su %1$s…</item>
+        <item>Gaunamas %1$s IP adresas...</item>
+        <item>Sujungta su %1$s</item>
+        <item>Atidėtas</item>
+        <item>Atsijungiama nuo %1$s…</item>
+        <item>Atjungta</item>
+        <item>Nesėkmingai</item>
+        <item>Užblokuotas</item>
+        <item>Laikinai vengiama prasto ryšio</item>
+    </string-array>
+    <string-array name="wifi_ap_security">
+        <item>Atviras</item>
+        <item>WPA PSK</item>
+        <item>WPA2 PSK</item>
+    </string-array>
+    <string-array name="wifi_p2p_wps_setup">
+        <item>„Push“ mygtukas</item>
+        <item>PIN kodas iš šio įrenginio</item>
+    </string-array>
+    <string-array name="wifi_p2p_status">
+        <item>Prijungta</item>
+        <item>Sujungimas</item>
+        <item>Nesėkmingai</item>
+        <item>Galima</item>
+        <item>Nepatenka į intervalą</item>
+    </string-array>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>2 minutės</item>
+        <item>5 minutės</item>
+        <item>1 valanda</item>
+        <item>Neribotas laikas</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Prastas</item>
+        <item>Pakenčiamas</item>
+        <item>Geras</item>
+        <item>Puikus</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Visada</item>
+        <item>Tik kai prijungtas maitinimas</item>
+        <item>„Wi-Fi“ išjungta (dėl duomenų naudojimo)</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <item>Visada</item>
+        <item>Tik kai prijungtas maitinimas</item>
+        <item>„Wi-Fi“ išjungta</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_entries">
+        <item>Automatinis</item>
+        <item>Tik 5 GHz</item>
+        <item>Tik 2.4 GHz</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>Naudojimo laikas</item>
+        <item>Pradėti skaičiavimą</item>
+        <item>Programos pavadinimas</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>Nėra</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_network_setup">
+        <item>Išjung.</item>
+        <item>„Push“ mygtukas</item>
+        <item>PIN kodas iš prieigos taško</item>
+        <item>PIN kodas iš šio įrenginio</item>
+    </string-array>
+    <string-array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>Statinis</item>
+    </string-array>
+    <string-array name="wifi_proxy_settings">
+        <item>Nėra</item>
+        <item>Rankinis</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>Išjung.</item>
+        <item>Įspėjimas</item>
+        <item>Vibruoti</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>Nėra</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP arba CHAP</item>
+    </string-array>
+    <string-array name="bearer_entries">
+        <item>LTE</item>
+        <item>eHRPD</item>
+        <item>Nenustatyta</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Vidinė įrenginio atmintis</item>
+        <item>Išimama SD kortelė</item>
+        <item>Nuspręndžia sistema</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>Visada</item>
+        <item>Niekada</item>
+        <item>Tik kai veikia tyliuoju režimu</item>
+        <item>Tik ne tyliuoju režimu</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_titles">
+        <item>Trumpa</item>
+        <item>Vidutinis</item>
+        <item>Ilga</item>
+    </string-array>
+    <string-array name="hdcp_checking_titles">
+        <item>Niekada netikrinti</item>
+        <item>Tikrinti tik DRM turinį</item>
+        <item>Visada tikrinti</item>
+    </string-array>
+    <string-array name="hdcp_checking_summaries">
+        <item>Niekada nenaudoti HDCP tikrinimo</item>
+        <item>HDCP tikrinimą naudoti tik DRM turiniui</item>
+        <item>Visada naudoti HDCP tikrinimą</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>Animacija išjungta</item>
+        <item>Animacijos mastelis .5x</item>
+        <item>Animacijos mastelis 1x</item>
+        <item>Animacijos mastelis 1.5x</item>
+        <item>Animacijos mastelis 2x</item>
+        <item>Animacijos mastelis 5x</item>
+        <item>Animacijos mastelis 10x</item>
+    </string-array>
+    <string-array name="transition_animation_scale_entries">
+        <item>Animacija išjungta</item>
+        <item>Animacijos mastelis .5x</item>
+        <item>Animacijos mastelis 1x</item>
+        <item>Animacijos mastelis 1.5x</item>
+        <item>Animacijos mastelis 2x</item>
+        <item>Animacijos mastelis 5x</item>
+        <item>Animacijos mastelis 10x</item>
+    </string-array>
+    <string-array name="animator_duration_scale_entries">
+        <item>Animacija išjungta</item>
+        <item>Animacijos mastelis .5x</item>
+        <item>Animacijos mastelis 1x</item>
+        <item>Animacijos mastelis 1.5x</item>
+        <item>Animacijos mastelis 2x</item>
+        <item>Animacijos mastelis 5x</item>
+        <item>Animacijos mastelis 10x</item>
+    </string-array>
+    <string-array name="overlay_display_devices_entries">
+        <item>Nėra</item>
+        <item>720x480 mdpi</item>
+        <item>1280x720 tvdpi</item>
+        <item>1920x1080 xhdpi</item>
+        <item>1280x720 tvdpi ir 1920x1080 xhdpi</item>
+    </string-array>
+    <string-array name="enable_opengl_traces_entries">
+        <item>Nėra</item>
+        <item>Logcat</item>
+        <item>„Systrace“ (Grafika)</item>
+        <item>Kreipinių dėklas glGetError</item>
+    </string-array>
+    <string-array name="app_process_limit_entries">
+        <item>Standartinė riba</item>
+        <item>Nėra foninių procesų.</item>
+        <item>Daugiausia 1 procesas</item>
+        <item>Daugiausia 2 procesai</item>
+        <item>Daugiausia 3 procesai</item>
+        <item>Daugiausia 4 procesai</item>
+    </string-array>
+    <string-array name="vpn_types_long">
+        <item>PPTP VPN</item>
+        <item>L2TP/IPSec VPN su iš anksto bendrinamais raktais</item>
+        <item>L2TP/IPSec VPN su sertifikatais</item>
+        <item>IPSec VPN su iš anksto bendrinamais raktais ir Xauth tapatumo nustatymu</item>
+        <item>IPSec VPN su liudijimais ir Xauth tapatumo nustatymu</item>
+        <item>IPSec VPN su liudijimais ir mišriuoju tapatumo nustatymu</item>
+    </string-array>
+    <string-array name="vpn_states">
+        <item>Atjungta</item>
+        <item>Pradedama…</item>
+        <item>Jungiamasi...</item>
+        <item>Prijungta</item>
+        <item>Laikas pasibaigė</item>
+        <item>Nesėkmingai</item>
+    </string-array>
+    <string-array name="security_settings_premium_sms_values">
+        <item>Klausti</item>
+        <item>Niekuomet neleisti</item>
+        <item>Visuomet leisti</item>
+    </string-array>
+    <string-array name="search_filter">
+        <item>Visi įrenginiai</item>
+        <item>Ausinės</item>
+        <item>PC</item>
+        <item>Telefonas</item>
+        <item>Periferinė įranga</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries_NORMAL">
+        <item>Naudotojo vaizdas</item>
+        <item>Laikrodis 1</item>
+        <item>Laikrodis 2</item>
+        <item>Laikrodis 3</item>
+        <item>Laikrodis 4</item>
+        <item>Laikrodis 5</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL">
+        <item>1.5 sekundės</item>
+        <item>3 sekundės</item>
+        <item>5 sekundės</item>
+        <item>Visada įjungta</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL_ex">
+        <item>1.5 sek.</item>
+        <item>3 sek.</item>
+        <item>5 sek.</item>
+        <item>Visada įjungta</item>
+    </string-array>
+    <string-array name="sp_front_key_light_l1_NORMAL">
+        <item>3 sekundės</item>
+        <item>6 sekundės</item>
+        <item>10 sekundžių</item>
+        <item>30 sekundžių</item>
+        <item>Visada įjungta</item>
+    </string-array>
+    <string-array name="sp_front_key_light_att_NORMAL">
+        <item>3 sek.</item>
+        <item>6 sek.</item>
+        <item>10 sek.</item>
+        <item>30 sek.</item>
+        <item>Visada įjungta</item>
+    </string-array>
+    <string-array name="sp_numlocdisp_entries_NORMAL">
+        <item>Išjungti</item>
+        <item>Įjungti</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_NORMAL">
+        <item>Privatumo įspėjimas</item>
+        <item>Jeigu naudojate trečiosios šalies programą, ji gali tiesiogiai rinkti Jūsų asmeninius duomenis arba pareikalauti operatoriaus atskleisti programos teikėjui ar kitai trečiajai šaliai Jūsų asmeninius duomenis, įskaitant vietos duomenis.</item>
+        <item>Kuri privatumo politika taikoma? Jūsų operatoriaus privatumo politika ir naudojimosi sąlygos netaikomos Jūsų telefone esančioms programoms, kurios teikiamos išskirtinai trečiųjų šalių. Šiai programai taikomos trečiosios šalies politika.</item>
+        <item>Kur galima rasti daugiau informacijos apie trečiųjų šalių taikomą politiką? Patikrinkite programos naudojimosi sąlygas ir (arba) programos teikėjo politiką ir sužinokite daugiau apie tai, kaip programa renka, naudoja ir atskleidžia Jūsų duomenis. Privatumo politika, naudojimosi sąlgyos ir kita informacija naudotojams GALI BŪTI pateikiama paslaugos teikėjo svetainėje. Prieš naudojantis programa, įsitikinkite, kad sutinkate su taikoma politika.</item>
+        <item>Kur galima rasti operatoriaus privatumo politiką? Iškilus klausimams dėl operatoriaus taikomos privatumo politikos, apsilankykite savo operatoriaus svetainėje ir spustelkite „Privatumo politika“ nuorodą.</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_spr_NORMAL">
+        <item>„Sprint“ privatumo įspėjimas</item>
+        <item>Naudojant trečiosios šalies programą jį gali tiesiogiai rinkti Jūsų asmeninę informaciją arba reikalauti „Sprint“, kad atskleistų Jūsų asmeninę informaciją, įskaitant vietos informaciją (jeigu taikoma), programos tiekėjui ar kitoms trečiosioms šalims.</item>
+        <item>Kuri privatumo politika taikoma? „Sprint“ privatumo politika ir naudojimo sąlygos negalioja Jūsų telefone esančioms programoms, kurios teikiamos tik trečiųjų šalių. Šioms programoms taikomos trečiųjų šalių privatumo politikos.</item>
+        <item>Kur galima rasti daugiau informacijos apie trečiųjų šalių taikomą politiką? Patikrinkite programos naudojimosi sąlygas ir (arba) programos teikėjo politiką ir sužinokite daugiau apie tai, kaip programa renka, pasiekia, naudoja ir atskleidžia Jūsų duomenis. Privatumo politika, naudojimosi sąlygos ir kita naudotojams aktuali informacija GALI BŪTI pateikiami teikėjo svetainėje. Prieš naudojantis programa, įsitikinkite, kad sutinkate su taikoma politika.</item>
+        <item>Kur galima rasti „Sprint“ privatumo politiką? Kilus klausimams dėl „Sprint“ privatumo politikos, apsilankykite Sprint.com ir spustelkite privatumo politikos nuorodą.</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_bm_NORMAL">
+        <item>„Boost Mobile“ privatumo įspėjimas</item>
+        <item>Naudojant trečiosios šalies programą jį gali tiesiogiai rinkti Jūsų asmeninę informaciją arba reikalauti „Boost Mobile“, kad atskleistų Jūsų asmeninę informaciją, įskaitant vietos informaciją (jeigu taikoma), programos tiekėjui ar kitoms trečiosioms šalims.</item>
+        <item>Kuri privatumo politika taikoma? „Boost Mobile“ privatumo politika ir naudojimo sąlygos negalioja Jūsų telefone esančioms programoms, kurios teikiamos tik trečiųjų šalių. Šioms programoms taikomos trečiųjų šalių privatumo politikos.</item>
+        <item>Kur galima rasti daugiau informacijos apie trečiųjų šalių taikomą politiką? Patikrinkite programos naudojimosi sąlygas ir (arba) programos teikėjo politiką ir sužinokite daugiau apie tai, kaip programa renka, pasiekia, naudoja ir atskleidžia Jūsų duomenis. Privatumo politika, naudojimosi sąlygos ir kita naudotojams aktuali informacija GALI BŪTI pateikiami teikėjo svetainėje. Prieš naudojantis programa, įsitikinkite, kad sutinkate su taikoma politika.</item>
+        <item>Kur galima rasti „Boost Mobile“ privatumo politiką? Kilus klausimams dėl „Boost Mobile“ privatumo politikos, apsilankykite Boost Mobile.com ir spustelkite privatumo politikos nuorodą.</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_virgin_NORMAL">
+        <item>" „Virgin Mobile“ privatumo įspėjimas"</item>
+        <item>Naudojant trečiosios šalies programą jį gali tiesiogiai rinkti Jūsų asmeninę informaciją arba reikalauti „Virgin Mobile“, kad atskleistų Jūsų asmeninę informaciją, įskaitant vietos informaciją (jeigu taikoma), programos tiekėjui ar kitoms trečiosioms šalims.</item>
+        <item>Kuri privatumo politika taikoma? „Virgin Mobile“ privatumo politika ir naudojimo sąlygos netaikomos Jūsų telefone esančioms trečiųjų šalių teikiamoms programoms. Naudojant šias programas, taikomos trečiųjų šalių politikos.</item>
+        <item>Kur galima rasti daugiau informacijos apie trečiųjų šalių taikomą politiką? Patikrinkite programos naudojimosi sąlygas ir (arba) programos teikėjo politiką ir sužinokite daugiau apie tai, kaip programa renka, pasiekia, naudoja ir atskleidžia Jūsų duomenis. Privatumo politika, naudojimosi sąlygos ir kita naudotojams aktuali informacija GALI BŪTI pateikiami teikėjo svetainėje. Prieš naudojantis programa, įsitikinkite, kad sutinkate su taikoma politika.</item>
+        <item>Kur galiu susipažinti su „Virgin Mobile“ privatumo politika? Atskirai, jeigu Jums kyla klausimų dėl „Virgin Mobile“ privatumo politikos, apsilankykite VirginMobileUSA.com ir spustelkite „Privatumo politika“ nuorodą.</item>
+    </string-array>
+    <string-array name="sp_lock_screen_effect_entries_NORMAL">
+        <item>Pagrindinis</item>
+        <item>Raibuliavimas su lapais</item>
+        <item>Sklindantis rašalas</item>
+        <item>Rasos lašas</item>
+    </string-array>
+    <string-array name="sp_power_save_brightness_entries_NORMAL">
+        <item>10% šviesumas</item>
+        <item>20% šviesumas</item>
+        <item>30% šviesumas</item>
+        <item>50% šviesumas</item>
+    </string-array>
+    <string-array name="sp_power_save_screen_timeout_entries_NORMAL">
+        <item>15 sekundžių</item>
+        <item>30 sekundžių</item>
+        <item>1 minutė</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_NORMAL">
+        <item>1.5 sekundės</item>
+        <item>Visada išjungta</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_att_NORMAL">
+        <item>3 sekundės</item>
+        <item>Visada išjungta</item>
+    </string-array>
+    <string-array name="sp_power_save_mode_entries_NORMAL">
+        <item>10% akumuliatoriaus</item>
+        <item>20% akumuliatoriaus</item>
+        <item>30% akumuliatoriaus</item>
+        <item>50% akumuliatoriaus</item>
+    </string-array>
+    <string-array name="sp_power_save_mode2_entries_NORMAL">
+        <item>Nedelsiant</item>
+        <item>10% akumuliatoriaus</item>
+        <item>20% akumuliatoriaus</item>
+        <item>30% akumuliatoriaus</item>
+        <item>50% akumuliatoriaus</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries">
+        <item>5 minutės</item>
+        <item>10 minučių</item>
+        <item>15 minučių</item>
+    </string-array>
+    <string-array name="sp_hotspot_timeout_entries_mx_NORMAL">
+        <item>Neišjungti</item>
+        <item>5 min.</item>
+        <item>10 min.</item>
+        <item>15 min.</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries_jb">
+        <item>5 min.</item>
+        <item>10 min.</item>
+        <item>15 min.</item>
+        <item>30 min.</item>
+        <item>Niekada</item>
+    </string-array>
+    <string-array name="wifi_p2p_timeout_entries">
+        <item>15 min.</item>
+        <item>30 min.</item>
+        <item>Niekada</item>
+    </string-array>
+    <string-array name="sp_wifi_ap_visibility_NORMAL">
+        <item>Rodyti</item>
+        <item>Paslėpti</item>
+    </string-array>
+    <string-array name="sp_bt_search_filter_SHORT">
+        <item>Visi įrenginiai</item>
+        <item>Ausinės</item>
+        <item>Mobilusis telefonas</item>
+        <item>AK</item>
+        <item>Įvesties įrenginys (klaviatūra, pelė ir t.t.)</item>
+    </string-array>
+    <string-array name="wifi_signal_strength_entries">
+        <item>Stiprus</item>
+        <item>Vidutinis</item>
+        <item>Silpnas</item>
+        <item>Išjung.</item>
+    </string-array>
+    <string-array name="wifi_Dual_band_AP_connection_entries">
+        <item>Autom.</item>
+        <item>5 GHz</item>
+        <item>2.4 GHz</item>
+    </string-array>
+</resources>

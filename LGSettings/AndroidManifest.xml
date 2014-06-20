@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="android.uid.system" android:versionCode="40000124" android:versionName="4.0.19" package="com.android.lgesettings" coreApp="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <original-package android:name="com.android.lgesettings" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.DEVICE_POWER" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.HARDWARE_TEST" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.MASTER_CLEAR" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_NETWORK_POLICY" />
+    <uses-permission android:name="android.permission.ACCESS_WIMAX_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIMAX_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CLEAR_APP_USER_DATA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_CHECKIN_PROPERTIES" />
+    <uses-permission android:name="android.permission.READ_USER_DICTIONARY" />
+    <uses-permission android:name="android.permission.WRITE_USER_DICTIONARY" />
+    <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES" />
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MOVE_PACKAGE" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.BACKUP" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SYNC_STATS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.STATUS_BAR" />
+    <uses-permission android:name="android.permission.MANAGE_USB" />
+    <uses-permission android:name="android.permission.SET_POINTER_SPEED" />
+    <uses-permission android:name="android.permission.SET_KEYBOARD_LAYOUT" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS" />
+    <uses-permission android:name="android.permission.COPY_PROTECTED_DATA" />
+    <uses-permission android:name="android.permission.MANAGE_USERS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.CONFIGURE_WIFI_DISPLAY" />
+    <uses-permission android:name="com.lge.smartshare.iface.permission" />
+    <uses-permission android:name="com.lge.bluetooth.permission.BLUETOOTH_GROUP" />
+    <uses-permission android:name="android.permission.STOP_APP_SWITCHES" />
+    <application android:theme="@style/Theme_Settings" android:label="@string/settings_label" android:icon="@mipmap/ic_launcher_settings" android:taskAffinity="" android:hardwareAccelerated="true" android:uiOptions="splitActionBarWhenNarrow" android:supportsRtl="true">
+        <uses-library android:name="com.lge.systemservice.core" />
+        <uses-library android:name="com.lge.bluetooth" android:required="false" />
+        <uses-library android:name="com.broadcom.bt" android:required="false" />
+        <uses-library android:name="com.lge.nfcaddon" android:required="false" />
+        <meta-data android:name="gsma.joyn.client" android:value="true" />
+        <meta-data android:name="gsma.joyn.settings.activity" android:value="com.lge.settings.RcseSettingsActivity" />
+        <meta-data android:name="com.lge.theme" android:value="Theme_LGE_White" />
+        <uses-library android:name="com.lge.mdm" android:required="false" />
+        <uses-library android:name="com.lge.systemservice.core" />
+        <uses-library android:name="com.lge.sui" android:required="false" />
+        <uses-library android:name="com.lge.broadcast.mmbi" android:required="false" />
+        <uses-library android:name="com.quicinc.cneapiclient" android:required="false" />
+        <activity android:label="@string/settings_label_launcher" android:name="Settings" android:taskAffinity="com.android.lgesettings" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="com.android.settings.MANUFACTURER_APPLICATION_SETTING" />
+            </intent-filter>
+            <meta-data android:name="com.lge.launcher2.theme.LARGE_ICON" android:resource="@drawable/setting_large_icon" />
+        </activity>
+        <activity android:name=".SubSettings" android:taskAffinity="com.android.lgesettings" android:configChanges="keyboardHidden|orientation|screenSize" android:parentActivityName="Settings" />
+        <receiver android:name=".captiveportal.WifiCaptivePortal" android:enabled="false">
+            <intent-filter>
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/Settings.Theme.Holo.Dialog.Alert" android:name=".captiveportal.WifiCaptivePortalDialog" android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".wifi.WifiE911Request" android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.EMERGENCY_CALLBACK_MODE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <activity android:label="@string/sound_settings" android:icon="@drawable/shortcut_sound" android:name="Settings$SoundSettingsActivity" android:taskAffinity="" android:excludeFromRecents="true" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.android.lgesettings.SOUND_SETTINGS" />
+                <action android:name="com.lge.easysettings.SOUND_SETTING" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.VOICE_LAUNCH" />
+                <category android:name="com.android.lgesettings.SHORTCUT" />
+            </intent-filter>
+            <meta-data android:name="com.android.lgesettings.FRAGMENT_CLASS" android:value="com.android.lgesettings.SoundSettings" />
+            <meta-data android:name="com.android.lgesettings.TOP_LEVEL_HEADER_ID" android:resource="@id/sound_settings" />
+        </activity>
+        <activity android:label="@string/sound_settings" android:icon="@drawable/shortcut_sound" android:name="Settings$RingtonePickerActivity" android:taskAffinity="" android:excludeFromRecents="true" android:configChanges="keyboardHidden|orientation|screenSize" android:uiOptions="none">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.lgesettings.FRAGMENT_CLASS" android:value="com.android.lgesettings.RingtonePicker" />
+        </activity>
+        <activity android:label="@string/sound_settings" android:icon="@drawable/shortcut_sound" android:name="Settings$TouchFeedbackAndSystemPreferenceActivity" android:taskAffinity="" android:excludeFromRecents="true" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.lgesettings.FRAGMENT_CLASS" android:value="com.android.lgesettings.TouchFeedbackAndSystemPreference" />
+        </activity>
+        <activity-alias android:label="@string/sound_settings" android:name="SoundSettings" android:exported="true" android:configChanges="keyboardHidden|orientation|screenSize" android:targetActivity="Settings$SoundSettingsActivity">
+            <meta-data android:name="com.android.lgesettings.FRAGMENT_CLASS" android:value="com.android.lgesettings.SoundSettings" />
+            <meta-data android:name="com.android.lgesettings.TOP_LEVEL_HEADER_ID" android:resource="@id/sound_settings" />
+        </activity-alias>
+        <activity android:label="@string/display_settings" android:icon="@drawable/shortcut_display" android:name="Settings$DisplaySettingsActivity" android:taskAffinity="" android:clearTaskOnLaunch="true" android:excludeFromRecents="true" android:configChanges="keyboardHidden|orientation|screenSize" android:parentActivityName="Settings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.android.lgesettings.DISPLAY_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.VOICE_LAUNCH" />
+                <category android:name="com.android.lgesettings.SHORTCUT" />
+                <action android:name="lge.settings.search.intent" />
+            </intent-filter>
+            <meta-data android:name="com.android.lgesettings.FRAGMENT_CLASS" android:value="com.android.lgesettings.DisplaySettings" />
+            <meta-data android:name="com.android.lgesettings.TOP_LEVEL_HEADER_ID" android:resource="@id/display_settings" />
+            <meta-data android:name="lge.settings.search.intent.INFORMATION" android:value="this is my funtion" />
+        </activity>
+        <activity-alias android:label="@string/display_settings" android:name="DisplaySettings" android:exported="true" android:clearTaskOnLaunch="true" android:targetActivity="Settings$DisplaySettingsActivity">
+            <meta-data android:name="com.android.lgesettings.FRAGMENT_CLASS" android:value="com.android.lgesettings.DisplaySettings" />
+            <meta-data android:name="com.android.lgesettings.TOP_LEVEL_HEADER_ID" android:resource="@id/display_settings" />
+        </activity-alias>
+        <activity android:label="@string/sp_usb_connection_type_ex_NORMAL" android:icon="@drawable/shortcut_connectivity" android:name="Settings$UsbSettingsActivity" android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|orientation|screenSize" android:uiOptions="none" android:parentActivityName="Settings$ConnectivitySettingsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.lgesettings.FRAGMENT_CLASS" android:value="com.android.lgesettings.deviceinfo.UsbSettings" />
+            <meta-data android:name="com.android.lgesettings.TOP_LEVEL_HEADER_ID" android:resource="@id/connectivity_settings" />
+        </activity>
+        <activity-alias android:label="@string/sp_usb_connection_type_ex_NORMAL" android:icon="@drawable/shortcut_connectivity" android:name="UsbSettings" android:exported="true" android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|orientation|screenSize" android:targetActivity="Settings$UsbSettingsActivity" android:uiOptions="none" android:parentActivityName="Settings$ConnectivitySettingsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.lgesettings.FRAGMENT_CLASS" android:value="com.android.lgesettings.deviceinfo.UsbSettings" />
+            <meta-data android:name="com.android.lgesettings.TOP_LEVEL_HEADER_ID" android:resource="@id/connectivity_settings" />
+        </activity-alias>
+        <activity android:label="@string/tether_settings_title_usb" android:icon="@drawable/shortcut_connectivity" android:name="Settings$UsbTetheringActivity" android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|orientation|screenSize" android:parentActivityName="Settings$ConnectivitySettingsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.lgesettings.FRAGMENT_CLASS" android:value="com.android.lgesettings.lge.UsbTethering" />
+            <meta-data android:name="com.android.lgesettings.TOP_LEVEL_HEADER_ID" android:resource="@id/connectivity_settings" />
+        </activity>
+        <activity android:label="@string/pc_connection" android:icon="@drawable/shortcut_connectivity" android:name="Settings$ConnectivitySettingsActivity" android:configChanges="orientation|screenSize" android:parentActivityName="Settings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.android.lgesettings.SHORTCUT" />
+            </intent-filter>
+            <meta-data android:name="com.android.lgesettings.FRAGMENT_CLASS" android:value="com.android.lgesettings.lge.ConnectivitySettings" />
+            <meta-data android:name="com.android.lgesettings.TOP_LEVEL_HEADER_ID" android:resource="@id/connectivity_settings" />
+        </activity>
+        <activity android:label="@string/sp_auto_launch_NORMAL" android:icon="@drawable/shortcut_auto_launch" android:name="Settings$AutoLaunchSettingsActivity" android:configChanges="orientation|screenSize" android:parentActivityName="Settings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.lgesettings.FRAGMENT_CLASS" android:value="com.android.lgesettings.lge.AutoLaunchSettings" />
+            <meta-data android:name="com.android.lgesettings.TOP_LEVEL_HEADER_ID" android:resource="@id/auto_launch_settings" />
+        </activity>
+        <activity android:theme="@style/Settings.Theme.Holo.Panel" android:name="com.android.lgesettings.DateTimePickerTime" android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.android.lgesettings.DateTimePickerDate" android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/sp_connectivity_helper_NORMAL" android:icon="@drawable/shortcut_connectivity" android:name="Settings$ConnectivityHelperPopupActivity" android:uiOptions="none" android:parentActivityName="Settings$ConnectivitySettingsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.android.lgesettings.SHORTCUT" />
+            </intent-filter>
+            <meta-data android:name="com.android.lgesettings.FRAGMENT_CLASS" android:value="com.android.lgesettings.lge.ConnectivityHelperPopup" />
+            <meta-data android:name="com.android.lgesettings.TOP_LEVEL_HEADER_ID" android:resource="@id/connectivity_settings" />
+        </activity>
+        <receiver android:name=".users.ProfileUpdateReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Contacts.PROFILE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".deviceinfo.UsbSettingsReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.hardware.usb.action.USB_STATE" />
+                <action android:name="com.lge.setup_wizard.AUTORUNON" />
+                <action android:name="com.lge.intent.action.autorun_timeout" />
+                <action android:name="com.lge.intent.action.autorun_ack" />
+                <action android:name="com.lge.intent.action.autorun_change_mode" />
+                <action android:name="android.net.conn.TETHER_STATE_CHANGED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BAD_REMOVAL" />
+                <action android:name="android.intent.action.MEDIA_REMOVED" />
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <data android:scheme="file" />
+            </intent-filter>
+        </receiver>
+        <activity android:name=".deviceinfo.AutorunSwitch">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Settings.Theme.Translucent" android:name=".deviceinfo.UsbSettingsPopup" android:excludeFromRecents="true" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:label="@string/sp_connectivity_helper_NORMAL" android:icon="@drawable/shortcut_connectivity" android:name=".lge.UsbTetheringHelp" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".deviceinfo.UsbTetherIntroUSCActivity" android:excludeFromRecents="true" android:configChanges="orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Settings.Theme.Holo.Dialog.Alert" android:name=".deviceinfo.TetherPopupKDDIActivity" android:excludeFromRecents="true" android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".users.ProfileUpdateReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Contacts.PROFILE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <activity android:label="@string/notification_led" android:icon="@drawable/ic_notification_led" android:name="Settings$EmotionalLEDEffectActivity" android:parentActivityName="Settings$DisplaySettingsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity-alias android:label="@string/notification_led" android:icon="@drawable/ic_notification_led" android:name=".lge.EmotionalLEDEffect" android:targetActivity="Settings$EmotionalLEDEffectActivity">
+            <intent-filter>
+                <action android:name="lge.settings.search.intent" />
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+            <meta-data android:name="com.android.lgesettings.FRAGMENT_CLASS" android:value="com.android.lgesettings.lge.EmotionalLEDEffect" />
+            <meta-data android:name="lge.settings.search.intent.INFORMATION" android:value="this is my funtion" />
+        </activity-alias>
+        <activity android:label="@string/sp_emotional_led_reminder_title" android:icon="@drawable/ic_notification_led" android:name=".lge.EmotionalLEDReminder">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="lge.settings.search.intent" />
+            </intent-filter>
+            <meta-data android:name="lge.settings.search.intent.INFORMATION" android:value="this is my funtion" />
+        </activity>
+        <activity android:label="@string/sp_quiet_mode_title" android:icon="@drawable/ic_quietmode" android:name=".quietmode.QuietModeMainActivity" android:exported="true" android:clearTaskOnLaunch="true" android:launchMode="singleInstance" android:configChanges="keyboardHidden|orientation|screenSize" android:parentActivityName="Settings$SoundSettingsActivity">
+            <intent-filter>
+                <action android:name="lge.settings.search.intent" />
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.lge.settings.QUIET_MODE_SETTING" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="lge.settings.search.intent.INFORMATION" android:value="this is my funtion" />
+        </activity>
+        <activity-alias android:label="@string/screen_off_effect_title" android:icon="@drawable/shortcut_screen_off_effect" android:name=".lge.ScreenOffEffect" android:configChanges="keyboardHidden|orientation|screenSize" android:targetActivity="Settings$DisplaySettingsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="lge.settings.search.intent" />
+            </intent-filter>
+            <meta-data android:name="com.android.lgesettings.FRAGMENT_CLASS" android:value="com.android.lgesettings.lge.ScreenOffEffect" />
+            <meta-data android:name="lge.settings.search.intent.INFORMATION" android:value="this is my funtion" />
+        </activity-alias>
+        <activity-alias android:label="@string/screen_off_effect_title" android:icon="@drawable/shortcut_screen_off_effect" android:name=".lge.KnockOnTablet" android:configChanges="keyboardHidden|orientation|screenSize" android:targetActivity="Settings$DisplaySettingsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="lge.settings.search.intent" />
+            </intent-filter>
+            <meta-data android:name="com.android.lgesettings.FRAGMENT_CLASS" android:value="com.android.lgesettings.lge.KnockOnTablet" />
+            <meta-data android:name="lge.settings.search.intent.INFORMATION" android:value="this is my funtion" />
+        </activity-alias>
+        <activity android:label="@string/screen_mode_title" android:icon="@drawable/shortcut_screenmode" android:name=".lge.ScreenMode" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="lge.settings.search.intent" />
+            </intent-filter>
+            <meta-data android:name="lge.settings.search.intent.INFORMATION" android:value="this is my funtion" />
+        </activity>
+        <activity android:theme="@*android:style/Theme.Holo.NoActionBar" android:label="@string/screen_off_effect_title" android:name=".lge.ScreenOffEttectAni" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="lge.settings.search.intent" />
+            </intent-filter>
+            <meta-data android:name="lge.settings.search.intent.INFORMATION" android:value="this is my funtion" />
+        </activity>
+        <activity-alias android:icon="@drawable/notification_flash" android:name=".lge.LedLightSetting" android:targetActivity="Settings$DisplaySettingsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="lge.settings.search.intent" />
+            </intent-filter>
+            <meta-data android:name="com.android.lgesettings.FRAGMENT_CLASS" android:value="com.android.lgesettings.lge.LedLightSetting" />
+            <meta-data android:name="lge.settings.search.intent.INFORMATION" android:value="this is my funtion" />
+        </activity-alias>
+        <activity-alias android:label="@string/sp_front_touch_key_light" android:icon="@drawable/front_key_light" android:name=".lge.FrontKeyLight" android:targetActivity="Settings$DisplaySettingsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="lge.settings.search.intent" />
+            </intent-filter>
+            <meta-data android:name="com.android.lgesettings.FRAGMENT_CLASS" android:value="com.android.lgesettings.lge.FrontKeyLight" />
+            <meta-data android:name="lge.settings.search.intent.INFORMATION" android:value="this is my funtion" />
+        </activity-alias>
+        <activity android:label="@string/sp_settings_slideaside" android:icon="@drawable/shortcut_multitasking" android:name="Settings$MultiTaskingSettingsActivity" android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|orientation" android:parentActivityName="Settings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.lge.settings.MULTITASKING_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.lgesettings.FRAGMENT_CLASS" android:value="com.android.lgesettings.MultiTaskingSettings" />
+            <meta-data android:name="com.android.lgesettings.TOP_LEVEL_HEADER_ID" android:resource="@id/settings_multitasking" />
+        </activity>
+    </application>
+</manifest>

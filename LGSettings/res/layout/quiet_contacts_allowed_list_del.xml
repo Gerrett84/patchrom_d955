@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/empty_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ListView android:id="@*android:id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" android:scrollingCache="false" />
+        <ImageView android:id="@id/last_line" android:background="@color/divider_colorEx" android:focusable="false" android:layout_width="fill_parent" android:layout_height="@dimen/list_divider_heightEx" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/bottomLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:measureWithLargestChild="true" android:layoutDirection="ltr" style="?android:attr/buttonBarStyle">
+        <Button android:id="@id/cancel_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/dlg_cancel" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+        <Button android:id="@id/ok_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/delete" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

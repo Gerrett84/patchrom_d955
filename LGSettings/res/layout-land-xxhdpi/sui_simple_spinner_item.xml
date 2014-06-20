@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="29.0dip" android:typeface="sans" android:textStyle="normal" android:textColor="@*android:color/black" android:ellipsize="end" android:gravity="center" android:id="@id/suid_text1" android:paddingTop="1.0dip" android:paddingBottom="4.3299866dip" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="83.32999dip" android:singleLine="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

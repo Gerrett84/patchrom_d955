@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="350.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/smartvideo_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/settings_smartvideo_image_land" android:scaleType="fitStart" android:layout_marginStart="8.0dip" />
+    <ScrollView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.36">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="15.269989sp" android:id="@id/smartsvideo_desc_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/display_help_desc_title" android:layout_weight="0.0" android:layout_marginStart="1.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.0">
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="15.269989sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/display_help_desc_hyphen" android:layout_marginStart="1.0dip" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="15.269989sp" android:id="@id/smartvideo_desc1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/display_help_desc_1_ex" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.0">
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="15.269989sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/display_help_desc_hyphen" android:layout_marginStart="1.0dip" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="15.269989sp" android:id="@id/smartvideo_desc2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/display_help_desc_2" />
+            </LinearLayout>
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="15.269989sp" android:id="@id/smartvideo_desc3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/display_smart_video_popup_warning" android:layout_weight="0.0" android:layout_marginStart="1.0dip" />
+            <CheckBox android:textSize="16.0sp" android:textStyle="bold" android:id="@id/checkbox_donotshow_video" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sp_keepscreenon_skip" android:layout_weight="0.0" android:layout_marginStart="1.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

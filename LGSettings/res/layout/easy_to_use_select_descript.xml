@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/help" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18.0sp" android:id="@id/themeName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="14.5dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="17.0dip" />
+            <ViewFlipper android:layout_gravity="center_horizontal" android:id="@id/hint_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginBottom="5.0dip" android:measureAllChildren="false">
+                <ImageView android:gravity="center" android:id="@id/image_home" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:gravity="center" android:id="@id/image_call" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:gravity="center" android:id="@id/image_lock" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </ViewFlipper>
+            <TextView android:textSize="18.0sp" android:id="@id/theme_desc1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/easytouse_home_starter_desc1" />
+            <TextView android:textSize="18.0sp" android:id="@id/theme_desc2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/navi_zero" android:background="@drawable/lg_easyui_setting_dot_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="12.5dip" />
+        <ImageView android:id="@id/navi_one" android:background="@drawable/lg_easyui_setting_dot_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="12.5dip" />
+        <ImageView android:id="@id/navi_two" android:background="@drawable/lg_easyui_setting_dot_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:measureWithLargestChild="true" style="?android:attr/buttonBarStyle">
+        <Button android:id="@id/back_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/btn_close" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+        <Button android:id="@id/center_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/easytouse_back" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+        <Button android:id="@id/next_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/easytouse_next" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

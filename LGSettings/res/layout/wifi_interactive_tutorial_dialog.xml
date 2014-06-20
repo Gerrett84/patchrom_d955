@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="17.329987sp" android:textStyle="bold" android:gravity="start|end|fill_horizontal|center" android:layout_gravity="start" android:id="@id/tutorial_start_msg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sp_wifi_inter_help_start_dialog_msg_2" android:layout_marginStart="0.0dip" android:layout_marginEnd="8.0dip" />
+            <CheckBox android:textStyle="bold" android:layout_gravity="start|bottom|center" android:id="@id/do_not_show_again" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:text="@string/sp_do_not_show_again_NORMAL" android:includeFontPadding="false" android:layout_marginStart="8.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

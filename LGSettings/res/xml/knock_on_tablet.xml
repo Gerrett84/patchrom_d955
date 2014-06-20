@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:icon="@drawable/ic_settings_gesture" android:title="@string/gesture_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/gesture_title_turn_screen_on" android:key="key_knock_on" android:summary="@string/gesture_summary_turn_screen_on_tablet" android:defaultValue="false" />
+    <PreferenceCategory android:title="@string/tethering_help_button_text" android:key="knock_on_category" />
+</PreferenceScreen>

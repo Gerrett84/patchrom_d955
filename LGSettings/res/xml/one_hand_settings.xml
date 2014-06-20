@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:icon="@drawable/ic_settings_gesture" android:title="@string/one_handed_operation" android:key="one_handed_operation"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.lgesettings">
+    <CheckBoxPreference android:title="@string/sp_one_hand_dial_keypad_title_NORMAL" android:key="one_hand_dial_keypad" android:summary="@string/sp_one_hand_dial_keypad_summary2_NORMAL" />
+    <CheckBoxPreference android:title="@string/sp_one_hand_lg_keyboard_title_NORMAL" android:key="one_hand_lg_keyboard" android:summary="@string/sp_one_hand_lg_keyboard_summary3_NORMAL" />
+    <CheckBoxPreference android:title="@string/sp_one_hand_gesture_control_title_NORMAL" android:key="one_hand_keyboard_gesture" android:summary="@string/sp_one_hand_keyboard_gesture_summary3_NORMAL" android:dependency="one_hand_lg_keyboard" />
+    <CheckBoxPreference android:title="@string/sp_one_hand_lockscreen_title_NORMAL" android:key="one_hand_lockscreen" android:summary="@string/sp_one_hand_lockscreen_summary2_NORMAL" />
+    <CheckBoxPreference android:title="@string/sp_one_hand_front_touch_buttons_title_NORMAL" android:key="one_hand_front_touch_button" android:summary="@string/sp_one_hand_front_touch_buttons_summary_NORMAL" />
+    <CheckBoxPreference android:title="@string/sp_one_hand_navigation_button_title_NORMAL" android:key="one_hand_floating_front_touch_button" android:summary="@string/sp_one_hand_navigation_button_summary2_NORMAL" />
+    <CheckBoxPreference android:title="@string/sp_one_hand_pull_down_screen_title_NORMAL" android:key="one_hand_pull_down_screen" android:summary="@string/sp_one_hand_pull_down_screen_summary_NORMAL" />
+    <PreferenceScreen android:title="@string/sp_one_hand_category_help_NOMAL" android:key="one_hand_help" android:fragment="com.android.lgesettings.OneHandOperationHelp" />
+</PreferenceScreen>

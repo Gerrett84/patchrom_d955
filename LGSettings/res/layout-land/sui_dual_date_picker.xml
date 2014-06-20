@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_horizontal" android:id="@id/suid_dualdate_spinners" android:tag="NO_R2L" android:layout_width="wrap_content" android:layout_height="130.0dip" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.lge.sui.widget.control.SUINumberPicker android:layout_gravity="center" android:id="@id/suid_dualdate_type" android:layout_width="70.0dip" android:layout_height="fill_parent" android:foregroundGravity="center" />
+    <com.lge.sui.widget.control.SUINumberPicker android:layout_gravity="center" android:id="@id/suid_dualdate_month" android:layout_width="85.0dip" android:layout_height="fill_parent" android:foregroundGravity="center" />
+    <com.lge.sui.widget.control.SUINumberPicker android:layout_gravity="center" android:id="@id/suid_dualdate_day" android:layout_width="70.0dip" android:layout_height="fill_parent" android:foregroundGravity="center" />
+    <com.lge.sui.widget.control.SUINumberPicker android:layout_gravity="center" android:id="@id/suid_dualdate_year" android:layout_width="95.0dip" android:layout_height="fill_parent" android:foregroundGravity="center" />
+</LinearLayout>

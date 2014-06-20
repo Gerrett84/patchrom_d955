@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/bottom" android:background="@*android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0" android:layout_alignParentBottom="true" android:layoutDirection="ltr">
+        <Button android:ellipsize="marquee" android:id="@id/backButton" android:background="@drawable/button_background_4_0" android:focusable="true" android:layout_width="0.0dip" android:layout_height="48.0dip" android:layout_marginLeft="9.329987dip" android:layout_marginTop="0.25dip" android:layout_marginBottom="2.0dip" android:text="@string/wifi_setup_back" android:singleLine="true" android:layout_weight="1.0" android:marqueeRepeatLimit="marquee_forever" style="@style/startup_wizard_command_bar_normal" />
+        <Button android:ellipsize="marquee" android:id="@id/nextButton" android:background="@drawable/button_background_4_0" android:focusable="true" android:layout_width="0.0dip" android:layout_height="48.0dip" android:layout_marginTop="0.25dip" android:layout_marginRight="9.329987dip" android:layout_marginBottom="2.0dip" android:text="@string/next_label" android:singleLine="true" android:layout_weight="1.0" style="@style/startup_wizard_command_bar_normal" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,75 @@
+diff -rup ../telephony-common/smali/com/android/internal/telephony/gsm/GsmServiceStateTracker$Injector.smali ../telephony-common/smali/com/android/internal/telephony/gsm/GsmServiceStateTracker$Injector.smali
+--- ../telephony-common/smali/com/android/internal/telephony/gsm/GsmServiceStateTracker$Injector.smali	2014-05-31 16:46:07.000000000 +0200
++++ ../telephony-common/smali/com/android/internal/telephony/gsm/GsmServiceStateTracker$Injector.smali	2014-05-31 17:00:40.059327576 +0200
+@@ -31,24 +31,18 @@
+     .parameter "operator"
+ 
+     .prologue
+-    .line 90
+     move-object v0, p1
+ 
+-    .line 91
+     .local v0, plmn:Ljava/lang/String;
+-    invoke-virtual {p0}, Lcom/android/internal/telephony/gsm/GsmServiceStateTracker;->getIccRecords()Lcom/android/internal/telephony/IccRecords;
++    iget-object v1, p0, Lcom/android/internal/telephony/gsm/GsmServiceStateTracker;->mIccRecords:Lcom/android/internal/telephony/uicc/IccRecords;
+ 
+-    move-result-object v1
+-
+-    .line 92
+-    .local v1, records:Lcom/android/internal/telephony/IccRecords;
++    .local v1, records:Lcom/android/internal/telephony/uicc/IccRecords;
+     if-eqz v1, :cond_0
+ 
+-    .line 93
+-    check-cast v1, Lcom/android/internal/telephony/gsm/SIMRecords;
++    check-cast v1, Lcom/android/internal/telephony/uicc/SIMRecords;
+ 
+-    .end local v1           #records:Lcom/android/internal/telephony/IccRecords;
+-    iget-object v2, v1, Lcom/android/internal/telephony/gsm/SIMRecords;->mSpnOverride:Lcom/android/internal/telephony/gsm/SpnOverride;
++    .end local v1           #records:Lcom/android/internal/telephony/uicc/IccRecords;
++    iget-object v2, v1, Lcom/android/internal/telephony/uicc/SIMRecords;->mSpnOverride:Lcom/android/internal/telephony/uicc/SpnOverride;
+ 
+     iget-object v3, p0, Lcom/android/internal/telephony/gsm/GsmServiceStateTracker;->ss:Landroid/telephony/ServiceState;
+ 
+@@ -56,7 +50,7 @@
+ 
+     move-result-object v3
+ 
+-    invoke-virtual {v2, v3}, Lcom/android/internal/telephony/gsm/SpnOverride;->getSpn(Ljava/lang/String;)Ljava/lang/String;
++    invoke-virtual {v2, v3}, Lcom/android/internal/telephony/uicc/SpnOverride;->getSpn(Ljava/lang/String;)Ljava/lang/String;
+ 
+     move-result-object v0
+ 
+@@ -86,26 +80,24 @@
+ 
+     .line 103
+     .local v1, spn:Ljava/lang/String;
+-    invoke-virtual {p0}, Lcom/android/internal/telephony/gsm/GsmServiceStateTracker;->getIccRecords()Lcom/android/internal/telephony/IccRecords;
+-
+-    move-result-object v0
++    iget-object v0, p0, Lcom/android/internal/telephony/gsm/GsmServiceStateTracker;->mIccRecords:Lcom/android/internal/telephony/uicc/IccRecords;
+ 
+     .line 104
+-    .local v0, records:Lcom/android/internal/telephony/IccRecords;
++    .local v0, records:Lcom/android/internal/telephony/uicc/IccRecords;
+     if-eqz v0, :cond_0
+ 
+     move-object v2, v0
+ 
+     .line 105
+-    check-cast v2, Lcom/android/internal/telephony/gsm/SIMRecords;
++    check-cast v2, Lcom/android/internal/telephony/uicc/SIMRecords;
+ 
+-    iget-object v2, v2, Lcom/android/internal/telephony/gsm/SIMRecords;->mSpnOverride:Lcom/android/internal/telephony/gsm/SpnOverride;
++    iget-object v2, v2, Lcom/android/internal/telephony/uicc/SIMRecords;->mSpnOverride:Lcom/android/internal/telephony/uicc/SpnOverride;
+ 
+-    invoke-virtual {v0}, Lcom/android/internal/telephony/IccRecords;->getOperatorNumeric()Ljava/lang/String;
++    invoke-virtual {v0}, Lcom/android/internal/telephony/uicc/IccRecords;->getOperatorNumeric()Ljava/lang/String;
+ 
+     move-result-object v3
+ 
+-    invoke-virtual {v2, v3, v1}, Lcom/android/internal/telephony/gsm/SpnOverride;->getSpn(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
++    invoke-virtual {v2, v3, v1}, Lcom/android/internal/telephony/uicc/SpnOverride;->getSpn(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+ 
+     move-result-object v1
+ 

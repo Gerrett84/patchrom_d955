@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="other">የይለፍቃል ቢያንስ %d ቁምፊዎች መያዝ ይኖርበታል</item>
+        <item quantity="one">የይለፍቃል 1 ፊደል ቢያንስ ሊኖረው ይገባል</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="other">የይለፍቃል ቢያንስ %d ንዑስ ሆሄ ፊደላት መያዝ ይኖርበታል</item>
+        <item quantity="one">የይለፍቃል ቢያንስ 1 ንዑስ ሆሄ ፊደል መያዝ ይኖርበታል</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="other">የይለፍቃል ቢያንስ %d ዓቢይ ፊደላትን መያዝ ይኖርበታል</item>
+        <item quantity="one">የይለፍቃል ቢያንስ 1 ዓቢይ ፊደል መያዝ ይኖርበታል</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="other">የይለፍቃል ቢያንስ %d አሃዛዊ ዲጂቶች መያዝ ይኖርበታል</item>
+        <item quantity="one">የይለፍቃል ቢያንስ 1 አሃዛዊ ዲጂት መያዝ ይኖርበታል</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="other">የይለፍቃል ቢያንስ %d ልዩ ምልክቶች መያዝ ይኖርበታል</item>
+        <item quantity="one">የይለፍቃል ቢያንስ 1 ልዩ ምልክት መያዝ ይኖርበታል</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="other">የይለፍቃል ቢያንስ %d ፊደል ያልሆኑ ቁምፊዎችን መያዝ ይኖርበታል</item>
+        <item quantity="one">የይለፍቃል ቢያንስ 1 ፊደል ያልሆነ ቁምፊ መያዝ ይኖርበታል</item>
+    </plurals>
+</resources>

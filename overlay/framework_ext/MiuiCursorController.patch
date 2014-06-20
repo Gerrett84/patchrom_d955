@@ -1,0 +1,62 @@
+diff -rup ../framework_ext/smali/android/widget/MiuiCursorController.smali ../framework_ext/smali/android/widget/MiuiCursorController.smali
+--- ../framework_ext/smali/android/widget/MiuiCursorController.smali	2014-05-13 18:43:33.000000000 +0200
++++ ../framework_ext/smali/android/widget/MiuiCursorController.smali	2014-03-27 17:49:34.000000000 +0100
+@@ -34,8 +34,12 @@
+ # instance fields
+ .field protected mContext:Landroid/content/Context;
+ 
++.field private mEndHandle:Landroid/widget/Editor$SelectionEndHandleView;
++
+ .field protected mOwner:Landroid/widget/Editor;
+ 
++.field private mStartHandle:Landroid/widget/Editor$SelectionStartHandleView;
++
+ .field protected mTextView:Landroid/widget/TextView;
+ 
+ 
+@@ -189,6 +193,16 @@
+     return-object v0
+ .end method
+ 
++.method public getEndHandle()Landroid/widget/Editor$SelectionEndHandleView;
++    .locals 1
++
++    .prologue
++    .line 4716
++    iget-object v0, p0, Landroid/widget/MiuiCursorController;->mEndHandle:Landroid/widget/Editor$SelectionEndHandleView;
++
++    return-object v0
++.end method
++
+ .method public getMaxTouchOffset()I
+     .locals 1
+ 
+@@ -209,6 +223,28 @@
+     return v0
+ .end method
+ 
++.method public getStartHandle()Landroid/widget/Editor$SelectionStartHandleView;
++    .locals 1
++
++    .prologue
++    .line 4708
++    iget-object v0, p0, Landroid/widget/MiuiCursorController;->mStartHandle:Landroid/widget/Editor$SelectionStartHandleView;
++
++    if-eqz v0, :cond_0
++
++    .line 4709
++    iget-object v0, p0, Landroid/widget/MiuiCursorController;->mStartHandle:Landroid/widget/Editor$SelectionStartHandleView;
++
++    .line 4711
++    :goto_0
++    return-object v0
++
++    :cond_0
++    const/4 v0, 0x0
++
++    goto :goto_0
++.end method
++
+ .method public abstract hide()V
+ .end method
+ 

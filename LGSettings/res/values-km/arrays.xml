@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>អាមេរិក</item>
+        <item>អឺរ៉ុប</item>
+        <item>អាហ្វ្រិក</item>
+        <item>អាស៊ី</item>
+        <item>អូស្ត្រាលី</item>
+        <item>ប៉ាស៊ីហ្វិក</item>
+        <item>ទាំងអស់</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 វិនាទី</item>
+        <item>30 វិនាទី</item>
+        <item>1 នាទី</item>
+        <item>2 នាទី</item>
+        <item>5នាទី</item>
+        <item>10 នាទី</item>
+        <item>30 នាទី</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries2_NORMAL">
+        <item>15 វិនាទី</item>
+        <item>30 វិនាទី</item>
+        <item>1 នាទី</item>
+        <item>2 នាទី</item>
+        <item>5នាទី</item>
+        <item>10 នាទី</item>
+        <item>រក្សាអេក្រង់ឲ្យនៅបើក</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL">
+        <item>15 វិនាទី</item>
+        <item>30 វិនាទី</item>
+        <item>1 នាទី</item>
+        <item>2 នាទី</item>
+        <item>5នាទី</item>
+        <item>10 នាទី</item>
+        <item>15 នាទី</item>
+        <item>រក្សាអេក្រង់ឲ្យនៅបើក</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL_ex">
+        <item>15 វិនាទី</item>
+        <item>30 វិនាទី</item>
+        <item>1 នាទី</item>
+        <item>2 នាទី</item>
+        <item>5 នាទី</item>
+        <item>10 នាទី</item>
+        <item>15 នាទី</item>
+        <item>រក្សាអេក្រង់ឲ្យនៅបើក</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled">
+        <item>15 វិនាទី</item>
+        <item>30 វិនាទី</item>
+        <item>1 នាទី</item>
+        <item>2 នាទី</item>
+        <item>5នាទី</item>
+        <item>10 នាទី</item>
+        <item>15 នាទី</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled_ex">
+        <item>15 វិនាទី</item>
+        <item>30 វិនាទី</item>
+        <item>1 នាទី</item>
+        <item>2 នាទី</item>
+        <item>5 នាទី</item>
+        <item>10 នាទី</item>
+        <item>15 នាទី</item>
+    </string-array>
+    <string-array name="sp_pouch_default_clock_entries2_NORMAL">
+        <item>នាឡិកា 1</item>
+        <item>នាឡិកា 2</item>
+        <item>នាឡិកា 3</item>
+        <item>នាឡិកា 4</item>
+        <item>នាឡិកា 5</item>
+        <item>នាឡិកា 6</item>
+        <item>នាឡិកា 7</item>
+        <item>នាឡិកា 8</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries1_NORMAL">
+        <item>អាណាឡុក</item>
+        <item>ឌីជីថល</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_position_entries1_NORMAL">
+        <item>មជ្ឈមណ្ឌល</item>
+        <item>កំពូលខាងស្តាំ</item>
+        <item>កំពូលខាងឆ្វេង</item>
+        <item>បាតស្តាំ</item>
+        <item>បាតឆ្វេង</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_font_entries1_NORMAL">
+        <item>ឈ្មោះពុម្ពអក្សរ1</item>
+        <item>ឈ្មោះពុម្ពអក្សរ2</item>
+    </string-array>
+    <string-array name="sp_sound_profile_entries_NORMAL">
+        <item>សំឡេង</item>
+        <item>តែញ័រប៉ុណ្ណោះ</item>
+        <item>ស្ងាត់</item>
+    </string-array>
+    <string-array name="dream_timeout_entries">
+        <item>មិនដែល</item>
+        <item>15 វិនាទី</item>
+        <item>30 វិនាទី</item>
+        <item>1 នាទី</item>
+        <item>2 នាទី</item>
+        <item>5នាទី</item>
+        <item>10 នាទី</item>
+        <item>30 នាទី</item>
+    </string-array>
+    <string-array name="lock_after_timeout_entries">
+        <item>ភ្លាមៗ</item>
+        <item>"5  វិនាទី"</item>
+        <item>15 វិនាទី</item>
+        <item>30 វិនាទី</item>
+        <item>1 នាទី</item>
+        <item>2 នាទី</item>
+        <item>5នាទី</item>
+        <item>10 នាទី</item>
+        <item>30 នាទី</item>
+    </string-array>
+    <string-array name="sp_lock_after_timeout_entries_NORMAL">
+        <item>ភ្លាមៗ</item>
+        <item>15 វិនាទី</item>
+        <item>30 វិនាទី</item>
+        <item>1 នាទី</item>
+        <item>2 នាទី</item>
+        <item>10 នាទី</item>
+        <item>30 នាទី</item>
+    </string-array>
+    <string-array name="entries_font_size">
+        <item>&amp;lt;font size=16 align=middle>តូច&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>ធម្មតា&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>ធំ&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>ធំខ្លាំង&amp;lt;/font></item>
+    </string-array>
+    <string-array name="sp_entries_font_size2">
+        <item>&amp;lt;font size=14 align=middle>អប្បបរមា&amp;lt;/font></item>
+        <item>&amp;lt;font size=16 align=middle>តូច&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>មធ្យម&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>ធំ&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>ធំខ្លាំង&amp;lt;/font></item>
+        <item>&amp;lt;font size=27 align=middle>ធំបំផុត&amp;lt;/font></item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>យឺតណាស់</item>
+        <item>យឺត</item>
+        <item>ធម្មតា</item>
+        <item>លឿន</item>
+        <item>លឿនណាស់</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>ទាបណាស់</item>
+        <item>ទាប</item>
+        <item>ធម្មតា</item>
+        <item>ខ្ពស់</item>
+        <item>ខ្ពស់ណាស់</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>កំពុងស្កេន...</item>
+        <item>កំពុងភ្ជាប់</item>
+        <item>កំពុងធ្វើការបញ្ជាក់…</item>
+        <item>កំពុងទទួលអាសយដ្ឋាន IP ...</item>
+        <item>បានភ្ជាប់</item>
+        <item>បានផ្អាក</item>
+        <item>កំពុងផ្ដាច់…</item>
+        <item>បានផ្ដាច់</item>
+        <item>មិនជោគជ័យ</item>
+        <item>បានទប់ស្កាត់</item>
+        <item>កំពុងចៀសវាង​ការតភ្ជាប់ខ្សោយ​ជា​បណ្តោះអាសន្ន</item>
+        <item>កំពុងចៀសវាង​ការតភ្ជាប់ខ្សោយ​ជា​បណ្តោះអាសន្ន</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>កំពុងស្កេន...</item>
+        <item>កំពុងតភ្ជាប់ទៅ %1$s</item>
+        <item>កំពុងផ្ទៀងផ្ទាត់ភាព​ត្រឹមត្រូវ​​ជាមួយ %1$s...</item>
+        <item>កំពុងទទួល​អាសយដ្ឋាន IP ​ពី %1$s...</item>
+        <item>បានតភ្ជាប់ទៅ %1$s</item>
+        <item>បានផ្អាក</item>
+        <item>ផ្ដាច់ពី %1$s…</item>
+        <item>បានផ្ដាច់</item>
+        <item>មិនជោគជ័យ</item>
+        <item>បានទប់ស្កាត់</item>
+        <item>កំពុងចៀសវាង​ការតភ្ជាប់ខ្សោយ​ជា​បណ្តោះអាសន្ន</item>
+    </string-array>
+    <string-array name="wifi_ap_security">
+        <item>បើក</item>
+        <item>WPA PSK</item>
+        <item>WPA2 PSK</item>
+    </string-array>
+    <string-array name="wifi_p2p_wps_setup">
+        <item>ប៊ូតុងរុញ</item>
+        <item>PIN ពីឧបករណ៍នេះ</item>
+    </string-array>
+    <string-array name="wifi_p2p_status">
+        <item>បានភ្ជាប់</item>
+        <item>កំពុងតភ្ជាប់​តាម</item>
+        <item>មិនជោគជ័យ</item>
+        <item>អាចប្រើបាន</item>
+        <item>ក្រៅដែន</item>
+    </string-array>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>2 នាទី</item>
+        <item>5នាទី</item>
+        <item>1 ម៉ោង</item>
+        <item>មិនដែលហួសម៉ោង</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>ខ្សោយ</item>
+        <item>មធ្យម</item>
+        <item>ល្អ</item>
+        <item>ល្អណាស់</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>តែងតែ</item>
+        <item>តែពេលដែលដោតចូលប៉ុណ្ណោះ</item>
+        <item>Wi-Fi បិទ(ដោយសារ​ការប្រើទិន្នន័យ)</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <item>តែងតែ</item>
+        <item>តែពេលដែលដោតចូលប៉ុណ្ណោះ</item>
+        <item>Wi-Fi បានបិទ</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_entries">
+        <item>ស្វ័យប្រវត្តិ</item>
+        <item>តែ 5 GHz ប៉ុណ្ណោះ</item>
+        <item>តែ 2.4 GHz</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>ពេលវេលាប្រើ</item>
+        <item>ការរាប់ការបើក</item>
+        <item>ឈ្មោះកម្មវិធី</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>គ្មាន</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_network_setup">
+        <item>បិទ</item>
+        <item>ប៊ូតុងរុញ</item>
+        <item>PIN ពី​ចំណុចបើក</item>
+        <item>PIN ពីឧបករណ៍នេះ</item>
+    </string-array>
+    <string-array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>មិនអាចប្ដូរ</item>
+    </string-array>
+    <string-array name="wifi_proxy_settings">
+        <item>គ្មាន</item>
+        <item>ដោយដៃ</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>បិទ</item>
+        <item>ការឲ្យដំណឹង</item>
+        <item>ញ័រ</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>គ្មាន</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP ឬ CHAP</item>
+    </string-array>
+    <string-array name="bearer_entries">
+        <item>LTE</item>
+        <item>eHRPD</item>
+        <item>មិនបញ្ជាក់</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>ឧបករណ៍ផ្ទុកខាងក្នុង</item>
+        <item>កាត SD ដែលអាចយកចេញបាន</item>
+        <item>អនុញ្ញាតឲ្យប្រព័ន្ធសំរេច</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>តែងតែ</item>
+        <item>មិនដែល</item>
+        <item>សម្រាប់តែក្នុងម៉ូដស្ងាត់</item>
+        <item>តែ​ពេល​ដែល​មិន​ស្ថិតក្នុងម៉ូដស្ងាត់​ប៉ុណ្ណោះ</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_titles">
+        <item>ខ្លី</item>
+        <item>មធ្យម</item>
+        <item>វែង</item>
+    </string-array>
+    <string-array name="hdcp_checking_titles">
+        <item>មិនដែលពិនិត្យ</item>
+        <item>តែឯកសារ​ DRMប៉ុណ្ណោះ</item>
+        <item>តែងតែពិនិត្យជានិច្ច</item>
+    </string-array>
+    <string-array name="hdcp_checking_summaries">
+        <item>មិនដែលពិនិត្យ HDCP</item>
+        <item>គ្រាន់តែ​ពិនិត្យ HDCP សម្រាប់​ឯកសារ DRM ប៉ុណ្ណោះ</item>
+        <item>តែងតែពិនិត្យ HDCPជានិច្ច</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>ចលនាបិទ</item>
+        <item>ខ្នាតចលនា 5x</item>
+        <item>ខ្នាតចលនា 1x</item>
+        <item>ខ្នាតចលនា 1.5x</item>
+        <item>ខ្នាតចលនា 2x</item>
+        <item>កម្រិត​ចលនា 5x</item>
+        <item>ខ្នាតចលនា 10x</item>
+    </string-array>
+    <string-array name="transition_animation_scale_entries">
+        <item>ចលនាបិទ</item>
+        <item>ខ្នាតចលនា 5x</item>
+        <item>ខ្នាតចលនា 1x</item>
+        <item>ខ្នាតចលនា 1.5x</item>
+        <item>ខ្នាតចលនា 2x</item>
+        <item>កម្រិត​ចលនា 5x</item>
+        <item>ខ្នាតចលនា 10x</item>
+    </string-array>
+    <string-array name="animator_duration_scale_entries">
+        <item>ចលនាបិទ</item>
+        <item>ខ្នាតចលនា 5x</item>
+        <item>ខ្នាតចលនា 1x</item>
+        <item>ខ្នាតចលនា 1.5x</item>
+        <item>ខ្នាតចលនា 2x</item>
+        <item>កម្រិត​ចលនា 5x</item>
+        <item>ខ្នាតចលនា 10x</item>
+    </string-array>
+    <string-array name="overlay_display_devices_entries">
+        <item>គ្មាន</item>
+        <item>720x480 mdpi</item>
+        <item>1280x720 tvdpi</item>
+        <item>1920x1080 xhdpi</item>
+        <item>1280x720 tvdpi និង 1920x1080 xhdpi</item>
+    </string-array>
+    <string-array name="enable_opengl_traces_entries">
+        <item>គ្មាន</item>
+        <item>Logcat</item>
+        <item>ស៊ីសត្រាស (ក្រាហ្វិក)</item>
+        <item>"ហៅជាជង់លើ  glGetError"</item>
+    </string-array>
+    <string-array name="app_process_limit_entries">
+        <item>ដែនកំណត់ស្តង់ដារ</item>
+        <item>គ្មាន​ដំណើរការ​ផ្ទៃក្រោយ</item>
+        <item>យ៉ាងច្រើន 1 ដំណើរការ</item>
+        <item>យ៉ាងច្រើនបំផុត​ដំណើរការ 2</item>
+        <item>យ៉ាងច្រើន 3 ដំណើរការ</item>
+        <item>យ៉ាងច្រើន 4 ដំណើរការ</item>
+    </string-array>
+    <string-array name="vpn_types_long">
+        <item>PPTP VPN</item>
+        <item>L2TP/IPSec VPN ជាមួយ​លេខ​ចែករំលែកមុន</item>
+        <item>L2TP/IPSec VPN ជាមួយ​វិញ្ញាបនបត្រ</item>
+        <item>IPSec VPN ជាមួយ​លេខ​ចែករំលែកជាមុន​និង​ការបញ្ជាក់ Xauth</item>
+        <item>IPSec VPN ជាមួយវិញ្ញាបនបត្រ និងការផ្ទៀងផ្ទាត់ភាពត្រឹមត្រូវនៃ Xauth</item>
+        <item>IPSec VPN ជាមួយ​វិញ្ញាបនបត្រ​ និង​ការបញ្ជាក់អ៊ីប្រីត</item>
+    </string-array>
+    <string-array name="vpn_states">
+        <item>បានផ្ដាច់</item>
+        <item>កំពុងចាប់ផ្ដើម...</item>
+        <item>កំពុងភ្ជាប់</item>
+        <item>បានភ្ជាប់</item>
+        <item>អស់ពេល</item>
+        <item>មិនជោគជ័យ</item>
+    </string-array>
+    <string-array name="security_settings_premium_sms_values">
+        <item>សួរ</item>
+        <item>កុំអនុញ្ញាត</item>
+        <item>អនុញ្ញាតជានិច្ច</item>
+    </string-array>
+    <string-array name="search_filter">
+        <item>ឧបករណ៍​ទាំងអស់</item>
+        <item>កាស</item>
+        <item>PC</item>
+        <item>ទូរសព្ទ</item>
+        <item>គ្រឿង</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries_NORMAL">
+        <item>រូបភាពអ្នកប្រើ</item>
+        <item>នាឡិកា 1</item>
+        <item>នាឡិកា 2</item>
+        <item>នាឡិកា 3</item>
+        <item>នាឡិកា 4</item>
+        <item>នាឡិកា 5</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL">
+        <item>1.5 វិនាទី</item>
+        <item>"3  វិនាទី"</item>
+        <item>"5  វិនាទី"</item>
+        <item>បើកជានិច្ច</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL_ex">
+        <item>1.5 វិនាទី</item>
+        <item>3 វិនាទី</item>
+        <item>5 វិនាទី</item>
+        <item>បើកជានិច្ច</item>
+    </string-array>
+    <string-array name="sp_front_key_light_l1_NORMAL">
+        <item>"3  វិនាទី"</item>
+        <item>6 វិនាទី</item>
+        <item>10 វិនាទី</item>
+        <item>30 វិនាទី</item>
+        <item>បើកជានិច្ច</item>
+    </string-array>
+    <string-array name="sp_front_key_light_att_NORMAL">
+        <item>3 វិនាទី</item>
+        <item>1 វិនាទី</item>
+        <item>10 វិនាទី</item>
+        <item>30 វិនាទី</item>
+        <item>បើកជានិច្ច</item>
+    </string-array>
+    <string-array name="sp_numlocdisp_entries_NORMAL">
+        <item>បិទ</item>
+        <item>បើក</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_NORMAL">
+        <item>ការព្រមានភាពឯកជន</item>
+        <item>បើអ្នកប្រើ​កម្មវិធីភាគីទី 3 វាអាច​ប្រមូលព័ត៌មានផ្ទាល់ខ្លួនរបស់អ្នក​ដោយផ្ទាល់ ឬ​ត្រូវការ​ឲ្យ​ក្រុមហ៊ុនទូរសព្ទរបសអ្នក​បង្ហាញព័ត៌មានផ្ទាល់ខ្លួនរបស់អ្នក រួមទាំង​ព័ត៌មានទីតាំង (ពេលដែលអាចធ្វើបាន) ទៅ​កាន់​អ្នក​ផ្តល់​កម្មវិធី ឬ​ភាគីទី 3 មួយចំនួនទៀត។</item>
+        <item>តើ​គោលនយោបាយ​ភាពឯកជនមួយណា អនុវត្ត? គោលនយោបាយ​ភាពឯកជន និង​លក្ខខណ្ឌ​ប្រើប្រាស់របស់ក្រុមហ៊ុន​ទូរសព្ទ​អ្នក​ មិន​អនុវត្ត​លើ​កម្មវិធី​លើ​ឧបករណ៍​របស់​អ្នក ដែល​ត្រូវបាន​ផ្គត់ផ្គង់​ទាំងស្រុងដោយ​ភាគីទី 3 ឡើយ។ គោលនយោបាយ​​របស់​ភាគីទី 3 អនុវត្ត​លើ​ការប្រើ​របស់អ្នកនៃ​កម្មវិធីនេះ។</item>
+        <item>តើខ្ញុំអាច​រក​ព័ត៌មានបន្ថែម​អំពីគោលនយោបាយ​របស់​ភាគីទី 3 នៅឯណា? ពិនិត្យ​លក្ខខណ្ឌ​ប្រើប្រាស់​របស់កម្មវិធី និង/ឬ​ គោលនយោបាយ​របស់​អ្នក​ផ្តល់កម្មវិធី សម្រាប់​ព័ត៌មានបន្ថែម​អំពី​​របៀប​ដែល​កម្មវិធី នឹង​ប្រមូល ចូលដំណើរការ និង​លាតត្រដាង​ព័ត៌មានរបស់អ្នក។ គោលនយោបាយ​ភាពឯកជន លក្ខខណ្ឌប្រើប្រាស់ និង​ដំណឹង​ផ្សេងទៀត​សម្រាប់​អ្នក​ប្រើប្រាស់ ប្រហែលជាអាចរកបាន​នៅ​លើ​វែបសាយ​របស់​អ្នក​ផ្តល់។ សូម​ប្រាកដថា អ្នក​គ្មាន​បញ្ហាអ្វី​ជាមួយ​គោលនយោបាយ មុនពេលអ្នក​ប្រើ​កម្មវិធី។</item>
+        <item>តើខ្ញុំអាចរកគោលនយោបាយ​ភាពឯកជន​របស់​ក្រុមហ៊ុន​ទូរសព្ទ​ខ្ញុំ​នៅ​ឯណា? ដាច់ដោយឡែក ប្រសិន​បើ​អ្នក​មាន​សំណួរ​អំពីគោលនយោបាយ​ភាពឯកជន​របស់​ក្រុមហ៊ុន​ទូរសព្ទ​អ្នក សូម​ចូលទៅកាន់​គេហទំព័រ​របស់​ក្រុមហ៊ុន​របស់អ្នក និង​ចុច​លើ​តំណ \"គោលនយោបាយ​ភាពឯកជន\"។</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_spr_NORMAL">
+        <item>ការព្រមានភាពឯកជន Sprint</item>
+        <item>បើសិនជា​អ្នក​ប្រើ​កម្មវិធី​ភាគី​ទី 3 វា​អាច​ប្រមូល​ព័ត៌មាន​ផ្ទាល់ខ្លួន​របស់អ្នក​ដោយ​ផ្ទាល់ ឬ​ទាមទារឲ្យ Sprint បង្ហាញ​ព័ត៌មានផ្ទាល់ខ្លួនរបស់អ្នក ដែលមានដូចជា​ព័ត៌មានទីតាំង (នៅពេល​ដែលមាន) ទៅ​ឲ្យ​អ្នក​ផ្តល់​កម្មវិធី ឬ​ភាគីទី 3 មួយ​ចំនួនផ្សេង​ទៀត​។</item>
+        <item>តើ​គោលនយោបាយ​ភាពឯកជនមួយណា អនុវត្ត? គោលនយោបាយ​ភាពឯកជន​​និង​លក្ខខណ្ឌ​ប្រើប្រាស់របស់ Sprint មិន​អនុវត្ត​លើ​កម្មវិធី​លើ​ឧបករណ៍​របស់​អ្នក ដែល​ត្រូវបាន​ផ្គត់ផ្គង់​ទាំងស្រុងដោយ​ភាគីទី 3 ឡើយ។ គោលនយោបាយ​​របស់​ភាគីទី 3 អនុវត្ត​លើ​ការប្រើ​របស់អ្នកនៃ​កម្មវិធីនេះ។</item>
+        <item>តើខ្ញុំអាច​រក​ព័ត៌មានបន្ថែម​អំពីគោលនយោបាយ​របស់​ភាគីទី 3 នៅឯណា? ពិនិត្យ​លក្ខខណ្ឌ​ប្រើប្រាស់​របស់កម្មវិធី និង/ឬ​ គោលនយោបាយ​របស់​អ្នក​ផ្តល់កម្មវិធី សម្រាប់​ព័ត៌មានបន្ថែម​អំពី​​របៀប​ដែល​កម្មវិធី នឹង​ប្រមូល ចូលដំណើរការ និង​លាតត្រដាង​ព័ត៌មានរបស់អ្នក។ គោលនយោបាយ​ភាពឯកជន លក្ខខណ្ឌប្រើប្រាស់ និង​ដំណឹង​ផ្សេងទៀត​សម្រាប់​អ្នក​ប្រើប្រាស់ ប្រហែលជាអាចរកបាន​នៅ​លើ​វែបសាយ​របស់​អ្នក​ផ្តល់។ សូម​ប្រាកដថា អ្នក​គ្មាន​បញ្ហាអ្វី​ជាមួយ​គោលនយោបាយ មុនពេលអ្នក​ប្រើ​កម្មវិធី។</item>
+        <item>តើខ្ញុំអាចរកគោលនយោបាយ​ភាពឯកជន​របស់ Sprint នៅ​ឯណា? ដាច់ដោយឡែក ប្រសិន​បើ​អ្នក​មាន​សំណួរ​អំពីគោលនយោបាយ​ភាពឯកជន​របស់​ Sprint សូម​ចូលទៅកាន់​គេហទំព័រ​ Sprint.com និង​ចុច​លើ​តំណ \"គោលនយោបាយ​ភាពឯកជន\"។</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_bm_NORMAL">
+        <item>ជំរុញការឲ្យដំណឹងឯកភាពជនទូរសព្ទ</item>
+        <item>បើអ្នក​ប្រើ​កម្ម​វីធី​ភាគីទី 3 វា​អាច​ប្រមូលព័ត៌មាន​ផ្ទាល់ខ្លួន​របស់អ្នក​ដោយផ្ទាល់ ឬ​ត្រូវការ​ Boost Mobile ដើម្បី​លាត​ត្រដាង​ព័ត៌មាន​ផ្ទាល់ខ្លួនរបស់អ្នក ដោយ​រួមទាំង​ព័ត៌មានទីតាំង (ពេលដែលមាន) ទៅ​ឲ្យ​អ្នក​ផ្គត់ផ្គង់​កម្មវិធី ឬ​ភាគី​ទី 3 មួយចំនួន។</item>
+        <item>តើ​គោលនយោបាយ​ភាពឯកជនមួយណា អនុវត្ត? គោលនយោបាយ​ភាពឯកជន​និង​លក្ខខណ្ឌ​ប្រើប្រាស់របស់ Boost Mobile មិន​អនុវត្ត​លើ​កម្មវិធី​លើ​ឧបករណ៍​របស់​អ្នក ដែល​ត្រូវបាន​ផ្គត់ផ្គង់​ទាំងស្រុងដោយ​ភាគីទី 3 ឡើយ។ គោលនយោបាយ​​របស់​ភាគីទី 3 អនុវត្ត​លើ​ការប្រើ​របស់អ្នកនៃ​កម្មវិធីនេះ។</item>
+        <item>តើខ្ញុំអាច​រក​ព័ត៌មានបន្ថែម​អំពីគោលនយោបាយ​របស់​ភាគីទី 3 នៅឯណា? ពិនិត្យ​លក្ខខណ្ឌ​ប្រើប្រាស់​របស់កម្មវិធី និង/ឬ​ គោលនយោបាយ​របស់​អ្នក​ផ្តល់កម្មវិធី សម្រាប់​ព័ត៌មានបន្ថែម​អំពី​​របៀប​ដែល​កម្មវិធី នឹង​ប្រមូល ចូលដំណើរការ និង​លាតត្រដាង​ព័ត៌មានរបស់អ្នក។ គោលនយោបាយ​ភាពឯកជន លក្ខខណ្ឌប្រើប្រាស់ និង​ដំណឹង​ផ្សេងទៀត​សម្រាប់​អ្នក​ប្រើប្រាស់ ប្រហែលជាអាចរកបាន​នៅ​លើ​វែបសាយ​របស់​អ្នក​ផ្តល់។ សូម​ប្រាកដថា អ្នក​គ្មាន​បញ្ហាអ្វី​ជាមួយ​គោលនយោបាយ មុនពេលអ្នក​ប្រើ​កម្មវិធី។</item>
+        <item>"តើខ្ញុំអាច​រក​គោលនយោបាយ​ភាពឯកជន​របស់ Booth Mobile បាន​នៅឯណា?
+ដាច់​ដោយឡែក បើអ្នក​មាន​សំណួរ​អំពីរ​គោលនយោបាយ​ភាពឯកជនរបស់ Boost Mobile សូម​ចូលទៅកាន់ Boost Mobile.com និង​ចុច​លើ​តំណ​ \"គោលនយោបាយ​ភាព​ឯកជន\"។"</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_virgin_NORMAL">
+        <item>ការព្រមានពីភាពឯកសារ​ Virgin Mobile</item>
+        <item>បើសិនជា​អ្នក​ប្រើ​កម្មវិធី​ភាគី​ទី 3 វា​អាច​ប្រមូល​ព័ត៌មាន​ផ្ទាល់ខ្លួន​របស់អ្នក​ដោយ​ផ្ទាល់ ឬ​ទាមទារឲ្យ Virgin Mobile បង្ហាញ​ព័ត៌មានផ្ទាល់ខ្លួនរបស់អ្នក ដែលមានដូចជា​ព័ត៌មានទីតាំង (នៅពេល​ដែលមាន) ទៅ​ឲ្យ​អ្នក​ផ្តល់​កម្មវិធី ឬ​ភាគីទី 3 មួយ​ចំនួនផ្សេង​ទៀត​។</item>
+        <item>តើគោលនយោបាយ​ភាពឯកសារ​មួយ​ណា​ត្រូវអនុវត្ត? គោលនយោបាយ​ភាពឯកជន និង​លក្ខខណ្ឌ​ប្រើប្រាស់​​របស់ Virgin Mobile មិន​អនុវត្ត​លើ​កម្មវិធី​លើ​ឧបករណ៍​របស់​ដែល ដែល​ត្រូវបាន​ផ្តល់​ឲ្យ​ដោយ​ភាគីទី 3 នោះទេ។ គោលនយោបាយ​របស់​ភាគីទី 3 អនុវត្ត​ទៅ​លើ​ការប្រើប្រាស់​របស់​អ្នក​លើ​កម្មវិធី​នេះ។</item>
+        <item>តើខ្ញុំអាច​រក​ព័ត៌មានបន្ថែម​អំពីគោលនយោបាយ​របស់​ភាគីទី 3 នៅឯណា? ពិនិត្យ​លក្ខខណ្ឌ​ប្រើប្រាស់​របស់កម្មវិធី និង/ឬ​ គោលនយោបាយ​របស់​អ្នក​ផ្តល់កម្មវិធី សម្រាប់​ព័ត៌មានបន្ថែម​អំពី​​របៀប​ដែល​កម្មវិធី នឹង​ប្រមូល ចូលដំណើរការ និង​លាតត្រដាង​ព័ត៌មានរបស់អ្នក។ គោលនយោបាយ​ភាពឯកជន លក្ខខណ្ឌប្រើប្រាស់ និង​ដំណឹង​ផ្សេងទៀត​សម្រាប់​អ្នក​ប្រើប្រាស់ ប្រហែលជាអាចរកបាន​នៅ​លើ​វែបសាយ​របស់​អ្នក​ផ្តល់។ សូម​ប្រាកដថា អ្នក​គ្មាន​បញ្ហាអ្វី​ជាមួយ​គោលនយោបាយ មុនពេលអ្នក​ប្រើ​កម្មវិធី។</item>
+        <item>តើខ្ញុំ​អាច​រក​គោលនយោបាយ​ភាព​ឯកសារ​របស់ Virgin Mobile នៅឯណា? ដាច់ដោយឡែក បើក​អ្នក​មាន​សំណួរ​អំពីគោលនយោបាយ​ភាព​ឯកជន​របស់​ Virgin Mobile សូម​ចូលទៅកាន់ VirginMobileUSA.com ហើយ​ចុច​លើ​តណភ្ជាប់ \"គោលនយោបាយភាពឯកជន\"។</item>
+    </string-array>
+    <string-array name="sp_lock_screen_effect_entries_NORMAL">
+        <item>ធម្មតា</item>
+        <item>អង្កាញ់</item>
+        <item>កំពុង​ចែក​ទឹកថ្នាំ</item>
+        <item>ដំណក់ទឹកសន្សើម</item>
+    </string-array>
+    <string-array name="sp_power_save_brightness_entries_NORMAL">
+        <item>ពន្លឺ 10%</item>
+        <item>ពន្លឺ 20%</item>
+        <item>ពន្លឺ 30%</item>
+        <item>ពន្លឺ 50%</item>
+    </string-array>
+    <string-array name="sp_power_save_screen_timeout_entries_NORMAL">
+        <item>15 វិនាទី</item>
+        <item>30 វិនាទី</item>
+        <item>1 នាទី</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_NORMAL">
+        <item>1.5 វិនាទី</item>
+        <item>បិទជានិច្ច</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_att_NORMAL">
+        <item>"3  វិនាទី"</item>
+        <item>បិទជានិច្ច</item>
+    </string-array>
+    <string-array name="sp_power_save_mode_entries_NORMAL">
+        <item>ថ្ម 10%</item>
+        <item>ថ្ម 20%</item>
+        <item>ថ្ម 30%</item>
+        <item>ថ្ម 50%</item>
+    </string-array>
+    <string-array name="sp_power_save_mode2_entries_NORMAL">
+        <item>ភ្លាមៗ</item>
+        <item>ថ្ម 10%</item>
+        <item>ថ្ម 20%</item>
+        <item>ថ្ម 30%</item>
+        <item>ថ្ម 50%</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries">
+        <item>5នាទី</item>
+        <item>10 នាទី</item>
+        <item>15 នាទី</item>
+    </string-array>
+    <string-array name="sp_hotspot_timeout_entries_mx_NORMAL">
+        <item>កុំអស់ពេល</item>
+        <item>5 នាទី</item>
+        <item>10 នាទី</item>
+        <item>15 នាទី</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries_jb">
+        <item>5 នាទី</item>
+        <item>10 នាទី</item>
+        <item>15 នាទី</item>
+        <item>30 នាទី</item>
+        <item>មិនដែល</item>
+    </string-array>
+    <string-array name="wifi_p2p_timeout_entries">
+        <item>15 នាទី</item>
+        <item>30 នាទី</item>
+        <item>មិនដែល</item>
+    </string-array>
+    <string-array name="sp_wifi_ap_visibility_NORMAL">
+        <item>ការបង្ហាញ</item>
+        <item>លាក់</item>
+    </string-array>
+    <string-array name="sp_bt_search_filter_SHORT">
+        <item>ឧបករណ៍​ទាំងអស់</item>
+        <item>កាស</item>
+        <item>ទូរសព្ទចល័ត</item>
+        <item>PC</item>
+        <item>ឧបករណ៍បញ្ចូល (ក្តារចុច មៅ ។ល។)</item>
+    </string-array>
+    <string-array name="wifi_signal_strength_entries">
+        <item>ខ្លាមង</item>
+        <item>មធ្យម</item>
+        <item>ខ្សោយ</item>
+        <item>បិទ</item>
+    </string-array>
+    <string-array name="wifi_Dual_band_AP_connection_entries">
+        <item>ស្វ័យប្រវត្តិ</item>
+        <item>5 GHz</item>
+        <item>2.4 GHz</item>
+    </string-array>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/accessory_title" android:key="accessory_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.lgesettings">
+    <com.android.lgesettings.lge.ScreenSwitchPreference android:persistent="false" android:title="@string/quickcover_title" android:key="quick_cover_settings" android:summary="@string/quickcover_tablet_summary" android:fragment="com.android.lgesettings.lge.QuickCoverView" />
+    <Preference android:persistent="false" android:title="@string/display_quick_cover_window_title" android:key="quick_cover_window_settings" android:summary="@string/display_quick_cover_window_desc">
+        <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.QuickCaseView" />
+    </Preference>
+    <Preference android:persistent="false" android:title="@string/accessory_quick_case_title" android:key="quick_cover_lollipop_settings" android:summary="@string/lollipop_quick_case_summary" android:fragment="com.android.lgesettings.lge.QuickCaseLollipopSettings" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/sp_car_home_NORMAL" android:key="car_home" android:summary="@string/sp_car_home_summary_NORMAL" />
+    <Preference android:persistent="false" android:title="@string/accessory_usb_storage_title" android:key="usb_storage_settings" />
+    <Preference android:persistent="false" android:title="@string/accessory_earphone_title" android:key="earphone_settings" />
+    <Preference android:persistent="false" android:title="@string/accessory_pen_title" android:key="pen_settings" />
+    <Preference android:persistent="false" android:title="@string/accessory_dock_title" android:key="dock_settings" />
+    <com.android.lgesettings.lge.ScreenSwitchPreference android:persistent="false" android:title="@string/accessory_usb_storage_title" android:key="usb_storage_settings_switch" />
+    <com.android.lgesettings.lge.ScreenSwitchPreference android:persistent="false" android:title="@string/accessory_earphone_title" android:key="earphone_settings_switch" />
+    <com.android.lgesettings.lge.ScreenSwitchPreference android:persistent="false" android:title="@string/accessory_dock_title" android:key="dock_settings_switch" />
+</PreferenceScreen>

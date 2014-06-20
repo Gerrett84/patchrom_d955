@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.669983dip" android:layout_marginTop="13.0dip" android:layout_marginRight="16.669983dip">
+        <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="13.0dip" android:src="@drawable/settings_quietmode_image_land" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.329987dip">
+            <TextView android:textSize="@dimen/help_guide_description_fontsize" android:textStyle="bold" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sp_quiet_mode_schedule_check_popup" />
+            <CheckBox android:textSize="16.0sp" android:textStyle="bold" android:id="@id/checkbox_donotshow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="13.0dip" android:text="@string/sp_keepscreenon_skip" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

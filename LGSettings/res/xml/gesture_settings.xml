@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:icon="@drawable/ic_settings_gesture" android:title="@string/gesture_settings" android:key="gesture_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.lgesettings">
+    <PreferenceCategory android:title="@string/gesture_title_turn_screen_on" android:key="knockon_category" />
+    <CheckBoxPreference android:title="@string/gesture_title_take_screenshot" android:key="gesture_take_screenshot" android:summary="@string/gesture_summay_take_screenshot" />
+    <CheckBoxPreference android:title="@string/gesture_seekbar_screenonoff" android:key="gesture_turn_screen_on" android:summary="@string/gesture_summary_turn_screen_on_fixed" />
+    <CheckBoxPreference android:title="@string/sp_settings_slideaside" android:key="gesture_slide_aside" android:summary="@string/gesture_summary_slide_aside" />
+    <PreferenceCategory android:title="@string/gesture_knockon_answerme" android:key="answering_category" />
+    <CheckBoxPreference android:title="@string/gesture_answer_the_incoming_call" android:key="gesture_answer_the_incoming_call_new" android:summary="@string/gesture_answer_the_incoming_call_summary" />
+    <CheckBoxPreference android:title="@string/gesture_fadeout_ringtone" android:key="gesture_fadeout_ringtone_new" android:summary="@string/gesture_fade_out_ringtone_summary" />
+    <CheckBoxPreference android:title="@string/sp_gesture_title_call_NORMAL" android:key="gesture_calls" android:summary="@string/sp_gesture_summary_calls_NOMAL" />
+    <CheckBoxPreference android:title="@string/gesture_turn_onoff_speakerphone" android:key="gesture_turn_onoff_speakerphone_new" android:summary="@string/gesture_turn_onoff_speakerphone_summary" />
+    <PreferenceCategory android:title="@string/gesture_knockon_others" android:key="other_category" />
+    <CheckBoxPreference android:title="@string/gesture_title_hide_display" android:key="gesture_hide_display" android:summary="@string/gesture_summary_hide_display" />
+    <CheckBoxPreference android:title="@string/gesture_alarm_menu_title" android:key="gesture_alarm" android:summary="@string/gesture_alarm_menu_summary" />
+    <CheckBoxPreference android:title="@string/sp_gesture_title_video_NORMAL" android:key="gesture_video" android:summary="@string/sp_gestures_summary_video_NORMAL" />
+    <CheckBoxPreference android:title="@string/sp_gesture_title_home_NORMAL" android:key="gesture_homescreen" android:summary="@string/gesture_move_home_fixed" />
+    <Preference android:title="@string/sp_gesture_category_help_NOMAL" android:key="gesture_help" android:fragment="com.android.lgesettings.GestureHelp" />
+    <PreferenceCategory android:title="@string/sp_sensor_NORMAL" android:key="font_category" />
+    <Preference android:persistent="false" android:title="@string/sp_motion_sensor_calibration_NORMAL" android:key="motion_sensor_calibration" android:summary="@string/sp_motion_sensor_calibration_summary_NORMAL">
+        <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.lge.MotionSensorCalibration" />
+    </Preference>
+</PreferenceScreen>

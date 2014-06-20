@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v4.view.ViewPager android:orientation="vertical" android:id="@id/pager" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/BtnLayout" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/page_mark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layoutDirection="ltr" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/One_Button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:layout_marginBottom="0.0dip" android:layout_marginStart="0.0dip" android:layout_marginEnd="0.0dip" style="?android:attr/buttonBarStyle">
+                <Button android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff000000" android:gravity="center" android:layout_gravity="center" android:id="@id/btnOk" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/bt_error_btn_ok" style="?android:attr/buttonBarButtonStyle" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/Two_Button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layoutDirection="ltr" style="?android:attr/buttonBarStyle">
+                <Button android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff000000" android:gravity="center" android:layout_gravity="center" android:id="@id/btnBack" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/sp_BackButton_NORMAL" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+                <Button android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff000000" android:gravity="center" android:layout_gravity="center" android:id="@id/btnNext" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/sp_NextButton_NORMAL" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

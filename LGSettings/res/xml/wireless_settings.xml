@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/wireless_networks_settings_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:persistent="false" android:title="@string/airplane_mode" android:key="toggle_airplane" android:disableDependentsState="true" />
+    <PreferenceScreen android:title="@string/wireless_storage_settings" android:key="network_storage_settings" android:summary="@string/wireless_storage_settings_info">
+        <intent android:targetPackage="com.lge.wireless_storage" android:action="android.intent.action.MAIN" android:targetClass="com.lge.wireless_storage.NetworkStorageSettings" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/sp_wifi_hotspot_NORMAL" android:key="tether_settings" android:summary="@string/sp_wifi_hotspot_summary_NORMAL" android:fragment="com.android.lgesettings.TetherSettings" />
+    <PreferenceScreen android:title="@string/tether_settings_title_usb" android:key="usb_tether_settings" android:summary="@string/sp_tether_settings_summary_usb_NORMAL" android:fragment="com.android.lgesettings.lge.UsbTethering" />
+    <PreferenceScreen android:title="@string/wimax_settings" android:key="wimax_settings" android:summary="@string/wimax_settings_summary">
+        <intent android:targetPackage="com.android.lgesettings.wimax" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.wimax.WimaxSettings" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/wifi_p2p_settings_title" android:key="wifi_p2p_settings" android:summary="@string/wifi_p2p_settings_summary" android:fragment="com.android.lgesettings.wifi.p2p.WifiP2pSettings" />
+    <com.android.lgesettings.lge.WifiCallCheckBox android:persistent="false" android:title="@string/sp_wifi_calling_mode_title_NORMAL" android:key="button_wifi_calling_key" />
+    <com.android.lgesettings.MiracastSwitchPreference android:persistent="false" android:title="@string/sp_miracast_title_ver2_NORMAL" android:key="wifi_screen_settings" android:summary="@string/sp_miracast_summary_ver2_NORMAL" android:fragment="com.android.lgesettings.wifi.wifiscreen.WifiScreenSettings" />
+    <PreferenceScreen android:title="@string/sp_smart_share_title_NORMAL_jb_plus" android:key="smart_share_beam" android:summary="@string/sp_smartshare_beam_summary_Public" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/bluetooth_tether_checkbox_text" android:key="enable_bluetooth_tethering" />
+    <com.android.lgesettings.nfc.NfcSwitchPreference android:persistent="false" android:title="@string/nfc_quick_toggle_title" android:key="toggle_nfc" android:summary="@string/nfc_quick_toggle_summary_easily" android:fragment="com.android.lgesettings.nfc.NfcSettingsFragment" />
+    <PreferenceScreen android:title="@string/sp_sprint_manager_SHORT" android:key="sprint_manager" android:summary="@string/sp_sprint_manager_summary_NORMAL">
+        <intent android:targetPackage="com.sequent.controlpanel" android:action="android.intent.action.MAIN" android:targetClass="com.sequent.controlpanel.MainActivity" />
+    </PreferenceScreen>
+    <com.android.lgesettings.nfc.NfcSwitchPreference android:title="@string/android_beam_settings_title" android:key="android_beam_settings" android:fragment="com.android.lgesettings.nfc.AndroidBeam" />
+    <PreferenceScreen android:title="@string/nfc_preference_title_main" android:key="nfc_settings" android:summary="@string/nfc_preference_summary_main" android:fragment="com.android.lgesettings.nfc.NfcSettings" />
+    <PreferenceScreen android:title="@string/data_network_settings_title" android:key="data_network_settings" />
+    <PreferenceScreen android:title="@string/vpn_settings_title" android:key="vpn_settings" android:summary="@string/sp_vpn_settings_summary_NORMAL_jb_plus" android:fragment="com.android.lgesettings.vpn2.VpnSettings" />
+    <PreferenceScreen android:title="@string/vpn_title_jb_plus" android:key="vpn_selector" android:summary="@string/sp_vpn_settings_summary_NORMAL_jb_plus" android:fragment="com.android.lgesettings.vpn2.VpnSelector" />
+    <PreferenceScreen android:title="@string/network_settings_title" android:key="mobile_network_settings">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.MobileNetworkSettings" />
+    </PreferenceScreen>
+    <CheckBoxPreference android:persistent="false" android:title="@string/nsd_quick_toggle_title" android:key="toggle_nsd" android:summary="@string/nsd_quick_toggle_summary" />
+    <PreferenceScreen android:title="@string/network_settings_title" android:key="mobile_network_settings_dualsim">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.MobileSettings" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/proxy_settings_title" android:key="proxy_settings" android:fragment="com.android.lgesettings.ProxySelector" />
+</PreferenceScreen>

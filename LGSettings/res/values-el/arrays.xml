@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>Αμερική</item>
+        <item>Ευρώπη</item>
+        <item>Αφρική</item>
+        <item>Ασία</item>
+        <item>Αυστραλία</item>
+        <item>Ειρηνικός</item>
+        <item>Όλα</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 δευτερόλεπτα</item>
+        <item>30 δευτερόλεπτα</item>
+        <item>1 λεπτό</item>
+        <item>2 λεπτά</item>
+        <item>5 λεπτά</item>
+        <item>10 λεπτά</item>
+        <item>30 λεπτά</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries2_NORMAL">
+        <item>15 δευτερόλεπτα</item>
+        <item>30 δευτερόλεπτα</item>
+        <item>1 λεπτό</item>
+        <item>2 λεπτά</item>
+        <item>5 λεπτά</item>
+        <item>10 λεπτά</item>
+        <item>"Να παραμείνει  αναμμένη  η οθόνη "</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL">
+        <item>15 δευτερόλεπτα</item>
+        <item>30 δευτερόλεπτα</item>
+        <item>1 λεπτό</item>
+        <item>2 λεπτά</item>
+        <item>5 λεπτά</item>
+        <item>10 λεπτά</item>
+        <item>15 λεπτά</item>
+        <item>"Να παραμείνει  αναμμένη  η οθόνη "</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL_ex">
+        <item>15 δευτ.</item>
+        <item>30 δευτ.</item>
+        <item>1 λεπτό</item>
+        <item>2 λεπτά</item>
+        <item>5 λεπτά</item>
+        <item>10 λεπτά</item>
+        <item>15 λεπτά</item>
+        <item>"Να παραμείνει  αναμμένη  η οθόνη "</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled">
+        <item>15 δευτερόλεπτα</item>
+        <item>30 δευτερόλεπτα</item>
+        <item>1 λεπτό</item>
+        <item>2 λεπτά</item>
+        <item>5 λεπτά</item>
+        <item>10 λεπτά</item>
+        <item>15 λεπτά</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled_ex">
+        <item>15 δευτ.</item>
+        <item>30 δευτ.</item>
+        <item>1 λεπτό</item>
+        <item>2 λεπτά</item>
+        <item>5 λεπτά</item>
+        <item>10 λεπτά</item>
+        <item>15 λεπτά</item>
+    </string-array>
+    <string-array name="sp_pouch_default_clock_entries2_NORMAL">
+        <item>Ρολόι 1</item>
+        <item>Ρολόι 2</item>
+        <item>Ρολόι 3</item>
+        <item>Ρολόι 4</item>
+        <item>Ρολόι 5</item>
+        <item>Ρολόι 6</item>
+        <item>Ρολόι 7</item>
+        <item>Ρολόι 8</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries1_NORMAL">
+        <item>Αναλογικό</item>
+        <item>Ψηφιακό</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_position_entries1_NORMAL">
+        <item>Κέντρο</item>
+        <item>Πάνω δεξιά</item>
+        <item>Πάνω αριστερά</item>
+        <item>Κάτω δεξιά</item>
+        <item>Κάτω αριστερά</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_font_entries1_NORMAL">
+        <item>Όνομα γραμματοσειράς 1</item>
+        <item>Όνομα γραμματοσειράς 2</item>
+    </string-array>
+    <string-array name="sp_sound_profile_entries_NORMAL">
+        <item>Ήχος ειδοποιήσεων</item>
+        <item>Μόνο δόνηση</item>
+        <item>Σίγαση</item>
+    </string-array>
+    <string-array name="dream_timeout_entries">
+        <item>Ποτέ</item>
+        <item>15 δευτερόλεπτα</item>
+        <item>30 δευτερόλεπτα</item>
+        <item>1 λεπτό</item>
+        <item>2 λεπτά</item>
+        <item>5 λεπτά</item>
+        <item>10 λεπτά</item>
+        <item>30 λεπτά</item>
+    </string-array>
+    <string-array name="lock_after_timeout_entries">
+        <item>Αμέσως</item>
+        <item>5 δευτερόλεπτα</item>
+        <item>15 δευτερόλεπτα</item>
+        <item>30 δευτερόλεπτα</item>
+        <item>1 λεπτό</item>
+        <item>2 λεπτά</item>
+        <item>5 λεπτά</item>
+        <item>10 λεπτά</item>
+        <item>30 λεπτά</item>
+    </string-array>
+    <string-array name="sp_lock_after_timeout_entries_NORMAL">
+        <item>Αμέσως</item>
+        <item>15 δευτερόλεπτα</item>
+        <item>30 δευτερόλεπτα</item>
+        <item>1 λεπτό</item>
+        <item>2 λεπτά</item>
+        <item>10 λεπτά</item>
+        <item>30 λεπτά</item>
+    </string-array>
+    <string-array name="entries_font_size">
+        <item>&amp;lt;font size=16 align=middle>Μικρό&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>Κανονικό&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>Μεγάλο&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>Υπερβολικά μεγάλο&amp;lt;/font></item>
+    </string-array>
+    <string-array name="sp_entries_font_size2">
+        <item>&amp;lt;font size=14 align=middle>Ελάχιστο&amp;lt;/font></item>
+        <item>&amp;lt;font size=16 align=middle>Μικρό&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>Μεσαίο&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>Μεγάλο&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>Πολύ μεγάλο&amp;lt;/font></item>
+        <item>&amp;lt;font size=27 align=middle>Μέγιστο&amp;lt;/font></item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>Πολύ αργός</item>
+        <item>Αργός</item>
+        <item>Κανονικό</item>
+        <item>Γρήγορη</item>
+        <item>Πολύ γρήγορος</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>Πολύ χαμηλός</item>
+        <item>Χαμηλή</item>
+        <item>Κανονικό</item>
+        <item>Υψηλή</item>
+        <item>Πολύ υψηλός</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Σάρωση ...</item>
+        <item>Σύνδεση...</item>
+        <item>Γίνεται ταυτοποίηση…</item>
+        <item>Ανάκτηση διεύθυνσης IP…</item>
+        <item>Συνδέθηκε</item>
+        <item>Σε αναστολή</item>
+        <item>Αποσύνδεση...</item>
+        <item>Αποσυνδέθηκε</item>
+        <item>Χωρίς επιτυχία</item>
+        <item>Μπλοκαρίστηκε</item>
+        <item>Προσωρινή παράκαμψη κακής σύνδεσης</item>
+        <item>Προσωρινή παράκαμψη κακής σύνδεσης</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Σάρωση ...</item>
+        <item>Σύνδεση με %1$s...</item>
+        <item>Έλεγχος ταυτότητας με %1$s…</item>
+        <item>Λήψη διεύθυνσης IP από το δίκτυο %1$s...</item>
+        <item>Συνδεδεμένο σε %1$s</item>
+        <item>Σε αναστολή</item>
+        <item>Αποσύνδεση από %1$s…</item>
+        <item>Αποσυνδέθηκε</item>
+        <item>Χωρίς επιτυχία</item>
+        <item>Μπλοκαρίστηκε</item>
+        <item>Προσωρινή παράκαμψη κακής σύνδεσης</item>
+    </string-array>
+    <string-array name="wifi_ap_security">
+        <item>Ανοικτό</item>
+        <item>WPA PSK</item>
+        <item>WPA2 PSK</item>
+    </string-array>
+    <string-array name="wifi_p2p_wps_setup">
+        <item>Πλήκτρο Push</item>
+        <item>ΡΙΝ από αυτή τη συσκευή</item>
+    </string-array>
+    <string-array name="wifi_p2p_status">
+        <item>Συνδέθηκε</item>
+        <item>Σύνδεση</item>
+        <item>Χωρίς επιτυχία</item>
+        <item>Διαθέσιμο</item>
+        <item>Εκτός εμβέλειας</item>
+    </string-array>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>2 λεπτά</item>
+        <item>5 λεπτά</item>
+        <item>1 ώρα</item>
+        <item>Να μη λήγει ποτέ</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Χαμηλό</item>
+        <item>Καλό</item>
+        <item>Καλό</item>
+        <item>Άριστο</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Πάντα</item>
+        <item>Μόνο όταν είναι συνδεδεμένη</item>
+        <item>Wi-Fi απενεργοποιημ. (χρησιμοποιείται δίκτυο κινητής τηλεφωνίας)</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <item>Πάντα</item>
+        <item>Μόνο όταν είναι συνδεδεμένη</item>
+        <item>Wi-Fi απενεργοποιημ.</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_entries">
+        <item>Αυτόματο</item>
+        <item>Μόνο 5 GHz</item>
+        <item>Μόνο 2,4 GHz</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>Χρόνος χρήσης</item>
+        <item>Εκκίνηση καταμέτρησης</item>
+        <item>Όνομα εφαρμογής</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>Κανένα</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_network_setup">
+        <item>Απενεργ.</item>
+        <item>Πλήκτρο Push</item>
+        <item>ΡΙΝ από το σημείο πρόσβασης</item>
+        <item>ΡΙΝ από αυτή τη συσκευή</item>
+    </string-array>
+    <string-array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>Στατικό</item>
+    </string-array>
+    <string-array name="wifi_proxy_settings">
+        <item>Κανένα</item>
+        <item>Μη αυτόματο</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>Απενεργ.</item>
+        <item>Προειδοποίηση</item>
+        <item>Δόνηση</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>Κανένα</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP ή CHAP</item>
+    </string-array>
+    <string-array name="bearer_entries">
+        <item>LTE</item>
+        <item>eHRPD</item>
+        <item>Ακαθόριστο</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Εσωτερικός χώρος αποθήκευσης της συσκευής</item>
+        <item>Αφαιρούμενη κάρτα SD</item>
+        <item>Να αποφασίζει το σύστημα</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>Πάντα</item>
+        <item>Ποτέ</item>
+        <item>Μόνο στην αθόρυβη λειτουργία</item>
+        <item>Μόνο όταν δεν είναι ενεργή η αθόρυβη λειτουργία</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_titles">
+        <item>Σύντομο</item>
+        <item>Μεσαίο</item>
+        <item>Συνεχόμενος</item>
+    </string-array>
+    <string-array name="hdcp_checking_titles">
+        <item>Να μη γίνεται έλεγχος ποτέ</item>
+        <item>"Έλεγχος μόνο περιεχομένου DRM "</item>
+        <item>Να γίνεται πάντα έλεγχος</item>
+    </string-array>
+    <string-array name="hdcp_checking_summaries">
+        <item>Να μη χρησιμοποιείται ποτέ έλεγχος HDCP</item>
+        <item>Χρήση ελέγχου HDCP μόνο για περιεχόμενο DRM</item>
+        <item>Να χρησιμοποιείται πάντα έλεγχος HDCP</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>Κινούμενη εικόνα εκτός λειτουργίας</item>
+        <item>Κλιμακα κινούμενης εικόνας .5x</item>
+        <item>Κλιμακα κινούμενης εικόνας 1x</item>
+        <item>Κλιμακα κινούμενης εικόνας 1.5x</item>
+        <item>Κλιμακα κινούμενης εικόνας 2x</item>
+        <item>Κλιμακα κινούμενης εικόνας 5x</item>
+        <item>Κλιμακα κινούμενης εικόνας 10x</item>
+    </string-array>
+    <string-array name="transition_animation_scale_entries">
+        <item>Κινούμενη εικόνα εκτός λειτουργίας</item>
+        <item>Κλιμακα κινούμενης εικόνας .5x</item>
+        <item>Κλιμακα κινούμενης εικόνας 1x</item>
+        <item>Κλιμακα κινούμενης εικόνας 1.5x</item>
+        <item>Κλιμακα κινούμενης εικόνας 2x</item>
+        <item>Κλιμακα κινούμενης εικόνας 5x</item>
+        <item>Κλιμακα κινούμενης εικόνας 10x</item>
+    </string-array>
+    <string-array name="animator_duration_scale_entries">
+        <item>Κινούμενη εικόνα εκτός λειτουργίας</item>
+        <item>Κλιμακα κινούμενης εικόνας .5x</item>
+        <item>Κλιμακα κινούμενης εικόνας 1x</item>
+        <item>Κλιμακα κινούμενης εικόνας 1.5x</item>
+        <item>Κλιμακα κινούμενης εικόνας 2x</item>
+        <item>Κλιμακα κινούμενης εικόνας 5x</item>
+        <item>Κλιμακα κινούμενης εικόνας 10x</item>
+    </string-array>
+    <string-array name="overlay_display_devices_entries">
+        <item>Κανένα</item>
+        <item>720x480 mdpi</item>
+        <item>1280x720 tvdpi</item>
+        <item>1920x1080 xhdpi</item>
+        <item>1280x720 tvdpi και 1920x1080 xhdpi</item>
+    </string-array>
+    <string-array name="enable_opengl_traces_entries">
+        <item>Κανένα</item>
+        <item>Logcat</item>
+        <item>Systrace (Γραφικά)</item>
+        <item>Σφάλμα Call stack glGetError</item>
+    </string-array>
+    <string-array name="app_process_limit_entries">
+        <item>Βασικό όριο</item>
+        <item>Δεν υπάρχουν παρασκηνιακές διεργασίες</item>
+        <item>Το πολύ 1 διαδικασία</item>
+        <item>Το πολύ 2 διαδικασίες</item>
+        <item>Το πολύ 3 διαδικασίες</item>
+        <item>Το πολύ 4 διαδικασίες</item>
+    </string-array>
+    <string-array name="vpn_types_long">
+        <item>PPTP VPN</item>
+        <item>L2TP/IPSec VPN με κοινόχρηστα κλειδιά</item>
+        <item>L2TP/IPSec VPN με πιστοποιητικά</item>
+        <item>IPSec VPN με κοινόχρηστα κλειδιά και ταυτοποίηση Xauth</item>
+        <item>IPSec VPN με πιστοποιητικά και Xauth ταυτοποίηση</item>
+        <item>IPSec VPN με πιστοποιητικά και υβριδική ταυτοποίηση</item>
+    </string-array>
+    <string-array name="vpn_states">
+        <item>Αποσυνδέθηκε</item>
+        <item>Εκκίνηση...</item>
+        <item>Σύνδεση...</item>
+        <item>Συνδέθηκε</item>
+        <item>Λήξη ορίου χρόνου</item>
+        <item>Χωρίς επιτυχία</item>
+    </string-array>
+    <string-array name="security_settings_premium_sms_values">
+        <item>Ερώτηση</item>
+        <item>Να μην επιτρέπεται ποτέ</item>
+        <item>Να επιτρέπεται πάντα</item>
+    </string-array>
+    <string-array name="search_filter">
+        <item>Όλες οι συσκευές</item>
+        <item>Ακουστικά</item>
+        <item>PC</item>
+        <item>Τηλέφωνο</item>
+        <item>Περιφερειακό</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries_NORMAL">
+        <item>Εικόνα χρήστη</item>
+        <item>Ρολόι 1</item>
+        <item>Ρολόι 2</item>
+        <item>Ρολόι 3</item>
+        <item>Ρολόι 4</item>
+        <item>Ρολόι 5</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL">
+        <item>1.5 δευτερόλεπτα</item>
+        <item>3 δευτερόλεπτα</item>
+        <item>5 δευτερόλεπτα</item>
+        <item>Πάντα ενεργοπ.</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL_ex">
+        <item>1.5 δευτ.</item>
+        <item>3 δευτ.</item>
+        <item>5 δευτ.</item>
+        <item>Πάντα ενεργοπ.</item>
+    </string-array>
+    <string-array name="sp_front_key_light_l1_NORMAL">
+        <item>3 δευτερόλεπτα</item>
+        <item>6 δευτερόλεπτα</item>
+        <item>10 δευτερόλεπτα</item>
+        <item>30 δευτερόλεπτα</item>
+        <item>Πάντα ενεργοπ.</item>
+    </string-array>
+    <string-array name="sp_front_key_light_att_NORMAL">
+        <item>3 δευτ.</item>
+        <item>1 δευτ.</item>
+        <item>10 δευτ.</item>
+        <item>30 δευτ.</item>
+        <item>Πάντα ενεργοπ.</item>
+    </string-array>
+    <string-array name="sp_numlocdisp_entries_NORMAL">
+        <item>Απενεργοποίηση</item>
+        <item>Ενεργοποίηση</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_NORMAL">
+        <item>Ειδοποίηση απορρήτου</item>
+        <item>Εάν χρησιμοποιήσετε μια εφαρμογή τρίτου κατασκευαστή, μπορεί να συλλέξει τα προσωπικά σας στοιχεία ή μπορεί να ζητήσει από τον πάροχό σας να κοινοποιήσει τις προσωπικές σας πληροφορίες, συμπεριλαμβανομένων των πληροφοριών εντοπισμού θέσης (κατά περίπτωση), στον δημιουργό της εφαρμογής ή σε κάποιο άλλο τρίτο κατασκευαστή.</item>
+        <item>Ποια Πολιτική Απορρήτου Ισχύει; Η πολιτική απορρήτου του φορέα σας και οι Όροι Χρήσης δεν ισχύουν για εφαρμογές στο το κινητό σας που παρέχονται αποκλειστικά από τρίτους κατασκευαστές. Οι πολιτικές των τρίτων κατασκευαστές ισχύουν για τη χρήση της εφαρμογής αυτής.</item>
+        <item>Πού μπορώ να βρω περισσότερες πληροφορίες για τις πολιτικές του τρίτου κατασκευαστή; Ελέγξτε τους όρους χρήσης των εφαρμογών και / ή των πολιτικών του παρόχου της εφαρμογής για περισσότερες πληροφορίες σχετικά με το πώς η εφαρμογή συλλέγει, αποκτά πρόσβαση, χρησιμοποιεί και αποκαλύπτει τις πληροφορίες σας. Οι πολιτικές απορρήτου, οι όροι χρήσης και οι λοιπές καταναλωτικές ανακοινώσεις μπορεί να είναι διαθέσιμες στην ιστοσελίδα του παρόχου. Βεβαιωθείτε ότι έχετε πλήρη επίγνωση των πολιτικών πριν χρησιμοποιήσετε μια εφαρμογή.</item>
+        <item>Πού μπορώ να βρω την Πολιτική Απορρήτου του παρόχου μου; Εάν έχετε ερωτήσεις σχετικά με την Πολιτική Απορρήτου, του παρόχου σας, επισκεφθείτε την ιστοσελίδα του παρόχου σας και κάντε κλικ στο σύνδεσμο \"Πολιτική Απορρήτου\".</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_spr_NORMAL">
+        <item>"Ειδοποίηση πολιτικής απορρήτου Sprint "</item>
+        <item>Εάν χρησιμοποιείτε εφαρμογή τρίτου κατασκευαστή, μπορεί να συλλέγει προσωπικές σας πληροφορίες ή να ζητήσει από τον Sprint να κοινοποιήσει τις προσωπικές σας πληροφορίες, συμπεριλαμβανομένων των πληροφοριών θέσης (κατά περίπτωση), στον παροχέα της εφαρμογής ή σε άλλο τρίτο μέρος.</item>
+        <item>Ποια Πολιτική Απορρήτου Ισχύει? Η πολιτική απορρήτου της Sprint και οι όροι χρήσης δεν ισχύουν για τις εφαρμογές στη συσκευή σας που παρέχονται αποκλειστικά από τρίτα μέρη.</item>
+        <item>Που μπορώ να βρω περισσότερες πληροφορίες για τις πολιτικές απορρήτου των τρίτων μερών; Μελετήστε τους όρους χρήσης της εφαρμογής και/ή τις πολιτικές απορρήτου του κατασκευαστή της εφαρμογής για να μάθετε πως η εφαρμογή συλλέγει, έχει πρόσβαση, χρησιμοποιεί και κοινοποιεί τις πληροφορίες σας. Οι πολιτικές απορρήτου, οι όροι χρήσης και οι άλλες ειδοποιήσεις που αφορούν τον καταναλωτή ΜΠΟΡΕΙ να είναι διαθέσιμες στον ιστότοπο του κατασκευαστή. Σιγουρευτείτε ότι έχετε κατανοήσει πλήρως τις πολιτικές πριν χρησιμοποιήσετε την εφαρμογή.</item>
+        <item>Που μπορώ να βρω την πολιτική απορρήτου της Sprint; Εάν έχετε απορίες για την πολιτική απορρήτου της Sprint, επισκεφθείτε τον ιστότοπο Sprint.com και πατήστε τον σύνδεσμο «Πολιτική απορρήτου».</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_bm_NORMAL">
+        <item>Ειδοποίηση Προστασίας Προσωπικών Δεδομένων</item>
+        <item>Εάν χρησιμοποιείτε εφαρμογή τρίτου κατασκευαστή, μπορεί να συλλέγει προσωπικές σας πληροφορίες ή να ζητήσει από τον Boost Mobile να κοινοποιήσει τις προσωπικές σας πληροφορίες, συμπεριλαμβανομένων των πληροφοριών θέσης (κατά περίπτωση), στον παροχέα της εφαρμογής ή σε άλλο τρίτο μέρος.</item>
+        <item>Ποια Πολιτική Απορρήτου Ισχύει? Η πολιτική απορρήτου της Boost Mobile και οι όροι χρήσης δεν ισχύουν για τις εφαρμογές στη συσκευή σας που παρέχονται αποκλειστικά από τρίτα μέρη.</item>
+        <item>Που μπορώ να βρω περισσότερες πληροφορίες για τις πολιτικές απορρήτου των τρίτων μερών; Μελετήστε τους όρους χρήσης της εφαρμογής και/ή τις πολιτικές απορρήτου του κατασκευαστή της εφαρμογής για να μάθετε πως η εφαρμογή συλλέγει, έχει πρόσβαση, χρησιμοποιεί και κοινοποιεί τις πληροφορίες σας. Οι πολιτικές απορρήτου, οι όροι χρήσης και οι άλλες ειδοποιήσεις που αφορούν τον καταναλωτή ΜΠΟΡΕΙ να είναι διαθέσιμες στον ιστότοπο του κατασκευαστή. Σιγουρευτείτε ότι έχετε κατανοήσει πλήρως τις πολιτικές πριν χρησιμοποιήσετε την εφαρμογή.</item>
+        <item>"Που μπορώ να βρω την πολιτική απορρήτου του Boost Mobile; Εάν έχετε ερωτήσεις για την πολιτική απορρήτου του Boost Mobileεπισκεφτείτε τη σελίδα Boost Mobile.com και πατήστε το σύνδεσμο  «Πολιτική απορρήτου»."</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_virgin_NORMAL">
+        <item>Ειδοποίηση Πολιτικής Απορρήτου Virgin Mobile</item>
+        <item>Εάν χρησιμοποιείτε εφαρμογή τρίτου κατασκευαστή, μπορεί να συλλέγει προσωπικές σας πληροφορίες ή να ζητήσει από τον Virgin Mobile να κοινοποιήσει τις προσωπικές σας πληροφορίες, συμπεριλαμβανομένων των πληροφοριών θέσης (κατά περίπτωση), στον παροχέα της εφαρμογής ή σε άλλο τρίτο μέρος.</item>
+        <item>Ποια Πολιτική Απορρήτου ισχύει; Η Πολιτική Απορρήτου της Virgin Mobile και οι Όροι Χρήσης δεν ισχύουν για τις εφαρμογές που παρέχονται από τρίτους . H χρήση των εφαρμογών τρίτων εναπόκειται στις αντίστοιχες πολιτικές των τρίτων κατασκευαστών.</item>
+        <item>Που μπορώ να βρω περισσότερες πληροφορίες για τις πολιτικές απορρήτου των τρίτων μερών; Μελετήστε τους όρους χρήσης της εφαρμογής και/ή τις πολιτικές απορρήτου του κατασκευαστή της εφαρμογής για να μάθετε πως η εφαρμογή συλλέγει, έχει πρόσβαση, χρησιμοποιεί και κοινοποιεί τις πληροφορίες σας. Οι πολιτικές απορρήτου, οι όροι χρήσης και οι άλλες ειδοποιήσεις που αφορούν τον καταναλωτή ΜΠΟΡΕΙ να είναι διαθέσιμες στον ιστότοπο του κατασκευαστή. Σιγουρευτείτε ότι έχετε κατανοήσει πλήρως τις πολιτικές πριν χρησιμοποιήσετε την εφαρμογή.</item>
+        <item>Πού μπορώ να βρω την πολιτική Απορρήτου της Virgin Mobile; Επιπλέον, εάν έχετε ερωτήσεις σχετικά με την πολιτική Απορρήτου της Virgin Mobile, επισκεφτείτε τη διεύθυνση VirginMobileUSA.com και κάντε κλικ στο σύνδεσμο \"Πολιτική Απορρήτου\".</item>
+    </string-array>
+    <string-array name="sp_lock_screen_effect_entries_NORMAL">
+        <item>Βασικό</item>
+        <item>Ριπές με φύλλα</item>
+        <item>Απόδοση μελανιού</item>
+        <item>Δροσοσταλίδα</item>
+    </string-array>
+    <string-array name="sp_power_save_brightness_entries_NORMAL">
+        <item>10% φωτεινότητα</item>
+        <item>20% φωτεινότητα</item>
+        <item>30% φωτεινότητα</item>
+        <item>50% φωτεινότητα</item>
+    </string-array>
+    <string-array name="sp_power_save_screen_timeout_entries_NORMAL">
+        <item>15 δευτερόλεπτα</item>
+        <item>30 δευτερόλεπτα</item>
+        <item>1 λεπτό</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_NORMAL">
+        <item>1.5 δευτερόλεπτα</item>
+        <item>Πάντα απενεργοποιημένο</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_att_NORMAL">
+        <item>3 δευτερόλεπτα</item>
+        <item>Πάντα απενεργοποιημένο</item>
+    </string-array>
+    <string-array name="sp_power_save_mode_entries_NORMAL">
+        <item>10% μπαταρία</item>
+        <item>20% μπαταρία</item>
+        <item>30% μπαταρία</item>
+        <item>50% μπαταρία</item>
+    </string-array>
+    <string-array name="sp_power_save_mode2_entries_NORMAL">
+        <item>Αμέσως</item>
+        <item>10% μπαταρία</item>
+        <item>20% μπαταρία</item>
+        <item>30% μπαταρία</item>
+        <item>50% μπαταρία</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries">
+        <item>5 λεπτά</item>
+        <item>10 λεπτά</item>
+        <item>15 λεπτά</item>
+    </string-array>
+    <string-array name="sp_hotspot_timeout_entries_mx_NORMAL">
+        <item>Πάντα ενεργή</item>
+        <item>5 λεπτά</item>
+        <item>10 λεπτά</item>
+        <item>15 λεπτά</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries_jb">
+        <item>5 λεπτά</item>
+        <item>10 λεπτά</item>
+        <item>15 λεπτά</item>
+        <item>30 λεπτά</item>
+        <item>Ποτέ</item>
+    </string-array>
+    <string-array name="wifi_p2p_timeout_entries">
+        <item>15 λεπτά</item>
+        <item>30 λεπτά</item>
+        <item>Ποτέ</item>
+    </string-array>
+    <string-array name="sp_wifi_ap_visibility_NORMAL">
+        <item>Προβολή</item>
+        <item>Απόκρυψη</item>
+    </string-array>
+    <string-array name="sp_bt_search_filter_SHORT">
+        <item>Όλες οι συσκευές</item>
+        <item>Ακουστικά</item>
+        <item>Κινητό τηλέφωνο</item>
+        <item>PC</item>
+        <item>Πληκτρολόγιο, ποντίκι, κλπ.</item>
+    </string-array>
+    <string-array name="wifi_signal_strength_entries">
+        <item>Ισχυρή</item>
+        <item>Μεσαίο</item>
+        <item>Χαμηλό</item>
+        <item>Απενεργ.</item>
+    </string-array>
+    <string-array name="wifi_Dual_band_AP_connection_entries">
+        <item>Αυτόματο</item>
+        <item>5 GHz</item>
+        <item>2.4 GHz</item>
+    </string-array>
+</resources>

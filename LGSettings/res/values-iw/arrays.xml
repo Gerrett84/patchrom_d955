@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>‏אמריקה</item>
+        <item>‏אירופה</item>
+        <item>‏אפריקה</item>
+        <item>‏אסיה</item>
+        <item>‏אוסטרליה</item>
+        <item>‏פסיפיק</item>
+        <item>‏הכל</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>‏15 שניות</item>
+        <item>‏‏30 שניות</item>
+        <item>‏דקה אחת</item>
+        <item>‏‏2 דקות</item>
+        <item>‏‏5 דקות</item>
+        <item>‏‏10 דקות</item>
+        <item>‏‏30 דקות</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries2_NORMAL">
+        <item>‏15 שניות</item>
+        <item>‏‏30 שניות</item>
+        <item>‏דקה אחת</item>
+        <item>‏‏2 דקות</item>
+        <item>‏‏5 דקות</item>
+        <item>‏‏10 דקות</item>
+        <item>‏השאר מסך דולק</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL">
+        <item>‏15 שניות</item>
+        <item>‏‏30 שניות</item>
+        <item>‏דקה</item>
+        <item>‏שתי דקות</item>
+        <item>‏‏5 דקות</item>
+        <item>‏‏10 דקות</item>
+        <item>‏‏15 דקות</item>
+        <item>‏השאר מסך דולק</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL_ex">
+        <item>‏15 שניות</item>
+        <item>‏30 שניות</item>
+        <item>‏1 דקות</item>
+        <item>‏2 דקות</item>
+        <item>‏5 דקות</item>
+        <item>‏10 דקות</item>
+        <item>‏15 דקות</item>
+        <item>‏השאר מסך דולק</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled">
+        <item>‏15 שניות</item>
+        <item>‏‏30 שניות</item>
+        <item>‏דקה</item>
+        <item>‏שתי דקות</item>
+        <item>‏‏5 דקות</item>
+        <item>‏‏10 דקות</item>
+        <item>‏‏15 דקות</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled_ex">
+        <item>‏15 שניות</item>
+        <item>‏30 שניות</item>
+        <item>‏1 דקות</item>
+        <item>‏2 דקות</item>
+        <item>‏5 דקות</item>
+        <item>‏10 דקות</item>
+        <item>‏15 דקות</item>
+    </string-array>
+    <string-array name="sp_pouch_default_clock_entries2_NORMAL">
+        <item>‏שעון 1</item>
+        <item>‏שעון 2</item>
+        <item>‏שעון 3</item>
+        <item>‏שעון 4</item>
+        <item>‏שעון 5</item>
+        <item>‏שעון 6</item>
+        <item>‏שעון 7</item>
+        <item>‏שעון 8</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries1_NORMAL">
+        <item>‏אנלוגי</item>
+        <item>‏דיגיטלי</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_position_entries1_NORMAL">
+        <item>‏מרכז</item>
+        <item>‏פינה ימנית עליונה</item>
+        <item>‏פינה שמאלית עליונה</item>
+        <item>‏מימין למטה</item>
+        <item>‏משמאל למטה</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_font_entries1_NORMAL">
+        <item>‏שם גופן 1</item>
+        <item>‏שם גופן 2</item>
+    </string-array>
+    <string-array name="sp_sound_profile_entries_NORMAL">
+        <item>‏צליל</item>
+        <item>‏רטט בלבד</item>
+        <item>‏שקט</item>
+    </string-array>
+    <string-array name="dream_timeout_entries">
+        <item>‏אף פעם</item>
+        <item>‏15 שניות</item>
+        <item>‏‏30 שניות</item>
+        <item>‏דקה אחת</item>
+        <item>‏‏2 דקות</item>
+        <item>‏‏5 דקות</item>
+        <item>‏‏10 דקות</item>
+        <item>‏‏30 דקות</item>
+    </string-array>
+    <string-array name="lock_after_timeout_entries">
+        <item>‏מיד</item>
+        <item>‏5 שניות</item>
+        <item>‏15 שניות</item>
+        <item>‏‏30 שניות</item>
+        <item>‏דקה אחת</item>
+        <item>‏‏2 דקות</item>
+        <item>‏‏5 דקות</item>
+        <item>‏‏10 דקות</item>
+        <item>‏‏30 דקות</item>
+    </string-array>
+    <string-array name="sp_lock_after_timeout_entries_NORMAL">
+        <item>‏מיד</item>
+        <item>‏15 שניות</item>
+        <item>‏‏30 שניות</item>
+        <item>‏דקה אחת</item>
+        <item>‏‏2 דקות</item>
+        <item>‏‏10 דקות</item>
+        <item>‏‏30 דקות</item>
+    </string-array>
+    <string-array name="entries_font_size">
+        <item>‏&amp;lt;font size=16 align=middle>קטן&amp;lt;/font></item>
+        <item>‏&amp;lt;font size=18 align=middle>רגיל&amp;lt;/font></item>
+        <item>‏&amp;lt;font size=21 align=middle>גדול&amp;lt;/font></item>
+        <item>‏&amp;lt;font size=24 align=middle>ענק&amp;lt;/font></item>
+    </string-array>
+    <string-array name="sp_entries_font_size2">
+        <item>‏&amp;lt;font size=14 align=middle>מינימלי&amp;lt;/font></item>
+        <item>‏&amp;lt;font size=16 align=middle>קטן&amp;lt;/font></item>
+        <item>‏&amp;lt;font size=18 align=middle>בינוני&amp;lt;/font></item>
+        <item>‏&amp;lt;font size=21 align=middle>גדול&amp;lt;/font></item>
+        <item>‏&amp;lt;font size=24 align=middle>גדול מאוד&amp;lt;/font></item>
+        <item>‏&amp;lt;font size=27 align=middle>מקסימלי&amp;lt;/font></item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>‏לאט מאוד</item>
+        <item>‏לאט</item>
+        <item>‏רגילה</item>
+        <item>‏מהר</item>
+        <item>‏מהר מאוד</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>Very low</item>
+        <item>‏נמוכה</item>
+        <item>‏רגילה</item>
+        <item>‏גבוה</item>
+        <item>Very high</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>‏סריקה...</item>
+        <item>‏מתחבר...</item>
+        <item>‏מאמת...</item>
+        <item>‏מקבל כתובת IP...</item>
+        <item>‏מחובר</item>
+        <item>‏מושעה</item>
+        <item>‏מתנתק...</item>
+        <item>‏מנותק</item>
+        <item>‏הפעולה נכשלה</item>
+        <item>‏חסום</item>
+        <item>‏נמנע באופן זמני מחיבור לקוי</item>
+        <item>‏נמנע באופן זמני מחיבור לקוי</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>‏סריקה...</item>
+        <item>‏מתחבר אל %1$s...</item>
+        <item>‏%1$sמאמת באמצעות</item>
+        <item>‏מקבל כתובת IP מ-%1$s...</item>
+        <item>‏מחובר %1$s</item>
+        <item>‏מושעה</item>
+        <item>‏מתנתק מ-%1$s…</item>
+        <item>‏מנותק</item>
+        <item>‏הפעולה נכשלה</item>
+        <item>‏חסום</item>
+        <item>‏נמנע באופן זמני מחיבור לקוי</item>
+    </string-array>
+    <string-array name="wifi_ap_security">
+        <item>‏פתוחה</item>
+        <item>WPA PSK</item>
+        <item>WPA2 PSK</item>
+    </string-array>
+    <string-array name="wifi_p2p_wps_setup">
+        <item>‏לחץ על הכפתור</item>
+        <item>‏קוד PIN מהתקן זה</item>
+    </string-array>
+    <string-array name="wifi_p2p_status">
+        <item>‏מחובר</item>
+        <item>‏חיבור</item>
+        <item>‏הפעולה נכשלה</item>
+        <item>‏זמין</item>
+        <item>‏מחוץ לטווח</item>
+    </string-array>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>‏‏2 דקות</item>
+        <item>‏‏5 דקות</item>
+        <item>‏שעה</item>
+        <item>‏ללא הקצבת זמן</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>‏גרוע</item>
+        <item>‏בינוני</item>
+        <item>‏טוב</item>
+        <item>‏מצוין</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>‏תמיד</item>
+        <item>‏רק כאשר מחובר למטען</item>
+        <item>‏חיבור Wi-Fi כבוי (עקב שימוש בנתונים)</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <item>‏תמיד</item>
+        <item>‏רק כאשר מחובר למטען</item>
+        <item>‏חיבור Wi-Fi כבוי</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_entries">
+        <item>‏אוטומטי</item>
+        <item>‏‎5 GHz בלבד</item>
+        <item>‏‎2.4 GHz בלבד</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>‏זמן שימוש</item>
+        <item>‏ספירת הפעלה</item>
+        <item>‏שם היישום</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>‏ללא</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>‏MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_network_setup">
+        <item>‏כבוי</item>
+        <item>‏לחץ על הכפתור</item>
+        <item>‏קוד PIN מנקודת גישה</item>
+        <item>‏קוד PIN מהתקן זה</item>
+    </string-array>
+    <string-array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>‏סטטי</item>
+    </string-array>
+    <string-array name="wifi_proxy_settings">
+        <item>‏ללא</item>
+        <item>‏ידני</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>‏כבוי</item>
+        <item>‏התראה</item>
+        <item>‏רטט</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>‏ללא</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>‏‏PAP או CHAP</item>
+    </string-array>
+    <string-array name="bearer_entries">
+        <item>LTE</item>
+        <item>eHRPD</item>
+        <item>‏לא מוגדר</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>‏אחסון התקן פנימי</item>
+        <item>‏כרטיס SD נשלף</item>
+        <item>‏על פי קביעת המערכת</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>‏תמיד</item>
+        <item>‏אף פעם</item>
+        <item>‏במצב שקט בלבד</item>
+        <item>‏בכל מצב פרט למצב שקט</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_titles">
+        <item>‏קצר</item>
+        <item>‏בינוני</item>
+        <item>‏ארוך</item>
+    </string-array>
+    <string-array name="hdcp_checking_titles">
+        <item>‏אף פעם אל תבדוק</item>
+        <item>‏תכני DRM בלבד</item>
+        <item>‏בדוק תמיד</item>
+    </string-array>
+    <string-array name="hdcp_checking_summaries">
+        <item>‏אף פעם אל תבדוק HDCP</item>
+        <item>‏השתמש ב-HDCP בחיפוש תוכן DRM בלבד</item>
+        <item>‏תמיד השתמש בבדיקת HDCP</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>‏אנימציה מבוטלת</item>
+        <item>‏גודל אנימציה 0.5x</item>
+        <item>‏גודל אנימציה 1x</item>
+        <item>‏גודל אנימציה 1.5x</item>
+        <item>‏גודל אנימציה 2x</item>
+        <item>‏גודל אנימציה 5x</item>
+        <item>‏גודל אנימציה 10x</item>
+    </string-array>
+    <string-array name="transition_animation_scale_entries">
+        <item>‏אנימציה מבוטלת</item>
+        <item>‏גודל אנימציה 0.5x</item>
+        <item>‏גודל אנימציה 1x</item>
+        <item>‏גודל אנימציה 1.5x</item>
+        <item>‏גודל אנימציה 2x</item>
+        <item>‏גודל אנימציה 5x</item>
+        <item>‏גודל אנימציה 10x</item>
+    </string-array>
+    <string-array name="animator_duration_scale_entries">
+        <item>‏אנימציה מבוטלת</item>
+        <item>‏גודל אנימציה 0.5x</item>
+        <item>‏גודל אנימציה 1x</item>
+        <item>‏גודל אנימציה 1.5x</item>
+        <item>‏גודל אנימציה 2x</item>
+        <item>‏גודל אנימציה 5x</item>
+        <item>‏גודל אנימציה 10x</item>
+    </string-array>
+    <string-array name="overlay_display_devices_entries">
+        <item>‏ללא</item>
+        <item>720x480 mdpi</item>
+        <item>1280x720 tvdpi</item>
+        <item>1920x1080 xhdpi</item>
+        <item>‏1280x720 tvdpi ו- 1920x1080 xhdpi</item>
+    </string-array>
+    <string-array name="enable_opengl_traces_entries">
+        <item>‏ללא</item>
+        <item>Logcat</item>
+        <item>‏Systrace (גרפיקה)</item>
+        <item>‏קריאת הערימה ב- glGetError</item>
+    </string-array>
+    <string-array name="app_process_limit_entries">
+        <item>‏תקן גבול</item>
+        <item>‏אין רקע תהליכים</item>
+        <item>‏תהליך אחד לכל היותר</item>
+        <item>‏2 תהליכים לכל היותר</item>
+        <item>‏3 תהליכים לכל היותר</item>
+        <item>‏4 תהליכים לכל היותר</item>
+    </string-array>
+    <string-array name="vpn_types_long">
+        <item>PPTP VPN</item>
+        <item>‏L2TP/IPsec VPN עם מפתחות משותפות מראש</item>
+        <item>‏L2TP/IPsec VPN עם תעודות</item>
+        <item>‏IPSec VPN עם מפתחות משותפים מראש ואימות Xauth</item>
+        <item>‏IPSec VPN עם אישורים ואימות Xauth</item>
+        <item>"‏IPSec VPN עם אישורים ואימות hybrid "</item>
+    </string-array>
+    <string-array name="vpn_states">
+        <item>‏מנותק</item>
+        <item>‏מאתחל...</item>
+        <item>‏מתחבר...</item>
+        <item>‏מחובר</item>
+        <item>‏זמן קצוב לתפוגה</item>
+        <item>‏הפעולה נכשלה</item>
+    </string-array>
+    <string-array name="security_settings_premium_sms_values">
+        <item>‏שאל</item>
+        <item>‏לעולם אל תאפשר</item>
+        <item>‏אפשר תמיד</item>
+    </string-array>
+    <string-array name="search_filter">
+        <item>‏כל המכשירים</item>
+        <item>‏אוזניות</item>
+        <item>‏מחשב</item>
+        <item>‏טלפון</item>
+        <item>‏היקפי</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries_NORMAL">
+        <item>‏תמונת משתמש</item>
+        <item>‏שעון 1</item>
+        <item>‏שעון 2</item>
+        <item>‏שעון 3</item>
+        <item>‏שעון 4</item>
+        <item>‏שעון 5</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL">
+        <item>‏1.5 שניות</item>
+        <item>‏3 שניות</item>
+        <item>‏5 שניות</item>
+        <item>‏פעיל תמיד</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL_ex">
+        <item>‏1.5 שניות</item>
+        <item>‏3 שניות</item>
+        <item>‏5 שניות</item>
+        <item>‏פעיל תמיד</item>
+    </string-array>
+    <string-array name="sp_front_key_light_l1_NORMAL">
+        <item>‏3 שניות</item>
+        <item>‏6 שניות</item>
+        <item>‏10 שניות</item>
+        <item>‏‏30 שניות</item>
+        <item>‏פעיל תמיד</item>
+    </string-array>
+    <string-array name="sp_front_key_light_att_NORMAL">
+        <item>‏3 שניות</item>
+        <item>‏6 שניות</item>
+        <item>‏10 שניות</item>
+        <item>‏30 שניות</item>
+        <item>‏פעיל תמיד</item>
+    </string-array>
+    <string-array name="sp_numlocdisp_entries_NORMAL">
+        <item>‏השבת</item>
+        <item>‏הפוך לזמין</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_NORMAL">
+        <item>‏פרטיות התראה</item>
+        <item>‏אם אתם משתמשים ביישומי צד שלישי, ייתכן שהמידע האישי שלכם ייאסף או שספק השירות יתבקש למסור את המידע האישי שלכם, בכלל זה מידע מיקום (אם רלוונטי), עבור ספק היישום או צד שלישי אחר כלשהו.</item>
+        <item>‏איזו מדיניות פרטיות נמצאת בתוקף? מדיניות הפרטיות ותנאי השימוש של הספק שלכם אינם חלים על יישומים במכשיר המסופקים על-ידי צד שלישי בלבד. מדיניות הצד השלישי חלה על השימוש שלכם באותו יישום.</item>
+        <item>‏היכן ניתן למצוא מידע נוסף לגבי מדיניות צד שלישי? עיינו בתנאי השימוש של היישום ו/או במדיניות ספק היישום למידע נוסף בנוגע לאופן שבו היישום יאסוף את המידע שלכם, ייגש אליו, ישתמש בו וימסור אותו. מדיניות פרטיות, תנאי שימוש והודעות אחרות לצרכן עשויים להימצא באתר האינטרנט של הספק. ודאו שהמדיניות מתאימה לכם לפני השימוש ביישום כלשהו.</item>
+        <item>‏היכן ניתן למצוא את מדיניות הפרטיות של הספק שלי? אם יש לכם שאלות בנוגע למדיניות הפרטיות של הספק, בקרו בדף הבית של הספק ולחצו על קישור מדיניות הפרטיות.</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_spr_NORMAL">
+        <item>‏התראת פרטיות של ספרינט</item>
+        <item>‏אם אתה משתמש ביישום צד 3, זה יכול ישירות לאסוף המידע האישי שלך או לדרוש Sprint לחשוף את המידע האישי שלך, כולל מידע על מיקום (לפי עניין), לספקית האפליקציה או איזה צד 3 אחרים.</item>
+        <item>‏איזו מדיניות פרטיות נמצאת בתוקף? מדיניות הפרטיות ותנאי השימוש של הספק שלכם אינם חלים על יישומים במכשיר המסופקים על-ידי צד שלישי בלבד. מדיניות הצד השלישי חלה על השימוש שלכם באותו יישום.</item>
+        <item>‏היכן ניתן למצוא מידע נוסף לגבי מדיניות צד שלישי? עיינו בתנאי השימוש של היישום ו/או במדיניות ספק היישום למידע נוסף בנוגע לאופן שבו היישום יאסוף את המידע שלכם, ייגש אליו, ישתמש בו וימסור אותו. מדיניות פרטיות, תנאי שימוש והודעות אחרות לצרכן עשויים להימצא באתר האינטרנט של הספק. ודאו שהמדיניות מתאימה לכם לפני השימוש ביישום כלשהו.</item>
+        <item>‏היכן ניתן למצוא את מדיניות הפרטיות של Sprint? אם יש לכם שאלות בנוגע למדיניות הפרטיות של Sprint, בקרו ב-Sprint.com ולחצו על קישור מדיניות הפרטיות.</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_bm_NORMAL">
+        <item>‏הגבר התראת פרטיות לנייד</item>
+        <item>‏אם אתה משתמש ביישום צד 3, זה יכול ישירות לאסוף המידע האישי שלך או לדרוש Boost Mobile לחשוף את המידע האישי שלך, כולל מידע על מיקום (לפי עניין), לספקית האפליקציה או איזה צד 3 אחרים.</item>
+        <item>‏איזו מדיניות פרטיות נמצאת בתוקף? מדיניות הפרטיות ותנאי השימוש של הספק שלכם אינם חלים על יישומים במכשיר המסופקים על-ידי צד שלישי בלבד. מדיניות הצד השלישי חלה על השימוש שלכם באותו יישום.</item>
+        <item>‏היכן ניתן למצוא מידע נוסף לגבי מדיניות צד שלישי? עיינו בתנאי השימוש של היישום ו/או במדיניות ספק היישום למידע נוסף בנוגע לאופן שבו היישום יאסוף את המידע שלכם, ייגש אליו, ישתמש בו וימסור אותו. מדיניות פרטיות, תנאי שימוש והודעות אחרות לצרכן עשויים להימצא באתר האינטרנט של הספק. ודאו שהמדיניות מתאימה לכם לפני השימוש ביישום כלשהו.</item>
+        <item>‏היכן ניתן למצוא את מדיניות הפרטיות של Boost Mobile? אם יש לכם שאלות בנוגע למדיניות הפרטיות של Boost Mobile, בקרו ב-Boost Mobile.com ולחצו על קישור מדיניות הפרטיות.</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_virgin_NORMAL">
+        <item>‏התראה פרטיות Virgin Mobile</item>
+        <item>‏אם אתה משתמש ביישום צד 3, זה יכול ישירות לאסוף המידע האישי שלך או לדרוש Virgin Mobile לחשוף את המידע האישי שלך, כולל מידע על מיקום (לפי עניין), לספקית האפליקציה או איזה צד 3 אחרים.</item>
+        <item>‏איזה מדיניות הפרטיות חלה? המדיניות ותנאי השימוש הפרטיות של Virgin Mobile לא חלים על יישומים במכשיר שלך שמסופקים אך ורק על ידי צדדים 3. המדיניות של הצד 3 תחול על השימוש ביישום זה שלך.</item>
+        <item>‏היכן ניתן למצוא מידע נוסף לגבי מדיניות צד שלישי? עיינו בתנאי השימוש של היישום ו/או במדיניות ספק היישום למידע נוסף בנוגע לאופן שבו היישום יאסוף את המידע שלכם, ייגש אליו, ישתמש בו וימסור אותו. מדיניות פרטיות, תנאי שימוש והודעות אחרות לצרכן עשויים להימצא באתר האינטרנט של הספק. ודאו שהמדיניות מתאימה לכם לפני השימוש ביישום כלשהו.</item>
+        <item>‏איפה אני יכול למצוא את מדיניות הפרטיות של Virgin Mobile? לחוד, אם יש לך שאלות בנוגע למדיניות הפרטיות של Virgin Mobile, בקר VirginMobileUSA.com ולחץ על הקישור \"מדיניות הפרטיות\".</item>
+    </string-array>
+    <string-array name="sp_lock_screen_effect_entries_NORMAL">
+        <item>‏בסיסי</item>
+        <item>‏גל עם עלים</item>
+        <item>‏דיו מתפשט</item>
+        <item>‏טיפת טל</item>
+    </string-array>
+    <string-array name="sp_power_save_brightness_entries_NORMAL">
+        <item>‏10% בהירות</item>
+        <item>‏20% בהירות</item>
+        <item>‏30% בהירות</item>
+        <item>‏50% בהירות</item>
+    </string-array>
+    <string-array name="sp_power_save_screen_timeout_entries_NORMAL">
+        <item>‏15 שניות</item>
+        <item>‏‏30 שניות</item>
+        <item>‏דקה</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_NORMAL">
+        <item>‏1.5 שניות</item>
+        <item>‏כבוי תמיד</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_att_NORMAL">
+        <item>‏3 שניות</item>
+        <item>‏כבוי תמיד</item>
+    </string-array>
+    <string-array name="sp_power_save_mode_entries_NORMAL">
+        <item>‏10% סוללה</item>
+        <item>‏20% סוללה</item>
+        <item>‏30% סוללה</item>
+        <item>‏50% סוללה</item>
+    </string-array>
+    <string-array name="sp_power_save_mode2_entries_NORMAL">
+        <item>‏מיד</item>
+        <item>‏10% סוללה</item>
+        <item>‏20% סוללה</item>
+        <item>‏30% סוללה</item>
+        <item>‏50% סוללה</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries">
+        <item>‏‏5 דקות</item>
+        <item>‏‏10 דקות</item>
+        <item>‏‏15 דקות</item>
+    </string-array>
+    <string-array name="sp_hotspot_timeout_entries_mx_NORMAL">
+        <item>‏ללא הפסקה</item>
+        <item>‏5 דקות</item>
+        <item>‏10 דקות</item>
+        <item>‏15 דקות</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries_jb">
+        <item>‏5 דקות</item>
+        <item>‏10 דקות</item>
+        <item>‏15 דקות</item>
+        <item>‏30 דקות</item>
+        <item>‏ידנית</item>
+    </string-array>
+    <string-array name="wifi_p2p_timeout_entries">
+        <item>‏15 דקות</item>
+        <item>‏30 דקות</item>
+        <item>‏ידנית</item>
+    </string-array>
+    <string-array name="sp_wifi_ap_visibility_NORMAL">
+        <item>‏הצג</item>
+        <item>‏הסתר</item>
+    </string-array>
+    <string-array name="sp_bt_search_filter_SHORT">
+        <item>‏כל המכשירים</item>
+        <item>‏אוזניות</item>
+        <item>‏טלפון נייד</item>
+        <item>‏מחשב</item>
+        <item>‏התקן קלט (מקלדת, עכבר וכדומה)</item>
+    </string-array>
+    <string-array name="wifi_signal_strength_entries">
+        <item>‏חזק</item>
+        <item>‏בינוני</item>
+        <item>‏חלש</item>
+        <item>‏כבוי</item>
+    </string-array>
+    <string-array name="wifi_Dual_band_AP_connection_entries">
+        <item>‏אוטומטי</item>
+        <item>5 GHz</item>
+        <item>2.4 GHz</item>
+    </string-array>
+</resources>

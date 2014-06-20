@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/nfc_preference_title_lock" android:key="nfc_lock" android:summary="@string/nfc_preference_summary_lock" />
+    <com.android.lgesettings.nfc.NfcCheckBoxPreference android:title="@string/nfc_preference_title_rw_p2p" android:key="nfc_p2p" android:summary="@string/nfc_preference_summary_rw_p2p" />
+    <com.android.lgesettings.nfc.NfcCheckBoxPreference android:title="@string/android_beam_settings_title" android:key="nfc_beam" android:summary="@string/android_beam_explained" />
+    <PreferenceCategory android:title="@string/nfc_preference_seperator_lock_menu" android:key="nfc_lock_number" />
+    <PreferenceScreen android:title="@string/nfc_preference_title_change_pin" android:key="nfc_change_pin" android:summary="@string/nfc_preference_summary_change_pin" />
+    <PreferenceScreen android:title="@string/nfc_preference_title_init_pin" android:key="nfc_init_pin" android:summary="@string/nfc_preference_summary_init_pin" />
+</PreferenceScreen>

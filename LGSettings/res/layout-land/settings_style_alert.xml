@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/easy_settings_help" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="350.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/settings_style_img" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/easy_settings_help_tab" android:scaleType="fitStart" android:layout_weight="1.0" android:layout_marginStart="8.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.36" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="15.269989sp" android:id="@id/settings_style_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sp_switch_to_tab_desc_NORMAL" android:layout_weight="0.0" android:layout_marginStart="1.0dip" />
+        <TextView android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/no_text_msg" android:layout_weight="1.0" />
+        <CheckBox android:textSize="16.0sp" android:textStyle="bold" android:id="@id/checkbox_donotshow_style" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sp_keepscreenon_skip" android:layout_weight="0.0" />
+    </LinearLayout>
+</LinearLayout>

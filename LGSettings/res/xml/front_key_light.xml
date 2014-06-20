@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/sp_front_touch_key_light" android:key="ps_front"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.lgesettings">
+    <CheckBoxPreference android:title="@string/sp_front_touch_key_indicator" android:key="front_key_notification" android:summary="@string/sp_front_touch_key_indicator_summary" android:defaultValue="false" />
+    <PreferenceCategory android:title="@string/sp_front_touch_key_light_settings" android:key="frontkey_category" />
+    <CheckBoxPreference android:title="@string/sp_checkbox_front_touch_key_light" android:key="checkbox_front_key_light" android:summary="@string/front_touch_key_light_checkbox_summury" android:defaultValue="false" />
+    <com.android.lgesettings.DoubleTitleListPreference android:entries="@array/sp_front_key_light_NORMAL" android:title="@string/sp_front_touch_key_light_duration" android:key="front_key_light_duration" android:dependency="checkbox_front_key_light" android:entryValues="@array/sp_frontkey_led_timeout_values_NORMAL" />	/>
+</PreferenceScreen>

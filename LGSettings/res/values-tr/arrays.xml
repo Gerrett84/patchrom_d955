@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>Amerika</item>
+        <item>Avrupa</item>
+        <item>Afrika</item>
+        <item>Asya</item>
+        <item>Avustralya</item>
+        <item>Pasifik</item>
+        <item>Hepsi</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 saniye</item>
+        <item>30 saniye</item>
+        <item>1 dakika</item>
+        <item>2 dakika</item>
+        <item>5 dakika</item>
+        <item>10 dakika</item>
+        <item>30 dakika</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries2_NORMAL">
+        <item>15 saniye</item>
+        <item>30 saniye</item>
+        <item>1 dakika</item>
+        <item>2 dakika</item>
+        <item>5 dakika</item>
+        <item>10 dakika</item>
+        <item>Ekranı açık tut</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL">
+        <item>15 saniye</item>
+        <item>30 saniye</item>
+        <item>1 dakika</item>
+        <item>2 dakika</item>
+        <item>5 dakika</item>
+        <item>10 dakika</item>
+        <item>15 dakika</item>
+        <item>Ekranı açık tut</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL_ex">
+        <item>15 sn</item>
+        <item>30 san.</item>
+        <item>1 dak</item>
+        <item>2 dak.</item>
+        <item>5 dk</item>
+        <item>10 dk</item>
+        <item>15 dak</item>
+        <item>Ekranı açık tut</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled">
+        <item>15 saniye</item>
+        <item>30 saniye</item>
+        <item>1 dakika</item>
+        <item>2 dakika</item>
+        <item>5 dakika</item>
+        <item>10 dakika</item>
+        <item>15 dakika</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled_ex">
+        <item>15 sn</item>
+        <item>30 san.</item>
+        <item>1 dak</item>
+        <item>2 dak.</item>
+        <item>5 dk</item>
+        <item>10 dk</item>
+        <item>15 dak</item>
+    </string-array>
+    <string-array name="sp_pouch_default_clock_entries2_NORMAL">
+        <item>Saat 1</item>
+        <item>Saat 2</item>
+        <item>Saat 3</item>
+        <item>Saat 4</item>
+        <item>Saat 5</item>
+        <item>Saat 6</item>
+        <item>Saat 7</item>
+        <item>Saat 8</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries1_NORMAL">
+        <item>Analog</item>
+        <item>Dijital</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_position_entries1_NORMAL">
+        <item>Merkezi</item>
+        <item>Sağ üst</item>
+        <item>Sol üst</item>
+        <item>Sağ alt</item>
+        <item>Sol alt</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_font_entries1_NORMAL">
+        <item>Yazı tipi adı 1</item>
+        <item>Yazı tipi adı 2</item>
+    </string-array>
+    <string-array name="sp_sound_profile_entries_NORMAL">
+        <item>Bildirim tonu</item>
+        <item>Titreşim</item>
+        <item>Sessiz</item>
+    </string-array>
+    <string-array name="dream_timeout_entries">
+        <item>Hiçbir zaman</item>
+        <item>15 saniye</item>
+        <item>30 saniye</item>
+        <item>1 dakika</item>
+        <item>2 dakika</item>
+        <item>5 dakika</item>
+        <item>10 dakika</item>
+        <item>30 dakika</item>
+    </string-array>
+    <string-array name="lock_after_timeout_entries">
+        <item>Hemen</item>
+        <item>5 saniye</item>
+        <item>15 saniye</item>
+        <item>30 saniye</item>
+        <item>1 dakika</item>
+        <item>2 dakika</item>
+        <item>5 dakika</item>
+        <item>10 dakika</item>
+        <item>30 dakika</item>
+    </string-array>
+    <string-array name="sp_lock_after_timeout_entries_NORMAL">
+        <item>Hemen</item>
+        <item>15 saniye</item>
+        <item>30 saniye</item>
+        <item>1 dakika</item>
+        <item>2 dakika</item>
+        <item>10 dakika</item>
+        <item>30 dakika</item>
+    </string-array>
+    <string-array name="entries_font_size">
+        <item>&amp;lt;font size=16 align=middle>Küçük&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>Normal&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>Büyük&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>Çok büyük&amp;lt;/font></item>
+    </string-array>
+    <string-array name="sp_entries_font_size2">
+        <item>&amp;lt;font size=14 align=middle>Minimum&amp;lt;/font></item>
+        <item>&amp;lt;font size=16 align=middle>Küçük&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>Orta&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>Büyük&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>Çok büyük&amp;lt;/font></item>
+        <item>&amp;lt;font size=27 align=middle>Maksimum&amp;lt;/font></item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>Çok yavaş</item>
+        <item>Yavaş</item>
+        <item>Normal</item>
+        <item>Hızlı</item>
+        <item>Çok hızlı</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>Çok düşük</item>
+        <item>Düşük</item>
+        <item>Normal</item>
+        <item>Yüksek</item>
+        <item>Çok yüksek</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Taranıyor ...</item>
+        <item>Bağlanıyor...</item>
+        <item>Doğrulanıyor...</item>
+        <item>IP adresi alınıyor...</item>
+        <item>Bağlandı</item>
+        <item>Bağlandı</item>
+        <item>Bağlantı kesiliyor...</item>
+        <item>Bağlantı kesildi</item>
+        <item>Başarısız</item>
+        <item>Bloke</item>
+        <item>Zayıf bağlantıdan geçici olarak kaçınılıyor</item>
+        <item>Zayıf bağlantıdan geçici olarak kaçınılıyor</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Taranıyor ...</item>
+        <item>Bağlanıyor %1$s...</item>
+        <item>%1$s üzerinde kimlik doğrulanıyor…</item>
+        <item>%1$sdan alınan adres ...</item>
+        <item>%1$s ağına bağlandı</item>
+        <item>Bağlandı</item>
+        <item>%1$s bağlantısı kesiliyor…</item>
+        <item>Bağlantı kesildi</item>
+        <item>Başarısız</item>
+        <item>Bloke</item>
+        <item>Zayıf bağlantıdan geçici olarak kaçınılıyor</item>
+    </string-array>
+    <string-array name="wifi_ap_security">
+        <item>Yok</item>
+        <item>WPA PSK</item>
+        <item>WPA2 PSK</item>
+    </string-array>
+    <string-array name="wifi_p2p_wps_setup">
+        <item>Basmalı Düğme</item>
+        <item>Bu cihazdan PIN</item>
+    </string-array>
+    <string-array name="wifi_p2p_status">
+        <item>Bağlandı</item>
+        <item>Bağlantı</item>
+        <item>Başarısız</item>
+        <item>Mevcut</item>
+        <item>Aralık dışında</item>
+    </string-array>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>2 dakika</item>
+        <item>5 dakika</item>
+        <item>1 saat</item>
+        <item>Asla zaman aşımına uğrama</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Yetersiz</item>
+        <item>Açık</item>
+        <item>İyi</item>
+        <item>Mükemmel</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Daima</item>
+        <item>Sadece fiş takılı olduğunda</item>
+        <item>Wi-Fi kapalı (veri kullanımı nedeniyle)</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <item>Daima</item>
+        <item>Sadece fiş takılı olduğunda</item>
+        <item>Wi-Fi kapalı</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_entries">
+        <item>Otomatik</item>
+        <item>Yalnızca 5 GHz</item>
+        <item>Yalnızca 2,4 GHz</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>Kullanım süresi</item>
+        <item>Sayımı Başlat</item>
+        <item>Uygulama Adı</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>Yok</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_network_setup">
+        <item>Kapalı</item>
+        <item>Basmalı Düğme</item>
+        <item>Erişim noktasından PIN</item>
+        <item>Bu cihazdan PIN</item>
+    </string-array>
+    <string-array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>Statik</item>
+    </string-array>
+    <string-array name="wifi_proxy_settings">
+        <item>Yok</item>
+        <item>Manuel</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>Kapalı</item>
+        <item>Alarm</item>
+        <item>Titreşim</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>Yok</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP veya CHAP</item>
+    </string-array>
+    <string-array name="bearer_entries">
+        <item>LTE</item>
+        <item>eHRPD</item>
+        <item>Belirlenmeyen</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Dahili cihaz depolaması</item>
+        <item>Çıkarılabilir SD kart</item>
+        <item>Sistem karar versin</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>Daima</item>
+        <item>Hiçbir zaman</item>
+        <item>Yalnızca Sessiz modda</item>
+        <item>Yalnızca Sessiz modda değilken</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_titles">
+        <item>Kısa</item>
+        <item>Orta</item>
+        <item>Uzun</item>
+    </string-array>
+    <string-array name="hdcp_checking_titles">
+        <item>Asla kontrol etme</item>
+        <item>Sadece DRM içeriğini kontrol et</item>
+        <item>Her zaman kontrol et</item>
+    </string-array>
+    <string-array name="hdcp_checking_summaries">
+        <item>HDCP kontrolünü asla kullanma</item>
+        <item>HDCP kontrolünü sadece DRM içeriği için kullan</item>
+        <item>Her zaman HDCP kontrolünü kullan</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>Animasyon kapalı</item>
+        <item>Animasyon ölçeği .5x</item>
+        <item>Animasyon ölçeği 1x</item>
+        <item>Animasyon ölçeği 1.5x</item>
+        <item>Animasyon ölçeği 2x</item>
+        <item>Animasyon ölçeği 5x</item>
+        <item>Animasyon ölçeği 10x</item>
+    </string-array>
+    <string-array name="transition_animation_scale_entries">
+        <item>Animasyon kapalı</item>
+        <item>Animasyon ölçeği .5x</item>
+        <item>Animasyon ölçeği 1x</item>
+        <item>Animasyon ölçeği 1.5x</item>
+        <item>Animasyon ölçeği 2x</item>
+        <item>Animasyon ölçeği 5x</item>
+        <item>Animasyon ölçeği 10x</item>
+    </string-array>
+    <string-array name="animator_duration_scale_entries">
+        <item>Animasyon kapalı</item>
+        <item>Animasyon ölçeği .5x</item>
+        <item>Animasyon ölçeği 1x</item>
+        <item>Animasyon ölçeği 1.5x</item>
+        <item>Animasyon ölçeği 2x</item>
+        <item>Animasyon ölçeği 5x</item>
+        <item>Animasyon ölçeği 10x</item>
+    </string-array>
+    <string-array name="overlay_display_devices_entries">
+        <item>Yok</item>
+        <item>720x480 mdpi</item>
+        <item>1280x720 tvdpi</item>
+        <item>1920x1080 xhdpi</item>
+        <item>1280x720 tvdpi ve 1920x1080 xhdpi</item>
+    </string-array>
+    <string-array name="enable_opengl_traces_entries">
+        <item>Yok</item>
+        <item>Logcat</item>
+        <item>Systrace (Grafikler)</item>
+        <item>"glGetError'a yığın çağır"</item>
+    </string-array>
+    <string-array name="app_process_limit_entries">
+        <item>Standart sınır</item>
+        <item>Arka plan işlemi yok</item>
+        <item>En fazla 1 işlem</item>
+        <item>En fazla 2 işlem</item>
+        <item>En fazla 3 işlem</item>
+        <item>En fazla 4 işlem</item>
+    </string-array>
+    <string-array name="vpn_types_long">
+        <item>PPTP VPN</item>
+        <item>Ön paylaşımlı anahtarlı L2TP/IPSec VPN</item>
+        <item>Sertifikalı L2TP/IPSec VPN</item>
+        <item>Ön paylaşımlı anahtarları ve Xauth kimlik doğrulamalı IPSec VPN</item>
+        <item>Sertifikalı ve karma Xauth kimlik doğrulamalı IPSec VPN</item>
+        <item>Sertifikalı ve karma kimlik doğrulamalı IPSec VPN</item>
+    </string-array>
+    <string-array name="vpn_states">
+        <item>Bağlantı kesildi</item>
+        <item>Başlatılıyor...</item>
+        <item>Bağlanıyor...</item>
+        <item>Bağlandı</item>
+        <item>Zaman aşımı</item>
+        <item>Başarısız</item>
+    </string-array>
+    <string-array name="security_settings_premium_sms_values">
+        <item>Sor</item>
+        <item>Hiçbir zaman izin verme</item>
+        <item>Her zaman izin ver</item>
+    </string-array>
+    <string-array name="search_filter">
+        <item>Tüm cihazlar</item>
+        <item>Kulaklık</item>
+        <item>PC</item>
+        <item>Telefon</item>
+        <item>Çevresel</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries_NORMAL">
+        <item>Kullanıcı görüntüsü</item>
+        <item>Saat 1</item>
+        <item>Saat 2</item>
+        <item>Saat 3</item>
+        <item>Saat 4</item>
+        <item>Saat 5</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL">
+        <item>1.5 saniye</item>
+        <item>3 saniye</item>
+        <item>5 saniye</item>
+        <item>Daima açık</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL_ex">
+        <item>1.5 Saniye.</item>
+        <item>3 san.</item>
+        <item>5 san.</item>
+        <item>Daima açık</item>
+    </string-array>
+    <string-array name="sp_front_key_light_l1_NORMAL">
+        <item>3 saniye</item>
+        <item>6 saniye</item>
+        <item>10 saniye</item>
+        <item>30 saniye</item>
+        <item>Daima açık</item>
+    </string-array>
+    <string-array name="sp_front_key_light_att_NORMAL">
+        <item>3 san.</item>
+        <item>1 Saniye.</item>
+        <item>10 san.</item>
+        <item>30 san.</item>
+        <item>Daima açık</item>
+    </string-array>
+    <string-array name="sp_numlocdisp_entries_NORMAL">
+        <item>Devre Dışı Bırak</item>
+        <item>Etkinleştir</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_NORMAL">
+        <item>Gizlilik uyarısı</item>
+        <item>Bir 3.taraf uygulaması kullanırsanız, kişisel bilgilerinizi doğrudan toplayabilir veya operatörünüzün konum bilginiz (uygulanabildiği yerde) dahil olmak üzere kişisel bilgilerinizi uyg sağlayıcısına veya başka bir 3.tarafa açıklamasını gerektirebilir.</item>
+        <item>Hangi Gizlilik Politikası geçerlidir? Operatörünüzün Gizlilik Politikası ve Kullanım Koşulları, telefonunuzda sadece 3. taraflarca sağlanan uygulamalar için geçerli değildir. 3. taraf politikaları, bu uygulamayı kullanmanızda geçerlidir.</item>
+        <item>3. Taraf Politikaları Hakkında Nerde Daha Fazla Bilgi Bulabilirim? Uygulamanın bilgilerinizi nasıl toplayacağı, ulaşacağı, kullanacağı ve açıklayacağıyla ilgili daha fazla bilgi için uygulamanın kullanım koşullarına ve/veya uygulama sağlayıcısının politikalarına bakın. Gizlilik Politikaları, Kullanım Koşulları ve diğer tüketici bildirimleri, sağlayıcının web sitesinde mevcut OLABİLİR. Bir uygulamayı kullanmadan önce politikalardan memnun olduğunuzdan emin olun.</item>
+        <item>Operatörümün Gizlilik Politikasını Nerede Bulabilirim? Operatörünüzün Gizlilik Politikası hakkında ayrı olarak sorularınız varsa, lütfen operatörünüzün ana sayfasını ziyaret edin ve \"Gizlilik Politikası\" linkine tıklayın.</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_spr_NORMAL">
+        <item>Sprint Gizlilik Uyarısı</item>
+        <item>3. parti uyg kullanırsanız, kişisel bilgilerinizi doğrudan toplayabilir veya konum bilgileriniz (uygun olan yerlerde) dahil kişisel bilgilerinizi, uyg sağlayıcısına veya başka bir 3. tarafa ifşa etmek için Sprint gerektirebilir.</item>
+        <item>"Hangi Gizlilik Politikası geçerlidir? Sprint'in Gizlilik Politikası ve Kullanım Şartları, sadece 2. kişiler tarafından sağlanan telefonunuz için geçerli değil."</item>
+        <item>3. Şahıs Politikaları Hakkında Bilgi Nerede Bulabilirim? Uygulamanın bilgilerinizi nasıl toplayacağı, onlara erişeceği, kullanacağı ve ifşa edeceği hakkında daha fazla bilgi için uygulamanın kullanım koşullarını ve/veya uygulama tedarikçisinin politikasını kontrol edin. Gizlilik Politikaları, Kullanım Koşulları ve diğer tüketici bildirimleri, tedarikçinin web sitesinde mevcut OLABİLİR. Bir uygulamayı kullanmadan önce politikalardan memnun olduğunuzdan emin olun.</item>
+        <item>"Sprint'in Gizlilik Politikası'nı nerede bulabilirim? Ayrı olarak, Sprint'in Gizlilik Politikası hakkında sorularınız varsa, lütfen Sprint.com adresini ziyaret edin ve \"Gizlilik Politikası\" linkine tıklayın."</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_bm_NORMAL">
+        <item>Boost Mobile Gizlilik Uyarısı</item>
+        <item>3. parti uyg kullanırsanız, kişisel bilgilerinizi doğrudan toplayabilir veya konum bilgileriniz (uygun olan yerlerde) dahil kişisel bilgilerinizi, uyg sağlayıcısına veya başka bir 3. tarafa ifşa etmek için Boost Mobile gerektirebilir.</item>
+        <item>"Hangi Gizlilik Politikası geçerlidir? Boost Mobile'inGizlilik Politikası ve Kullanım Şartları, sadece 2. kişiler tarafından sağlanan telefonunuz için geçerli değil."</item>
+        <item>3. Şahıs Politikaları Hakkında Bilgi Nerede Bulabilirim? Uygulamanın bilgilerinizi nasıl toplayacağı, onlara erişeceği, kullanacağı ve ifşa edeceği hakkında daha fazla bilgi için uygulamanın kullanım koşullarını ve/veya uygulama tedarikçisinin politikasını kontrol edin. Gizlilik Politikaları, Kullanım Koşulları ve diğer tüketici bildirimleri, tedarikçinin web sitesinde mevcut OLABİLİR. Bir uygulamayı kullanmadan önce politikalardan memnun olduğunuzdan emin olun.</item>
+        <item>"Boost Mobile'ın Gizlilik Politikası'nı nerede bulabilirim? Ayrı olarak, Boost Mobile'ın Gizlilik Politikası hakkında sorularınız varsa, lütfen BoostMobile.com adresini ziyaret edin ve \"Gizlilik Politikası\" linkine tıklayın."</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_virgin_NORMAL">
+        <item>Virgin Mobile Gizlilik Uyarısı</item>
+        <item>3. taraf uyg kullanmanız, kişisel bilgilerinizi doğrudan toplayabilir veya konum bilgileriniz (uygun olan yerlerde) dahil kişisel bilgilerinizi, uyg sağlayıcısına veya başka bir 3. tarafa ifşa etmek için Virgin Mobile gerektirebilir.</item>
+        <item>"Hangi Gizlilik Politikası Uygulanır? Virgin Mobile'in Gizlilik Politikası ve Kullanım Koşulları, telefonunuza sadece 3. tarafların sağlamış olduğu uygulamalar için geçerli değildir. Bu uygulamanın kullanımında 3. tarafın politikası uygulanır."</item>
+        <item>3. Şahıs Politikaları Hakkında Bilgi Nerede Bulabilirim? Uygulamanın bilgilerinizi nasıl toplayacağı, onlara erişeceği, kullanacağı ve ifşa edeceği hakkında daha fazla bilgi için uygulamanın kullanım koşullarını ve/veya uygulama tedarikçisinin politikasını kontrol edin. Gizlilik Politikaları, Kullanım Koşulları ve diğer tüketici bildirimleri, tedarikçinin web sitesinde mevcut OLABİLİR. Bir uygulamayı kullanmadan önce politikalardan memnun olduğunuzdan emin olun.</item>
+        <item>"Virgin Mobile'ın Gizlilik Politikasını nerede bulabilirim? Ayrıca, Virgin Mobile'in Gizlilik Politikası hakkındaki sorularınız için, lütfen VirginMobileUSA.com adresine gidin ve \"Gizlilik Politikası\" linkine tıklayın."</item>
+    </string-array>
+    <string-array name="sp_lock_screen_effect_entries_NORMAL">
+        <item>Temel</item>
+        <item>Hafif dalgalanma</item>
+        <item>Yayılan mürekkep</item>
+        <item>Çiy damlası</item>
+    </string-array>
+    <string-array name="sp_power_save_brightness_entries_NORMAL">
+        <item>%10 parlaklık</item>
+        <item>%20 parlaklık</item>
+        <item>%30 parlaklık</item>
+        <item>%50 parlaklık</item>
+    </string-array>
+    <string-array name="sp_power_save_screen_timeout_entries_NORMAL">
+        <item>15 saniye</item>
+        <item>30 saniye</item>
+        <item>1 dakika</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_NORMAL">
+        <item>1.5 saniye</item>
+        <item>Daima kapalı</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_att_NORMAL">
+        <item>3 saniye</item>
+        <item>Daima kapalı</item>
+    </string-array>
+    <string-array name="sp_power_save_mode_entries_NORMAL">
+        <item>10%</item>
+        <item>20%</item>
+        <item>30%</item>
+        <item>50%</item>
+    </string-array>
+    <string-array name="sp_power_save_mode2_entries_NORMAL">
+        <item>Hemen</item>
+        <item>10%</item>
+        <item>20%</item>
+        <item>30%</item>
+        <item>50%</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries">
+        <item>5 dakika</item>
+        <item>10 dakika</item>
+        <item>15 dakika</item>
+    </string-array>
+    <string-array name="sp_hotspot_timeout_entries_mx_NORMAL">
+        <item>Asla zaman aşımına uğrama</item>
+        <item>5 dk</item>
+        <item>10 dk</item>
+        <item>15 dak</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries_jb">
+        <item>5 dk</item>
+        <item>10 dk</item>
+        <item>15 dak</item>
+        <item>30 dk</item>
+        <item>Hiçbir zaman</item>
+    </string-array>
+    <string-array name="wifi_p2p_timeout_entries">
+        <item>15 dak</item>
+        <item>30 dk</item>
+        <item>Hiçbir zaman</item>
+    </string-array>
+    <string-array name="sp_wifi_ap_visibility_NORMAL">
+        <item>Göster</item>
+        <item>Gizle</item>
+    </string-array>
+    <string-array name="sp_bt_search_filter_SHORT">
+        <item>Tüm cihazlar</item>
+        <item>Kulaklık</item>
+        <item>Cep Telefonu</item>
+        <item>PC</item>
+        <item>Klavye, mouse, vb.</item>
+    </string-array>
+    <string-array name="wifi_signal_strength_entries">
+        <item>Güçlü</item>
+        <item>Orta</item>
+        <item>Zayıf</item>
+        <item>Kapalı</item>
+    </string-array>
+    <string-array name="wifi_Dual_band_AP_connection_entries">
+        <item>Otomatik</item>
+        <item>5 GHz</item>
+        <item>2.4 GHz</item>
+    </string-array>
+</resources>

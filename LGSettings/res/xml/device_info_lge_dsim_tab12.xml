@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/about_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:title="@string/status_operator" android:key="network" android:summary="@string/sp_NetworkType_NORMAL">
+        <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.lge.DeviceInfoLgeNetwork" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/sp_phone_identity_NORMAL" android:key="phoneidentity">
+        <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.lge.DeviceInfoLgePhoneIdentity" />
+    </PreferenceScreen>
+</PreferenceScreen>

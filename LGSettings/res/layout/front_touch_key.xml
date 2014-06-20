@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:layout="@layout/dummy_layout" />
+    <PreferenceScreen android:persistent="false" android:title="@string/display_front_touch_button_summary" android:selectable="false" android:key="front_summary" style="@style/front_touch_button_information" />
+    <com.android.lgesettings.lge.RadioButtonPreference android:icon="@drawable/setting_list_fronttouchkey_image_01" android:key="fronttouchkey_01" />
+    <com.android.lgesettings.lge.RadioButtonPreference android:icon="@drawable/setting_list_fronttouchkey_image_02" android:key="fronttouchkey_02" />
+    <com.android.lgesettings.lge.RadioButtonPreference android:icon="@drawable/setting_list_fronttouchkey_image_03" android:key="fronttouchkey_03" />
+    <com.android.lgesettings.lge.RadioButtonPreference android:icon="@drawable/setting_list_fronttouchkey_image_04" android:key="fronttouchkey_04" />
+    <com.android.lgesettings.lge.RadioButtonPreference android:icon="@drawable/setting_list_fronttouchkey_image_05" android:key="fronttouchkey_05" />
+    <com.android.lgesettings.lge.RadioButtonPreference android:icon="@drawable/setting_list_fronttouchkey_image_06" android:key="fronttouchkey_06" />
+    <PreferenceCategory android:title="@string/display_front_touch_background" android:key="background_category">
+        <Preference android:persistent="false" android:title="@string/display_front_touch_theme" android:key="front_touch_key_theme" android:fragment="com.android.lgesettings.lge.FrontTouchKeyTheme" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/display_front_touch_key_transparent" android:key="transparent" android:summary="@string/display_front_touch_key_transparent_dec_ex" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/display_front_touch_key_onehand" android:key="advanced_category">
+        <CheckBoxPreference android:persistent="false" android:title="@string/display_front_touch_swipe" android:key="gesture" android:summary="@string/display_front_touch_gesture_summary" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/display_front_touch_floating" android:key="onehand" android:summary="@string/display_front_touch_key_onehand_dec" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/advanced_settings" android:key="advanced_settings_category">
+        <ListPreference android:persistent="false" android:entries="@array/position_front_key_entries" android:title="@string/position_landscape_view_title" android:key="position_front_key" android:summary="@string/front_key_position_summary" android:entryValues="@array/position_front_key_value" />
+        <Preference android:persistent="false" android:title="@string/hide_navigation_title" android:key="hide_navigation" android:fragment="com.android.lgesettings.lge.HideNavigation" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,84 @@
+diff -rup ../framework_ext/smali/com/android/internal/telephony/gsm/MiuiUsimPhoneBookManager.smali ../framework_ext/smali/com/android/internal/telephony/gsm/MiuiUsimPhoneBookManager.smali
+--- ../framework_ext/smali/com/android/internal/telephony/gsm/MiuiUsimPhoneBookManager.smali	2014-05-31 11:35:02.000000000 +0200
++++ ../framework_ext/smali/com/android/internal/telephony/gsm/MiuiUsimPhoneBookManager.smali	2014-05-31 12:43:20.904353478 +0200
+@@ -3,7 +3,7 @@
+ .source "MiuiUsimPhoneBookManager.java"
+ 
+ # interfaces
+-.implements Lcom/android/internal/telephony/IccConstants;
++.implements Lcom/android/internal/telephony/uicc/IccConstants;
+ 
+ 
+ # annotations
+@@ -73,7 +73,7 @@
+ 
+ 
+ # instance fields
+-.field mAdnCache:Lcom/android/internal/telephony/AdnRecordCache;
++.field mAdnCache:Lcom/android/internal/telephony/uicc/AdnRecordCache;
+ 
+ .field mFh:Lcom/android/internal/telephony/MiuiIccFileHandler;
+ 
+@@ -124,7 +124,7 @@
+ 
+ 
+ # direct methods
+-.method public constructor <init>(Lcom/android/internal/telephony/IccFileHandler;Lcom/android/internal/telephony/AdnRecordCache;)V
++.method public constructor <init>(Lcom/android/internal/telephony/uicc/IccFileHandler;Lcom/android/internal/telephony/uicc/AdnRecordCache;)V
+     .locals 3
+     .parameter "fh"
+     .parameter "cache"
+@@ -181,7 +181,7 @@
+     .line 87
+     new-instance v0, Lcom/android/internal/telephony/MiuiIccFileHandler;
+ 
+-    invoke-direct {v0, p1}, Lcom/android/internal/telephony/MiuiIccFileHandler;-><init>(Lcom/android/internal/telephony/IccFileHandler;)V
++    invoke-direct {v0, p1}, Lcom/android/internal/telephony/MiuiIccFileHandler;-><init>(Lcom/android/internal/telephony/uicc/IccFileHandler;)V
+ 
+     iput-object v0, p0, Lcom/android/internal/telephony/gsm/MiuiUsimPhoneBookManager;->mFh:Lcom/android/internal/telephony/MiuiIccFileHandler;
+ 
+@@ -193,7 +193,7 @@
+     iput-object v0, p0, Lcom/android/internal/telephony/gsm/MiuiUsimPhoneBookManager;->mPhoneBookRecords:Ljava/util/ArrayList;
+ 
+     .line 89
+-    iput-object p2, p0, Lcom/android/internal/telephony/gsm/MiuiUsimPhoneBookManager;->mAdnCache:Lcom/android/internal/telephony/AdnRecordCache;
++    iput-object p2, p0, Lcom/android/internal/telephony/gsm/MiuiUsimPhoneBookManager;->mAdnCache:Lcom/android/internal/telephony/uicc/AdnRecordCache;
+ 
+     .line 91
+     const/4 v0, 0x0
+@@ -1759,7 +1759,7 @@
+     .line 359
+     .local v1, extEf:I
+     :goto_1
+-    iget-object v4, p0, Lcom/android/internal/telephony/gsm/MiuiUsimPhoneBookManager;->mAdnCache:Lcom/android/internal/telephony/AdnRecordCache;
++    iget-object v4, p0, Lcom/android/internal/telephony/gsm/MiuiUsimPhoneBookManager;->mAdnCache:Lcom/android/internal/telephony/uicc/AdnRecordCache;
+ 
+     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+ 
+@@ -1781,7 +1781,7 @@
+ 
+     move-result-object v5
+ 
+-    invoke-virtual {v4, v3, v1, v5}, Lcom/android/internal/telephony/AdnRecordCache;->requestLoadAllAdnLike(IILandroid/os/Message;)V
++    invoke-virtual {v4, v3, v1, v5}, Lcom/android/internal/telephony/uicc/AdnRecordCache;->requestLoadAllAdnLike(IILandroid/os/Message;)V
+ 
+     .line 362
+     :try_start_0
+@@ -3873,7 +3873,7 @@
+ 
+     .line 457
+     :cond_2
+-    invoke-static {p3, v4, v1}, Lcom/android/internal/telephony/IccUtils;->adnStringFieldToString([BII)Ljava/lang/String;
++    invoke-static {p3, v4, v1}, Lcom/android/internal/telephony/uicc/IccUtils;->adnStringFieldToString([BII)Ljava/lang/String;
+ 
+     move-result-object v0
+ 
+@@ -4695,7 +4695,7 @@
+ 
+     move-object v1, p1
+ 
+-    invoke-virtual/range {v0 .. v6}, Lcom/android/internal/telephony/MiuiAdnRecordLoader;->updateEF(Lcom/android/internal/telephony/AdnRecord;IIILjava/lang/String;Landroid/os/Message;)V
++    invoke-virtual/range {v0 .. v6}, Lcom/android/internal/telephony/MiuiAdnRecordLoader;->updateEF(Lcom/android/internal/telephony/uicc/AdnRecord;IIILjava/lang/String;Landroid/os/Message;)V
+ 
+     .line 1026
+     :try_start_0

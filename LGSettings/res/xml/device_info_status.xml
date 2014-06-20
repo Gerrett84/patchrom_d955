@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/device_status_activity_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:persistent="false" android:title="@string/model_number" android:key="device_model" android:summary="@string/device_info_default" style="?android:attr/preferenceInformationStyle" />
+    <Preference android:persistent="false" android:title="@string/battery_status_title" android:key="battery_status" android:summary="@string/device_info_not_available" style="?android:attr/preferenceInformationStyle" />
+    <Preference android:persistent="false" android:title="@string/battery_level_title" android:key="battery_level" android:summary="@string/device_info_not_available" style="?android:attr/preferenceInformationStyle" />
+    <Preference android:persistent="false" android:title="@string/status_operator" android:key="operator_name" android:summary="@string/device_info_not_available" style="?android:attr/preferenceInformationStyle" />
+    <Preference android:persistent="false" android:title="@string/status_signal_strength" android:key="signal_strength" android:summary="@string/device_info_not_available" style="?android:attr/preferenceInformationStyle" />
+    <Preference android:persistent="false" android:title="@string/status_network_type" android:key="network_type" android:summary="@string/device_info_not_available" style="?android:attr/preferenceInformationStyle" />
+    <Preference android:persistent="false" android:title="@string/sp_network_typestrength_NORMAL" android:key="network_type_strength" android:summary="@string/sp_net_status_summary_NORMAL">
+        <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.deviceinfo.NetworkTypeStrength" />
+    </Preference>
+    <Preference android:persistent="false" android:title="@string/status_service_state" android:key="service_state" android:summary="@string/device_info_not_available" style="?android:attr/preferenceInformationStyle" />
+    <Preference android:persistent="false" android:title="@string/status_roaming" android:key="roaming_state" android:summary="@string/device_info_not_available" style="?android:attr/preferenceInformationStyle" />
+    <Preference android:persistent="false" android:title="@string/status_data_state" android:key="data_state" android:summary="@string/device_info_not_available" style="?android:attr/preferenceInformationStyle" />
+    <Preference android:persistent="false" android:title="@string/status_number" android:key="number" android:summary="@string/device_info_not_available" style="?android:attr/preferenceInformationStyle" />
+    <Preference android:persistent="false" android:title="@string/status_min_number" android:key="min_number" android:summary="@string/device_info_not_available" style="?android:attr/preferenceInformationStyle" />
+    <Preference android:persistent="false" android:title="@string/status_prl_version" android:key="prl_version" android:summary="@string/device_info_not_available" style="?android:attr/preferenceInformationStyle" />
+    <Preference android:persistent="false" android:title="@string/sp_status_eri_version_NORMAL" android:key="eri_version" android:summary="@string/device_info_not_available" style="?android:attr/preferenceInformationStyle" />
+    <Preference android:persistent="false" android:title="@string/status_esn_number" android:key="esn_number" android:summary="@string/device_info_not_available" style="?android:attr/preferenceInformationStyle" />
+    <Preference android:persistent="false" android:title="@string/status_meid_number" android:key="meid_number" android:summary="@string/device_info_not_available" style="?android:attr/preferenceInformationStyle" />
+    <Preference android:persistent="false" android:title="@string/sp_status_meid_hex_NORMAL" android:key="meid_hexa" android:summary="@string/device_info_not_available" style="?android:attr/preferenceInformationStyle" />
+    <Preference android:persistent="false" android:title="@string/sp_status_meid_decimal_NORMAL" android:key="meid_decimal" android:summary="@string/device_info_not_available" style="?android:attr/preferenceInformationStyle" />
+    <Preference android:persistent="false" android:title="@string/status_imei" android:key="imei" android:summary="@string/device_info_not_available" style="?android:attr/preferenceInformationStyle" />
+    <Preference android:persistent="false" android:title="@string/status_imei_svn" android:key="imei_svn" android:summary="@string/device_info_not_available" style="?android:attr/preferenceInformationStyle" />
+    <Preference android:persistent="false" android:title="@string/status_imei_sv" android:key="imei_sv" android:summary="@string/device_info_not_available" style="?android:attr/preferenceInformationStyle" />
+    <Preference android:persistent="false" android:title="@string/status_imei_svn" android:key="imei_svn_gsm" android:summary="@string/device_info_not_available" style="?android:attr/preferenceInformationStyle" />
+    <Preference android:persistent="false" android:title="@string/sp_channel_NORMAL" android:key="channel" android:summary="@string/device_info_not_available" />
+    <Preference android:persistent="false" android:title="@string/sp_SID_NORMAL" android:key="sid" android:summary="@string/device_info_not_available" />
+    <Preference android:persistent="false" android:title="@string/status_icc_id" android:key="icc_id" android:summary="@string/device_info_not_available" style="?android:attr/preferenceInformationStyle" />
+    <Preference android:persistent="false" android:title="@string/wifi_advanced_ip_address_title" android:key="wifi_ip_address" android:summary="@string/device_info_not_available" style="?android:attr/preferenceInformationStyle" />
+    <Preference android:persistent="false" android:title="@string/status_serial_number" android:key="serial_number" style="?android:attr/preferenceInformationStyle" />
+    <Preference android:persistent="false" android:title="@string/status_up_time" android:key="up_time" android:summary="@string/device_info_not_available" style="?android:attr/preferenceInformationStyle" />
+    <Preference android:persistent="false" android:title="@string/status_wimax_mac_address" android:key="wimax_mac_address" android:summary="@string/device_info_not_available" style="?android:attr/preferenceInformationStyle" />
+    <Preference android:persistent="false" android:title="@string/status_lifeTime" android:key="life_time_call" android:summary="00:00:00" style="?android:attr/preferenceInformationStyle" />
+    <Preference android:persistent="false" android:title="@string/sp_status_wdc_NORMAL" android:key="warranty_date_code" android:summary="@string/device_info_not_available" style="?android:attr/preferenceInformationStyle" />
+    <Preference android:persistent="false" android:title="@string/sp_status_Lifetime_data_NORMAL" android:key="life_time_data" android:summary="0" style="?android:attr/preferenceInformationStyle" />
+    <Preference android:title="@string/sp_ShortSerialNumber_NORMAL" android:key="manufacture_serial_number" android:summary="@string/device_info_default" style="?android:preferenceInformationStyle" />
+    <Preference android:title="@string/sp_ManufacCompanyCountry_NORMAL_2" android:key="manufacture_company_country" android:summary="@string/sp_LGElecKorea_NORMAL" style="?android:preferenceInformationStyle" />
+    <Preference android:title="@string/sp_ManufacDate_NORMAL" android:key="manufacture_serial_number_date" android:summary="@string/device_info_default" style="?android:preferenceInformationStyle" />
+    <Preference android:title="@string/sp_csn_NORMAL" android:key="csn" android:summary="@string/device_info_default" style="?android:preferenceInformationStyle" />
+    <Preference android:title="@string/sp_hardware_version_NORMAL" android:key="rev_check" android:summary="@string/device_info_not_available" style="?android:preferenceInformationStyle" />
+    <Preference android:persistent="false" android:title="@string/sp_ims_registration_status_NORMAL" android:key="ims_registration_status" android:summary="@string/device_info_not_available" style="?android:attr/preferenceInformationStyle" />
+    <PreferenceScreen android:title="@string/sp_power_save_battery_use_NORMAL" android:key="battery_use" android:summary="@string/sp_power_save_battery_use_summary_NORMAL" android:fragment="com.android.lgesettings.fuelgauge.PowerSaveBatteryDetail" />
+    <PreferenceScreen android:title="@string/sp_battery_condition_NORMAL" android:key="battery_condition_dcm">
+        <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.deviceinfo.BatteryCondition" />
+    </PreferenceScreen>
+    <Preference android:title="@string/sp_support_technology_NORMAL" android:key="support_technology" android:summary="@string/device_info_default" style="?android:preferenceInformationStyle" />
+    <Preference android:persistent="false" android:title="@string/sp_status_refurbish_NORMAL" android:key="refubish_counter" android:summary="@string/sp_device_info_refurbish_NORMAL" style="?android:attr/preferenceInformationStyle" />
+    <Preference android:persistent="false" android:title="@string/status_smsc" android:key="smsc" android:summary="@string/device_info_not_available" style="?android:attr/preferenceInformationStyle" />
+    <Preference android:persistent="false" android:title="@string/status_imsi" android:key="imsi" android:summary="@string/device_info_not_available" style="?android:attr/preferenceInformationStyle" />
+    <Preference android:persistent="false" android:title="@string/status_rooting_status" android:key="rooting_status" android:summary="@string/device_info_not_available" style="?android:attr/preferenceInformationStyle" />
+    <Preference android:persistent="false" android:title="@string/status_last_factory_data_reset" android:key="last_factory_date_reset" android:summary="@string/device_info_not_available" style="?android:attr/preferenceInformationStyle" />
+    <Preference android:persistent="false" android:title="@string/status_wifi_mac_address" android:key="wifi_mac_address" android:summary="@string/device_info_not_available" style="?android:attr/preferenceInformationStyle" />
+    <Preference android:persistent="false" android:title="@string/status_bt_address" android:key="bt_address" android:summary="@string/device_info_not_available" style="?android:attr/preferenceInformationStyle" />
+    <Preference android:persistent="false" android:title="@string/appmgr_pop_menu_memory" android:key="memory_size" android:summary="@string/device_info_not_available" style="?android:attr/preferenceInformationStyle" />
+</PreferenceScreen>

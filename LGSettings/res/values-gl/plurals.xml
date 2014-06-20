@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="other">O contrasinal debe ter, polo menos, %d letras</item>
+        <item quantity="one">O contrasinal debe conter polo menos 1 letra</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="other">O contrasinal debe ter, polo menos, %d letras minúsculas</item>
+        <item quantity="one">O contrasinal debe ter, polo menos, 1 letras minúsculas</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="other">O contrasinal debe conter, polo menos, %d letras maiúsculas</item>
+        <item quantity="one">O contrasinal debe conter, polo menos, 1 letras maiúsculas</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="other">O contrasinal debe ter, polo menos, %d díxitos</item>
+        <item quantity="one">O contrasinal debe ter, polo menos, 1 díxitos</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="other">O contrasinal debe conter, polo menos, %d símbolos especiais</item>
+        <item quantity="one">O contrasinal debe conter, polo menos, 1 símbolos especiais</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="other">O contrasinal debe conter, polo menos, %d carácteres non alfabéticos</item>
+        <item quantity="one">O contrasinal debe conter, polo menos, 1 carácteres non alfabéticos</item>
+    </plurals>
+</resources>

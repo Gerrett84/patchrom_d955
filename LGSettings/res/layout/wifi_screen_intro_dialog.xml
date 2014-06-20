@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <ImageView android:gravity="center_horizontal" android:id="@id/wifi_screen_intro_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/wifi_screen_img_help_popup" />
+        <TextView android:textSize="18.0sp" android:id="@id/wifi_screen_intro_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="11.329987dip" android:text="@string/sp_wifi_screen_share_desc_main_NORMAL" />
+        <CheckBox android:textSize="@dimen/settings_fontsize_14" android:id="@id/do_not_show_this_again" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="11.329987dip" android:text="@string/sp_do_not_show_this_again_NORMAL" />
+    </LinearLayout>
+</ScrollView>

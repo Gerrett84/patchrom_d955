@@ -1,0 +1,12 @@
+diff -rup ../telephony-common/smali/com/android/internal/telephony/gsm/MiuiSpnOverride.smali ../telephony-common/smali/com/android/internal/telephony/gsm/MiuiSpnOverride.smali
+--- ../telephony-common/smali/com/android/internal/telephony/gsm/MiuiSpnOverride.smali	2014-05-25 00:25:36.000000000 +0200
++++ ../telephony-common/smali/com/android/internal/telephony/gsm/MiuiSpnOverride.smali	2014-05-16 16:55:48.000000000 +0200
+@@ -53,7 +53,7 @@
+     return-void
+ .end method
+ 
+-.method public static getImpl()Lcom/android/internal/telephony/gsm/SpnOverride;
++.method public static getImpl()Lcom/android/internal/telephony/uicc/SpnOverride;
+     .locals 1
+ 
+     .prologue

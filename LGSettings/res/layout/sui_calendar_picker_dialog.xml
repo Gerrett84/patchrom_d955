@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.lge.sui.widget.control.SUICalendarPicker android:id="@id/suid_calendar_picker" android:layout_width="fill_parent" android:layout_height="300.0dip" />
+</RelativeLayout>

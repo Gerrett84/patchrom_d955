@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>अमेरिका</item>
+        <item>यूरोप</item>
+        <item>अफ्रीका</item>
+        <item>एशिया</item>
+        <item>ऑस्ट्रेलिया</item>
+        <item>प्रशांत</item>
+        <item>सभी</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 सेकंड</item>
+        <item>30 सेकंड</item>
+        <item>1 मिनट</item>
+        <item>2 मिनट</item>
+        <item>5 मिनट</item>
+        <item>10 मिनट</item>
+        <item>30 मिनट</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries2_NORMAL">
+        <item>15 सेकंड</item>
+        <item>30 सेकंड</item>
+        <item>1 मिनट</item>
+        <item>2 मिनट</item>
+        <item>5 मिनट</item>
+        <item>10 मिनट</item>
+        <item>स्क्रीन को चालू रखें</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL">
+        <item>15 सेकंड</item>
+        <item>30 सेकंड</item>
+        <item>1 मिनट</item>
+        <item>2 मिनट</item>
+        <item>5 मिनट</item>
+        <item>10 मिनट</item>
+        <item>15 मिनट</item>
+        <item>स्क्रीन को चालू रखें</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL_ex">
+        <item>15 सेकेण्ड</item>
+        <item>30 सेकेंड</item>
+        <item>1 मिन</item>
+        <item>2 मि.</item>
+        <item>5 मिन</item>
+        <item>10 मिनट</item>
+        <item>15 मिनट</item>
+        <item>स्क्रीन को चालू रखें</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled">
+        <item>15 सेकंड</item>
+        <item>30 सेकंड</item>
+        <item>1 मिनट</item>
+        <item>2 मिनट</item>
+        <item>5 मिनट</item>
+        <item>10 मिनट</item>
+        <item>15 मिनट</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled_ex">
+        <item>15 सेकेण्ड</item>
+        <item>30 सेकेंड</item>
+        <item>1 मिन</item>
+        <item>2 मि.</item>
+        <item>5 मिन</item>
+        <item>10 मिनट</item>
+        <item>15 मिनट</item>
+    </string-array>
+    <string-array name="sp_pouch_default_clock_entries2_NORMAL">
+        <item>घड़ी 1</item>
+        <item>घड़ी 2</item>
+        <item>घड़ी 3</item>
+        <item>घड़ी 4</item>
+        <item>घड़ी 5</item>
+        <item>घड़ी 6</item>
+        <item>घड़ी 7</item>
+        <item>घड़ी 8</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries1_NORMAL">
+        <item>एनालॉग</item>
+        <item>डिजिटल</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_position_entries1_NORMAL">
+        <item>केंद्र</item>
+        <item>ऊपर दायीं ओर</item>
+        <item>ऊपर बायीं ओर</item>
+        <item>नीचे दाएँ</item>
+        <item>नीचे बाएँ</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_font_entries1_NORMAL">
+        <item>फॉन्ट का नाम 1</item>
+        <item>फॉन्ट नाम2</item>
+    </string-array>
+    <string-array name="sp_sound_profile_entries_NORMAL">
+        <item>साउंड</item>
+        <item>सिर्फ़ कंपन</item>
+        <item>मौन</item>
+    </string-array>
+    <string-array name="dream_timeout_entries">
+        <item>कभी नहीं</item>
+        <item>15 सेकंड</item>
+        <item>30 सेकंड</item>
+        <item>1 मिनट</item>
+        <item>2 मिनट</item>
+        <item>5 मिनट</item>
+        <item>10 मिनट</item>
+        <item>30 मिनट</item>
+    </string-array>
+    <string-array name="lock_after_timeout_entries">
+        <item>तुरंत</item>
+        <item>5 सेकंड</item>
+        <item>15 सेकंड</item>
+        <item>30 सेकंड</item>
+        <item>1 मिनट</item>
+        <item>2 मिनट</item>
+        <item>5 मिनट</item>
+        <item>10 मिनट</item>
+        <item>30 मिनट</item>
+    </string-array>
+    <string-array name="sp_lock_after_timeout_entries_NORMAL">
+        <item>तुरंत</item>
+        <item>15 सेकंड</item>
+        <item>30 सेकंड</item>
+        <item>1 मिनट</item>
+        <item>2 मिनट</item>
+        <item>10 मिनट</item>
+        <item>30 मिनट</item>
+    </string-array>
+    <string-array name="entries_font_size">
+        <item>&amp;lt;font size=16 align=middle>छोटा&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>सामान्य&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>बड़ा&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>एक्स्ट्रा लार्ज&amp;lt;/font></item>
+    </string-array>
+    <string-array name="sp_entries_font_size2">
+        <item>&amp;lt;font size=14 align=middle>न्यूनतम&amp;lt;/font></item>
+        <item>&amp;lt;font size=16 align=middle>छोटा&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>मध्यम&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>बड़ा&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>बहुत बड़ा&amp;lt;/font></item>
+        <item>&amp;lt;font size=27 align=middle>अधिकतम&amp;lt;/font></item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>बहुत धीमा</item>
+        <item>धीमा</item>
+        <item>सामान्य</item>
+        <item>तेज</item>
+        <item>बहुत तेज</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>बहुत नीचा</item>
+        <item>निम्न</item>
+        <item>सामान्य</item>
+        <item>उच्च</item>
+        <item>बहुत ऊंचा</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>स्कैन हो रहा है...</item>
+        <item>कनेक्‍ट हो रहा है...</item>
+        <item>प्रमाणीकृत...</item>
+        <item>IP ऐड्रेस प्राप्त करना ...</item>
+        <item>सम्बद्ध</item>
+        <item>स्थगित हुआ</item>
+        <item>कनेक्‍शन डिस्‍कनेक्‍ट करना…</item>
+        <item>डिस्कने।</item>
+        <item>विफल</item>
+        <item>अवरूध्द है</item>
+        <item>कमजोर कनेक्शन को अस्थायी रूप से नजरअंदाज करता है</item>
+        <item>कमजोर कनेक्शन को अस्थायी रूप से नजरअंदाज करता है</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>स्कैन हो रहा है...</item>
+        <item>%1$sसे जुड़ा</item>
+        <item>%1$sके साथ सत्यापन कर रहा…</item>
+        <item>%1$s से IP ऐड्रेस प्राप्त करना ...</item>
+        <item>%1$s से कनेक्‍ट किया गया है</item>
+        <item>स्थगित हुआ</item>
+        <item>%1$s… से डिस्कनेक्ट हो रहा है।</item>
+        <item>डिस्कने।</item>
+        <item>विफल</item>
+        <item>अवरूध्द है</item>
+        <item>कमजोर कनेक्शन को अस्थायी रूप से नजरअंदाज करता है</item>
+    </string-array>
+    <string-array name="wifi_ap_security">
+        <item>खोलें</item>
+        <item>WPA PSK</item>
+        <item>WPA2 PSK</item>
+    </string-array>
+    <string-array name="wifi_p2p_wps_setup">
+        <item>पुश बटन</item>
+        <item>इस डिवाइस से PIN</item>
+    </string-array>
+    <string-array name="wifi_p2p_status">
+        <item>सम्बद्ध</item>
+        <item>कनेक्ट कर रहा है</item>
+        <item>विफल</item>
+        <item>उपलब्ध</item>
+        <item>सीमा से बाहर</item>
+    </string-array>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>2 मिनट</item>
+        <item>5 मिनट</item>
+        <item>1 घंटा</item>
+        <item>कभी विश्राम नहीं</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>पोलिश-अंग्रेजी</item>
+        <item>साफ</item>
+        <item>अच्छा</item>
+        <item>शानदार</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>हमेशा</item>
+        <item>केवल जब प्लग्ड इन होता है</item>
+        <item>Wi-Fi बंद रखें (डेटा उपयोग की वजह से)</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <item>हमेशा</item>
+        <item>केवल जब प्लग्ड इन होता है</item>
+        <item>Wi-Fi बंद रखें</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_entries">
+        <item>ऑटो</item>
+        <item>सिर्फ 5 GHz</item>
+        <item>सिर्फ 2.4 GHz</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>यूजेज टाइम</item>
+        <item>काउंट लॉन्च करें</item>
+        <item>"ऐप्लिकेशन  नाम"</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>कोई नहीं</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_network_setup">
+        <item>बंद</item>
+        <item>पुश बटन</item>
+        <item>एक्सेस प्वाइंट से PIN</item>
+        <item>इस डिवाइस से PIN</item>
+    </string-array>
+    <string-array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>स्थिर</item>
+    </string-array>
+    <string-array name="wifi_proxy_settings">
+        <item>कोई नहीं</item>
+        <item>मैनुअल</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>बंद</item>
+        <item>"चेतावनी
+"</item>
+        <item>कंपन</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>कोई नहीं</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP या CHAP</item>
+    </string-array>
+    <string-array name="bearer_entries">
+        <item>LTE</item>
+        <item>eHRPD</item>
+        <item>अनिर्दिष्ट</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>इंटरनल डिवाइस स्टोरेज</item>
+        <item>हटाया जा सकने वाला SD कार्ड</item>
+        <item>सिस्टम को निर्णय लेने दें</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>हमेशा</item>
+        <item>कभी नहीं</item>
+        <item>केवल मौन मोड में</item>
+        <item>केवल जब साइलेंट मोड में नहीं होता है</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_titles">
+        <item>छोटा</item>
+        <item>मध्यम</item>
+        <item>लंबा</item>
+    </string-array>
+    <string-array name="hdcp_checking_titles">
+        <item>कभी भी जांच न करें</item>
+        <item>केवल DRM सामग्री</item>
+        <item>हमेशा जांचें</item>
+    </string-array>
+    <string-array name="hdcp_checking_summaries">
+        <item>कभी HDCP की जांच न करें</item>
+        <item>DRM कंटेंट के लिए केवल HDCP जांच करें</item>
+        <item>हमेशा HDCP की जाँच करें</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>एनीमेशन बंद</item>
+        <item>एनिमेशन स्केल .5x</item>
+        <item>एनिमेशन स्केल 1x</item>
+        <item>एनिमेशन स्केल 1.5x</item>
+        <item>एनिमेशन स्केल 2x</item>
+        <item>एनिमेशन स्केल 5x</item>
+        <item>एनिमेशन स्केल 10x</item>
+    </string-array>
+    <string-array name="transition_animation_scale_entries">
+        <item>एनीमेशन बंद</item>
+        <item>एनिमेशन स्केल .5x</item>
+        <item>एनिमेशन स्केल 1x</item>
+        <item>एनिमेशन स्केल 1.5x</item>
+        <item>एनिमेशन स्केल 2x</item>
+        <item>एनिमेशन स्केल 5x</item>
+        <item>एनिमेशन स्केल 10x</item>
+    </string-array>
+    <string-array name="animator_duration_scale_entries">
+        <item>एनीमेशन बंद</item>
+        <item>एनिमेशन स्केल .5x</item>
+        <item>एनिमेशन स्केल 1x</item>
+        <item>एनिमेशन स्केल 1.5x</item>
+        <item>एनिमेशन स्केल 2x</item>
+        <item>एनिमेशन स्केल 5x</item>
+        <item>एनिमेशन स्केल 10x</item>
+    </string-array>
+    <string-array name="overlay_display_devices_entries">
+        <item>कोई नहीं</item>
+        <item>720x480 mdpi</item>
+        <item>1280x720 tvdpi</item>
+        <item>1920x1080 xhdpi</item>
+        <item>1280x720 tvdpi और 1920x1080 xhdpi</item>
+    </string-array>
+    <string-array name="enable_opengl_traces_entries">
+        <item>कोई नहीं</item>
+        <item>Logcat</item>
+        <item>Systrace (ग्राफिक्स)</item>
+        <item>glGetError कॉल स्टैक</item>
+    </string-array>
+    <string-array name="app_process_limit_entries">
+        <item>मानक सीमा</item>
+        <item>कोई बैकग्राउंड प्रक्रिया नहीं</item>
+        <item>अधिकतम 1 प्रक्रियाएं</item>
+        <item>अधिकतम 2 प्रक्रियाएं</item>
+        <item>अधिकतम 3 प्रक्रियाएं</item>
+        <item>अधिकतम 4 प्रक्रियाएं</item>
+    </string-array>
+    <string-array name="vpn_types_long">
+        <item>PPTP VPN</item>
+        <item>L2TP/प्री-शेयर्ड कीज सहित आईपीसेक वीपीएन</item>
+        <item>L2TP/सर्टिफिकेट सहित आईपीसेक वीपीएन</item>
+        <item>प्री-शेयर्ड कीज और Xauth ऑथेंटिकेशन सहित आईपीसेक वीपीएन</item>
+        <item>"सर्टिफिकेट और क्सौथ ऑथेंटिकेशन  सहित आईपीसेक वीपीएन"</item>
+        <item>"सर्टिफिकेट और हाइब्रिड ऑथेंटिकेशन  सहित आईपीसेक वीपीएन"</item>
+    </string-array>
+    <string-array name="vpn_states">
+        <item>डिस्कने।</item>
+        <item>प्रारंभ हो रहा है...</item>
+        <item>कनेक्‍ट हो रहा है...</item>
+        <item>सम्बद्ध</item>
+        <item>समय समाप्त</item>
+        <item>विफल</item>
+    </string-array>
+    <string-array name="security_settings_premium_sms_values">
+        <item>पूछिये</item>
+        <item>कभी भी अनुमति न दें</item>
+        <item>हमेशा अनुमति दें</item>
+    </string-array>
+    <string-array name="search_filter">
+        <item>सभी उपकरण</item>
+        <item>हेडसेट</item>
+        <item>PC</item>
+        <item>फोन</item>
+        <item>पेरिफेरल</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries_NORMAL">
+        <item>यूजर इमेज</item>
+        <item>घड़ी 1</item>
+        <item>घड़ी 2</item>
+        <item>घड़ी 3</item>
+        <item>घड़ी 4</item>
+        <item>घड़ी 5</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL">
+        <item>1.5 सेकंड</item>
+        <item>3 सेकंड</item>
+        <item>5 सेकंड</item>
+        <item>हमेशा चालू</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL_ex">
+        <item>1.5 सेकंड</item>
+        <item>"3 सेकंड "</item>
+        <item>5 सेकंड</item>
+        <item>हमेशा चालू</item>
+    </string-array>
+    <string-array name="sp_front_key_light_l1_NORMAL">
+        <item>3 सेकंड</item>
+        <item>6 सेकंड</item>
+        <item>10 सेकंड</item>
+        <item>30 सेकंड</item>
+        <item>हमेशा चालू</item>
+    </string-array>
+    <string-array name="sp_front_key_light_att_NORMAL">
+        <item>"3 सेकंड "</item>
+        <item>6 सेकंड</item>
+        <item>10 सेकंड</item>
+        <item>30 सेकेंड</item>
+        <item>हमेशा चालू</item>
+    </string-array>
+    <string-array name="sp_numlocdisp_entries_NORMAL">
+        <item>निष्क्रिय करें</item>
+        <item>सक्षम करें</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_NORMAL">
+        <item>गोपनीयता अलर्ट</item>
+        <item>यदि आप थर्ड पार्टी एप का इस्तेमाल करते हैं तो यह सीधे आपके व्यक्तिगत सूचना को एकत्र करेगा या आपके कैरियर द्वारा आपके एप प्रदाता या किसी तीसरे पक्ष को आपके लोकेशन सहित आपकी व्यक्तिगत सूचनाएं प्रकट करनी पड़ेगी (जहां अनुप्रयोज्य हो)।</item>
+        <item>कौन सी प्राइवेसी पॉलिसी लागू होती है? आपके कैरियर की प्राइवेसी पॉलिसी और इस्तेमाल की शर्तें आपके हैंडसेट में मौजूद ऐप्स पर लागू नहीं होते जो अकेले थर्ड पार्टीज़ द्वारा प्रदान किया गया है। आपके इस ऐप के इस्तेमाल के लिए थर्ड पार्टी पॉलिसी लागू होती है।</item>
+        <item>थर्ड पार्टी पॉलिसी के बारे में अधिक जानकारी मुझे कहां से प्राप्त कर सकता हूं? किस प्रकार ऐप आपकी जानकारी को एकत्र करेगा, ऐक्सेस करेगा, इस्तेमाल करेगा और डिस्क्लोज़ करेगा, इस बारे में अधिक जानकारी प्राप्त करने के लिए ऐप्स के इस्तेमाल की शर्तों और/अथवा ऐप प्रदाता की पॉलिसी देखें। प्राइवेसी पॉलिसी, इस्तेमाल की शर्ते तथा अन्य कंज्यूमर नोटिसेज़ प्रोवाइडर के वेबसाइट पर उपलब्ध हो सकते हैं। ऐप के इस्तेमाल से पहले यह सुनिश्चित करें कि आप पॉलिसीज़ से आश्वस्त है।</item>
+        <item>मैं अपने कैरियर की प्राइवेसी पॉलिसी कहां से प्राप्त कर सकता हूं? अलग से, यदि आपको कैरियर की प्राइवेसी पॉलिसी के बारे में कुछ पूछना है, तो कृपया कैरियर का होम पेज देखें और “प्राइवेसी पॉलिसी” लिंक पर क्लिक करें।</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_spr_NORMAL">
+        <item>स्प्रिंट प्राइवेशी अलर्ट</item>
+        <item>"यदि आप कोई अन्य पक्ष ऐप्लिकेशन  उपयोग करते हैं, तो वह सीधे आपकी व्यक्तिगत जानकारी एकत्र कर सकता है या उसे ऐप्लिकेशन प्रदाता या किसी अन्य पक्ष को स्थान सहित (जहां लागू हो) आपकी निजी जानकारी प्रकट करने के लिए Sprint की आवश्यकता हो सकती है |"</item>
+        <item>कौन सी प्राइवेसी पॉलिसी लागू होती है? स्प्रिंट की प्राइवेसी पॉलिसी और इस्तेमाल की शर्तें आपके हैंडसेट में मौजूद ऐप्स पर लागू नहीं होते जो अकेले थर्ड पार्टीज़ द्वारा प्रदान किया गया है। आपके इस ऐप के इस्तेमाल के लिए थर्ड पार्टी पॉलिसी लागू होती है।</item>
+        <item>थर्ड पार्टी पॉलिसी के बारे में अधिक जानकारी मुझे कहां से प्राप्त कर सकता हूं? किस प्रकार ऐप आपकी जानकारी को एकत्र करेगा, ऐक्सेस करेगा, इस्तेमाल करेगा और डिस्क्लोज़ करेगा, इस बारे में अधिक जानकारी प्राप्त करने के लिए ऐप्स के इस्तेमाल की शर्तों और/अथवा ऐप प्रदाता की पॉलिसी देखें। प्राइवेसी पॉलिसी, इस्तेमाल की शर्ते तथा अन्य कंज्यूमर नोटिसेज़ प्रोवाइडर के वेबसाइट पर उपलब्ध हो सकते हैं। ऐप के इस्तेमाल से पहले यह सुनिश्चित करें कि आप पॉलिसीज़ से आश्वस्त है।</item>
+        <item>मैं स्प्रिंट की प्राइवेसी पॉलिसी कहां से प्राप्त कर सकता हूं? अलग से, यदि आपको स्प्रिंट की प्राइवेसी पॉलिसी के बारे में कुछ पूछना है, तो कृपया Sprint.com देखें और “प्राइवेसी पॉलिसी” लिंक पर क्लिक करें।</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_bm_NORMAL">
+        <item>मोबाइल गोपनीयता बूस्ट अलर्ट</item>
+        <item>"यदि आप कोई अन्य पक्ष ऐप्लिकेशन  उपयोग करते हैं, तो वह सीधे आपकी व्यक्तिगत जानकारी एकत्र कर सकता है या उसे ऐप्लिकेशन  प्रदाता या किसी अन्य पक्ष को स्थान सहित (जहां लागू हो) आपकी निजी जानकारी प्रकट करने के लिए बूस्ट मोबाइल की आवश्यकता हो सकती है |"</item>
+        <item>"जो गुप्त कूटनीती पर लागू होता है? मोबाइल गोपनीयता नीति और उपयोग की शर्तों को बढ़ावा देने के अपने हैंडसेट पर क्षुधा है कि केवल 3 पार्टियों द्वारा प्रदान की जाती हैं के लिए लागू नहीं है | 3 पार्टी की नीतियों इस ऐप्लिकेशन  के अपने उपयोग के लिए लागू होते हैं |"</item>
+        <item>थर्ड पार्टी पॉलिसी के बारे में अधिक जानकारी मुझे कहां से प्राप्त कर सकता हूं? किस प्रकार ऐप आपकी जानकारी को एकत्र करेगा, ऐक्सेस करेगा, इस्तेमाल करेगा और डिस्क्लोज़ करेगा, इस बारे में अधिक जानकारी प्राप्त करने के लिए ऐप्स के इस्तेमाल की शर्तों और/अथवा ऐप प्रदाता की पॉलिसी देखें। प्राइवेसी पॉलिसी, इस्तेमाल की शर्ते तथा अन्य कंज्यूमर नोटिसेज़ प्रोवाइडर के वेबसाइट पर उपलब्ध हो सकते हैं। ऐप के इस्तेमाल से पहले यह सुनिश्चित करें कि आप पॉलिसीज़ से आश्वस्त है।</item>
+        <item>मैं बूस्ट मोबाइल का प्राइवेसी पॉलिसी कहां से प्राप्त कर सकता हूं? अलग से, यदि आपको बूस्ट मोबाइल के प्राइवेसी पॉलिसी के बारे में कुछ पूछना है, तो कृपया Boost Mobile.com देखें और “प्राइवेसी पॉलिसी” लिंक पर क्लिक करें।</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_virgin_NORMAL">
+        <item>Virgin Mobile निजता सचेतक</item>
+        <item>यदि आप कोई अन्य पक्ष अनुप्रयोग उपयोग करते हैं, तो वह सीधे आपकी व्यक्तिगत जानकारी एकत्र कर सकता है या उसे अनुप्रयोग प्रदाता या किसी अन्य पक्ष को स्थान सहित (जहां लागू हो) आपकी निजी जानकारी प्रकट करने के लिए Virgin Mobile की आवश्यकता हो सकती है।</item>
+        <item>कौन सी निजता नीति लागू होती है? Virgin Mobile की निजता नीति और उपयोग की शर्तें आपके हैंडसेट के अनुप्रयोगों पर लागू नहीं होतीं जो पूर्णतः अन्य पक्षों द्वारा प्रदान की जाती हैं। अन्य पक्ष की नीतियां आपके द्वारा इस अनुप्रयोग के उपयोग पर लागू होती हैं।</item>
+        <item>थर्ड पार्टी पॉलिसी के बारे में अधिक जानकारी मुझे कहां से प्राप्त कर सकता हूं? किस प्रकार ऐप आपकी जानकारी को एकत्र करेगा, ऐक्सेस करेगा, इस्तेमाल करेगा और डिस्क्लोज़ करेगा, इस बारे में अधिक जानकारी प्राप्त करने के लिए ऐप्स के इस्तेमाल की शर्तों और/अथवा ऐप प्रदाता की पॉलिसी देखें। प्राइवेसी पॉलिसी, इस्तेमाल की शर्ते तथा अन्य कंज्यूमर नोटिसेज़ प्रोवाइडर के वेबसाइट पर उपलब्ध हो सकते हैं। ऐप के इस्तेमाल से पहले यह सुनिश्चित करें कि आप पॉलिसीज़ से आश्वस्त है।</item>
+        <item>मुझे Virgin Mobile की निजता नीति कहां मिलेगी? यदि आपके पास अलग से, Virgin Mobile की निजता नीति के बारे में सवाल हैं तो कृपया VirginMobileUSA.com पर जाएं और \"निजता नीति\" लिंक पर क्लिक करें।</item>
+    </string-array>
+    <string-array name="sp_lock_screen_effect_entries_NORMAL">
+        <item>बुनियादी</item>
+        <item>रिपल</item>
+        <item>इंक फैलना</item>
+        <item>ओस की बूंद</item>
+    </string-array>
+    <string-array name="sp_power_save_brightness_entries_NORMAL">
+        <item>10% चमक</item>
+        <item>20% चमक</item>
+        <item>30% चमक</item>
+        <item>50% चमक</item>
+    </string-array>
+    <string-array name="sp_power_save_screen_timeout_entries_NORMAL">
+        <item>15 सेकंड</item>
+        <item>30 सेकंड</item>
+        <item>1 मिनट</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_NORMAL">
+        <item>1.5 सेकंड</item>
+        <item>हमेशा बंद</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_att_NORMAL">
+        <item>3 सेकंड</item>
+        <item>हमेशा बंद</item>
+    </string-array>
+    <string-array name="sp_power_save_mode_entries_NORMAL">
+        <item>10% बैटरी</item>
+        <item>20% बैटरी</item>
+        <item>30% बैटरी</item>
+        <item>50% बैटरी</item>
+    </string-array>
+    <string-array name="sp_power_save_mode2_entries_NORMAL">
+        <item>तुरंत</item>
+        <item>10% बैटरी</item>
+        <item>20% बैटरी</item>
+        <item>30% बैटरी</item>
+        <item>50% बैटरी</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries">
+        <item>5 मिनट</item>
+        <item>10 मिनट</item>
+        <item>15 मिनट</item>
+    </string-array>
+    <string-array name="sp_hotspot_timeout_entries_mx_NORMAL">
+        <item>कभी विश्राम नहीं</item>
+        <item>5 मिन</item>
+        <item>10 मिनट</item>
+        <item>15 मिनट</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries_jb">
+        <item>5 मिन</item>
+        <item>10 मिनट</item>
+        <item>15 मिनट</item>
+        <item>30 मिनट</item>
+        <item>कभी नहीं</item>
+    </string-array>
+    <string-array name="wifi_p2p_timeout_entries">
+        <item>15 मिनट</item>
+        <item>30 मिनट</item>
+        <item>कभी नहीं</item>
+    </string-array>
+    <string-array name="sp_wifi_ap_visibility_NORMAL">
+        <item>सिखाएं</item>
+        <item>छिपाएं</item>
+    </string-array>
+    <string-array name="sp_bt_search_filter_SHORT">
+        <item>सभी उपकरण</item>
+        <item>हेडसेट</item>
+        <item>"मोबाइल  फ़ोन "</item>
+        <item>PC</item>
+        <item>इनपुट डिवाइस (कीबोर्ड, माउस आदि)</item>
+    </string-array>
+    <string-array name="wifi_signal_strength_entries">
+        <item>मज़बूत</item>
+        <item>मध्यम</item>
+        <item>कमजोर</item>
+        <item>बंद</item>
+    </string-array>
+    <string-array name="wifi_Dual_band_AP_connection_entries">
+        <item>ऑटो</item>
+        <item>5 GHz</item>
+        <item>2.4 GHz</item>
+    </string-array>
+</resources>

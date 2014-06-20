@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/setting_quietmode_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip" android:src="@drawable/setting_quietmode_image" android:scaleType="fitXY" android:adjustViewBounds="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:id="@id/summary_description_top" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip" android:scaleType="center" android:text="@string/sp_quiet_mode_description_new" />
+    </LinearLayout>
+</LinearLayout>

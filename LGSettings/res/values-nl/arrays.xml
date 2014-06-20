@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>Amerika</item>
+        <item>Europa</item>
+        <item>Afrika</item>
+        <item>Azië</item>
+        <item>Australië</item>
+        <item>Stille Oceaan</item>
+        <item>Alles</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 seconden</item>
+        <item>30 seconden</item>
+        <item>1 minuut</item>
+        <item>2 minuten</item>
+        <item>5 minuten</item>
+        <item>10 minuten</item>
+        <item>30 minuten</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries2_NORMAL">
+        <item>15 seconden</item>
+        <item>30 seconden</item>
+        <item>1 minuut</item>
+        <item>2 minuten</item>
+        <item>5 minuten</item>
+        <item>10 minuten</item>
+        <item>Nooit</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL">
+        <item>15 seconden</item>
+        <item>30 seconden</item>
+        <item>1 minuut</item>
+        <item>2 minuten</item>
+        <item>5 minuten</item>
+        <item>10 minuten</item>
+        <item>15 minuten</item>
+        <item>Nooit</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL_ex">
+        <item>15 sec.</item>
+        <item>30 sec.</item>
+        <item>1 min.</item>
+        <item>2 min.</item>
+        <item>5 min.</item>
+        <item>10 min.</item>
+        <item>15 min</item>
+        <item>Nooit</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled">
+        <item>15 seconden</item>
+        <item>30 seconden</item>
+        <item>1 minuut</item>
+        <item>2 minuten</item>
+        <item>5 minuten</item>
+        <item>10 minuten</item>
+        <item>15 minuten</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled_ex">
+        <item>15 sec.</item>
+        <item>30 sec.</item>
+        <item>1 min.</item>
+        <item>2 min.</item>
+        <item>5 min.</item>
+        <item>10 min.</item>
+        <item>15 min</item>
+    </string-array>
+    <string-array name="sp_pouch_default_clock_entries2_NORMAL">
+        <item>Klok 1</item>
+        <item>Klok 2</item>
+        <item>Klok 3</item>
+        <item>Klok 4</item>
+        <item>Klok 5</item>
+        <item>Klok 6</item>
+        <item>Klok 7</item>
+        <item>Klok 8</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries1_NORMAL">
+        <item>Analoog</item>
+        <item>Digitaal</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_position_entries1_NORMAL">
+        <item>Centrum</item>
+        <item>Rechter bovenhoek</item>
+        <item>Linker bovenhoek</item>
+        <item>Rechts onderin</item>
+        <item>Links onderin</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_font_entries1_NORMAL">
+        <item>Font naam1</item>
+        <item>Font naam2</item>
+    </string-array>
+    <string-array name="sp_sound_profile_entries_NORMAL">
+        <item>Geluid</item>
+        <item>Alleen trilfunctie</item>
+        <item>Stil</item>
+    </string-array>
+    <string-array name="dream_timeout_entries">
+        <item>Nooit</item>
+        <item>15 seconden</item>
+        <item>30 seconden</item>
+        <item>1 minuut</item>
+        <item>2 minuten</item>
+        <item>5 minuten</item>
+        <item>10 minuten</item>
+        <item>30 minuten</item>
+    </string-array>
+    <string-array name="lock_after_timeout_entries">
+        <item>Onmiddellijk</item>
+        <item>5 seconden</item>
+        <item>15 seconden</item>
+        <item>30 seconden</item>
+        <item>1 minuut</item>
+        <item>2 minuten</item>
+        <item>5 minuten</item>
+        <item>10 minuten</item>
+        <item>30 minuten</item>
+    </string-array>
+    <string-array name="sp_lock_after_timeout_entries_NORMAL">
+        <item>Onmiddellijk</item>
+        <item>15 seconden</item>
+        <item>30 seconden</item>
+        <item>1 minuut</item>
+        <item>2 minuten</item>
+        <item>10 minuten</item>
+        <item>30 minuten</item>
+    </string-array>
+    <string-array name="entries_font_size">
+        <item>&amp;lt;font size=16 align=middle>Klein&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>Normaal&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>Groot&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>Extra groot&amp;lt;/font></item>
+    </string-array>
+    <string-array name="sp_entries_font_size2">
+        <item>&amp;lt;font size=14 align=middle>Minimum&amp;lt;/font></item>
+        <item>&amp;lt;font size=16 align=middle>Klein&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>Normaal&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>Groot&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>Zeer groot&amp;lt;/font></item>
+        <item>&amp;lt;font size=27 align=middle>Maximaal&amp;lt;/font></item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>Zeer langzaam</item>
+        <item>Langzaam</item>
+        <item>Normaal</item>
+        <item>Snel</item>
+        <item>Zeer snel</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>Zeer laag</item>
+        <item>Laag</item>
+        <item>Normaal</item>
+        <item>Hoog</item>
+        <item>Zeer hoog</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Scannen...</item>
+        <item>Verbinden...</item>
+        <item>Authenticatie…</item>
+        <item>Bezig met ophalen IP adres…</item>
+        <item>Verbonden</item>
+        <item>Opgeschort</item>
+        <item>Verbinding verbreken...</item>
+        <item>Verbinding verbroken</item>
+        <item>Mislukt</item>
+        <item>Geblokkeerd</item>
+        <item>Tijdelijk wordt een slechte verbinding vermeden</item>
+        <item>Tijdelijk wordt een slechte verbinding vermeden</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Scannen...</item>
+        <item>Verbinden met %1$s...</item>
+        <item>Verifiëren met %1$s…</item>
+        <item>IP-adres ophalen van %1$s...</item>
+        <item>Verbonden met %1$s</item>
+        <item>Opgeschort</item>
+        <item>Verbinding verbreken met %1$s…</item>
+        <item>Verbinding verbroken</item>
+        <item>Mislukt</item>
+        <item>Geblokkeerd</item>
+        <item>Tijdelijk wordt een slechte verbinding vermeden</item>
+    </string-array>
+    <string-array name="wifi_p2p_wps_setup">
+        <item>Push Button</item>
+        <item>PINuit dit apparaat</item>
+    </string-array>
+    <string-array name="wifi_p2p_status">
+        <item>Verbonden</item>
+        <item>Verbinden</item>
+        <item>Mislukt</item>
+        <item>Beschikbaar</item>
+        <item>Buiten bereik</item>
+    </string-array>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>2 minuten</item>
+        <item>5 minuten</item>
+        <item>1 uur</item>
+        <item>Nooit time-out</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Slecht</item>
+        <item>Redelijk</item>
+        <item>Goed</item>
+        <item>Uitstekend</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Altijd</item>
+        <item>Alleen tijdens opladen</item>
+        <item>Nooit (verhoogt datagebruik)</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <item>Altijd</item>
+        <item>Alleen tijdens opladen</item>
+        <item>Wi-Fi is uitgeschakeld</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_entries">
+        <item>Automatisch</item>
+        <item>Alleen 5 GHz</item>
+        <item>Alleen 2,4 GHz</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>Gebruikstijd</item>
+        <item>Aantal keer gestart</item>
+        <item>Naam van applicatie</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>Geen</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_network_setup">
+        <item>Uit</item>
+        <item>Push Button</item>
+        <item>PIN uit access point</item>
+        <item>PINuit dit apparaat</item>
+    </string-array>
+    <string-array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>Vast</item>
+    </string-array>
+    <string-array name="wifi_proxy_settings">
+        <item>Geen</item>
+        <item>Handmatig</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>Uit</item>
+        <item>Melding</item>
+        <item>Trillen</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>Geen</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP of CHAP</item>
+    </string-array>
+    <string-array name="bearer_entries">
+        <item>LTE</item>
+        <item>eHRPD</item>
+        <item>Ongespecificeerde</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Interne telefoonopslag</item>
+        <item>Verwisselbare microSD</item>
+        <item>Het systeem laten bepalen</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>Altijd</item>
+        <item>Nooit</item>
+        <item>Alleen in de stille modus</item>
+        <item>Alleen buiten de stille modus</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_titles">
+        <item>Kort</item>
+        <item>Normaal</item>
+        <item>Lang</item>
+    </string-array>
+    <string-array name="hdcp_checking_titles">
+        <item>Nooit controleren</item>
+        <item>Controleer enkel DRM inhoud</item>
+        <item>Controleer altijd</item>
+    </string-array>
+    <string-array name="hdcp_checking_summaries">
+        <item>Nooit HDCP controle gebruiken</item>
+        <item>Gebruik HDCP als controle voor DRM enkel inhoud</item>
+        <item>Gebruik altijd HDCP controle</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>Animatie uit</item>
+        <item>Animatie schaal .5x</item>
+        <item>Animatie schaal 1x</item>
+        <item>Animatie schaal 1.5x</item>
+        <item>Animatie schaal 2x</item>
+        <item>Animatie schaal 5x</item>
+        <item>Animatie schaal 10x</item>
+    </string-array>
+    <string-array name="transition_animation_scale_entries">
+        <item>Animatie uit</item>
+        <item>Animatie schaal .5x</item>
+        <item>Animatie schaal 1x</item>
+        <item>Animatie schaal 1.5x</item>
+        <item>Animatie schaal 2x</item>
+        <item>Animatie schaal 5x</item>
+        <item>Animatie schaal 10x</item>
+    </string-array>
+    <string-array name="animator_duration_scale_entries">
+        <item>Animatie uit</item>
+        <item>Animatie schaal .5x</item>
+        <item>Animatie schaal 1x</item>
+        <item>Animatie schaal 1.5x</item>
+        <item>Animatie schaal 2x</item>
+        <item>Animatie schaal 5x</item>
+        <item>Animatie schaal 10x</item>
+    </string-array>
+    <string-array name="overlay_display_devices_entries">
+        <item>Geen</item>
+        <item>720x480 mdpi</item>
+        <item>1280x720 tvdpi</item>
+        <item>1920x1080 xhdpi</item>
+        <item>1280 x 720 tvdpi en 1920 x 1080 xhdpi</item>
+    </string-array>
+    <string-array name="enable_opengl_traces_entries">
+        <item>Geen</item>
+        <item>Logcat</item>
+        <item>Systrace (Graphics)</item>
+        <item>Stack met oproepprocedures op glGetError</item>
+    </string-array>
+    <string-array name="app_process_limit_entries">
+        <item>Standaard limiet</item>
+        <item>Geen achtergrond processen</item>
+        <item>Hoogstens 1 processen</item>
+        <item>Hoogstens 2 processen</item>
+        <item>Hoogstens 3 processen</item>
+        <item>Hoogstens 4 processen</item>
+    </string-array>
+    <string-array name="vpn_types_long">
+        <item>PPTP VPN</item>
+        <item>L2TP/IPSec VPN met voor-gedeelde toetsen</item>
+        <item>L2TP/IPSec VPNmet certificaten</item>
+        <item>IPSec VPN met voor-gedeelde toets en Xauth validatie</item>
+        <item>IPSec VPN certificaten en Xauth validatie</item>
+        <item>IPSec VPN met certificaten en hybride validatie</item>
+    </string-array>
+    <string-array name="vpn_states">
+        <item>Verbinding verbroken</item>
+        <item>Initialiseren...</item>
+        <item>Verbinden...</item>
+        <item>Verbonden</item>
+        <item>Time-out</item>
+        <item>Mislukt</item>
+    </string-array>
+    <string-array name="security_settings_premium_sms_values">
+        <item>Vragen</item>
+        <item>Nooit toestaan</item>
+        <item>Altijd toestaan</item>
+    </string-array>
+    <string-array name="search_filter">
+        <item>Alle apparaten</item>
+        <item>Koptelefoon</item>
+        <item>PC</item>
+        <item>Telefoon</item>
+        <item>Randapparatuur</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries_NORMAL">
+        <item>gebruiker image</item>
+        <item>Klok 1</item>
+        <item>Klok 2</item>
+        <item>Klok 3</item>
+        <item>Klok 4</item>
+        <item>Klok 5</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL">
+        <item>1.5 seconden</item>
+        <item>3 seconden</item>
+        <item>5 seconden</item>
+        <item>Altijd aan</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL_ex">
+        <item>1.5 sec.</item>
+        <item>3 sec.</item>
+        <item>5 sec.</item>
+        <item>Altijd aan</item>
+    </string-array>
+    <string-array name="sp_front_key_light_l1_NORMAL">
+        <item>3 seconden</item>
+        <item>6 seconden</item>
+        <item>10 seconden</item>
+        <item>30 seconden</item>
+        <item>Altijd aan</item>
+    </string-array>
+    <string-array name="sp_front_key_light_att_NORMAL">
+        <item>3 sec.</item>
+        <item>1 sec.</item>
+        <item>10 sec.</item>
+        <item>30 sec.</item>
+        <item>Altijd aan</item>
+    </string-array>
+    <string-array name="sp_numlocdisp_entries_NORMAL">
+        <item>Uitschakelen</item>
+        <item>Aanzetten</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_NORMAL">
+        <item>Privacy alert</item>
+        <item>Indien u een applicatie van derden gebruikt, kan deze uw persoonlijke informatie opnemen of uw aanbieder vereisen om uw persoonlijke informatie op te nemen, inclusief uw locatie informatie (indien van toepassing) aan de toepassing verdeler of andere derde.</item>
+        <item>Welk privacybeleid is van toepassing? Het privacybeleid en gebruikersvoorwaarden van uw netwerkapparatuur zijn niet van toepassing op apps op uw handset die enkel voorzien is door derde partijen.Van de 3de partij van toepassing op uw gebruik van deze app.</item>
+        <item>"Waar vind ik meer informatie over de 3de partij beleid? Controleer de app's termen van gebruik en/of van de app provider beleid voor meer informatie over hoe de app verzamelen, toegang, gebruik en uw informatie onthullen. Privacybeleid, gebruiksvoorwaarden en andere mededelingen consument mogelijk beschikbaar op de website van de provider. Zorg ervoor dat u vertrouwd bent met het beleid voordat u een app gebruiken."</item>
+        <item>Waar vind ik mijn privacybeleid van mijn netwerkapparatuur? Afzonderlijk, als u vragen heeft over het privacybeleid van uw netwerkapparatuur, bezoek aub de home pagina en klik op de \"privacybeleid\" link.</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_spr_NORMAL">
+        <item>Sprint Privacy waarschuwing</item>
+        <item>Als u een 3de partij app gebruikt, kan het direct uw persoonlijke gegevens verzamelen of een Sprint vereisen voor uw persoonlijke gegevens, met inbegrip van informatie over de locatie (indien van toepassing), naar de app-provider of een andere derde partij.</item>
+        <item>"Welk privacybeleid is van toepassing?  Sprint het pivacybeleid en de Gebruiksvoorwaarden zijn niet van toepassing op apps op uw handset die uitsluitend worden geleverd door 3e partijen."</item>
+        <item>"Waar vind ik meer informatie over Derde Partij Beleid? Controleer de applicatievoorwaarden en/of de Voorwaarden van de applicatieontwikkelaar voor meer informatie ove hoe de applicaties uw informatie ophalen, toegang hebben, en opslaan.  Privébeleid, Gebruiksvoorwaarden en andere gebruikers meldingen KUNNEN beschikbaar zijn op de voorziener van de website. Verzeker u ervan dat u zich confortabel voelt met de voorwaarden alvorens een applicatie te gebruiken."</item>
+        <item>"Waar vind ik het privacybeleid van Sprint? Appart, als u vragen heeft over het privacybeleid van Sprint, gelieve de Sprint.com te bezoeken en de  \"privacybeleid\" link aan te klikken."</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_bm_NORMAL">
+        <item>Boost Mobile Privacy waarschuwing</item>
+        <item>Als u een 3de partij app gebruikt, kan het direct uw persoonlijke gegevens verzamelen of een Boost Mobile vereisen voor uw persoonlijke gegevens, met inbegrip van informatie over de locatie (indien van toepassing), naar de app-provider of een andere derde partij.</item>
+        <item>"Welk privacybeleid is van toepassing?  Boost Mobile het privacybeleid en de Gebruiksvoorwaarden zijn niet van toepassing op apps op uw handset die uitsluitend worden geleverd door 3e partijen."</item>
+        <item>"Waar vind ik meer informatie over Derde Partij Beleid? Controleer de applicatievoorwaarden en/of de voorwaarden van de applicatie-ontwikkelaar voor meer informatie ove hoe de applicaties uw informatie ophalen, toegang hebben, en opslaan.  Privébeleid, Gebruiksvoorwaarden en andere gebruikers meldingen KUNNEN beschikbaar zijn op de voorziener van de website. Verzeker u ervan dat u zich confortabel voelt met de voorwaarden alvorens een applicatie te gebruiken."</item>
+        <item>Waar vind ik het privacybeleid van Mobiele Boost? Appart, als u vragen heeft over het Mobiele Boost privacybeleid, gelieve de Boost Mobile.com te bezoeken en op de \"privacybeleid\" link te klikken.</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_virgin_NORMAL">
+        <item>Virgin Mobiele Privacy Waarschuwing</item>
+        <item>Als u een 3de partij app gebruikt, kan het direct uw persoonlijke gegevens verzamelen of een Virgin Mobile vereisen voor uw persoonlijke gegevens, met inbegrip van informatie over de locatie (indien van toepassing), naar de app-provider of een andere derde partij.</item>
+        <item>Welke privacybeleid is er van toepassing? Virgin Mobiles Privacybeleid en gebruiksvoorwaarden zijn niet van toepassing op apps op uw toestel die uitsluitend door derden worden geleverd. Het beleid van de 3e partij is van toepassing op het gebruik van deze app.</item>
+        <item>"Waar vind ik meer informatie over Derde Partij Beleid? Controleer de applicatievoorwaarden en/of de voorwaarden van de applicatie-ontwikkelaar voor meer informatie ove hoe de applicaties uw informatie ophalen, toegang hebben, en opslaan.  Privébeleid, Gebruiksvoorwaarden en andere gebruikers meldingen KUNNEN beschikbaar zijn op de voorziener van de website. Verzeker u ervan dat u zich confortabel voelt met de voorwaarden alvorens een applicatie te gebruiken."</item>
+        <item>Waar kan ik het Virgin Mobile privacybeleid vinden? Afzonderlijk, hebt u vragen over het Virgin Mobiel Pprivacybeleid, bezoek VirginMobileUSA.com en klik op de \"Privacy Policy\" link.</item>
+    </string-array>
+    <string-array name="sp_lock_screen_effect_entries_NORMAL">
+        <item>Basis</item>
+        <item>Rimpels en bladeren</item>
+        <item>Het verspreiden van inkt (spreading ink)</item>
+        <item>Dauwdruppel</item>
+    </string-array>
+    <string-array name="sp_power_save_brightness_entries_NORMAL">
+        <item>10% helderheid</item>
+        <item>20% helderheid</item>
+        <item>30% helderheid</item>
+        <item>50% helderheid</item>
+    </string-array>
+    <string-array name="sp_power_save_screen_timeout_entries_NORMAL">
+        <item>15 seconden</item>
+        <item>30 seconden</item>
+        <item>1 minuut</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_NORMAL">
+        <item>1.5 seconden</item>
+        <item>Altijd uit</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_att_NORMAL">
+        <item>3 seconden</item>
+        <item>Altijd uit</item>
+    </string-array>
+    <string-array name="sp_power_save_mode_entries_NORMAL">
+        <item>10% batterij</item>
+        <item>20% batterij</item>
+        <item>30% batterij</item>
+        <item>50% batterij</item>
+    </string-array>
+    <string-array name="sp_power_save_mode2_entries_NORMAL">
+        <item>Onmiddellijk</item>
+        <item>10% batterij</item>
+        <item>20% batterij</item>
+        <item>30% batterij</item>
+        <item>50% batterij</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries">
+        <item>5 minuten</item>
+        <item>10 minuten</item>
+        <item>15 minuten</item>
+    </string-array>
+    <string-array name="sp_hotspot_timeout_entries_mx_NORMAL">
+        <item>Nooit time-out</item>
+        <item>5 min.</item>
+        <item>10 min.</item>
+        <item>15 min</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries_jb">
+        <item>5 min.</item>
+        <item>10 min.</item>
+        <item>15 min</item>
+        <item>30 min.</item>
+        <item>Nooit</item>
+    </string-array>
+    <string-array name="wifi_p2p_timeout_entries">
+        <item>15 min</item>
+        <item>30 min.</item>
+        <item>Nooit</item>
+    </string-array>
+    <string-array name="sp_wifi_ap_visibility_NORMAL">
+        <item>Tonen</item>
+        <item>Verbergen</item>
+    </string-array>
+    <string-array name="sp_bt_search_filter_SHORT">
+        <item>Alle apparaten</item>
+        <item>Koptelefoon</item>
+        <item>Mobiele telefoon</item>
+        <item>PC</item>
+        <item>Invoerapparaat (toetsenbord, muis, etc.)</item>
+    </string-array>
+    <string-array name="wifi_signal_strength_entries">
+        <item>Strong</item>
+        <item>Normaal</item>
+        <item>Zwak</item>
+        <item>Uit</item>
+    </string-array>
+</resources>

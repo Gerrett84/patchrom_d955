@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>အေမရိက</item>
+        <item>ဥေရာပ</item>
+        <item>အာဖရိက</item>
+        <item>အာရွ</item>
+        <item>ၾသစေၾတးလ်</item>
+        <item>ပစိဖိတ္</item>
+        <item>အားလံုး</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>၁၅ စကၠန္႔</item>
+        <item>၃၀ စကၠန္႔</item>
+        <item>၁ မိနစ္</item>
+        <item>၂ မိနစ္</item>
+        <item>၅ မိနစ္</item>
+        <item>၁၀မိနစ္</item>
+        <item>၃၀ မိနစ္</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries2_NORMAL">
+        <item>၁၅ စကၠန္႔</item>
+        <item>၃၀ စကၠန္႔</item>
+        <item>၁ မိနစ္</item>
+        <item>၂ မိနစ္</item>
+        <item>၅ မိနစ္</item>
+        <item>၁၀မိနစ္</item>
+        <item>မ်က္ႏွာျပင္ကိုဆက္ဖြင့္ထားပါ</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL">
+        <item>၁၅ စကၠန္႔</item>
+        <item>၃၀ စကၠန္႔</item>
+        <item>၁ မိနစ္</item>
+        <item>၂ မိနစ္</item>
+        <item>၅ မိနစ္</item>
+        <item>၁၀မိနစ္</item>
+        <item>၁၅ မိနစ္</item>
+        <item>မ်က္ႏွာျပင္ကိုဆက္ဖြင့္ထားပါ</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL_ex">
+        <item>15စကၠန္႔</item>
+        <item>၃၀စကၠန္႔</item>
+        <item>၁ မိနစ္</item>
+        <item>၁ မိနစ္</item>
+        <item>၅မိနစ္</item>
+        <item>၁၀ မိနစ္</item>
+        <item>၁၅ မိနစ္</item>
+        <item>မ်က္ႏွာျပင္ကိုဆက္ဖြင့္ထားပါ</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled">
+        <item>၁၅ စကၠန္႔</item>
+        <item>၃၀ စကၠန္႔</item>
+        <item>၁ မိနစ္</item>
+        <item>၂ မိနစ္</item>
+        <item>၅ မိနစ္</item>
+        <item>၁၀မိနစ္</item>
+        <item>၁၅ မိနစ္</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled_ex">
+        <item>15စကၠန္႔</item>
+        <item>၃၀စကၠန္႔</item>
+        <item>၁ မိနစ္</item>
+        <item>၁ မိနစ္</item>
+        <item>၅မိနစ္</item>
+        <item>၁၀ မိနစ္</item>
+        <item>၁၅ မိနစ္</item>
+    </string-array>
+    <string-array name="sp_pouch_default_clock_entries2_NORMAL">
+        <item>နာရီ ၁</item>
+        <item>နာရီ ၂</item>
+        <item>နာရီ ၃</item>
+        <item>နာရီ ၄</item>
+        <item>နာရီ ၅</item>
+        <item>နာရီ ၆</item>
+        <item>နာရီ ၇</item>
+        <item>နာရီ ၈</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries1_NORMAL">
+        <item>ဆင္တူယိုးမွား</item>
+        <item>ဒစ္ဂ်စ္တယ္</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_position_entries1_NORMAL">
+        <item>ဗဟုိ</item>
+        <item>အေပၚရွိညာဘက္</item>
+        <item>အေပၚရွိဘယ္ဘက္</item>
+        <item>ညာဘက္ေအာက္ပိုင္း</item>
+        <item>ဘယ္ဘက္ေအာက္ပိုင္း</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_font_entries1_NORMAL">
+        <item>စာလံုးပံုစံနာမည္ ၁</item>
+        <item>စာလံုးပံုစံ နာမည္ ၂</item>
+    </string-array>
+    <string-array name="sp_sound_profile_entries_NORMAL">
+        <item>အသံ</item>
+        <item>တုန္ခါမႈကုိသာ ျပဳပါ</item>
+        <item>အသံတိတ္ ဖုန္းၿမည္သံ</item>
+    </string-array>
+    <string-array name="dream_timeout_entries">
+        <item>ဘယ္ေတာ့မွ</item>
+        <item>၁၅ စကၠန္႔</item>
+        <item>၃၀ စကၠန္႔</item>
+        <item>၁ မိနစ္</item>
+        <item>၂ မိနစ္</item>
+        <item>၅ မိနစ္</item>
+        <item>၁၀မိနစ္</item>
+        <item>၃၀ မိနစ္</item>
+    </string-array>
+    <string-array name="lock_after_timeout_entries">
+        <item>ခ်က္ခ်င္း</item>
+        <item>၅ စကၠန္႔</item>
+        <item>၁၅ စကၠန္႔</item>
+        <item>၃၀ စကၠန္႔</item>
+        <item>၁ မိနစ္</item>
+        <item>၂ မိနစ္</item>
+        <item>၅ မိနစ္</item>
+        <item>၁၀မိနစ္</item>
+        <item>၃၀ မိနစ္</item>
+    </string-array>
+    <string-array name="sp_lock_after_timeout_entries_NORMAL">
+        <item>ခ်က္ခ်င္း</item>
+        <item>၁၅ စကၠန္႔</item>
+        <item>၃၀ စကၠန္႔</item>
+        <item>၁ မိနစ္</item>
+        <item>၂ မိနစ္</item>
+        <item>၁၀မိနစ္</item>
+        <item>၃၀ မိနစ္</item>
+    </string-array>
+    <string-array name="entries_font_size">
+        <item>&amp;lt;font size=16 align=middle>ေသးငယ္ေသာ&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>ပံုမွန္&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle> အၾကီး &amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>ပိုၾကီးေနသည္&amp;lt;/font></item>
+    </string-array>
+    <string-array name="sp_entries_font_size2">
+        <item>&amp;lt;font size=14 align=middle>အေသးဆံုး&amp;lt;/font></item>
+        <item>&amp;lt;font size=16 align=middle>ေသးငယ္ေသာ&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>အလတ္&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle> အၾကီး &amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>အလြန္ႀကီး&amp;lt;/font></item>
+        <item>&amp;lt;font size=27 align=middle>အႀကီးဆံုး&amp;lt;/font></item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>အလြန္ ေႏွးေသာ</item>
+        <item>ေျဖးေျဖး</item>
+        <item>ပံုမွန္</item>
+        <item>ျမန္ဆန္ေသာ</item>
+        <item>အလြန္ ျမန္ေသာ</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>အလြန္ နိမ့္ေသာ</item>
+        <item>နိမ့္ေသာ</item>
+        <item>ပံုမွန္</item>
+        <item>ျမင့္ေသာ</item>
+        <item>အလြန္ ျမင့္ေသာ</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>စစ္ေဆးေနသည္။</item>
+        <item>ခ်ိတ္ဆက္ေနသည္…</item>
+        <item>အေထာက္အထားျပဳေနသည္</item>
+        <item>IP လိပ္စာမ်ား ရယူေနသည္…</item>
+        <item>ခ်ိတ္ဆက္လုိက္သည္</item>
+        <item>ဆိုင္းငံ့ျခင္းခံရသည္</item>
+        <item>အဆက္အသြယ္ျပတ္ျခင္း...</item>
+        <item>ခ်ိတ္ဆက္မႈဖ်က္ထားသည္။</item>
+        <item>မေအာင္ျမင္ပါ</item>
+        <item>ပိတ္ပင္ထားသည္။</item>
+        <item>ခ်ိတ္ဆက္မႈေႏွးေကြးျခင္းေခတၱေရွာင္ေနသည္</item>
+        <item>ခ်ိတ္ဆက္မႈေႏွးေကြးျခင္းေခတၱေရွာင္ေနသည္</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>စစ္ေဆးေနသည္။</item>
+        <item>%1$sခ်ိတ္ဆက္ေနသည္…</item>
+        <item>%1$s စသည္တုိ႔ျဖင့္ စစ္မွန္ေၾကာင္းအေထာက္အထားျပသျခင္း</item>
+        <item>%1$s မွ IP လိပ္စာကုိ ရယူေနသည္…</item>
+        <item>%1$sသို႔ ဆက္သြယ္သည္</item>
+        <item>ဆိုင္းငံ့ျခင္းခံရသည္</item>
+        <item>%1$s အဆက္အသြယ္မလုပ္ျခင္း…</item>
+        <item>ခ်ိတ္ဆက္မႈဖ်က္ထားသည္။</item>
+        <item>မေအာင္ျမင္ပါ</item>
+        <item>ပိတ္ပင္ထားသည္။</item>
+        <item>ခ်ိတ္ဆက္မႈေႏွးေကြးျခင္းေခတၱေရွာင္ေနသည္</item>
+    </string-array>
+    <string-array name="wifi_ap_security">
+        <item>ဖြင့္သည္</item>
+        <item>WPA PSK</item>
+        <item>WPA2 PSK</item>
+    </string-array>
+    <string-array name="wifi_p2p_wps_setup">
+        <item>ခလုတ္ ႏွိပ္ပါ</item>
+        <item>ဤ device မွ PIN ကုတ္သေကၤတ</item>
+    </string-array>
+    <string-array name="wifi_p2p_status">
+        <item>ခ်ိတ္ဆက္လုိက္သည္</item>
+        <item>ဆက္သြယ္ေနသည္</item>
+        <item>မေအာင္ျမင္ပါ</item>
+        <item>သုံးႏုိင္သည္</item>
+        <item>အပုိင္းအျခားအျပင္ဘက္</item>
+    </string-array>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>၂ မိနစ္</item>
+        <item>၅ မိနစ္</item>
+        <item>တနာရီ</item>
+        <item>ဘယ္ေသာအခါမွ အခ်ိန္မလြန္</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>အားနည္းသည္</item>
+        <item>သင့္ေတာ္သည္</item>
+        <item>ေကာင္းေသာ</item>
+        <item>အေကာင္းဆံုးျဖစ္ေသာ၊ ေျပာင္ေျမာက္ေသာ</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>အျမဲတမ္း</item>
+        <item>ပလပ္ နွင့္ ခ်ိတ္ဆက္ထာားေသာအခါမွသာ</item>
+        <item>(ေဒတာ အသံုးျပဳမႈေၾကာင့္) Wi-Fi ပိတ္ေနသည္</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <item>အျမဲတမ္း</item>
+        <item>ပလပ္ နွင့္ ခ်ိတ္ဆက္ထာားေသာအခါမွသာ</item>
+        <item>Wi-Fi ပိတ္ေနသည္</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_entries">
+        <item>အလိုအေလ်ာက္</item>
+        <item>၅ဂီဂါဟက္ဇ္သာ</item>
+        <item>၂.၄ GHz သာ</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>အသံုးျပဳမႈ အခ်ိန္</item>
+        <item>ေရတြက္မႈကုိ စတင္ေဆာင္ရြက္ပါ</item>
+        <item>အပလီေကးရွင္းမ်ားနာမည္</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>တစ္ခုမွ မဟုတ္ပါ</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_network_setup">
+        <item>ပိတ္သည္</item>
+        <item>ခလုတ္ ႏွိပ္ပါ</item>
+        <item>၀င္ေရာက္အသံုးျပဳႏုိင္ေသာ အမွတ္မွ PIN ကုတ္သေကၤတ</item>
+        <item>ဤ device မွ PIN ကုတ္သေကၤတ</item>
+    </string-array>
+    <string-array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>တည္ၿငိမ္ျခင္း</item>
+    </string-array>
+    <string-array name="wifi_proxy_settings">
+        <item>တစ္ခုမွ မဟုတ္ပါ</item>
+        <item>လက္ျဖင့္ေဆာင္ရြက္ရေသာ</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>ပိတ္သည္</item>
+        <item>သတိေပးခ်က္</item>
+        <item>တုန္ခါသည္</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>တစ္ခုမွ မဟုတ္ပါ</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP သုိ႔ CHAP</item>
+    </string-array>
+    <string-array name="bearer_entries">
+        <item>LTE</item>
+        <item>eHRPD</item>
+        <item>မသတ္မွတ္ထားေသာ</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>အတြင္းdevice တြင္သိမ္းဆည္းရန္ေနရာ</item>
+        <item>ဖယ္ရွားႏိုင္ေသာ SD ကဒ္</item>
+        <item>ဖြဲ႕စည္းမႈစနစ္ကုိ ဆံုးျဖတ္ခြင့္ေပးပါ</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>အျမဲတမ္း</item>
+        <item>ဘယ္ေတာ့မွ</item>
+        <item>အသံတိတ္ အသြင္ပံုစံမွသာ</item>
+        <item>အသံတိတ္အသြင္ပုံစံတြင္ ရွိမေနေသာအခါတြင္သာ</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_titles">
+        <item>အတုိ</item>
+        <item>အသင့္အတင့္</item>
+        <item>ရွည္ေသာ</item>
+    </string-array>
+    <string-array name="hdcp_checking_titles">
+        <item>ဘယ္ေသာအခါမွ မစစ္ပါႏွင့္</item>
+        <item>DRM ပါ၀င္ေသာအရာမ်ားသာလ်ွင္။</item>
+        <item>ကိုအျမဲတမ္းစစ္ေဆးမည္</item>
+    </string-array>
+    <string-array name="hdcp_checking_summaries">
+        <item>ဘယ္ေသာအခါမွ HDCP ကုိမစစ္ပါႏွင့္</item>
+        <item>DRM တြင္ပါေသာအရာမ်ားအတြက္သာ HDCPကုိ စစ္သည္</item>
+        <item>HDCP ကိုအျမဲတမ္းစစ္ေဆးမည္</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>လႈပ္ရွားသက္ဝင္ပံုဖန္တီးျခင္း ပိတ္ထားသည္</item>
+        <item>လႈပ္ရွားသက္ဝင္ပံုဖန္တီးျခင္း၏ အတိုင္းအတာ .5x</item>
+        <item>သက္၀င္လႈပ္ရွားမႈအတုိင္းအတာ ၁ ဆ</item>
+        <item>သက္၀င္လႈပ္ရွားမႈအတုိင္းအတာ ၁.၅ ဆ</item>
+        <item>သက္၀င္လႈပ္ရွားမႈအတုိင္းအတာ ၂ ဆ</item>
+        <item>သက္၀င္လႈပ္ရွားမႈအတုိင္းအတာ ၅ ဆ</item>
+        <item>သက္၀င္လႈပ္ရွားမႈအတုိင္းအတာ ၁၀ ဆ</item>
+    </string-array>
+    <string-array name="transition_animation_scale_entries">
+        <item>လႈပ္ရွားသက္ဝင္ပံုဖန္တီးျခင္း ပိတ္ထားသည္</item>
+        <item>လႈပ္ရွားသက္ဝင္ပံုဖန္တီးျခင္း၏ အတိုင္းအတာ .5x</item>
+        <item>သက္၀င္လႈပ္ရွားမႈအတုိင္းအတာ ၁ ဆ</item>
+        <item>သက္၀င္လႈပ္ရွားမႈအတုိင္းအတာ ၁.၅ ဆ</item>
+        <item>သက္၀င္လႈပ္ရွားမႈအတုိင္းအတာ ၂ ဆ</item>
+        <item>သက္၀င္လႈပ္ရွားမႈအတုိင္းအတာ ၅ ဆ</item>
+        <item>သက္၀င္လႈပ္ရွားမႈအတုိင္းအတာ ၁၀ ဆ</item>
+    </string-array>
+    <string-array name="animator_duration_scale_entries">
+        <item>လႈပ္ရွားသက္ဝင္ပံုဖန္တီးျခင္း ပိတ္ထားသည္</item>
+        <item>လႈပ္ရွားသက္ဝင္ပံုဖန္တီးျခင္း၏ အတိုင္းအတာ .5x</item>
+        <item>သက္၀င္လႈပ္ရွားမႈအတုိင္းအတာ ၁ ဆ</item>
+        <item>သက္၀င္လႈပ္ရွားမႈအတုိင္းအတာ ၁.၅ ဆ</item>
+        <item>သက္၀င္လႈပ္ရွားမႈအတုိင္းအတာ ၂ ဆ</item>
+        <item>သက္၀င္လႈပ္ရွားမႈအတုိင္းအတာ ၅ ဆ</item>
+        <item>သက္၀င္လႈပ္ရွားမႈအတုိင္းအတာ ၁၀ ဆ</item>
+    </string-array>
+    <string-array name="overlay_display_devices_entries">
+        <item>တစ္ခုမွ မဟုတ္ပါ</item>
+        <item>720x480 mdpi</item>
+        <item>1280x720 tvdpi</item>
+        <item>1920x1080 xhdpi</item>
+        <item>1280x720 tvdpi ႏွင့္ 1920x1080 xhdpi</item>
+    </string-array>
+    <string-array name="enable_opengl_traces_entries">
+        <item>တစ္ခုမွ မဟုတ္ပါ</item>
+        <item>Logcat</item>
+        <item>Systrace (ဂရပ္ဖစ္မ်ား)</item>
+        <item>ဖုန္းေခၚဆုိမႈ အျပံဳလုိက္ ျဖစ္ေနသည္ glGetError</item>
+    </string-array>
+    <string-array name="app_process_limit_entries">
+        <item>စံအကန္႔အသတ္</item>
+        <item>ေနာက္ခံ လုပ္ငန္းစဥ္မရွိပါ</item>
+        <item>အမ်ားဆံုး လုပ္ငန္းစဥ္ ၁ ခု</item>
+        <item>အမ်ားဆံုး လုပ္ငန္းစဥ္ ၂ ခု</item>
+        <item>အမ်ားဆံုး လုပ္ငန္းစဥ္ ၃ ခု</item>
+        <item>အမ်ားဆံုး လုပ္ငန္းစဥ္ ၄ ခု</item>
+    </string-array>
+    <string-array name="vpn_types_long">
+        <item>PPTP VPN</item>
+        <item>ႀကိဳတင္မွ်ေဝထားေသာကီးမ်ားပါသည့္ L2TP/IPSec VPN</item>
+        <item>တရား၀င္အေထာက္အထားပါေသာ L2TP/IPSec VPN</item>
+        <item>ၾကိဳတင္ေ၀မွ်ထားေသာခလုတ္မ်ားႏွင့္ Xauth ေထာက္ခံခ်က္ျဖင့္ IPSec VPN</item>
+        <item>လက္မွတ္မ်ားႏွင့္ Xauth ေထာက္ခံခ်က္ျဖင့္ IPSec VPN</item>
+        <item>လက္မွတ္မ်ားႏွင့္ ေပါင္းစပ္ထာေသာ ေထာက္ခံခ်က္ျဖင့္ IPSec VPN</item>
+    </string-array>
+    <string-array name="vpn_states">
+        <item>ခ်ိတ္ဆက္မႈဖ်က္ထားသည္။</item>
+        <item>စတင္ေနသည္။...</item>
+        <item>ခ်ိတ္ဆက္ေနသည္…</item>
+        <item>ခ်ိတ္ဆက္လုိက္သည္</item>
+        <item>အခ်ိန္ေက်ာ္လြန္သြားျပီ။</item>
+        <item>မေအာင္ျမင္ပါ</item>
+    </string-array>
+    <string-array name="security_settings_premium_sms_values">
+        <item>ေမးမည္</item>
+        <item>ဘယ္ေတာ့မွခြင့္မျပဳပါ</item>
+        <item>အၿမဲခြင့္ျပဳမည္</item>
+    </string-array>
+    <string-array name="search_filter">
+        <item>ဖုန္းကိရိယာအားလံုး</item>
+        <item>ေခါင္းတြင္တပ္ဆင္ရေသာနားၾကပ္</item>
+        <item>PC ကြန္ပ်ဴတာ</item>
+        <item>ဖုန္း</item>
+        <item>အဓိက မဟုတ္ေသာ</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries_NORMAL">
+        <item>အသံုးျပဳသူ ရုပ္ပံု</item>
+        <item>နာရီ ၁</item>
+        <item>နာရီ ၂</item>
+        <item>နာရီ ၃</item>
+        <item>နာရီ ၄</item>
+        <item>နာရီ ၅</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL">
+        <item>၁.၅ စကၠန္႔</item>
+        <item>၃ စကၠန္႔</item>
+        <item>၅ စကၠန္႔</item>
+        <item>အျမဲတမ္းဖြင့္ထားမည္</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL_ex">
+        <item>1.5စကၠန္႔</item>
+        <item>၃ စကၠန္႔</item>
+        <item>၅ စကၠန္႔</item>
+        <item>အျမဲတမ္းဖြင့္ထားမည္</item>
+    </string-array>
+    <string-array name="sp_front_key_light_l1_NORMAL">
+        <item>၃ စကၠန္႔</item>
+        <item>၆ စကၠန္႔</item>
+        <item>၁၀ စကၠန္႔</item>
+        <item>၃၀ စကၠန္႔</item>
+        <item>အျမဲတမ္းဖြင့္ထားမည္</item>
+    </string-array>
+    <string-array name="sp_front_key_light_att_NORMAL">
+        <item>၃ စကၠန္႔</item>
+        <item>၁စကၠန္႔</item>
+        <item>၁၀ စကၠန္႔</item>
+        <item>၃၀စကၠန္႔</item>
+        <item>အျမဲတမ္းဖြင့္ထားမည္</item>
+    </string-array>
+    <string-array name="sp_numlocdisp_entries_NORMAL">
+        <item>ပိတ္</item>
+        <item>ျဖစ္ေျမာက္ေစႏိုင္သည္</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_NORMAL">
+        <item>သီးသန႔္တည္ရွိမႈ သတိေပးခ်က္</item>
+        <item>သင္သည္ 3rd party အသံုးခ်ပရိုဂရမ္တစ္ခုအားအသံုးျပဳလွ်င္၊ သင္၏ကိုယ္ေရးအခ်က္အလက္မ်ားကို တိုက္ရိုက္စုေဆာင္းလိမ့္မည္။ သို.မဟုတ္ (အသံုးခ်ႏိုင္ေသာေနရာမ်ားတြင္) တည္ေနရာဆိုင္ရာအခ်က္အလက္မ်ား အပါအ၀င္ သင္၏ကိုယ္ေရးအခ်က္အလက္မ်ားအား အသံုးခ်ပရိုဂရမ္အားေထာက္ပံ့သူ သို.မဟုတ္ တျခား 3rd party အခ်ိဳ.ဆီသို. ဖြင့္ခ်ရန္ သင္၏ ဖုန္းကုမၸဏီအားလိုအပ္လိမ့္မည္။</item>
+        <item>မည္သည့္ သီးသန႔္ ေပါလစီကုိ အသံုးျပဳထားသနည္း? third party မ်ားမွ စီစဥ္ပံ့ပုိးေပးထားေသာ သင္၏ ဟန္းဆက္ေပၚရွိ အပလီေကးရွင္းမ်ားသည္ သင့္ carrier ၏ သီးသန႔္ ေပါလစီ ႏွင့္ အသံုးျပဳမႈ စည္းကမ္းမ်ားႏွင့္ လံုး၀ သက္ဆုိင္မႈ မရွိပါ။ third party ၏ ေပါလစီမ်ားသည္ သင့္အပလီေကးရွင္းကုိ အသံုးျပဳမႈႏွင့္ သက္ဆုိင္သည္။</item>
+        <item>third party ေပါလစီ အပုိသတင္းအခ်က္အလက္မ်ားကုိ ဘယ္မွာ ရွာရမလဲ? အပလီေကးရွင္း၏ စည္းကမ္းမ်ား (သုိ႔) အပလီေကးရွင္းသည္ မည္သုိ႔ စုေဆာင္းမႈ၊ ၀င္ေရာက္ သံုးစြဲမႈ၊ အသံုးျပဳမႈ ႏွင့္ သင္၏ အခ်က္အလက္မ်ားကုိ ေဖာ္ျပပံု စသည့္ အပုိ သတင္းအခ်က္အလက္မ်ားကုိ အပလီေကးရွင္းအား ပံ့ပုိးေပးေသာသူ၏ ေပါလစီကုိ စစ္ေဆးပါ။ သီးသန႔္တည္ရွိမႈ ေပါလစီမ်ား၊ အသံုးျပဳမႈ စည္းကမ္းမ်ား ႏွင့္ အျခား သံုးစြဲသူ အသိေပးခ်က္မ်ားကုိ ပံ့ပုိးေပးသူ၏ web ဆုိဒ္တြင္ ရရွိႏုိင္သည္။ အပလီေကးရွင္းကုိ အသံုးမျပဳမွီ သင္သည္ ေပါလစီမ်ားႏွင့္ အဆင္ေျပမႈရွိမရွိ ေသခ်ာေအာင္လုပ္ပါ။</item>
+        <item>ကြၽႏု္ပ္၏ carrier သီးသန႔္ ေပါလစီမ်ားကုိ ဘယ္မွာ ရွာရမလဲ? အကယ္၍ သင္၏ carrier သီးသန႔္ ေပါစီႏွင့္ပတ္သက္ေသာ သီးျခား ေမးခြန္းမ်ားရွိခဲ့ပါက ေက်းဇူးျပဳၿပီး သင့္ carrier ၏ web ဆုိဒ္ပင္မစာမ်က္ႏွာသုိ႔ ၀င္ေရာက္ လည္ပတ္ၿပီး \"သီးသန႔္ေပါလစီ\" လင့္ခ္ကုိ ႏွိပ္ပါ။</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_spr_NORMAL">
+        <item>ကိုယ္ေရးကိုယ္တာသတိေပးမႈျမန္ဆန္သည္</item>
+        <item>အကယ္၍သင္သည္ တတိယပါတီ အပလီေကးရွင္း ကုိသုံလွ်င္ ၄င္းသည္ သင္၏ကုိယ္ေရး သတင္းအခ်က္အလက္မ်ားကုိ တုိက္ရုိက္စုစည္းလုပ္ပါလိမ့္မည္ သုိ႔မဟုတ္ (လုိအပ္ပါက) တည္ေနရာသတင္းအခ်က္အလက္မ်ား အပါအဝင္ သင္၏ကုိယ္ေရး သတင္းအခ်က္အလက္မ်ားကုိ ျဖည္ဆည္းေပးသူ သုိ႔ အခ်ဳိ႕ေသာ တတိယပါတီသုိ႔ ဖြင့္ေျပာရန္ Sprint လိုပါလိမ့္မည္။</item>
+        <item>မည္သည့္ သီးသန႔္ ေပါလစီကုိ အသံုးျပဳထားသနည္း?third party မ်ားမွ မူပုိင္ စီစဥ္ပံ့ပုိးေပးထားေသာ သင္၏ ဟန္းဆက္ေပၚရွိ အပလီေကးရွင္းမ်ားသည္ Sprint ၏ သီးသန႔္ ေပါလစီ ႏွင့္ အသံုးျပဳမႈ စည္းကမ္းမ်ားႏွင့္ လံုး၀ သက္ဆုိင္မႈ မရွိပါ။ third party ၏ ေပါလစီမ်ားသည္ ဤ အပလီေကးရွင္းကုိ သင္ အသံုးျပဳမႈႏွင့္ သက္ဆုိင္သည္။</item>
+        <item>third party မူ၀ါဒ အပုိသတင္းအခ်က္အလက္မ်ားကုိ ဘယ္မွာ ရွာရမလဲ? အပလီေကးရွင္း၏ စည္းကမ္းမ်ား/ (သုိ႔)အပလီေကးရွင္းသည္ မည္သုိ႔ စုေဆာင္းမႈ၊ ၀င္ေရာက္ သံုးစြဲမႈ၊ အသံုးျပဳမႈ ႏွင့္ သင္၏ အခ်က္အလက္မ်ားကုိ ေဖာ္ျပပံု စသည့္ အပုိ သတင္းအခ်က္အလက္မ်ားကုိ အပလီေကးရွင္းအား ပံ့ပုိးေပးေသာသူ၏ မူ၀ါဒကုိ စစ္ေဆးပါ။ သီးသန႔္တည္ရွိမႈ မူ၀ါဒမ်ား၊ အသံုးျပဳမႈ စည္းကမ္းမ်ား ႏွင့္ အျခား သံုးစြဲသူ အသိေပးခ်က္မ်ားကုိ ပံ့ပုိးေပးသူ၏ ဝက္ဘ္ဆုိဒ္တြင္ ရရွိႏုိင္သည္။ အပလီေကးရွင္းကုိ အသံုးမျပဳမီသင္သည္ မူ၀ါဒမ်ားႏွင့္ အဆင္ေျပမႈရွိမရွိ ေသခ်ာေအာင္လုပ္ပါ။</item>
+        <item>Sprint ၏ သီးသန႔္ ေပါလစီကုိ ကြၽႏု္ပ္ ဘယ္မွာ ရွာရမလဲ? Sprint ၏ သီးသန႔္ ေပါလစီႏွင့္ပတ္သက္ၿပီး အျခား ေမးစရာ ေမးခြန္းရွိခဲ့ပါက ေက်းဇူးျပဳၿပီး Sprint.com သုိ႔ ၀င္ေရာက္လည္ပတ္ၿပီး \"သီးသန႔္ ေပါလစီ\" လင့္ခ္တြင္ ႏွိပ္ပါ။</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_bm_NORMAL">
+        <item>မိုဘိုင္းလံုၿခံဳမႈသတိေပးခ်က္အား စြမ္းေဆာင္ရည္ျမွင့္သည္။</item>
+        <item>"3rd party အပလီေကးရွင္းကိုသံုးပါက ၄င္းသည္ သင့္၏ပုဂၢိဳလ္ေရးအခ်က္အလက္မ်ားကို တိုက္႐ိုက္စုစည္းႏိုင္သည္ သို႔မဟုတ္ တည္ေနရာအခ်က္အလက္အပါအ၀င္ (သက္ဆိုင္ပါက) သင့္ကိုယ္ေရးအခ်က္အလက္မ်ားကို အပလီေကးရွင္း ဖန္တီးသူ သို႔မဟုတ္ အျခား 3rd party မ်ားသို႔ျပဆိုရန္  Boost Mobile လိုအပ္မည္။"</item>
+        <item>မည္သည့္ သီးသန႔္ ေပါလစီကုိ အသံုးျပဳထားသနည္း? third party မွ မူပုိင္ စီစဥ္ပံ့ပုိးေပးထားေသာ သင္၏ ဟန္းဆက္ေပၚရွိ အပလီေကးရွင္းမ်ားသည္ Boost Mobile ၏ သီးသန႔္ ေပါလစီ ႏွင့္ အသံုးျပဳမႈ စည္းကမ္းမ်ားႏွင့္ လံုး၀ သက္ဆုိင္မႈ မရွိပါ။ third party ၏ ေပါလစီမ်ားသည္ ဤ အပလီေကရွင္းကုိ သင္ အသံုးျပဳမႈႏွင့္ သက္ဆုိင္သည္။</item>
+        <item>တတိယပါတီ မူ၀ါဒ အပုိသတင္းအခ်က္အလက္မ်ားကုိ ဘယ္မွာ ရွာရမလဲ? အပလီေကးရွင္း၏ စည္းကမ္းမ်ား/ (သုိ႔)အပလီေကးရွင္းသည္ မည္သုိ႔ စုေဆာင္းမႈ၊ ၀င္ေရာက္ သံုးစြဲမႈ၊ အသံုးျပဳမႈ ႏွင့္ သင္၏ အခ်က္အလက္မ်ားကုိ ေဖာ္ျပပံု စသည့္ အပုိ သတင္းအခ်က္အလက္မ်ားကုိ အပလီေကးရွင္းအား ပံ့ပုိးေပးေသာသူ၏ မူ၀ါဒကုိ စစ္ေဆးပါ။ သီးသန႔္တည္ရွိမႈ မူ၀ါဒမ်ား၊ အသံုးျပဳမႈ စည္းကမ္းမ်ား ႏွင့္ အျခား သံုးစြဲသူ အသိေပးခ်က္မ်ားကုိ ပံ့ပုိးေပးသူ၏ ဝက္ဘ္ဆုိဒ္တြင္ ရရွိႏုိင္သည္။ အပလီေကးရွင္းကုိ အသံုးမျပဳမွီ သင္သည္ မူ၀ါဒမ်ားႏွင့္ အဆင္ေျပမႈရွိမရွိ ေသခ်ာေအာင္လုပ္ပါ။</item>
+        <item>Boost Mobile ၏ သီးသန႔္ ေပါလစီကုိ ကြၽႏု္ပ္ ဘယ္မွာ ရွာရမလဲ? Boost Mobile ၏ သီးသန႔္ ေပါလစီႏွင့္ပတ္သက္ၿပီး အျခား ေမးစရာ ေမးခြန္းရွိခဲ့ပါက ေက်းဇူးျပဳၿပီး Boost Mobile.com သုိ႔ ၀င္ေရာက္လည္ပတ္ၿပီး \"သီးသန႔္ ေပါလစီ\" လင့္ခ္တြင္ ႏွိပ္ပါ။</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_virgin_NORMAL">
+        <item>Virgin Mobile လံုၿခံဳမႈသတိေပးခ်က္</item>
+        <item>"3rd party အပလီေကးရွင္း ကိုသံုးပါက ၄င္းသည္ သင့္၏ပုဂၢိဳလ္ေရးအခ်က္အလက္မ်ားကို တိုက္႐ိုက္စုစည္းႏိုင္သည္ သို႔မဟုတ္ တည္ေနရာအခ်က္အလက္အပါအ၀င္ (သက္ဆိုင္ပါက) သင့္ကိုယ္ေရးအခ်က္အလက္မ်ားကအပလီေကးရွင္း ဖန္တီးသူ သို႔မဟုတ္ အျခား 3rd party မ်ားသို႔ျပဆိုရန္  Virgin Mobile လိုအပ္မည္။"</item>
+        <item>မည္သည့္လံုၿခံဳမႈမူ၀ါဒက်င့္သံုးပါသလဲ။ Virgin Mobile လံုၿခံဳေရးမူ၀ါဒႏွင့္သံုးစဲြမႈဆိုင္ရာသတ္မွတ္ခ်က္မ်ားသည္ third party မွေပးေသာ သင့္ handset ေပၚရိွ အပလီေကးရွင္းမ်ားႏွင့္မသက္ဆိုင္ပါ။third party ၏မူ၀ါဒမ်ားသည္ သင့္၏အပလီေကးရွင္းသံုးျခင္းႏွင့္သက္ဆိုင္သည္။</item>
+        <item>တတိယပါတီ မူ၀ါဒ အပုိသတင္းအခ်က္အလက္မ်ားကုိ ဘယ္မွာ ရွာရမလဲ? အပလီေကးရွင္း၏ စည္းကမ္းမ်ား/ (သုိ႔)အပလီေကးရွင္းသည္ မည္သုိ႔ စုေဆာင္းမႈ၊ ၀င္ေရာက္ သံုးစြဲမႈ၊ အသံုးျပဳမႈ ႏွင့္ သင္၏ အခ်က္အလက္မ်ားကုိ ေဖာ္ျပပံု စသည့္ အပုိ သတင္းအခ်က္အလက္မ်ားကုိ အပလီေကးရွင္းအား ပံ့ပုိးေပးေသာသူ၏ မူ၀ါဒကုိ စစ္ေဆးပါ။ သီးသန႔္တည္ရွိမႈ မူ၀ါဒမ်ား၊ အသံုးျပဳမႈ စည္းကမ္းမ်ား ႏွင့္ အျခား သံုးစြဲသူ အသိေပးခ်က္မ်ားကုိ ပံ့ပုိးေပးသူ၏ ဝက္ဘ္ဆုိဒ္တြင္ ရရွိႏုိင္သည္။ အပလီေကးရွင္းကုိ အသံုးမျပဳမွီ သင္သည္ မူ၀ါဒမ်ားႏွင့္ အဆင္ေျပမႈရွိမရွိ ေသခ်ာေအာင္လုပ္ပါ။</item>
+        <item>Virgin Mobile ၏လံုၿခံဳမႈမူ၀ါဒကိုဘယ္မွာေတြ႕ႏိုင္ပါသလဲ။ Virgin Mobile ၏လံုၿခံဳမႈမူ၀ါဒႏွင့္ပတ္သက္၍ ေမးခြန္းမ်ားရိွပါက VirginMobileUSA.com သို႔၀င္ေရာက္ၿပီး “လံုၿခံဳမႈမူ၀ါဒ” လင့္ကိုႏွိပ္ပါ။</item>
+    </string-array>
+    <string-array name="sp_lock_screen_effect_entries_NORMAL">
+        <item>အေျခခံ</item>
+        <item>ေရလိႈင္းငယ္ေလး</item>
+        <item>မွင္ပ်ံ႕ႏွံ႔ျခင္း</item>
+        <item>ႏွင္းစက္</item>
+    </string-array>
+    <string-array name="sp_power_save_brightness_entries_NORMAL">
+        <item>၁၀% ေတာက္ပမႈ</item>
+        <item>၂၀% ေတာက္ပမႈ</item>
+        <item>၃၀% ေတာက္ပမႈ</item>
+        <item>၅၀% ေတာက္ပမႈ</item>
+    </string-array>
+    <string-array name="sp_power_save_screen_timeout_entries_NORMAL">
+        <item>၁၅ စကၠန္႔</item>
+        <item>၃၀ စကၠန္႔</item>
+        <item>၁ မိနစ္</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_NORMAL">
+        <item>၁.၅ စကၠန္႔</item>
+        <item>အျမဲတမ္းပိတ္ထားမည္</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_att_NORMAL">
+        <item>၃ စကၠန္႔</item>
+        <item>အျမဲတမ္းပိတ္ထားမည္</item>
+    </string-array>
+    <string-array name="sp_power_save_mode_entries_NORMAL">
+        <item>ဘက္ထရီ ၁၀ %</item>
+        <item>ဘက္ထရီ ၂၀ %</item>
+        <item>ဘက္ထရီ ၃၀ %</item>
+        <item>ဘက္ထရီ ၅၀ %</item>
+    </string-array>
+    <string-array name="sp_power_save_mode2_entries_NORMAL">
+        <item>ခ်က္ခ်င္း</item>
+        <item>ဘက္ထရီ ၁၀ %</item>
+        <item>ဘက္ထရီ ၂၀ %</item>
+        <item>ဘက္ထရီ ၃၀ %</item>
+        <item>ဘက္ထရီ ၅၀ %</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries">
+        <item>၅ မိနစ္</item>
+        <item>၁၀မိနစ္</item>
+        <item>၁၅ မိနစ္</item>
+    </string-array>
+    <string-array name="sp_hotspot_timeout_entries_mx_NORMAL">
+        <item>သတ္မွတ္ခ်ိန္ ဘယ္ေတာ့မွမကုန္ပါေစႏွင့္</item>
+        <item>၅မိနစ္</item>
+        <item>၁၀ မိနစ္</item>
+        <item>၁၅ မိနစ္</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries_jb">
+        <item>၅မိနစ္</item>
+        <item>၁၀ မိနစ္</item>
+        <item>၁၅ မိနစ္</item>
+        <item>၃၀ မိနစ္</item>
+        <item>ဘယ္ေတာ့မွ</item>
+    </string-array>
+    <string-array name="wifi_p2p_timeout_entries">
+        <item>၁၅ မိနစ္</item>
+        <item>၃၀ မိနစ္</item>
+        <item>ဘယ္ေတာ့မွ</item>
+    </string-array>
+    <string-array name="sp_wifi_ap_visibility_NORMAL">
+        <item>ေဖာ္ျပပါ</item>
+        <item>ေဖ်ာက္ထားပါ။</item>
+    </string-array>
+    <string-array name="sp_bt_search_filter_SHORT">
+        <item>ဖုန္းကိရိယာအားလံုး</item>
+        <item>ေခါင္းတြင္တပ္ဆင္ရေသာနားၾကပ္</item>
+        <item>မုိဘုိင္းဖုန္း</item>
+        <item>PC</item>
+        <item>အ၀င္ကိရိယာ (keyboard၊ mouse စသည္ျဖင့္)</item>
+    </string-array>
+    <string-array name="wifi_signal_strength_entries">
+        <item>ျပင္းထန္</item>
+        <item>အသင့္အတင့္</item>
+        <item>အားနည္း</item>
+        <item>ပိတ္သည္</item>
+    </string-array>
+    <string-array name="wifi_Dual_band_AP_connection_entries">
+        <item>အလိုအေလ်ာက္</item>
+        <item>5 GHz</item>
+        <item>2.4 GHz</item>
+    </string-array>
+</resources>

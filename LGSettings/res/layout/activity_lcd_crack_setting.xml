@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/hw_keymode_main_bg2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:layout_gravity="center" android:background="@drawable/bg_hw_keymode_title" android:layout_width="fill_parent" android:layout_height="54.0dip" android:text="@string/hardware_key_control_mode" android:layout_weight="0.09" style="@style/hw_keymode_title" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.91">
+        <TextView android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="71.0dip" android:layout_marginLeft="19.0dip" android:layout_marginRight="19.0dip" android:text="@string/lcd_appears_to_be_demaged" android:layout_weight="0.12" style="@style/hw_keymode_text" />
+        <LinearLayout android:layout_gravity="bottom" android:background="@color/hw_keymode_main_bg" android:layout_width="fill_parent" android:layout_height="250.0dip" android:layout_weight="0.4">
+            <LinearLayout android:gravity="top" android:layout_gravity="bottom|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="0.39">
+                <RelativeLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/hw_keymode_answer_call" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.669983dip" android:src="@drawable/hw_keymode_answer_call" />
+                    <ImageView android:id="@id/ic_hw_keymode_num_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-12.0dip" android:layout_marginTop="-11.0dip" android:src="@drawable/ic_hw_keymode_num_1" android:layout_alignLeft="@id/hw_keymode_answer_call" android:layout_alignTop="@id/hw_keymode_answer_call" />
+                </RelativeLayout>
+                <TextView android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="4.0dip" android:text="@string/answer_call" style="@style/hw_keymode_title_small" />
+                <TextView android:gravity="center_horizontal" android:layout_gravity="bottom|center" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/press_the_volume" style="@style/hw_keymode_text_small" />
+            </LinearLayout>
+            <LinearLayout android:gravity="top" android:layout_gravity="bottom|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="0.39">
+                <RelativeLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/hw_keymode_stop_alam" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.669983dip" android:src="@drawable/hw_keymode_stop_alam" />
+                    <ImageView android:id="@id/ic_hw_keymode_num_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-12.0dip" android:layout_marginTop="-11.0dip" android:src="@drawable/ic_hw_keymode_num_2" android:layout_alignLeft="@id/hw_keymode_stop_alam" android:layout_alignTop="@id/hw_keymode_stop_alam" />
+                </RelativeLayout>
+                <TextView android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="4.0dip" android:text="@string/stop_alarm" style="@style/hw_keymode_title_small" />
+                <TextView android:gravity="center_horizontal" android:layout_gravity="bottom|center" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/press_and_hold_the_volume" style="@style/hw_keymode_text_small" />
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:background="@color/hw_keymode_button_line" android:layout_width="fill_parent" android:layout_height="0.6700001dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="94.0dip" android:layout_weight="0.28">
+            <FrameLayout android:id="@id/on" android:paddingLeft="21.0dip" android:paddingRight="21.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.08">
+                <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/on" style="@style/hw_keymode_text" />
+            </FrameLayout>
+            <FrameLayout android:background="@color/hw_keymode_button_line" android:layout_width="fill_parent" android:layout_height="0.6700001dip" />
+            <FrameLayout android:id="@id/off" android:paddingLeft="21.0dip" android:paddingRight="21.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.08">
+                <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/off" style="@style/hw_keymode_text" />
+            </FrameLayout>
+            <FrameLayout android:background="@color/hw_keymode_button_line" android:layout_width="fill_parent" android:layout_height="0.6700001dip" />
+            <FrameLayout android:id="@id/ask_me_later" android:paddingLeft="21.0dip" android:paddingRight="21.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.08">
+                <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ask_me_later" style="@style/hw_keymode_text" />
+            </FrameLayout>
+        </LinearLayout>
+        <FrameLayout android:background="@color/hw_keymode_button_line" android:layout_width="fill_parent" android:layout_height="0.6700001dip" />
+        <LinearLayout android:orientation="horizontal" android:background="@color/hw_keymode_main_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.11">
+            <LinearLayout android:layout_gravity="left|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="19.0dip">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/volume_button" style="@style/hw_keymode_list_1line" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.6700001dip" android:text="@string/move_up_down" style="@style/hw_keymode_list_2line" />
+            </LinearLayout>
+            <FrameLayout android:layout_width="116.66998dip" android:layout_height="fill_parent" />
+            <LinearLayout android:layout_gravity="left|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="19.0dip">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/power_button" style="@style/hw_keymode_list_1line" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.6700001dip" android:text="@string/select_ok" style="@style/hw_keymode_list_2line" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

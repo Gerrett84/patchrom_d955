@@ -1,0 +1,70 @@
+diff -rup ../framework_ext/smali/com/android/internal/telephony/MiuiAdnRecord.smali ../framework_ext/smali/com/android/internal/telephony/MiuiAdnRecord.smali
+--- ../framework_ext/smali/com/android/internal/telephony/MiuiAdnRecord.smali	2014-06-07 23:40:20.000000000 +0200
++++ ../framework_ext/smali/com/android/internal/telephony/MiuiAdnRecord.smali	2014-06-08 01:47:13.865127685 +0200
+@@ -1,5 +1,5 @@
+ .class public Lcom/android/internal/telephony/MiuiAdnRecord;
+-.super Lcom/android/internal/telephony/AdnRecord;
++.super Lcom/android/internal/telephony/uicc/AdnRecord;
+ .source "MiuiAdnRecord.java"
+ 
+ 
+@@ -46,7 +46,7 @@
+ 
+     .prologue
+     .line 35
+-    invoke-direct/range {p0 .. p5}, Lcom/android/internal/telephony/AdnRecord;-><init>(IILjava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
++    invoke-direct/range {p0 .. p5}, Lcom/android/internal/telephony/uicc/AdnRecord;-><init>(IILjava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+ 
+     .line 13
+     const-string v0, ""
+@@ -68,7 +68,7 @@
+ 
+     .prologue
+     .line 40
+-    invoke-direct {p0, p1, p2, p3}, Lcom/android/internal/telephony/AdnRecord;-><init>(II[B)V
++    invoke-direct {p0, p1, p2, p3}, Lcom/android/internal/telephony/uicc/AdnRecord;-><init>(II[B)V
+ 
+     .line 13
+     const-string v0, ""
+@@ -354,7 +354,7 @@
+     goto :goto_0
+ .end method
+ 
+-.method public isEqual(Lcom/android/internal/telephony/AdnRecord;)Z
++.method public isEqual(Lcom/android/internal/telephony/uicc/AdnRecord;)Z
+     .locals 2
+     .parameter "adn"
+ 
+@@ -362,9 +362,9 @@
+     .line 72
+     iget-object v0, p0, Lcom/android/internal/telephony/MiuiAdnRecord;->alphaTag:Ljava/lang/String;
+ 
+-    iget-object v1, p1, Lcom/android/internal/telephony/AdnRecord;->alphaTag:Ljava/lang/String;
++    iget-object v1, p1, Lcom/android/internal/telephony/uicc/AdnRecord;->alphaTag:Ljava/lang/String;
+ 
+-    invoke-static {v0, v1}, Lcom/android/internal/telephony/MiuiAdnRecord;->callStringCompareNullEqualsEmpty(Ljava/lang/String;Ljava/lang/String;)Z
++    invoke-static {v0, v1}, Lcom/android/internal/telephony/uicc/AdnRecord;->callStringCompareNullEqualsEmpty(Ljava/lang/String;Ljava/lang/String;)Z
+ 
+     move-result v0
+ 
+@@ -372,9 +372,9 @@
+ 
+     iget-object v0, p0, Lcom/android/internal/telephony/MiuiAdnRecord;->number:Ljava/lang/String;
+ 
+-    iget-object v1, p1, Lcom/android/internal/telephony/AdnRecord;->number:Ljava/lang/String;
++    iget-object v1, p1, Lcom/android/internal/telephony/uicc/AdnRecord;->number:Ljava/lang/String;
+ 
+-    invoke-static {v0, v1}, Lcom/android/internal/telephony/MiuiAdnRecord;->callStringCompareNullEqualsEmpty(Ljava/lang/String;Ljava/lang/String;)Z
++    invoke-static {v0, v1}, Lcom/android/internal/telephony/uicc/AdnRecord;->callStringCompareNullEqualsEmpty(Ljava/lang/String;Ljava/lang/String;)Z
+ 
+     move-result v0
+ 
+@@ -504,7 +504,7 @@
+ 
+     .prologue
+     .line 78
+-    invoke-super {p0, p1, p2}, Lcom/android/internal/telephony/AdnRecord;->writeToParcel(Landroid/os/Parcel;I)V
++    invoke-super {p0, p1, p2}, Lcom/android/internal/telephony/uicc/AdnRecord;->writeToParcel(Landroid/os/Parcel;I)V
+ 
+     .line 79
+     iget-object v0, p0, Lcom/android/internal/telephony/MiuiAdnRecord;->anr:Ljava/lang/String;

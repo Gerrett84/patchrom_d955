@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>Amerikka</item>
+        <item>Eurooppa</item>
+        <item>Afrikka</item>
+        <item>Aasia</item>
+        <item>Australia</item>
+        <item>Tyynimeri</item>
+        <item>Kaikki</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 sekuntia</item>
+        <item>30 sekuntia</item>
+        <item>1 minuutti</item>
+        <item>2 minuuttia</item>
+        <item>5 minuuttia</item>
+        <item>10 minuuttia</item>
+        <item>30 minuuttia</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries2_NORMAL">
+        <item>15 sekuntia</item>
+        <item>30 sekuntia</item>
+        <item>1 minuutti</item>
+        <item>2 minuuttia</item>
+        <item>5 minuuttia</item>
+        <item>10 minuuttia</item>
+        <item>Pidä näyttö päällä</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL">
+        <item>15 sekuntia</item>
+        <item>30 sekuntia</item>
+        <item>1 minuutti</item>
+        <item>2 minuuttia</item>
+        <item>5 minuuttia</item>
+        <item>10 minuuttia</item>
+        <item>15 minuuttia</item>
+        <item>Pidä näyttö päällä</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL_ex">
+        <item>15 s</item>
+        <item>30 s</item>
+        <item>1 min</item>
+        <item>2 min</item>
+        <item>5 min</item>
+        <item>10 min</item>
+        <item>15 min</item>
+        <item>Pidä näyttö päällä</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled">
+        <item>15 sekuntia</item>
+        <item>30 sekuntia</item>
+        <item>1 minuutti</item>
+        <item>2 minuuttia</item>
+        <item>5 minuuttia</item>
+        <item>10 minuuttia</item>
+        <item>15 minuuttia</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled_ex">
+        <item>15 s</item>
+        <item>30 s</item>
+        <item>1 min</item>
+        <item>2 min</item>
+        <item>5 min</item>
+        <item>10 min</item>
+        <item>15 min</item>
+    </string-array>
+    <string-array name="sp_pouch_default_clock_entries2_NORMAL">
+        <item>Kello 1</item>
+        <item>Kello 2</item>
+        <item>Kello 3</item>
+        <item>Kello 4</item>
+        <item>Kello 5</item>
+        <item>Kello 6</item>
+        <item>Kello 7</item>
+        <item>Kello 8</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries1_NORMAL">
+        <item>Analogi</item>
+        <item>Digitaalinen</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_position_entries1_NORMAL">
+        <item>Center</item>
+        <item>Ylös oikealle</item>
+        <item>Ylös vasemmalle</item>
+        <item>Oikea alakulma</item>
+        <item>Vasen alakulma</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_font_entries1_NORMAL">
+        <item>Kirjasintyyppi1</item>
+        <item>Kirjasintyyppi2</item>
+    </string-array>
+    <string-array name="sp_sound_profile_entries_NORMAL">
+        <item>Ääni</item>
+        <item>Vain värinä</item>
+        <item>Äänetön</item>
+    </string-array>
+    <string-array name="dream_timeout_entries">
+        <item>Ei koskaan</item>
+        <item>15 sekuntia</item>
+        <item>30 sekuntia</item>
+        <item>1 minuutti</item>
+        <item>2 minuuttia</item>
+        <item>5 minuuttia</item>
+        <item>10 minuuttia</item>
+        <item>30 minuuttia</item>
+    </string-array>
+    <string-array name="lock_after_timeout_entries">
+        <item>Heti</item>
+        <item>5 sekuntia</item>
+        <item>15 sekuntia</item>
+        <item>30 sekuntia</item>
+        <item>1 minuutti</item>
+        <item>2 minuuttia</item>
+        <item>5 minuuttia</item>
+        <item>10 minuuttia</item>
+        <item>30 minuuttia</item>
+    </string-array>
+    <string-array name="sp_lock_after_timeout_entries_NORMAL">
+        <item>Heti</item>
+        <item>15 sekuntia</item>
+        <item>30 sekuntia</item>
+        <item>1 minuutti</item>
+        <item>2 minuuttia</item>
+        <item>10 minuuttia</item>
+        <item>30 minuuttia</item>
+    </string-array>
+    <string-array name="entries_font_size">
+        <item>&amp;lt;font size=16 align=middle>Pieni&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>Normaali&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>Suuri&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>Erittäin suuri&amp;lt;/font></item>
+    </string-array>
+    <string-array name="sp_entries_font_size2">
+        <item>&amp;lt;font size=14 align=middle>Pienin&amp;lt;/font></item>
+        <item>&amp;lt;font size=16 align=middle>Pieni&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>Normaali&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>Suuri&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>Hyvin suuri&amp;lt;/font></item>
+        <item>&amp;lt;font size=27 align=middle>Suurin&amp;lt;/font></item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>Erittäin hidas</item>
+        <item>Hidas</item>
+        <item>Normaali</item>
+        <item>Nopea</item>
+        <item>Erittäin nopea</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>Erittäin alhainen</item>
+        <item>Matala</item>
+        <item>Normaali</item>
+        <item>Korkea</item>
+        <item>Erittäin korkea</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Etsitään...</item>
+        <item>Yhdistetään...</item>
+        <item>Todennetaan...</item>
+        <item>Haetaan IP-osoite...</item>
+        <item>Yhdistetty</item>
+        <item>Keskeytetty</item>
+        <item>Katkaistaan yhteyttä...</item>
+        <item>Ei yhteyttä</item>
+        <item>Epäonnistui</item>
+        <item>Estetty</item>
+        <item>Huonon yhteyden tilapäinen välttämäminen</item>
+        <item>Huonon yhteyden tilapäinen välttämäminen</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Etsitään...</item>
+        <item>Yhdistetään %1$s...</item>
+        <item>Todennetaan verkkoon %1$s…</item>
+        <item>Noudetaan IP-osoitetta verkosta %1$s...</item>
+        <item>Yhdistetty verkkoon %1$s</item>
+        <item>Keskeytetty</item>
+        <item>Katkaistaan yhteyttä verkkoon %1$s…</item>
+        <item>Ei yhteyttä</item>
+        <item>Epäonnistui</item>
+        <item>Estetty</item>
+        <item>Huonon yhteyden tilapäinen välttämäminen</item>
+    </string-array>
+    <string-array name="wifi_ap_security">
+        <item>Avaa</item>
+        <item>WPA PSK</item>
+        <item>WPA2 PSK</item>
+    </string-array>
+    <string-array name="wifi_p2p_wps_setup">
+        <item>Push-painike</item>
+        <item>Tämän laitteen PIN</item>
+    </string-array>
+    <string-array name="wifi_p2p_status">
+        <item>Yhdistetty</item>
+        <item>Yhdistää</item>
+        <item>Epäonnistui</item>
+        <item>saatavilla</item>
+        <item>Kuuluvuusalueen ulkopuolella</item>
+    </string-array>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>2 minuuttia</item>
+        <item>5 minuuttia</item>
+        <item>1 tunti</item>
+        <item>Ei aikakatkaisua</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Heikko</item>
+        <item>Kohtalainen</item>
+        <item>Hyvä</item>
+        <item>Erinomainen</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Aina</item>
+        <item>Vain yhdistettynä</item>
+        <item>Wi-Fi on pois käytöstä (datakäytön takia)</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <item>Aina</item>
+        <item>Vain yhdistettynä</item>
+        <item>Wi-Fi on pois käytöstä</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_entries">
+        <item>Automaattinen</item>
+        <item>Vain 5 GHz</item>
+        <item>Vain 2.4 GHz</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>Käyttöaika</item>
+        <item>Käynnistyskerrat</item>
+        <item>Sovelluksen nimi</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>Ei mitään</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_network_setup">
+        <item>Pois</item>
+        <item>Push-painike</item>
+        <item>Tukiaseman PIN</item>
+        <item>Tämän laitteen PIN</item>
+    </string-array>
+    <string-array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>Staattinen</item>
+    </string-array>
+    <string-array name="wifi_proxy_settings">
+        <item>Ei mitään</item>
+        <item>Manuaalinen</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>Pois</item>
+        <item>Hälytys</item>
+        <item>Värinä</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>Ei mitään</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP tai CHAP</item>
+    </string-array>
+    <string-array name="bearer_entries">
+        <item>LTE</item>
+        <item>eHRPD</item>
+        <item>Määrittelemätön</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Sisäinen tallennustila</item>
+        <item>Irrotettava SD-kortti</item>
+        <item>Anna järjestelmän päättää</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>Aina</item>
+        <item>Ei koskaan</item>
+        <item>Vain äänettömänä</item>
+        <item>Vain jos äänet käytössä</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_titles">
+        <item>Lyhyt</item>
+        <item>Normaali</item>
+        <item>Pitkä</item>
+    </string-array>
+    <string-array name="hdcp_checking_titles">
+        <item>Ei tarkistusta</item>
+        <item>Vain DRM-sisällön tarkastus</item>
+        <item>Tarkista aina</item>
+    </string-array>
+    <string-array name="hdcp_checking_summaries">
+        <item>Älä käytä HDCP-tarkistusta</item>
+        <item>Käytä HDCP-tarkistusta vain DRM-sisällölle</item>
+        <item>Käytä aina HDCP-tarkistusta</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>Animaatio pois käytöstä</item>
+        <item>Animaation skaalaus ,5x</item>
+        <item>Animaation skaalaus 1x</item>
+        <item>Animaation skaalaus 1.5x</item>
+        <item>Animaation skaalaus 2x</item>
+        <item>Animaation skaalaus 5x</item>
+        <item>"Animaation skaalaus  10x"</item>
+    </string-array>
+    <string-array name="transition_animation_scale_entries">
+        <item>Animaatio pois käytöstä</item>
+        <item>Animaation skaalaus ,5x</item>
+        <item>Animaation skaalaus 1x</item>
+        <item>Animaation skaalaus 1.5x</item>
+        <item>Animaation skaalaus 2x</item>
+        <item>Animaation skaalaus 5x</item>
+        <item>"Animaation skaalaus  10x"</item>
+    </string-array>
+    <string-array name="animator_duration_scale_entries">
+        <item>Animaatio pois käytöstä</item>
+        <item>Animaation skaalaus ,5x</item>
+        <item>Animaation skaalaus 1x</item>
+        <item>Animaation skaalaus 1.5x</item>
+        <item>Animaation skaalaus 2x</item>
+        <item>Animaation skaalaus 5x</item>
+        <item>"Animaation skaalaus  10x"</item>
+    </string-array>
+    <string-array name="overlay_display_devices_entries">
+        <item>Ei mitään</item>
+        <item>720x480 mdpi</item>
+        <item>1280x720 tvdpi</item>
+        <item>1920x1080 xhdpi</item>
+        <item>1280x720 tvdpi ja 1920x1080 xhdpi</item>
+    </string-array>
+    <string-array name="enable_opengl_traces_entries">
+        <item>Ei mitään</item>
+        <item>Logcat</item>
+        <item>Systrace (grafiikka)</item>
+        <item>Kutsupino glGetErrorissa</item>
+    </string-array>
+    <string-array name="app_process_limit_entries">
+        <item>Vakioraja</item>
+        <item>Ei taustaprosesseja</item>
+        <item>Enintään 1 prosessia</item>
+        <item>Enintään 2 prosessia</item>
+        <item>Enintään 3 prosessia</item>
+        <item>Enintään 4 prosessia</item>
+    </string-array>
+    <string-array name="vpn_types_long">
+        <item>PPTP VPN</item>
+        <item>L2TP/IPSec VPN esijaetuilla avaimilla</item>
+        <item>L2TP/IPSec VPN varmenteilla</item>
+        <item>IPSec VPN esijaetuilla avaimilla ja Xauth-todennuksella</item>
+        <item>IPSec VPN varmenteilla ja X auth todennuksella</item>
+        <item>IPSec VPN varmenteilla ja yhdistelmätodennuksella</item>
+    </string-array>
+    <string-array name="vpn_states">
+        <item>Ei yhteyttä</item>
+        <item>Alustetaan...</item>
+        <item>Yhdistetään...</item>
+        <item>Yhdistetty</item>
+        <item>Aikakatkaisu</item>
+        <item>Epäonnistui</item>
+    </string-array>
+    <string-array name="security_settings_premium_sms_values">
+        <item>Kysy</item>
+        <item>Älä salli koskaan</item>
+        <item>Salli aina</item>
+    </string-array>
+    <string-array name="search_filter">
+        <item>Kaikki laitteet</item>
+        <item>Kuulokkeet</item>
+        <item>PC</item>
+        <item>Puhelin</item>
+        <item>Oheislaite</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries_NORMAL">
+        <item>Käyttäjän kuva</item>
+        <item>Kello 1</item>
+        <item>Kello 2</item>
+        <item>Kello 3</item>
+        <item>Kello 4</item>
+        <item>Kello 5</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL">
+        <item>1.5 sekuntia</item>
+        <item>3 sekuntia</item>
+        <item>5 sekuntia</item>
+        <item>Aina päällä</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL_ex">
+        <item>1.5 s</item>
+        <item>3 s</item>
+        <item>5 s</item>
+        <item>Aina päällä</item>
+    </string-array>
+    <string-array name="sp_front_key_light_l1_NORMAL">
+        <item>3 sekuntia</item>
+        <item>6 sekuntia</item>
+        <item>10 sekuntia</item>
+        <item>30 sekuntia</item>
+        <item>Aina päällä</item>
+    </string-array>
+    <string-array name="sp_front_key_light_att_NORMAL">
+        <item>3 s</item>
+        <item>6 s</item>
+        <item>10 s</item>
+        <item>30 s</item>
+        <item>Aina päällä</item>
+    </string-array>
+    <string-array name="sp_numlocdisp_entries_NORMAL">
+        <item>Poista käytöstä</item>
+        <item>Ota käyttöön</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_NORMAL">
+        <item>Yksityisyysvaroitus</item>
+        <item>Mikäli käytät kolmannen osapuolen sovellusta, se saattaa kerätä henkilökohtaisia tietojasi, kuten tietoja asuinpaikkakunnastasi jos se on mahdollista, tai vaatia palveluntarjoajaasi antamaan niitä sovellusten tarjoajille tai joillekin muille kolmansille osapuolille.</item>
+        <item>Mitkä yksityisyydensuojan sopimusehdot tulevat käyttöön? Verkkopalvelimesi sopimusehdot eivät koske sovellusten sopimusehtoja, jotka ovat kolmannen osapuolen tekemiä. Kolmannen osapuolen sopimusehdot koskevat näitä sovelluksia.</item>
+        <item>Mistä saat enemmän tietoa kolmannen osapuolen sopimuksista? Katso sovelluksen oikeudet ja/tai sovelluksen tuottajan sopimusehdot. Niistä saat selville miten sovellus käyttää, kerää, ja siirtää yksityistietojasi eteenpäin. Yksityisyyden suoja, käyttöehdot ja muut kuluttajaehdot VOIVAT OLLA saatavilla tuottajan kotisivuilla. Ole varma, että olet ymmärtänyt kaikki sopimusehdot ennen kuin käytät sovellusta.</item>
+        <item>Mistä saan verkkopalvelimeni yksityisyydensuojan sopimuksista tietoja? Kokeile verkkopalvelimesi kotisivuja yksittäisten kysymysten merkeissä. Klikkaa \"Yksityisyys ja sopimusehdot\" kohtaa linkissä.</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_spr_NORMAL">
+        <item>Sprint -yksityisyysasetukset</item>
+        <item>Jos käytät kolmannen osapuolen sovellusta, se voi kerätä suoraan henkilökohtaista tietoasi tai vaatia niitä Sprintlta, sisältäen sijaintitietosi (jos saatavilla), sovelluksen tarjoajalle tai muulle kolmannelle osapuolelle.</item>
+        <item>Mitkä yksityisyydensuojan sopimusehdot tulevat käyttöön? Sprint tietosuojakäytäntöjä ja käyttöehtoja ei sovelleta puhelimeen sovelluksiin, jotka ovat yksinomaan kolmansien osapuolten toimittamat.</item>
+        <item>Mistä voin etsiä lisää tietoa kolmansien osapuolien käyttöehdoista? Tarkista sovellusten käyttöehdot ja/tai sovellusten tarjoajien ehdot lisätietoihin, siitä kuinka sovellus kerää, yhdistää ja käyttää ja tuo julki tietojasi. Tietosuoja, käyttöehdot ja muut kuluttajailmoitukset VOIVAT OLLA saatavilla palveluntarjoajan verkkosivuilla. Varmista, että ymmärrät ehdot ennen kuin aloitat sovelluksen käytön.</item>
+        <item>"Mistä voin köyttää Sprint:in tietosuojaehdot? Erikseen, jos sinulla on kysymyksiä Sprint:in tietosuojaehdoista, käy seuraavassa osoitteessa  Sprint.com ja klikkaa \"Privacy Policy\" linkkiä."</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_bm_NORMAL">
+        <item>Lisää mobiiliyksityisyyshälytystä</item>
+        <item>Jos käytät kolmannen osapuolen sovellusta, se voi kerätä suoraan henkilökohtaista tietoasi tai vaatia niitä Boost Mobilelta, sisältäen sijaintitietosi (jos saatavilla), sovelluksen tarjoajalle tai muulle kolmannelle osapuolelle.</item>
+        <item>Mitkä yksityisyydensuojan sopimusehdot tulevat käyttöön? Boost Mobilen tietosuojakäytännöt ja käyttöehdot eivät sovellu puhelimeen sovelluksiin, jotka ovat yksinomaan kolmannen osapuolten toimittamat.</item>
+        <item>Mistä voin etsiä lisää tietoa kolmansien osapuolien käyttöehdoista? Tarkista sovellusten käyttöehdot ja/tai sovellusten tarjoajien ehdot lisätietoihin, siitä kuinka sovellus kerää, yhdistää ja käyttää ja tuo julki tietojasi. Tietosuoja, käyttöehdot ja muut kuluttajailmoitukset VOIVAT OLLA saatavilla palveluntarjoajan verkkosivuilla. Varmista, että ymmärrät ehdot ennen kuin aloitat sovelluksen käytön.</item>
+        <item>"Mistä voin köyttää Boost Mobile:n tietosuojaehdot? Erikseen, jos sinulla on kysymyksiä Boost Mobile:n tietosuojaehdoista, käy seuraavassa osoitteessa  Boost Mobile.com ja klikkaa \"Privacy Policy\" linkkiä."</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_virgin_NORMAL">
+        <item>Virgin Mobile -yksityisyyshälytys</item>
+        <item>Jos käytät kolmannen osapuolen sovellusta, se voi kerätä suoraan henkilökohtaista tietoasi tai vaatia niitä Virgin Mobilelta, sisältäen sijaintitietosi (jos saatavilla), sovelluksen tarjoajalle tai muulle kolmannelle osapuolelle.</item>
+        <item>Mitä tietosuojakäytäntöä sovelletaan? Virgin Mobilen tietosuojakäytäntöä ja käyttöehtoja ei sovelleta laitteesi sovelluksiin, jotka tulevat ainoastaan kolmannelta osapuolelta. Kolmannen osapuolen käytäntöjä sovelletaan tämän sovelluksen käyttöösi.</item>
+        <item>Mistä voin etsiä lisää tietoa kolmansien osapuolien käyttöehdoista? Tarkista sovellusten käyttöehdot ja/tai sovellusten tarjoajien ehdot lisätietoihin, siitä kuinka sovellus kerää, yhdistää ja käyttää ja tuo julki tietojasi. Tietosuoja, käyttöehdot ja muut kuluttajailmoitukset VOIVAT OLLA saatavilla palveluntarjoajan verkkosivuilla. Varmista, että ymmärrät ehdot ennen kuin aloitat sovelluksen käytön.</item>
+        <item>Mistä voin löytää Virgin Mobilen tietosuojakäytännön? Jos sinulla on erikseen kysymyksiä Virgin Mobilen tietosuojakäytännöstä, käy sivulla VirginMobileUSA.com ja klikkaa \"Privacy Policy\" -linkkiä.</item>
+    </string-array>
+    <string-array name="sp_lock_screen_effect_entries_NORMAL">
+        <item>Yleinen</item>
+        <item>Lehtien väreily</item>
+        <item>Levitä mustetta</item>
+        <item>Dewdrop</item>
+    </string-array>
+    <string-array name="sp_power_save_brightness_entries_NORMAL">
+        <item>10 % kirkkaus</item>
+        <item>20 % kirkkaus</item>
+        <item>30 % kirkkaus</item>
+        <item>50 % kirkkaus</item>
+    </string-array>
+    <string-array name="sp_power_save_screen_timeout_entries_NORMAL">
+        <item>15 sekuntia</item>
+        <item>30 sekuntia</item>
+        <item>1 minuutti</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_NORMAL">
+        <item>1.5 sekuntia</item>
+        <item>Aina pois käytöstä</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_att_NORMAL">
+        <item>3 sekuntia</item>
+        <item>Aina pois käytöstä</item>
+    </string-array>
+    <string-array name="sp_power_save_mode_entries_NORMAL">
+        <item>10% akkuvirta</item>
+        <item>20% akkuvirta</item>
+        <item>30% akkuvirta</item>
+        <item>50% akkuvirta</item>
+    </string-array>
+    <string-array name="sp_power_save_mode2_entries_NORMAL">
+        <item>Heti</item>
+        <item>10% akkuvirta</item>
+        <item>20% akkuvirta</item>
+        <item>30% akkuvirta</item>
+        <item>50% akkuvirta</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries">
+        <item>5 minuuttia</item>
+        <item>10 minuuttia</item>
+        <item>15 minuuttia</item>
+    </string-array>
+    <string-array name="sp_hotspot_timeout_entries_mx_NORMAL">
+        <item>Ei aikakatkaisua</item>
+        <item>5 min</item>
+        <item>10 min</item>
+        <item>15 min</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries_jb">
+        <item>5 min</item>
+        <item>10 min</item>
+        <item>15 min</item>
+        <item>30 min</item>
+        <item>Ei koskaan</item>
+    </string-array>
+    <string-array name="wifi_p2p_timeout_entries">
+        <item>15 min</item>
+        <item>30 min</item>
+        <item>Ei koskaan</item>
+    </string-array>
+    <string-array name="sp_wifi_ap_visibility_NORMAL">
+        <item>Näytä</item>
+        <item>Piilota</item>
+    </string-array>
+    <string-array name="sp_bt_search_filter_SHORT">
+        <item>Kaikki laitteet</item>
+        <item>Kuulokkeet</item>
+        <item>Matkapuhelin</item>
+        <item>PC</item>
+        <item>Näppäimistö, Hiiri, jne.</item>
+    </string-array>
+    <string-array name="wifi_signal_strength_entries">
+        <item>Voimakas</item>
+        <item>Normaali</item>
+        <item>Heikko</item>
+        <item>Pois</item>
+    </string-array>
+    <string-array name="wifi_Dual_band_AP_connection_entries">
+        <item>Autom.</item>
+        <item>5 GHz</item>
+        <item>2.4 GHz</item>
+    </string-array>
+</resources>

@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>Amerika</item>
+        <item>Europa</item>
+        <item>Afrika</item>
+        <item>Azija</item>
+        <item>Australija</item>
+        <item>Pacifik</item>
+        <item>Sve</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 sekundi</item>
+        <item>30 sekundi</item>
+        <item>1 minuta</item>
+        <item>2 minute</item>
+        <item>5 minuta</item>
+        <item>10 minuta</item>
+        <item>30 minuta</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries2_NORMAL">
+        <item>15 sekundi</item>
+        <item>30 sekundi</item>
+        <item>1 minuta</item>
+        <item>2 minute</item>
+        <item>5 minuta</item>
+        <item>10 minuta</item>
+        <item>Ostavi ekran uključenim</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL">
+        <item>15 sekundi</item>
+        <item>30 sekundi</item>
+        <item>1 minuta</item>
+        <item>2 minute</item>
+        <item>5 minuta</item>
+        <item>10 minuta</item>
+        <item>15 minuta</item>
+        <item>Ostavi ekran uključenim</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL_ex">
+        <item>15 sek</item>
+        <item>30 sek</item>
+        <item>1 min</item>
+        <item>2 min</item>
+        <item>5 min</item>
+        <item>10 min</item>
+        <item>15 min</item>
+        <item>Ostavi ekran uključenim</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled">
+        <item>15 sekundi</item>
+        <item>30 sekundi</item>
+        <item>1 minuta</item>
+        <item>2 minute</item>
+        <item>5 minuta</item>
+        <item>10 minuta</item>
+        <item>15 minuta</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled_ex">
+        <item>15 sek</item>
+        <item>30 sek</item>
+        <item>1 min</item>
+        <item>2 min</item>
+        <item>5 min</item>
+        <item>10 min</item>
+        <item>15 min</item>
+    </string-array>
+    <string-array name="sp_pouch_default_clock_entries2_NORMAL">
+        <item>Sat 1</item>
+        <item>Sat 2</item>
+        <item>Sat 3</item>
+        <item>Sat 4</item>
+        <item>Sat 5</item>
+        <item>Sat 6</item>
+        <item>Sat 7</item>
+        <item>Sat 8</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries1_NORMAL">
+        <item>Analogno</item>
+        <item>Digitalno</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_position_entries1_NORMAL">
+        <item>Centar</item>
+        <item>Gore desno</item>
+        <item>Gore lijevo</item>
+        <item>Na dnu desno</item>
+        <item>Na dnu lijevo</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_font_entries1_NORMAL">
+        <item>Naziv slova1</item>
+        <item>Naziv slova2</item>
+    </string-array>
+    <string-array name="sp_sound_profile_entries_NORMAL">
+        <item>Zvuk</item>
+        <item>Samo vibracija</item>
+        <item>Nečujno</item>
+    </string-array>
+    <string-array name="dream_timeout_entries">
+        <item>Nikad</item>
+        <item>15 sekundi</item>
+        <item>30 sekundi</item>
+        <item>1 minuta</item>
+        <item>2 minute</item>
+        <item>5 minuta</item>
+        <item>10 minuta</item>
+        <item>30 minuta</item>
+    </string-array>
+    <string-array name="lock_after_timeout_entries">
+        <item>Odmah</item>
+        <item>5 sekundi</item>
+        <item>15 sekundi</item>
+        <item>30 sekundi</item>
+        <item>1 minuta</item>
+        <item>2 minute</item>
+        <item>5 minuta</item>
+        <item>10 minuta</item>
+        <item>30 minuta</item>
+    </string-array>
+    <string-array name="sp_lock_after_timeout_entries_NORMAL">
+        <item>Odmah</item>
+        <item>15 sekundi</item>
+        <item>30 sekundi</item>
+        <item>1 minuta</item>
+        <item>2 minute</item>
+        <item>10 minuta</item>
+        <item>30 minuta</item>
+    </string-array>
+    <string-array name="entries_font_size">
+        <item>&amp;lt;font size=16 align=middle>Mala&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>Normalno&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>Velik&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>Ekstra veliko&amp;lt;/font></item>
+    </string-array>
+    <string-array name="sp_entries_font_size2">
+        <item>&amp;lt;font size=14 align=middle>Minimum&amp;lt;/font></item>
+        <item>&amp;lt;font size=16 align=middle>Mala&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>Srednje&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>Velik&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>Vrlo velika&amp;lt;/font></item>
+        <item>&amp;lt;font size=27 align=middle>Maksimum&amp;lt;/font></item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>Vrlo sporo</item>
+        <item>Sporo</item>
+        <item>Normalno</item>
+        <item>Brzo</item>
+        <item>Vrlo brzo</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>Vrlo slabo</item>
+        <item>Niski</item>
+        <item>Normalno</item>
+        <item>Visoka</item>
+        <item>Vrlo visoko</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Traženje...</item>
+        <item>Spajam…</item>
+        <item>Provjera autentičnosti...</item>
+        <item>Pribavljanje IP adrese...</item>
+        <item>Spojeno</item>
+        <item>Prekinut</item>
+        <item>Prekid veze...</item>
+        <item>Odspojen</item>
+        <item>Neuspjelo</item>
+        <item>Blokirano</item>
+        <item>Privremeno izbjegavanje loše veze</item>
+        <item>Privremeno izbjegavanje loše veze</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Traženje...</item>
+        <item>Spajanje sa %1$s...</item>
+        <item>Autorizacija u tijeku s %1$s…</item>
+        <item>Dobivanje IP adrese od %1$s...</item>
+        <item>Spojeno na %1$s</item>
+        <item>Prekinut</item>
+        <item>Odspajanje od %1$s…</item>
+        <item>Odspojen</item>
+        <item>Neuspjelo</item>
+        <item>Blokirano</item>
+        <item>Privremeno izbjegavanje loše veze</item>
+    </string-array>
+    <string-array name="wifi_ap_security">
+        <item>Otvoreno</item>
+        <item>WPA PSK</item>
+        <item>WPA2 PSK</item>
+    </string-array>
+    <string-array name="wifi_p2p_wps_setup">
+        <item>Tipka za push obavijesti</item>
+        <item>PIN ovog uređaja</item>
+    </string-array>
+    <string-array name="wifi_p2p_status">
+        <item>Spojeno</item>
+        <item>Spajanje</item>
+        <item>Neuspjelo</item>
+        <item>Dostupno</item>
+        <item>Izvan dometa</item>
+    </string-array>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>2 minute</item>
+        <item>5 minuta</item>
+        <item>1 sat</item>
+        <item>Nikad ne prekidaj</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Slabo</item>
+        <item>Slab</item>
+        <item>Dobro</item>
+        <item>Izvrsno</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Uvijek</item>
+        <item>Samo kad je priključeno</item>
+        <item>Wi-Fi je isključen (zbog podatkovnog prometa)</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <item>Uvijek</item>
+        <item>Samo kad je priključeno</item>
+        <item>Wi-Fi je isključen</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_entries">
+        <item>Automatski</item>
+        <item>Samo 5 GHz</item>
+        <item>Samo 2.4 GHz</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>Vrijeme trajanja</item>
+        <item>Broj pokretanja</item>
+        <item>Naziv aplikacije</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>Ništa</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_network_setup">
+        <item>Isključeno</item>
+        <item>Tipka za push obavijesti</item>
+        <item>PIN točka pristupa</item>
+        <item>PIN ovog uređaja</item>
+    </string-array>
+    <string-array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>Statičko</item>
+    </string-array>
+    <string-array name="wifi_proxy_settings">
+        <item>Ništa</item>
+        <item>Ručno</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>Isključeno</item>
+        <item>Upozorenje</item>
+        <item>Vibracija</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>Ništa</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP ili CHAP</item>
+    </string-array>
+    <string-array name="bearer_entries">
+        <item>LTE</item>
+        <item>eHRPD</item>
+        <item>Neodređeno</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Unutarnja memorija uređaja</item>
+        <item>Uklonjiva SD kartica</item>
+        <item>Neka sistem odlući</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>Uvijek</item>
+        <item>Nikad</item>
+        <item>Samo u načinu rada Nečujno</item>
+        <item>Samo kad nije uključen način Tiho</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_titles">
+        <item>Kratko</item>
+        <item>Srednje</item>
+        <item>Dugačko</item>
+    </string-array>
+    <string-array name="hdcp_checking_titles">
+        <item>Nikad ne provjeravaj</item>
+        <item>Provjeri samo DRM sadržaj</item>
+        <item>Uvijek provjeri</item>
+    </string-array>
+    <string-array name="hdcp_checking_summaries">
+        <item>Nikad ne koristi HDCP provjeru</item>
+        <item>Koristi HDCP provjeru samo za DRM sadržaj</item>
+        <item>Uvijek koristi HDCP provjeru</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>Animacije isključene</item>
+        <item>Razina animacija .5x</item>
+        <item>Razina animacija 1x</item>
+        <item>Razina animacija 1.5x</item>
+        <item>Razina animacija 2x</item>
+        <item>Razina animacija 5x</item>
+        <item>Razina animacija 10x</item>
+    </string-array>
+    <string-array name="transition_animation_scale_entries">
+        <item>Animacije isključene</item>
+        <item>Razina animacija .5x</item>
+        <item>Razina animacija 1x</item>
+        <item>Razina animacija 1.5x</item>
+        <item>Razina animacija 2x</item>
+        <item>Razina animacija 5x</item>
+        <item>Razina animacija 10x</item>
+    </string-array>
+    <string-array name="animator_duration_scale_entries">
+        <item>Animacije isključene</item>
+        <item>Razina animacija .5x</item>
+        <item>Razina animacija 1x</item>
+        <item>Razina animacija 1.5x</item>
+        <item>Razina animacija 2x</item>
+        <item>Razina animacija 5x</item>
+        <item>Razina animacija 10x</item>
+    </string-array>
+    <string-array name="overlay_display_devices_entries">
+        <item>Ništa</item>
+        <item>720x480 mdpi</item>
+        <item>1280x720 tvdpi</item>
+        <item>1920x1080 xhdpi</item>
+        <item>1280x720 tvdpi i 1920x1080 xhdpi</item>
+    </string-array>
+    <string-array name="enable_opengl_traces_entries">
+        <item>Ništa</item>
+        <item>Logcat</item>
+        <item>Systrace (grafika)</item>
+        <item>Gomilanje poziva na glGetError</item>
+    </string-array>
+    <string-array name="app_process_limit_entries">
+        <item>Standardno ograničenje</item>
+        <item>Nema pozadinskih procesa</item>
+        <item>Kod najviše 1 procesa</item>
+        <item>Kod najviše 2 procesa</item>
+        <item>Kod najviše 3 procesa</item>
+        <item>Kod najviše 4 procesa</item>
+    </string-array>
+    <string-array name="vpn_types_long">
+        <item>PPTP VPN</item>
+        <item>L2TP/IPSec VPN s prethodno dijeljenim ključevima</item>
+        <item>L2TP/IPSec VPN sa certifikatima</item>
+        <item>IPSec VPN s unaprijed dijeljenim ključevima i Xauth autorizacijom</item>
+        <item>IPSec VPN sa certifikatom i Xauth autorizacijom</item>
+        <item>IPSec VPN sa certifikatom i hibridnom autorizacijom</item>
+    </string-array>
+    <string-array name="vpn_states">
+        <item>Odspojen</item>
+        <item>Pokretanje…</item>
+        <item>Spajam…</item>
+        <item>Spojeno</item>
+        <item>Istek vremena</item>
+        <item>Neuspjelo</item>
+    </string-array>
+    <string-array name="security_settings_premium_sms_values">
+        <item>Pitaj</item>
+        <item>Nikad ne dopuštaj</item>
+        <item>Uvijek dopusti</item>
+    </string-array>
+    <string-array name="search_filter">
+        <item>Svih uređaja</item>
+        <item>Slušalica</item>
+        <item>PC</item>
+        <item>Telefon</item>
+        <item>Periferno</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries_NORMAL">
+        <item>Slika korisnika</item>
+        <item>Sat 1</item>
+        <item>Sat 2</item>
+        <item>Sat 3</item>
+        <item>Sat 4</item>
+        <item>Sat 5</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL">
+        <item>1.5 sekunde</item>
+        <item>3 sekundi</item>
+        <item>5 sekundi</item>
+        <item>Uvijek uključeno</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL_ex">
+        <item>1.5 sek</item>
+        <item>3 sek</item>
+        <item>5 sek</item>
+        <item>Uvijek uključeno</item>
+    </string-array>
+    <string-array name="sp_front_key_light_l1_NORMAL">
+        <item>3 sekundi</item>
+        <item>6 sekundi</item>
+        <item>10 sekundi</item>
+        <item>30 sekundi</item>
+        <item>Uvijek uključeno</item>
+    </string-array>
+    <string-array name="sp_front_key_light_att_NORMAL">
+        <item>3 sek</item>
+        <item>6 sek</item>
+        <item>10 sek</item>
+        <item>30 sek</item>
+        <item>Uvijek uključeno</item>
+    </string-array>
+    <string-array name="sp_numlocdisp_entries_NORMAL">
+        <item>Isključi</item>
+        <item>Uključi</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_NORMAL">
+        <item>Upozorenje za zaštitu privatnosti</item>
+        <item>Ako koristite aplikacije treće strane, ona može izravno prikupljati vaše osobne podatke ili zatražiti od vašeg operatera otkrivanje vaših osobnih podataka, uključujući lokacijske informacije (ako su dostupne), davatelju aplikacijskih usluga ili nekoj drugoj 3. strani.</item>
+        <item>Koja se politika zaštite privatnosti primjenjuje? Politika o zaštiti privatnosti i uvjeti korištenja vašeg operatera ne primjenjuju se na aplikacije vašeg mobitela koje osiguravaju isključivo 3. strane. Politike 3. strana primjenjuju se na vas prilikom korištenja ove aplikacije.</item>
+        <item>Gdje mogu pronaći više informacija o politikama 3. strana? Za više informacija o načinu na koji aplikacija prikuplja, pristupa, koristi i otkriva vaše informacije pogledajte pod uvjete korištenja aplikacije i/ili pod politike davatelja aplikacijskih usluga. Politike zaštite privatnosti, uvjeti korištenja ili ostale napomene za korisnike MOŽDA su dostupne na internetskim stranicama davatelja usluga. Vodite računa da se slažete s politikama prije korištenja aplikacije.</item>
+        <item>Gdje mogu pronaći politiku o zaštiti privatnosti mog operatera? Nezavisno, ako imate pitanja vezano uz politiku o zaštiti privatnosti vašeg operatera, molimo posjetite početnu stranicu operatera i kliknite na poveznicu \"Politika zaštite privatnosti\".</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_spr_NORMAL">
+        <item>"Sprint upozorenje zaštite privatnosti "</item>
+        <item>Ako koristite aplikacije 3. strane, ona može izravno prikupiti vaše osobne podatke ili zatražiti ponovno pokretanje mobitela i razotkriti vaše osobne podatke, uključivo i lokacijske informacije (gdje je primjenjivo) pružatelju usluge aplikacije ili nekoj drugoj 3. strani.</item>
+        <item>"Koja se politika zaštite privatnosti primjenjuje?  Sprintova Politika zaštite privatnosti i Uvjeti korištenja ne odnose se na aplikacije vašeg uređaja koje isključivo pripadaju trećim stranama."</item>
+        <item>Gdje mogu pronaći više informacija o politikama 3. strana? Za više informacija o načinu na koji aplikacija prikuplja, pristupa, koristi i otkriva vaše informacije pogledajte pod uvjete korištenja aplikacije i/ili pod politike davatelja aplikacijskih usluga. Politike zaštite privatnosti, uvjeti korištenja ili ostale napomene za korisnike MOŽDA su dostupne na internetskim stranicama davatelja usluga. Vodite računa da se slažete s politikama prije korištenja aplikacije.</item>
+        <item>Gdje mogu pronaći politiku o zaštiti privatnosti Sprinta? Neovisno, ukoliko imate pitanja vezanih uz politiku o zaštiti privatnosti Sprinta, molimo posjetite Sprint.com i kliknite na poveznicu \"Politika o zaštiti privatnosti\".</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_bm_NORMAL">
+        <item>Pokreni obavijest o privatnosti mobitela</item>
+        <item>Ako koristite aplikacije 3. strane, ona može izravno prikupiti vaše osobne podatke ili zatražiti ponovno pokretanje mobitela i razotkriti vaše osobne podatke, uključivo i lokacijske informacije (gdje je primjenjivo) pružatelju usluge aplikacije ili nekoj drugoj 3. strani.</item>
+        <item>"Koja se politika zaštite privatnosti primjenjuje?  Boost Mobileova Politika zašite privatnosti i Uvjeti korištenja ne odnose se na aplikacije vašeg uređaja koji isključivo pripadaju trećim stranama."</item>
+        <item>Gdje mogu pronaći više informacija o politikama 3. strana? Za više informacija o načinu na koji aplikacija prikuplja, pristupa, koristi i otkriva vaše informacije pogledajte pod uvjete korištenja aplikacije i/ili pod politike davatelja aplikacijskih usluga. Politike zaštite privatnosti, uvjeti korištenja ili ostale napomene za korisnike MOŽDA su dostupne na internetskim stranicama davatelja usluga. Vodite računa da se slažete s politikama prije korištenja aplikacije.</item>
+        <item>Gdje mogu pronaći politiku o zaštiti privatnosti Boost Mobilea? Neovisno, ukoliko imate pitanja vezanih uz politiku o zaštiti privatnosti Boost Mobilea, molimo posjetite Boost Mobile.com i kliknite na poveznicu \"Politika o zaštiti privatnosti\".</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_virgin_NORMAL">
+        <item>Virgin Mobile obavijest o privatnosti</item>
+        <item>Ako koristite aplikacije 3. strane, ona može izravno prikupiti vaše osobne podatke ili zatražiti ponovno pokretanje mobitela i razotkriti vaše osobne podatke, uključivo i lokacijske informacije (gdje je primjenjivo) pružatelju usluge aplikacije ili nekoj drugoj 3. strani.</item>
+        <item>Koja se politika o zaštiti privatnosti primjenjuje? Virgin Mobile politika o zaštiti privatnosti i uvjeti korištenja ne primjenjuju se na aplikacije vašeg mobitela koje su dostupne putem 3. strana. Na korištenje ovih aplikacija primjenjuje se politika o zaštiti privatnosti 3. strane.</item>
+        <item>Gdje mogu pronaći više informacija o politikama 3. strana? Za više informacija o načinu na koji aplikacija prikuplja, pristupa, koristi i otkriva vaše informacije pogledajte pod uvjete korištenja aplikacije i/ili pod politike davatelja aplikacijskih usluga. Politike zaštite privatnosti, uvjeti korištenja ili ostale napomene za korisnike MOŽDA su dostupne na internetskim stranicama davatelja usluga. Vodite računa da se slažete s politikama prije korištenja aplikacije.</item>
+        <item>Gdje mogu pronaći Virgin Mobile politiku o zaštiti privatnosti?Ako imate zasebna pitanja o Virgin Mobile politici o zaštiti privatnosti, molimo posjetite VirginMobileUSA.com i kliknite na poveznicu \"Politika o zaštiti privatnosti\".</item>
+    </string-array>
+    <string-array name="sp_lock_screen_effect_entries_NORMAL">
+        <item>Osnovno</item>
+        <item>Valovi s lišćem</item>
+        <item>Istjecanje tinte</item>
+        <item>Kap rose</item>
+    </string-array>
+    <string-array name="sp_power_save_brightness_entries_NORMAL">
+        <item>10% osvjetljenja</item>
+        <item>20% osvjetljenja</item>
+        <item>30% osvjetljenja</item>
+        <item>50% osvjetljenja</item>
+    </string-array>
+    <string-array name="sp_power_save_screen_timeout_entries_NORMAL">
+        <item>15 sekundi</item>
+        <item>30 sekundi</item>
+        <item>1 minuta</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_NORMAL">
+        <item>1.5 sekunde</item>
+        <item>Uvijek isključeno</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_att_NORMAL">
+        <item>3 sekundi</item>
+        <item>Uvijek isključeno</item>
+    </string-array>
+    <string-array name="sp_power_save_mode_entries_NORMAL">
+        <item>10% bateriji</item>
+        <item>20% bateriji</item>
+        <item>30% bateriji</item>
+        <item>50% bateriji</item>
+    </string-array>
+    <string-array name="sp_power_save_mode2_entries_NORMAL">
+        <item>Odmah</item>
+        <item>10% bateriji</item>
+        <item>20% bateriji</item>
+        <item>30% bateriji</item>
+        <item>50% bateriji</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries">
+        <item>5 minuta</item>
+        <item>10 minuta</item>
+        <item>15 minuta</item>
+    </string-array>
+    <string-array name="sp_hotspot_timeout_entries_mx_NORMAL">
+        <item>Bez isteka</item>
+        <item>5 min</item>
+        <item>10 min</item>
+        <item>15 min</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries_jb">
+        <item>5 min</item>
+        <item>10 min</item>
+        <item>15 min</item>
+        <item>30 min</item>
+        <item>Nikad</item>
+    </string-array>
+    <string-array name="wifi_p2p_timeout_entries">
+        <item>15 min</item>
+        <item>30 min</item>
+        <item>Nikad</item>
+    </string-array>
+    <string-array name="sp_wifi_ap_visibility_NORMAL">
+        <item>Prikaz</item>
+        <item>Sakrij</item>
+    </string-array>
+    <string-array name="sp_bt_search_filter_SHORT">
+        <item>Svih uređaja</item>
+        <item>Slušalica</item>
+        <item>Mobitel</item>
+        <item>Računalo</item>
+        <item>Tipkovnica, miš, itd.</item>
+    </string-array>
+    <string-array name="wifi_signal_strength_entries">
+        <item>Jako</item>
+        <item>Srednje</item>
+        <item>Slab</item>
+        <item>Isključeno</item>
+    </string-array>
+    <string-array name="wifi_Dual_band_AP_connection_entries">
+        <item>Automatski</item>
+        <item>5 GHz</item>
+        <item>2.4 GHz</item>
+    </string-array>
+</resources>

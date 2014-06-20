@@ -1,0 +1,17 @@
+diff -rup ../telephony-common/smali/com/android/internal/telephony/gsm/SpnOverride$Injector.smali ../telephony-common/smali/com/android/internal/telephony/gsm/SpnOverride$Injector.smali
+--- ../telephony-common/smali/com/android/internal/telephony/gsm/SpnOverride$Injector.smali	2014-05-25 00:25:37.000000000 +0200
++++ ../telephony-common/smali/com/android/internal/telephony/gsm/SpnOverride$Injector.smali	2014-05-16 16:55:47.000000000 +0200
+@@ -1,11 +1,11 @@
+-.class Lcom/android/internal/telephony/gsm/SpnOverride$Injector;
++.class Lcom/android/internal/telephony/uicc/SpnOverride$Injector;
+ .super Ljava/lang/Object;
+ .source "SpnOverride.java"
+ 
+ 
+ # annotations
+ .annotation system Ldalvik/annotation/EnclosingClass;
+-    value = Lcom/android/internal/telephony/gsm/SpnOverride;
++    value = Lcom/android/internal/telephony/uicc/SpnOverride;
+ .end annotation
+ 
+ .annotation system Ldalvik/annotation/InnerClass;

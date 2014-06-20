@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="maximum_user_dictionary_word_length">48</integer>
+    <integer name="config_font_normal">0</integer>
+    <integer name="config_font_bold">1</integer>
+    <integer name="config_font_italic">2</integer>
+    <item type="integer" name="config_user_dictionary_font_bold">@integer/config_font_bold</item>
+    <item type="integer" name="config_font_name">@integer/config_font_bold</item>
+    <integer name="preference_fragment_scrollbarStyle">0x2000000</integer>
+    <integer name="keyguard_appwidget_picker_cols">1</integer>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_menu_trash_holo_light" android:id="@id/info_action_delete_contacts" android:visibility="visible" android:title="@string/user_dict_settings_context_menu_delete_title" android:alphabeticShortcut="x" android:showAsAction="always" />
+    <item android:icon="@drawable/ic_menu_delete_disabled" android:id="@id/info_action_delete_contacts_disabled" android:visibility="visible" android:alphabeticShortcut="x" android:showAsAction="always" />
+    <item android:icon="@drawable/ic_menu_add_event_holo_light" android:id="@id/info_action_add_contacts" android:visibility="visible" android:title="@string/user_dict_settings_add_menu_title" android:alphabeticShortcut="s" android:showAsAction="always" />
+</menu>

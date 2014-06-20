@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/privacy_settings_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/backup_section_title" android:key="backup_category">
+        <CheckBoxPreference android:persistent="false" android:title="@string/backup_data_title" android:key="backup_data" android:summary="@string/backup_data_summary" />
+        <PreferenceScreen android:persistent="false" android:title="@string/backup_configure_account_title" android:key="configure_account" android:summary="@string/backup_configure_account_default_summary">
+            <intent android:action="dummy" />
+        </PreferenceScreen>
+        <CheckBoxPreference android:persistent="false" android:title="@string/auto_restore_title" android:key="auto_restore" android:summary="@string/auto_restore_summary" />
+        <PreferenceScreen android:persistent="false" android:title="@string/backup_reset_collect_diagnostics" android:key="ciq_toggle">
+            <intent android:targetPackage="com.carrieriq.tmobile.IQToggle" android:action="android.intent.action.MAIN" android:targetClass="com.carrieriq.tmobile.IQToggle.ui" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/app_name_LG_Backup" android:key="lg_backup_category">
+        <PreferenceScreen android:persistent="false" android:title="@string/backup_lg_service_title" android:key="lg_backup_service" android:summary="@string/backup_lg_service_description">
+            <intent android:targetPackage="com.lge.bnr" android:action="android.intent.action.MAIN" android:targetClass="com.lge.bnr.activity.BNRMainActivity" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/personal_data_section_title" />
+    <PreferenceScreen android:title="@string/master_clear_title" android:key="backup_reset" android:summary="@string/master_clear_summary" android:fragment="com.android.lgesettings.MasterClear" />
+    <PreferenceScreen android:title="@string/reset_settings_title" android:key="reset_settings" android:fragment="com.android.lgesettings.ResetSettings" />
+</PreferenceScreen>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/edt_vibrate_strength" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Input incoming call vibrate strength 0 to 7" android:numeric="integer" />
+    <EditText android:id="@id/edt_vibrate_strength_noti" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Input notification vibrate strength 0 to 7" android:numeric="integer" />
+    <EditText android:id="@id/edt_vibrate_strength_touch" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Input on touch vibrate strength 0 to 7" android:numeric="integer" />
+    <Button android:id="@id/btn_check" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" android:text="@string/screensaver_settings_dream_start" />
+    <TextView android:id="@id/txv_result" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

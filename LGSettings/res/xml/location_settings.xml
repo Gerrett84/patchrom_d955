@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/location_access"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.lgesettings.WrappingSwitchPreference android:persistent="true" android:title="@string/location_access_title" android:key="location_toggle" android:summary="@string/location_access_summary" />
+    <PreferenceCategory android:title="@string/location_sources_heading" android:key="location_sources" />
+    <Preference android:title="@string/e911_only_title" android:key="e911_only" android:summary="@string/e911_only_summary" />
+    <CheckBoxPreference android:title="@string/sp_location_vzw_lbs_NORMAL" android:key="location_vzw_lbs" android:summary="@string/sp_location_vzw_lbs_summary_NORMAL" />
+    <CheckBoxPreference android:title="@string/sp_location_gps_vzw_NORMAL" android:key="location_gps_vzw" android:summary="@string/sp_location_street_level_vzw_NORMAL" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/location_gps" android:key="location_gps" android:summary="@string/location_street_level" android:dependency="location_toggle" />
+    <com.android.lgesettings.WrappingCheckBoxPreference android:persistent="false" android:title="@string/location_network_based_jb" android:key="location_network" android:summary="@string/location_neighborhood_level_jb" android:dependency="location_toggle" />
+    <com.android.lgesettings.DoubleTitleListPreference android:persistent="false" android:entries="@array/assisted_gps_popup_for_cmcc" android:title="@string/assisted_gps" android:key="assisted_gps_for_cmcc" android:summary="@string/assisted_gps_popup_summary" android:entryValues="@array/assisted_gps_popup_value_for_cmcc" />
+    <CheckBoxPreference android:title="@string/assisted_gps" android:key="assisted_gps" android:summary="@string/sp_lgu_gps_desc_NORMAL" />
+    <CheckBoxPreference android:title="@string/sp_dcm_gps_noti_title_NORMAL" android:key="dcm_gps_sound" android:summary="@string/sp_dcm_gps_noti_summary_NORMAL" />
+</PreferenceScreen>

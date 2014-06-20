@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>Amerika</item>
+        <item>Európa</item>
+        <item>Afrika</item>
+        <item>Ázia</item>
+        <item>Austrália</item>
+        <item>Pacifik</item>
+        <item>Vše</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 sekúnd</item>
+        <item>30 sekúnd</item>
+        <item>1 minúta</item>
+        <item>2 minúty</item>
+        <item>5 minút</item>
+        <item>10 minút</item>
+        <item>30 minút</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries2_NORMAL">
+        <item>15 sekúnd</item>
+        <item>30 sekúnd</item>
+        <item>1 minúta</item>
+        <item>2 minúty</item>
+        <item>5 minút</item>
+        <item>10 minút</item>
+        <item>Ponechať obrazovku zapnutú</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL">
+        <item>15 sekúnd</item>
+        <item>30 sekúnd</item>
+        <item>1 minúta</item>
+        <item>2 minúty</item>
+        <item>5 minút</item>
+        <item>10 minút</item>
+        <item>15 minút</item>
+        <item>Ponechať obrazovku zapnutú</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL_ex">
+        <item>15 sekúnd</item>
+        <item>30 s</item>
+        <item>1 min</item>
+        <item>2 min.</item>
+        <item>5 min</item>
+        <item>10 min.</item>
+        <item>15 minút</item>
+        <item>Ponechať obrazovku zapnutú</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled">
+        <item>15 sekúnd</item>
+        <item>30 sekúnd</item>
+        <item>1 minúta</item>
+        <item>2 minúty</item>
+        <item>5 minút</item>
+        <item>10 minút</item>
+        <item>15 minút</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled_ex">
+        <item>15 sekúnd</item>
+        <item>30 s</item>
+        <item>1 min</item>
+        <item>2 min.</item>
+        <item>5 min</item>
+        <item>10 min.</item>
+        <item>15 minút</item>
+    </string-array>
+    <string-array name="sp_pouch_default_clock_entries2_NORMAL">
+        <item>1 hodín</item>
+        <item>2 hodín</item>
+        <item>3 hodín</item>
+        <item>4 hodín</item>
+        <item>hodín 5</item>
+        <item>hodín 6</item>
+        <item>hodín 7</item>
+        <item>hodín 8</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries1_NORMAL">
+        <item>Analógové</item>
+        <item>Digitálne</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_position_entries1_NORMAL">
+        <item>Stred</item>
+        <item>Vpravo hore</item>
+        <item>Vľavo hore</item>
+        <item>Dole vpravo</item>
+        <item>Dole vľavo</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_font_entries1_NORMAL">
+        <item>Názov písma 1</item>
+        <item>Názov písma 2</item>
+    </string-array>
+    <string-array name="sp_sound_profile_entries_NORMAL">
+        <item>Zvuk</item>
+        <item>Iba vibrovanie</item>
+        <item>Tichý</item>
+    </string-array>
+    <string-array name="dream_timeout_entries">
+        <item>Nikdy</item>
+        <item>15 sekúnd</item>
+        <item>30 sekúnd</item>
+        <item>1 minúta</item>
+        <item>2 minúty</item>
+        <item>5 minút</item>
+        <item>10 minút</item>
+        <item>30 minút</item>
+    </string-array>
+    <string-array name="lock_after_timeout_entries">
+        <item>Okamžite</item>
+        <item>5 sekund</item>
+        <item>15 sekúnd</item>
+        <item>30 sekúnd</item>
+        <item>1 minúta</item>
+        <item>2 minúty</item>
+        <item>5 minút</item>
+        <item>10 minút</item>
+        <item>30 minút</item>
+    </string-array>
+    <string-array name="sp_lock_after_timeout_entries_NORMAL">
+        <item>Okamžite</item>
+        <item>15 sekúnd</item>
+        <item>30 sekúnd</item>
+        <item>1 minúta</item>
+        <item>2 minúty</item>
+        <item>10 minút</item>
+        <item>30 minút</item>
+    </string-array>
+    <string-array name="entries_font_size">
+        <item>&amp;lt;font size=16 align=middle>Malé&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>Normálne&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>Veľké&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>Extra veľký&amp;lt;/font></item>
+    </string-array>
+    <string-array name="sp_entries_font_size2">
+        <item>&amp;lt;font size=14 align=middle>Minimálne&amp;lt;/font></item>
+        <item>&amp;lt;font size=16 align=middle>Malé&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>Stredný&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>Veľké&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>Veľmi veľké&amp;lt;/font></item>
+        <item>&amp;lt;font size=27 align=middle>Maximum&amp;lt;/font></item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>Veľmi pomalé</item>
+        <item>Pomalé</item>
+        <item>Normálne</item>
+        <item>Rýchle</item>
+        <item>Veľmi rýchle</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>Veľmi nízka</item>
+        <item>Nízky</item>
+        <item>Normálne</item>
+        <item>Vysoká</item>
+        <item>Veľmi vysoká</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Vyhľadáva sa...</item>
+        <item>Pripájanie...</item>
+        <item>Overuje sa...</item>
+        <item>Získava sa IP adresa...</item>
+        <item>Pripojené</item>
+        <item>Pozastavené</item>
+        <item>Odpája sa...</item>
+        <item>Prerušené</item>
+        <item>Neúspešné</item>
+        <item>Blokované</item>
+        <item>Dočasne sa vyhnúť slabému pripojeniu</item>
+        <item>Dočasne sa vyhnúť slabému pripojeniu</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Vyhľadáva sa...</item>
+        <item>Pripájanie k %1$s...</item>
+        <item>Overuje sa so sieťou %1$s…</item>
+        <item>Získava sa adresa IP zo siete %1$s...</item>
+        <item>Pripojené k sieti %1$s</item>
+        <item>Pozastavené</item>
+        <item>Odpája sa od siete %1$s…</item>
+        <item>Prerušené</item>
+        <item>Neúspešné</item>
+        <item>Blokované</item>
+        <item>Dočasne sa vyhnúť slabému pripojeniu</item>
+    </string-array>
+    <string-array name="wifi_ap_security">
+        <item>Otvorená</item>
+        <item>WPA PSK</item>
+        <item>WPA2 PSK</item>
+    </string-array>
+    <string-array name="wifi_p2p_wps_setup">
+        <item>Tlačidlo</item>
+        <item>PIN z tohto zariadenia</item>
+    </string-array>
+    <string-array name="wifi_p2p_status">
+        <item>Pripojené</item>
+        <item>Pripája</item>
+        <item>Neúspešné</item>
+        <item>Dostupné</item>
+        <item>Mimo rozsah</item>
+    </string-array>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>2 minúty</item>
+        <item>5 minút</item>
+        <item>1 hodina</item>
+        <item>Časový limit nikdy</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Slabý</item>
+        <item>Dostatočný</item>
+        <item>Dobrý</item>
+        <item>Výborný</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Vždy</item>
+        <item>Iba ak je zasunutý</item>
+        <item>Wi-Fi je vypnuté (kvôli používaniu údajov)</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <item>Vždy</item>
+        <item>Iba ak je zasunutý</item>
+        <item>Wi-Fi je vypnuté</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_entries">
+        <item>Automaticky</item>
+        <item>Len 5 GHz</item>
+        <item>Len 2.4 GHz</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>Čas používania</item>
+        <item>Počet spustení</item>
+        <item>Názov aplikácie</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>Žiadne</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_network_setup">
+        <item>Vyp.</item>
+        <item>Tlačidlo</item>
+        <item>PIN z prístupového bodu</item>
+        <item>PIN z tohto zariadenia</item>
+    </string-array>
+    <string-array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>Statická</item>
+    </string-array>
+    <string-array name="wifi_proxy_settings">
+        <item>Žiadne</item>
+        <item>Ručne</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>Vyp.</item>
+        <item>Upozornenie</item>
+        <item>Vibrovať</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>Žiadne</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP alebo CHAP</item>
+    </string-array>
+    <string-array name="bearer_entries">
+        <item>LTE</item>
+        <item>eHRPD</item>
+        <item>Nešpecifikované</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Vnút. úlož.priestor zariadenia</item>
+        <item>Vymeniteľná karta SD</item>
+        <item>Nechať rozhodnutie na systém</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>Vždy</item>
+        <item>Nikdy</item>
+        <item>Len v tichom režime</item>
+        <item>Len vtedy, keď nie je v tichom režime</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_titles">
+        <item>Krátka</item>
+        <item>Stredný</item>
+        <item>Dlhé</item>
+    </string-array>
+    <string-array name="hdcp_checking_titles">
+        <item>Nikdy nekontrolovať</item>
+        <item>Skontrolujte iba obsah DRM</item>
+        <item>Vždy skontrolovať</item>
+    </string-array>
+    <string-array name="hdcp_checking_summaries">
+        <item>Kontrola nikdy nepoužívať HDCP</item>
+        <item>Použite kontrolu HDCP iba pre obsah DRM</item>
+        <item>Vždy použiť kontrolu HDCP</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>Animáciu vypnúť</item>
+        <item>Mierka animácie .5x</item>
+        <item>Mierka animácie 1x</item>
+        <item>Mierka animácie1.5x</item>
+        <item>Mierka animácie 2x</item>
+        <item>Mierka animácie 5x</item>
+        <item>Mierka animácie 10x</item>
+    </string-array>
+    <string-array name="transition_animation_scale_entries">
+        <item>Animáciu vypnúť</item>
+        <item>Mierka animácie .5x</item>
+        <item>Mierka animácie 1x</item>
+        <item>Mierka animácie1.5x</item>
+        <item>Mierka animácie 2x</item>
+        <item>Mierka animácie 5x</item>
+        <item>Mierka animácie 10x</item>
+    </string-array>
+    <string-array name="animator_duration_scale_entries">
+        <item>Animáciu vypnúť</item>
+        <item>Mierka animácie .5x</item>
+        <item>Mierka animácie 1x</item>
+        <item>Mierka animácie1.5x</item>
+        <item>Mierka animácie 2x</item>
+        <item>Mierka animácie 5x</item>
+        <item>Mierka animácie 10x</item>
+    </string-array>
+    <string-array name="overlay_display_devices_entries">
+        <item>Žiadne</item>
+        <item>720x480 mdpi</item>
+        <item>1280x720 tvdpi</item>
+        <item>1920x1080 xhdpi</item>
+        <item>1280 x 720 tv dpi a 1920 x 1080 xh dpi</item>
+    </string-array>
+    <string-array name="enable_opengl_traces_entries">
+        <item>Žiadne</item>
+        <item>Logcat</item>
+        <item>Systrace (grafika)</item>
+        <item>Balík súborov volaní v glGetError</item>
+    </string-array>
+    <string-array name="app_process_limit_entries">
+        <item>Štandardný limit</item>
+        <item>Žiadne procesy na pozadí</item>
+        <item>Najviac 1 procesy</item>
+        <item>Najviac 2 procesy</item>
+        <item>Najviac 3 procesy</item>
+        <item>Najviac 4 procesy</item>
+    </string-array>
+    <string-array name="vpn_types_long">
+        <item>PPTP VPN</item>
+        <item>L2TP/IPSec VPN s vopred zdieľanými kľúčmi</item>
+        <item>L2TP/IPSec VPN s certifikátmi</item>
+        <item>VPN IPSec s vopred zdieľanými kľúčmi a autentizáciou Xauth</item>
+        <item>VPN IPSec s certifikátmi a Xauth autentizáciou</item>
+        <item>VPN IPSec s certifikátmi a hybridnou autentizáciou</item>
+    </string-array>
+    <string-array name="vpn_states">
+        <item>Prerušené</item>
+        <item>Spúšťa sa...</item>
+        <item>Pripájanie...</item>
+        <item>Pripojené</item>
+        <item>Časový limit</item>
+        <item>Neúspešné</item>
+    </string-array>
+    <string-array name="security_settings_premium_sms_values">
+        <item>Opýtať sa</item>
+        <item>Nikdy nepovoliť</item>
+        <item>Vždy povoliť</item>
+    </string-array>
+    <string-array name="search_filter">
+        <item>Vetky zariadenia</item>
+        <item>Slúchadlá</item>
+        <item>PC</item>
+        <item>Telefón</item>
+        <item>Periférne</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries_NORMAL">
+        <item>Obrázok používateľa</item>
+        <item>1 hodín</item>
+        <item>2 hodín</item>
+        <item>3 hodín</item>
+        <item>4 hodín</item>
+        <item>hodín 5</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL">
+        <item>1.5 sekundy</item>
+        <item>3 sekundy</item>
+        <item>5 sekund</item>
+        <item>Vždy zapnuté</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL_ex">
+        <item>1.5 s</item>
+        <item>3 s</item>
+        <item>5 s</item>
+        <item>Vždy zapnuté</item>
+    </string-array>
+    <string-array name="sp_front_key_light_l1_NORMAL">
+        <item>3 sekundy</item>
+        <item>6 sekúnd</item>
+        <item>10 sekúnd</item>
+        <item>30 sekúnd</item>
+        <item>Vždy zapnuté</item>
+    </string-array>
+    <string-array name="sp_front_key_light_att_NORMAL">
+        <item>3 s</item>
+        <item>1 s</item>
+        <item>10 s</item>
+        <item>30 s</item>
+        <item>Vždy zapnuté</item>
+    </string-array>
+    <string-array name="sp_numlocdisp_entries_NORMAL">
+        <item>Zakázať</item>
+        <item>Zapnúť</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_NORMAL">
+        <item>Upozornenie na ochranu súkromia</item>
+        <item>Ak budete používať aplikáciu 3. strany, môže priamo zhromažďovať vaše osobné informácie alebo môže od vášho operátora požadovať zverejnenie vašich osobných informácií, vrátane informácií o pozícii (ak je to možné), a poskytovať ich poskytovateľovi aplikácie alebo ďalšej 3. strane.</item>
+        <item>Ktoré zásady ochrany súkromia sa uplatňujú? Zásady ochrany súkromia a podmienky používania zo strany vášho operátora sa nevzťahujú na aplikácie vo vašom telefóne, ktoré sú výlučne poskytované 3. stranami. Na používanie týchto aplikácií sa vzťahujú zásady 3. strany.</item>
+        <item>Kde nájdem viac informácií o zásadách 3. strany? Pozrite si podmienky používania aplikácie/zásady poskytovateľa aplikácie, kde nájdete viac informácií o tom, ako aplikácia vaše informácie zhromažďuje, získava a zverejňuje. Zásady ochrany súkromia, podmienky používania a ďalšie upozornenia pre zákazníka sú MOŽNO dostupné na webovej lokalite poskytovateľa. Pred používaním aplikácie sa určite so zásadami oboznámte.</item>
+        <item>Kde nájdem zásady ochrany súkromia môjho operátora? Postupne, ak máte otázky ohľadne zásad ochrany súkromia zo strany vášho operátora, navštívte domovskú stránku vášho operátora a kliknite na prepojenie „Zásady ochrany súkromia“.</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_spr_NORMAL">
+        <item>Upozornenie na ochranu osobných údajov pre Sprint</item>
+        <item>Ak budete používať aplikáciu 3. strany, môže priamo zhromažďovať vaše osobné informácie alebo môže od Sprint požadovať zverejnenie vašich osobných informácií, vrátane informácií o pozícii (ak je to možné), a poskytovať ich poskytovateľovi aplikácie alebo ďalšej 3. strane.</item>
+        <item>"Ktoré zásady ochrany súkromia sa uplatňujú?  Zásady ochrany súkromia a podmienky používania Sprint sa nevzťahujú na aplikácie vo vašom telefóne, ktoré sú výlučne poskytované 3. stranami."</item>
+        <item>Kde nájdem viac informácií o zásadách 3. strany? Pozrite si podmienky používania aplikácie/zásady poskytovateľa aplikácie, kde nájdete viac informácií o tom, ako aplikácia vaše informácie zhromažďuje, získava a zverejňuje. Zásady ochrany súkromia, podmienky používania a ďalšie upozornenia pre zákazníka sú MOŽNO dostupné na webovej lokalite poskytovateľa. Pred používaním aplikácie sa určite so zásadami oboznámte.</item>
+        <item>Kde nájdem zásady ochrany súkromia služby Sprint? Ak máte otázky ohľadne zásad ochrany súkromia služby Sprint, navštívte stránku Sprint.com a kliknite na prepojenie „Zásady ochrany súkromia“.</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_bm_NORMAL">
+        <item>Upozornenie na ochranu osobných údajov Boost Mobile</item>
+        <item>Ak budete používať aplikáciu 3. strany, môže priamo zhromažďovať vaše osobné informácie alebo môže od Boost Mobile požadovať zverejnenie vašich osobných informácií, vrátane informácií o pozícii (ak je to možné), a poskytovať ich poskytovateľovi aplikácie alebo ďalšej 3. strane.</item>
+        <item>"Ktoré zásady ochrany súkromia sa uplatňujú?  Zásady ochrany súkromia a podmienky používania Boost Mobil sa nevzťahujú na aplikácie vo vašom telefóne, ktoré sú výlučne poskytované 3. stranami."</item>
+        <item>Kde nájdem viac informácií o zásadách 3. strany? Pozrite si podmienky používania aplikácie/zásady poskytovateľa aplikácie, kde nájdete viac informácií o tom, ako aplikácia vaše informácie zhromažďuje, získava a zverejňuje. Zásady ochrany súkromia, podmienky používania a ďalšie upozornenia pre zákazníka sú MOŽNO dostupné na webovej lokalite poskytovateľa. Pred používaním aplikácie sa určite so zásadami oboznámte.</item>
+        <item>Kde nájdem zásady ochrany súkromia služby Boost Mobile? Ak máte otázky ohľadne zásad ochrany súkromia služby Boost Mobile, navštívte stránku Boost Mobile.com a kliknite na prepojenie „Zásady ochrany súkromia“.</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_virgin_NORMAL">
+        <item>Upozornenie na ochranu osobných údajov Virgin Mobile</item>
+        <item>Ak budete používať aplikáciu 3. strany, môže priamo zhromažďovať vaše osobné informácie alebo môže od Virgin Mobile požadovať zverejnenie vašich osobných informácií, vrátane informácií o pozícii (ak je to možné), a poskytovať ich poskytovateľovi aplikácie alebo ďalšej 3. strane.</item>
+        <item>Ktoré zásady ochrany súkromia sa uplatňujú? Zásady ochrany súkromia a podmienky používania zo strany Virgin Mobile sa nevzťahujú na aplikácie vo vašom telefóne, ktoré sú výlučne poskytované 3. stranami. Na používanie týchto aplikácií sa vzťahujú zásady 3. strany.</item>
+        <item>Kde nájdem viac informácií o zásadách 3. strany? Pozrite si podmienky používania aplikácie/zásady poskytovateľa aplikácie, kde nájdete viac informácií o tom, ako aplikácia vaše informácie zhromažďuje, získava a zverejňuje. Zásady ochrany súkromia, podmienky používania a ďalšie upozornenia pre zákazníka sú MOŽNO dostupné na webovej lokalite poskytovateľa. Pred používaním aplikácie sa určite so zásadami oboznámte.</item>
+        <item>Kde nájdem zásady ochrany súkromia služby Virgin Mobile? Po jednom, ak máte otázky ohľadne zásad ochrany súkromia služby Virgin Mobile, navštívte stránku VirginMobileUSA.com a kliknite na prepojenie „Zásady ochrany súkromia“.</item>
+    </string-array>
+    <string-array name="sp_lock_screen_effect_entries_NORMAL">
+        <item>Základné</item>
+        <item>Padajúce lístie</item>
+        <item>Rozširujúci sa atrament</item>
+        <item>Kvapky rosy</item>
+    </string-array>
+    <string-array name="sp_power_save_brightness_entries_NORMAL">
+        <item>10% jasu</item>
+        <item>20% jasu</item>
+        <item>30% jasu</item>
+        <item>50% jasu</item>
+    </string-array>
+    <string-array name="sp_power_save_screen_timeout_entries_NORMAL">
+        <item>15 sekúnd</item>
+        <item>30 sekúnd</item>
+        <item>1 minúta</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_NORMAL">
+        <item>1.5 sekundy</item>
+        <item>Vždy vypnuté</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_att_NORMAL">
+        <item>3 sekundy</item>
+        <item>Vždy vypnuté</item>
+    </string-array>
+    <string-array name="sp_power_save_mode_entries_NORMAL">
+        <item>10% batérie</item>
+        <item>20% batérie</item>
+        <item>30% batérie</item>
+        <item>50% batérie</item>
+    </string-array>
+    <string-array name="sp_power_save_mode2_entries_NORMAL">
+        <item>Okamžite</item>
+        <item>10% batérie</item>
+        <item>20% batérie</item>
+        <item>30% batérie</item>
+        <item>50% batérie</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries">
+        <item>5 minút</item>
+        <item>10 minút</item>
+        <item>15 minút</item>
+    </string-array>
+    <string-array name="sp_hotspot_timeout_entries_mx_NORMAL">
+        <item>Bez časového limitu</item>
+        <item>5 min</item>
+        <item>10 min.</item>
+        <item>15 minút</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries_jb">
+        <item>5 min</item>
+        <item>10 min.</item>
+        <item>15 minút</item>
+        <item>30 min</item>
+        <item>Nikdy</item>
+    </string-array>
+    <string-array name="wifi_p2p_timeout_entries">
+        <item>15 minút</item>
+        <item>30 min</item>
+        <item>Nikdy</item>
+    </string-array>
+    <string-array name="sp_wifi_ap_visibility_NORMAL">
+        <item>Zobraziť</item>
+        <item>Skryť</item>
+    </string-array>
+    <string-array name="sp_bt_search_filter_SHORT">
+        <item>Vetky zariadenia</item>
+        <item>Slúchadlá</item>
+        <item>Mobilný telefón</item>
+        <item>PC</item>
+        <item>Klávesnica, myš atď.</item>
+    </string-array>
+    <string-array name="wifi_signal_strength_entries">
+        <item>Silná</item>
+        <item>Stredný</item>
+        <item>Slabý</item>
+        <item>Vyp.</item>
+    </string-array>
+    <string-array name="wifi_Dual_band_AP_connection_entries">
+        <item>AUTO</item>
+        <item>5 GHz</item>
+        <item>2.4 GHz</item>
+    </string-array>
+</resources>

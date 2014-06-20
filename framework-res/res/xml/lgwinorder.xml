@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lgwinzorder>
+    <window> splitwindow
+<title>LG_split</title>
+    </window>
+    <window> qslide
+<title>Floating</title>
+    </window>
+    <window> dockservice
+<title>DockView</title>
+    </window>
+    <window> slideaside
+<title>slideaside</title>
+    </window>
+</lgwinzorder>

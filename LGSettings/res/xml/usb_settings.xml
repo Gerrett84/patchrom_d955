@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:layout="@layout/dummy_layout" />
+    <com.android.lgesettings.lge.RadioButtonPreference android:icon="@drawable/charge_only" android:title="@string/sp_usb_charger_title_ex_NORMAL" android:key="usb_charger" android:summary="@string/sp_usbtype_charge_summary_ex_NORMAL" />
+    <com.android.lgesettings.lge.RadioButtonPreference android:icon="@drawable/mass_storage" android:title="@string/sp_mass_storage_NORMAL" android:key="usb_mass_storage" android:summary="@string/sp_usbtype_massstorage_summary_NORMAL" />
+    <com.android.lgesettings.lge.RadioButtonPreference android:icon="@drawable/mtp" android:title="@string/sp_usbtype_mtp_title_NORMAL" android:key="usb_media_sync" android:summary="@string/usbtype_mtp_summary2_ex" />
+    <com.android.lgesettings.lge.RadioButtonPreference android:icon="@drawable/internet_connection" android:title="@string/sp_internet_connection_NORMAL" android:key="usb_internet" />
+    <com.android.lgesettings.lge.RadioButtonPreference android:icon="@drawable/usb_tethering" android:title="@string/tether_settings_title_usb_ex" android:key="usb_tether" android:summary="@string/sp_usbtype_tethering_summary_NORMAL" />
+    <com.android.lgesettings.lge.RadioButtonPreference android:icon="@drawable/lg_software" android:title="@string/sp_lg_software_NORMAL" android:key="usb_pc_suite" android:summary="@string/sp_usbtype_pcsoftware_summary_NORMAL" />
+    <com.android.lgesettings.lge.RadioButtonPreference android:icon="@drawable/ptp" android:title="@string/usb_ptp_title_ex" android:key="usb_ptp" android:summary="@string/sp_usbtype_ptp_summary_ex_NORMAL" />
+</PreferenceScreen>

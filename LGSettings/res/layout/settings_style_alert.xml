@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="16.669983dip" android:paddingEnd="16.669983dip">
+        <ImageView android:layout_gravity="center" android:id="@id/settings_style_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:src="@drawable/easy_settings_help_tab" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="15.669983sp" android:id="@id/settings_style_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:text="@string/sp_switch_to_tab_desc_NORMAL" />
+        <CheckBox android:textSize="19.329987sp" android:textStyle="bold" android:id="@id/checkbox_donotshow_style" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.329987dip" android:layout_marginBottom="6.0dip" android:text="@string/sp_keepscreenon_skip" />
+    </LinearLayout>
+</ScrollView>

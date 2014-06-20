@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/sp_network_typestrength_NORMAL" android:key="parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.lgesettings">
+    <PreferenceScreen android:icon="@drawable/small_icon_signal_0" android:title="@string/sp_network_noservice_NORMAL" android:key="data_status_0" />
+    <PreferenceScreen android:icon="@drawable/small_icon_signal_1" android:title="@string/sp_network_noservice_NORMAL" android:key="data_status_1" />
+    <PreferenceScreen android:icon="@drawable/small_icon_signal_2" android:title="@string/sp_network_noservice_NORMAL" android:key="data_status_2" />
+    <PreferenceScreen android:icon="@drawable/small_icon_signal_3" android:title="@string/sp_network_noservice_NORMAL" android:key="data_status_3" />
+    <PreferenceScreen android:icon="@drawable/small_icon_signal_4" android:title="@string/sp_network_noservice_NORMAL" android:key="data_status_4" />
+    <PreferenceScreen android:icon="@drawable/small_icon_signal_5" android:title="@string/sp_network_noservice_NORMAL" android:key="data_status_5" />
+    <PreferenceScreen android:icon="@drawable/small_icon_signal_0" android:title="@string/sp_network_noservice_NORMAL" android:key="call_status_0" />
+    <PreferenceScreen android:icon="@drawable/small_icon_signal_1" android:title="@string/sp_network_noservice_NORMAL" android:key="call_status_1" />
+    <PreferenceScreen android:icon="@drawable/small_icon_signal_2" android:title="@string/sp_network_noservice_NORMAL" android:key="call_status_2" />
+    <PreferenceScreen android:icon="@drawable/small_icon_signal_3" android:title="@string/sp_network_noservice_NORMAL" android:key="call_status_3" />
+    <PreferenceScreen android:icon="@drawable/small_icon_signal_4" android:title="@string/sp_network_noservice_NORMAL" android:key="call_status_4" />
+    <PreferenceScreen android:icon="@drawable/small_icon_signal_5" android:title="@string/sp_network_noservice_NORMAL" android:key="call_status_5" />
+</PreferenceScreen>

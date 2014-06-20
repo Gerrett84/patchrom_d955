@@ -1,0 +1,839 @@
+diff -rup ../framework_ext/smali/com/android/internal/telephony/MiuiAdnRecordCache.smali ../framework_ext/smali/com/android/internal/telephony/MiuiAdnRecordCache.smali
+--- ../framework_ext/smali/com/android/internal/telephony/MiuiAdnRecordCache.smali	2014-05-19 08:08:22.000000000 +0200
++++ ../framework_ext/smali/com/android/internal/telephony/MiuiAdnRecordCache.smali	2014-05-16 16:55:13.000000000 +0200
+@@ -1,5 +1,5 @@
+ .class public Lcom/android/internal/telephony/MiuiAdnRecordCache;
+-.super Lcom/android/internal/telephony/AdnRecordCache;
++.super Lcom/android/internal/telephony/uicc/AdnRecordCache;
+ .source "MiuiAdnRecordCache.java"
+ 
+ 
+@@ -59,13 +59,13 @@
+ 
+ 
+ # direct methods
+-.method public constructor <init>(Lcom/android/internal/telephony/IccFileHandler;)V
++.method public constructor <init>(Lcom/android/internal/telephony/uicc/IccFileHandler;)V
+     .locals 1
+     .parameter "fh"
+ 
+     .prologue
+     .line 34
+-    invoke-direct {p0, p1}, Lcom/android/internal/telephony/AdnRecordCache;-><init>(Lcom/android/internal/telephony/IccFileHandler;)V
++    invoke-direct {p0, p1}, Lcom/android/internal/telephony/uicc/AdnRecordCache;-><init>(Lcom/android/internal/telephony/uicc/IccFileHandler;)V
+ 
+     .line 25
+     new-instance v0, Landroid/util/SparseArray;
+@@ -98,14 +98,14 @@
+     .line 35
+     new-instance v0, Lcom/android/internal/telephony/MiuiIccFileHandler;
+ 
+-    invoke-direct {v0, p1}, Lcom/android/internal/telephony/MiuiIccFileHandler;-><init>(Lcom/android/internal/telephony/IccFileHandler;)V
++    invoke-direct {v0, p1}, Lcom/android/internal/telephony/MiuiIccFileHandler;-><init>(Lcom/android/internal/telephony/uicc/IccFileHandler;)V
+ 
+     iput-object v0, p0, Lcom/android/internal/telephony/MiuiAdnRecordCache;->mFh:Lcom/android/internal/telephony/MiuiIccFileHandler;
+ 
+     .line 36
+     new-instance v0, Lcom/android/internal/telephony/gsm/MiuiUsimPhoneBookManager;
+ 
+-    invoke-direct {v0, p1, p0}, Lcom/android/internal/telephony/gsm/MiuiUsimPhoneBookManager;-><init>(Lcom/android/internal/telephony/IccFileHandler;Lcom/android/internal/telephony/AdnRecordCache;)V
++    invoke-direct {v0, p1, p0}, Lcom/android/internal/telephony/gsm/MiuiUsimPhoneBookManager;-><init>(Lcom/android/internal/telephony/uicc/IccFileHandler;Lcom/android/internal/telephony/uicc/AdnRecordCache;)V
+ 
+     iput-object v0, p0, Lcom/android/internal/telephony/MiuiAdnRecordCache;->mUsimPhoneBookManager:Lcom/android/internal/telephony/gsm/MiuiUsimPhoneBookManager;
+ 
+@@ -364,7 +364,7 @@
+             "(I)",
+             "Ljava/util/ArrayList",
+             "<",
+-            "Lcom/android/internal/telephony/AdnRecord;",
++            "Lcom/android/internal/telephony/uicc/AdnRecord;",
+             ">;"
+         }
+     .end annotation
+@@ -380,7 +380,7 @@
+     check-cast v0, Ljava/util/ArrayList;
+ 
+     .line 53
+-    .local v0, records:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/internal/telephony/AdnRecord;>;"
++    .local v0, records:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/internal/telephony/uicc/AdnRecord;>;"
+     return-object v0
+ .end method
+ 
+@@ -919,7 +919,7 @@
+ 
+     .prologue
+     .line 41
+-    invoke-super {p0}, Lcom/android/internal/telephony/AdnRecordCache;->reset()V
++    invoke-super {p0}, Lcom/android/internal/telephony/uicc/AdnRecordCache;->reset()V
+ 
+     .line 42
+     iget-object v0, p0, Lcom/android/internal/telephony/MiuiAdnRecordCache;->mAdnLikeFiles:Landroid/util/SparseArray;
+@@ -969,7 +969,7 @@
+     return-void
+ .end method
+ 
+-.method public updateAdnByIndex(ILcom/android/internal/telephony/AdnRecord;ILjava/lang/String;Landroid/os/Message;)V
++.method public updateAdnByIndex(ILcom/android/internal/telephony/uicc/AdnRecord;ILjava/lang/String;Landroid/os/Message;)V
+     .locals 12
+     .parameter "efid"
+     .parameter "adn"
+@@ -1002,7 +1002,7 @@
+     .line 106
+     .restart local p2
+     :cond_0
+-    iget-object v1, p2, Lcom/android/internal/telephony/AdnRecord;->alphaTag:Ljava/lang/String;
++    iget-object v1, p2, Lcom/android/internal/telephony/uicc/AdnRecord;->alphaTag:Ljava/lang/String;
+ 
+     invoke-virtual {v1}, Ljava/lang/String;->length()I
+ 
+@@ -1023,7 +1023,7 @@
+ 
+     .line 111
+     :cond_1
+-    iget-object v1, p2, Lcom/android/internal/telephony/AdnRecord;->number:Ljava/lang/String;
++    iget-object v1, p2, Lcom/android/internal/telephony/uicc/AdnRecord;->number:Ljava/lang/String;
+ 
+     invoke-virtual {v1}, Ljava/lang/String;->length()I
+ 
+@@ -1033,7 +1033,7 @@
+     .local v8, length:I
+     if-lez v8, :cond_2
+ 
+-    iget-object v1, p2, Lcom/android/internal/telephony/AdnRecord;->number:Ljava/lang/String;
++    iget-object v1, p2, Lcom/android/internal/telephony/uicc/AdnRecord;->number:Ljava/lang/String;
+ 
+     const/4 v2, 0x0
+ 
+@@ -1207,7 +1207,7 @@
+ 
+     move-object/from16 v6, p4
+ 
+-    invoke-virtual/range {v1 .. v7}, Lcom/android/internal/telephony/MiuiAdnRecordLoader;->updateEF(Lcom/android/internal/telephony/AdnRecord;IIILjava/lang/String;Landroid/os/Message;)V
++    invoke-virtual/range {v1 .. v7}, Lcom/android/internal/telephony/MiuiAdnRecordLoader;->updateEF(Lcom/android/internal/telephony/uicc/AdnRecord;IIILjava/lang/String;Landroid/os/Message;)V
+ 
+     .line 143
+     monitor-exit v11
+@@ -1217,7 +1217,7 @@
+     goto/16 :goto_0
+ .end method
+ 
+-.method public updateAdnBySearch(ILcom/android/internal/telephony/AdnRecord;Lcom/android/internal/telephony/AdnRecord;Ljava/lang/String;Landroid/os/Message;)V
++.method public updateAdnBySearch(ILcom/android/internal/telephony/uicc/AdnRecord;Lcom/android/internal/telephony/uicc/AdnRecord;Ljava/lang/String;Landroid/os/Message;)V
+     .locals 15
+     .parameter "efid"
+     .parameter "oldAdn"
+@@ -1277,11 +1277,11 @@
+ 
+     move-result-object v2
+ 
+-    check-cast v2, Lcom/android/internal/telephony/AdnRecord;
++    check-cast v2, Lcom/android/internal/telephony/uicc/AdnRecord;
+ 
+     move-object/from16 v0, p2
+ 
+-    invoke-virtual {v0, v2}, Lcom/android/internal/telephony/AdnRecord;->isEqual(Lcom/android/internal/telephony/AdnRecord;)Z
++    invoke-virtual {v0, v2}, Lcom/android/internal/telephony/uicc/AdnRecord;->isEqual(Lcom/android/internal/telephony/uicc/AdnRecord;)Z
+ 
+     move-result v2
+ 
+@@ -1341,7 +1341,7 @@
+     .line 178
+     move-object/from16 v0, p3
+ 
+-    iget-object v2, v0, Lcom/android/internal/telephony/AdnRecord;->alphaTag:Ljava/lang/String;
++    iget-object v2, v0, Lcom/android/internal/telephony/uicc/AdnRecord;->alphaTag:Ljava/lang/String;
+ 
+     invoke-virtual {v2}, Ljava/lang/String;->length()I
+ 
+@@ -1364,7 +1364,7 @@
+     :cond_5
+     move-object/from16 v0, p3
+ 
+-    iget-object v2, v0, Lcom/android/internal/telephony/AdnRecord;->number:Ljava/lang/String;
++    iget-object v2, v0, Lcom/android/internal/telephony/uicc/AdnRecord;->number:Ljava/lang/String;
+ 
+     invoke-virtual {v2}, Ljava/lang/String;->length()I
+ 
+@@ -1376,7 +1376,7 @@
+ 
+     move-object/from16 v0, p3
+ 
+-    iget-object v2, v0, Lcom/android/internal/telephony/AdnRecord;->number:Ljava/lang/String;
++    iget-object v2, v0, Lcom/android/internal/telephony/uicc/AdnRecord;->number:Ljava/lang/String;
+ 
+     const/4 v3, 0x0
+ 
+@@ -1498,7 +1498,7 @@
+     move-object/from16 v7, p5
+ 
+     .line 205
+-    invoke-virtual/range {v2 .. v7}, Lcom/android/internal/telephony/MiuiAdnRecordCache;->updateAdnByIndex(ILcom/android/internal/telephony/AdnRecord;ILjava/lang/String;Landroid/os/Message;)V
++    invoke-virtual/range {v2 .. v7}, Lcom/android/internal/telephony/MiuiAdnRecordCache;->updateAdnByIndex(ILcom/android/internal/telephony/uicc/AdnRecord;ILjava/lang/String;Landroid/os/Message;)V
+ 
+     goto/16 :goto_0
+ .end method
+diff -rup ../framework_ext/smali/com/android/internal/telephony/MiuiAdnRecordLoader.smali ../framework_ext/smali/com/android/internal/telephony/MiuiAdnRecordLoader.smali
+--- ../framework_ext/smali/com/android/internal/telephony/MiuiAdnRecordLoader.smali	2014-05-19 08:08:22.000000000 +0200
++++ ../framework_ext/smali/com/android/internal/telephony/MiuiAdnRecordLoader.smali	2014-05-16 16:55:13.000000000 +0200
+@@ -757,7 +757,7 @@
+     return-void
+ .end method
+ 
+-.method public updateEF(Lcom/android/internal/telephony/AdnRecord;IIILjava/lang/String;Landroid/os/Message;)V
++.method public updateEF(Lcom/android/internal/telephony/uicc/AdnRecord;IIILjava/lang/String;Landroid/os/Message;)V
+     .locals 6
+     .parameter "adn"
+     .parameter "ef"
+@@ -820,7 +820,7 @@
+ 
+     aget v0, v0, v1
+ 
+-    invoke-virtual {p1, v0}, Lcom/android/internal/telephony/AdnRecord;->buildAdnString(I)[B
++    invoke-virtual {p1, v0}, Lcom/android/internal/telephony/uicc/AdnRecord;->buildAdnString(I)[B
+ 
+     move-result-object v3
+ 
+diff -rup ../framework_ext/smali/com/android/internal/telephony/MiuiIccFileHandler.smali ../framework_ext/smali/com/android/internal/telephony/MiuiIccFileHandler.smali
+--- ../framework_ext/smali/com/android/internal/telephony/MiuiIccFileHandler.smali	2014-05-19 08:08:22.000000000 +0200
++++ ../framework_ext/smali/com/android/internal/telephony/MiuiIccFileHandler.smali	2014-05-16 16:55:13.000000000 +0200
+@@ -4,11 +4,11 @@
+ 
+ 
+ # instance fields
+-.field private mFh:Lcom/android/internal/telephony/IccFileHandler;
++.field private mFh:Lcom/android/internal/telephony/uicc/IccFileHandler;
+ 
+ 
+ # direct methods
+-.method public constructor <init>(Lcom/android/internal/telephony/IccFileHandler;)V
++.method public constructor <init>(Lcom/android/internal/telephony/uicc/IccFileHandler;)V
+     .locals 0
+     .parameter "fh"
+ 
+@@ -17,7 +17,7 @@
+     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+ 
+     .line 14
+-    iput-object p1, p0, Lcom/android/internal/telephony/MiuiIccFileHandler;->mFh:Lcom/android/internal/telephony/IccFileHandler;
++    iput-object p1, p0, Lcom/android/internal/telephony/MiuiIccFileHandler;->mFh:Lcom/android/internal/telephony/uicc/IccFileHandler;
+ 
+     .line 15
+     return-void
+@@ -30,9 +30,9 @@
+ 
+     .prologue
+     .line 18
+-    iget-object v0, p0, Lcom/android/internal/telephony/MiuiIccFileHandler;->mFh:Lcom/android/internal/telephony/IccFileHandler;
++    iget-object v0, p0, Lcom/android/internal/telephony/MiuiIccFileHandler;->mFh:Lcom/android/internal/telephony/uicc/IccFileHandler;
+ 
+-    invoke-virtual {v0}, Lcom/android/internal/telephony/IccFileHandler;->dispose()V
++    invoke-virtual {v0}, Lcom/android/internal/telephony/uicc/IccFileHandler;->dispose()V
+ 
+     .line 19
+     return-void
+@@ -45,9 +45,9 @@
+ 
+     .prologue
+     .line 54
+-    iget-object v0, p0, Lcom/android/internal/telephony/MiuiIccFileHandler;->mFh:Lcom/android/internal/telephony/IccFileHandler;
++    iget-object v0, p0, Lcom/android/internal/telephony/MiuiIccFileHandler;->mFh:Lcom/android/internal/telephony/uicc/IccFileHandler;
+ 
+-    invoke-virtual {v0, p1, p2}, Lcom/android/internal/telephony/IccFileHandler;->getEFLinearRecordSize(ILandroid/os/Message;)V
++    invoke-virtual {v0, p1, p2}, Lcom/android/internal/telephony/uicc/IccFileHandler;->getEFLinearRecordSize(ILandroid/os/Message;)V
+ 
+     .line 55
+     return-void
+@@ -60,9 +60,9 @@
+ 
+     .prologue
+     .line 50
+-    iget-object v0, p0, Lcom/android/internal/telephony/MiuiIccFileHandler;->mFh:Lcom/android/internal/telephony/IccFileHandler;
++    iget-object v0, p0, Lcom/android/internal/telephony/MiuiIccFileHandler;->mFh:Lcom/android/internal/telephony/uicc/IccFileHandler;
+ 
+-    invoke-virtual {v0, p1, p2}, Lcom/android/internal/telephony/IccFileHandler;->loadEFImgLinearFixed(ILandroid/os/Message;)V
++    invoke-virtual {v0, p1, p2}, Lcom/android/internal/telephony/uicc/IccFileHandler;->loadEFImgLinearFixed(ILandroid/os/Message;)V
+ 
+     .line 51
+     return-void
+@@ -78,7 +78,7 @@
+ 
+     .prologue
+     .line 71
+-    iget-object v0, p0, Lcom/android/internal/telephony/MiuiIccFileHandler;->mFh:Lcom/android/internal/telephony/IccFileHandler;
++    iget-object v0, p0, Lcom/android/internal/telephony/MiuiIccFileHandler;->mFh:Lcom/android/internal/telephony/uicc/IccFileHandler;
+ 
+     move v1, p1
+ 
+@@ -90,7 +90,7 @@
+ 
+     move-object v5, p5
+ 
+-    invoke-virtual/range {v0 .. v5}, Lcom/android/internal/telephony/IccFileHandler;->loadEFImgTransparent(IIIILandroid/os/Message;)V
++    invoke-virtual/range {v0 .. v5}, Lcom/android/internal/telephony/uicc/IccFileHandler;->loadEFImgTransparent(IIIILandroid/os/Message;)V
+ 
+     .line 72
+     return-void
+@@ -105,7 +105,7 @@
+ 
+     .prologue
+     .line 22
+-    new-instance v14, Lcom/android/internal/telephony/IccFileHandler$LoadLinearFixedContext;
++    new-instance v14, Lcom/android/internal/telephony/uicc/IccFileHandler$LoadLinearFixedContext;
+ 
+     move/from16 v0, p1
+ 
+@@ -113,40 +113,40 @@
+ 
+     move-object/from16 v2, p4
+ 
+-    invoke-direct {v14, v0, v1, v2}, Lcom/android/internal/telephony/IccFileHandler$LoadLinearFixedContext;-><init>(IILandroid/os/Message;)V
++    invoke-direct {v14, v0, v1, v2}, Lcom/android/internal/telephony/uicc/IccFileHandler$LoadLinearFixedContext;-><init>(IILandroid/os/Message;)V
+ 
+     .line 23
+-    .local v14, lc:Lcom/android/internal/telephony/IccFileHandler$LoadLinearFixedContext;
++    .local v14, lc:Lcom/android/internal/telephony/uicc/IccFileHandler$LoadLinearFixedContext;
+     move/from16 v0, p2
+ 
+-    iput v0, v14, Lcom/android/internal/telephony/IccFileHandler$LoadLinearFixedContext;->recordSize:I
++    iput v0, v14, Lcom/android/internal/telephony/uicc/IccFileHandler$LoadLinearFixedContext;->recordSize:I
+ 
+     .line 25
+     move-object/from16 v0, p0
+ 
+-    iget-object v3, v0, Lcom/android/internal/telephony/MiuiIccFileHandler;->mFh:Lcom/android/internal/telephony/IccFileHandler;
++    iget-object v3, v0, Lcom/android/internal/telephony/MiuiIccFileHandler;->mFh:Lcom/android/internal/telephony/uicc/IccFileHandler;
+ 
+-    iget-object v3, v3, Lcom/android/internal/telephony/IccFileHandler;->mCi:Lcom/android/internal/telephony/CommandsInterface;
++    iget-object v3, v3, Lcom/android/internal/telephony/uicc/IccFileHandler;->mCi:Lcom/android/internal/telephony/CommandsInterface;
+ 
+     const/16 v4, 0xb2
+ 
+-    iget v5, v14, Lcom/android/internal/telephony/IccFileHandler$LoadLinearFixedContext;->efid:I
++    iget v5, v14, Lcom/android/internal/telephony/uicc/IccFileHandler$LoadLinearFixedContext;->efid:I
+ 
+     move-object/from16 v0, p0
+ 
+-    iget-object v6, v0, Lcom/android/internal/telephony/MiuiIccFileHandler;->mFh:Lcom/android/internal/telephony/IccFileHandler;
++    iget-object v6, v0, Lcom/android/internal/telephony/MiuiIccFileHandler;->mFh:Lcom/android/internal/telephony/uicc/IccFileHandler;
+ 
+-    iget v7, v14, Lcom/android/internal/telephony/IccFileHandler$LoadLinearFixedContext;->efid:I
++    iget v7, v14, Lcom/android/internal/telephony/uicc/IccFileHandler$LoadLinearFixedContext;->efid:I
+ 
+-    invoke-virtual {v6, v7}, Lcom/android/internal/telephony/IccFileHandler;->getEFPath(I)Ljava/lang/String;
++    invoke-virtual {v6, v7}, Lcom/android/internal/telephony/uicc/IccFileHandler;->getEFPath(I)Ljava/lang/String;
+ 
+     move-result-object v6
+ 
+-    iget v7, v14, Lcom/android/internal/telephony/IccFileHandler$LoadLinearFixedContext;->recordNum:I
++    iget v7, v14, Lcom/android/internal/telephony/uicc/IccFileHandler$LoadLinearFixedContext;->recordNum:I
+ 
+     const/4 v8, 0x4
+ 
+-    iget v9, v14, Lcom/android/internal/telephony/IccFileHandler$LoadLinearFixedContext;->recordSize:I
++    iget v9, v14, Lcom/android/internal/telephony/uicc/IccFileHandler$LoadLinearFixedContext;->recordSize:I
+ 
+     const/4 v10, 0x0
+ 
+@@ -154,17 +154,17 @@
+ 
+     move-object/from16 v0, p0
+ 
+-    iget-object v12, v0, Lcom/android/internal/telephony/MiuiIccFileHandler;->mFh:Lcom/android/internal/telephony/IccFileHandler;
++    iget-object v12, v0, Lcom/android/internal/telephony/MiuiIccFileHandler;->mFh:Lcom/android/internal/telephony/uicc/IccFileHandler;
+ 
+-    iget-object v12, v12, Lcom/android/internal/telephony/IccFileHandler;->mAid:Ljava/lang/String;
++    iget-object v12, v12, Lcom/android/internal/telephony/uicc/IccFileHandler;->mAid:Ljava/lang/String;
+ 
+     move-object/from16 v0, p0
+ 
+-    iget-object v13, v0, Lcom/android/internal/telephony/MiuiIccFileHandler;->mFh:Lcom/android/internal/telephony/IccFileHandler;
++    iget-object v13, v0, Lcom/android/internal/telephony/MiuiIccFileHandler;->mFh:Lcom/android/internal/telephony/uicc/IccFileHandler;
+ 
+     const/4 v15, 0x7
+ 
+-    invoke-virtual {v13, v15, v14}, Lcom/android/internal/telephony/IccFileHandler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
++    invoke-virtual {v13, v15, v14}, Lcom/android/internal/telephony/uicc/IccFileHandler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
+ 
+     move-result-object v13
+ 
+@@ -182,9 +182,9 @@
+ 
+     .prologue
+     .line 46
+-    iget-object v0, p0, Lcom/android/internal/telephony/MiuiIccFileHandler;->mFh:Lcom/android/internal/telephony/IccFileHandler;
++    iget-object v0, p0, Lcom/android/internal/telephony/MiuiIccFileHandler;->mFh:Lcom/android/internal/telephony/uicc/IccFileHandler;
+ 
+-    invoke-virtual {v0, p1, p2, p3}, Lcom/android/internal/telephony/IccFileHandler;->loadEFLinearFixed(IILandroid/os/Message;)V
++    invoke-virtual {v0, p1, p2, p3}, Lcom/android/internal/telephony/uicc/IccFileHandler;->loadEFLinearFixed(IILandroid/os/Message;)V
+ 
+     .line 47
+     return-void
+@@ -199,22 +199,22 @@
+ 
+     .prologue
+     .line 33
+-    new-instance v12, Lcom/android/internal/telephony/IccFileHandler$LoadLinearFixedContext;
++    new-instance v12, Lcom/android/internal/telephony/uicc/IccFileHandler$LoadLinearFixedContext;
+ 
+     move-object/from16 v0, p4
+ 
+-    invoke-direct {v12, p1, v0}, Lcom/android/internal/telephony/IccFileHandler$LoadLinearFixedContext;-><init>(ILandroid/os/Message;)V
++    invoke-direct {v12, p1, v0}, Lcom/android/internal/telephony/uicc/IccFileHandler$LoadLinearFixedContext;-><init>(ILandroid/os/Message;)V
+ 
+     .line 34
+-    .local v12, lc:Lcom/android/internal/telephony/IccFileHandler$LoadLinearFixedContext;
++    .local v12, lc:Lcom/android/internal/telephony/uicc/IccFileHandler$LoadLinearFixedContext;
+     move/from16 v0, p2
+ 
+-    iput v0, v12, Lcom/android/internal/telephony/IccFileHandler$LoadLinearFixedContext;->recordSize:I
++    iput v0, v12, Lcom/android/internal/telephony/uicc/IccFileHandler$LoadLinearFixedContext;->recordSize:I
+ 
+     .line 35
+     move/from16 v0, p3
+ 
+-    iput v0, v12, Lcom/android/internal/telephony/IccFileHandler$LoadLinearFixedContext;->countRecords:I
++    iput v0, v12, Lcom/android/internal/telephony/uicc/IccFileHandler$LoadLinearFixedContext;->countRecords:I
+ 
+     .line 36
+     new-instance v1, Ljava/util/ArrayList;
+@@ -223,44 +223,44 @@
+ 
+     invoke-direct {v1, v0}, Ljava/util/ArrayList;-><init>(I)V
+ 
+-    iput-object v1, v12, Lcom/android/internal/telephony/IccFileHandler$LoadLinearFixedContext;->results:Ljava/util/ArrayList;
++    iput-object v1, v12, Lcom/android/internal/telephony/uicc/IccFileHandler$LoadLinearFixedContext;->results:Ljava/util/ArrayList;
+ 
+     .line 38
+-    iget-object v1, p0, Lcom/android/internal/telephony/MiuiIccFileHandler;->mFh:Lcom/android/internal/telephony/IccFileHandler;
++    iget-object v1, p0, Lcom/android/internal/telephony/MiuiIccFileHandler;->mFh:Lcom/android/internal/telephony/uicc/IccFileHandler;
+ 
+-    iget-object v1, v1, Lcom/android/internal/telephony/IccFileHandler;->mCi:Lcom/android/internal/telephony/CommandsInterface;
++    iget-object v1, v1, Lcom/android/internal/telephony/uicc/IccFileHandler;->mCi:Lcom/android/internal/telephony/CommandsInterface;
+ 
+     const/16 v2, 0xb2
+ 
+-    iget v3, v12, Lcom/android/internal/telephony/IccFileHandler$LoadLinearFixedContext;->efid:I
++    iget v3, v12, Lcom/android/internal/telephony/uicc/IccFileHandler$LoadLinearFixedContext;->efid:I
+ 
+-    iget-object v4, p0, Lcom/android/internal/telephony/MiuiIccFileHandler;->mFh:Lcom/android/internal/telephony/IccFileHandler;
++    iget-object v4, p0, Lcom/android/internal/telephony/MiuiIccFileHandler;->mFh:Lcom/android/internal/telephony/uicc/IccFileHandler;
+ 
+-    iget v5, v12, Lcom/android/internal/telephony/IccFileHandler$LoadLinearFixedContext;->efid:I
++    iget v5, v12, Lcom/android/internal/telephony/uicc/IccFileHandler$LoadLinearFixedContext;->efid:I
+ 
+-    invoke-virtual {v4, v5}, Lcom/android/internal/telephony/IccFileHandler;->getEFPath(I)Ljava/lang/String;
++    invoke-virtual {v4, v5}, Lcom/android/internal/telephony/uicc/IccFileHandler;->getEFPath(I)Ljava/lang/String;
+ 
+     move-result-object v4
+ 
+-    iget v5, v12, Lcom/android/internal/telephony/IccFileHandler$LoadLinearFixedContext;->recordNum:I
++    iget v5, v12, Lcom/android/internal/telephony/uicc/IccFileHandler$LoadLinearFixedContext;->recordNum:I
+ 
+     const/4 v6, 0x4
+ 
+-    iget v7, v12, Lcom/android/internal/telephony/IccFileHandler$LoadLinearFixedContext;->recordSize:I
++    iget v7, v12, Lcom/android/internal/telephony/uicc/IccFileHandler$LoadLinearFixedContext;->recordSize:I
+ 
+     const/4 v8, 0x0
+ 
+     const/4 v9, 0x0
+ 
+-    iget-object v10, p0, Lcom/android/internal/telephony/MiuiIccFileHandler;->mFh:Lcom/android/internal/telephony/IccFileHandler;
++    iget-object v10, p0, Lcom/android/internal/telephony/MiuiIccFileHandler;->mFh:Lcom/android/internal/telephony/uicc/IccFileHandler;
+ 
+-    iget-object v10, v10, Lcom/android/internal/telephony/IccFileHandler;->mAid:Ljava/lang/String;
++    iget-object v10, v10, Lcom/android/internal/telephony/uicc/IccFileHandler;->mAid:Ljava/lang/String;
+ 
+-    iget-object v11, p0, Lcom/android/internal/telephony/MiuiIccFileHandler;->mFh:Lcom/android/internal/telephony/IccFileHandler;
++    iget-object v11, p0, Lcom/android/internal/telephony/MiuiIccFileHandler;->mFh:Lcom/android/internal/telephony/uicc/IccFileHandler;
+ 
+     const/4 v13, 0x7
+ 
+-    invoke-virtual {v11, v13, v12}, Lcom/android/internal/telephony/IccFileHandler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
++    invoke-virtual {v11, v13, v12}, Lcom/android/internal/telephony/uicc/IccFileHandler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
+ 
+     move-result-object v11
+ 
+@@ -277,9 +277,9 @@
+ 
+     .prologue
+     .line 58
+-    iget-object v0, p0, Lcom/android/internal/telephony/MiuiIccFileHandler;->mFh:Lcom/android/internal/telephony/IccFileHandler;
++    iget-object v0, p0, Lcom/android/internal/telephony/MiuiIccFileHandler;->mFh:Lcom/android/internal/telephony/uicc/IccFileHandler;
+ 
+-    invoke-virtual {v0, p1, p2}, Lcom/android/internal/telephony/IccFileHandler;->loadEFLinearFixedAll(ILandroid/os/Message;)V
++    invoke-virtual {v0, p1, p2}, Lcom/android/internal/telephony/uicc/IccFileHandler;->loadEFLinearFixedAll(ILandroid/os/Message;)V
+ 
+     .line 59
+     return-void
+@@ -293,9 +293,9 @@
+ 
+     .prologue
+     .line 66
+-    iget-object v0, p0, Lcom/android/internal/telephony/MiuiIccFileHandler;->mFh:Lcom/android/internal/telephony/IccFileHandler;
++    iget-object v0, p0, Lcom/android/internal/telephony/MiuiIccFileHandler;->mFh:Lcom/android/internal/telephony/uicc/IccFileHandler;
+ 
+-    invoke-virtual {v0, p1, p2, p3}, Lcom/android/internal/telephony/IccFileHandler;->loadEFTransparent(IILandroid/os/Message;)V
++    invoke-virtual {v0, p1, p2, p3}, Lcom/android/internal/telephony/uicc/IccFileHandler;->loadEFTransparent(IILandroid/os/Message;)V
+ 
+     .line 67
+     return-void
+@@ -308,9 +308,9 @@
+ 
+     .prologue
+     .line 62
+-    iget-object v0, p0, Lcom/android/internal/telephony/MiuiIccFileHandler;->mFh:Lcom/android/internal/telephony/IccFileHandler;
++    iget-object v0, p0, Lcom/android/internal/telephony/MiuiIccFileHandler;->mFh:Lcom/android/internal/telephony/uicc/IccFileHandler;
+ 
+-    invoke-virtual {v0, p1, p2}, Lcom/android/internal/telephony/IccFileHandler;->loadEFTransparent(ILandroid/os/Message;)V
++    invoke-virtual {v0, p1, p2}, Lcom/android/internal/telephony/uicc/IccFileHandler;->loadEFTransparent(ILandroid/os/Message;)V
+ 
+     .line 63
+     return-void
+@@ -326,7 +326,7 @@
+ 
+     .prologue
+     .line 76
+-    iget-object v0, p0, Lcom/android/internal/telephony/MiuiIccFileHandler;->mFh:Lcom/android/internal/telephony/IccFileHandler;
++    iget-object v0, p0, Lcom/android/internal/telephony/MiuiIccFileHandler;->mFh:Lcom/android/internal/telephony/uicc/IccFileHandler;
+ 
+     move v1, p1
+ 
+@@ -338,7 +338,7 @@
+ 
+     move-object v5, p5
+ 
+-    invoke-virtual/range {v0 .. v5}, Lcom/android/internal/telephony/IccFileHandler;->updateEFLinearFixed(II[BLjava/lang/String;Landroid/os/Message;)V
++    invoke-virtual/range {v0 .. v5}, Lcom/android/internal/telephony/uicc/IccFileHandler;->updateEFLinearFixed(II[BLjava/lang/String;Landroid/os/Message;)V
+ 
+     .line 77
+     return-void
+@@ -352,9 +352,9 @@
+ 
+     .prologue
+     .line 80
+-    iget-object v0, p0, Lcom/android/internal/telephony/MiuiIccFileHandler;->mFh:Lcom/android/internal/telephony/IccFileHandler;
++    iget-object v0, p0, Lcom/android/internal/telephony/MiuiIccFileHandler;->mFh:Lcom/android/internal/telephony/uicc/IccFileHandler;
+ 
+-    invoke-virtual {v0, p1, p2, p3}, Lcom/android/internal/telephony/IccFileHandler;->updateEFTransparent(I[BLandroid/os/Message;)V
++    invoke-virtual {v0, p1, p2, p3}, Lcom/android/internal/telephony/uicc/IccFileHandler;->updateEFTransparent(I[BLandroid/os/Message;)V
+ 
+     .line 81
+     return-void
+diff -rup ../framework_ext/smali/com/android/internal/telephony/MiuiIccPhoneBookInterfaceManager$1.smali ../framework_ext/smali/com/android/internal/telephony/MiuiIccPhoneBookInterfaceManager$1.smali
+--- ../framework_ext/smali/com/android/internal/telephony/MiuiIccPhoneBookInterfaceManager$1.smali	2014-05-19 08:08:22.000000000 +0200
++++ ../framework_ext/smali/com/android/internal/telephony/MiuiIccPhoneBookInterfaceManager$1.smali	2014-05-16 16:55:13.000000000 +0200
+@@ -263,7 +263,7 @@
+     check-cast v0, Ljava/util/List;
+ 
+     .line 76
+-    .local v0, adnRecords:Ljava/util/List;,"Ljava/util/List<Lcom/android/internal/telephony/AdnRecord;>;"
++    .local v0, adnRecords:Ljava/util/List;,"Ljava/util/List<Lcom/android/internal/telephony/uicc/AdnRecord;>;"
+     iget-object v2, p0, Lcom/android/internal/telephony/MiuiIccPhoneBookInterfaceManager$1;->this$0:Lcom/android/internal/telephony/MiuiIccPhoneBookInterfaceManager;
+ 
+     iput-object v0, v2, Lcom/android/internal/telephony/MiuiIccPhoneBookInterfaceManager;->mRecords:Ljava/util/List;
+@@ -276,7 +276,7 @@
+     iput v4, v2, Lcom/android/internal/telephony/MiuiIccPhoneBookInterfaceManager;->mError:I
+ 
+     .line 82
+-    .end local v0           #adnRecords:Ljava/util/List;,"Ljava/util/List<Lcom/android/internal/telephony/AdnRecord;>;"
++    .end local v0           #adnRecords:Ljava/util/List;,"Ljava/util/List<Lcom/android/internal/telephony/uicc/AdnRecord;>;"
+     :goto_3
+     invoke-direct {p0, v1}, Lcom/android/internal/telephony/MiuiIccPhoneBookInterfaceManager$1;->notifyPending(Landroid/os/AsyncResult;)V
+ 
+diff -rup ../framework_ext/smali/com/android/internal/telephony/MiuiIccPhoneBookInterfaceManagerProxy.smali ../framework_ext/smali/com/android/internal/telephony/MiuiIccPhoneBookInterfaceManagerProxy.smali
+--- ../framework_ext/smali/com/android/internal/telephony/MiuiIccPhoneBookInterfaceManagerProxy.smali	2014-05-19 08:08:22.000000000 +0200
++++ ../framework_ext/smali/com/android/internal/telephony/MiuiIccPhoneBookInterfaceManagerProxy.smali	2014-05-16 16:55:13.000000000 +0200
+@@ -49,7 +49,7 @@
+             "(I)",
+             "Ljava/util/List",
+             "<",
+-            "Lcom/android/internal/telephony/AdnRecord;",
++            "Lcom/android/internal/telephony/uicc/AdnRecord;",
+             ">;"
+         }
+     .end annotation
+@@ -270,7 +270,7 @@
+     return v0
+ .end method
+ 
+-.method public updateUsimPhoneBookRecordsByIndex(ILcom/android/internal/telephony/AdnRecord;I)Z
++.method public updateUsimPhoneBookRecordsByIndex(ILcom/android/internal/telephony/uicc/AdnRecord;I)Z
+     .locals 1
+     .parameter "efid"
+     .parameter "adn"
+@@ -289,14 +289,14 @@
+ 
+     check-cast v0, Lcom/android/internal/telephony/MiuiIccPhoneBookInterfaceManager;
+ 
+-    invoke-virtual {v0, p1, p2, p3}, Lcom/android/internal/telephony/MiuiIccPhoneBookInterfaceManager;->updateUsimPhoneBookRecordsByIndex(ILcom/android/internal/telephony/AdnRecord;I)Z
++    invoke-virtual {v0, p1, p2, p3}, Lcom/android/internal/telephony/MiuiIccPhoneBookInterfaceManager;->updateUsimPhoneBookRecordsByIndex(ILcom/android/internal/telephony/uicc/AdnRecord;I)Z
+ 
+     move-result v0
+ 
+     return v0
+ .end method
+ 
+-.method public updateUsimPhoneBookRecordsBySearch(ILcom/android/internal/telephony/AdnRecord;Lcom/android/internal/telephony/AdnRecord;)Z
++.method public updateUsimPhoneBookRecordsBySearch(ILcom/android/internal/telephony/uicc/AdnRecord;Lcom/android/internal/telephony/uicc/AdnRecord;)Z
+     .locals 1
+     .parameter "efid"
+     .parameter "oldAdn"
+@@ -315,7 +315,7 @@
+ 
+     check-cast v0, Lcom/android/internal/telephony/MiuiIccPhoneBookInterfaceManager;
+ 
+-    invoke-virtual {v0, p1, p2, p3}, Lcom/android/internal/telephony/MiuiIccPhoneBookInterfaceManager;->updateUsimPhoneBookRecordsBySearch(ILcom/android/internal/telephony/AdnRecord;Lcom/android/internal/telephony/AdnRecord;)Z
++    invoke-virtual {v0, p1, p2, p3}, Lcom/android/internal/telephony/MiuiIccPhoneBookInterfaceManager;->updateUsimPhoneBookRecordsBySearch(ILcom/android/internal/telephony/uicc/AdnRecord;Lcom/android/internal/telephony/uicc/AdnRecord;)Z
+ 
+     move-result v0
+ 
+diff -rup ../framework_ext/smali/com/android/internal/telephony/MiuiIccPhoneBookInterfaceManager.smali ../framework_ext/smali/com/android/internal/telephony/MiuiIccPhoneBookInterfaceManager.smali
+--- ../framework_ext/smali/com/android/internal/telephony/MiuiIccPhoneBookInterfaceManager.smali	2014-05-19 08:08:22.000000000 +0200
++++ ../framework_ext/smali/com/android/internal/telephony/MiuiIccPhoneBookInterfaceManager.smali	2014-05-16 16:55:13.000000000 +0200
+@@ -31,7 +31,7 @@
+         value = {
+             "Ljava/util/List",
+             "<",
+-            "Lcom/android/internal/telephony/AdnRecord;",
++            "Lcom/android/internal/telephony/uicc/AdnRecord;",
+             ">;"
+         }
+     .end annotation
+@@ -66,14 +66,14 @@
+ 
+     move-result-object v0
+ 
+-    check-cast v0, Lcom/android/internal/telephony/IccRecords;
++    check-cast v0, Lcom/android/internal/telephony/uicc/IccRecords;
+ 
+     .line 37
+-    .local v0, r:Lcom/android/internal/telephony/IccRecords;
++    .local v0, r:Lcom/android/internal/telephony/uicc/IccRecords;
+     if-eqz v0, :cond_0
+ 
+     .line 38
+-    invoke-virtual {v0}, Lcom/android/internal/telephony/IccRecords;->getAdnCache()Lcom/android/internal/telephony/AdnRecordCache;
++    invoke-virtual {v0}, Lcom/android/internal/telephony/uicc/IccRecords;->getAdnCache()Lcom/android/internal/telephony/uicc/AdnRecordCache;
+ 
+     move-result-object v1
+ 
+@@ -200,7 +200,7 @@
+             "(I)",
+             "Ljava/util/List",
+             "<",
+-            "Lcom/android/internal/telephony/AdnRecord;",
++            "Lcom/android/internal/telephony/uicc/AdnRecord;",
+             ">;"
+         }
+     .end annotation
+@@ -385,16 +385,16 @@
+     .local v1, response:Landroid/os/Message;
+     iget-object v3, p0, Lcom/android/internal/telephony/MiuiIccPhoneBookInterfaceManager;->mPhone:Lcom/android/internal/telephony/PhoneBase;
+ 
+-    invoke-virtual {v3}, Lcom/android/internal/telephony/PhoneBase;->getIccFileHandler()Lcom/android/internal/telephony/IccFileHandler;
++    invoke-virtual {v3}, Lcom/android/internal/telephony/PhoneBase;->getIccFileHandler()Lcom/android/internal/telephony/uicc/IccFileHandler;
+ 
+     move-result-object v0
+ 
+     .line 182
+-    .local v0, fh:Lcom/android/internal/telephony/IccFileHandler;
++    .local v0, fh:Lcom/android/internal/telephony/uicc/IccFileHandler;
+     if-eqz v0, :cond_0
+ 
+     .line 183
+-    invoke-virtual {v0, p1, v1}, Lcom/android/internal/telephony/IccFileHandler;->getEFLinearRecordSize(ILandroid/os/Message;)V
++    invoke-virtual {v0, p1, v1}, Lcom/android/internal/telephony/uicc/IccFileHandler;->getEFLinearRecordSize(ILandroid/os/Message;)V
+ 
+     .line 184
+     invoke-virtual {p0, v2}, Lcom/android/internal/telephony/MiuiIccPhoneBookInterfaceManager;->waitForResult(Ljava/util/concurrent/atomic/AtomicBoolean;)V
+@@ -411,7 +411,7 @@
+     return-object v3
+ 
+     .line 186
+-    .end local v0           #fh:Lcom/android/internal/telephony/IccFileHandler;
++    .end local v0           #fh:Lcom/android/internal/telephony/uicc/IccFileHandler;
+     .end local v1           #response:Landroid/os/Message;
+     .end local v2           #status:Ljava/util/concurrent/atomic/AtomicBoolean;
+     :catchall_0
+@@ -462,7 +462,7 @@
+     .line 149
+     iget-object v0, p0, Lcom/android/internal/telephony/MiuiIccPhoneBookInterfaceManager;->mPhone:Lcom/android/internal/telephony/PhoneBase;
+ 
+-    invoke-virtual {v0}, Lcom/android/internal/telephony/PhoneBase;->getIccFileHandler()Lcom/android/internal/telephony/IccFileHandler;
++    invoke-virtual {v0}, Lcom/android/internal/telephony/PhoneBase;->getIccFileHandler()Lcom/android/internal/telephony/uicc/IccFileHandler;
+ 
+     move-result-object v0
+ 
+@@ -502,17 +502,17 @@
+ 
+     move-result-object v0
+ 
+-    check-cast v0, Lcom/android/internal/telephony/UiccCardApplication;
++    check-cast v0, Lcom/android/internal/telephony/uicc/UiccCardApplication;
+ 
+     .line 154
+-    .local v0, app:Lcom/android/internal/telephony/UiccCardApplication;
++    .local v0, app:Lcom/android/internal/telephony/uicc/UiccCardApplication;
+     if-eqz v0, :cond_0
+ 
+-    invoke-virtual {v0}, Lcom/android/internal/telephony/UiccCardApplication;->getType()Lcom/android/internal/telephony/IccCardApplicationStatus$AppType;
++    invoke-virtual {v0}, Lcom/android/internal/telephony/uicc/UiccCardApplication;->getType()Lcom/android/internal/telephony/uicc/IccCardApplicationStatus$AppType;
+ 
+     move-result-object v2
+ 
+-    sget-object v3, Lcom/android/internal/telephony/IccCardApplicationStatus$AppType;->APPTYPE_USIM:Lcom/android/internal/telephony/IccCardApplicationStatus$AppType;
++    sget-object v3, Lcom/android/internal/telephony/uicc/IccCardApplicationStatus$AppType;->APPTYPE_USIM:Lcom/android/internal/telephony/uicc/IccCardApplicationStatus$AppType;
+ 
+     if-ne v2, v3, :cond_0
+ 
+@@ -670,12 +670,12 @@
+ 
+     .line 255
+     .local v5, response:Landroid/os/Message;
+-    new-instance v2, Lcom/android/internal/telephony/AdnRecord;
++    new-instance v2, Lcom/android/internal/telephony/uicc/AdnRecord;
+ 
+-    invoke-direct {v2, p2, p3}, Lcom/android/internal/telephony/AdnRecord;-><init>(Ljava/lang/String;Ljava/lang/String;)V
++    invoke-direct {v2, p2, p3}, Lcom/android/internal/telephony/uicc/AdnRecord;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+ 
+     .line 256
+-    .local v2, newAdn:Lcom/android/internal/telephony/AdnRecord;
++    .local v2, newAdn:Lcom/android/internal/telephony/uicc/AdnRecord;
+     iget-object v0, p0, Lcom/android/internal/telephony/MiuiIccPhoneBookInterfaceManager;->mAdnCache:Lcom/android/internal/telephony/MiuiAdnRecordCache;
+ 
+     move v1, p1
+@@ -684,7 +684,7 @@
+ 
+     move-object v4, p5
+ 
+-    invoke-virtual/range {v0 .. v5}, Lcom/android/internal/telephony/MiuiAdnRecordCache;->updateAdnByIndex(ILcom/android/internal/telephony/AdnRecord;ILjava/lang/String;Landroid/os/Message;)V
++    invoke-virtual/range {v0 .. v5}, Lcom/android/internal/telephony/MiuiAdnRecordCache;->updateAdnByIndex(ILcom/android/internal/telephony/uicc/AdnRecord;ILjava/lang/String;Landroid/os/Message;)V
+ 
+     .line 257
+     invoke-virtual {p0, v6}, Lcom/android/internal/telephony/MiuiIccPhoneBookInterfaceManager;->waitForResult(Ljava/util/concurrent/atomic/AtomicBoolean;)V
+@@ -700,7 +700,7 @@
+     return v0
+ 
+     .line 258
+-    .end local v2           #newAdn:Lcom/android/internal/telephony/AdnRecord;
++    .end local v2           #newAdn:Lcom/android/internal/telephony/uicc/AdnRecord;
+     .end local v5           #response:Landroid/os/Message;
+     .end local v6           #status:Ljava/util/concurrent/atomic/AtomicBoolean;
+     :catchall_0
+@@ -876,25 +876,25 @@
+ 
+     .line 231
+     .local v5, response:Landroid/os/Message;
+-    new-instance v2, Lcom/android/internal/telephony/AdnRecord;
++    new-instance v2, Lcom/android/internal/telephony/uicc/AdnRecord;
+ 
+-    invoke-direct {v2, p2, p3}, Lcom/android/internal/telephony/AdnRecord;-><init>(Ljava/lang/String;Ljava/lang/String;)V
++    invoke-direct {v2, p2, p3}, Lcom/android/internal/telephony/uicc/AdnRecord;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+ 
+     .line 232
+-    .local v2, oldAdn:Lcom/android/internal/telephony/AdnRecord;
+-    new-instance v3, Lcom/android/internal/telephony/AdnRecord;
++    .local v2, oldAdn:Lcom/android/internal/telephony/uicc/AdnRecord;
++    new-instance v3, Lcom/android/internal/telephony/uicc/AdnRecord;
+ 
+-    invoke-direct {v3, p4, p5}, Lcom/android/internal/telephony/AdnRecord;-><init>(Ljava/lang/String;Ljava/lang/String;)V
++    invoke-direct {v3, p4, p5}, Lcom/android/internal/telephony/uicc/AdnRecord;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+ 
+     .line 233
+-    .local v3, newAdn:Lcom/android/internal/telephony/AdnRecord;
++    .local v3, newAdn:Lcom/android/internal/telephony/uicc/AdnRecord;
+     iget-object v0, p0, Lcom/android/internal/telephony/MiuiIccPhoneBookInterfaceManager;->mAdnCache:Lcom/android/internal/telephony/MiuiAdnRecordCache;
+ 
+     move v1, p1
+ 
+     move-object v4, p6
+ 
+-    invoke-virtual/range {v0 .. v5}, Lcom/android/internal/telephony/MiuiAdnRecordCache;->updateAdnBySearch(ILcom/android/internal/telephony/AdnRecord;Lcom/android/internal/telephony/AdnRecord;Ljava/lang/String;Landroid/os/Message;)V
++    invoke-virtual/range {v0 .. v5}, Lcom/android/internal/telephony/MiuiAdnRecordCache;->updateAdnBySearch(ILcom/android/internal/telephony/uicc/AdnRecord;Lcom/android/internal/telephony/uicc/AdnRecord;Ljava/lang/String;Landroid/os/Message;)V
+ 
+     .line 234
+     invoke-virtual {p0, v6}, Lcom/android/internal/telephony/MiuiIccPhoneBookInterfaceManager;->waitForResult(Ljava/util/concurrent/atomic/AtomicBoolean;)V
+@@ -910,8 +910,8 @@
+     return v0
+ 
+     .line 235
+-    .end local v2           #oldAdn:Lcom/android/internal/telephony/AdnRecord;
+-    .end local v3           #newAdn:Lcom/android/internal/telephony/AdnRecord;
++    .end local v2           #oldAdn:Lcom/android/internal/telephony/uicc/AdnRecord;
++    .end local v3           #newAdn:Lcom/android/internal/telephony/uicc/AdnRecord;
+     .end local v5           #response:Landroid/os/Message;
+     .end local v6           #status:Ljava/util/concurrent/atomic/AtomicBoolean;
+     :catchall_0
+@@ -925,7 +925,7 @@
+     throw v0
+ .end method
+ 
+-.method public updateIccRecords(Lcom/android/internal/telephony/IccRecords;)V
++.method public updateIccRecords(Lcom/android/internal/telephony/uicc/IccRecords;)V
+     .locals 1
+     .parameter "iccRecords"
+ 
+@@ -934,7 +934,7 @@
+     if-eqz p1, :cond_0
+ 
+     .line 199
+-    invoke-virtual {p1}, Lcom/android/internal/telephony/IccRecords;->getAdnCache()Lcom/android/internal/telephony/AdnRecordCache;
++    invoke-virtual {p1}, Lcom/android/internal/telephony/uicc/IccRecords;->getAdnCache()Lcom/android/internal/telephony/uicc/AdnRecordCache;
+ 
+     move-result-object v0
+ 
+@@ -955,7 +955,7 @@
+     goto :goto_0
+ .end method
+ 
+-.method public updateUsimPhoneBookRecordsByIndex(ILcom/android/internal/telephony/AdnRecord;I)Z
++.method public updateUsimPhoneBookRecordsByIndex(ILcom/android/internal/telephony/uicc/AdnRecord;I)Z
+     .locals 8
+     .parameter "efid"
+     .parameter "adn"
+@@ -1035,7 +1035,7 @@
+ 
+     move v3, p3
+ 
+-    invoke-virtual/range {v0 .. v5}, Lcom/android/internal/telephony/MiuiAdnRecordCache;->updateAdnByIndex(ILcom/android/internal/telephony/AdnRecord;ILjava/lang/String;Landroid/os/Message;)V
++    invoke-virtual/range {v0 .. v5}, Lcom/android/internal/telephony/MiuiAdnRecordCache;->updateAdnByIndex(ILcom/android/internal/telephony/uicc/AdnRecord;ILjava/lang/String;Landroid/os/Message;)V
+ 
+     .line 113
+     invoke-virtual {p0, v6}, Lcom/android/internal/telephony/MiuiIccPhoneBookInterfaceManager;->waitForResult(Ljava/util/concurrent/atomic/AtomicBoolean;)V
+@@ -1064,7 +1064,7 @@
+     throw v0
+ .end method
+ 
+-.method public updateUsimPhoneBookRecordsBySearch(ILcom/android/internal/telephony/AdnRecord;Lcom/android/internal/telephony/AdnRecord;)Z
++.method public updateUsimPhoneBookRecordsBySearch(ILcom/android/internal/telephony/uicc/AdnRecord;Lcom/android/internal/telephony/uicc/AdnRecord;)Z
+     .locals 8
+     .parameter "efid"
+     .parameter "oldAdn"
+@@ -1144,7 +1144,7 @@
+ 
+     move-object v3, p3
+ 
+-    invoke-virtual/range {v0 .. v5}, Lcom/android/internal/telephony/MiuiAdnRecordCache;->updateAdnBySearch(ILcom/android/internal/telephony/AdnRecord;Lcom/android/internal/telephony/AdnRecord;Ljava/lang/String;Landroid/os/Message;)V
++    invoke-virtual/range {v0 .. v5}, Lcom/android/internal/telephony/MiuiAdnRecordCache;->updateAdnBySearch(ILcom/android/internal/telephony/uicc/AdnRecord;Lcom/android/internal/telephony/uicc/AdnRecord;Ljava/lang/String;Landroid/os/Message;)V
+ 
+     .line 132
+     invoke-virtual {p0, v6}, Lcom/android/internal/telephony/MiuiIccPhoneBookInterfaceManager;->waitForResult(Ljava/util/concurrent/atomic/AtomicBoolean;)V
+@@ -1188,7 +1188,7 @@
+ 
+     invoke-direct {v0, p2, p3, p4, p5}, Lcom/android/internal/telephony/MiuiAdnRecord;-><init>(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)V
+ 
+-    invoke-virtual {p0, p1, v0, p6}, Lcom/android/internal/telephony/MiuiIccPhoneBookInterfaceManager;->updateUsimPhoneBookRecordsByIndex(ILcom/android/internal/telephony/AdnRecord;I)Z
++    invoke-virtual {p0, p1, v0, p6}, Lcom/android/internal/telephony/MiuiIccPhoneBookInterfaceManager;->updateUsimPhoneBookRecordsByIndex(ILcom/android/internal/telephony/uicc/AdnRecord;I)Z
+ 
+     move-result v0
+ 
+@@ -1219,7 +1219,7 @@
+ 
+     invoke-direct {v1, p4, p5, p6, p7}, Lcom/android/internal/telephony/MiuiAdnRecord;-><init>(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)V
+ 
+-    invoke-virtual {p0, p1, v0, v1}, Lcom/android/internal/telephony/MiuiIccPhoneBookInterfaceManager;->updateUsimPhoneBookRecordsBySearch(ILcom/android/internal/telephony/AdnRecord;Lcom/android/internal/telephony/AdnRecord;)Z
++    invoke-virtual {p0, p1, v0, v1}, Lcom/android/internal/telephony/MiuiIccPhoneBookInterfaceManager;->updateUsimPhoneBookRecordsBySearch(ILcom/android/internal/telephony/uicc/AdnRecord;Lcom/android/internal/telephony/uicc/AdnRecord;)Z
+ 
+     move-result v0
+ 

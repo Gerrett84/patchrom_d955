@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:layout_gravity="center_vertical" android:id="@id/chkbox_selectAll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/select_all" style="@style/checkbox_multi_selection_size" />
+    <TextView android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/txt_selected" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/sp_quiet_mode_contact_selected_info" style="@style/checkbox_multi_selection_extra_size" />
+</LinearLayout>

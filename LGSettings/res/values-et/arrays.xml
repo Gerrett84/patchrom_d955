@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>America</item>
+        <item>Euroopa</item>
+        <item>Aafrika</item>
+        <item>Aasia</item>
+        <item>Austraalia</item>
+        <item>Vaikne Ookean</item>
+        <item>Kõik</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 sekundit</item>
+        <item>30 sekundit</item>
+        <item>1 minut</item>
+        <item>2 minutit</item>
+        <item>5 minutit</item>
+        <item>10 minutit</item>
+        <item>30 minutit</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries2_NORMAL">
+        <item>15 sekundit</item>
+        <item>30 sekundit</item>
+        <item>1 minut</item>
+        <item>2 minutit</item>
+        <item>5 minutit</item>
+        <item>10 minutit</item>
+        <item>Hoia ekraan sisselülitatult</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL">
+        <item>15 sekundit</item>
+        <item>30 sekundit</item>
+        <item>1 minut</item>
+        <item>2 minutit</item>
+        <item>5 minutit</item>
+        <item>10 minutit</item>
+        <item>15 minutit</item>
+        <item>Hoia ekraan sisselülitatult</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL_ex">
+        <item>15 sekundit</item>
+        <item>30 sek</item>
+        <item>1 min</item>
+        <item>2 minutit</item>
+        <item>5 min</item>
+        <item>10 min</item>
+        <item>15 min</item>
+        <item>Hoia ekraan sisselülitatult</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled">
+        <item>15 sekundit</item>
+        <item>30 sekundit</item>
+        <item>1 minut</item>
+        <item>2 minutit</item>
+        <item>5 minutit</item>
+        <item>10 minutit</item>
+        <item>15 minutit</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled_ex">
+        <item>15 sekundit</item>
+        <item>30 sek</item>
+        <item>1 min</item>
+        <item>2 minutit</item>
+        <item>5 min</item>
+        <item>10 min</item>
+        <item>15 min</item>
+    </string-array>
+    <string-array name="sp_pouch_default_clock_entries2_NORMAL">
+        <item>Kell 1</item>
+        <item>Kell 2</item>
+        <item>Kell 3</item>
+        <item>Kell 4</item>
+        <item>Kell 5</item>
+        <item>Kell 6</item>
+        <item>Kell 7</item>
+        <item>Kell 8</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries1_NORMAL">
+        <item>Analoog</item>
+        <item>Digitaalne</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_position_entries1_NORMAL">
+        <item>Kese</item>
+        <item>Ülaossa paremale</item>
+        <item>Ülaossa vasakule</item>
+        <item>Alumine parem</item>
+        <item>Alumine vasak</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_font_entries1_NORMAL">
+        <item>Fondi nimi 1</item>
+        <item>Fondi nimi 2</item>
+    </string-array>
+    <string-array name="sp_sound_profile_entries_NORMAL">
+        <item>Heli</item>
+        <item>Ainult värin</item>
+        <item>Hääletu</item>
+    </string-array>
+    <string-array name="dream_timeout_entries">
+        <item>Mitte kunagi</item>
+        <item>15 sekundit</item>
+        <item>30 sekundit</item>
+        <item>1 minut</item>
+        <item>2 minutit</item>
+        <item>5 minutit</item>
+        <item>10 minutit</item>
+        <item>30 minutit</item>
+    </string-array>
+    <string-array name="lock_after_timeout_entries">
+        <item>Kohe</item>
+        <item>5 sekundit</item>
+        <item>15 sekundit</item>
+        <item>30 sekundit</item>
+        <item>1 minut</item>
+        <item>2 minutit</item>
+        <item>5 minutit</item>
+        <item>10 minutit</item>
+        <item>30 minutit</item>
+    </string-array>
+    <string-array name="sp_lock_after_timeout_entries_NORMAL">
+        <item>Kohe</item>
+        <item>15 sekundit</item>
+        <item>30 sekundit</item>
+        <item>1 minut</item>
+        <item>2 minutit</item>
+        <item>10 minutit</item>
+        <item>30 minutit</item>
+    </string-array>
+    <string-array name="entries_font_size">
+        <item>&amp;lt;font size=16 align=middle>Väike&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>Taval.&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>Suur&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>Väga suur&amp;lt;/font></item>
+    </string-array>
+    <string-array name="sp_entries_font_size2">
+        <item>&amp;lt;font size=14 align=middle>Minimaalne&amp;lt;/font></item>
+        <item>&amp;lt;font size=16 align=middle>Väike&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>Keskmine&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>Suur&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>Väga suur&amp;lt;/font></item>
+        <item>&amp;lt;font size=27 align=middle>Maksimaalne&amp;lt;/font></item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>Väga aeglane</item>
+        <item>Aeglane</item>
+        <item>Taval.</item>
+        <item>Kiire</item>
+        <item>Väga kiire</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>Väga aeglane</item>
+        <item>Madal</item>
+        <item>Taval.</item>
+        <item>Kõrge</item>
+        <item>Väga kõrge</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Skannimine...</item>
+        <item>Ühenduse loomine...</item>
+        <item>Autentimine...</item>
+        <item>IP-aadressi hankimine...</item>
+        <item>Ühendatud</item>
+        <item>Edasi lükatud</item>
+        <item>Ühenduse katkestamine...</item>
+        <item>Ühendus on katkestatud</item>
+        <item>Nurjus</item>
+        <item>Blokeeritud</item>
+        <item>Ajutine halva ühenduse vältimine</item>
+        <item>Ajutine halva ühenduse vältimine</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Skannimine...</item>
+        <item>Ühendamine %1$s...</item>
+        <item>Autentimine võrguga %1$s…</item>
+        <item>IP-aadressi hankimine võrgust %1$s...</item>
+        <item>Ühendatud võrguga %1$s</item>
+        <item>Edasi lükatud</item>
+        <item>Ühenduse katkestamine võrguga %1$s…</item>
+        <item>Ühendus on katkestatud</item>
+        <item>Nurjus</item>
+        <item>Blokeeritud</item>
+        <item>Ajutine halva ühenduse vältimine</item>
+    </string-array>
+    <string-array name="wifi_ap_security">
+        <item>Ava</item>
+        <item>WPA PSK</item>
+        <item>WPA2 PSK</item>
+    </string-array>
+    <string-array name="wifi_p2p_wps_setup">
+        <item>Nupp</item>
+        <item>PIN sellest seadmest</item>
+    </string-array>
+    <string-array name="wifi_p2p_status">
+        <item>Ühendatud</item>
+        <item>Ühenduse loomine</item>
+        <item>Nurjus</item>
+        <item>Saadaval</item>
+        <item>Väljaspool ulatust</item>
+    </string-array>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>2 minutit</item>
+        <item>5 minutit</item>
+        <item>1 tund</item>
+        <item>Kunagi ei saabu ajalõpp</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Kehv</item>
+        <item>Normaalne</item>
+        <item>Hea</item>
+        <item>Suurepärane</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Alati</item>
+        <item>Ainult elektrivõrku ühendamisel</item>
+        <item>Wi-Fi on väljas (andmesidekasutuse tõttu)</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <item>Alati</item>
+        <item>Ainult elektrivõrku ühendamisel</item>
+        <item>Wi-Fi on väljas</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_entries">
+        <item>Automaatne</item>
+        <item>Ainult 5 GHz</item>
+        <item>Ainult 2.4 GHz</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>Kasutusaeg</item>
+        <item>Käivitusarv</item>
+        <item>Rakenduse nimi</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>Puudub</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_network_setup">
+        <item>Väljas</item>
+        <item>Nupp</item>
+        <item>PIN pääsupunktist</item>
+        <item>PIN sellest seadmest</item>
+    </string-array>
+    <string-array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>Staatiline</item>
+    </string-array>
+    <string-array name="wifi_proxy_settings">
+        <item>Puudub</item>
+        <item>Kasutusjuhend</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>Väljas</item>
+        <item>Märguanne</item>
+        <item>Vibratsioon</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>Puudub</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP või CHAP</item>
+    </string-array>
+    <string-array name="bearer_entries">
+        <item>LTE</item>
+        <item>eHRPD</item>
+        <item>Tundmatu</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Seadme sisemälu</item>
+        <item>Eemaldatav SD-kaart</item>
+        <item>Lase süsteemil otsustada</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>Alati</item>
+        <item>Mitte kunagi</item>
+        <item>Ainult helita režiimis</item>
+        <item>V.a hääletu režiim</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_titles">
+        <item>Lühike</item>
+        <item>Keskmine</item>
+        <item>Pikk</item>
+    </string-array>
+    <string-array name="hdcp_checking_titles">
+        <item>Mitte kunagi ei kontrolli</item>
+        <item>Kontrolli ainult DRM-sisu</item>
+        <item>Kontrollige alati</item>
+    </string-array>
+    <string-array name="hdcp_checking_summaries">
+        <item>Ära kasuta kunagi HDCP-kontrolli</item>
+        <item>Kasuta HDCP-kontrolli ainult DRM-sisu jaoks</item>
+        <item>Kasuta alati HDCP-kontrolli</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>Animatsioon välja</item>
+        <item>Animatsioon skaalal 0,5 x</item>
+        <item>Animatsioon skaalal 1x</item>
+        <item>Animatsioon skaalal 1.5x</item>
+        <item>Animatsioon skaalal 2x</item>
+        <item>Animatsioon skaalal 5x</item>
+        <item>Animatsioon skaalal 10x</item>
+    </string-array>
+    <string-array name="transition_animation_scale_entries">
+        <item>Animatsioon välja</item>
+        <item>Animatsioon skaalal 0,5 x</item>
+        <item>Animatsioon skaalal 1x</item>
+        <item>Animatsioon skaalal 1.5x</item>
+        <item>Animatsioon skaalal 2x</item>
+        <item>Animatsioon skaalal 5x</item>
+        <item>Animatsioon skaalal 10x</item>
+    </string-array>
+    <string-array name="animator_duration_scale_entries">
+        <item>Animatsioon välja</item>
+        <item>Animatsioon skaalal 0,5 x</item>
+        <item>Animatsioon skaalal 1x</item>
+        <item>Animatsioon skaalal 1.5x</item>
+        <item>Animatsioon skaalal 2x</item>
+        <item>Animatsioon skaalal 5x</item>
+        <item>Animatsioon skaalal 10x</item>
+    </string-array>
+    <string-array name="overlay_display_devices_entries">
+        <item>Puudub</item>
+        <item>720x480 mdpi</item>
+        <item>1280x720 tvdpi</item>
+        <item>1920x1080 xhdpi</item>
+        <item>1280 x 720 tvdpi ja 1920 x 1080 xhdpi</item>
+    </string-array>
+    <string-array name="enable_opengl_traces_entries">
+        <item>Puudub</item>
+        <item>Logcat</item>
+        <item>Süsteemijälg (graafiline)</item>
+        <item>GlGetErrori käsustik</item>
+    </string-array>
+    <string-array name="app_process_limit_entries">
+        <item>Standardne piirväärtus</item>
+        <item>Ühtki taustaprotsessi</item>
+        <item>Mitte rohkem kui 1 protsessi</item>
+        <item>Mitte rohkem kui 2 protsessi</item>
+        <item>Mitte rohkem kui 3 protsessi</item>
+        <item>Mitte rohkem kui 4 protsessi</item>
+    </string-array>
+    <string-array name="vpn_types_long">
+        <item>PPTP VPN</item>
+        <item>L2TP/IPSec VPN koos eelsisestatud võtmetega</item>
+        <item>L2TP/IPSec VPN koos sertidega</item>
+        <item>IPSeci VPN koos eelsisestatud võtmetega ja Xauth-autentimisega</item>
+        <item>IPSec VPN koos tunnistuste ja xauth autentimine</item>
+        <item>IPSec-i VPN koos sertide ja hübriidse autentimisega</item>
+    </string-array>
+    <string-array name="vpn_states">
+        <item>Ühendus on katkestatud</item>
+        <item>Alustamine…</item>
+        <item>Ühenduse loomine...</item>
+        <item>Ühendatud</item>
+        <item>Aegumine</item>
+        <item>Nurjus</item>
+    </string-array>
+    <string-array name="security_settings_premium_sms_values">
+        <item>Küsi</item>
+        <item>Ära luba kunagi</item>
+        <item>Luba alati</item>
+    </string-array>
+    <string-array name="search_filter">
+        <item>Kõik seadmed</item>
+        <item>Peakomplekt</item>
+        <item>PC</item>
+        <item>Telefon</item>
+        <item>Välisseade</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries_NORMAL">
+        <item>Kasutajapilt</item>
+        <item>Kell 1</item>
+        <item>Kell 2</item>
+        <item>Kell 3</item>
+        <item>Kell 4</item>
+        <item>Kell 5</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL">
+        <item>1.5 sekundit</item>
+        <item>3 sekundit</item>
+        <item>5 sekundit</item>
+        <item>Alati sees</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL_ex">
+        <item>1.5 Sek.</item>
+        <item>3 sek</item>
+        <item>5 sek</item>
+        <item>Alati sees</item>
+    </string-array>
+    <string-array name="sp_front_key_light_l1_NORMAL">
+        <item>3 sekundit</item>
+        <item>6 sekundit</item>
+        <item>10 sekundit</item>
+        <item>30 sekundit</item>
+        <item>Alati sees</item>
+    </string-array>
+    <string-array name="sp_front_key_light_att_NORMAL">
+        <item>3 sek</item>
+        <item>1 Sek.</item>
+        <item>10 sek</item>
+        <item>30 sek</item>
+        <item>Alati sees</item>
+    </string-array>
+    <string-array name="sp_numlocdisp_entries_NORMAL">
+        <item>Keela</item>
+        <item>Luba</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_NORMAL">
+        <item>Privaatsuse hoiatus</item>
+        <item>Kui peaksite kasutama kolmandate osapoolte rakendusi, siis võib see te isikuteavet rakenduse omaniku või mõne muu kolmanda osapoole huvides otse koguda või nõuda te operaatorilt isikuteabe avalikustamist.</item>
+        <item>Millised privaatsuspõhimõtted rakendatakse? Teie võrguoperaatori privaatsuspõhimõtteid ja kasutusnõudeid ei rakendata telefoni kasutatud rakendustele, milles on hangitud ainult 3-ndatelt osapooltelt. 3-ndate osapoolte põhimõtted rakendatakse selle rakenduse kasutamisel.</item>
+        <item>Kust leiaksin ma rohkem teavet 3-ndate osapoolte põhimõtete kohta? Lugeege rakenduse kasutamise nõudeid ja/või rakenduse pakkuja põhimõtteid, et saada rohkem teavet selle kohta, kuidas rakendus kogub, pääseb juurde ja avalikustab te teavet. Privaatsuspoliitika, kasutusnõuded ja muud teatised PEAKSID OLEMA tarbijale saadaval rakenduse pakkuja veebisaidil. Veenduge, et enne rakenduse kasutamist need põhimõtted teile kindlasti sobivad oleksid.</item>
+        <item>Kust võin ma leida oma võrguoperaatori privaatsuspõhimõtted? Eriti aga, kui teil tekivad küsimused võrguoperaatori privaatsuspõhimõtete kohta, siis külastage operaatori kodulehte ja klõpsake linki „Privaatsuspõhimõtted”.</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_spr_NORMAL">
+        <item>Sprindi privaatsusalarm</item>
+        <item>"Kui kasutate kolmandate osapoolte rakendusi, siis võib see koguda isikuteavet või nõuda, et Sprint'i avalikustaks te isikuteabe, k.a asukohateabe (kui on asjakohane) kas rakenduse omanikule või muule kolmandale osapoolele."</item>
+        <item>Millised privaatsuspõhimõtted rakendatakse? Sprindi privaatsuspõhimõtted ja kasutusnõudeid ei rakendata telefonis kasutatud rakendustele, mida pakuvad ainult 3-ndad osapooled.</item>
+        <item>Kust leiaksin ma rohkem teavet 3-ndate osapoolte põhimõtete kohta? Et saada rohkem teavet selle kohta, kuidas rakendus kogub, pääseb juurde ja avalikustab te teavet, lugege rakenduse kasutamise nõudeid ja/või rakenduse pakkuja põhimõtteid. Privaatsuspoliitika, kasutusnõuded ja muud teatised PEAKSID OLEMA tarbijale saadaval rakenduse pakkuja veebisaidil. Veenduge, et need põhimõtted oleksid enne rakenduse kasutamist teile kindlasti sobivad.</item>
+        <item>"Kust võin ma leida oma Sprint'i privaatsuspõhimõtted? Eriti aga, kui teil tekivad küsimused Sprint'i privaatsuspõhimõtete kohta, siis külastage veebisaiti Sprint.com ja klõpsake linki „Privaatsuspõhimõtted”."</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_bm_NORMAL">
+        <item>"Boost Mobile'i privaatsusehoiatus"</item>
+        <item>"Kui kasutate kolmandate osapoolte rakendusi, siis võib see koguda isikuteavet või nõuda, et Boost Mobile'i avalikustaks te isikuteabe, k.a asukohateabe (kui on asjakohane) kas rakenduse omanikule või muule kolmandale osapoolele."</item>
+        <item>"Millised privaatsuspõhimõtted rakendatakse? Boost Mobile'i privaatsuspõhimõtteid ja kasutusnõudeid ei rakendata telefonis kasutatud rakendustele, mida pakuvad ainult 3-ndad osapooled."</item>
+        <item>Kust leiaksin ma rohkem teavet 3-ndate osapoolte põhimõtete kohta? Et saada rohkem teavet selle kohta, kuidas rakendus kogub, pääseb juurde ja avalikustab te teavet, lugege rakenduse kasutamise nõudeid ja/või rakenduse pakkuja põhimõtteid. Privaatsuspoliitika, kasutusnõuded ja muud teatised PEAKSID OLEMA tarbijale saadaval rakenduse pakkuja veebisaidil. Veenduge, et need põhimõtted oleksid enne rakenduse kasutamist teile kindlasti sobivad.</item>
+        <item>"Kust võin ma leida Boost Mobile'i privaatsuspõhimõtted? Eriti aga, kui teil tekivad küsimused Boost Mobile'i privaatsuspõhimõtete kohta, siis külastage veebisaiti Boost Mobile.com ja klõpsake linki „Privaatsuspõhimõtted”."</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_virgin_NORMAL">
+        <item>"Virgin Mobile'i privaatsusehoiatus"</item>
+        <item>"Kui kasutate kolmandate osapoolte rakendusi, siis võib see koguda isikuteavet või nõuda, et Virgin Mobile'i avalikustaks te isikuteabe, k.a asukohateabe (kui on asjakohane) kas rakenduse omanikule või muule kolmandale osapoolele."</item>
+        <item>"Millised privaatsuspõhimõtted rakendatakse? Virgin Mobile'i privaatsuspõhimõtted ja kasutusnõudeid ei rakendata telefonis kasutatud rakendustele, mida pakuvad ainult 3-ndad osapooled. 3-ndate osapoolte põhimõtted rakendatakse selle rakenduse kasutamisel."</item>
+        <item>Kust leiaksin ma rohkem teavet 3-ndate osapoolte põhimõtete kohta? Et saada rohkem teavet selle kohta, kuidas rakendus kogub, pääseb juurde ja avalikustab te teavet, lugege rakenduse kasutamise nõudeid ja/või rakenduse pakkuja põhimõtteid. Privaatsuspoliitika, kasutusnõuded ja muud teatised PEAKSID OLEMA tarbijale saadaval rakenduse pakkuja veebisaidil. Veenduge, et need põhimõtted oleksid enne rakenduse kasutamist teile kindlasti sobivad.</item>
+        <item>"Kust võin ma leida Virgin Mobile'i privaatsuspõhimõtted? Eriti aga, kui teil tekivad küsimused Virgin Mobile'i privaatsuspõhimõtete kohta, siis külastage veebisaiti VirginMobileUSA.com ja klõpsake linki „Privaatsuspõhimõtted”."</item>
+    </string-array>
+    <string-array name="sp_lock_screen_effect_entries_NORMAL">
+        <item>Põhiline</item>
+        <item>Majandust lehtedega</item>
+        <item>Leviku tint</item>
+        <item>Dewdrop</item>
+    </string-array>
+    <string-array name="sp_power_save_brightness_entries_NORMAL">
+        <item>10% heledus</item>
+        <item>20% heledus</item>
+        <item>30% heledus</item>
+        <item>50% heledus</item>
+    </string-array>
+    <string-array name="sp_power_save_screen_timeout_entries_NORMAL">
+        <item>15 sekundit</item>
+        <item>30 sekundit</item>
+        <item>1 minut</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_NORMAL">
+        <item>1.5 sekundit</item>
+        <item>Alati väljas</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_att_NORMAL">
+        <item>3 sekundit</item>
+        <item>Alati väljas</item>
+    </string-array>
+    <string-array name="sp_power_save_mode_entries_NORMAL">
+        <item>10% akust.</item>
+        <item>20% akust.</item>
+        <item>30% akust.</item>
+        <item>50% akust.</item>
+    </string-array>
+    <string-array name="sp_power_save_mode2_entries_NORMAL">
+        <item>Kohe</item>
+        <item>10% akust.</item>
+        <item>20% akust.</item>
+        <item>30% akust.</item>
+        <item>50% akust.</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries">
+        <item>5 minutit</item>
+        <item>10 minutit</item>
+        <item>15 minutit</item>
+    </string-array>
+    <string-array name="sp_hotspot_timeout_entries_mx_NORMAL">
+        <item>Ära lülita taimauti kunagi sisse</item>
+        <item>5 min</item>
+        <item>10 min</item>
+        <item>15 min</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries_jb">
+        <item>5 min</item>
+        <item>10 min</item>
+        <item>15 min</item>
+        <item>30 min</item>
+        <item>Mitte kunagi</item>
+    </string-array>
+    <string-array name="wifi_p2p_timeout_entries">
+        <item>15 min</item>
+        <item>30 min</item>
+        <item>Mitte kunagi</item>
+    </string-array>
+    <string-array name="sp_wifi_ap_visibility_NORMAL">
+        <item>Kuva</item>
+        <item>Peida</item>
+    </string-array>
+    <string-array name="sp_bt_search_filter_SHORT">
+        <item>Kõik seadmed</item>
+        <item>Peakomplekt</item>
+        <item>Mobile phone</item>
+        <item>Arvuti</item>
+        <item>Klaviatuur, hiir jne</item>
+    </string-array>
+    <string-array name="wifi_signal_strength_entries">
+        <item>Tugev</item>
+        <item>Keskmine</item>
+        <item>Nõrk</item>
+        <item>Väljas</item>
+    </string-array>
+    <string-array name="wifi_Dual_band_AP_connection_entries">
+        <item>Autom.</item>
+        <item>5 GHz</item>
+        <item>2.4 GHz</item>
+    </string-array>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Spinner android:id="@id/spn_country" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <Spinner android:id="@id/spn_oper" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <Button android:id="@id/btn_change" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/lockpattern_confirm_button_text" />
+    <TextView android:id="@id/edt_changed" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

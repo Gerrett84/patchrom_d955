@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:title="@string/sp_quiet_time_NORMAL"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/time_selector_group" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:id="@id/schedule_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sp_time_NORMAL" android:includeFontPadding="false" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/quiet_time_buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+                <Button android:id="@id/set_time_start" android:padding="0.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_weight="4.0" />
+                <TextView android:textSize="20.0sp" android:gravity="center" android:id="@id/to" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/sp_tilde_NORMAL" android:includeFontPadding="false" android:layout_weight="1.0" />
+                <Button android:id="@id/set_time_end" android:padding="0.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_weight="4.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

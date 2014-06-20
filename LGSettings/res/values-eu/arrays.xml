@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>Amerika</item>
+        <item>Europa</item>
+        <item>Afrika</item>
+        <item>Asia</item>
+        <item>Australia</item>
+        <item>Pazifikoa</item>
+        <item>Dena</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 segundu</item>
+        <item>30 segundu</item>
+        <item>Minutu 1</item>
+        <item>2 minutu</item>
+        <item>5 minutu</item>
+        <item>10 minutu</item>
+        <item>30 minutu</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries2_NORMAL">
+        <item>15 segundu</item>
+        <item>30 segundu</item>
+        <item>Minutu 1</item>
+        <item>2 minutu</item>
+        <item>5 minutu</item>
+        <item>10 minutu</item>
+        <item>Pantaila piztuta eduki</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL">
+        <item>15 segundu</item>
+        <item>30 segundu</item>
+        <item>Minutu 1</item>
+        <item>2 minutu</item>
+        <item>5 minutu</item>
+        <item>10 minutu</item>
+        <item>15 minutu</item>
+        <item>Pantaila piztuta eduki</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL_ex">
+        <item>15 s</item>
+        <item>30 seg.</item>
+        <item>Min. 1</item>
+        <item>2 min</item>
+        <item>5 min</item>
+        <item>10 min.</item>
+        <item>15min</item>
+        <item>Pantaila piztuta eduki</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled">
+        <item>15 segundu</item>
+        <item>30 segundu</item>
+        <item>Minutu 1</item>
+        <item>2 minutu</item>
+        <item>5 minutu</item>
+        <item>10 minutu</item>
+        <item>15 minutu</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled_ex">
+        <item>15 s</item>
+        <item>30 seg.</item>
+        <item>Min. 1</item>
+        <item>2 min</item>
+        <item>5 min</item>
+        <item>10 min.</item>
+        <item>15min</item>
+    </string-array>
+    <string-array name="sp_pouch_default_clock_entries2_NORMAL">
+        <item>Erlojua 1</item>
+        <item>Erlojua 2</item>
+        <item>Erlojua 3</item>
+        <item>Erlojua 4</item>
+        <item>Erlojua 5</item>
+        <item>Erlojua 6</item>
+        <item>Erlojua 7</item>
+        <item>Erlojua 8</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries1_NORMAL">
+        <item>Analogikoa</item>
+        <item>Digitala</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_position_entries1_NORMAL">
+        <item>Erdialdea</item>
+        <item>Superior derecha</item>
+        <item>Superior izquierda</item>
+        <item>Behean, eskuinean</item>
+        <item>Behean, ezkerrean</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_font_entries1_NORMAL">
+        <item>Fuente nombre1</item>
+        <item>Fuente nombre2</item>
+    </string-array>
+    <string-array name="sp_sound_profile_entries_NORMAL">
+        <item>Soinua</item>
+        <item>Soilik bibrazioa</item>
+        <item>Isilik</item>
+    </string-array>
+    <string-array name="dream_timeout_entries">
+        <item>Inoiz ez</item>
+        <item>15 segundu</item>
+        <item>30 segundu</item>
+        <item>Minutu 1</item>
+        <item>2 minutu</item>
+        <item>5 minutu</item>
+        <item>10 minutu</item>
+        <item>30 minutu</item>
+    </string-array>
+    <string-array name="lock_after_timeout_entries">
+        <item>Berehala</item>
+        <item>5 seg.</item>
+        <item>15 segundu</item>
+        <item>30 segundu</item>
+        <item>Minutu 1</item>
+        <item>2 minutu</item>
+        <item>5 minutu</item>
+        <item>10 minutu</item>
+        <item>30 minutu</item>
+    </string-array>
+    <string-array name="sp_lock_after_timeout_entries_NORMAL">
+        <item>Berehala</item>
+        <item>15 segundu</item>
+        <item>30 segundu</item>
+        <item>Minutu 1</item>
+        <item>2 minutu</item>
+        <item>10 minutu</item>
+        <item>30 minutu</item>
+    </string-array>
+    <string-array name="entries_font_size">
+        <item>&amp;lt;font size=16 align=middle>Txikia&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>Arrunta&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>Handia&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>Extra grande&amp;lt;/font></item>
+    </string-array>
+    <string-array name="sp_entries_font_size2">
+        <item>&amp;lt;font size=14 align=middle>Gutxienez&amp;lt;/font></item>
+        <item>&amp;lt;font size=16 align=middle>Txikia&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>Ertaina&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>Handia&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>Oso handia&amp;lt;/font></item>
+        <item>&amp;lt;font size=27 align=middle>Gehienez&amp;lt;/font></item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>Oso geldoa</item>
+        <item>Geldoa</item>
+        <item>Arrunta</item>
+        <item>Bizkorra</item>
+        <item>Oso bizkorra</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>Oso baxua</item>
+        <item>Txikia</item>
+        <item>Arrunta</item>
+        <item>High</item>
+        <item>Oso altua</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Bilatzen...</item>
+        <item>Konektatzen...</item>
+        <item>Autentifikatzen...</item>
+        <item>IP helbidea eskuratzen...</item>
+        <item>Konektatuta</item>
+        <item>Suspendituta</item>
+        <item>Desgaitzen...</item>
+        <item>Deskonektatuta</item>
+        <item>Ez da burutu</item>
+        <item>Blokeatuta</item>
+        <item>Momentuz konexio txarrak ekiditen</item>
+        <item>Momentuz konexio txarrak ekiditen</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Bilatzen...</item>
+        <item>Hona konektatua %1$s...</item>
+        <item>Honekin autentikatzen: %1$s…</item>
+        <item>IP helbidea lortzen honako helbide honetatik %1$s...</item>
+        <item>Honi konektatuta: %1$s</item>
+        <item>Suspendituta</item>
+        <item>Hemendik deskonektatzen: %1$s…</item>
+        <item>Deskonektatuta</item>
+        <item>Ez da burutu</item>
+        <item>Blokeatuta</item>
+        <item>Momentuz konexio txarrak ekiditen</item>
+    </string-array>
+    <string-array name="wifi_ap_security">
+        <item>Ireki</item>
+        <item>WPA PSK</item>
+        <item>WPA2 PSK</item>
+    </string-array>
+    <string-array name="wifi_p2p_wps_setup">
+        <item>Push botoia</item>
+        <item>PINa gailu honetatik</item>
+    </string-array>
+    <string-array name="wifi_p2p_status">
+        <item>Konektatuta</item>
+        <item>Konektatzen</item>
+        <item>Ez da burutu</item>
+        <item>Erabilgarri</item>
+        <item>Estalduratik kanpo</item>
+    </string-array>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>2 minutu</item>
+        <item>5 minutu</item>
+        <item>Ordu 1</item>
+        <item>"Denbora sekula ez mugatu "</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Behe-</item>
+        <item>Nahikoa</item>
+        <item>Ona</item>
+        <item>Excellent</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Beti</item>
+        <item>Bakarrik entxufatuta dagoenean</item>
+        <item>Wi-Fi itzalita dago (datuen erabileraren ondorioz)</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <item>Beti</item>
+        <item>Bakarrik entxufatuta dagoenean</item>
+        <item>Wi-Fi itzalita dago</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_entries">
+        <item>automatikoa</item>
+        <item>5 GHz soilik</item>
+        <item>2.4 GHz soilik</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>Erabilera-denbora</item>
+        <item>Hasieren kontaketa</item>
+        <item>Aplikazioaren izena</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>Ezein ere</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_network_setup">
+        <item>Deskonektatuta</item>
+        <item>Push botoia</item>
+        <item>PINa sarbide-puntutik</item>
+        <item>PINa gailu honetatik</item>
+    </string-array>
+    <string-array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>Estatikoa</item>
+    </string-array>
+    <string-array name="wifi_proxy_settings">
+        <item>Ezein ere</item>
+        <item>Manual</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>Deskonektatuta</item>
+        <item>Alerta</item>
+        <item>Bibrazioa</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>Ezein ere</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP edo CHAP</item>
+    </string-array>
+    <string-array name="bearer_entries">
+        <item>LTE</item>
+        <item>eHRPD</item>
+        <item>Zehaztu gabe</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Gailu barneko biltegiratzea</item>
+        <item>SD txartela ateragarria</item>
+        <item>Utzi sistemari erbakitzen</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>Beti</item>
+        <item>Inoiz ez</item>
+        <item>Isilik moduan soilik</item>
+        <item>Isilik moduan ez dagoenean soilik</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_titles">
+        <item>Short</item>
+        <item>Ertaina</item>
+        <item>Long</item>
+    </string-array>
+    <string-array name="hdcp_checking_titles">
+        <item>Sekula ez egiaztatu</item>
+        <item>DRM edukiak bakarrik</item>
+        <item>"Erabili beti egiaztapena "</item>
+    </string-array>
+    <string-array name="hdcp_checking_summaries">
+        <item>HDCPa sekula ez egiaztatu</item>
+        <item>HDCP egiaztapena DRM edukientzako erabili soilik</item>
+        <item>"Erabili beti HDCP egiaztapena "</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>Animazioa desaktibatu</item>
+        <item>Animazio eskala .5x</item>
+        <item>Animazio eskala 1x</item>
+        <item>Animazio eskala 1.5x</item>
+        <item>Animazio eskala 2x</item>
+        <item>Animazio eskala 5x</item>
+        <item>Animazio eskala 10x</item>
+    </string-array>
+    <string-array name="transition_animation_scale_entries">
+        <item>Animazioa desaktibatu</item>
+        <item>Animazio eskala .5x</item>
+        <item>Animazio eskala 1x</item>
+        <item>Animazio eskala 1.5x</item>
+        <item>Animazio eskala 2x</item>
+        <item>Animazio eskala 5x</item>
+        <item>Animazio eskala 10x</item>
+    </string-array>
+    <string-array name="animator_duration_scale_entries">
+        <item>Animazioa desaktibatu</item>
+        <item>Animazio eskala .5x</item>
+        <item>Animazio eskala 1x</item>
+        <item>Animazio eskala 1.5x</item>
+        <item>Animazio eskala 2x</item>
+        <item>Animazio eskala 5x</item>
+        <item>Animazio eskala 10x</item>
+    </string-array>
+    <string-array name="overlay_display_devices_entries">
+        <item>Ezein ere</item>
+        <item>720x480 mdpi</item>
+        <item>1280x720 tvdpi</item>
+        <item>1920x1080 xhdpi</item>
+        <item>1280x720 tvdpi eta 1920x1080 xhdpi</item>
+    </string-array>
+    <string-array name="enable_opengl_traces_entries">
+        <item>Ezein ere</item>
+        <item>Logcat</item>
+        <item>Systrace (Grafikoak)</item>
+        <item>Deia glGetError-en metatu</item>
+    </string-array>
+    <string-array name="app_process_limit_entries">
+        <item>Muga estandarra</item>
+        <item>Atzealdeko prozesurik ez</item>
+        <item>Gehienez 1 prozesu</item>
+        <item>Gehienez 2 prozesu</item>
+        <item>Gehienez 3 prozesu</item>
+        <item>Gehienez 4 prozesu</item>
+    </string-array>
+    <string-array name="vpn_types_long">
+        <item>PPTP VPN</item>
+        <item>L2TP/IPSec VPN aurrez partekatutako gakoekin</item>
+        <item>L2TP/IPSec VPN ziurtagiriekin</item>
+        <item>IPSec VPN aurrez partekatutako gakoekin eta Xauth autentifikazioarekin</item>
+        <item>IPSec VPN ziurtagiriekin eta Xauth autentifikazioarekin</item>
+        <item>IPSec VPN ziurtagiriekin eta hybrid autentifikazioarekin</item>
+    </string-array>
+    <string-array name="vpn_states">
+        <item>Deskonektatuta</item>
+        <item>Hasieratzen...</item>
+        <item>Konektatzen...</item>
+        <item>Konektatuta</item>
+        <item>Denbora igaro da</item>
+        <item>Ez da burutu</item>
+    </string-array>
+    <string-array name="security_settings_premium_sms_values">
+        <item>Galdetu</item>
+        <item>Ez utzi behin ere</item>
+        <item>Onartu beti</item>
+    </string-array>
+    <string-array name="search_filter">
+        <item>Gailu guztiak</item>
+        <item>Aurikularrak</item>
+        <item>PC</item>
+        <item>Telefonoa</item>
+        <item>Periferikoa</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries_NORMAL">
+        <item>Imagen de usuario</item>
+        <item>Erlojua 1</item>
+        <item>Erlojua 2</item>
+        <item>Erlojua 3</item>
+        <item>Erlojua 4</item>
+        <item>Erlojua 5</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL">
+        <item>1.5 segundu</item>
+        <item>3 seg.</item>
+        <item>5 seg.</item>
+        <item>Beti aktibatuta</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL_ex">
+        <item>1.5 s</item>
+        <item>3 seg.</item>
+        <item>5 seg.</item>
+        <item>Beti aktibatuta</item>
+    </string-array>
+    <string-array name="sp_front_key_light_l1_NORMAL">
+        <item>3 seg.</item>
+        <item>6 segundu</item>
+        <item>10 segundu</item>
+        <item>30 segundu</item>
+        <item>Beti aktibatuta</item>
+    </string-array>
+    <string-array name="sp_front_key_light_att_NORMAL">
+        <item>3 seg.</item>
+        <item>1 s</item>
+        <item>10 seg.</item>
+        <item>30 seg.</item>
+        <item>Beti aktibatuta</item>
+    </string-array>
+    <string-array name="sp_numlocdisp_entries_NORMAL">
+        <item>Desgaitu</item>
+        <item>Gaitu</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_NORMAL">
+        <item>Pribatutasun-alerta</item>
+        <item>Hirugarrenen aplikazioa bat erabiltzen baduzu, baliteke informazio pertsonal guztia zuzenean biltzea edo zure operadoreari zure informazio pertsonala emateko eska diezaioke, baita kokapen-informazioa ere (aplika badaiteke), aplikazio-hornitzaileari edo beste hirugarren bati.</item>
+        <item>Zein pribatutasun-politika aplikatzen zaio? Eramailearen pribatutasun-gidalerroak eta erabilera-baldintzak ez die hirugarrenek soilik emandako telefonoko aplikazioei eragiten. Hirugarrenen gidalerroek zure aplikazio-erabilerari soilik eragiten dio.</item>
+        <item>Non aurki dezaket hirugarrenen gidalerroei buruzko informazio gehiago? Begiratu aplikazioen erabilera-baldintzak eta/edo aplikazio-hornitzailearen gidalerroak, aplikazioak zure informazioa nola bildu, atzitu, erabili eta erakutsiko duenari buruzko informazio gehiago eskuratzeko. Baliteke Pribatutasun-gidalerroak, erabilera-baldintzak eta beste kontsumo-aholku batzuk hornitzailearen webgunean egotea. Ziurtatu gidalerroekin bat zatozela aplikazioa erabili aurretik.</item>
+        <item>Non aurki ditzaket nire operadorearen Pribatutasun-gidalerroak? Bestela, operadorearen Pribatutasun-gidalerroei buruzko galderarik izanez gero, bisitatu operadorearen hasierako orria eta sakatu “Pribatutasun-gidalerroak” esteka.</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_spr_NORMAL">
+        <item>Sprint Privacy Alert</item>
+        <item>Hirugarren baten aplikazioa erabiltzen baduzu, baliteke zure informazioa batzea edo Mugikorra handitzea zure informazio pertsonala lortzeko, kokapena barne (dagokionean), aplikazio hornitzaileari edo beste norbaiti.</item>
+        <item>"Which Privacy Policy Applies? Sprint's Privacy Policy and Terms of Use do not apply to apps on your handset that are solely provided by 3rd parties. The 3rd party's policies apply to your use of this app."</item>
+        <item>¿Dónde puedo encontrar más información acerca de Políticas de 3ras partes? Revise los términos de uso de la aplic. y/o las políticas del proveedor de aplic. para más información acerca de cómo la aplic. recolectará, accederá, usará y divulgará su información. Las Políticas de Privacidad, Términos de Uso y otros avisos al consumidor PUEDEN ESTAR disponibles en el sitio Web del proveedor. Asegúrese de estar cómodo con las políticas antes de usar una aplic.</item>
+        <item>¿Dónde puedo encontrar la Política de Privacidad de Sprint? Separadamente, si tiene preguntas acerca de la Política de Privacidad de Sprint, visite Sprint.com y haga clic en el enlace \"Política de Privacidad\".</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_bm_NORMAL">
+        <item>Mugikorra Handitu Pribatutasun Alerta</item>
+        <item>Hirugarren baten aplikazioa erabiltzen baduzu, baliteke zure informazioa batzea edo Mugikorra handitzea zure informazio pertsonala lortzeko, kokapena barne (dagokionean), aplikazio hornitzaileari edo beste norbaiti.</item>
+        <item>"Which Privacy Policy Applies? Boost Mobile's Privacy Policy and Terms of Use do not apply to apps on your handset that are solely provided by 3rd parties. The 3rd party's policies apply to your use of this app."</item>
+        <item>¿Dónde puedo encontrar más información acerca de Políticas de 3ras partes? Revise los términos de uso de la aplic. y/o las políticas del proveedor de aplic. para más información acerca de cómo la aplic. recolectará, accederá, usará y divulgará su información. Las Políticas de Privacidad, Términos de Uso y otros avisos al consumidor PUEDEN ESTAR disponibles en el sitio Web del proveedor. Asegúrese de estar cómodo con las políticas antes de usar una aplic.</item>
+        <item>¿Dónde puedo encontrar la Política de Privacidad de Boost Mobile? Separadamente, si tiene preguntas acerca de la Política de Privacidad de Boost Mobile, visite Boost Mobile.com y haga clic en el enlace \"Política de Privacidad\".</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_virgin_NORMAL">
+        <item>Virgin Mobile Pribatutasun alerta</item>
+        <item>Hirugarren baten aplikazioa erabiltzen baduzu, baliteke zure informazioa batzea edo Mugikorra handitzea zure informazio pertsonala lortzeko, kokapena barne (dagokionean), aplikazio hornitzaileari edo beste norbaiti.</item>
+        <item>Zein pribatutasun politika aplikatzen dira? Virgin Mobile-ren Pribatutasun Politika eta Erabilera Terminoak ez dira aplikatuko besteen aplikazioei. Aplikazio horiei hirugarren horien politikak aplikatuko zaizkie.</item>
+        <item>¿Dónde puedo encontrar más información acerca de Políticas de 3ras partes? Revise los términos de uso de la aplic. y/o las políticas del proveedor de aplic. para más información acerca de cómo la aplic. recolectará, accederá, usará y divulgará su información. Las Políticas de Privacidad, Términos de Uso y otros avisos al consumidor PUEDEN ESTAR disponibles en el sitio Web del proveedor. Asegúrese de estar cómodo con las políticas antes de usar una aplic.</item>
+        <item>Non irakur dezaket Virgin Mobile-ren Pribatutasun politika? Virgin Mobile-ren pribatutasun politikari buruzko galderarik baduzu, sartu VirginMobileUSA.com gunean eta sakatu \"Prbatutasun Politika\" esteka.</item>
+    </string-array>
+    <string-array name="sp_lock_screen_effect_entries_NORMAL">
+        <item>Oinarrizko</item>
+        <item>Uhinak</item>
+        <item>Tinta zabaltzen</item>
+        <item>Ihintza</item>
+    </string-array>
+    <string-array name="sp_power_save_brightness_entries_NORMAL">
+        <item>Distira %10</item>
+        <item>Distira %20</item>
+        <item>Distira %30</item>
+        <item>Distira %50</item>
+    </string-array>
+    <string-array name="sp_power_save_screen_timeout_entries_NORMAL">
+        <item>15 segundu</item>
+        <item>30 segundu</item>
+        <item>Minutu 1</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_NORMAL">
+        <item>1.5 segundu</item>
+        <item>Beti desaktibatuta</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_att_NORMAL">
+        <item>3 seg.</item>
+        <item>Beti desaktibatuta</item>
+    </string-array>
+    <string-array name="sp_power_save_mode_entries_NORMAL">
+        <item>Bateria %10</item>
+        <item>Bateria %20</item>
+        <item>Bateria %30</item>
+        <item>Bateria %50</item>
+    </string-array>
+    <string-array name="sp_power_save_mode2_entries_NORMAL">
+        <item>Berehala</item>
+        <item>Bateria %10</item>
+        <item>Bateria %20</item>
+        <item>Bateria %30</item>
+        <item>Bateria %50</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries">
+        <item>5 minutu</item>
+        <item>10 minutu</item>
+        <item>15 minutu</item>
+    </string-array>
+    <string-array name="sp_hotspot_timeout_entries_mx_NORMAL">
+        <item>Never timeout</item>
+        <item>5 min</item>
+        <item>10 min.</item>
+        <item>15min</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries_jb">
+        <item>5 min</item>
+        <item>10 min.</item>
+        <item>15min</item>
+        <item>30 min</item>
+        <item>Inoiz ez</item>
+    </string-array>
+    <string-array name="wifi_p2p_timeout_entries">
+        <item>15min</item>
+        <item>30 min</item>
+        <item>Inoiz ez</item>
+    </string-array>
+    <string-array name="sp_wifi_ap_visibility_NORMAL">
+        <item>Erakutsi</item>
+        <item>Ezkutatu</item>
+    </string-array>
+    <string-array name="sp_bt_search_filter_SHORT">
+        <item>Gailu guztiak</item>
+        <item>Aurikularrak</item>
+        <item>Telefono mugikorra</item>
+        <item>PC</item>
+        <item>Idazketa-gailua (teklatua, sagua...)</item>
+    </string-array>
+    <string-array name="wifi_signal_strength_entries">
+        <item>Sendoa</item>
+        <item>Ertaina</item>
+        <item>Ahula</item>
+        <item>Deskonektatuta</item>
+    </string-array>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/display_settings" android:key="display_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.lgesettings">
+    <PreferenceCategory android:title="@string/sp_settings_home_lock_SHORT" android:key="key_home_category">
+        <Preference android:title="@string/sp_screen_home_screen_title_NORMAL" android:key="key_homescreen">
+            <intent android:targetPackage="com.lge.launcher2" android:action="android.intent.action.MAIN" android:targetClass="com.lge.launcher2.homesettings.HomeSettingsPrefActivity" />
+        </Preference>
+        <Preference android:title="@string/sp_screen_lock_screen_title_NORMAL" android:key="key_lockscreen" android:fragment="com.android.lgesettings.lockscreen.LockSettings" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/display_label" android:key="screen_category">
+        <com.android.lgesettings.BrightnessPreference android:title="@string/brightness" android:key="brightness" android:dialogTitle="@string/brightness" />
+        <com.android.lgesettings.DoubleTitleListPreference android:persistent="false" android:entries="@array/sp_screen_timeout_entries2_NORMAL" android:title="@string/sp_screen_timeout_NORMAL" android:key="screen_timeout" android:summary="@string/screen_timeout_summary" android:entryValues="@array/screen_timeout_values" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/gesture_title_turn_screen_on" android:key="knock_on_tablet" android:summary="@string/gesture_summary_turn_screen_on_tablet" />
+        <Preference android:persistent="false" android:title="@string/screen_off_effect_title" android:key="screen_off_effect" android:summary="@string/screen_off_effect_summary" android:fragment="com.android.lgesettings.lge.ScreenOffEffect" />
+        <CheckBoxPreference android:title="@string/accelerometer_title" android:key="accelerometer" />
+        <Preference android:persistent="false" android:title="@string/sp_aspect_ratio_correction_NORMAL" android:key="autofit_screen" android:summary="@string/sp_aspect_ratio_correction_summary_NORMAL" />
+        <Preference android:persistent="false" android:title="@string/screen_mode_title" android:key="screen_mode" android:summary="@string/screen_mode_summary">
+            <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.lge.ScreenMode" />
+        </Preference>
+        <PreferenceScreen android:title="@string/sp_pouch_clock_screen_title_NORMAL" android:key="pouch_settings" android:fragment="com.android.lgesettings.lge.PouchClockType" />
+        <com.android.lgesettings.lge.ScreenSwitchPreference android:persistent="false" android:title="@string/screensaver_settings_title" android:key="screensaver" android:fragment="com.android.lgesettings.DreamSettings" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/sp_font_NORMAL" android:key="font_category">
+        <ListPreference android:persistent="false" android:title="@string/sp_fonttype_title_NORMAL" android:key="font_type" android:summary="@string/sp_fonttype_summary_NORMAL" />
+        <com.android.lgesettings.FontSettingsPreference android:persistent="false" android:title="@string/sp_fonttype_NORMAL" android:key="font_settings" android:dialogTitle="@string/sp_fonttype_NORMAL" />
+        <com.android.lgesettings.WarnedListPreference android:entries="@array/entries_font_size" android:title="@string/dialog_title_font_size" android:key="font_size" android:summary="@string/summary_font_size" android:dialogTitle="@string/dialog_title_font_size" android:entryValues="@array/entryvalues_font_size" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/notification_pulse_title" android:key="notification_pulse" />
+        <PreferenceScreen android:title="@string/wifi_display_settings_title" android:key="wifi_display" android:fragment="com.android.lgesettings.wfd.WifiDisplaySettings" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/display_smart_on" android:key="smart_category">
+        <CheckBoxPreference android:persistent="false" android:title="@string/sp_smart_screen" android:key="keepscreenon" android:summary="@string/sp_smartscreen_summary_ex" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/display_smart_video" android:key="keepvideoon" android:summary="@string/display_smart_video_summary_ex" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/advanced_settings" android:key="advanced_category">
+        <Preference android:persistent="false" android:title="@string/sp_front_touch_key_light" android:key="frontkey_led_timeout" android:fragment="com.android.lgesettings.lge.FrontKeyLight" />
+        <Preference android:persistent="false" android:title="@string/display_front_touch_buttons" android:key="front_touch_key" android:fragment="com.android.lgesettings.lge.FrontTouchKey" />
+        <com.android.lgesettings.lge.ELESwitchPreference android:persistent="false" android:title="@string/notification_led" android:key="emotional_led" android:fragment="com.android.lgesettings.lge.EmotionalLEDEffect" />
+        <PreferenceScreen android:title="@string/sp_notification_flash_NORMAL" android:key="notification_flash" android:fragment="com.android.lgesettings.lge.LedLightSetting" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/auto_adjust_screen_tone_title" android:key="plc_mode" android:summary="@string/auto_adjust_screen_tone_summary" />
+        <Preference android:persistent="false" android:title="@string/sp_aspect_ratio_correction_NORMAL" android:key="aspect_ratio_correction" android:summary="@string/sp_aspect_ratio_correction_summarymod" />
+        <Preference android:persistent="false" android:title="@string/sp_motion_sensor_calibration_NORMAL" android:key="motion_sensor_calibration" android:summary="@string/sp_motion_sensor_calibration_summary_NORMAL">
+            <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.lge.MotionSensorCalibration" />
+        </Preference>
+    </PreferenceCategory>
+</PreferenceScreen>

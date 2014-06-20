@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="20.5sp" android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.5dip" android:text="@string/sp_wifi_scr_shr_guide_intro_title_NORMAL" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:background="@drawable/wifi_direct_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+            </LinearLayout>
+            <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip">
+                    <TextView android:textSize="20.5sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.5dip" android:text="@string/sp_wifi_direct_help_desc_NORMAL" />
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="20.5sp" android:id="@id/mark1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <TextView android:textSize="20.5sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="17.659973dip" android:text="@string/sp_wifi_direct_help_share_connection_NORMAL" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="20.5sp" android:id="@id/mark2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <TextView android:textSize="20.5sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="17.659973dip" android:text="@string/sp_wifi_direct_help_consume_more_battery_NORMAL" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0" android:measureWithLargestChild="true" style="?android:attr/buttonBarStyle">
+        <Button android:id="@id/ok_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/def_ok_btn_caption" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

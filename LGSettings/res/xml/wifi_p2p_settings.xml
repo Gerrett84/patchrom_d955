@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:persistent="false" android:title="@string/sp_wifi_p2p_direct_name_NORMAL" android:key="wifi_direct_devname" android:summary="@string/device_name_Summary" />
+    <com.android.lgesettings.wifi.p2p.WifiP2pProgressCategory android:title="@string/wifi_display_available_devices" android:key="wifi_direct_title" />
+    <PreferenceCategory android:title="@string/wifi_p2p_remembered_groups" android:key="wifi_direct_persistent_group" />
+</PreferenceScreen>

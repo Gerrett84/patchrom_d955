@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="CHECK API">
+        <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.utils.ApiActivity" />
+    </Preference>
+    <Preference android:title="CHECK PROPERTY">
+        <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.utils.CheckProperty" />
+    </Preference>
+    <Preference android:title="CHANGE PROPERTY">
+        <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.utils.ChangeProperty" />
+    </Preference>
+    <Preference android:title="HAS PACKAGE">
+        <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.utils.CheckPackage" />
+    </Preference>
+    <Preference android:title="JUMP ACTIVITY">
+        <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.utils.JumpActivity" />
+    </Preference>
+    <Preference android:title="@string/pri_settings_test">
+        <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.utils.PRI_Setting" />
+    </Preference>
+</PreferenceScreen>

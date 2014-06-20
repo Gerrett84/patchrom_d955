@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/ab_command_holo_light" android:layout_width="fill_parent" android:layout_height="@dimen/cancel_ok_button_height" android:layout_marginTop="3.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textStyle="bold" android:id="@id/button_cancel" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:layout_marginTop="4.659973dip" android:layout_marginRight="2.0dip" android:layout_marginBottom="3.3299866dip" android:text="@string/cancel" android:layout_weight="1.0" style="@style/hig_command_bar" />
+    <Button android:textStyle="bold" android:id="@id/button_save" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:layout_marginTop="4.659973dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="3.3299866dip" android:text="@string/sp_save_NORMAL" android:layout_weight="1.0" style="@style/hig_command_bar" />
+</LinearLayout>

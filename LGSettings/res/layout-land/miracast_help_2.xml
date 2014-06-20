@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sp_wifi_scr_shr_guide_how_to_title_NORMAL" />
+            <TextView android:textSize="18.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.329987dip" android:text="@string/sp_miracast_guide_how_to_desc_NORMAL" />
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/sp_wifi_scr_shr_guide_tips_title_NORMAL" />
+            <TextView android:textSize="18.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.329987dip" android:text="@string/sp_miracast_guide_tips_desc_NORMAL" />
+            <TextView android:textSize="18.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.329987dip" android:text="@string/sp_wifi_scr_shr_guide_tips_desc_2_NORMAL" />
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="2.0dip" android:layout_marginBottom="2.0dip" android:layout_weight="0.0">
+        <ImageButton android:id="@id/btnPrev_page2" android:background="@drawable/button_hotspot_help" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/ic_arrow_prev" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="18.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sp_wifi_hotspot_help_page2" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <Button android:id="@id/btnDone_page2" android:background="@drawable/button_hotspot_help" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_marginRight="10.0dip" android:text="@string/sp_done_NORMAL" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

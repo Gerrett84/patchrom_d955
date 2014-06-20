@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/empty" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="44.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/img_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/settings_motionsensor_image_land" android:layout_below="@id/recalibate_message" />
+        <TextView android:textSize="18.669983sp" android:textStyle="bold" android:id="@id/recalibate_message" android:paddingLeft="18.659973dip" android:paddingTop="47.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sp_sensor_calibration_desc_NORMAL" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/empty" android:layout_width="fill_parent" android:layout_height="wrap_content" android:measureWithLargestChild="true" style="?android:attr/buttonBarStyle">
+        <Button android:id="@id/resetsensorbutton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sp_sensor_calibrate_NORMAL" style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

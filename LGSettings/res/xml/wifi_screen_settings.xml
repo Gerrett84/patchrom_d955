@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:persistent="false" android:title="@string/sp_wifidirect_devname_NORMAL" android:key="wifi_screen_devname" android:summary="@string/tap_to_rename_device" />
+    <com.android.lgesettings.wifi.WifiProgressCategory android:title="@string/wifi_display_available_devices" android:key="wifi_screen_devices" />
+</PreferenceScreen>

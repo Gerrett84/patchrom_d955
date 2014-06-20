@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>Amerika</item>
+        <item>Eiropa</item>
+        <item>Āfrika</item>
+        <item>Āzija</item>
+        <item>Austrālija</item>
+        <item>Klusais okeāns</item>
+        <item>Visi</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 sekundes</item>
+        <item>30 sekundes</item>
+        <item>1 minūte</item>
+        <item>2 minūtes</item>
+        <item>5 minūtes</item>
+        <item>10 minūtes</item>
+        <item>30 minūtes</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries2_NORMAL">
+        <item>15 sekundes</item>
+        <item>30 sekundes</item>
+        <item>1 minūte</item>
+        <item>2 minūtes</item>
+        <item>5 minūtes</item>
+        <item>10 minūtes</item>
+        <item>Saglabāt ekrānu ieslēgtu</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL">
+        <item>15 sekundes</item>
+        <item>30 sekundes</item>
+        <item>1 minūte</item>
+        <item>2 minūtes</item>
+        <item>5 minūtes</item>
+        <item>10 minūtes</item>
+        <item>15 minūtes</item>
+        <item>Saglabāt ekrānu ieslēgtu</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL_ex">
+        <item>15 sekundes</item>
+        <item>30 sek.</item>
+        <item>1 min.</item>
+        <item>2 min</item>
+        <item>5 min</item>
+        <item>10 min</item>
+        <item>15 min.</item>
+        <item>Saglabāt ekrānu ieslēgtu</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled">
+        <item>15 sekundes</item>
+        <item>30 sekundes</item>
+        <item>1 minūte</item>
+        <item>2 minūtes</item>
+        <item>5 minūtes</item>
+        <item>10 minūtes</item>
+        <item>15 minūtes</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled_ex">
+        <item>15 sekundes</item>
+        <item>30 sek.</item>
+        <item>1 min.</item>
+        <item>2 min</item>
+        <item>5 min</item>
+        <item>10 min</item>
+        <item>15 min.</item>
+    </string-array>
+    <string-array name="sp_pouch_default_clock_entries2_NORMAL">
+        <item>Pulkstenis 1</item>
+        <item>Pulkstenis 2</item>
+        <item>Pulkstenis 3</item>
+        <item>Pulkstenis 4</item>
+        <item>Pulkstenis 5</item>
+        <item>Pulkstenis 6</item>
+        <item>Pulkstenis 7</item>
+        <item>Pulkstenis 8</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries1_NORMAL">
+        <item>Analogs</item>
+        <item>Digitāls</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_position_entries1_NORMAL">
+        <item>Centrs</item>
+        <item>Augšējais labais</item>
+        <item>Augšējais kreisais</item>
+        <item>Apakšā pa labi</item>
+        <item>Apakšā pa kreisi</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_font_entries1_NORMAL">
+        <item>Fonta nosaukums1</item>
+        <item>Fonta nosaukums2</item>
+    </string-array>
+    <string-array name="sp_sound_profile_entries_NORMAL">
+        <item>Skaņa</item>
+        <item>Tikai vibrācija</item>
+        <item>Bez skaņas</item>
+    </string-array>
+    <string-array name="dream_timeout_entries">
+        <item>Nekad</item>
+        <item>15 sekundes</item>
+        <item>30 sekundes</item>
+        <item>1 minūte</item>
+        <item>2 minūtes</item>
+        <item>5 minūtes</item>
+        <item>10 minūtes</item>
+        <item>30 minūtes</item>
+    </string-array>
+    <string-array name="lock_after_timeout_entries">
+        <item>Tūlīt</item>
+        <item>5 sekundes</item>
+        <item>15 sekundes</item>
+        <item>30 sekundes</item>
+        <item>1 minūte</item>
+        <item>2 minūtes</item>
+        <item>5 minūtes</item>
+        <item>10 minūtes</item>
+        <item>30 minūtes</item>
+    </string-array>
+    <string-array name="sp_lock_after_timeout_entries_NORMAL">
+        <item>Tūlīt</item>
+        <item>15 sekundes</item>
+        <item>30 sekundes</item>
+        <item>1 minūte</item>
+        <item>2 minūtes</item>
+        <item>10 minūtes</item>
+        <item>30 minūtes</item>
+    </string-array>
+    <string-array name="entries_font_size">
+        <item>&amp;lt;font size=16 align=middle>Mazs&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>Parast.&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>Liels&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>Ļoti liels&amp;lt;/font></item>
+    </string-array>
+    <string-array name="sp_entries_font_size2">
+        <item>&amp;lt;font size=14 align=middle>Minimums&amp;lt;/font></item>
+        <item>&amp;lt;font size=16 align=middle>Mazs&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>Vidējs&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>Liels&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>Ļoti liels&amp;lt;/font></item>
+        <item>&amp;lt;font size=27 align=middle>Maksimums&amp;lt;/font></item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>Ļoti lēns</item>
+        <item>Lēns</item>
+        <item>Parast.</item>
+        <item>Ātrs</item>
+        <item>Ļoti ātrs</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>Ļoti lēns</item>
+        <item>Zems</item>
+        <item>Parast.</item>
+        <item>Augst.</item>
+        <item>Ļoti augsts</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Meklēšana...</item>
+        <item>Veido savienojumu...</item>
+        <item>Autentificēšana...</item>
+        <item>IP addreses saņemšana...</item>
+        <item>Savienots</item>
+        <item>"Aizturēts
+"</item>
+        <item>Atvieno...</item>
+        <item>Atvienots</item>
+        <item>Neizdevās</item>
+        <item>Bloķētie</item>
+        <item>Uz brīdi izvairās no sliktiem savienojumiem</item>
+        <item>Uz brīdi izvairās no sliktiem savienojumiem</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Meklēšana...</item>
+        <item>Pieslēdzas %1$s...</item>
+        <item>Autentifikācija tīklā %1$s…</item>
+        <item>IP adreses saņemšana no %1$s...</item>
+        <item>Savienots ar %1$s</item>
+        <item>"Aizturēts
+"</item>
+        <item>Atvienojas no %1$s…</item>
+        <item>Atvienots</item>
+        <item>Neizdevās</item>
+        <item>Bloķētie</item>
+        <item>Uz brīdi izvairās no sliktiem savienojumiem</item>
+    </string-array>
+    <string-array name="wifi_ap_security">
+        <item>Atvērts</item>
+        <item>WPA PSK</item>
+        <item>WPA2 PSK</item>
+    </string-array>
+    <string-array name="wifi_p2p_wps_setup">
+        <item>Nospiediet pogu</item>
+        <item>PIN no šīs ierīces</item>
+    </string-array>
+    <string-array name="wifi_p2p_status">
+        <item>Savienots</item>
+        <item>Savienošana</item>
+        <item>Neizdevās</item>
+        <item>Pieejams</item>
+        <item>Ārpus diapazona</item>
+    </string-array>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>2 minūtes</item>
+        <item>5 minūtes</item>
+        <item>1 stunda</item>
+        <item>Nekad nenoilgt</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Slikts</item>
+        <item>Vidējs</item>
+        <item>Labs</item>
+        <item>Teicams</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Vienmēr</item>
+        <item>Tikai tad, ja pievienots</item>
+        <item>Wi-Fi ir izslēgts (datu lietošanas dēļ)</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <item>Vienmēr</item>
+        <item>Tikai tad, ja pievienots</item>
+        <item>Wi-Fi ir izslēgts</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_entries">
+        <item>Auto</item>
+        <item>Tikai 5 GHz</item>
+        <item>Tikai 2.4 GHz</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>Izmantošanas laiks</item>
+        <item>Palaist uzskaiti</item>
+        <item>Progr. nosaukums</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>Nav</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_network_setup">
+        <item>Izsl.</item>
+        <item>Nospiediet pogu</item>
+        <item>PIN no piekļuves punkta</item>
+        <item>PIN no šīs ierīces</item>
+    </string-array>
+    <string-array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>Statisks</item>
+    </string-array>
+    <string-array name="wifi_proxy_settings">
+        <item>Nav</item>
+        <item>Manuāli</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>Izsl.</item>
+        <item>Brīdinājums</item>
+        <item>Vibrācija</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>Nav</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP vai CHAP</item>
+    </string-array>
+    <string-array name="bearer_entries">
+        <item>LTE</item>
+        <item>eHRPD</item>
+        <item>Nenorādīts</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Iekšējā ierīces krātuve</item>
+        <item>Izņemama SD karte</item>
+        <item>Nosaka sistēma</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>Vienmēr</item>
+        <item>Nekad</item>
+        <item>Tikai klusuma režīmā</item>
+        <item>Izņemot klusuma režīmu</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_titles">
+        <item>Īss</item>
+        <item>Vidējs</item>
+        <item>Garš</item>
+    </string-array>
+    <string-array name="hdcp_checking_titles">
+        <item>Nekad nepārbaudīt</item>
+        <item>Meklēt tikai DRM saturu</item>
+        <item>Vienmēr pārbaudīt</item>
+    </string-array>
+    <string-array name="hdcp_checking_summaries">
+        <item>Nekad nelietot HDCP pārbaudi</item>
+        <item>Lietot HDCP pārbaudi tikai saturam ar DRM aizsardzību</item>
+        <item>Vienmēr izmantot HDCP pārbaudi</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>Animācija izslēgta</item>
+        <item>Animācijas mērogs .5x</item>
+        <item>Animācijas mērogs 1x</item>
+        <item>Animācijas mērogs 1.5x</item>
+        <item>Animācijas mērogs 2x</item>
+        <item>Animācijas mērogs 5x</item>
+        <item>Animācijas mērogs 10x</item>
+    </string-array>
+    <string-array name="transition_animation_scale_entries">
+        <item>Animācija izslēgta</item>
+        <item>Animācijas mērogs .5x</item>
+        <item>Animācijas mērogs 1x</item>
+        <item>Animācijas mērogs 1.5x</item>
+        <item>Animācijas mērogs 2x</item>
+        <item>Animācijas mērogs 5x</item>
+        <item>Animācijas mērogs 10x</item>
+    </string-array>
+    <string-array name="animator_duration_scale_entries">
+        <item>Animācija izslēgta</item>
+        <item>Animācijas mērogs .5x</item>
+        <item>Animācijas mērogs 1x</item>
+        <item>Animācijas mērogs 1.5x</item>
+        <item>Animācijas mērogs 2x</item>
+        <item>Animācijas mērogs 5x</item>
+        <item>Animācijas mērogs 10x</item>
+    </string-array>
+    <string-array name="overlay_display_devices_entries">
+        <item>Nav</item>
+        <item>720x480 mdpi</item>
+        <item>1280x720 tvdpi</item>
+        <item>1920x1080 xhdpi</item>
+        <item>1280x720 tvdpi un 1920x1080 xhdpi</item>
+    </string-array>
+    <string-array name="enable_opengl_traces_entries">
+        <item>Nav</item>
+        <item>Logcat</item>
+        <item>Systrace (Grafika)</item>
+        <item>Izsaukumu grupa uz glGetError</item>
+    </string-array>
+    <string-array name="app_process_limit_entries">
+        <item>Standarta limits</item>
+        <item>Nav fona procesu</item>
+        <item>Ne vairāk par 1 procesiem</item>
+        <item>Ne vairāk par 2 procesiem</item>
+        <item>Ne vairāk par 3 procesiem</item>
+        <item>Ne vairāk par 4 procesiem</item>
+    </string-array>
+    <string-array name="vpn_types_long">
+        <item>PPTP VPN</item>
+        <item>L2TP/IPSec VPN ar koplietotām atslēgām</item>
+        <item>L2TP/IPSec VPN ar sertifikātiem</item>
+        <item>IPSec VPN ar koplietotām atslēgām un Xauth autentifikāciju</item>
+        <item>IPSec VPN ar sertifikātiem un Xauth autentifikāciju</item>
+        <item>IPSec VPN ar sertifikātiem un hibrīdo autentifikāciju</item>
+    </string-array>
+    <string-array name="vpn_states">
+        <item>Atvienots</item>
+        <item>Inicializēšana…</item>
+        <item>Veido savienojumu...</item>
+        <item>Savienots</item>
+        <item>Noildze</item>
+        <item>Neizdevās</item>
+    </string-array>
+    <string-array name="security_settings_premium_sms_values">
+        <item>Jautāt</item>
+        <item>Nekad neatļaut</item>
+        <item>Vienmēr atļaut</item>
+    </string-array>
+    <string-array name="search_filter">
+        <item>Visas ierīces</item>
+        <item>Austiņas</item>
+        <item>PC</item>
+        <item>Tālrunis</item>
+        <item>Perifērija</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries_NORMAL">
+        <item>Lietotāja attēls</item>
+        <item>Pulkstenis 1</item>
+        <item>Pulkstenis 2</item>
+        <item>Pulkstenis 3</item>
+        <item>Pulkstenis 4</item>
+        <item>Pulkstenis 5</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL">
+        <item>1.5 sekundes</item>
+        <item>3 sekundes</item>
+        <item>5 sekundes</item>
+        <item>Vienmēr ieslēgts</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL_ex">
+        <item>1.5 Sek.</item>
+        <item>3 sek.</item>
+        <item>5 sek.</item>
+        <item>Vienmēr ieslēgts</item>
+    </string-array>
+    <string-array name="sp_front_key_light_l1_NORMAL">
+        <item>3 sekundes</item>
+        <item>6 sekundes</item>
+        <item>10 sekundes</item>
+        <item>30 sekundes</item>
+        <item>Vienmēr ieslēgts</item>
+    </string-array>
+    <string-array name="sp_front_key_light_att_NORMAL">
+        <item>3 sek.</item>
+        <item>1 Sek.</item>
+        <item>10 sek.</item>
+        <item>30 sek.</item>
+        <item>Vienmēr ieslēgts</item>
+    </string-array>
+    <string-array name="sp_numlocdisp_entries_NORMAL">
+        <item>Izslēgt</item>
+        <item>Aktivizēt</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_NORMAL">
+        <item>Konfidencialitātes trauksme</item>
+        <item>Ja izmantojat 3. puses aplikāciju, tā var ievākt jūsu personīgo informāciju vai pieprasīt jūsu operatoram atklāt jūsu personīgo informāciju, tajā skaitā, atrašanās vietas informāciju (kur pieejams) aplikācijas nodrošinātājam vai kādai citai 3. pusei.</item>
+        <item>Kura konfidencialitātes politika tiek pielietota? Jūsu operatora konfidencialitātes politika un lietošanas noteikumi neattiecas uz aplikācijām Jūsu tālrunī, kuras piegādājusi trešā puse. Jūs šīs aplikācijas lietojat saskaņā ar trešās puses politiku.</item>
+        <item>Kur varu atrast sīkākas ziņas par politiku attiecībā uz trešo pusi? Pārbaudiet aplikācijas lietošanas noteikumus un aplikācijas piegādātāja politiku, lai sīkāk uzzinātu par to, vai un kā šī aplikācija vāc, iegūst, lieto un atklāj citiem Jūsu datus. Konfidencialitātes politika, Lietošanas noteikumi un citi paziņojumi klientam, IESPĒJAMS, ir pieejami piegādātāja interneta lapā. Pirms aplikācijas lietošanas pārliecinieties par to, ka šī politika Jūs apmierina.</item>
+        <item>Kur varu iepazīties ar sava operatora konfidencialitātes politiku? Ja Jums rodas jautājumi par sava operatora konfidencialitātes politiku, lūdzam apmeklēt viņa interneta lapu un tur noklikšķināt uz saites \"Konfidencialitātes politika\".</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_spr_NORMAL">
+        <item>Sprint privātuma brīdinājums</item>
+        <item>Ja jūs izmantojat trešās personas aplikāciju, tā var ievākt jūsu personīgo informāciju vai pieprasīt \"Sprint\", lai atklātu jūsu personīgo informāciju, tajā skaitā informāciju par atrašanās vietu (kur piemērojams), aplikācijas piegādātājam vai citai trešajai personai.</item>
+        <item>Kura konfidencialitātes politika tiek pielietota? \"Sprint\" konfidencialitātes politika un lietošanas nosacījumi neattiecas uz trešās puses piegādātām aplikācijām.</item>
+        <item>Kur varu atrast sīkākas ziņas par politiku attiecībā uz trešo pusi? Pārbaudiet aplikācijas lietošanas noteikumus un aplikācijas piegādātāja politiku, lai sīkāk uzzinātu, vai un kā šī aplikācija vāc, iegūst, lieto un atklāj citiem Jūsu datus. Konfidencialitātes politika, Lietošanas noteikumi un citi paziņojumi klientam, IESPĒJAMS, ir pieejami piegādātāja interneta lapā. Pirms aplikācijas lietošanas pārliecinieties par to, ka šī politika Jūs apmierina.</item>
+        <item>Kur varu iepazīties ar Sprint konfidencialitātes politiku? Ja Jums rodas jautājumi par Sprint konfidencialitātes politiku, lūdzam apmeklēt Sprint.com un tur noklikšķināt uz saites \"Konfidencialitātes politika\".</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_bm_NORMAL">
+        <item>Paaugstināt mobilā privātuma signālu</item>
+        <item>Ja jūs izmantojat trešās personas aplikāciju, tā var ievākt jūsu personīgo informāciju vai pieprasīt \"Boost Mobile\", lai atklātu jūsu personīgo informāciju, tajā skaitā informāciju par atrašanās vietu (kur piemērojams), aplikācijas piegādātājam vai citai trešajai personai.</item>
+        <item>Kura konfidencialitātes politika tiek pielietota? \"Boost Mobile\" konfidencialitātes politika un lietošanas nosacījumi neattiecas uz trešās puses piegādātām aplikācijām.</item>
+        <item>Kur varu atrast sīkākas ziņas par politiku attiecībā uz trešo pusi? Pārbaudiet aplikācijas lietošanas noteikumus un aplikācijas piegādātāja politiku, lai sīkāk uzzinātu, vai un kā šī aplikācija vāc, iegūst, lieto un atklāj citiem Jūsu datus. Konfidencialitātes politika, Lietošanas noteikumi un citi paziņojumi klientam, IESPĒJAMS, ir pieejami piegādātāja interneta lapā. Pirms aplikācijas lietošanas pārliecinieties par to, ka šī politika Jūs apmierina.</item>
+        <item>Kur varu iepazīties ar Boost Mobile konfidencialitātes politiku? Ja Jums rodas jautājumi par Boost Mobile konfidencialitātes politiku, lūdzam apmeklēt Boost Mobile.com un tur noklikšķināt uz saites \"Konfidencialitātes politika\".</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_virgin_NORMAL">
+        <item>Virgin Mobile privātuma brīdinājums</item>
+        <item>Ja jūs izmantojat trešās personas aplikāciju, tā var ievākt jūsu personīgo informāciju vai pieprasīt \"Virgin Mobile\", lai atklātu jūsu personīgo informāciju, tajā skaitā informāciju par atrašanās vietu (kur piemērojams), aplikācijas piegādātājam vai citai trešajai personai.</item>
+        <item>Kuri privātuma noteikumi tiek piemēroti? Virgin Mobile privātuma un lietošanas noteikumi netiek piemēroti jūsu tālruņa aplikācijām, kuras vienpersoniski piegādā trešās personas. Šīs aplikācijas lietošanā tiek piemēroti trešās personas noteikumi.</item>
+        <item>Kur varu atrast sīkākas ziņas par politiku attiecībā uz trešo pusi? Pārbaudiet aplikācijas lietošanas noteikumus un aplikācijas piegādātāja politiku, lai sīkāk uzzinātu, vai un kā šī aplikācija vāc, iegūst, lieto un atklāj citiem Jūsu datus. Konfidencialitātes politika, Lietošanas noteikumi un citi paziņojumi klientam, IESPĒJAMS, ir pieejami piegādātāja interneta lapā. Pirms aplikācijas lietošanas pārliecinieties par to, ka šī politika Jūs apmierina.</item>
+        <item>Kur es varu atrast Virgin Mobile privātuma noteikumus? Ja jums ir jautājumi par Virgin Mobile privātuma noteikumiem, lūdzu, apmeklējiet VirginMobileUSA.com un klikšķiniet uz saites \"Privacy Policy\".</item>
+    </string-array>
+    <string-array name="sp_lock_screen_effect_entries_NORMAL">
+        <item>Pamata</item>
+        <item>Apļi un lapas</item>
+        <item>Klājuma tinte</item>
+        <item>\"DewDrop\"</item>
+    </string-array>
+    <string-array name="sp_power_save_brightness_entries_NORMAL">
+        <item>10% spilgtums</item>
+        <item>20% spilgtums</item>
+        <item>30% spilgtums</item>
+        <item>50% spilgtums</item>
+    </string-array>
+    <string-array name="sp_power_save_screen_timeout_entries_NORMAL">
+        <item>15 sekundes</item>
+        <item>30 sekundes</item>
+        <item>1 minūte</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_NORMAL">
+        <item>1.5 sekundes</item>
+        <item>Vienmēr izslēgts</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_att_NORMAL">
+        <item>3 sekundes</item>
+        <item>Vienmēr izslēgts</item>
+    </string-array>
+    <string-array name="sp_power_save_mode_entries_NORMAL">
+        <item>10% akumulatora</item>
+        <item>20% akumulatora</item>
+        <item>30% akumulatora</item>
+        <item>50% akumulatora</item>
+    </string-array>
+    <string-array name="sp_power_save_mode2_entries_NORMAL">
+        <item>Tūlīt</item>
+        <item>10% akumulatora</item>
+        <item>20% akumulatora</item>
+        <item>30% akumulatora</item>
+        <item>50% akumulatora</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries">
+        <item>5 minūtes</item>
+        <item>10 minūtes</item>
+        <item>15 minūtes</item>
+    </string-array>
+    <string-array name="sp_hotspot_timeout_entries_mx_NORMAL">
+        <item>Taimauts neiestājas nekad</item>
+        <item>5 min</item>
+        <item>10 min</item>
+        <item>15 min.</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries_jb">
+        <item>5 min</item>
+        <item>10 min</item>
+        <item>15 min.</item>
+        <item>30 min</item>
+        <item>Nekad</item>
+    </string-array>
+    <string-array name="wifi_p2p_timeout_entries">
+        <item>15 min.</item>
+        <item>30 min</item>
+        <item>Nekad</item>
+    </string-array>
+    <string-array name="sp_wifi_ap_visibility_NORMAL">
+        <item>Rādīt</item>
+        <item>Paslēpt</item>
+    </string-array>
+    <string-array name="sp_bt_search_filter_SHORT">
+        <item>Visas ierīces</item>
+        <item>Austiņas</item>
+        <item>Mobile phone</item>
+        <item>Dators</item>
+        <item>Ievades ierīce (tastatūra, pele, utt)</item>
+    </string-array>
+    <string-array name="wifi_signal_strength_entries">
+        <item>Stiprs</item>
+        <item>Vidējs</item>
+        <item>Vājš</item>
+        <item>Izsl.</item>
+    </string-array>
+</resources>

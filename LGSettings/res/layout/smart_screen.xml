@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.669983dip" android:layout_marginTop="13.0dip" android:layout_marginRight="16.669983dip">
+            <ImageView android:layout_gravity="center" android:id="@id/smartscreen_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="13.0dip" android:src="@drawable/settings_keep_screen_on" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/help_guide_description_fontsize" android:textStyle="normal" android:id="@id/smartscreen_desc_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/display_help_desc_title" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/help_guide_description_fontsize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/display_help_desc_hyphen" android:layout_marginStart="1.0dip" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/help_guide_description_fontsize" android:id="@id/smartscreen_desc1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/display_help_desc_1_ex" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/help_guide_description_fontsize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/display_help_desc_hyphen" android:layout_marginStart="1.0dip" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/help_guide_description_fontsize" android:id="@id/smartscreen_desc2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/display_help_desc_2" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/help_guide_description_fontsize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/display_help_desc_hyphen" android:layout_marginStart="1.0dip" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/help_guide_description_fontsize" android:id="@id/smartscreen_desc3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/display_help_desc_3" />
+            </LinearLayout>
+            <CheckBox android:textSize="16.0sp" android:textStyle="bold" android:id="@id/checkbox_donotshow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sp_keepscreenon_skip" android:layout_weight="0.0" android:layout_marginStart="1.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:label="@string/sp_gesture_tilt_test_title_NORMAL" android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/settings_gesture_title_text" android:textStyle="bold" android:ellipsize="marquee" android:gravity="start|center" android:id="@id/txt_View_1" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/settings_density_size_7_5" android:singleLine="true" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img_View_1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/settings_gesture_list_text" android:id="@id/txt_View_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/settings_gesture_list_linespacing" android:layout_marginStart="@dimen/settings_density_size_10" />
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sui_english_sections">\#ACEFGIKMOQSUWZ?</string>
+    <string name="sui_bulgarian_sections">\#АВДИКМОТФЦЪЯFZ?</string>
+    <string name="sui_bulgarian_sections_short">\#АВДИКМОТФЦЪЯ?</string>
+    <string name="sui_kazakh_sections">\#АБЕЖИЛНОСУЦЭЯFZ?</string>
+    <string name="sui_kazakh_sections_short">\#АБЕЖИЛНОСУЦЭЯ?</string>
+    <string name="sui_macedonian_sections">\#АБЕЖИКНПСУЦШFZ?</string>
+    <string name="sui_macedonian_sections_short">\#АБЕЖИКНПСУЦШ?</string>
+    <string name="sui_russian_sections">\#АВЖИКМРТФЦЭЯFZ?</string>
+    <string name="sui_russian_sections_short">\#АВЖИКМРТФЦЭЯ?</string>
+    <string name="sui_serbian_sections">\#АБЖИКМОРТФЦШFZ?</string>
+    <string name="sui_serbian_sections_short">\#АБЖИКМОРТФЦШ?</string>
+    <string name="sui_ukrainian_sections">\#АГЖИЇКОРТФЬЯFZ?</string>
+    <string name="sui_ukrainian_sections_short">\#АГЖИЇКОРТФЬЯ?</string>
+    <string name="sui_arabic_sections">\#أتجخذزشضظغقلنوFZ?</string>
+    <string name="sui_arabic_sections_short">\#أتجخذزشضظغقلنو?</string>
+    <string name="sui_farsi_sections">\#آﺏﺕﺡﺩﺭﺵﺽﻅﻕگﻡﻭیFZ?</string>
+    <string name="sui_farsi_sections_short">\#آﺏﺕﺡﺩﺭﺵﺽﻅﻕگﻡﻭی?</string>
+    <string name="sui_greek_sections">\#ΑΓΕΗΙΛΝΟΡΤΦΨFZ?</string>
+    <string name="sui_greek_sections_short">\#ΑΓΕΗΙΛΝΟΡΤΦΨ?</string>
+    <string name="sui_japanese_sections">\#あかさたなはまやらわA?</string>
+    <string name="sui_japanese_sections_short">\#あかさたなはまやらわ?</string>
+    <string name="sui_korean_sections">\#ㄱㄴㄷㄹㅁㅂㅅㅇㅈㅊㅌㅎFZ?</string>
+    <string name="sui_korean_sections_short">\#ㄱㄴㄷㄹㅁㅂㅅㅇㅈㅊㅌㅎ?</string>
+    <string name="sui_thai_sections">\#กคชญฐณนผฟยสฮFZ?</string>
+    <string name="sui_thai_sections_short">\#กคชญฐณนผฟยสฮ?</string>
+    <string name="sui_kurdish_sections">\#ادگژۆشڤزAFKMSZ?</string>
+    <string name="sui_kurdish_sections_short">\#ادگژۆشڤز?</string>
+</resources>

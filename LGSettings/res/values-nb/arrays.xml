@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>Amerika</item>
+        <item>Europa</item>
+        <item>Afrika</item>
+        <item>Asia</item>
+        <item>Australia</item>
+        <item>Stillehavet</item>
+        <item>Alle</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 sekunder</item>
+        <item>30 sek.</item>
+        <item>1 minutt</item>
+        <item>2 minutter</item>
+        <item>5 minutter</item>
+        <item>10 minutter</item>
+        <item>30 minutter</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries2_NORMAL">
+        <item>15 sekunder</item>
+        <item>30 sek.</item>
+        <item>1 minutt</item>
+        <item>2 min.</item>
+        <item>5 minutter</item>
+        <item>10 minutter</item>
+        <item>Hold skjermen slått på</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL">
+        <item>15 sekunder</item>
+        <item>30 sek.</item>
+        <item>1 min.</item>
+        <item>2 minutter</item>
+        <item>5 minutter</item>
+        <item>10 minutter</item>
+        <item>15 minutter</item>
+        <item>Hold skjermen slått på</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL_ex">
+        <item>15 sekunder</item>
+        <item>30 sek.</item>
+        <item>1 min</item>
+        <item>2 min.</item>
+        <item>5 min</item>
+        <item>10 min</item>
+        <item>15 min</item>
+        <item>Hold skjermen slått på</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled">
+        <item>15 sekunder</item>
+        <item>30 sek.</item>
+        <item>1 min.</item>
+        <item>2 minutter</item>
+        <item>5 minutter</item>
+        <item>10 minutter</item>
+        <item>15 minutter</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled_ex">
+        <item>15 sekunder</item>
+        <item>30 sek.</item>
+        <item>1 min</item>
+        <item>2 min.</item>
+        <item>5 min</item>
+        <item>10 min</item>
+        <item>15 min</item>
+    </string-array>
+    <string-array name="sp_pouch_default_clock_entries2_NORMAL">
+        <item>Klokke 1</item>
+        <item>Klokke 2</item>
+        <item>Klokke 3</item>
+        <item>Klokke 4</item>
+        <item>Klokke 5</item>
+        <item>Klokka 6</item>
+        <item>Klokka 7</item>
+        <item>Klokka 8</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_position_entries1_NORMAL">
+        <item>Center</item>
+        <item>Øverst til høyre</item>
+        <item>Øverst til venstre</item>
+        <item>Nederst til høyre</item>
+        <item>Nederst til venstre</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_font_entries1_NORMAL">
+        <item>Fontnavn1</item>
+        <item>Fontnavn2</item>
+    </string-array>
+    <string-array name="sp_sound_profile_entries_NORMAL">
+        <item>Lyd</item>
+        <item>Bare vibrer</item>
+        <item>Stille</item>
+    </string-array>
+    <string-array name="dream_timeout_entries">
+        <item>Aldri</item>
+        <item>15 sekunder</item>
+        <item>30 sek.</item>
+        <item>1 minutt</item>
+        <item>2 minutter</item>
+        <item>5 minutter</item>
+        <item>10 minutter</item>
+        <item>30 minutter</item>
+    </string-array>
+    <string-array name="lock_after_timeout_entries">
+        <item>Øyeblikkelig</item>
+        <item>5 sekunder</item>
+        <item>15 sekunder</item>
+        <item>30 sek.</item>
+        <item>1 minutt</item>
+        <item>2 minutter</item>
+        <item>5 minutter</item>
+        <item>10 minutter</item>
+        <item>30 min.</item>
+    </string-array>
+    <string-array name="sp_lock_after_timeout_entries_NORMAL">
+        <item>Øyeblikkelig</item>
+        <item>15 sekunder</item>
+        <item>30 sek.</item>
+        <item>1 minutt</item>
+        <item>2 minutter</item>
+        <item>10 minutter</item>
+        <item>30 minutter</item>
+    </string-array>
+    <string-array name="entries_font_size">
+        <item>&amp;lt;font size=16 align=middle>Liten&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>Normal&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>Stor&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>Ekstra stor&amp;lt;/font></item>
+    </string-array>
+    <string-array name="sp_entries_font_size2">
+        <item>&amp;lt;font size=14 align=middle>Minimum&amp;lt;/font></item>
+        <item>&amp;lt;font size=16 align=middle>Liten&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>Middels&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>Stor&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>Størst&amp;lt;/font></item>
+        <item>&amp;lt;font size=27 align=middle>Maksimum&amp;lt;/font></item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>Veldig sakte</item>
+        <item>Sakte</item>
+        <item>Normal</item>
+        <item>Rask</item>
+        <item>Veldig rask</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>Veldig lavt</item>
+        <item>Lav</item>
+        <item>Normal</item>
+        <item>Høy</item>
+        <item>Veldig høyt</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Søker...</item>
+        <item>Kobler til....</item>
+        <item>Autensiering…</item>
+        <item>Henter IP-adresse…</item>
+        <item>Tilkoblet</item>
+        <item>Utsatt</item>
+        <item>Kobler fra...</item>
+        <item>Frakoblet</item>
+        <item>Mislykket</item>
+        <item>Blokkert</item>
+        <item>Unngår midlertidig dårlig kontakt</item>
+        <item>Unngår midlertidig dårlig kontakt</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Søker...</item>
+        <item>Kobler til %1$s …</item>
+        <item>Autentiseres med %1$s…</item>
+        <item>Henter IP-adresse fra %1$s …</item>
+        <item>Tilkoblet %1$s</item>
+        <item>Utsatt</item>
+        <item>Kobler fra %1$s…</item>
+        <item>Frakoblet</item>
+        <item>Mislykket</item>
+        <item>Blokkert</item>
+        <item>Unngår midlertidig dårlig kontakt</item>
+    </string-array>
+    <string-array name="wifi_ap_security">
+        <item>Åpent</item>
+        <item>WPA PSK</item>
+        <item>WPA2 PSK</item>
+    </string-array>
+    <string-array name="wifi_p2p_wps_setup">
+        <item>Trykk på knappen</item>
+        <item>Kode fra enheten</item>
+    </string-array>
+    <string-array name="wifi_p2p_status">
+        <item>Tilkoblet</item>
+        <item>Kobler til</item>
+        <item>Mislykket</item>
+        <item>Tilgjengelig</item>
+        <item>Utenfor rekkevidde</item>
+    </string-array>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>2 minutter</item>
+        <item>5 minutter</item>
+        <item>1 time</item>
+        <item>Aldri tidsavbrudd</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Dårlig</item>
+        <item>Ganske bra</item>
+        <item>Bra</item>
+        <item>Glimrende</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Alltid</item>
+        <item>Bare når tilkoblet strøm</item>
+        <item>Wi-Fi er av (som følge av databruk)</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <item>Alltid</item>
+        <item>Bare når tilkoblet strøm</item>
+        <item>Wi-Fi er av</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_entries">
+        <item>Automatisk</item>
+        <item>Kun 5 GHz</item>
+        <item>Kun 2.4 GHz</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>Brukstid</item>
+        <item>Start telling</item>
+        <item>Navn på app</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>Ingen</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_network_setup">
+        <item>Av</item>
+        <item>Trykk på knappen</item>
+        <item>Pers. kode fra tilg.punkt</item>
+        <item>Kode fra enheten</item>
+    </string-array>
+    <string-array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>Statisk</item>
+    </string-array>
+    <string-array name="wifi_proxy_settings">
+        <item>Ingen</item>
+        <item>Manuell</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>Av</item>
+        <item>Varsel</item>
+        <item>Vibrer</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>Ingen</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP eller CHAP</item>
+    </string-array>
+    <string-array name="bearer_entries">
+        <item>LTE</item>
+        <item>eHRPD</item>
+        <item>Uspesifisert</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Intern lagring</item>
+        <item>Flyttbart SD-kort</item>
+        <item>La systemet bestemme</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>Alltid</item>
+        <item>Aldri</item>
+        <item>Bare i lydløs</item>
+        <item>Bare når ikke lydløs</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_titles">
+        <item>Kort</item>
+        <item>Middels</item>
+        <item>Lang</item>
+    </string-array>
+    <string-array name="hdcp_checking_titles">
+        <item>Kontrollér aldri</item>
+        <item>Se kun etter DRM-innhold</item>
+        <item>Kontrollér alltid</item>
+    </string-array>
+    <string-array name="hdcp_checking_summaries">
+        <item>Bruk aldri HDCP-kontroll</item>
+        <item>Bruk HDCP-kontroll kun for DRM-innhold</item>
+        <item>Bruk alltid HDCP-kontroll</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>Animasjon deaktivert</item>
+        <item>Animasjonsskala 0,5 x</item>
+        <item>Animasjonsskala 1 x</item>
+        <item>Animasjonsskala 1,5 x</item>
+        <item>Animasjonsskala 2 x</item>
+        <item>Animasjonsskala 5 x</item>
+        <item>Animasjonsskala 10 x</item>
+    </string-array>
+    <string-array name="transition_animation_scale_entries">
+        <item>Animasjon deaktivert</item>
+        <item>Animasjonsskala 0,5 x</item>
+        <item>Animasjonsskala 1 x</item>
+        <item>Animasjonsskala 1,5 x</item>
+        <item>Animasjonsskala 2 x</item>
+        <item>Animasjonsskala 5 x</item>
+        <item>Animasjonsskala 10 x</item>
+    </string-array>
+    <string-array name="animator_duration_scale_entries">
+        <item>Animasjon deaktivert</item>
+        <item>Animasjonsskala 0,5 x</item>
+        <item>Animasjonsskala 1 x</item>
+        <item>Animasjonsskala 1,5 x</item>
+        <item>Animasjonsskala 2 x</item>
+        <item>Animasjonsskala 5 x</item>
+        <item>Animasjonsskala 10 x</item>
+    </string-array>
+    <string-array name="overlay_display_devices_entries">
+        <item>Ingen</item>
+        <item>720x480 mdpi</item>
+        <item>1280x720 tvdpi</item>
+        <item>1920x1080 xhdpi</item>
+        <item>1280x720 tvdpi og 1920x1080 xhdpi</item>
+    </string-array>
+    <string-array name="enable_opengl_traces_entries">
+        <item>Ingen</item>
+        <item>Logcat</item>
+        <item>Systrace (Grafikk)</item>
+        <item>Spør stack ved glGetError</item>
+    </string-array>
+    <string-array name="app_process_limit_entries">
+        <item>Standard grense</item>
+        <item>Ingen bakgrunnsprosesser</item>
+        <item>Maksimalt én prosess</item>
+        <item>Maksimalt to prosesser</item>
+        <item>Maksimalt tre prosesser</item>
+        <item>Maksimalt fire prosesser</item>
+    </string-array>
+    <string-array name="vpn_types_long">
+        <item>PPTP VPN</item>
+        <item>L2TP/IPSec VPN med forhåndsdelte nøkler</item>
+        <item>L2TP/IPSec VPN med sertifikater</item>
+        <item>IPSec VPN med forhåndsdelte taster og Xauth-autentisering</item>
+        <item>IPSec VPN med sertifikater og Xauth-autentisering</item>
+        <item>IPSec VPN med sertifikater og hybridautentisering</item>
+    </string-array>
+    <string-array name="vpn_states">
+        <item>Frakoblet</item>
+        <item>Initialiserer...</item>
+        <item>Kobler til....</item>
+        <item>Tilkoblet</item>
+        <item>Tidsavbrudd</item>
+        <item>Mislykket</item>
+    </string-array>
+    <string-array name="security_settings_premium_sms_values">
+        <item>Spør</item>
+        <item>Tillat aldri</item>
+        <item>Tillat alltid</item>
+    </string-array>
+    <string-array name="search_filter">
+        <item>Alle enheter</item>
+        <item>Hodetelefon</item>
+        <item>PC</item>
+        <item>Telefon</item>
+        <item>Periferisk</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries_NORMAL">
+        <item>Brukerbilde</item>
+        <item>Klokke 1</item>
+        <item>Klokke 2</item>
+        <item>Klokke 3</item>
+        <item>Klokke 4</item>
+        <item>Klokke 5</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL">
+        <item>1.5 sekunder</item>
+        <item>3 sek.</item>
+        <item>5 sekunder</item>
+        <item>Alltid på</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL_ex">
+        <item>1.5 Sek.</item>
+        <item>3 sek.</item>
+        <item>5 sek.</item>
+        <item>Alltid på</item>
+    </string-array>
+    <string-array name="sp_front_key_light_l1_NORMAL">
+        <item>3 sek.</item>
+        <item>6 sekunder</item>
+        <item>10 sekunder</item>
+        <item>30 sek.</item>
+        <item>Alltid på</item>
+    </string-array>
+    <string-array name="sp_front_key_light_att_NORMAL">
+        <item>3 sek.</item>
+        <item>1 Sek.</item>
+        <item>10 sek.</item>
+        <item>30 sek.</item>
+        <item>Alltid på</item>
+    </string-array>
+    <string-array name="sp_numlocdisp_entries_NORMAL">
+        <item>Deaktiver</item>
+        <item>Aktiver</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_NORMAL">
+        <item>Personvernvarsel</item>
+        <item>Dersom du bruker en tredjepartsapp, kan det være den direkte samler inn din personlige informasjon eller krever at din operatør oppgir din personlige informasjon, inkludert lokaliseringsinformasjon (hvis aktuelt) til apptilbyderen eller annen tredjepart.</item>
+        <item>Hvilke personvernregler gjelder? Din operatørs personvernregler og bruksvilkår trenger ikke gjelde for apps på din telefon, da disse utelukkende tilbys av tredjepart. Tredjeparters regelverk gjelder for bruk av denne type apps.</item>
+        <item>Hvor kan jeg finne nærmere informasjon om tredjeparts regelverk? Se appens bruksvilkår og/eller app-tilbyderens regelverk for nærmere informasjon om hvordan appen vil samle, ha tilgang til, bruke og avsløre din informasjon. Personvernretningslinjer, bruksvilkår og andre forbrukermeldinger KAN VÆRE tilgjengelig gjennom tilbyderens nettside. Sørg for at du er komfortabel med regelverket før du bruker en app.</item>
+        <item>Hvor kan jeg finne min operatørs personvernerklæring? Separat. Dersom du har spørsmål om din operatørs personvernregler, vennligst besøk din operatørs hjemmeside og trykk på lenke for \"personvern\".</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_spr_NORMAL">
+        <item>Sprint personvernvarsling</item>
+        <item>Dersom du bruker en tredjeparts-app, kan det være den direkte samler inn dine personlige opplysninger eller krever Sprint for å utlevere din personlige informasjon, inkludert stedsinformasjon (hvis gjeldende), til app-leverandøren eller annen tredjepart.</item>
+        <item>"Hvilke personvernregler gjelder?  Sprints retningslinjer for Personvern og Betingelser for bruk gjelder ikke apper for håndsettet ditt som bare er levert av tredjeparter."</item>
+        <item>"Hvor finner jeg informasjon om vilkårene til tredjeparter? se i appen's vilkår for bruk og/eller app tilbyderens retningslinjer for mer informasjon om hvordan appen vil samle inn, ha til gang til, bruke og oppgi din informasjon. Personvernregler, bruksvilkår og andre forbrukermelding KAN VÆRE tilgjengelig fra operatørens nettside. Vær sikker på at du er komfortabel med vilkårene før du bruker en app."</item>
+        <item>Hvor finner jeg Sprints personvernregler? I en egen del, dersom du har spørsmål om Sprints personvernregler ber vi deg besøke Sprint.com og trykke på \"Personvernregler\"-linken.</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_bm_NORMAL">
+        <item>Boost Mobile personvernvarsling</item>
+        <item>Dersom du bruker en tredjeparts-app, kan det være den direkte samler inn dine personlige opplysninger eller krever Boost Mobile for å utlevere din personlige informasjon, inkludert stedsinformasjon (hvis gjeldende), til app-leverandøren eller annen tredjepart.</item>
+        <item>"Hvilke personvernregler gjelder?  Boost Mobiles retningslinjer for Personvern og Betingelser for bruk gjelder ikke apper for håndsettet ditt som er levert av bare tredjeparter."</item>
+        <item>"Hvor finner jeg informasjon om vilkårene til tredjeparter? se i appen's vilkår for bruk og/eller app tilbyderens retningslinjer for mer informasjon om hvordan appen vil samle inn, ha til gang til, bruke og oppgi din informasjon. Personvernregler, bruksvilkår og andre forbrukermelding KAN VÆRE tilgjengelig fra operatørens nettside. Vær sikker på at du er komfortabel med vilkårene før du bruker en app."</item>
+        <item>Hvor finner jeg Boost Mobiles personvernregler? I en egen del, dersom du har spørsmål om Boost Mobiles personvernregler ber vi deg besøke BoostMobile.com og trykke på \"Personvernregler\"-linken.</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_virgin_NORMAL">
+        <item>Virgin Mobile personvernvarsling</item>
+        <item>Dersom du bruker en tredjeparts-app, kan det være den direkte samler inn dine personlige opplysninger eller krever Virgin Mobile for å utlevere din personlige informasjon, inkludert stedsinformasjon (hvis gjeldende), til app-leverandøren eller annen tredjepart.</item>
+        <item>Hvilke retningslinjer for personvern gjelder? Virgin Mobiles retningslinjer for personvern samt bruksvilkår gjelder ikke apper på telefonen din som utelukkende er levert av tredjepart. Tredjepartens retningslinjer for personvern gjelder for din bruk av den appen.</item>
+        <item>"Hvor finner jeg informasjon om vilkårene til tredjeparter? se i appen's vilkår for bruk og/eller app tilbyderens retningslinjer for mer informasjon om hvordan appen vil samle inn, ha til gang til, bruke og oppgi din informasjon. Personvernregler, bruksvilkår og andre forbrukermelding KAN VÆRE tilgjengelig fra operatørens nettside. Vær sikker på at du er komfortabel med vilkårene før du bruker en app."</item>
+        <item>Hvor finner jeg Virgin Mobiles retningslinjer for personvern? Separat. Dersom du har spørsmål om Virgin Mobile retningslinjer for personvern, kan du gå VirginMobileUSA.com og klikke på \"Privacy Policy\"-lenken.</item>
+    </string-array>
+    <string-array name="sp_lock_screen_effect_entries_NORMAL">
+        <item>Standard</item>
+        <item>Krusning med blader</item>
+        <item>Sprer blekk</item>
+        <item>Duggdråpe</item>
+    </string-array>
+    <string-array name="sp_power_save_brightness_entries_NORMAL">
+        <item>10% lysstyrke</item>
+        <item>20% lysstyrke</item>
+        <item>30% lysstyrke</item>
+        <item>50% lysstyrke</item>
+    </string-array>
+    <string-array name="sp_power_save_screen_timeout_entries_NORMAL">
+        <item>15 sekunder</item>
+        <item>30 sek.</item>
+        <item>1 min.</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_NORMAL">
+        <item>1.5 sekunder</item>
+        <item>Alltid av</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_att_NORMAL">
+        <item>3 sek.</item>
+        <item>Alltid av</item>
+    </string-array>
+    <string-array name="sp_power_save_mode_entries_NORMAL">
+        <item>10% batteri</item>
+        <item>20% batteri</item>
+        <item>30% batteri</item>
+        <item>50% batteri</item>
+    </string-array>
+    <string-array name="sp_power_save_mode2_entries_NORMAL">
+        <item>Øyeblikkelig</item>
+        <item>10% batteri</item>
+        <item>20% batteri</item>
+        <item>30% batteri</item>
+        <item>50% batteri</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries">
+        <item>5 minutter</item>
+        <item>10 minutter</item>
+        <item>15 minutter</item>
+    </string-array>
+    <string-array name="sp_hotspot_timeout_entries_mx_NORMAL">
+        <item>Aldri tidsavbrudd</item>
+        <item>5 min</item>
+        <item>10 min</item>
+        <item>15 min</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries_jb">
+        <item>5 min</item>
+        <item>10 min</item>
+        <item>15 min</item>
+        <item>30 min</item>
+        <item>Aldri</item>
+    </string-array>
+    <string-array name="wifi_p2p_timeout_entries">
+        <item>15 min</item>
+        <item>30 min</item>
+        <item>Aldri</item>
+    </string-array>
+    <string-array name="sp_wifi_ap_visibility_NORMAL">
+        <item>Vis</item>
+        <item>Skjul</item>
+    </string-array>
+    <string-array name="sp_bt_search_filter_SHORT">
+        <item>Alle enheter</item>
+        <item>Hodetelefon</item>
+        <item>Mobiltelefon</item>
+        <item>PC</item>
+        <item>Tastatur, mus, etc.</item>
+    </string-array>
+    <string-array name="wifi_signal_strength_entries">
+        <item>Sterk</item>
+        <item>Middels</item>
+        <item>Svak</item>
+        <item>Av</item>
+    </string-array>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="other">စကားဝွက္တြင္ စကားလံုး %d လံုး ပါ၀င္ရမည္</item>
+        <item quantity="one">စကားဝွက္တြင္ အနည္းဆံုး စာလံုး ၁ လံုး ပါ၀င္ရမည္</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="other">စကားဝွက္တြင္ စကားလံုး အေသး %d လံုး ပါ၀င္ရမည္</item>
+        <item quantity="one">လ်ဳိ႕ွဝွက္နံပါတ္တြင္ အနည္းဆံုး စာလံုအေသး ၁ လံုး ပါရမည္</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="other">စကားဝွက္တြင္ စကားလံုး အႀကီး %d လံုး ပါ၀င္ရမည္</item>
+        <item quantity="one">စကားဝလ်ဳိ႕ွဝွက္နံပါတ္တြင္ွက္တြင္ အနည္းဆံုး စာလံုးအၾကီး ၁ လံုး ပါ၀င္မည္</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="other">စကားဝွက္တြင္ နံပါတ္ဂဏန္း %d လံုး ပါ၀င္ရမည္</item>
+        <item quantity="one">လ်ဳိ႕ွဝွက္နံပါတ္တြင္ အနည္းဆံုး ဂဏာန္း ၁ လံုး ပါရမည္</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="other">စကားဝွက္တြင္ အထူး သေကၤတ %d လံုး ပါ၀င္ရမည္</item>
+        <item quantity="one">လ်ဳိ႕ွဝွက္နံပါတ္တြင္ အနည္းဆံုး အထူးသေကၤတ ၁ လံုး ပါ၀င္မည္</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="other">စကားဝွက္တြင္ စကားလံုး မဟုတ္ေသာ အကၡရာ %d လံုး ပါ၀င္ရမည္</item>
+        <item quantity="one">လ်ဳိ႕ွဝွက္နံပါတ္တြင္ အနည္းဆံုး စာလုံးမဟုတ္ေသာစကားလုံး ၁ လံုး ပါရမည္</item>
+    </plurals>
+</resources>

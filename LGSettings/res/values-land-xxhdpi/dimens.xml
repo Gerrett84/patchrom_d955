@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sui_toast_y_offset">64.0dip</dimen>
+    <dimen name="sui_list_section_title_text_size">14.0sp</dimen>
+    <dimen name="sui_list_section_count_text_size">14.0sp</dimen>
+    <dimen name="sui_section_scroller_thumb_width">32.0dip</dimen>
+    <dimen name="sui_section_scroller_text_size">9.329987sp</dimen>
+    <dimen name="sui_section_scroller_overlay_text_size">80.0sp</dimen>
+    <dimen name="sui_preferred_group_height">26.0dip</dimen>
+    <dimen name="sui_preferred_child_height">59.0dip</dimen>
+    <dimen name="sui_drum_picker_min_width">83.32999dip</dimen>
+    <dimen name="sui_drum_picker_min_height">179.32999dip</dimen>
+    <dimen name="sui_drum_picker_focus_min_height">63.329987dip</dimen>
+    <dimen name="sui_drum_picker_margin_top">4.0dip</dimen>
+    <dimen name="sui_drum_picker_margin_bottom">4.0dip</dimen>
+    <dimen name="sui_datepicker_year_width">100.0dip</dimen>
+    <dimen name="sui_datepicker_month_width">100.0dip</dimen>
+    <dimen name="sui_datepicker_day_width">100.0dip</dimen>
+    <dimen name="sui_dualdatepicker_year_width">85.0dip</dimen>
+    <dimen name="sui_dualdatepicker_month_width">95.0dip</dimen>
+    <dimen name="sui_dualdatepicker_day_width">53.0dip</dimen>
+    <dimen name="sui_dualdatepicker_type_width">73.0dip</dimen>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/quick_button_title"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.lgesettings">
+    <Preference android:persistent="false" android:layout="@layout/hotkey_preference_information" android:selectable="false" android:summary="@string/quick_button_information" />
+    <Preference android:title="@string/sp_screen_shortcut_NORMAL" android:key="short_press" android:fragment="com.android.lgesettings.hotkey.AllAppsList" />
+    <Preference android:title="@string/sp_hotkey_long_press_NORMAL" android:key="long_press" />
+    <Preference android:layout="@layout/hotkey_divider_preference" android:selectable="false" android:key="hotkey_divider" />
+    <Preference android:selectable="false" android:key="hotkey_image" />
+</PreferenceScreen>

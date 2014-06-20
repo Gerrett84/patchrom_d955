@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.lgesettings.ImagePreference android:key="screen_mode_image" />
+    <PreferenceScreen android:layout="@layout/dummy_layout" />
+    <com.android.lgesettings.lge.RadioButtonPreference android:title="@string/screen_mode_standard" android:key="standard_screen_mode" />
+    <com.android.lgesettings.lge.RadioButtonPreference android:title="@string/screen_mode_vivid" android:key="vivid_screen_mode" />
+    <com.android.lgesettings.lge.RadioButtonPreference android:title="@string/screen_mode_natural" android:key="natural_screen_mode" />
+</PreferenceScreen>

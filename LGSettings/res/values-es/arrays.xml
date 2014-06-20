@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>América</item>
+        <item>Europa</item>
+        <item>África</item>
+        <item>Asia</item>
+        <item>Australia</item>
+        <item>Pacífico</item>
+        <item>Todos</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 segundos</item>
+        <item>30 segundos</item>
+        <item>1 minuto</item>
+        <item>2 minutos</item>
+        <item>5 minutos</item>
+        <item>10 minutos</item>
+        <item>30 minutos</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries2_NORMAL">
+        <item>15 segundos</item>
+        <item>30 segundos</item>
+        <item>1 minuto</item>
+        <item>2 minutos</item>
+        <item>5 minutos</item>
+        <item>10 minutos</item>
+        <item>Mantener la pantalla encendida</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL">
+        <item>15 segundos</item>
+        <item>30 segundos</item>
+        <item>1 minuto</item>
+        <item>2 minutos</item>
+        <item>5 minutos</item>
+        <item>10 minutos</item>
+        <item>15 minutos</item>
+        <item>Mantener la pantalla encendida</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL_ex">
+        <item>15 seg.</item>
+        <item>30 seg.</item>
+        <item>1 min</item>
+        <item>2 min.</item>
+        <item>5 min</item>
+        <item>10 min</item>
+        <item>15 min</item>
+        <item>Mantener la pantalla encendida</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled">
+        <item>15 segundos</item>
+        <item>30 segundos</item>
+        <item>1 minuto</item>
+        <item>2 minutos</item>
+        <item>5 minutos</item>
+        <item>10 minutos</item>
+        <item>15 minutos</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled_ex">
+        <item>15 seg.</item>
+        <item>30 seg.</item>
+        <item>1 min</item>
+        <item>2 min.</item>
+        <item>5 min</item>
+        <item>10 min</item>
+        <item>15 min</item>
+    </string-array>
+    <string-array name="sp_pouch_default_clock_entries2_NORMAL">
+        <item>Reloj 1</item>
+        <item>Reloj 2</item>
+        <item>Reloj 3</item>
+        <item>Reloj 4</item>
+        <item>Reloj 5</item>
+        <item>Reloj 6</item>
+        <item>Reloj 7</item>
+        <item>Reloj 8</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries1_NORMAL">
+        <item>Analógico</item>
+        <item>Digital</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_position_entries1_NORMAL">
+        <item>Centro</item>
+        <item>Arriba a la derecha</item>
+        <item>Arriba a la izquierda</item>
+        <item>Inferior derecha</item>
+        <item>Inferior izquierda</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_font_entries1_NORMAL">
+        <item>Nombre de la fuente 1</item>
+        <item>Nombre de la fuente 2</item>
+    </string-array>
+    <string-array name="sp_sound_profile_entries_NORMAL">
+        <item>Sonido</item>
+        <item>Solamente vibrar</item>
+        <item>Silencioso</item>
+    </string-array>
+    <string-array name="dream_timeout_entries">
+        <item>Nunca</item>
+        <item>15 segundos</item>
+        <item>30 segundos</item>
+        <item>1 minuto</item>
+        <item>2 minutos</item>
+        <item>5 minutos</item>
+        <item>10 minutos</item>
+        <item>30 minutos</item>
+    </string-array>
+    <string-array name="lock_after_timeout_entries">
+        <item>Inmediatamente</item>
+        <item>5 segundos</item>
+        <item>15 segundos</item>
+        <item>30 segundos</item>
+        <item>1 minuto</item>
+        <item>2 minutos</item>
+        <item>5 minutos</item>
+        <item>10 minutos</item>
+        <item>30 minutos</item>
+    </string-array>
+    <string-array name="sp_lock_after_timeout_entries_NORMAL">
+        <item>Inmediatamente</item>
+        <item>15 segundos</item>
+        <item>30 segundos</item>
+        <item>1 minuto</item>
+        <item>2 minutos</item>
+        <item>10 minutos</item>
+        <item>30 minutos</item>
+    </string-array>
+    <string-array name="entries_font_size">
+        <item>&amp;lt;font size=16 align=middle>Pequeño&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>Normal&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>Grande&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>Extra grande&amp;lt;/font></item>
+    </string-array>
+    <string-array name="sp_entries_font_size2">
+        <item>&amp;lt;font size=14 align=middle>Mínimo&amp;lt;/font></item>
+        <item>&amp;lt;font size=16 align=middle>Pequeño&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>Mediano&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>Grande&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>Muy grande&amp;lt;/font></item>
+        <item>&amp;lt;font size=27 align=middle>Máximo&amp;lt;/font></item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>Muy lenta</item>
+        <item>Lenta</item>
+        <item>Normal</item>
+        <item>Rápida</item>
+        <item>Muy rápida</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>Muy bajo</item>
+        <item>Baja</item>
+        <item>Normal</item>
+        <item>Alta</item>
+        <item>Muy alto</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Buscando…</item>
+        <item>Conectando...</item>
+        <item>Autenticando ...</item>
+        <item>Obteniendo dirección IP…</item>
+        <item>Conectado</item>
+        <item>Suspendida</item>
+        <item>Desconectando...</item>
+        <item>Desconectado</item>
+        <item>Sin éxito</item>
+        <item>Bloqueado</item>
+        <item>Evitar mala conexión temporalmente</item>
+        <item>Evitar mala conexión temporalmente</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Buscando…</item>
+        <item>Conectando a %1$s...</item>
+        <item>Autenticando con %1$s…</item>
+        <item>Obteniendo dirección IP de%1$s...</item>
+        <item>Conectada a %1$s</item>
+        <item>Suspendida</item>
+        <item>Desconectando de %1$s...</item>
+        <item>Desconectado</item>
+        <item>Sin éxito</item>
+        <item>Bloqueado</item>
+        <item>Evitar mala conexión temporalmente</item>
+    </string-array>
+    <string-array name="wifi_ap_security">
+        <item>Abierta</item>
+        <item>WPA PSK</item>
+        <item>WPA2 PSK</item>
+    </string-array>
+    <string-array name="wifi_p2p_wps_setup">
+        <item>Presionar botón</item>
+        <item>PIN desde este dispositivo</item>
+    </string-array>
+    <string-array name="wifi_p2p_status">
+        <item>Conectado</item>
+        <item>Conectando</item>
+        <item>Sin éxito</item>
+        <item>Disponible</item>
+        <item>Fuera de intervalo</item>
+    </string-array>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>2 minutos</item>
+        <item>5 minutos</item>
+        <item>1 hora</item>
+        <item>Siempre visible</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Bajo</item>
+        <item>Aceptable</item>
+        <item>Buena</item>
+        <item>Excelente</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Siempre</item>
+        <item>Solo cuando esté cargando la batería</item>
+        <item>Wi-Fi apagado (debido al uso de datos)</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <item>Siempre</item>
+        <item>Solo cuando esté cargando la batería</item>
+        <item>Wi-Fi apagado</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_entries">
+        <item>Automático</item>
+        <item>Solo 5 GHz</item>
+        <item>Solo 2.4 GHz</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>Tiempo de uso</item>
+        <item>Iniciar conteo</item>
+        <item>Nombre de la aplicación</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>Ninguno</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_network_setup">
+        <item>Desactivar</item>
+        <item>Presionar botón</item>
+        <item>PIN desde el punto de acceso</item>
+        <item>PIN desde este dispositivo</item>
+    </string-array>
+    <string-array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>Estático</item>
+    </string-array>
+    <string-array name="wifi_proxy_settings">
+        <item>Ninguno</item>
+        <item>Manual</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>Desactivar</item>
+        <item>Alerta</item>
+        <item>Vibrar</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>Ninguno</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP o CHAP</item>
+    </string-array>
+    <string-array name="bearer_entries">
+        <item>LTE</item>
+        <item>eHRPD</item>
+        <item>No está especificado</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Almacenamiento de dispositivo interno</item>
+        <item>MicroSD extraíble</item>
+        <item>Selección del sistema</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>Siempre</item>
+        <item>Nunca</item>
+        <item>Solo en modo Silencio</item>
+        <item>Si no está en modo silencio</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_titles">
+        <item>Corto</item>
+        <item>Mediano</item>
+        <item>Largo</item>
+    </string-array>
+    <string-array name="hdcp_checking_titles">
+        <item>Nunca revisar</item>
+        <item>Solo contenidos DRM</item>
+        <item>Siempre revisar</item>
+    </string-array>
+    <string-array name="hdcp_checking_summaries">
+        <item>Nunca verificar HDCP</item>
+        <item>Use la revisión HDCP únicamente para contenidos DRM</item>
+        <item>Siempre usar el HDCP para chequear</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>Animación apagada</item>
+        <item>Escala de animación 0,5x</item>
+        <item>Escala de animación 1x</item>
+        <item>Escala de animación 1,5x</item>
+        <item>Escala de animación 2x</item>
+        <item>Escala de animación 5x</item>
+        <item>Escala de animación 10x</item>
+    </string-array>
+    <string-array name="transition_animation_scale_entries">
+        <item>Animación apagada</item>
+        <item>Escala de animación 0,5x</item>
+        <item>Escala de animación 1x</item>
+        <item>Escala de animación 1,5x</item>
+        <item>Escala de animación 2x</item>
+        <item>Escala de animación 5x</item>
+        <item>Escala de animación 10x</item>
+    </string-array>
+    <string-array name="animator_duration_scale_entries">
+        <item>Animación apagada</item>
+        <item>Escala de animación 0,5x</item>
+        <item>Escala de animación 1x</item>
+        <item>Escala de animación 1,5x</item>
+        <item>Escala de animación 2x</item>
+        <item>Escala de animación 5x</item>
+        <item>Escala de animación 10x</item>
+    </string-array>
+    <string-array name="overlay_display_devices_entries">
+        <item>Ninguno</item>
+        <item>720x480 mdpi</item>
+        <item>1280x720 tvdpi</item>
+        <item>1920x1080 xhdpi</item>
+        <item>1280x720 tvdpi y 1920x1080 xhdpi</item>
+    </string-array>
+    <string-array name="enable_opengl_traces_entries">
+        <item>Ninguno</item>
+        <item>Logcat</item>
+        <item>Systrace (Gráficos)</item>
+        <item>Total de llamadas en glGetError</item>
+    </string-array>
+    <string-array name="app_process_limit_entries">
+        <item>Límite estándar</item>
+        <item>No hay procesos en segundo plano</item>
+        <item>El máximo es 1 proceso</item>
+        <item>El máximo son 2 procesos</item>
+        <item>El máximo son 3 procesos</item>
+        <item>El máximo son 4 procesos</item>
+    </string-array>
+    <string-array name="vpn_types_long">
+        <item>PPTP VPN</item>
+        <item>VPN L2TP/IPSec con teclas precompartidas</item>
+        <item>VPN L2TP/IPSec con certificados</item>
+        <item>VPN IPSec con contraseñas precompartidas y autenticación Xauth</item>
+        <item>VPN IPSec con certificados y autenticación Xauth</item>
+        <item>VPN IPSec con certificados y autenticación híbrida</item>
+    </string-array>
+    <string-array name="vpn_states">
+        <item>Desconectado</item>
+        <item>Inicializando...</item>
+        <item>Conectando...</item>
+        <item>Conectado</item>
+        <item>Tiempo de espera</item>
+        <item>Sin éxito</item>
+    </string-array>
+    <string-array name="security_settings_premium_sms_values">
+        <item>Preguntar</item>
+        <item>No permitir nunca</item>
+        <item>Permitir siempre</item>
+    </string-array>
+    <string-array name="search_filter">
+        <item>Todos los dispositivos</item>
+        <item>Auriculares</item>
+        <item>PC</item>
+        <item>Teléfono</item>
+        <item>Periférico</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries_NORMAL">
+        <item>Imagen de usuario</item>
+        <item>Reloj 1</item>
+        <item>Reloj 2</item>
+        <item>Reloj 3</item>
+        <item>Reloj 4</item>
+        <item>Reloj 5</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL">
+        <item>1,5 segundos</item>
+        <item>3 segundos</item>
+        <item>5 segundos</item>
+        <item>Siempre encendido</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL_ex">
+        <item>1.5 Seg.</item>
+        <item>3 seg.</item>
+        <item>5 seg.</item>
+        <item>Siempre encendido</item>
+    </string-array>
+    <string-array name="sp_front_key_light_l1_NORMAL">
+        <item>3 segundos</item>
+        <item>6 segundos</item>
+        <item>10 segundos</item>
+        <item>30 segundos</item>
+        <item>Siempre encendido</item>
+    </string-array>
+    <string-array name="sp_front_key_light_att_NORMAL">
+        <item>3 seg.</item>
+        <item>1 Seg.</item>
+        <item>10 seg.</item>
+        <item>30 seg.</item>
+        <item>Siempre encendido</item>
+    </string-array>
+    <string-array name="sp_numlocdisp_entries_NORMAL">
+        <item>Desactivar</item>
+        <item>Activar</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_NORMAL">
+        <item>Alerta de privacidad</item>
+        <item>Si utiliza la aplicación de terceros, ésta puede recolectar su información personal o exigirle a su proveedor de servicios que las divulgue, incluyendo información sobre su ubicación (cuando sea aplicable) al proveedor de la aplicación o a algún otro tercero.</item>
+        <item>"¿Cuál es la Política de Confidencialidad aplicada?  La Política de Confidencialidad y los Términos de Uso de su operadora no se aplican a las aplicaciones de su dispositivo que sean suministradas exclusivamente por terceros. Las políticas del tercero son las que se aplican al uso de dicha aplicación."</item>
+        <item>"¿Dónde puedo encontrar más información acerca de las Políticas de terceros? Consulte a los términos de uso de la aplicación y/o las políticas del proveedor de la aplicación a fin de obtener más  información sobre la manera en que la aplicación recolectará, accederá, utilizará y divulgará su información. Las Políticas de Confidencialidad, Términos de Uso y otras notificaciones al cliente PUEDEN ESTAR disponibles en el sitio web del proveedor. Antes de usar una aplicación, esté seguro que usted está de acuerdo con sus las políticas."</item>
+        <item>"¿En dónde puedo encontrar la Política de Confidencialidad de mi proveedor de servicios?  Por separado, si tienes alguna pregunta acerca de la Política de Confidencialidad de su proveedor de servicios, por favor visita la pagina de su proveedor de servicios y haz clic en el vínculo de la Política de Confidencialidad (\"Privacy Policy\")."</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_spr_NORMAL">
+        <item>Alerta de Privacidad de Sprint</item>
+        <item>Si se utiliza una aplicación de un tercero, directamente puede colectar su información personal o requerir Sprint para divulgar su información personal, incluyendo información sobre su ubicación (si disponible) al proveedor de la aplicación o cualquier otro tercero.</item>
+        <item>¿Cuál Política de Privacidad aplica? La Política de Privacidad y los Términos de Uso de Sprint no se aplican a aplicaciones en su teléfono que sean suministrados únicamente por terceros. Las políticas de terceros se aplican a su uso de esta aplicación.</item>
+        <item>¿Dónde puedo encontrar más información acerca de las políticas de terceros? Revise los términos de uso de la aplicación y/o las políticas del proveedor de la aplicación, para obtener más información acerca de cómo la aplicación recolectará, accederá, usará y divulgará su información. Políticas de Privacidad, Términos de Uso y otros avisos del consumidor PUEDEN ESTAR disponibles en el sitio Web del proveedor. Asegúrese de estar cómodo con las políticas, antes de usar una aplicación.</item>
+        <item>¿Dónde puedo encontrar la Política de Privacidad de Sprint? De forma separada, si tiene preguntas acerca de la Política de Privacidad de Sprint, por favor, visite Sprint.com y haga clic en el enlace \"Política de Privacidad\".</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_bm_NORMAL">
+        <item>Aumentar alerta de privacidad móvil</item>
+        <item>Si se utiliza una aplicación de un tercero, directamente podrán colectar su información personal o requerir Boost Mobile para divulgar su información personal, incluyendo información sobre su ubicación (si disponible) al proveedor de la aplicación o cualquier otro tercero.</item>
+        <item>¿Cuál Política de Privacidad aplica? La Política de Privacidad y los Términos de Uso de Boost Mobile no se aplican a aplicaciones en su teléfono que sean suministrados únicamente por terceros. Las políticas de terceros se aplican a su uso de esta aplicación.</item>
+        <item>¿Dónde puedo encontrar más información acerca de las políticas de terceros? Revise los términos de uso de la aplicación y/o las políticas del proveedor de la aplicación, para obtener más información acerca de cómo la aplicación recolectará, accederá, usará y divulgará su información. Políticas de Privacidad, Términos de Uso y otros avisos del consumidor PUEDEN ESTAR disponibles en el sitio Web del proveedor. Asegúrese de estar cómodo con las políticas, antes de usar una aplicación.</item>
+        <item>¿Dónde puedo encontrar la Política de Privacidad de Boost Mobile? De forma separada, si tiene preguntas acerca de la Política de Privacidad de Boost Mobile, por favor, visite Boost Mobile.com y haga clic en el enlace \"Política de Privacidad\".</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_virgin_NORMAL">
+        <item>Alerta de Confidencialidad de Virgin Mobile</item>
+        <item>Si utiliza la aplicación de un tercero, este podría recolectar su información personal o exigirle a Virgin Mobile que le divulgue su información personal, incluyendo información sobre su ubicacion (en donde sea pertinente), al proveedor de la aplicación o a algún otro tercero.</item>
+        <item>¿Cual es la Politica de Confidencialidad que se aplica? La Politica de Confidencialidad y los Terminos de Uso de Virgin Mobile no cubren las aplicaciones de su equipo que sean suministradas exclusivamente por terceros. Las politicas del tercero son las que cubren su uso de dicha aplicación.</item>
+        <item>¿Dónde puedo encontrar más información acerca de las políticas de terceros? Revise los términos de uso de la aplicación y/o las políticas del proveedor de la aplicación, para obtener más información acerca de cómo la aplicación recolectará, accederá, usará y divulgará su información. Políticas de Privacidad, Términos de Uso y otros avisos del consumidor PUEDEN ESTAR disponibles en el sitio Web del proveedor. Asegúrese de estar cómodo con las políticas, antes de usar una aplicación.</item>
+        <item>¿Dónde puedo encontrar la Politica de Confidencialidad de Virgin Mobile? Por separado, si tiene alguna pregunta acerca de la Politica de Confidencialidad de Virgin Mobile, por favor visite VirginMobileUSA.com y haga clic en el enlace de la Politica de Confidencialidad.</item>
+    </string-array>
+    <string-array name="sp_lock_screen_effect_entries_NORMAL">
+        <item>Básico</item>
+        <item>Ondulación con hojas</item>
+        <item>Desparramando la tinta</item>
+        <item>Rocío</item>
+    </string-array>
+    <string-array name="sp_power_save_brightness_entries_NORMAL">
+        <item>10% de brillo</item>
+        <item>20% de brillo</item>
+        <item>30% de brillo</item>
+        <item>50% de brillo</item>
+    </string-array>
+    <string-array name="sp_power_save_screen_timeout_entries_NORMAL">
+        <item>15 segundos</item>
+        <item>30 segundos</item>
+        <item>1 minuto</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_NORMAL">
+        <item>1,5 segundos</item>
+        <item>Siempre apagado</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_att_NORMAL">
+        <item>3 segundos</item>
+        <item>Siempre apagado</item>
+    </string-array>
+    <string-array name="sp_power_save_mode_entries_NORMAL">
+        <item>10% de la batería</item>
+        <item>20% de la batería</item>
+        <item>30% de la batería</item>
+        <item>50% de la batería</item>
+    </string-array>
+    <string-array name="sp_power_save_mode2_entries_NORMAL">
+        <item>Inmediatamente</item>
+        <item>10% de la batería</item>
+        <item>20% de la batería</item>
+        <item>30% de la batería</item>
+        <item>50% de la batería</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries">
+        <item>5 minutos</item>
+        <item>10 minutos</item>
+        <item>15 minutos</item>
+    </string-array>
+    <string-array name="sp_hotspot_timeout_entries_mx_NORMAL">
+        <item>Tiempo de espera ilimitado</item>
+        <item>5 min</item>
+        <item>10 min.</item>
+        <item>15 min</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries_jb">
+        <item>5 min</item>
+        <item>10 min.</item>
+        <item>15 min</item>
+        <item>30 min</item>
+        <item>Nunca</item>
+    </string-array>
+    <string-array name="wifi_p2p_timeout_entries">
+        <item>15 min</item>
+        <item>30 min</item>
+        <item>Nunca</item>
+    </string-array>
+    <string-array name="sp_wifi_ap_visibility_NORMAL">
+        <item>Mostrar</item>
+        <item>Ocultar</item>
+    </string-array>
+    <string-array name="sp_bt_search_filter_SHORT">
+        <item>Todos los dispositivos</item>
+        <item>Auriculares</item>
+        <item>Teléfono móvil</item>
+        <item>PC</item>
+        <item>Dispositivo de entrada (teclado, ratón, etc.)</item>
+    </string-array>
+    <string-array name="wifi_signal_strength_entries">
+        <item>Intenso</item>
+        <item>Mediano</item>
+        <item>Débil</item>
+        <item>Desactivar</item>
+    </string-array>
+    <string-array name="wifi_Dual_band_AP_connection_entries">
+        <item>Automático</item>
+        <item>5 GHz</item>
+        <item>2.4 GHz</item>
+    </string-array>
+</resources>

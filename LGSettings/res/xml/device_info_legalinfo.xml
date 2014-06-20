@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/about_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:title="@string/sp_eula_title" android:key="eula">
+        <intent android:targetPackage="com.lge.eula" android:action="android.intent.action.MAIN" android:targetClass="com.lge.eula.UnifiedEula" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/copyright_title" android:key="copyright">
+        <intent android:action="android.settings.COPYRIGHT" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/license_title" android:key="license">
+        <intent android:action="android.settings.LICENSE" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/terms_title" android:key="terms">
+        <intent android:action="android.settings.TERMS" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/sp_carrier_legal_NORMAL" android:key="carrier_legal">
+        <intent android:action="com.lge.settings.CARRIERLEGAL" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/sp_mpcs_legal_NORMAL" android:key="mpcs_legal">
+        <intent android:action="com.lge.settings.MPCSLEGAL" />
+    </PreferenceScreen>
+</PreferenceScreen>

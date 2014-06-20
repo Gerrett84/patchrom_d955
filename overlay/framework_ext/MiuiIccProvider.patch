@@ -1,0 +1,21 @@
+diff -rup ../framework_ext/smali/com/android/internal/telephony/MiuiIccProvider.smali ../framework_ext/smali/com/android/internal/telephony/MiuiIccProvider.smali
+--- ../framework_ext/smali/com/android/internal/telephony/MiuiIccProvider.smali	2014-05-27 19:02:26.000000000 +0200
++++ ../framework_ext/smali/com/android/internal/telephony/MiuiIccProvider.smali	2014-05-27 20:01:44.642896444 +0200
+@@ -1591,7 +1591,7 @@
+     if-eqz v0, :cond_0
+ 
+     .line 508
+-    invoke-virtual {v0, p1, p2, p3}, Lcom/android/internal/telephony/MiuiIccPhoneBookInterfaceManagerProxy;->updateUsimPhoneBookRecordsByIndex(ILcom/android/internal/telephony/AdnRecord;I)Z
++    invoke-virtual {v0, p1, p2, p3}, Lcom/android/internal/telephony/MiuiIccPhoneBookInterfaceManagerProxy;->updateUsimPhoneBookRecordsByIndex(ILcom/android/internal/telephony/uicc/AdnRecord;I)Z
+     :try_end_0
+     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_1
+     .catch Ljava/lang/SecurityException; {:try_start_0 .. :try_end_0} :catch_0
+@@ -1699,7 +1699,7 @@
+     if-eqz v0, :cond_0
+ 
+     .line 494
+-    invoke-virtual {v0, p1, p2, p3}, Lcom/android/internal/telephony/MiuiIccPhoneBookInterfaceManagerProxy;->updateUsimPhoneBookRecordsBySearch(ILcom/android/internal/telephony/AdnRecord;Lcom/android/internal/telephony/AdnRecord;)Z
++    invoke-virtual {v0, p1, p2, p3}, Lcom/android/internal/telephony/MiuiIccPhoneBookInterfaceManagerProxy;->updateUsimPhoneBookRecordsBySearch(ILcom/android/internal/telephony/uicc/AdnRecord;Lcom/android/internal/telephony/uicc/AdnRecord;)Z
+     :try_end_0
+     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_1
+     .catch Ljava/lang/SecurityException; {:try_start_0 .. :try_end_0} :catch_0

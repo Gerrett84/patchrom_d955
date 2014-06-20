@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="other">"Nenosiri lazima iwe na angalau herufi %d "</item>
+        <item quantity="one">Nenosiri lazima iwe na angalau herufi 1</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="other">Nenosiri lazima iwe na angalau %d herufi ndogo</item>
+        <item quantity="one">Nenosiri lazima iwe na angalau herufi 1 ndogo</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="other">Nenosiri lazima iwe na angalau herufi %d kubwa</item>
+        <item quantity="one">Nenosiri lazima iwe na angalau herufi 1 kubwa</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="other">Nenosiri ni lazima iwe na angalau namba %d za tarakimu</item>
+        <item quantity="one">Nenosiri ni lazima iwe na angalau namba 1 ya tarakimu</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="other">Nenosiri lazima iwe na angalau ishara %d maalum</item>
+        <item quantity="one">Nenosiri lazima iwe na angalau ishara 1 maalum</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="other">Nenosiri lazima iwe na angalau kibambo %d isiyo-herufi</item>
+        <item quantity="one">Nenosiri lazima iwe na angalau kibambo 1 isiyo-herufi</item>
+    </plurals>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:paddingTop="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:id="@id/suid_custom_main_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" style="@android:style/TextAppearance.Holo.DialogWindowTitle" />
+        <TextView android:id="@id/suid_custom_sub_title" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" style="@style/SUITextAppearance.PickerTitle" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageButton android:id="@id/suid_img_today" android:layout_width="52.0dip" android:layout_height="52.0dip" />
+        <ImageButton android:id="@id/suid_img_toggle" android:layout_width="52.0dip" android:layout_height="52.0dip" />
+    </LinearLayout>
+</RelativeLayout>

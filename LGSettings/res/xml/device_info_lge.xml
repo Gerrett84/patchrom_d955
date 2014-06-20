@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/about_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference android:textStyle="bold" android:singleLine="true" android:title="@string/sp_phone_name_title" android:key="my_phone_name" android:dialogTitle="@string/sp_phone_name_dialog_title" android:dialogMessage="@string/sp_phone_name_dialog_description" android:privateImeOptions="com.lge.android.editmode.noEmoji" />
+    <PreferenceScreen android:title="@string/sp_title_dcm_update_center" android:key="update_center_dcm" android:fragment="com.android.lgesettings.lge.DeviceInfoLgeSoftwareUpdate" />
+    <com.android.lgesettings.lge.DeviceInfoLgeBadge android:title="@string/sp_title_dcm_update_center" android:key="update_center" android:summary="@string/sp_update_center_NORMAL">
+        <intent android:targetPackage="com.lge.updatecenter" android:action="android.intent.action.MAIN" android:targetClass="com.lge.updatecenter.UpdateCenterPrfActivity" />
+    </com.android.lgesettings.lge.DeviceInfoLgeBadge>
+    <PreferenceScreen android:title="@string/sp_title_sw_update_NORMAL" android:key="system_update_settings" android:summary="@string/sp_SWUpdateSummary_NORMAL">
+        <intent android:action="com.lge.SOFTWARE_UPDATE_SETTINGS" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/sp_title_vzw_icon_glossary" android:key="icongr" android:summary="@string/sp_title_vzw_icon_glossary_summary">
+        <intent android:targetPackage="com.lge.helpcenter" android:action="android.intent.action.MAIN" android:targetClass="com.lge.helpcenter.IconGlossary" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/status_operator" android:key="network" android:summary="@string/sp_NetworkType_NORMAL">
+        <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.lge.DeviceInfoLgeNetwork" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/device_status" android:key="status" android:summary="@string/sp_title_status_summary">
+        <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.lge.DeviceInfoLgeStatus" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/power_usage_summary_title" android:key="battery" android:summary="@string/sp_BatterySummary_NORMAL" android:fragment="com.android.lgesettings.lge.DeviceInfoLgeBattery" />
+    <PreferenceScreen android:title="@string/sp_HardwareInfo_NORMAL" android:key="phoneidentity" android:summary="@string/sp_title_phoneinformation_summary">
+        <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.lge.DeviceInfoLgePhoneIdentity" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/sp_HardwareInfo_NORMAL" android:key="hardwareinformation" android:summary="@string/sp_HWversion_NORMAL">
+        <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.lge.DeviceInfoLgeHardwareInformation" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/sp_HardwareInfo_NORMAL" android:key="wifi" android:summary="@string/sp_title_phoneinformation_summary" android:fragment="com.android.lgesettings.lge.DeviceInfoLgeHardwareWifi" />
+    <PreferenceScreen android:title="@string/sp_Softwareinfo_NORMAL" android:key="softwareinformation" android:summary="@string/sp_SWSummary_NORMAL" android:fragment="com.android.lgesettings.lge.DeviceInfoLgeSoftwareInformation" />
+    <PreferenceScreen android:title="@string/legal_information" android:key="legalinformation" android:summary="@string/sp_LegalInfoSummary_NORMAL" android:fragment="com.android.lgesettings.lge.DeviceInfoLgeLegal" />
+    <PreferenceScreen android:title="@string/settings_safetylegal_title" android:key="safetylegal">
+        <intent android:action="android.settings.SAFETY" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/sp_patent_information" android:key="patentinfo">
+        <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.SettingsPatentInformation" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/sp_regulatory_safety" android:key="device_serial_info">
+        <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.deviceinfo.Serial" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/advanced_settings" android:key="development_settings">
+        <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.DevelopmentSettings" />
+    </PreferenceScreen>
+</PreferenceScreen>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/sp_emotional_led_reminder_title" android:key="emotional_missed_event"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.lgesettings">
+    <Preference android:persistent="false" android:title="@string/sp_emotional_led_missed_event_summary" android:selectable="false" android:key="emotional_led_reminder_missed_desc" style="@style/description_preference_information" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/sp_emotional_led_reminder_missed_call" android:key="emotional_led_reminder_missed_call" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/sp_emotional_led_reminder_msg" android:key="emotional_led_reminder_msg" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/sp_emotional_led_reminder_voicemail" android:key="emotional_led_reminder_voicemail" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/sp_emotional_led_reminder_cell_broad" android:key="emotional_led_reminder_cell_broad" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/sp_emotional_led_reminder_lgemail" android:key="emotional_led_reminder_email" />
+</PreferenceScreen>

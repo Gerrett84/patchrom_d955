@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="other">"Maxfiy so'zda kamida %d harf qatnashishi kerak"</item>
+        <item quantity="one">"Maxfiy so'zda kamida 1 ta harf qatnashishi kerak"</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="other">"Maxfiy so'zda kamida %d kichik harf qatnashishi kerak"</item>
+        <item quantity="one">"Maxfiy so'zda kamida bitta kichik harf qatnashishi kerak"</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="other">"Maxfiy so'zda kamida %d katta harf qatnashishi kerak"</item>
+        <item quantity="one">"Maxfiy so'zda kamida bitta katta harf qatnashishi kerak"</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="other">"Maxfiy so'zda kamida %d raqam qatnashishi kerak"</item>
+        <item quantity="one">"Maxfiy so'zda kamida bitta raqam qatnashishi kerak"</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="other">"Maxfiy so'zda kamida %d maxsus belgilar qatnashishi kerak"</item>
+        <item quantity="one">"Maxfiy so'zda kamida bitta maxsus belgi qatnashishi kerak"</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="other">"Maxfiy so'zda kamida %d harf bo'lmagan belgi qatnashishi kerak"</item>
+        <item quantity="one">"Maxfiy so'zda kamida 1 ta harf bo'lmaga belgi qatnashishi kerak"</item>
+    </plurals>
+</resources>

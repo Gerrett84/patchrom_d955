@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="other">T40738</item>
+        <item quantity="one">T40731</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="other">T40739</item>
+        <item quantity="one">T40732</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="other">T40740</item>
+        <item quantity="one">T40733</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="other">T40741</item>
+        <item quantity="one">T40735</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="other">T40737</item>
+        <item quantity="one">T40734</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="other">T40742</item>
+        <item quantity="one">T40736</item>
+    </plurals>
+</resources>

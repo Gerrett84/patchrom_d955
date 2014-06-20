@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:paddingEnd="?android:scrollbarSize"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="left|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="7.0dip" android:layout_weight="0.9">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sp_quiet_mode_title" />
+        <LinearLayout android:layout_gravity="left|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/icon_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/setting_quiettime_icon" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:gravity="center_vertical" android:id="@id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

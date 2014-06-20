@@ -1,0 +1,12 @@
+diff -rup ../android.policy/smali/com/android/internal/policy/impl/MiuiKeyguardViewBase.smali ../android.policy/smali/com/android/internal/policy/impl/MiuiKeyguardViewBase.smali
+--- ../android.policy/smali/com/android/internal/policy/impl/MiuiKeyguardViewBase.smali	2014-05-12 20:01:19.000000000 +0200
++++ ../android.policy/smali/com/android/internal/policy/impl/MiuiKeyguardViewBase.smali	2014-05-12 21:15:53.416936726 +0200
+@@ -442,6 +442,8 @@
+ 
+     goto :goto_0
+ .end method
++.method public abstract hideSKTLocked()V
++.end method
+ 
+ .method public abstract onScreenTurnedOff()V
+ .end method

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/info_layout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout style="@style/entry_layout">
+        <TextView android:text="@string/pri_settings_result_value" style="@style/info_label" />
+        <TextView android:id="@id/result" style="@style/info_value" />
+    </LinearLayout>
+    <LinearLayout style="@style/entry_layout">
+        <TextView android:text="@string/apn_mcc" style="@style/info_label" />
+        <TextView android:id="@id/mcc" style="@style/info_value" />
+    </LinearLayout>
+    <LinearLayout style="@style/entry_layout">
+        <TextView android:text="@string/apn_mnc" style="@style/info_label" />
+        <TextView android:id="@id/mnc" style="@style/info_value" />
+    </LinearLayout>
+    <LinearLayout style="@style/entry_layout">
+        <TextView android:text="@string/status_imsi" style="@style/info_label" />
+        <TextView android:id="@id/imsi" style="@style/info_value" />
+    </LinearLayout>
+    <LinearLayout style="@style/entry_layout">
+        <TextView android:text="@string/pri_settings_test_spn" style="@style/info_label" />
+        <TextView android:id="@id/spn" style="@style/info_value" />
+    </LinearLayout>
+    <LinearLayout style="@style/entry_layout">
+        <TextView android:text="@string/pri_settings_test_gid" style="@style/info_label" />
+        <TextView android:id="@id/gid" style="@style/info_value" />
+    </LinearLayout>
+    <LinearLayout style="@style/entry_layout">
+        <TextView android:text="@string/pri_settings_test_enabled_data" style="@style/info_label" />
+        <TextView android:id="@id/mobiledata" style="@style/info_value" />
+    </LinearLayout>
+    <LinearLayout style="@style/entry_layout">
+        <TextView android:text="@string/pri_settings_test_roaming" style="@style/info_label" />
+        <TextView android:id="@id/dataroaming" style="@style/info_value" />
+    </LinearLayout>
+    <LinearLayout style="@style/entry_layout">
+        <TextView android:text="@string/pri_settings_test_language" style="@style/info_label" />
+        <TextView android:id="@id/defaultlanguage" style="@style/info_value" />
+    </LinearLayout>
+    <LinearLayout style="@style/entry_layout">
+        <TextView android:text="@string/pri_settings_test_date_format" style="@style/info_label" />
+        <TextView android:id="@id/dateformat" style="@style/info_value" />
+    </LinearLayout>
+    <LinearLayout style="@style/entry_layout">
+        <TextView android:text="@string/pri_settings_test_time_format" style="@style/info_label" />
+        <TextView android:id="@id/timeformat" style="@style/info_value" />
+    </LinearLayout>
+    <LinearLayout style="@style/entry_layout">
+        <TextView android:text="@string/pri_settings_test_timezone" style="@style/info_label" />
+        <TextView android:id="@id/defaulttimezone" style="@style/info_value" />
+    </LinearLayout>
+    <LinearLayout style="@style/entry_layout">
+        <TextView android:text="@string/pri_settings_test_autotime" style="@style/info_label" />
+        <TextView android:id="@id/autotime" style="@style/info_value" />
+    </LinearLayout>
+    <LinearLayout style="@style/entry_layout">
+        <TextView android:text="@string/pri_settings_test_timeout" style="@style/info_label" />
+        <TextView android:id="@id/screentimeout" style="@style/info_value" />
+    </LinearLayout>
+    <LinearLayout style="@style/entry_layout">
+        <TextView android:text="@string/pri_settings_test_location" style="@style/info_label" />
+        <TextView android:id="@id/locationallowed" style="@style/info_value" />
+    </LinearLayout>
+</LinearLayout>

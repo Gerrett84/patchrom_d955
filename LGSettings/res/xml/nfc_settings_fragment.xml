@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/nfc_seperator_display_reminders" android:key="nfc_lock_number" />
+    <CheckBoxPreference android:title="@string/nfc_preference_title_reminder" android:key="nfc_reminders" />
+    <CheckBoxPreference android:title="@string/nfc_preference_title_every" android:key="nfc_everyday" />
+    <PreferenceCategory android:title="@string/nfc_preference_category_typeof" android:key="nfc_security_reminder" />
+    <CheckBoxPreference android:title="@string/nfc_preference_title_disp_p2p" android:key="nfc_p2p" android:summary="@string/nfc_preference_summary_disp_p2p" />
+    <CheckBoxPreference android:title="@string/nfc_preference_title_disp_handover" android:key="nfc_handover" android:summary="@string/nfc_preference_summary_disp_handover" />
+    <PreferenceCategory android:title="@string/nfc_preference_category_sound" android:key="nfc_sound_reminder" />
+    <CheckBoxPreference android:title="@string/nfc_preference_title_sound" android:key="nfc_sound" android:summary="@string/nfc_preference_summary_sound" />
+    <CheckBoxPreference android:title="@string/sp_use_p2p_title_b_SHORT" android:key="nfc_p2p_kr" android:summary="@string/sp_p2p_body_on_a_NORMAL" />
+    <CheckBoxPreference android:title="@string/nfc_direct_beam_tm" android:key="direct_android_beam" android:summary="@string/nfc_preference_direct_beam_summary_easily" />
+    <PreferenceCategory android:title="@string/tethering_help_button_text" android:key="direct_android_help" />
+    <com.android.lgesettings.nfc.NfcCheckBoxInner android:selectable="false" android:key="help" />
+</PreferenceScreen>

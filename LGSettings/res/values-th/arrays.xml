@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>อเมริกา</item>
+        <item>ยุโรป</item>
+        <item>แอฟริกา</item>
+        <item>เอเชีย</item>
+        <item>ออสเตรเลีย</item>
+        <item>แปซิฟิก</item>
+        <item>ทั้งหมด</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 วินาที</item>
+        <item>30 วินาที</item>
+        <item>1 นาที</item>
+        <item>2 นาที</item>
+        <item>5 นาที</item>
+        <item>10 นาที</item>
+        <item>30 นาที</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries2_NORMAL">
+        <item>15 วินาที</item>
+        <item>30 วินาที</item>
+        <item>1 นาที</item>
+        <item>2 นาที</item>
+        <item>5 นาที</item>
+        <item>10 นาที</item>
+        <item>เปิดหน้าจอเสมอ</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL">
+        <item>15 วินาที</item>
+        <item>30 วินาที</item>
+        <item>1 นาที</item>
+        <item>2 นาที</item>
+        <item>5 นาที</item>
+        <item>10 นาที</item>
+        <item>15 นาที</item>
+        <item>เปิดหน้าจอเสมอ</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL_ex">
+        <item>15 วินาที</item>
+        <item>30 วิ.</item>
+        <item>1 นาที</item>
+        <item>2 นาที</item>
+        <item>5 นาที</item>
+        <item>10 นาที</item>
+        <item>15 นาที</item>
+        <item>เปิดหน้าจอเสมอ</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled">
+        <item>15 วินาที</item>
+        <item>30 วินาที</item>
+        <item>1 นาที</item>
+        <item>2 นาที</item>
+        <item>5 นาที</item>
+        <item>10 นาที</item>
+        <item>15 นาที</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled_ex">
+        <item>15 วินาที</item>
+        <item>30 วิ.</item>
+        <item>1 นาที</item>
+        <item>2 นาที</item>
+        <item>5 นาที</item>
+        <item>10 นาที</item>
+        <item>15 นาที</item>
+    </string-array>
+    <string-array name="sp_pouch_default_clock_entries2_NORMAL">
+        <item>นาฬิกา 1</item>
+        <item>นาฬิกา 2</item>
+        <item>นาฬิกา 3</item>
+        <item>นาฬิกา 4</item>
+        <item>นาฬิกา 5</item>
+        <item>นาฬิกา 6</item>
+        <item>นาฬิกา 7</item>
+        <item>นาฬิกา 8</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries1_NORMAL">
+        <item>อะนาล็อค</item>
+        <item>ดิจิตอล</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_position_entries1_NORMAL">
+        <item>ศูนย์</item>
+        <item>บนขวา</item>
+        <item>บนซ้าย</item>
+        <item>ขวาล่าง</item>
+        <item>ซ้ายล่าง</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_font_entries1_NORMAL">
+        <item>ชื่อแบบอักษร 1</item>
+        <item>ชื่อแบบอักษร 2</item>
+    </string-array>
+    <string-array name="sp_sound_profile_entries_NORMAL">
+        <item>เสียง</item>
+        <item>เฉพาะสั่น</item>
+        <item>เงียบ</item>
+    </string-array>
+    <string-array name="dream_timeout_entries">
+        <item>ไม่ยืนยัน</item>
+        <item>15 วินาที</item>
+        <item>30 วินาที</item>
+        <item>1 นาที</item>
+        <item>2 นาที</item>
+        <item>5 นาที</item>
+        <item>10 นาที</item>
+        <item>30 นาที</item>
+    </string-array>
+    <string-array name="lock_after_timeout_entries">
+        <item>ทันที</item>
+        <item>5 วินาที</item>
+        <item>15 วินาที</item>
+        <item>30 วินาที</item>
+        <item>1 นาที</item>
+        <item>2 นาที</item>
+        <item>5 นาที</item>
+        <item>10 นาที</item>
+        <item>30 นาที</item>
+    </string-array>
+    <string-array name="sp_lock_after_timeout_entries_NORMAL">
+        <item>ทันที</item>
+        <item>15 วินาที</item>
+        <item>30 วินาที</item>
+        <item>1 นาที</item>
+        <item>2 นาที</item>
+        <item>10 นาที</item>
+        <item>30 นาที</item>
+    </string-array>
+    <string-array name="entries_font_size">
+        <item>&amp;lt;font size=16 align=middle>เล็ก&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>ปกติ&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>ใหญ่&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>ใหญ่เป็นพิเศษ&amp;lt;/font></item>
+    </string-array>
+    <string-array name="sp_entries_font_size2">
+        <item>&amp;lt;font size=14 align=middle>ต่ำสุด&amp;lt;/font></item>
+        <item>&amp;lt;font size=16 align=middle>เล็ก&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>กลาง&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>ใหญ่&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>ใหญ่มาก&amp;lt;/font></item>
+        <item>&amp;lt;font size=27 align=middle>ค่าสูงสุด&amp;lt;/font></item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>ช้ามาก</item>
+        <item>ช้า</item>
+        <item>ปกติ</item>
+        <item>เร็ว</item>
+        <item>เร็วมาก</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>ต่ำมาก</item>
+        <item>ต่ำ</item>
+        <item>ปกติ</item>
+        <item>สูง</item>
+        <item>สูงมาก</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>กำลังสแกน...</item>
+        <item>กำลังเชื่อมต่อ...</item>
+        <item>กำลังตรวจสอบสิทธิ์...</item>
+        <item>ได้รับ IP address...</item>
+        <item>เชื่อมต่อแล้ว</item>
+        <item>พักไว้ก่อน</item>
+        <item>กำลังเลิกการเชื่อมต่อ...</item>
+        <item>เลิกเชื่อมต่อ</item>
+        <item>ไม่สำเร็จ</item>
+        <item>ถูกบล็อค</item>
+        <item>หลีกเลี่ยงการเชื่อมต่อคุณภาพต่ำชั่วคราว</item>
+        <item>หลีกเลี่ยงการเชื่อมต่อคุณภาพต่ำชั่วคราว</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>กำลังสแกน...</item>
+        <item>เชื่อมต่อกับ%1$s...</item>
+        <item>กำลังตรวจสอบสิทธิ์กับ %1$s…</item>
+        <item>ขอรับ IP แอดเดรสจาก %1$s...</item>
+        <item>เชื่อมต่อกับ %1$s</item>
+        <item>พักไว้ก่อน</item>
+        <item>เลิกเชื่อมต่อจาก %1$s…</item>
+        <item>เลิกเชื่อมต่อ</item>
+        <item>ไม่สำเร็จ</item>
+        <item>ถูกบล็อค</item>
+        <item>หลีกเลี่ยงการเชื่อมต่อคุณภาพต่ำชั่วคราว</item>
+    </string-array>
+    <string-array name="wifi_ap_security">
+        <item>เปิด</item>
+        <item>WPA PSK</item>
+        <item>WPA2 PSK</item>
+    </string-array>
+    <string-array name="wifi_p2p_wps_setup">
+        <item>กดปุ่ม</item>
+        <item>PIN จากอุปกรณ์นี้</item>
+    </string-array>
+    <string-array name="wifi_p2p_status">
+        <item>เชื่อมต่อแล้ว</item>
+        <item>เชื่อมต่อ</item>
+        <item>ไม่สำเร็จ</item>
+        <item>ใช้ได้</item>
+        <item>นอกช่วง</item>
+    </string-array>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>2 นาที</item>
+        <item>5 นาที</item>
+        <item>1 ชม.</item>
+        <item>ไม่มีกำหนด</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>ไม่ดี</item>
+        <item>พอใช้</item>
+        <item>ดี</item>
+        <item>ยอดเยี่ยม</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>เสมอ</item>
+        <item>เฉพาะตอนเสียบ</item>
+        <item>ปิด Wi-Fi (เนื่องจากมีการใช้ข้อมูล)</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <item>เสมอ</item>
+        <item>เฉพาะตอนเสียบ</item>
+        <item>ปิด Wi-Fi</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_entries">
+        <item>อัตโนมัติ</item>
+        <item>5 GHz เท่านั้น</item>
+        <item>2.4 GHz เท่านั้น</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>เวลาที่ใช้</item>
+        <item>จำนวนครั้งที่เริ่มต้น</item>
+        <item>ชื่อแอปพลิเคชัน</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>ไม่มี</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_network_setup">
+        <item>ปิด</item>
+        <item>กดปุ่ม</item>
+        <item>PIN จากจุดเชื่อมต่อ</item>
+        <item>PIN จากอุปกรณ์นี้</item>
+    </string-array>
+    <string-array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>คงที่</item>
+    </string-array>
+    <string-array name="wifi_proxy_settings">
+        <item>ไม่มี</item>
+        <item>ปรับเอง</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>ปิด</item>
+        <item>การเตือน</item>
+        <item>สั่น</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>ไม่มี</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP หรือ CHAP</item>
+    </string-array>
+    <string-array name="bearer_entries">
+        <item>LTE</item>
+        <item>eHRPD</item>
+        <item>ไม่ระบุ</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>ความจำภายในเครื่อง</item>
+        <item>การ์ดสามารถลบได้</item>
+        <item>ให้ระบบตัดสิน</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>เสมอ</item>
+        <item>ไม่ยืนยัน</item>
+        <item>เฉพาะโหมดเงียบ</item>
+        <item>ไม่ได้อยู่ในโหมดเงียบ</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_titles">
+        <item>สั้น</item>
+        <item>กลาง</item>
+        <item>นาน</item>
+    </string-array>
+    <string-array name="hdcp_checking_titles">
+        <item>ไม่ต้องตรวจสอบ</item>
+        <item>ตรวจสอบคอนเทนท์ DRM เท่านั้น</item>
+        <item>ตรวจสอบเสมอ</item>
+    </string-array>
+    <string-array name="hdcp_checking_summaries">
+        <item>"ไม่ใช้การตรวจสอบ HDCP "</item>
+        <item>ใช้ระบบตรวจสอบ HDCP สำหรับคอนเทนท์ DRM เท่านั้น</item>
+        <item>ใช้การตรวจสอบ HDCP เสมอ</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>ปิดแอนนิเมชั่น</item>
+        <item>ขนาดแอนนิเมชั่น .5x</item>
+        <item>ขนาดแอนนิเมชั่น 1x</item>
+        <item>ขนาดแอนนิเมชั่น 1.5x</item>
+        <item>ขนาดแอนนิเมชั่น 2x</item>
+        <item>ขนาดแอนนิเมชั่น 5x</item>
+        <item>ขนาดแอนนิเมชั่น 10x</item>
+    </string-array>
+    <string-array name="transition_animation_scale_entries">
+        <item>ปิดแอนนิเมชั่น</item>
+        <item>ขนาดแอนนิเมชั่น .5x</item>
+        <item>ขนาดแอนนิเมชั่น 1x</item>
+        <item>ขนาดแอนนิเมชั่น 1.5x</item>
+        <item>ขนาดแอนนิเมชั่น 2x</item>
+        <item>ขนาดแอนนิเมชั่น 5x</item>
+        <item>ขนาดแอนนิเมชั่น 10x</item>
+    </string-array>
+    <string-array name="animator_duration_scale_entries">
+        <item>ปิดแอนนิเมชั่น</item>
+        <item>ขนาดแอนนิเมชั่น .5x</item>
+        <item>ขนาดแอนนิเมชั่น 1x</item>
+        <item>ขนาดแอนนิเมชั่น 1.5x</item>
+        <item>ขนาดแอนนิเมชั่น 2x</item>
+        <item>ขนาดแอนนิเมชั่น 5x</item>
+        <item>ขนาดแอนนิเมชั่น 10x</item>
+    </string-array>
+    <string-array name="overlay_display_devices_entries">
+        <item>ไม่มี</item>
+        <item>720x480 mdpi</item>
+        <item>1280x720 tvdpi</item>
+        <item>1920x1080 xhdpi</item>
+        <item>1280x720 tvdpi และ 1920x1080 xhdpi</item>
+    </string-array>
+    <string-array name="enable_opengl_traces_entries">
+        <item>ไม่มี</item>
+        <item>Logcat</item>
+        <item>Systrace (ระบบกราฟิก)</item>
+        <item>Call stack on glGetError</item>
+    </string-array>
+    <string-array name="app_process_limit_entries">
+        <item>ข้อจำกัดมาตรฐาน</item>
+        <item>ไม่มีโพรเซสในแบ็กกราวน์</item>
+        <item>สูงสุด 1 โพรเซส</item>
+        <item>สูงสุด 2 โปรเซส</item>
+        <item>สูงสุด 3 โปรเซส</item>
+        <item>สูงสุด 4 โปรเซส</item>
+    </string-array>
+    <string-array name="vpn_types_long">
+        <item>PPTP VPN</item>
+        <item>"L2TP/IPSec VPN ที่มีคีย์ pre-share "</item>
+        <item>L2TP/IPSec VPN พร้อมการรับรองสิทธิ์</item>
+        <item>IPSec VPN ที่มีคีย์ pre-share และการตรวจสอบสิทธิ์ Xauth</item>
+        <item>IPSec VPN พร้อมการรับรองสิทธิ์และระบบตรวจสอบสิทธิ์ Xauth</item>
+        <item>IPSec VPN และการรับรองสิทธิ์บวกกับการตรวจสอบสิทธิ์ลูกผสม</item>
+    </string-array>
+    <string-array name="vpn_states">
+        <item>เลิกเชื่อมต่อ</item>
+        <item>กำลังเริ่มต้น...</item>
+        <item>กำลังเชื่อมต่อ...</item>
+        <item>เชื่อมต่อแล้ว</item>
+        <item>ระยะหมดเวลา</item>
+        <item>ไม่สำเร็จ</item>
+    </string-array>
+    <string-array name="security_settings_premium_sms_values">
+        <item>ถาม</item>
+        <item>ไม่อนุญาต</item>
+        <item>อนุญาตเสมอ</item>
+    </string-array>
+    <string-array name="search_filter">
+        <item>อุปกรณ์ทั้งหมด</item>
+        <item>ชุดหูฟัง</item>
+        <item>PC</item>
+        <item>โทรศัพท์</item>
+        <item>อุปกรณ์ต่อพ่วง</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries_NORMAL">
+        <item>ภาพผู้ใช้</item>
+        <item>นาฬิกา 1</item>
+        <item>นาฬิกา 2</item>
+        <item>นาฬิกา 3</item>
+        <item>นาฬิกา 4</item>
+        <item>นาฬิกา 5</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL">
+        <item>1.5 วินาที</item>
+        <item>3 วินาที</item>
+        <item>5 วินาที</item>
+        <item>เปิดเสมอ</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL_ex">
+        <item>1.5 วิ.</item>
+        <item>3 วิ.</item>
+        <item>5 วิ.</item>
+        <item>เปิดเสมอ</item>
+    </string-array>
+    <string-array name="sp_front_key_light_l1_NORMAL">
+        <item>3 วินาที</item>
+        <item>6 วินาที</item>
+        <item>10 วินาที</item>
+        <item>30 วินาที</item>
+        <item>เปิดเสมอ</item>
+    </string-array>
+    <string-array name="sp_front_key_light_att_NORMAL">
+        <item>3 วิ.</item>
+        <item>1 วิ.</item>
+        <item>10 วิ.</item>
+        <item>30 วิ.</item>
+        <item>เปิดเสมอ</item>
+    </string-array>
+    <string-array name="sp_numlocdisp_entries_NORMAL">
+        <item>เลิกใช้</item>
+        <item>เปิดใช้งาน</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_NORMAL">
+        <item>แจ้งเตือนเรื่องความเป็นส่วนตัว</item>
+        <item>ถ้าหากคุณใช้แอปฯของบริษัทอื่น แอปฯเหล่านั้นอาจรวบรวมข้อมูลส่วนตัวของคุณโดยตรง หรือขอให้บริษัทสื่อสารเปิดเผยข้อมูลส่วนตัวของคุณ รวมทั้งข้อมูลระบุพิกัดอีกด้วย (ตรงจุดที่เรียกใช้ได้) ไปยังผู้ให้บริการแอปฯ หรือบุคคลที่สามรายอื่นๆ</item>
+        <item>นโยบายปกปิดข้อมูลส่วนตัวมีผลอย่างไร นโยบายปกปิดข้อมูลส่วนตัวและเงื่อนไขการใช้งานของบริษัทผู้ให้บริการสื่อสารที่คุณใช้อยู่ไม่มีผลต่อแอปฯในโทรศัพท์ซึ่งมาจากบุคคลที่สาม โดยที่นโยบายของบุคคลที่สามจึงจะมีผลต่อการใช้แอปฯนี้</item>
+        <item>ฉันจะหาข้อมูลเพิ่มเติมเกี่ยวกับนโยบายปกปิดข้อมูลส่วนตัวของบริษัทอื่นๆได้อย่างไร ตรวจสอบในเงื่อนไขการใช้งานของแอปฯและ/หรือนโยบายของผู้ให้บริการแอปฯ ถ้าหากต้องการหาข้อมูลว่าแอปฯจะรวบรวม เข้าถึง ใช้ และเปิดเผยข้อมูลของคุณอย่างไร นอกจากนั้นนโยบายปกปิดข้อมูลส่วนตัว เงื่อนไขการใช้งาน และประกาศสำหรับผู้บริโภคอื่นๆอาจมีอยู่ในเว็บไซต์ของผู้ให้บริการด้วย ตรวจสอบให้แน่ใจว่าคุณพอใจนโยบายเหล่านี้ก่อนใช้แอปฯ</item>
+        <item>ฉันจะหาดูนโยบายปกปิดข้อมูลส่วนตัวของบริษัทผู้ให้บริการของฉันได้จากที่ไหน นอกจากนั้น ถ้าหากคุณมีข้อสงสัยใดๆเกี่ยวกับนโยบายปกปิดข้อมูลส่วนตัวของบริษัทสื่อสาร โปรดเข้าไปในโฮมเพจของบริษัทสื่อสารที่คุณใช้อยู่ จากนั้นคลิกลิงก์ \"นโยบายปกปิดข้อมูลส่วนตัว\"</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_spr_NORMAL">
+        <item>แจ้งเตือนความเป็นส่วนตัวของ Sprint</item>
+        <item>ถ้าหากคุณใช้แอปฯของบริษัทอื่นๆ แอปฯดังกล่าวอาจรวบรวมข้อมูลส่วนตัวของคุณโดยตรงหรือกำหนดให้ Sprint เปิดเผยข้อมูลส่วนตัวของคุณ รวมทั้งข้อมูลระบุพิกัด (ตามความเหมาะสม) ไปยังผู้พัฒนาแอปฯหรือบุคคลที่สามรายอื่นๆ</item>
+        <item>นโยบายปกปิดข้อมูลส่วนตัวมีผลอย่างไร นโยบายปกปิดข้อมูลส่วนตัวและเงื่อนไขการใช้งานของบริษัทผู้ให้บริการสื่อสารที่คุณใช้อยู่ไม่มีผลต่อแอปฯในโทรศัพท์ซึ่งมาจากบุคคลที่สาม โดยที่นโยบายของบุคคลที่สามจึงจะมีผลต่อการใช้แอปนี้</item>
+        <item>ฉันจะหาข้อมูลเพิ่มเติมเกี่ยวกับนโยบายปกปิดข้อมูลส่วนตัวของบริษัทอื่นๆได้อย่างไร ตรวจสอบในเงื่อนไขการใช้งานของแอปฯและ/หรือนโยบายของผู้ให้บริการแอปฯ ถ้าหากต้องการหาข้อมูลว่าแอปฯจะรวบรวม เข้าถึง ใช้ และเปิดเผยข้อมูลของคุณอย่างไร นอกจากนั้นนโยบายปกปิดข้อมูลส่วนตัว เงื่อนไขการใช้งาน และประกาศสำหรับผู้บริโภคอื่นๆอาจมีอยู่ในเว็บไซต์ของผู้ให้บริการด้วย ตรวจสอบให้แน่ใจว่าคุณพอใจนโยบายเหล่านี้ก่อนใช้แอปฯ</item>
+        <item>"ฉันจะดูนโยบายปกปิดข้อมูลส่วนตัวของ Sprint ได้จากที่ไหน ปกติแล้วถ้าหากคุณมีคำถามเกี่ยวกับนโยบายปกปิดข้อมูลส่วนตัวของ Sprint  กรุณาเข้าไปในไซต์ Sprint.com แล้วคลิกที่ลิงก์ \"Privacy Ploicy\""</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_bm_NORMAL">
+        <item>เพิ่มระดับแจ้งเตือนความเป็นส่วนตัวโมไบล์</item>
+        <item>ถ้าหากคุณใช้แอปฯของบริษัทอื่นๆ แอปฯดังกล่าวอาจรวบรวมข้อมูลส่วนตัวของคุณโดยตรงหรือกำหนดให้ Boost Mobile เปิดเผยข้อมูลส่วนตัวของคุณ รวมทั้งข้อมูลระบุพิกัด (ตามความเหมาะสม) ไปยังผู้พัฒนาแอปฯหรือบุคคลที่สามรายอื่นๆ</item>
+        <item>นโยบายปกปิดข้อมูลส่วนตัวมีผลอย่างไร นโยบายปกปิดข้อมูลส่วนตัวและเงื่อนไขการใช้งานของบริษัทผู้ให้บริการสื่อสารที่คุณใช้อยู่ไม่มีผลต่อแอปฯในโทรศัพท์ซึ่งมาจากบุคคลที่สาม โดยที่นโยบายของบุคคลที่สามจึงจะมีผลต่อการใช้แอปนี้</item>
+        <item>ฉันจะหาข้อมูลเพิ่มเติมเกี่ยวกับนโยบายปกปิดข้อมูลส่วนตัวของบริษัทอื่นๆได้อย่างไร ตรวจสอบในเงื่อนไขการใช้งานของแอปฯและ/หรือนโยบายของผู้ให้บริการแอปฯ ถ้าหากต้องการหาข้อมูลว่าแอปฯจะรวบรวม เข้าถึง ใช้ และเปิดเผยข้อมูลของคุณอย่างไร นอกจากนั้นนโยบายปกปิดข้อมูลส่วนตัว เงื่อนไขการใช้งาน และประกาศสำหรับผู้บริโภคอื่นๆอาจมีอยู่ในเว็บไซต์ของผู้ให้บริการด้วย ตรวจสอบให้แน่ใจว่าคุณพอใจนโยบายเหล่านี้ก่อนใช้แอปฯ</item>
+        <item>ฉันจะดูนโยบายปกปิดข้อมูลส่วนตัวของ Boost Mobile ได้จากที่ไหน โดยปกติแล้วถ้าหากคุณมีคำถามเกี่ยวกับนโยบายปกปิดข้อมูลส่วนตัวของ Boost Mobile กรุณาเข้าไปที่ไซต์ Boost Mobile.com แล้วคลิกที่ลิงก์ \"Privacy Policy\"</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_virgin_NORMAL">
+        <item>แจ้งเตือนความเป็นส่วนตัวของ Virgin Mobile</item>
+        <item>ถ้าหากคุณใช้แอปฯของบริษัทอื่นๆ แอปฯดังกล่าวอาจรวบรวมข้อมูลส่วนตัวของคุณโดยตรงหรือกำหนดให้ Virgin Mobile เปิดเผยข้อมูลส่วนตัวของคุณ รวมทั้งข้อมูลระบุพิกัด (ตามความเหมาะสม) ไปยังผู้พัฒนาแอปฯหรือบุคคลที่สามรายอื่นๆ</item>
+        <item>นโยบายความเป็นส่วนตัวมีผลเมื่อใด นโยบายความเป็นส่วนตัวและเงื่อนไขในการใช้งานของ Virgin Mobile ไม่มีผลกับโทรศัพท์ที่จำหน่ายโดยบุคคลที่สาม ถ้าหากใช้แอปฯนี้ ต้องใช้นโยบายต่างๆของบุคคลที่สาม</item>
+        <item>ฉันจะหาข้อมูลเพิ่มเติมเกี่ยวกับนโยบายปกปิดข้อมูลส่วนตัวของบริษัทอื่นๆได้อย่างไร ตรวจสอบในเงื่อนไขการใช้งานของแอปฯและ/หรือนโยบายของผู้ให้บริการแอปฯ ถ้าหากต้องการหาข้อมูลว่าแอปฯจะรวบรวม เข้าถึง ใช้ และเปิดเผยข้อมูลของคุณอย่างไร นอกจากนั้นนโยบายปกปิดข้อมูลส่วนตัว เงื่อนไขการใช้งาน และประกาศสำหรับผู้บริโภคอื่นๆอาจมีอยู่ในเว็บไซต์ของผู้ให้บริการด้วย ตรวจสอบให้แน่ใจว่าคุณพอใจนโยบายเหล่านี้ก่อนใช้แอปฯ</item>
+        <item>ฉันจะดูนโยบายความเป็นส่วนตัวของ Virgin Mobile ได้ที่ไหน ถ้าหากคุณมีคำถามเกี่ยวกับนโยบายความเป็นส่วนตัวของ Virgin Mobile โปรดเข้าไปที่ VirginMobileUSA.com แล้วคลิกลิงก์ \"Privacy Policy\"</item>
+    </string-array>
+    <string-array name="sp_lock_screen_effect_entries_NORMAL">
+        <item>พื้นฐาน</item>
+        <item>Ripple</item>
+        <item>Spreading ink</item>
+        <item>Dewdrop</item>
+    </string-array>
+    <string-array name="sp_power_save_brightness_entries_NORMAL">
+        <item>ความสว่าง 10%</item>
+        <item>ความสว่าง 20%</item>
+        <item>ความสว่าง 30%</item>
+        <item>ความสว่าง 50%</item>
+    </string-array>
+    <string-array name="sp_power_save_screen_timeout_entries_NORMAL">
+        <item>15 วินาที</item>
+        <item>30 วินาที</item>
+        <item>1 นาที</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_NORMAL">
+        <item>1.5 วินาที</item>
+        <item>ปิดเสมอ</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_att_NORMAL">
+        <item>3 วินาที</item>
+        <item>ปิดเสมอ</item>
+    </string-array>
+    <string-array name="sp_power_save_mode_entries_NORMAL">
+        <item>10% แบตเตอรี่่</item>
+        <item>20% แบตเตอรี่่</item>
+        <item>30% แบตเตอรี่่</item>
+        <item>50% แบตเตอรี่่</item>
+    </string-array>
+    <string-array name="sp_power_save_mode2_entries_NORMAL">
+        <item>ทันที</item>
+        <item>10% แบตเตอรี่่</item>
+        <item>20% แบตเตอรี่่</item>
+        <item>30% แบตเตอรี่่</item>
+        <item>50% แบตเตอรี่่</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries">
+        <item>5 นาที</item>
+        <item>10 นาที</item>
+        <item>15 นาที</item>
+    </string-array>
+    <string-array name="sp_hotspot_timeout_entries_mx_NORMAL">
+        <item>ไม่มีไทม์เอาต์</item>
+        <item>5 นาที</item>
+        <item>10 นาที</item>
+        <item>15 นาที</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries_jb">
+        <item>5 นาที</item>
+        <item>10 นาที</item>
+        <item>15 นาที</item>
+        <item>30 นาที</item>
+        <item>ไม่ยืนยัน</item>
+    </string-array>
+    <string-array name="wifi_p2p_timeout_entries">
+        <item>15 นาที</item>
+        <item>30 นาที</item>
+        <item>ไม่ยืนยัน</item>
+    </string-array>
+    <string-array name="sp_wifi_ap_visibility_NORMAL">
+        <item>แสดง</item>
+        <item>ซ่อน</item>
+    </string-array>
+    <string-array name="sp_bt_search_filter_SHORT">
+        <item>อุปกรณ์ทั้งหมด</item>
+        <item>ชุดหูฟัง</item>
+        <item>โทรศัพท์มือถือ</item>
+        <item>PC</item>
+        <item>อุปกรณ์ป้อนข้อมูล (คีย์บอร์ด เม้าส์ ฯลฯ)</item>
+    </string-array>
+    <string-array name="wifi_signal_strength_entries">
+        <item>แรง</item>
+        <item>กลาง</item>
+        <item>อ่อน</item>
+        <item>ปิด</item>
+    </string-array>
+    <string-array name="wifi_Dual_band_AP_connection_entries">
+        <item>อัตโนมัติ</item>
+        <item>5 GHz</item>
+        <item>2.4 GHz</item>
+    </string-array>
+</resources>

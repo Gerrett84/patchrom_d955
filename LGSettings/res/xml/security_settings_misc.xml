@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:persistent="false" android:title="@string/sim_lock_settings_title" android:key="sim_lock">
+        <Preference android:persistent="false" android:title="@string/sim_lock_settings_category" android:key="sim_lock_menu">
+            <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.IccLockSettings" />
+        </Preference>
+    </PreferenceCategory>
+    <PreferenceCategory android:persistent="false" android:title="@string/security_passwords_title">
+        <CheckBoxPreference android:persistent="false" android:title="@string/sp_password_visible_NORMAL" android:key="show_password" android:summary="@string/sp_password_visible_summary_NORMAL" />
+    </PreferenceCategory>
+    <PreferenceCategory android:persistent="false" android:title="@string/device_admin_title">
+        <Preference android:persistent="false" android:title="@string/manage_device_admin" android:summary="@string/manage_device_admin_summary" android:fragment="com.android.lgesettings.DeviceAdminSettings" />
+    </PreferenceCategory>
+    <CheckBoxPreference android:persistent="false" android:title="@string/install_applications" android:key="toggle_install_applications" android:summaryOn="@string/sp_install_unknown_applications_NORMAL" android:summaryOff="@string/sp_install_unknown_applications_NORMAL" />
+    <com.android.lgesettings.DoubleTitleListPreference android:title="@string/install_applications" android:key="list_toggle_install_applications" android:summary="@string/sp_install_unknown_applications_NORMAL" android:dialogTitle="@string/install_applications" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/verify_applications" android:key="toggle_verify_applications" android:summaryOn="@string/verify_applications_summary" android:summaryOff="@string/verify_applications_summary" />
+    <PreferenceCategory android:persistent="false" android:title="@string/credentials_title" android:key="credentials_management">
+        <Preference android:persistent="false" android:title="@string/trusted_credentials" android:summary="@string/trusted_credentials_summary" android:fragment="com.android.lgesettings.TrustedCredentialsSettings" />
+        <Preference android:persistent="false" android:title="@string/sp_credentials_install_NORMAL" android:summary="@string/sp_credentials_install_summary_NORMAL">
+            <intent android:targetPackage="com.android.certinstaller" android:action="android.credentials.INSTALL" android:targetClass="com.android.certinstaller.CertInstallerMain" />
+        </Preference>
+        <Preference android:persistent="false" android:title="@string/credentials_reset" android:key="reset_credentials" android:summary="@string/credentials_reset_summary">
+            <intent android:targetPackage="com.android.lgesettings" android:action="com.android.credentials.RESET" android:targetClass="com.android.lgesettings.CredentialStorage" />
+        </Preference>
+    </PreferenceCategory>
+</PreferenceScreen>

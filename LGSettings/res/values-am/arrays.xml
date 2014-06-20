@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>አሜሪካ</item>
+        <item>አውሮፓ</item>
+        <item>አፍሪካ</item>
+        <item>እስያ</item>
+        <item>አውስትራሊያ</item>
+        <item>ፓስፊክ</item>
+        <item>ሁሉም</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 ሰከንዶች</item>
+        <item>30 ሰከንዶች</item>
+        <item>1 ደቂቃ</item>
+        <item>2 ደቂቃዎች</item>
+        <item>5 ደቂቃዎች</item>
+        <item>10 ደቂቃዎች</item>
+        <item>30 ደቂቃዎች</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries2_NORMAL">
+        <item>15 ሰከንዶች</item>
+        <item>30 ሰከንዶች</item>
+        <item>1 ደቂቃ</item>
+        <item>2 ደቂቃዎች</item>
+        <item>5 ደቂቃዎች</item>
+        <item>10 ደቂቃዎች</item>
+        <item>ማያ ገጽ እንደበራ አቆየው</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL">
+        <item>15 ሰከንዶች</item>
+        <item>30 ሰከንዶች</item>
+        <item>1 ደቂቃ</item>
+        <item>2 ደቂቃዎች</item>
+        <item>5 ደቂቃዎች</item>
+        <item>10 ደቂቃዎች</item>
+        <item>15 ደቂቃዎች</item>
+        <item>ማያ ገጽ እንደበራ አቆየው</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL_ex">
+        <item>15 ሰከንድ</item>
+        <item>30 ሰከንድ</item>
+        <item>1 ደቂቃ</item>
+        <item>2 ደቂቃ</item>
+        <item>5 ደቂቃ</item>
+        <item>10 ደቂቃ</item>
+        <item>15 ደቂቃ</item>
+        <item>ማያ ገጽ እንደበራ አቆየው</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled">
+        <item>15 ሰከንዶች</item>
+        <item>30 ሰከንዶች</item>
+        <item>1 ደቂቃ</item>
+        <item>2 ደቂቃዎች</item>
+        <item>5 ደቂቃዎች</item>
+        <item>10 ደቂቃዎች</item>
+        <item>15 ደቂቃዎች</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled_ex">
+        <item>15 ሰከንድ</item>
+        <item>30 ሰከንድ</item>
+        <item>1 ደቂቃ</item>
+        <item>2 ደቂቃ</item>
+        <item>5 ደቂቃ</item>
+        <item>10 ደቂቃ</item>
+        <item>15 ደቂቃ</item>
+    </string-array>
+    <string-array name="sp_pouch_default_clock_entries2_NORMAL">
+        <item>ሰዓት 1</item>
+        <item>ሰዓት 2</item>
+        <item>ሰዓት 3</item>
+        <item>ሰዓት 4</item>
+        <item>ሰዓት 5</item>
+        <item>ሰዓት 6</item>
+        <item>ሰዓት 7</item>
+        <item>ሰዓት 8</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries1_NORMAL">
+        <item>አናሎግ</item>
+        <item>አሃዛዊ</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_position_entries1_NORMAL">
+        <item>ማእከል</item>
+        <item>ከአናት በቀኝ</item>
+        <item>ከአናት በግራ</item>
+        <item>የታችኛው ቀኝ</item>
+        <item>የታችኛው ግራ</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_font_entries1_NORMAL">
+        <item>ስም1 ቅርጸ ቁምፊ</item>
+        <item>ስም2 ቅርጸ ቁምፊ</item>
+    </string-array>
+    <string-array name="sp_sound_profile_entries_NORMAL">
+        <item>ድምጽ</item>
+        <item>ንዘር ብቻ</item>
+        <item>ፀጥ ያለ</item>
+    </string-array>
+    <string-array name="dream_timeout_entries">
+        <item>መቼም ቢሆን</item>
+        <item>15 ሰከንዶች</item>
+        <item>30 ሰከንዶች</item>
+        <item>1 ደቂቃ</item>
+        <item>2 ደቂቃዎች</item>
+        <item>5 ደቂቃዎች</item>
+        <item>10 ደቂቃዎች</item>
+        <item>30 ደቂቃዎች</item>
+    </string-array>
+    <string-array name="lock_after_timeout_entries">
+        <item>ወዲያውኑ</item>
+        <item>5 ሰከንዶች</item>
+        <item>15 ሰከንዶች</item>
+        <item>30 ሰከንዶች</item>
+        <item>1 ደቂቃ</item>
+        <item>2 ደቂቃዎች</item>
+        <item>5 ደቂቃዎች</item>
+        <item>10 ደቂቃዎች</item>
+        <item>30 ደቂቃዎች</item>
+    </string-array>
+    <string-array name="sp_lock_after_timeout_entries_NORMAL">
+        <item>ወዲያውኑ</item>
+        <item>15 ሰከንዶች</item>
+        <item>30 ሰከንዶች</item>
+        <item>1 ደቂቃ</item>
+        <item>2 ደቂቃዎች</item>
+        <item>10 ደቂቃዎች</item>
+        <item>30 ደቂቃዎች</item>
+    </string-array>
+    <string-array name="entries_font_size">
+        <item>&amp;lt;font size=16 align=middle>አነስተኛ&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>መደበኛ&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>ትልቅ&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>በጣም ትልቅ&amp;lt;/font></item>
+    </string-array>
+    <string-array name="sp_entries_font_size2">
+        <item>&amp;lt;font size=14 align=middle>አነስተኛ&amp;lt;/font></item>
+        <item>&amp;lt;font size=16 align=middle>አነስተኛ&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>መካከለኛ&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>ትልቅ&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>በጣም ትልቅ&amp;lt;/font></item>
+        <item>&amp;lt;font size=27 align=middle>ከፍተኛው&amp;lt;/font></item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>በጣም ቀስተኛ</item>
+        <item>ቀስታ</item>
+        <item>መደበኛ</item>
+        <item>ፈጣን</item>
+        <item>በጣም ፈጣን</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>በጣም ዝቅተኛ</item>
+        <item>ዝቅተኛ</item>
+        <item>መደበኛ</item>
+        <item>ከፍተኛ</item>
+        <item>በጣም ከፍተኛ</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>በመቃኘት ላይ…</item>
+        <item>በማገናኘት ላይ...</item>
+        <item>በማረጋገጥ ላይ...</item>
+        <item>IP አድራሻ ማግኘት ላይ…</item>
+        <item>ተገናኝቷል</item>
+        <item>ተቋርጧል</item>
+        <item>በመላቀቅ ላይ...</item>
+        <item>ተላቋል</item>
+        <item>ያልተሳካ</item>
+        <item>ታግዷል</item>
+        <item>ለጊዜው በደካማ ምክንያት በማራቅ ላይ</item>
+        <item>ለጊዜው በደካማ ምክንያት በማራቅ ላይ</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>በመቃኘት ላይ…</item>
+        <item>ወደ %1$s በማገናኘት ላይ...</item>
+        <item>ማረጋገጥ በ%1$s...</item>
+        <item>IP አድራሻ በማምጣት ላይ ከ%1$s...</item>
+        <item>ከ %1$s ጋር ተገናኝቷል</item>
+        <item>ተቋርጧል</item>
+        <item>ከ %1$s በመላቀቅ ላይ...</item>
+        <item>ተላቋል</item>
+        <item>ያልተሳካ</item>
+        <item>ታግዷል</item>
+        <item>ለጊዜው በደካማ ምክንያት በማራቅ ላይ</item>
+    </string-array>
+    <string-array name="wifi_ap_security">
+        <item>ክፈት</item>
+        <item>WPA PSK</item>
+        <item>WPA2 PSK</item>
+    </string-array>
+    <string-array name="wifi_p2p_wps_setup">
+        <item>ግፊት አዝራር</item>
+        <item>ከዚህ መሳሪያ ፒን</item>
+    </string-array>
+    <string-array name="wifi_p2p_status">
+        <item>ተገናኝቷል</item>
+        <item>በማገናኘት ላይ</item>
+        <item>ያልተሳካ</item>
+        <item>ይገኛል</item>
+        <item>ከሚቻለው-ክልል-ውጪ</item>
+    </string-array>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>2 ደቂቃዎች</item>
+        <item>5 ደቂቃዎች</item>
+        <item>1 ሰዓት</item>
+        <item>መቼም ቢሆን ጊዜ አታብቃ</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>ደካማ</item>
+        <item>ፍትሃዊ</item>
+        <item>ጥሩ</item>
+        <item>ምርጥ</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>ሁልጊዜ</item>
+        <item>በሚሰካበት ጊዜ ብቻ</item>
+        <item>Wi-Fi ጠፍቷል (በውሂብ አጠቀቃም የተነሳ)</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <item>ሁልጊዜ</item>
+        <item>በሚሰካበት ጊዜ ብቻ</item>
+        <item>Wi-Fi ጠፍቷል</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_entries">
+        <item>ራስሰር</item>
+        <item>5 GHz ብቻ</item>
+        <item>2.4 GHz ብቻ</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>አጠቃቀም ጊዜ</item>
+        <item>ቆጠራ አስጀምር</item>
+        <item>መተግበሪያ ስም</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>ምንም</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_network_setup">
+        <item>ጠፍቷል</item>
+        <item>ግፊት አዝራር</item>
+        <item>ከመዳረሻ ነጥብ ፒን</item>
+        <item>ከዚህ መሳሪያ ፒን</item>
+    </string-array>
+    <string-array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>የማይለዋወጥ</item>
+    </string-array>
+    <string-array name="wifi_proxy_settings">
+        <item>ምንም</item>
+        <item>በእጅ የሚሰራ</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>ጠፍቷል</item>
+        <item>ማንቂያ</item>
+        <item>ንዝረት</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>ምንም</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP ወይም CHAP</item>
+    </string-array>
+    <string-array name="bearer_entries">
+        <item>LTE</item>
+        <item>eHRPD</item>
+        <item>ያልተጠቀሰ</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>ውስጣዊ መሳሪያ ማከማቻ</item>
+        <item>የሚወገድ SD ካርድ</item>
+        <item>ስርዓቱ እንዲወስን ያድርጉ</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>ሁልጊዜ</item>
+        <item>መቼም ቢሆን</item>
+        <item>በጸጥታ ሁኔታ ውስጥ ብቻ</item>
+        <item>በጸጥታ ቅጥ በማይሆንበት ጊዜ ብቻ</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_titles">
+        <item>አጭር</item>
+        <item>መካከለኛ</item>
+        <item>ረዥም</item>
+    </string-array>
+    <string-array name="hdcp_checking_titles">
+        <item>መቼም ቢሆን ምልክት አታድርግ</item>
+        <item>DRM ይዘቶች ብቻ</item>
+        <item>ሁልጊዜ ይመልከቱ</item>
+    </string-array>
+    <string-array name="hdcp_checking_summaries">
+        <item>መቼም ቢሆን HDCP አትመልከት</item>
+        <item>HDCP ለDRM ይዘቶችን ብቻ ተመልከት</item>
+        <item>ሁልጊዜ HDCP ይመልከቱ</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>አኒማ ጠፍቷል</item>
+        <item>ተልወስዋሽ ምስል መጠን .5x</item>
+        <item>ተልወስዋሽ ምስል መጠን 1x</item>
+        <item>ተልወስዋሽ ምስል መጠን 1.5x</item>
+        <item>ተልወስዋሽ ምስል መጠን 2x</item>
+        <item>አኒማ መጠን 5x</item>
+        <item>ተልወስዋሽ ምስል መጠን 10x</item>
+    </string-array>
+    <string-array name="transition_animation_scale_entries">
+        <item>አኒማ ጠፍቷል</item>
+        <item>ተልወስዋሽ ምስል መጠን .5x</item>
+        <item>ተልወስዋሽ ምስል መጠን 1x</item>
+        <item>ተልወስዋሽ ምስል መጠን 1.5x</item>
+        <item>ተልወስዋሽ ምስል መጠን 2x</item>
+        <item>አኒማ መጠን 5x</item>
+        <item>ተልወስዋሽ ምስል መጠን 10x</item>
+    </string-array>
+    <string-array name="animator_duration_scale_entries">
+        <item>አኒማ ጠፍቷል</item>
+        <item>ተልወስዋሽ ምስል መጠን .5x</item>
+        <item>ተልወስዋሽ ምስል መጠን 1x</item>
+        <item>ተልወስዋሽ ምስል መጠን 1.5x</item>
+        <item>ተልወስዋሽ ምስል መጠን 2x</item>
+        <item>አኒማ መጠን 5x</item>
+        <item>ተልወስዋሽ ምስል መጠን 10x</item>
+    </string-array>
+    <string-array name="overlay_display_devices_entries">
+        <item>ምንም</item>
+        <item>720x480 mdpi</item>
+        <item>1280x720 tvdpi</item>
+        <item>1920x1080 xhdpi</item>
+        <item>1280x720 tvdpi እና 1920x1080 xhdpi</item>
+    </string-array>
+    <string-array name="enable_opengl_traces_entries">
+        <item>ምንም</item>
+        <item>Logcat</item>
+        <item>ስርዓት መከተያ (ግራፊክስ)</item>
+        <item>በ glGetError ላይ የተቀረቀረ ጥሪ</item>
+    </string-array>
+    <string-array name="app_process_limit_entries">
+        <item>መደበኛ ወሰን</item>
+        <item>ምንም የበስተጀርባ ሂደቶች የሉም</item>
+        <item>ቢበዛ ቢበዛ 1 ሂደቶች</item>
+        <item>ቢበዛ ቢበዛ 2 ሂደቶች</item>
+        <item>ቢበዛ ቢበዛ 3 ሂደቶች</item>
+        <item>ቢበዛ ቢበዛ 4 ሂደቶች</item>
+    </string-array>
+    <string-array name="vpn_types_long">
+        <item>PPTP VPN</item>
+        <item>L2TP/IPSec VPN ቀድመው ከተጋሩ ቁልፍች ጋር</item>
+        <item>L2TP/IPSec VPN ከምስክር ወረቀቶቸ ጋር</item>
+        <item>IPSec ከቅድሚያ የተጋሩ ቁልፎች እና Xauth ማረጋገጫ ጋር</item>
+        <item>IPSec VPN ከምስክር ወረቀቶች እና Xauth ማረጋገጫ</item>
+        <item>IPSec VPN ከምስክር ወረቀቶች እና የተቀላቀለ ማረጋገጫ</item>
+    </string-array>
+    <string-array name="vpn_states">
+        <item>ተላቋል</item>
+        <item>በማስነሳት ላይ...</item>
+        <item>በማገናኘት ላይ...</item>
+        <item>ተገናኝቷል</item>
+        <item>ጊዜ አልቋል</item>
+        <item>ያልተሳካ</item>
+    </string-array>
+    <string-array name="security_settings_premium_sms_values">
+        <item>ጠይቅ</item>
+        <item>በጭራሽ አትፍቀድ</item>
+        <item>ሁልጊዜ ፍቀድ</item>
+    </string-array>
+    <string-array name="search_filter">
+        <item>ሁሉም መሳሪያዎች</item>
+        <item>ባለመናገሪያ የጆሮ ማዳመጫ</item>
+        <item>PC</item>
+        <item>ስልክ</item>
+        <item>ጥጋጥግ</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries_NORMAL">
+        <item>የተጠቃሚ ምስል</item>
+        <item>ሰዓት 1</item>
+        <item>ሰዓት 2</item>
+        <item>ሰዓት 3</item>
+        <item>ሰዓት 4</item>
+        <item>ሰዓት 5</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL">
+        <item>1.5 ሰከንዶች</item>
+        <item>3 ሰከንዶች</item>
+        <item>5 ሰከንዶች</item>
+        <item>ሁልጊዜ በርቷል</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL_ex">
+        <item>1.5 ሰከንድ</item>
+        <item>3 ሰኮንድ</item>
+        <item>5 ሰከንድ</item>
+        <item>ሁልጊዜ በርቷል</item>
+    </string-array>
+    <string-array name="sp_front_key_light_l1_NORMAL">
+        <item>3 ሰከንዶች</item>
+        <item>6 ሰከንዶች</item>
+        <item>10 ሰከንዶች</item>
+        <item>30 ሰከንዶች</item>
+        <item>ሁልጊዜ በርቷል</item>
+    </string-array>
+    <string-array name="sp_front_key_light_att_NORMAL">
+        <item>3 ሰኮንድ</item>
+        <item>1 ሰከንድ</item>
+        <item>10 ሰከንድ</item>
+        <item>30 ሰከንድ</item>
+        <item>ሁልጊዜ በርቷል</item>
+    </string-array>
+    <string-array name="sp_numlocdisp_entries_NORMAL">
+        <item>ያቦዝኑ</item>
+        <item>አንቃ</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_NORMAL">
+        <item>የግላዊነት ማንቂያ</item>
+        <item>3ኛ ወገን መተግበሪያን የሚጠቀሙ ከሆነ፣ በቀጥታ የግል መረጃዎን ሊሰበስብ ወይም ወደ መተግበሪያው አቅራቢ ወይም ሌሎች አንዳንድ 3ኛ ወገን ላይ፣ የግል መረጃዎን ፣ የመገኛ ስፍራ መረጃን ጨምሮ (የሚተገበር ከሆነ)፣ ለማውጣት የድምጽ ተያያዥ ሞደምንን ሊፈልግ ይችላል።</item>
+        <item>የትኛው የግላዊነት ፖሊሲ ተፈጻሚ ይሆናል? የተሸካሚዎ ግላዊነት ፖሊሲ እና የአጠቃቀም ደንቦች በ3ኛ ወገን በብቸኝነት ለአገልግሎት በቀረበ መሳሪያ ላይ ባሉ መተግበሪያዎች ላይ ተፈጻሚ አይሆኑም። በነዚህ መተግበሪያዎች ላይ የ3ኛው ወገን ፖሊሲዎች ተፈጻሚ ይሆናሉ።</item>
+        <item>ስለ 3ኛ ወገን ፖሊሲዎች ተጨማሪ መረጃ የት ማግኘት እችላለሁ? መተግበሪያው እንዴት መረጃዎን እንደሚሰበስብ፣ እንደሚደርስበት፣ እንደሚጠቀምበት እና ለሌሎች እንዴት እንደሚሰጥ ተጨማሪ መረጃ ለማግኘት የመተግበሪያውን የአጠቃቀም ደንቦች ወይም የመተግበሪያው አቅራቢን ፖሊሲዎች ይፈትሹ። የግላዊነት ፖሊሲዎች፣ የአጠቃቀም ደንቦች እና ሌሎች የሸማች ማስታወቂያዎች በአቅራቢው የድር ጣቢያ ላይ ሊገኙ ይችሉ ይሆናል። አንድን መተግበሪያ ከመጠቀምዎ በፊት በፖሊሲዎቹ ሙሉ በሙሉ እንደሚስማሙ እርግጠኛ ይሁኑ።</item>
+        <item>የእኔን ተሸካሚ ግላዊነት ፖሊሲ የት ማግኘት እችላለሁ? ለየብቻ፣ ስለ ተሸካሚዎ ግላዊነት ፖሊሲ ጥያቄዎች ካልዎት፣ እባክዎ የተሸካሚዎን መነሻ ገጽ ይጎብኙ እና \"የግላዊነት ፖሊሲ\" የሚለው አገናኝ ላይ ጠቅ ያድርጉ።</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_spr_NORMAL">
+        <item>ስፕሪንት ግላዊነት ማንቂያ</item>
+        <item>3ኛ ወገን መተግበሪያን የሚጠቀሙ ከሆነ፣ በቀጥታ የግል መረጃዎን ሊሰበስብ ወይም ወደ መተግበሪያው አቅራቢ ወይም ሌሎች አንዳንድ 3ኛ ወገን ላይ፣ የግል መረጃዎን ፣ የመገኛ ስፍራ መረጃን ጨምሮ (የሚተገበር ከሆነ)፣ ለማውጣት Sprintን ሊፈልግ ይችላል።</item>
+        <item>የትኛው የግላዊነት ፖሊሲ ተፈጻሚ ይሆናል? የSprint ግላዊነት ፖሊሲ እና የአጠቃቀም ደንቦች በ3ኛ ወገን በብቸኝነት ለአገልግሎት በቀረበ መሳሪያ ላይ ባሉ መተግበሪያዎች ላይ ተፈጻሚ አይሆኑም። በነዚህ መተግበሪያዎች ላይ የ3ኛው ወገን ፖሊሲዎች ተፈጻሚ ይሆናሉ።</item>
+        <item>ስለ 3ኛ ወገን ፖሊሲዎች ተጨማሪ መረጃ የት ማግኘት እችላለሁ? መተግበሪያው እንዴት መረጃዎን እንደሚሰበስብ፣ እንደሚደርስበት፣ እንደሚጠቀምበት እና ለሌሎች እንዴት እንደሚሰጥ ተጨማሪ መረጃ ለማግኘት የመተግበሪያውን የአጠቃቀም ደንቦች ወይም የመተግበሪያው አቅራቢን ፖሊሲዎች ይፈትሹ። የግላዊነት ፖሊሲዎች፣ የአጠቃቀም ደንቦች እና ሌሎች የሸማች ማስታወቂያዎች በአቅራቢው የድር ጣቢያ ላይ ሊገኙ ይችሉ ይሆናል። አንድን መተግበሪያ ከመጠቀምዎ በፊት በፖሊሲዎቹ ሙሉ በሙሉ እንደሚስማሙ እርግጠኛ ይሁኑ።</item>
+        <item>የእኔን Sprint ግላዊነት ፖሊሲ የት ማግኘት እችላለሁ? ለየብቻ፣ ስለ Sprint ግላዊነት ፖሊሲ ጥያቄዎች ካልዎት፣ እባክዎ Sprint.com ን ይጎብኙ እና \"የግላዊነት ፖሊሲ\" የሚለው አገናኝ ላይ ጠቅ ያድርጉ።</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_bm_NORMAL">
+        <item>ሞባይል ግላዊነት ማንቂያን አነሳሳ</item>
+        <item>3ኛ ወገን መተግበሪያን የሚጠቀሙ ከሆነ፣ በቀጥታ የግል መረጃዎን ሊሰበስብ ወይም ወደ መተግበሪያው አቅራቢ ወይም ሌሎች አንዳንድ 3ኛ ወገን ላይ፣ የግል መረጃዎን ፣ የመገኛ ስፍራ መረጃን ጨምሮ (የሚተገበር ከሆነ)፣ ለማውጣት Boost Mobile ሊፈልግ ይችላል።</item>
+        <item>የትኛው የግላዊነት ፖሊሲ ተፈጻሚ ይሆናል? Boost የሞባይል ግላዊነት ፖሊሲ እና የአጠቃቀም ደንቦች በ3ኛ ወገን በብቸኝነት ለአገልግሎት በቀረበ መሳሪያ ላይ ባሉ መተግበሪያዎች ላይ ተፈጻሚ አይሆኑም። በነዚህ መተግበሪያዎች ላይ የ3ኛው ወገን ፖሊሲዎች ተፈጻሚ ይሆናሉ።</item>
+        <item>ስለ 3ኛ ወገን ፖሊሲዎች ተጨማሪ መረጃ የት ማግኘት እችላለሁ? መተግበሪያው እንዴት መረጃዎን እንደሚሰበስብ፣ እንደሚደርስበት፣ እንደሚጠቀምበት እና ለሌሎች እንዴት እንደሚሰጥ ተጨማሪ መረጃ ለማግኘት የመተግበሪያውን የአጠቃቀም ደንቦች ወይም የመተግበሪያው አቅራቢን ፖሊሲዎች ይፈትሹ። የግላዊነት ፖሊሲዎች፣ የአጠቃቀም ደንቦች እና ሌሎች የሸማች ማስታወቂያዎች በአቅራቢው የድር ጣቢያ ላይ ሊገኙ ይችሉ ይሆናል። አንድን መተግበሪያ ከመጠቀምዎ በፊት በፖሊሲዎቹ ሙሉ በሙሉ እንደሚስማሙ እርግጠኛ ይሁኑ።</item>
+        <item>Boost የሞባይል ግላዊነት ፖሊሲን የት ማግኘት እችላለሁ? ለየብቻ፣ ስለ Boost የሞባይል ግላዊነት ፖሊሲ ጥያቄዎች ካልዎት፣ እባክዎ Boost Mobile.com ን ይጎብኙ እና \"የግላዊነት ፖሊሲ\" የሚለው አገናኝ ላይ ጠቅ ያድርጉ።</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_virgin_NORMAL">
+        <item>Virgin Mobile ግላዊነት ማንቂያ</item>
+        <item>3ኛ ወገን መተግበሪያን የሚጠቀሙ ከሆነ፣ በቀጥታ የግል መረጃዎን ሊሰበስብ ወይም ወደ መተግበሪያው አቅራቢ ወይም ሌሎች አንዳንድ 3ኛ ወገን ላይ፣ የግል መረጃዎን ፣ የመገኛ ስፍራ መረጃን ጨምሮ (የሚተገበር ከሆነ)፣ ለማውጣት Virgin Mobile ሊፈልግ ይችላል።</item>
+        <item>የትኛው የግላዊነት ፖሊሲ ተፈጻሚ ይሆናል? የVirgin Mobile ግላዊነት ፖሊሲ እና የአጠቃቀም ደንቦች በ3ኛ ወገን በብቸኝነት ለአገልግሎት በቀረበ መሳሪያ ላይ ባሉ መተግበሪያዎች ላይ ተፈጻሚ አይሆኑም። በነዚህ መተግበሪያዎች ላይ የ3ኛው ወገን ፖሊሲዎች ተፈጻሚ ይሆናሉ።</item>
+        <item>ስለ 3ኛ ወገን ፖሊሲዎች ተጨማሪ መረጃ የት ማግኘት እችላለሁ? መተግበሪያው እንዴት መረጃዎን እንደሚሰበስብ፣ እንደሚደርስበት፣ እንደሚጠቀምበት እና ለሌሎች እንዴት እንደሚሰጥ ተጨማሪ መረጃ ለማግኘት የመተግበሪያውን የአጠቃቀም ደንቦች ወይም የመተግበሪያው አቅራቢን ፖሊሲዎች ይፈትሹ። የግላዊነት ፖሊሲዎች፣ የአጠቃቀም ደንቦች እና ሌሎች የሸማች ማስታወቂያዎች በአቅራቢው የድር ጣቢያ ላይ ሊገኙ ይችሉ ይሆናል። አንድን መተግበሪያ ከመጠቀምዎ በፊት በፖሊሲዎቹ ሙሉ በሙሉ እንደሚስማሙ እርግጠኛ ይሁኑ።</item>
+        <item>የእኔን Virgin Mobile ግላዊነት ፖሊሲ የት ማግኘት እችላለሁ? ለየብቻ፣ ስለ Virgin Mobile ግላዊነት ፖሊሲ ጥያቄዎች ካልዎት፣ እባክዎ VirginMobileUSA.com ን ይጎብኙ እና \"የግላዊነት ፖሊሲ\" የሚለው አገናኝ ላይ ጠቅ ያድርጉ።</item>
+    </string-array>
+    <string-array name="sp_lock_screen_effect_entries_NORMAL">
+        <item>መሰረታዊ</item>
+        <item>ሞገዲት</item>
+        <item>የሚስፋፋ ቀለም</item>
+        <item>ዴውድሮፕ</item>
+    </string-array>
+    <string-array name="sp_power_save_brightness_entries_NORMAL">
+        <item>10% ብርሃማነት</item>
+        <item>20% ብርሃማነት</item>
+        <item>30% ብርሃማነት</item>
+        <item>50% ብርሃማነት</item>
+    </string-array>
+    <string-array name="sp_power_save_screen_timeout_entries_NORMAL">
+        <item>15 ሰከንዶች</item>
+        <item>30 ሰከንዶች</item>
+        <item>1 ደቂቃ</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_NORMAL">
+        <item>1.5 ሰከንዶች</item>
+        <item>ሁልጊዜ ጠፍቷል</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_att_NORMAL">
+        <item>3 ሰከንዶች</item>
+        <item>ሁልጊዜ ጠፍቷል</item>
+    </string-array>
+    <string-array name="sp_power_save_mode_entries_NORMAL">
+        <item>10% ባትሪ</item>
+        <item>20% ባትሪ</item>
+        <item>30% ባትሪ</item>
+        <item>50% ባትሪ</item>
+    </string-array>
+    <string-array name="sp_power_save_mode2_entries_NORMAL">
+        <item>ወዲያውኑ</item>
+        <item>10% ባትሪ</item>
+        <item>20% ባትሪ</item>
+        <item>30% ባትሪ</item>
+        <item>50% ባትሪ</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries">
+        <item>5 ደቂቃዎች</item>
+        <item>10 ደቂቃዎች</item>
+        <item>15 ደቂቃዎች</item>
+    </string-array>
+    <string-array name="sp_hotspot_timeout_entries_mx_NORMAL">
+        <item>መቼም ቢሆን ጊዜ አይብቃ</item>
+        <item>5 ደቂቃ</item>
+        <item>10 ደቂቃ</item>
+        <item>15 ደቂቃ</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries_jb">
+        <item>5 ደቂቃ</item>
+        <item>10 ደቂቃ</item>
+        <item>15 ደቂቃ</item>
+        <item>30 ደቂቃ</item>
+        <item>መቼም ቢሆን</item>
+    </string-array>
+    <string-array name="wifi_p2p_timeout_entries">
+        <item>15 ደቂቃ</item>
+        <item>30 ደቂቃ</item>
+        <item>መቼም ቢሆን</item>
+    </string-array>
+    <string-array name="sp_wifi_ap_visibility_NORMAL">
+        <item>አሳይ</item>
+        <item>ደብቅ</item>
+    </string-array>
+    <string-array name="sp_bt_search_filter_SHORT">
+        <item>ሁሉም መሳሪያዎች</item>
+        <item>ባለመናገሪያ የጆሮ ማዳመጫ</item>
+        <item>የሞባይል ስልክ</item>
+        <item>PC</item>
+        <item>የግቤት መሳሪያ (ቁልፍሰሌዳ፣ መዳፊት፣ ወዘተ)</item>
+    </string-array>
+    <string-array name="wifi_signal_strength_entries">
+        <item>ጠንካራ</item>
+        <item>መካከለኛ</item>
+        <item>ደካማ</item>
+        <item>ጠፍቷል</item>
+    </string-array>
+    <string-array name="wifi_Dual_band_AP_connection_entries">
+        <item>ራስሰር</item>
+        <item>5 GHz</item>
+        <item>2.4 GHz</item>
+    </string-array>
+</resources>

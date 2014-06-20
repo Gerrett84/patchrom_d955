@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textStyle="bold" android:textColor="#ff4baac8" android:layout_gravity="center_vertical" android:id="@*android:id/title" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="1.3299866dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="1.3299866dip" android:layout_weight="1.0" />
+        <TextView android:textStyle="bold" android:textColor="#ff4baac8" android:layout_gravity="center_vertical" android:id="@id/scanning_text" android:background="@null" android:paddingLeft="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/settings_fontsize_5" android:text="@string/progress_scanning" />
+        <ProgressBar android:layout_gravity="center_vertical" android:id="@id/scanning_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0dip" android:text="@string/progress_scanning" style="?android:attr/progressBarStyleSmallTitle" />
+    </LinearLayout>
+    <ImageView android:gravity="fill_horizontal" android:background="#ff4baac8" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="2.0dip" android:scaleType="fitXY" />
+</LinearLayout>

@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>Amerika</item>
+        <item>Europa</item>
+        <item>Afrika</item>
+        <item>Asien</item>
+        <item>Australien</item>
+        <item>Stilla havet</item>
+        <item>Alla</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 sekunder</item>
+        <item>30 sekunder</item>
+        <item>1 minut</item>
+        <item>2 minuter</item>
+        <item>5 minuter</item>
+        <item>10 minuter</item>
+        <item>30 minuter</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries2_NORMAL">
+        <item>15 sekunder</item>
+        <item>30 sekunder</item>
+        <item>1 minut</item>
+        <item>2 minuter</item>
+        <item>5 minuter</item>
+        <item>10 minuter</item>
+        <item>Håll skärmen påslagen</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL">
+        <item>15 sekunder</item>
+        <item>30 sekunder</item>
+        <item>1 minut</item>
+        <item>2 minuter</item>
+        <item>5 minuter</item>
+        <item>10 minuter</item>
+        <item>15 minuter</item>
+        <item>Håll skärmen påslagen</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL_ex">
+        <item>15 sek.</item>
+        <item>30 sek.</item>
+        <item>1 min</item>
+        <item>2 minuter</item>
+        <item>5 min</item>
+        <item>10 min.</item>
+        <item>15 min</item>
+        <item>Håll skärmen påslagen</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled">
+        <item>15 sekunder</item>
+        <item>30 sekunder</item>
+        <item>1 minut</item>
+        <item>2 minuter</item>
+        <item>5 minuter</item>
+        <item>10 minuter</item>
+        <item>15 minuter</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled_ex">
+        <item>15 sek.</item>
+        <item>30 sek.</item>
+        <item>1 min</item>
+        <item>2 minuter</item>
+        <item>5 min</item>
+        <item>10 min.</item>
+        <item>15 min</item>
+    </string-array>
+    <string-array name="sp_pouch_default_clock_entries2_NORMAL">
+        <item>Klocka 1</item>
+        <item>Klocka 2</item>
+        <item>klocka 3</item>
+        <item>klocka 4</item>
+        <item>klockan 5</item>
+        <item>klockan 6</item>
+        <item>klockan 7</item>
+        <item>klockan 8</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_position_entries1_NORMAL">
+        <item>Center</item>
+        <item>Överst till höger</item>
+        <item>Överst till vänster</item>
+        <item>Höger nedtill</item>
+        <item>Vänster nedtill</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_font_entries1_NORMAL">
+        <item>Typsnittnamn 1</item>
+        <item>Typsnittnamn 2</item>
+    </string-array>
+    <string-array name="sp_sound_profile_entries_NORMAL">
+        <item>Ljud</item>
+        <item>Endast vibration</item>
+        <item>Tyst</item>
+    </string-array>
+    <string-array name="dream_timeout_entries">
+        <item>Aldrig</item>
+        <item>15 sekunder</item>
+        <item>30 sekunder</item>
+        <item>1 minut</item>
+        <item>2 minuter</item>
+        <item>5 minuter</item>
+        <item>10 minuter</item>
+        <item>30 minuter</item>
+    </string-array>
+    <string-array name="lock_after_timeout_entries">
+        <item>Omedelbart</item>
+        <item>5 sekunder</item>
+        <item>15 sekunder</item>
+        <item>30 sekunder</item>
+        <item>1 minut</item>
+        <item>2 minuter</item>
+        <item>5 minuter</item>
+        <item>10 minuter</item>
+        <item>30 minuter</item>
+    </string-array>
+    <string-array name="sp_lock_after_timeout_entries_NORMAL">
+        <item>Omedelbart</item>
+        <item>15 sekunder</item>
+        <item>30 sekunder</item>
+        <item>1 minut</item>
+        <item>2 minuter</item>
+        <item>10 minuter</item>
+        <item>30 minuter</item>
+    </string-array>
+    <string-array name="entries_font_size">
+        <item>&amp;lt;font size=16 align=middle>Liten&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>Normal&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>Stor&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>Extra stor&amp;lt;/font></item>
+    </string-array>
+    <string-array name="sp_entries_font_size2">
+        <item>&amp;lt;font size=14 align=middle>Minimum&amp;lt;/font></item>
+        <item>&amp;lt;font size=16 align=middle>Liten&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>Medium&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>Stor&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>Mycket stor&amp;lt;/font></item>
+        <item>&amp;lt;font size=27 align=middle>Max&amp;lt;/font></item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>Mycket långsam</item>
+        <item>Långsam</item>
+        <item>Normal</item>
+        <item>Snabb</item>
+        <item>Mycket snabb</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>Mycket låg</item>
+        <item>Låg</item>
+        <item>Normal</item>
+        <item>Hög</item>
+        <item>Mycket hög</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Söker...</item>
+        <item>Ansluter...</item>
+        <item>Autentiserar...</item>
+        <item>Hämtar IP-adress…</item>
+        <item>Ansluten</item>
+        <item>Pausad</item>
+        <item>Kopplar ifrån...</item>
+        <item>Avbruten</item>
+        <item>Misslyckades</item>
+        <item>Blockerad</item>
+        <item>Tillfälligt undvikande dålig förbindelse</item>
+        <item>Tillfälligt undvikande dålig förbindelse</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Söker...</item>
+        <item>Ansluter till %1$s...</item>
+        <item>Autentiserar med %1$s…</item>
+        <item>Hämtar IP-adress från %1$s...</item>
+        <item>Ansluten till: %1$s</item>
+        <item>Pausad</item>
+        <item>Kopplar ifrån %1$s…</item>
+        <item>Avbruten</item>
+        <item>Misslyckades</item>
+        <item>Blockerad</item>
+        <item>Tillfälligt undvikande dålig förbindelse</item>
+    </string-array>
+    <string-array name="wifi_ap_security">
+        <item>Öppet</item>
+        <item>WPA PSK</item>
+        <item>WPA2 PSK</item>
+    </string-array>
+    <string-array name="wifi_p2p_wps_setup">
+        <item>Push-knapp</item>
+        <item>PIN från denna enhet</item>
+    </string-array>
+    <string-array name="wifi_p2p_status">
+        <item>Ansluten</item>
+        <item>Anslutning</item>
+        <item>Misslyckades</item>
+        <item>Tillgängligt</item>
+        <item>Utanför intervall.\u007f</item>
+    </string-array>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>2 minuter</item>
+        <item>5 minuter</item>
+        <item>1 timme</item>
+        <item>Aldrig timeout</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Dålig</item>
+        <item>OK</item>
+        <item>Bra</item>
+        <item>Utmärkt</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Alltid</item>
+        <item>Bara när telefonen är inkopplad</item>
+        <item>Wi-Fi är avstängd (på grund av dataanvändning)</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <item>Alltid</item>
+        <item>Bara när telefonen är inkopplad</item>
+        <item>Håll Wi-Fi avstängt</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_entries">
+        <item>Automatiskt</item>
+        <item>Endast 5 GHz</item>
+        <item>Endast 2,4 GHz</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>Användningstid</item>
+        <item>Starta räkneverk</item>
+        <item>Programnamn</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>Öppen</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_network_setup">
+        <item>Av</item>
+        <item>Push-knapp</item>
+        <item>PIN från accesspunkten</item>
+        <item>PIN från denna enhet</item>
+    </string-array>
+    <string-array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>Statisk</item>
+    </string-array>
+    <string-array name="wifi_proxy_settings">
+        <item>Öppen</item>
+        <item>Manuellt</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>Av</item>
+        <item>Varning</item>
+        <item>Vibrera</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>Öppen</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP eller CHAP</item>
+    </string-array>
+    <string-array name="bearer_entries">
+        <item>LTE</item>
+        <item>eHRPD</item>
+        <item>Ospecifierat</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Lagring på intern enhet</item>
+        <item>Flyttbart SD-kort</item>
+        <item>Låt systemet bestämma</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>Alltid</item>
+        <item>Aldrig</item>
+        <item>Endast i tyst läge</item>
+        <item>Endast när man inte använder tyst läge</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_titles">
+        <item>Kort</item>
+        <item>Medium</item>
+        <item>Lång</item>
+    </string-array>
+    <string-array name="hdcp_checking_titles">
+        <item>Kontrollera aldrig</item>
+        <item>Sök endast efter DRM-innehåll</item>
+        <item>Kontrollera alltid</item>
+    </string-array>
+    <string-array name="hdcp_checking_summaries">
+        <item>Använd aldrig HDCP kontroll</item>
+        <item>Använd endast HDCP kontroll av DRM-innehåll</item>
+        <item>Använd alltid HDCP-kontroll</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>Animering av</item>
+        <item>Animationstorlek 0.5x</item>
+        <item>Animationstorlek 1x</item>
+        <item>Animationstorlek 1.5x</item>
+        <item>Animationstorlek 2x</item>
+        <item>Animationstorlek 5x</item>
+        <item>Animationstorlek 10x</item>
+    </string-array>
+    <string-array name="transition_animation_scale_entries">
+        <item>Animering av</item>
+        <item>Animationstorlek 0.5x</item>
+        <item>Animationstorlek 1x</item>
+        <item>Animationstorlek 1.5x</item>
+        <item>Animationstorlek 2x</item>
+        <item>Animationstorlek 5x</item>
+        <item>Animationstorlek 10x</item>
+    </string-array>
+    <string-array name="animator_duration_scale_entries">
+        <item>Animering av</item>
+        <item>Animationstorlek 0.5x</item>
+        <item>Animationstorlek 1x</item>
+        <item>Animationstorlek 1.5x</item>
+        <item>Animationstorlek 2x</item>
+        <item>Animationstorlek 5x</item>
+        <item>Animationstorlek 10x</item>
+    </string-array>
+    <string-array name="overlay_display_devices_entries">
+        <item>Öppen</item>
+        <item>720x480 mdpi</item>
+        <item>1280x720 tvdpi</item>
+        <item>1920x1080 xhdpi</item>
+        <item>1280x720 tvdpi och 1920x1080 xhdpi</item>
+    </string-array>
+    <string-array name="enable_opengl_traces_entries">
+        <item>Öppen</item>
+        <item>Logcat</item>
+        <item>Systrace (Grafik)</item>
+        <item>Samtalsstack på glGetError</item>
+    </string-array>
+    <string-array name="app_process_limit_entries">
+        <item>Standardgräns</item>
+        <item>Inga bakgrundsprocesser</item>
+        <item>Högst 1 process</item>
+        <item>Högst 2 processer</item>
+        <item>Högst 3 processer</item>
+        <item>Högst 4 processer</item>
+    </string-array>
+    <string-array name="vpn_types_long">
+        <item>PPTP VPN</item>
+        <item>L2TP/IPSec VPN med för-delade nycklar</item>
+        <item>L2TP/IPSec VPN med certifikat</item>
+        <item>PSec VPN med pre-delade nycklar och xauth autentisering</item>
+        <item>IPSec VPN med certifikat och Xauth autentisering</item>
+        <item>IPSec VPN med certifikat och hybrid autentisering</item>
+    </string-array>
+    <string-array name="vpn_states">
+        <item>Avbruten</item>
+        <item>Initierar...</item>
+        <item>Ansluter...</item>
+        <item>Ansluten</item>
+        <item>Tidsgräns</item>
+        <item>Misslyckades</item>
+    </string-array>
+    <string-array name="security_settings_premium_sms_values">
+        <item>Fråga</item>
+        <item>Tillåt aldrig</item>
+        <item>Tillåt alltid</item>
+    </string-array>
+    <string-array name="search_filter">
+        <item>Alla enheter</item>
+        <item>Headset</item>
+        <item>PC</item>
+        <item>Telefon</item>
+        <item>Periferisk</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries_NORMAL">
+        <item>Användar bild</item>
+        <item>Klocka 1</item>
+        <item>Klocka 2</item>
+        <item>klocka 3</item>
+        <item>klocka 4</item>
+        <item>klockan 5</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL">
+        <item>1.5 sekunder</item>
+        <item>3 sekunder</item>
+        <item>5 sekunder</item>
+        <item>Alltid på</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL_ex">
+        <item>1,5 sek.</item>
+        <item>3 sek.</item>
+        <item>5 sek.</item>
+        <item>Alltid på</item>
+    </string-array>
+    <string-array name="sp_front_key_light_l1_NORMAL">
+        <item>3 sekunder</item>
+        <item>6 sekunder</item>
+        <item>10 sekunder</item>
+        <item>30 sekunder</item>
+        <item>Alltid på</item>
+    </string-array>
+    <string-array name="sp_front_key_light_att_NORMAL">
+        <item>3 sek.</item>
+        <item>6 sek.</item>
+        <item>10 sek.</item>
+        <item>30 sek.</item>
+        <item>Alltid på</item>
+    </string-array>
+    <string-array name="sp_numlocdisp_entries_NORMAL">
+        <item>Avaktivera</item>
+        <item>Aktivera</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_NORMAL">
+        <item>Sekretess varning</item>
+        <item>Om du använder en 3:e parts program, kan det direkt hämta din personliga information eller kräva att din operatör lämnar ut dina personliga uppgifter, inklusive platsinformation (i förekommande fall), till program leverantören eller någon annan 3:e part.</item>
+        <item>Vilken integritetspolicy gäller? Din mobilleverantörs Integritetspolicy och Användarvillkor gäller inte program på din telefon som enbart tillhandahålls av 3:e part. Den 3:e parts policy gäller för din användning av detta program.</item>
+        <item>Var kan jag hitta mer information om 3:e parts politik? Kontrollera programets användarvillkor och / eller programleverantörens riktlinjer för mer information om hur program samlar, öppnar, användar och lämnar ut dina uppgifter. Integritetspolicy , Användarvillkor och andra meddelanden konsumenten får finns på leverantörens hemsida. Var säker på att du är bekväm med dessa riktlinjer innan du använder ett program.</item>
+        <item>Var kan jag hitta min nätleverantörs integritetspolicy? Om du har frågor om din operatörs integritetspolicy kan du besöka din operatör hemsida och klicka på \"Privacy Policy\"-länken.</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_spr_NORMAL">
+        <item>Sprint Integritetsvarning</item>
+        <item>Om du använder en 3:e parts app, kan den samla din personliga information eller kräva att Sprint lämnar ut din personliga information, inklusive lokaliseringsinformation (i förekommande fall), till app-leverantören eller annan 3: e part.</item>
+        <item>Vilken integritetspolicy gäller? Sprints integritetspolicy och användarvillkor gäller inte program på din telefon som enbart levereras av 3: e part.</item>
+        <item>Var kan jag hitta mer information om den 3:e parts politik? Kontrollera programmets användarvillkor och / eller program leverantörens politik för mer information om hur programmet samlar, öppnar, användar och lämnar ut dina uppgifter. Sekretesspolicy och användarvillkor och andra meddelanden konsumenten får, kan vara tillgängliga på leverantörens hemsida. Var säker på att du är bekväm med dessa riktlinjer innan du använder ett program.</item>
+        <item>Var kan jag hitta Sprints sekretesspolicy? Separat om du har frågor om Sprints sekretesspolicy, vänligen besök Sprint.com och klicka på \"Privacy Policy\"-länken.</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_bm_NORMAL">
+        <item>Boost Mobile integritetsvarning</item>
+        <item>Om du använder en 3:e parts app, kan den samla din personliga information eller kräva att Boost Mobile lämnar ut din personliga information, inklusive lokaliseringsinformation (i förekommande fall), till app-leverantören eller annan 3: e part.</item>
+        <item>"Vilken integritetspolicy gäller? Boost Mobile's integritetspolicy och användarvillkor gäller inte program på din telefon som enbart levereras av 3: e part."</item>
+        <item>Var kan jag hitta mer information om den 3:e parts politik? Kontrollera programmets användarvillkor och / eller program leverantörens politik för mer information om hur programmet samlar, öppnar, användar och lämnar ut dina uppgifter. Sekretesspolicy och användarvillkor och andra meddelanden konsumenten får, kan vara tillgängliga på leverantörens hemsida. Var säker på att du är bekväm med dessa riktlinjer innan du använder ett program.</item>
+        <item>Var kan jag hitta Boost Mobiles sekretesspolicy? Separat om du har frågor om Boost Mobiles sekretesspolicy, vänligen besök Boost Mobile.com och klicka på \"Privacy Policy\"-länken.</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_virgin_NORMAL">
+        <item>Virgin Mobile Privacy Alert</item>
+        <item>Om du använder en 3:e parts app, kan den samla din personliga information eller kräva att Virgin Mobile lämnar ut din personliga information, inklusive lokaliseringsinformation (i förekommande fall), till app-leverantören eller annan 3: e part.</item>
+        <item>Vilken sekretesspolicy gäller? Virgin Mobile Sekretesspolicy och Användarvillkor gäller inte program på telefonen som enbart tillhandahålls av 3:e part. Den 3:e parts politik gäller för din användning av denna app.</item>
+        <item>Var kan jag hitta mer information om den 3:e parts politik? Kontrollera programmets användarvillkor och / eller program leverantörens politik för mer information om hur programmet samlar, öppnar, användar och lämnar ut dina uppgifter. Sekretesspolicy och användarvillkor och andra meddelanden konsumenten får, kan vara tillgängliga på leverantörens hemsida. Var säker på att du är bekväm med dessa riktlinjer innan du använder ett program.</item>
+        <item>"Var kan jag finna Virgin Mobile's integritetspolicy? Separat, om du har frågor angående Virgin Mobile's integritetspolicy, vänligen besök VirginMobileUSA.com och klicka på länken \"Privacy Policy\"."</item>
+    </string-array>
+    <string-array name="sp_lock_screen_effect_entries_NORMAL">
+        <item>Allmänt</item>
+        <item>Krusning med löv</item>
+        <item>Spillt bläck</item>
+        <item>Daggdroppe</item>
+    </string-array>
+    <string-array name="sp_power_save_brightness_entries_NORMAL">
+        <item>10% ljusstyrka</item>
+        <item>20% ljusstyrka</item>
+        <item>30% ljusstyrka</item>
+        <item>50% ljusstyrka</item>
+    </string-array>
+    <string-array name="sp_power_save_screen_timeout_entries_NORMAL">
+        <item>15 sekunder</item>
+        <item>30 sekunder</item>
+        <item>1 minut</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_NORMAL">
+        <item>1.5 sekunder</item>
+        <item>Alltid av</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_att_NORMAL">
+        <item>3 sekunder</item>
+        <item>Alltid av</item>
+    </string-array>
+    <string-array name="sp_power_save_mode_entries_NORMAL">
+        <item>10% batteri</item>
+        <item>20% batteri</item>
+        <item>30% batteri</item>
+        <item>50% batteri</item>
+    </string-array>
+    <string-array name="sp_power_save_mode2_entries_NORMAL">
+        <item>Omedelbart</item>
+        <item>10% batteri</item>
+        <item>20% batteri</item>
+        <item>30% batteri</item>
+        <item>50% batteri</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries">
+        <item>5 minuter</item>
+        <item>10 minuter</item>
+        <item>15 minuter</item>
+    </string-array>
+    <string-array name="sp_hotspot_timeout_entries_mx_NORMAL">
+        <item>Ingen tidsgräns</item>
+        <item>5 min</item>
+        <item>10 min.</item>
+        <item>15 min</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries_jb">
+        <item>5 min</item>
+        <item>10 min.</item>
+        <item>15 min</item>
+        <item>30 min</item>
+        <item>Aldrig</item>
+    </string-array>
+    <string-array name="wifi_p2p_timeout_entries">
+        <item>15 min</item>
+        <item>30 min</item>
+        <item>Aldrig</item>
+    </string-array>
+    <string-array name="sp_wifi_ap_visibility_NORMAL">
+        <item>Visa</item>
+        <item>Dölj</item>
+    </string-array>
+    <string-array name="sp_bt_search_filter_SHORT">
+        <item>Alla enheter</item>
+        <item>Headset</item>
+        <item>Mobiltelefon</item>
+        <item>PC</item>
+        <item>Tangentbord, mus, osv.</item>
+    </string-array>
+    <string-array name="wifi_signal_strength_entries">
+        <item>Stark</item>
+        <item>Medium</item>
+        <item>Svag</item>
+        <item>Av</item>
+    </string-array>
+</resources>

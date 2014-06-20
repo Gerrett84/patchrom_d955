@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/reject_list_view" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight">
+        <CheckBox android:layout_gravity="center_vertical" android:id="@id/select_delete_item" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:button="@com.lge.internal:drawable/btn_check_holo_light" style="@style/checkbox_multi_selection_size" />
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:layout_weight="1.0">
+            <TextView android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/ssid" android:fadingEdge="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/hig_white_list1_normal" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/incall_message_view_divider" android:background="@color/list_divide_line_color" android:layout_width="fill_parent" android:layout_height="0.6600001dip" />
+</LinearLayout>

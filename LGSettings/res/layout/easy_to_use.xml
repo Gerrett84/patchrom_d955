@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip">
+            <TextView android:textSize="18.0sp" android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21.5dip" android:text="@string/easytouse_select_mode" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:baselineAligned="false">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.5dip" android:layout_weight="1.0">
+                    <ImageView android:id="@id/easy_img" android:background="@drawable/lg_easyui_setting_thumbnail_easy" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+                    <RadioButton android:textSize="15.0sp" android:id="@id/easy_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/easytouse_starter" android:layout_below="@id/easy_img" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.5dip" android:layout_weight="1.0">
+                    <ImageView android:id="@id/normal_img" android:background="@drawable/lg_easyui_setting_thumbnail_normal" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+                    <RadioButton android:textSize="15.0sp" android:id="@id/normal_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/easytouse_standard" android:layout_below="@id/normal_img" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView android:textSize="18.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/easytouse_dsesc1" />
+            <View android:layout_width="wrap_content" android:layout_height="18.0dip" />
+            <TextView android:textSize="18.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/easytouse_dsesc2" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:measureWithLargestChild="true" style="?android:attr/buttonBarStyle">
+        <Button android:id="@id/preview_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/easytouse_preview" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+        <Button android:id="@id/apply_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/easytouse_apply" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android1:orientation="vertical" android1:layout_width="fill_parent" android1:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:android1="http://schemas.android.com/apk/res/android">
+    <LinearLayout android1:orientation="vertical" android1:background="@drawable/help_image_bg_popup" android1:paddingLeft="24.0dip" android1:paddingTop="17.0dip" android1:paddingRight="24.0dip" android1:paddingBottom="15.0dip" android1:layout_width="fill_parent" android1:layout_height="wrap_content" android1:layout_marginLeft="0.0dip" android1:layout_marginTop="0.0dip" android1:layout_marginRight="0.0dip" android1:layout_marginBottom="0.0dip">
+        <LinearLayout android1:orientation="vertical" android1:layout_width="fill_parent" android1:layout_height="wrap_content">
+            <FrameLayout android1:orientation="horizontal" android1:layout_width="fill_parent" android1:layout_height="wrap_content">
+                <TextView android1:textSize="15.669983sp" android1:textStyle="bold" android1:textColor="#ff0095e3" android1:layout_gravity="start" android1:id="@id/guide_tip_title" android1:paddingBottom="0.0dip" android1:layout_width="wrap_content" android1:layout_height="wrap_content" android1:layout_marginLeft="0.0dip" android1:layout_marginTop="0.0dip" android1:layout_marginBottom="10.0dip" android1:text="@string/sp_tip_NORMAL" android1:includeFontPadding="false" />
+            </FrameLayout>
+            <TextView android1:textSize="15.669983sp" android1:textColor="#ff000000" android1:gravity="start" android1:id="@id/guide_tip_text" android1:paddingBottom="0.0dip" android1:layout_width="wrap_content" android1:layout_height="wrap_content" android1:layout_marginLeft="0.0dip" android1:layout_marginTop="0.0dip" android1:layout_marginRight="0.0dip" android1:layout_marginBottom="6.0dip" android1:includeFontPadding="false" android1:lineSpacingExtra="1.3299866dip" />
+            <Button android1:textSize="19.329987sp" android1:textStyle="bold" android1:textColor="#ff000000" android1:layout_gravity="center" android1:id="@id/guide_tip_button" android1:background="@drawable/button_hotspot_help" android1:paddingLeft="0.0dip" android1:paddingRight="0.0dip" android1:visibility="visible" android1:layout_width="147.0dip" android1:layout_height="48.0dip" android1:layout_marginLeft="0.0dip" android1:layout_marginTop="0.0dip" android1:layout_marginRight="0.0dip" android1:layout_marginBottom="0.0dip" android1:text="@string/sp_wifi_inter_help_ok" android1:includeFontPadding="false" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

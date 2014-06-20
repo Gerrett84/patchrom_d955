@@ -1,0 +1,12 @@
+diff -rup ../framework_ext/smali/miui/telephony/MiuiSpnOverride.smali ../framework_ext/smali/miui/telephony/MiuiSpnOverride.smali
+--- ../framework_ext/smali/miui/telephony/MiuiSpnOverride.smali	2014-05-25 00:47:08.000000000 +0200
++++ ../framework_ext/smali/miui/telephony/MiuiSpnOverride.smali	2014-05-16 16:55:14.000000000 +0200
+@@ -53,7 +53,7 @@
+     return-void
+ .end method
+ 
+-.method public static getImpl()Lcom/android/internal/telephony/gsm/SpnOverride;
++.method public static getImpl()Lcom/android/internal/telephony/uicc/SpnOverride;
+     .locals 1
+ 
+     .prologue

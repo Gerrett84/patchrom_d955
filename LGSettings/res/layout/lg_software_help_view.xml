@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/category_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:id="@id/help_howtouse" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/sp_lg_software_help1_NORMAL" style="@style/onscreenphone_help_title_text" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/category_pcsuite" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:id="@id/help_pcsuite" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sp_lg_software_help_pcsuite_NORMAL" style="@style/onscreenphone_help_list_text" />
+                <ImageView android:layout_gravity="center" android:background="@drawable/onscreenphone_helpimage_pc_suite" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.5dip" android:layout_marginBottom="26.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/category_osp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:id="@id/help_osp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sp_lg_software_help_osp_NORMAL" style="@style/onscreenphone_help_list_text" />
+                <ImageView android:layout_gravity="center" android:background="@drawable/onscreenphone_helpimage_on_screenphone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.5dip" android:layout_marginBottom="26.0dip" />
+            </LinearLayout>
+            <TextView android:id="@id/help_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/sp_lg_software_help_desc00_NORMAL" style="@style/onscreenphone_help_list_text" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="37.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:id="@id/lg_software_help_number01" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/onscreenphone_help_list_text" />
+                <TextView android:id="@id/lg_software_help_desc01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/sp_lg_software_help_desc01_1_NORMAL" style="@style/onscreenphone_help_list_text" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:id="@id/lg_software_help_number02" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/onscreenphone_help_list_text" />
+                <TextView android:id="@id/lg_software_help_desc02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/sp_lg_software_help_desc02_NORMAL" style="@style/onscreenphone_help_list_text" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:id="@id/lg_software_help_number03" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/onscreenphone_help_list_text" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/sp_lg_software_help_desc03_NORMAL" style="@style/onscreenphone_help_list_text" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:id="@id/lg_software_help_number04" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" style="@style/onscreenphone_help_list_text" />
+                <TextView android:id="@id/lg_software_help_desc04" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/sp_lg_software_help_desc04_NORMAL" style="@style/onscreenphone_help_list_text" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:measureWithLargestChild="true" style="?android:attr/buttonBarStyle">
+        <Button android:id="@id/ok_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sp_lg_software_help_btn_ok" style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

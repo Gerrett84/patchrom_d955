@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:layout="@layout/dummy_layout" />
+    <com.android.lgesettings.lge.RadioButtonPreference android:title="@string/screen_off_effect_none_ex2" android:key="no_effect" />
+    <com.android.lgesettings.lge.RadioButtonPreference android:title="@string/screen_off_effect_circle_ex" android:key="circle_effect" />
+    <com.android.lgesettings.lge.RadioButtonPreference android:title="@string/screen_off_effect_android_style_ex" android:key="android_style_effect" />
+</PreferenceScreen>

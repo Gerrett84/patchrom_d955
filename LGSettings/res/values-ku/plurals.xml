@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="other">‏وشه‌ی تێپه‌ڕین ده‌بێت بریتی له‌ لانیکه‌م %dپیت بێت</item>
+        <item quantity="one">‏وشه‌ی تێپه‌ڕین ده‌بێت بریتی له‌ لانیکه‌م 1 پیت بێت</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="other">‏وشه‌ی تێپه‌ڕین ده‌بێت بریتی له‌ لانیکه‌م %dپیتی بچووک بێت</item>
+        <item quantity="one">‏وشه‌ی تێپه‌ڕین ده‌بێت بریتی له‌ لانیکه‌م1 پیتی بچووک بێت</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="other">‏وشه‌ی تێپه‌ڕین ده‌بێت بریتی له‌ لانیکه‌م %dپیتی گه‌وره‌ بێت</item>
+        <item quantity="one">‏وشه‌ی تێپه‌ڕین ده‌بێت بریتی له‌ لانیکه‌م 1 پیتی گه‌وره‌ بێت</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="other">‏وشه‌ی تێپه‌ڕین ده‌بێت بریتی له‌ لانیکه‌م %dره‌قه‌م بێت</item>
+        <item quantity="one">‏وشه‌ی تێپه‌ڕین ده‌بێت بریتی له‌ لانیکه‌م 1 ره‌قه‌م بێت</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="other">‏وشه‌ی تێپه‌ڕین ده‌بێت بریتی له‌ لانیکه‌م%dهێمای تایبه‌ت بێت</item>
+        <item quantity="one">‏وشه‌ی تێپه‌ڕین ده‌بێت بریتی له‌ لانیکه‌م 1 هێمای تایبه‌ت بێت</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="other">‏وشه‌ی تێپه‌ڕین ده‌بێت بریتی له‌ لانیکه‌م %dکاراکته‌ری ناپیت بێت</item>
+        <item quantity="one">‏وشه‌ی تێپه‌ڕین ده‌بێت بریتی له‌ لانیکه‌م 1 کاراکته‌ری ناپیت بێت</item>
+    </plurals>
+</resources>

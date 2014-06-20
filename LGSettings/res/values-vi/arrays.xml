@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>Nước Mỹ</item>
+        <item>Châu Âu</item>
+        <item>Châu Phi</item>
+        <item>Châu Á</item>
+        <item>Australia</item>
+        <item>Thái Bình Dương</item>
+        <item>Tất cả</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 giây</item>
+        <item>30 giây</item>
+        <item>1 phút</item>
+        <item>2 phút</item>
+        <item>5 phút</item>
+        <item>10 phút</item>
+        <item>30 phút</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries2_NORMAL">
+        <item>15 giây</item>
+        <item>30 giây</item>
+        <item>1 phút</item>
+        <item>2 phút</item>
+        <item>5 phút</item>
+        <item>10 phút</item>
+        <item>Duy trì trạng thái bật của màn hình</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL">
+        <item>15 giây</item>
+        <item>30 giây</item>
+        <item>1 phút</item>
+        <item>2 phút</item>
+        <item>5 phút</item>
+        <item>10 phút</item>
+        <item>15 phút</item>
+        <item>Duy trì trạng thái bật của màn hình</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL_ex">
+        <item>15 giây</item>
+        <item>30 giây</item>
+        <item>1 phút</item>
+        <item>2 phút</item>
+        <item>5 phút</item>
+        <item>10 phút</item>
+        <item>15 phút</item>
+        <item>Duy trì trạng thái bật của màn hình</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled">
+        <item>15 giây</item>
+        <item>30 giây</item>
+        <item>1 phút</item>
+        <item>2 phút</item>
+        <item>5 phút</item>
+        <item>10 phút</item>
+        <item>15 phút</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled_ex">
+        <item>15 giây</item>
+        <item>30 giây</item>
+        <item>1 phút</item>
+        <item>2 phút</item>
+        <item>5 phút</item>
+        <item>10 phút</item>
+        <item>15 phút</item>
+    </string-array>
+    <string-array name="sp_pouch_default_clock_entries2_NORMAL">
+        <item>Đồng hồ 1</item>
+        <item>Đồng hồ 2</item>
+        <item>Đồng hồ 3</item>
+        <item>Đồng hồ 4</item>
+        <item>Đồng hồ 5</item>
+        <item>Đồng hồ 6</item>
+        <item>Đồng hồ 7</item>
+        <item>Đồng hồ 8</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries1_NORMAL">
+        <item>Tương tự</item>
+        <item>Kỹ Thuật Số</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_position_entries1_NORMAL">
+        <item>Trung tâm</item>
+        <item>Trên cùng bên phải</item>
+        <item>Trên cùng bên trái</item>
+        <item>Dưới cùng bên phải</item>
+        <item>Dưới cùng bên trái</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_font_entries1_NORMAL">
+        <item>Tên phông chữ 1</item>
+        <item>Tên phông chữ 2</item>
+    </string-array>
+    <string-array name="sp_sound_profile_entries_NORMAL">
+        <item>Âm thanh</item>
+        <item>Chỉ rung</item>
+        <item>Im lặng</item>
+    </string-array>
+    <string-array name="dream_timeout_entries">
+        <item>Không bao giờ</item>
+        <item>15 giây</item>
+        <item>30 giây</item>
+        <item>1 phút</item>
+        <item>2 phút</item>
+        <item>5 phút</item>
+        <item>10 phút</item>
+        <item>30 phút</item>
+    </string-array>
+    <string-array name="lock_after_timeout_entries">
+        <item>Ngay lập tức</item>
+        <item>5 giây</item>
+        <item>15 giây</item>
+        <item>30 giây</item>
+        <item>1 phút</item>
+        <item>2 phút</item>
+        <item>5 phút</item>
+        <item>10 phút</item>
+        <item>30 phút</item>
+    </string-array>
+    <string-array name="sp_lock_after_timeout_entries_NORMAL">
+        <item>Ngay lập tức</item>
+        <item>15 giây</item>
+        <item>30 giây</item>
+        <item>1 phút</item>
+        <item>2 phút</item>
+        <item>10 phút</item>
+        <item>30 phút</item>
+    </string-array>
+    <string-array name="entries_font_size">
+        <item>&amp;lt;font size=16 align=middle>Nhỏ&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>Bình thường&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>Lớn&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>Lớn hơn&amp;lt;/font></item>
+    </string-array>
+    <string-array name="sp_entries_font_size2">
+        <item>&amp;lt;font size=14 align=middle>Tối thiểu&amp;lt;/font></item>
+        <item>&amp;lt;font size=16 align=middle>Nhỏ&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>Trung Bình&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>Lớn&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>Rất lớn&amp;lt;/font></item>
+        <item>&amp;lt;font size=27 align=middle>Tối đa&amp;lt;/font></item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>Rất chậm</item>
+        <item>Chậm</item>
+        <item>Bình thường</item>
+        <item>Nhanh</item>
+        <item>Rất nhanh</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>rất thấp</item>
+        <item>Thấp</item>
+        <item>Bình thường</item>
+        <item>Cao</item>
+        <item>Rất cao</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Đang dò...</item>
+        <item>Đang kết nối...</item>
+        <item>Đang xác thực...</item>
+        <item>Tìm địa chỉ IP...</item>
+        <item>Đã kết nối</item>
+        <item>Lơ lửng</item>
+        <item>Đang ngắt kết nối...</item>
+        <item>Đã ngắt kết nối</item>
+        <item>Không thành công</item>
+        <item>Đã chặn</item>
+        <item>Tạm thời tránh được kết nối kém</item>
+        <item>Tạm thời tránh được kết nối kém</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Đang dò...</item>
+        <item>Dang kết nối với %1$s...</item>
+        <item>Đang xác thực với %1$s…</item>
+        <item>Đang nhận địa chỉ IP từ %1$s...</item>
+        <item>Được kết nối với %1$s</item>
+        <item>Lơ lửng</item>
+        <item>Đang ngắt kết nối khỏi %1$s…</item>
+        <item>Đã ngắt kết nối</item>
+        <item>Không thành công</item>
+        <item>Đã chặn</item>
+        <item>Tạm thời tránh được kết nối kém</item>
+    </string-array>
+    <string-array name="wifi_ap_security">
+        <item>Mở</item>
+        <item>WPA PSK</item>
+        <item>WPA2 PSK</item>
+    </string-array>
+    <string-array name="wifi_p2p_wps_setup">
+        <item>Nhấn nút</item>
+        <item>Mã PIN từ thiết bị này</item>
+    </string-array>
+    <string-array name="wifi_p2p_status">
+        <item>Đã kết nối</item>
+        <item>Kết nối</item>
+        <item>Không thành công</item>
+        <item>Khả dụng</item>
+        <item>Ngoài tầm</item>
+    </string-array>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>2 phút</item>
+        <item>5 phút</item>
+        <item>1 giờ</item>
+        <item>Không bao giờ hết thời gian chờ</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Nghèo</item>
+        <item>Bình thường</item>
+        <item>Chứng chỉ người dùng</item>
+        <item>Tuyệt vời</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Luôn luôn</item>
+        <item>Chỉ khi được cắm vào</item>
+        <item>Wi-Fi bị tắt (do việc sử dụng dữ liệu)</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <item>Luôn luôn</item>
+        <item>Chỉ khi được cắm vào</item>
+        <item>Wi-Fi bị tắt</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_entries">
+        <item>Tự động</item>
+        <item>Chỉ 5 GHz</item>
+        <item>Chỉ 2,4 GHz</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>Thời gian sử dụng</item>
+        <item>Khởi chạy Đếm</item>
+        <item>Tên Ứng Dụng</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>Không có</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_network_setup">
+        <item>Tắt</item>
+        <item>Nhấn nút</item>
+        <item>Mã PIN từ điểm truy cập</item>
+        <item>Mã PIN từ thiết bị này</item>
+    </string-array>
+    <string-array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>Tĩnh</item>
+    </string-array>
+    <string-array name="wifi_proxy_settings">
+        <item>Không có</item>
+        <item>Thủ công</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>Tắt</item>
+        <item>Cảnh báo</item>
+        <item>Rung</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>Không có</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP hoặc CHAP</item>
+    </string-array>
+    <string-array name="bearer_entries">
+        <item>LTE</item>
+        <item>eHRPD</item>
+        <item>Không xác định</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Thiết bị lưu trữ trong</item>
+        <item>Thẻ SD có thể tháo rời</item>
+        <item>Để hệ thống quyết định</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>Luôn luôn</item>
+        <item>Không bao giờ</item>
+        <item>Chỉ ở chế độ Im lặng</item>
+        <item>Chỉ khi không ở chế độ Im lặng</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_titles">
+        <item>Ngắn</item>
+        <item>Trung Bình</item>
+        <item>Dài</item>
+    </string-array>
+    <string-array name="hdcp_checking_titles">
+        <item>Không bao giờ kiểm tra</item>
+        <item>Chỉ kiểm tra nội dung DRM</item>
+        <item>Luôn luôn kiểm tra</item>
+    </string-array>
+    <string-array name="hdcp_checking_summaries">
+        <item>Không bao giờ sử dụng tính năng kiểm tra HDCP</item>
+        <item>Chỉ sử dụng tính năng kiểm tra HDCP cho nội dung DRM</item>
+        <item>Luôn sử dụng kiểm tra HDCP</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>Tắt hoạt ảnh</item>
+        <item>Kích thước hoạt ảnh .5x</item>
+        <item>Kích thước hoạt ảnh 1x</item>
+        <item>Kích thước hoạt ảnh 1.5x</item>
+        <item>Kích thước hoạt ảnh 2x</item>
+        <item>Kích thước hoạt ảnh 5x</item>
+        <item>Kích thước hoạt ảnh 10x</item>
+    </string-array>
+    <string-array name="transition_animation_scale_entries">
+        <item>Tắt hoạt ảnh</item>
+        <item>Kích thước hoạt ảnh .5x</item>
+        <item>Kích thước hoạt ảnh 1x</item>
+        <item>Kích thước hoạt ảnh 1.5x</item>
+        <item>Kích thước hoạt ảnh 2x</item>
+        <item>Kích thước hoạt ảnh 5x</item>
+        <item>Kích thước hoạt ảnh 10x</item>
+    </string-array>
+    <string-array name="animator_duration_scale_entries">
+        <item>Tắt hoạt ảnh</item>
+        <item>Kích thước hoạt ảnh .5x</item>
+        <item>Kích thước hoạt ảnh 1x</item>
+        <item>Kích thước hoạt ảnh 1.5x</item>
+        <item>Kích thước hoạt ảnh 2x</item>
+        <item>Kích thước hoạt ảnh 5x</item>
+        <item>Kích thước hoạt ảnh 10x</item>
+    </string-array>
+    <string-array name="overlay_display_devices_entries">
+        <item>Không có</item>
+        <item>720x480 mdpi</item>
+        <item>1280x720 tvdpi</item>
+        <item>1920x1080 xhdpi</item>
+        <item>1280x720 tvdpi và 1920x1080 xhdpi</item>
+    </string-array>
+    <string-array name="enable_opengl_traces_entries">
+        <item>Không có</item>
+        <item>Logcat</item>
+        <item>Phân tính hiệu năng thực hiện trên hệ thống (Đồ họa)</item>
+        <item>Bộ đệm lưu thông tin truy xuất lỗi glGetError</item>
+    </string-array>
+    <string-array name="app_process_limit_entries">
+        <item>Giới hạn tiêu chuẩn</item>
+        <item>Không có quy trình nền nào</item>
+        <item>Tại hầu hết một quy trình</item>
+        <item>Tại hầu hết 2 quy trình</item>
+        <item>Tại hầu hết 3 quy trình</item>
+        <item>Tại hầu hết 4 quy trình</item>
+    </string-array>
+    <string-array name="vpn_types_long">
+        <item>PPTP VPN</item>
+        <item>L2TP/IPSec VPN có các phím được chia sẻ sẵn</item>
+        <item>L2TP/IPSec VPN có các giấy chứng nhận</item>
+        <item>IPSec VPN có các phím được chia sẻ sẵn và giao thức xác thực Xauth</item>
+        <item>IPSec VPN cùng với các chứng chỉ và sự xác thực Xauth</item>
+        <item>IPSec VPN có các giấy chứng nhận và xác nhận lai</item>
+    </string-array>
+    <string-array name="vpn_states">
+        <item>Đã ngắt kết nối</item>
+        <item>Đang khởi tạo...</item>
+        <item>Đang kết nối...</item>
+        <item>Đã kết nối</item>
+        <item>Hết thời gian chờ</item>
+        <item>Không thành công</item>
+    </string-array>
+    <string-array name="security_settings_premium_sms_values">
+        <item>Hỏi</item>
+        <item>Không bao giờ cho phép</item>
+        <item>Luôn cho phép</item>
+    </string-array>
+    <string-array name="search_filter">
+        <item>Tất cả thiết bị</item>
+        <item>Tai nghe</item>
+        <item>PC</item>
+        <item>Điện thoại</item>
+        <item>Ngoại vi</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries_NORMAL">
+        <item>Hình ảnh người sử dụng</item>
+        <item>Đồng hồ 1</item>
+        <item>Đồng hồ 2</item>
+        <item>Đồng hồ 3</item>
+        <item>Đồng hồ 4</item>
+        <item>Đồng hồ 5</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL">
+        <item>1.5 giây</item>
+        <item>3 giây</item>
+        <item>5 giây</item>
+        <item>Luôn bật</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL_ex">
+        <item>1.5 Giây.</item>
+        <item>3 giây</item>
+        <item>5 giây</item>
+        <item>Luôn bật</item>
+    </string-array>
+    <string-array name="sp_front_key_light_l1_NORMAL">
+        <item>3 giây</item>
+        <item>6 giây</item>
+        <item>10 giây</item>
+        <item>30 giây</item>
+        <item>Luôn bật</item>
+    </string-array>
+    <string-array name="sp_front_key_light_att_NORMAL">
+        <item>3 giây</item>
+        <item>1 Giây.</item>
+        <item>10 giây</item>
+        <item>30 giây</item>
+        <item>Luôn bật</item>
+    </string-array>
+    <string-array name="sp_numlocdisp_entries_NORMAL">
+        <item>Tắt</item>
+        <item>Bật</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_NORMAL">
+        <item>Cảnh báo bảo mật</item>
+        <item>Nếu bạn sử dụng một ứng dụng của bên thứ 3, ứng dụng này có thể thu thập trực tiếp thông tin cá nhân của bạn hoặc yêu cầu nhà cung cấp của bạn tiết lộ thông tin cá nhân của bạn, bao gồm thông tin định vị (nếu có), đến nhà cung cấp ứng dụng hoặc một số bên thứ 3 khác.</item>
+        <item>Chính sách quyền riêng tư áp dụng cho những ứng dụng nào? Chính sách quyền riêng tư của nhà cung cấp và các điều khoản Sử dụng không áp dụng cho những ứng dụng chỉ được cung cấp bởi bên thứ 3 trên điện thoại cầm tay. Chính sách của bên thứ 3 sẽ áp dụng cho việc sử dụng ứng dụng này.</item>
+        <item>Tôi có thể tìm thêm thông tin về chính sách của bên thứ 3 ở đâu? Hãy kiểm tra các điều khoản sử dụng ứng dụng và/hoặc các chính sách của nhà cung cấp ứng dụng để biết thêm thông tin chi tiết về cách ứng dụng thu thập, truy cập, sử dụng và tiết lộ thông tin của bạn. Chính sách quyền riêng tư, Các điều khoản sử dụng và những thông báo khác cho người dùng có thể tìm thấy trên trang web của nhà cung cấp. Hãy chắc chắn rằng bạn thấy hài lòng với những chính sách trước khi bạn sử dụng ứng dụng.</item>
+        <item>Tôi có thể tìm thấy chính sách quyền riêng tư của nhà cung cấp ở đâu? Nếu bạn thắc mắc về chính sách quyền riêng tư của nhà cung cấp của bạn, hãy ghé thăm trang chủ của nhà cung cấp và nhấp vào liên kết \"Chính sách quyền riêng tư\".</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_spr_NORMAL">
+        <item>Chuông báo riêng Sprint</item>
+        <item>Nếu bạn sử dụng một ứng dụng của bên thứ 3, nó có thể trực tiếp thu thập thông tin cá nhân của bạn hoặc yêu cầu Sprint tiết lộ thông tin cá nhân của bạn, bao gồm cả thông tin vị trí (nếu có), đến thông tin về các nhà cung cấp ứng dụng hoặc một số bên thứ 3 khác.</item>
+        <item>Chính sách quyền riêng tư áp dụng cho những ứng dụng nào? Chính sách quyền riêng tư của nhà cung cấp và các điều khoản Sử dụng không áp dụng cho những ứng dụng chỉ được cung cấp bởi bên thứ 3 trên điện thoại cầm tay. Chính sách của bên thứ 3 sẽ áp dụng cho việc sử dụng ứng dụng này.</item>
+        <item>Tôi có thể tìm thấy thông tin về các chính sách của các hãng thứ 3 ở đâu? Kiểm tra điều khoản sử dụng của chương trình ứng dụng và/hoặc chính sách của nhà cung cấp ứng dụng để có thêm thông tin về việc chương trình ứng dụng có thể tổng hợp, truy cập, sử dụng và tiết lộ các thông tin cá nhân của bạn như thế nào. Các chính sách thông tin cá nhân, các điều khoản sử dụng và các thông báo cho người tiêu dùng khác CÓ THỂ tìm thấy trên trang thông tin điện tử của nhà cung cấp ứng dụng. Hãy đảm bảo rằng bạn thấy yên tâm với các chính sách đó trước khi sử dụng bất cứ chương trình ứng dụng nào.</item>
+        <item>"Tôi có thể tìm thấy thông tin về chính sách bảo mật riêng tư của Sprint ở đâu?
+Ngoài ra, nếu bạn có câu hỏi nào về chính sách bảo mật riêng tư của Sprint, xin vui lòng truy cập vào Sprint.com và vào liên kết \"Chính sách bảo mật riêng tư\"."</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_bm_NORMAL">
+        <item>Chuông báo riêng Boost Mobile</item>
+        <item>Nếu bạn sử dụng một ứng dụng của bên thứ 3, nó có thể trực tiếp thu thập thông tin cá nhân của bạn hoặc yêu cầu Boost Mobile tiết lộ thông tin cá nhân của bạn, bao gồm cả thông tin vị trí (nếu có), đến thông tin về các nhà cung cấp ứng dụng hoặc một số bên thứ 3 khác.</item>
+        <item>Chính sách quyền riêng tư áp dụng cho những ứng dụng nào? Chính sách quyền riêng tư của nhà cung cấp và các điều khoản Sử dụng không áp dụng cho những ứng dụng chỉ được cung cấp bởi bên thứ 3 trên điện thoại cầm tay. Chính sách của bên thứ 3 sẽ áp dụng cho việc sử dụng ứng dụng này.</item>
+        <item>Tôi có thể tìm thấy thông tin về các chính sách của các hãng thứ 3 ở đâu? Kiểm tra điều khoản sử dụng của chương trình ứng dụng và/hoặc chính sách của nhà cung cấp ứng dụng để có thêm thông tin về việc chương trình ứng dụng có thể tổng hợp, truy cập, sử dụng và tiết lộ các thông tin cá nhân của bạn như thế nào. Các chính sách thông tin cá nhân, các điều khoản sử dụng và các thông báo cho người tiêu dùng khác CÓ THỂ tìm thấy trên trang thông tin điện tử của nhà cung cấp ứng dụng. Hãy đảm bảo rằng bạn thấy yên tâm với các chính sách đó trước khi sử dụng bất cứ chương trình ứng dụng nào.</item>
+        <item>"Tôi có thể tìm thấy thông tin về chính sách bảo mật riêng tư của Boost Mobile ở đâu?
+Ngoài ra, nếu bạn có câu hỏi nào về chính sách bảo mật riêng tư của Boost Mobile, xin vui lòng truy cập vào Boost Mobile.com và vào liên kết \"Chính sách bảo mật riêng tư\"."</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_virgin_NORMAL">
+        <item>Chuông báo riêng Virgin Mobile</item>
+        <item>Nếu bạn sử dụng một ứng dụng của bên thứ 3, nó có thể trực tiếp thu thập thông tin cá nhân của bạn hoặc yêu cầu Virgin Mobile tiết lộ thông tin cá nhân của bạn, bao gồm cả thông tin vị trí (nếu có), đến thông tin về các nhà cung cấp ứng dụng hoặc một số bên thứ 3 khác.</item>
+        <item>Chính sách bảo mật áp dụng cho điều gì? Chính sách bảo mật và Điều khoản sử dụng Virgin Mobile không áp dụng cho các ứng dụng trên thiết bị cầm tay mà hoàn toàn được cung cấp bởi bên thứ 3. Các chính sách của bên thứ 3 sẽ áp dụng cho việc sử dụng ứng dụng này của bạn.</item>
+        <item>Tôi có thể tìm thấy thông tin về các chính sách của các hãng thứ 3 ở đâu? Kiểm tra điều khoản sử dụng của chương trình ứng dụng và/hoặc chính sách của nhà cung cấp ứng dụng để có thêm thông tin về việc chương trình ứng dụng có thể tổng hợp, truy cập, sử dụng và tiết lộ các thông tin cá nhân của bạn như thế nào. Các chính sách thông tin cá nhân, các điều khoản sử dụng và các thông báo cho người tiêu dùng khác CÓ THỂ tìm thấy trên trang thông tin điện tử của nhà cung cấp ứng dụng. Hãy đảm bảo rằng bạn thấy yên tâm với các chính sách đó trước khi sử dụng bất cứ chương trình ứng dụng nào.</item>
+        <item>Tôi có thể tìm thấy Chính sách bảo mật của Virgin Mobile ở đâu? Nếu bạn có bất cứ câu hỏi nào về Chính sách Bảo mật của Virgin Mobile, vui lòng truy cập VirginMobileUSA.com và nhấp vào liên kết \"Chính sách bảo mật\".</item>
+    </string-array>
+    <string-array name="sp_lock_screen_effect_entries_NORMAL">
+        <item>Cơ bản</item>
+        <item>Gợn sóng</item>
+        <item>Tô màu</item>
+        <item>Hạt sương</item>
+    </string-array>
+    <string-array name="sp_power_save_brightness_entries_NORMAL">
+        <item>10% độ sáng</item>
+        <item>20% độ sáng</item>
+        <item>30% độ sáng</item>
+        <item>50% độ sáng</item>
+    </string-array>
+    <string-array name="sp_power_save_screen_timeout_entries_NORMAL">
+        <item>15 giây</item>
+        <item>30 giây</item>
+        <item>1 phút</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_NORMAL">
+        <item>1.5 giây</item>
+        <item>Luôn tắt</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_att_NORMAL">
+        <item>3 giây</item>
+        <item>Luôn tắt</item>
+    </string-array>
+    <string-array name="sp_power_save_mode_entries_NORMAL">
+        <item>10% Pin</item>
+        <item>20% Pin</item>
+        <item>30% Pin</item>
+        <item>50% Pin</item>
+    </string-array>
+    <string-array name="sp_power_save_mode2_entries_NORMAL">
+        <item>Ngay lập tức</item>
+        <item>10% Pin</item>
+        <item>20% Pin</item>
+        <item>30% Pin</item>
+        <item>50% Pin</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries">
+        <item>5 phút</item>
+        <item>10 phút</item>
+        <item>15 phút</item>
+    </string-array>
+    <string-array name="sp_hotspot_timeout_entries_mx_NORMAL">
+        <item>Không hết thời gian chờ</item>
+        <item>5 phút</item>
+        <item>10 phút</item>
+        <item>15 phút</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries_jb">
+        <item>5 phút</item>
+        <item>10 phút</item>
+        <item>15 phút</item>
+        <item>30 phút</item>
+        <item>Không bao giờ</item>
+    </string-array>
+    <string-array name="wifi_p2p_timeout_entries">
+        <item>15 phút</item>
+        <item>30 phút</item>
+        <item>Không bao giờ</item>
+    </string-array>
+    <string-array name="sp_wifi_ap_visibility_NORMAL">
+        <item>Hiển thị</item>
+        <item>Ẩn</item>
+    </string-array>
+    <string-array name="sp_bt_search_filter_SHORT">
+        <item>Tất cả thiết bị</item>
+        <item>Tai nghe</item>
+        <item>Điện thoại di động</item>
+        <item>PC</item>
+        <item>Thiết bị đầu vào (Bàn phím , chuột, ...)</item>
+    </string-array>
+    <string-array name="wifi_signal_strength_entries">
+        <item>Mạnh</item>
+        <item>Trung Bình</item>
+        <item>Yếu</item>
+        <item>Tắt</item>
+    </string-array>
+    <string-array name="wifi_Dual_band_AP_connection_entries">
+        <item>Tự động</item>
+        <item>5 GHz</item>
+        <item>2.4 GHz</item>
+    </string-array>
+</resources>

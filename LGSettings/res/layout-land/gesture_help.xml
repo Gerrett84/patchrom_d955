@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:label="@string/sp_gesture_tilt_test_title_NORMAL" android:orientation="vertical" android:padding="9.329987dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:textSize="@dimen/settings_gesture_title_text" android:textStyle="bold" android:ellipsize="marquee" android:gravity="left|center" android:id="@id/txt_View_1" android:fadingEdge="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.659973dip">
+            <ImageView android:id="@id/img_View_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" />
+            <TextView android:textSize="@dimen/settings_gesture_list_text" android:id="@id/txt_View_2" android:paddingLeft="9.329987dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:lineSpacingExtra="@dimen/settings_gesture_list_linespacing" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="16.659973dip" android:layout_marginRight="16.659973dip">
+            <ImageView android:id="@id/imageview_guide" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:src="@drawable/settings_usb_connection_normal" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/help_guide_description_fontsize" android:id="@id/textview_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:text="@string/autorun_first_dialog_content" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/help_guide_description_fontsize" android:id="@id/textview_desc1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/autorun_first_dialog_content_desc1" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/help_guide_description_fontsize" android:id="@id/textview_desc2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/autorun_first_dialog_content_desc2" />
+            <CheckBox android:textAppearance="?android:textAppearanceMedium" android:textSize="19.329987sp" android:textStyle="bold" android:id="@id/checkbox_donotshow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:layout_marginBottom="10.0dip" android:checked="false" android:text="@string/sp_do_not_show_again_NORMAL" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

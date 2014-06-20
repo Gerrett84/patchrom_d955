@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:title="@string/sp_except_scan_list_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/exceptscanlistRoot" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="9.0">
+        <ListView android:id="@*android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:gravity="center" android:id="@*android:id/empty" android:paddingBottom="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sp_except_scan_list_empty" style="@style/except_scan_list_no_list" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/bottom_bar" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <Button android:layout_gravity="center_vertical" android:id="@id/cancel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="-2.5dip" android:text="@string/cancel" android:layout_weight="1.0" />
+        <Button android:enabled="false" android:layout_gravity="center_vertical" android:id="@id/done" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="-2.5dip" android:text="@string/sp_delete_NORMAL" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

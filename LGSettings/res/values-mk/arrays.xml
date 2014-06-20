@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>Америка</item>
+        <item>Европа</item>
+        <item>Африка</item>
+        <item>Азија</item>
+        <item>Australia</item>
+        <item>Пацифик</item>
+        <item>Сè</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 секунди</item>
+        <item>30 секунди</item>
+        <item>1 минута</item>
+        <item>2 минутаи</item>
+        <item>5 минути</item>
+        <item>10 минутаи</item>
+        <item>30 минути</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries2_NORMAL">
+        <item>15 секунди</item>
+        <item>30 секунди</item>
+        <item>1 минута</item>
+        <item>2 минути</item>
+        <item>5 минути</item>
+        <item>10 минутаи</item>
+        <item>Остави го екранот вклучен</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL">
+        <item>15 секунди</item>
+        <item>30 секунди</item>
+        <item>1 минута</item>
+        <item>2 минути</item>
+        <item>5 минути</item>
+        <item>10 минути</item>
+        <item>15 минути</item>
+        <item>Остави го екранот вклучен</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL_ex">
+        <item>15 секунди</item>
+        <item>30 сек.</item>
+        <item>1 мин.</item>
+        <item>2 мин.</item>
+        <item>5 Мин.</item>
+        <item>10 мин</item>
+        <item>15 Мин.</item>
+        <item>Остави го екранот вклучен</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled">
+        <item>15 секунди</item>
+        <item>30 секунди</item>
+        <item>1 минута</item>
+        <item>2 минути</item>
+        <item>5 минути</item>
+        <item>10 минути</item>
+        <item>15 минути</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled_ex">
+        <item>15 секунди</item>
+        <item>30 сек.</item>
+        <item>1 мин.</item>
+        <item>2 мин.</item>
+        <item>5 Мин.</item>
+        <item>10 мин</item>
+        <item>15 Мин.</item>
+    </string-array>
+    <string-array name="sp_pouch_default_clock_entries2_NORMAL">
+        <item>Саат 1</item>
+        <item>Саат 2</item>
+        <item>Саат 3</item>
+        <item>Саат 4</item>
+        <item>Саат 5</item>
+        <item>Саат 6</item>
+        <item>Саат 7</item>
+        <item>Саат 8</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries1_NORMAL">
+        <item>Аналогно</item>
+        <item>Дигитално</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_position_entries1_NORMAL">
+        <item>Центар</item>
+        <item>Горе десно</item>
+        <item>Горе лево</item>
+        <item>Долу десно</item>
+        <item>Долу лево</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_font_entries1_NORMAL">
+        <item>Име на фонт1</item>
+        <item>Име на фонт2</item>
+    </string-array>
+    <string-array name="sp_sound_profile_entries_NORMAL">
+        <item>Звук</item>
+        <item>Само вибрација</item>
+        <item>Бесчујно</item>
+    </string-array>
+    <string-array name="dream_timeout_entries">
+        <item>Никогаш</item>
+        <item>15 секунди</item>
+        <item>30 секунди</item>
+        <item>1 минута</item>
+        <item>2 минутаи</item>
+        <item>5 минути</item>
+        <item>10 минутаи</item>
+        <item>30 минути</item>
+    </string-array>
+    <string-array name="lock_after_timeout_entries">
+        <item>Веднаш</item>
+        <item>5 секунди</item>
+        <item>15 секунди</item>
+        <item>30 секунди</item>
+        <item>1 минута</item>
+        <item>2 минутаи</item>
+        <item>5 минути</item>
+        <item>10 минутаи</item>
+        <item>30 минути</item>
+    </string-array>
+    <string-array name="sp_lock_after_timeout_entries_NORMAL">
+        <item>Веднаш</item>
+        <item>15 секунди</item>
+        <item>30 секунди</item>
+        <item>1 минута</item>
+        <item>2 минутаи</item>
+        <item>10 минутаи</item>
+        <item>30 минути</item>
+    </string-array>
+    <string-array name="entries_font_size">
+        <item>&amp;lt;font size=16 align=middle>Мал&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>Нормален&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>Голем&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>Екстра големо&amp;lt;/font></item>
+    </string-array>
+    <string-array name="sp_entries_font_size2">
+        <item>&amp;lt;font size=14 align=middle>Минимум&amp;lt;/font></item>
+        <item>&amp;lt;font size=16 align=middle>Мал&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>Средно&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>Голем&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>Многу голема&amp;lt;/font></item>
+        <item>&amp;lt;font size=27 align=middle>Максимум&amp;lt;/font></item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>Многу бавно</item>
+        <item>Бавно</item>
+        <item>Нормален</item>
+        <item>Брзо</item>
+        <item>Многу брзо</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>Многу ниско</item>
+        <item>Ниско</item>
+        <item>Нормален</item>
+        <item>Високо</item>
+        <item>Многу високо</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Сканирање ...</item>
+        <item>Поврзување ...</item>
+        <item>Потврдување…</item>
+        <item>Добивање на IP адреса…</item>
+        <item>Поврзано</item>
+        <item>Откажано</item>
+        <item>Прекинување на врска...</item>
+        <item>Врската е прекината</item>
+        <item>Неуспешно</item>
+        <item>Блокирано</item>
+        <item>Привремено избегнување слаба врска</item>
+        <item>Привремено избегнување слаба врска</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Сканирање ...</item>
+        <item>Поврзување со %1$s...</item>
+        <item>Автентификација со %1$s…</item>
+        <item>Добивање на IP адреса од %1$s...</item>
+        <item>Поврзано со %1$s</item>
+        <item>Откажано</item>
+        <item>Прекинување на врската со %1$s…</item>
+        <item>Врската е прекината</item>
+        <item>Неуспешно</item>
+        <item>Блокирано</item>
+        <item>Привремено избегнување слаба врска</item>
+    </string-array>
+    <string-array name="wifi_ap_security">
+        <item>Отвори</item>
+        <item>WPA PSK</item>
+        <item>WPA2 PSK</item>
+    </string-array>
+    <string-array name="wifi_p2p_wps_setup">
+        <item>Push копче</item>
+        <item>PIN од овој уред</item>
+    </string-array>
+    <string-array name="wifi_p2p_status">
+        <item>Поврзано</item>
+        <item>Поврзување</item>
+        <item>Неуспешно</item>
+        <item>Достапно</item>
+        <item>Надвор од домет</item>
+    </string-array>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>2 минутаи</item>
+        <item>5 минути</item>
+        <item>1 час</item>
+        <item>Никогаш да не истекува времето</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Лошо</item>
+        <item>Праведно</item>
+        <item>Добрa</item>
+        <item>Одлично</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Секогаш</item>
+        <item>Само кога е вклучено со кабел</item>
+        <item>Wi-Fi е исклучено (поради податочна употреба)</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <item>Секогаш</item>
+        <item>Само кога е вклучено со кабел</item>
+        <item>Wi-Fi е исклучено</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_entries">
+        <item>Автоматски</item>
+        <item>Само 5 GHz</item>
+        <item>Само 2.4 GHz</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>Време на користење</item>
+        <item>Броење на активирања</item>
+        <item>Име на апликација</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>Ништо</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_network_setup">
+        <item>Исклучено</item>
+        <item>Push копче</item>
+        <item>PIN од пристапна точка</item>
+        <item>PIN од овој уред</item>
+    </string-array>
+    <string-array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>Статично</item>
+    </string-array>
+    <string-array name="wifi_proxy_settings">
+        <item>Ништо</item>
+        <item>Рачно</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>Исклучено</item>
+        <item>Предупредување</item>
+        <item>Вибрации</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>Ништо</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP или CHAP</item>
+    </string-array>
+    <string-array name="bearer_entries">
+        <item>LTE</item>
+        <item>eHRPD</item>
+        <item>Неодредена</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Внатрешен уред за складирање</item>
+        <item>Отстранлива SD картичка</item>
+        <item>Препушти одлука на системот</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>Секогаш</item>
+        <item>Никогаш</item>
+        <item>Само во бесчуен режим</item>
+        <item>Само кога не се користи бесчуен режим</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_titles">
+        <item>Кратко</item>
+        <item>Средно</item>
+        <item>Долго</item>
+    </string-array>
+    <string-array name="hdcp_checking_titles">
+        <item>Никогаш не проверувај</item>
+        <item>Провери само за DRM содржина</item>
+        <item>Секогаш проверувај</item>
+    </string-array>
+    <string-array name="hdcp_checking_summaries">
+        <item>Никогаш не користи HDCP проверување</item>
+        <item>Користи HDCP проверување само за DRM содржина</item>
+        <item>Секогаш користи HDCP проверување</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>Анимацијаат е исклучина</item>
+        <item>Скала на анимација .5x</item>
+        <item>Скала на анимација 1x</item>
+        <item>Скала на анимација 1.5x</item>
+        <item>Скала на анимација 2x</item>
+        <item>Скала на анимација 5x</item>
+        <item>Скала на анимација 10x</item>
+    </string-array>
+    <string-array name="transition_animation_scale_entries">
+        <item>Анимацијаат е исклучина</item>
+        <item>Скала на анимација .5x</item>
+        <item>Скала на анимација 1x</item>
+        <item>Скала на анимација 1.5x</item>
+        <item>Скала на анимација 2x</item>
+        <item>Скала на анимација 5x</item>
+        <item>Скала на анимација 10x</item>
+    </string-array>
+    <string-array name="animator_duration_scale_entries">
+        <item>Анимацијаат е исклучина</item>
+        <item>Скала на анимација .5x</item>
+        <item>Скала на анимација 1x</item>
+        <item>Скала на анимација 1.5x</item>
+        <item>Скала на анимација 2x</item>
+        <item>Скала на анимација 5x</item>
+        <item>Скала на анимација 10x</item>
+    </string-array>
+    <string-array name="overlay_display_devices_entries">
+        <item>Ништо</item>
+        <item>720x480 mdpi</item>
+        <item>1280x720 tvdpi</item>
+        <item>1920x1080 xhdpi</item>
+        <item>1280x720 tvdpi и 1920x1080 xhdpi</item>
+    </string-array>
+    <string-array name="enable_opengl_traces_entries">
+        <item>Ништо</item>
+        <item>Logcat</item>
+        <item>Systrace (Графика)</item>
+        <item>Контролен стог на glGetError</item>
+    </string-array>
+    <string-array name="app_process_limit_entries">
+        <item>Стандардна граница</item>
+        <item>Нема заднински процеси</item>
+        <item>На најмногу 1 процеси</item>
+        <item>На најмногу 2 процеси</item>
+        <item>На најмногу 3 процеси</item>
+        <item>На најмногу 4 процеси</item>
+    </string-array>
+    <string-array name="vpn_types_long">
+        <item>PPTP VPN</item>
+        <item>L2TP/IPSec VPN со претходно споделени клучеви</item>
+        <item>L2TP/IPSec VPN со сертификати</item>
+        <item>IPSec VPN Со претходно споделени клучеви и Xauth автентикација</item>
+        <item>IPSec VPN со сертификати и Xнаместам автентикација</item>
+        <item>IPSec VPN со сертификати и хибридна автентикација</item>
+    </string-array>
+    <string-array name="vpn_states">
+        <item>Врската е прекината</item>
+        <item>Иницијализира...</item>
+        <item>Поврзување ...</item>
+        <item>Поврзано</item>
+        <item>Истечено време</item>
+        <item>Неуспешно</item>
+    </string-array>
+    <string-array name="security_settings_premium_sms_values">
+        <item>Прашај</item>
+        <item>Никогаш не одобрувај</item>
+        <item>Одобри секогаш</item>
+    </string-array>
+    <string-array name="search_filter">
+        <item>Другите уреди</item>
+        <item>Слушалки</item>
+        <item>PC</item>
+        <item>Телефон</item>
+        <item>Надворешно</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries_NORMAL">
+        <item>Корисничка слика</item>
+        <item>Саат 1</item>
+        <item>Саат 2</item>
+        <item>Саат 3</item>
+        <item>Саат 4</item>
+        <item>Саат 5</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL">
+        <item>1.5 секунди</item>
+        <item>3 секунди</item>
+        <item>5 секунди</item>
+        <item>Секогаш вклучено</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL_ex">
+        <item>1.5 Сек.</item>
+        <item>3 сек.</item>
+        <item>5 сек.</item>
+        <item>Секогаш вклучено</item>
+    </string-array>
+    <string-array name="sp_front_key_light_l1_NORMAL">
+        <item>3 секунди</item>
+        <item>6 секунди</item>
+        <item>10 секунди</item>
+        <item>30 секунди</item>
+        <item>Секогаш вклучено</item>
+    </string-array>
+    <string-array name="sp_front_key_light_att_NORMAL">
+        <item>3 сек.</item>
+        <item>1 Сек.</item>
+        <item>10 сек.</item>
+        <item>30 сек.</item>
+        <item>Секогаш вклучено</item>
+    </string-array>
+    <string-array name="sp_numlocdisp_entries_NORMAL">
+        <item>Оневозможи</item>
+        <item>Овозможи</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_NORMAL">
+        <item>Предупредување за приватност</item>
+        <item>Ако користите трета апликација, може директно да ги добие Вашите лични информации или да побара од операторот да ги открие истите, вклучувајќи ја и иформацијата за локација (каде е можно), на давателот на апликацијата или на некое друго трето лице.</item>
+        <item>Која Полиса за приватност се применува? Полисата за приватност и условите за користење не се применуваат на апликации од Вашиот телефон кои се произведени од трето лице. На таквите апликации се применуваат полиси од страната која ги произвела.</item>
+        <item>Каде можам да најдам повеќе информации за полисите за трета личност? За повеќе информации за тоа како апликацијата ги собира, користи, открива или пристапува до Вашите информации, проверете ги условите за користење на апликацијата и/или полисите од испорачувачот на апликацијата. Полисите за приватност, условите за користење и други кориснички известувања МОЖЕБИ се достапни на веб-локацијата на испорачувачот. Бидете сигурни дека се согласувате со полисите пред да користите апликација.</item>
+        <item>Каде може да ја пронајдам полисата за приватност на мојот оператор? Ако имате прашања за полисата за приватност на Вашиот оператор, посетете ја веб-локацијата на операторот и кликнете на врската „Полиса за приватност“.</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_spr_NORMAL">
+        <item>Предупредување за приватност на Sprint</item>
+        <item>Ако користите трета апликација, може директно да ја добие Вашата лична информација или да побара Sprint да ја открие личната информација, заедно со локациската информација (каде што е возможно), на испорачувачот на апликацијата или на некое трето лице.</item>
+        <item>"Која Полиса за приватност се применува?  Полисата за приватност на Sprint и Условите за употреба не важат за апликации од Вашиот телефон кои се производ од трето лице."</item>
+        <item>Каде можам да најдам повеќе информации за полиси за трето лице? Проверете ги условите за употреба на апликацијата и/или полисите на испорачувачот на апликацијата за тоа како апликацијата ќе собира, пристапува и открива Ваши информации. Полисите за приватност, Условите за употреба и други кориснички интереси МОЖЕБИ се достапни на веб-локацијата на испорачувачот. Пред да користите апликација, бидете сигурни дека се согласувате со полисите.</item>
+        <item>Каде можам да ја најдам полисата за приватност на Sprint? Ако имате прашања за полисата за приватност на Sprint, посетете ја веб-локацијата Sprint.com и кликнете на \"Privacy Policy\".</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_bm_NORMAL">
+        <item>Предупредување за приватност на Boost Mobile</item>
+        <item>Ако користите трета апликација, може директно да ја добие Вашата лична информација или да побара Boost Mobile да ја открие личната информација, заедно со локациската информација (каде што е возможно), на испорачувачот на апликацијата или на некое трето лице.</item>
+        <item>"Која Полиса за приватност се применува?  Полисата за приватност на Boost Mobile и Условите за употреба не важат за апликации од Вашиот телефон кои се производ од трето лице."</item>
+        <item>Каде можам да најдам повеќе информации за полиси за трето лице? Проверете ги условите за употреба на апликацијата и/или полисите на испорачувачот на апликацијата за тоа како апликацијата ќе собира, пристапува и открива Ваши информации. Полисите за приватност, Условите за употреба и други кориснички интереси МОЖЕБИ се достапни на веб-локацијата на испорачувачот. Пред да користите апликација, бидете сигурни дека се согласувате со полисите.</item>
+        <item>Каде можам да ја најдам полисата за приватност на Boost Mobile? Ако имате прашања за полисата за приватност на Boost Mobile, посетете ја веб-локацијата Boost Mobile.com и кликнете на \"Privacy Policy\".</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_virgin_NORMAL">
+        <item>Предупредување за приватност на Virgin Mobile</item>
+        <item>Ако користите трета апликација, може директно да ја добие Вашата лична информација или да побара Virgin Mobile да ја открие личната информација, заедно со локациската информација (каде што е возможно), на испорачувачот на апликацијата или на некое трето лице.</item>
+        <item>Која полиса за приватност е важечка? Полисата за приватност на Virgin Mobile и условите за употреба не важат за апликации на Вашиот телефон кои се испорачани од трети лица. Полисите за трети лица важат при користење на вакви апликации.</item>
+        <item>Каде можам да најдам повеќе информации за полиси за трето лице? Проверете ги условите за употреба на апликацијата и/или полисите на испорачувачот на апликацијата за тоа како апликацијата ќе собира, пристапува и открива Ваши информации. Полисите за приватност, Условите за употреба и други кориснички интереси МОЖЕБИ се достапни на веб-локацијата на испорачувачот. Пред да користите апликација, бидете сигурни дека се согласувате со полисите.</item>
+        <item>Каде можам да ја најдам полисата за приватност на Virgin Mobile? Одделно, ако имате прашања за полисата за приватност на Virgin Mobile, посетете ја веб-локацијата VirginMobileUSA.com и клинете на врската „Полиса за Приватност“.</item>
+    </string-array>
+    <string-array name="sp_lock_screen_effect_entries_NORMAL">
+        <item>Основно</item>
+        <item>Шумолење на лисја</item>
+        <item>Разлеано масло</item>
+        <item>Роса</item>
+    </string-array>
+    <string-array name="sp_power_save_brightness_entries_NORMAL">
+        <item>10% осветленост</item>
+        <item>20% осветленост</item>
+        <item>30% осветленост</item>
+        <item>50% осветленост</item>
+    </string-array>
+    <string-array name="sp_power_save_screen_timeout_entries_NORMAL">
+        <item>15 секунди</item>
+        <item>30 секунди</item>
+        <item>1 минута</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_NORMAL">
+        <item>1.5 секунди</item>
+        <item>Секогаш исклучено</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_att_NORMAL">
+        <item>3 секунди</item>
+        <item>Секогаш исклучено</item>
+    </string-array>
+    <string-array name="sp_power_save_mode_entries_NORMAL">
+        <item>10% батерија</item>
+        <item>20% батерија</item>
+        <item>30% батерија</item>
+        <item>50% батерија</item>
+    </string-array>
+    <string-array name="sp_power_save_mode2_entries_NORMAL">
+        <item>Веднаш</item>
+        <item>10% батерија</item>
+        <item>20% батерија</item>
+        <item>30% батерија</item>
+        <item>50% батерија</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries">
+        <item>5 минути</item>
+        <item>10 минутаи</item>
+        <item>15 минути</item>
+    </string-array>
+    <string-array name="sp_hotspot_timeout_entries_mx_NORMAL">
+        <item>Без истекување на време</item>
+        <item>5 Мин.</item>
+        <item>10 мин</item>
+        <item>15 Мин.</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries_jb">
+        <item>5 Мин.</item>
+        <item>10 мин</item>
+        <item>15 Мин.</item>
+        <item>30 Мин.</item>
+        <item>Никогаш</item>
+    </string-array>
+    <string-array name="wifi_p2p_timeout_entries">
+        <item>15 Мин.</item>
+        <item>30 Мин.</item>
+        <item>Никогаш</item>
+    </string-array>
+    <string-array name="sp_wifi_ap_visibility_NORMAL">
+        <item>Прикажи</item>
+        <item>Сокриј</item>
+    </string-array>
+    <string-array name="sp_bt_search_filter_SHORT">
+        <item>Другите уреди</item>
+        <item>Слушалки</item>
+        <item>Мобилен телефон</item>
+        <item>Компјутер</item>
+        <item>Тастатура, глувче итн.</item>
+    </string-array>
+    <string-array name="wifi_signal_strength_entries">
+        <item>Силно</item>
+        <item>Средно</item>
+        <item>Слаб</item>
+        <item>Исклучено</item>
+    </string-array>
+    <string-array name="wifi_Dual_band_AP_connection_entries">
+        <item>AUTO</item>
+        <item>5 GHz</item>
+        <item>2.4 GHz</item>
+    </string-array>
+</resources>

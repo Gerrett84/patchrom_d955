@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>Amèrica</item>
+        <item>Europa</item>
+        <item>Àfrica</item>
+        <item>Àsia</item>
+        <item>Australia</item>
+        <item>Pacífic</item>
+        <item>Tot</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 segons</item>
+        <item>30 segons</item>
+        <item>1 minut</item>
+        <item>2 minuts</item>
+        <item>5 minuts</item>
+        <item>10 minuts</item>
+        <item>30 minuts</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries2_NORMAL">
+        <item>15 segons</item>
+        <item>30 segons</item>
+        <item>1 minut</item>
+        <item>2 minuts</item>
+        <item>5 minuts</item>
+        <item>10 minuts</item>
+        <item>Mantenir la pantalla encesa</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL">
+        <item>15 segons</item>
+        <item>30 segons</item>
+        <item>1 min.</item>
+        <item>2 minuts</item>
+        <item>5 minuts</item>
+        <item>10 minuts</item>
+        <item>15 minuts</item>
+        <item>Mantenir la pantalla encesa</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL_ex">
+        <item>15 Seg.</item>
+        <item>30 seg.</item>
+        <item>1 minut</item>
+        <item>2 min.</item>
+        <item>5 min</item>
+        <item>10 min.</item>
+        <item>15 min</item>
+        <item>Mantenir la pantalla encesa</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled">
+        <item>15 segons</item>
+        <item>30 segons</item>
+        <item>1 min.</item>
+        <item>2 minuts</item>
+        <item>5 minuts</item>
+        <item>10 minuts</item>
+        <item>15 minuts</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled_ex">
+        <item>15 Seg.</item>
+        <item>30 seg.</item>
+        <item>1 minut</item>
+        <item>2 min.</item>
+        <item>5 min</item>
+        <item>10 min.</item>
+        <item>15 min</item>
+    </string-array>
+    <string-array name="sp_pouch_default_clock_entries2_NORMAL">
+        <item>Rellotge1</item>
+        <item>Rellotge 2</item>
+        <item>Rellotge 3</item>
+        <item>Rellotge 4</item>
+        <item>Rellotge 5</item>
+        <item>Rellotge 6</item>
+        <item>Rellotge 7</item>
+        <item>Rellotge 8</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries1_NORMAL">
+        <item>Analògic</item>
+        <item>Digital</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_position_entries1_NORMAL">
+        <item>Centre</item>
+        <item>Superior derecha</item>
+        <item>Superior izquierda</item>
+        <item>Botó dret</item>
+        <item>Botó esquerre</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_font_entries1_NORMAL">
+        <item>Fuente nombre1</item>
+        <item>Fuente nombre2</item>
+    </string-array>
+    <string-array name="sp_sound_profile_entries_NORMAL">
+        <item>So</item>
+        <item>Vibració només</item>
+        <item>Silenci</item>
+    </string-array>
+    <string-array name="dream_timeout_entries">
+        <item>Mai</item>
+        <item>15 segons</item>
+        <item>30 segons</item>
+        <item>1 minut</item>
+        <item>2 minuts</item>
+        <item>5 minuts</item>
+        <item>10 minuts</item>
+        <item>30 minuts</item>
+    </string-array>
+    <string-array name="lock_after_timeout_entries">
+        <item>Immediatament</item>
+        <item>5 seg.</item>
+        <item>15 segons</item>
+        <item>30 segons</item>
+        <item>1 minut</item>
+        <item>2 minuts</item>
+        <item>5 minuts</item>
+        <item>10 minuts</item>
+        <item>30 minuts</item>
+    </string-array>
+    <string-array name="sp_lock_after_timeout_entries_NORMAL">
+        <item>Immediatament</item>
+        <item>15 segons</item>
+        <item>30 segons</item>
+        <item>1 minut</item>
+        <item>2 minuts</item>
+        <item>10 minuts</item>
+        <item>30 minuts</item>
+    </string-array>
+    <string-array name="entries_font_size">
+        <item>&amp;lt;font size=16 align=middle>Petita&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>Normal&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>Gran&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>Extra grande&amp;lt;/font></item>
+    </string-array>
+    <string-array name="sp_entries_font_size2">
+        <item>&amp;lt;font size=14 align=middle>Mínim&amp;lt;/font></item>
+        <item>&amp;lt;font size=16 align=middle>Petita&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>Mitjà&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>Gran&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>Molt gran&amp;lt;/font></item>
+        <item>&amp;lt;font size=27 align=middle>Màxim&amp;lt;/font></item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>Molt lent</item>
+        <item>Lent</item>
+        <item>Normal</item>
+        <item>Ràpid</item>
+        <item>Molt ràpid</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>Molt baix</item>
+        <item>Baixa</item>
+        <item>Normal</item>
+        <item>Alta</item>
+        <item>Molt alt</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Cercant...</item>
+        <item>Connectant...</item>
+        <item>Autentificant...</item>
+        <item>Obtenint adreça IP...</item>
+        <item>"Connectat  "</item>
+        <item>Suspès</item>
+        <item>Desconnectant...</item>
+        <item>Desconnectat</item>
+        <item>Incorrecte</item>
+        <item>Bloquejat</item>
+        <item>Evitar temporalment les connexions pobres</item>
+        <item>Evitar temporalment les connexions pobres</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Cercant...</item>
+        <item>Connectat a %1$s...</item>
+        <item>Autenticant amb %1$s…</item>
+        <item>Obtenint adreça IP de %1$s...</item>
+        <item>Connectat a%1$s</item>
+        <item>Suspès</item>
+        <item>Desconnectant de %1$s…</item>
+        <item>Desconnectat</item>
+        <item>Incorrecte</item>
+        <item>Bloquejat</item>
+        <item>Evitar temporalment les connexions pobres</item>
+    </string-array>
+    <string-array name="wifi_ap_security">
+        <item>Obrir</item>
+        <item>WPA PSK</item>
+        <item>WPA2 PSK</item>
+    </string-array>
+    <string-array name="wifi_p2p_wps_setup">
+        <item>"Botó d'ordre"</item>
+        <item>"PIN des d'aquest dispositiu"</item>
+    </string-array>
+    <string-array name="wifi_p2p_status">
+        <item>"Connectat  "</item>
+        <item>Connectant</item>
+        <item>Incorrecte</item>
+        <item>Disponible</item>
+        <item>"Fora d'interval"</item>
+    </string-array>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>2 minuts</item>
+        <item>5 minuts</item>
+        <item>1 hora</item>
+        <item>No esgotar el temps mai</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Baixa</item>
+        <item>Acceptable</item>
+        <item>Bona</item>
+        <item>Excel · lent</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Sempre</item>
+        <item>Sólo cuando esté cargando</item>
+        <item>"El Wi-Fi està desactivat (a causa d'ús de dades)"</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <item>Sempre</item>
+        <item>Sólo cuando esté cargando</item>
+        <item>El Wi-Fi està desactivat</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_entries">
+        <item>Automàtic</item>
+        <item>"Només 5 GHz "</item>
+        <item>"Només 2.4 GHz "</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>"Temps d'utilització"</item>
+        <item>Iniciar comptador</item>
+        <item>"Nom de l'aplic."</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>Cap</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_network_setup">
+        <item>Desactivat</item>
+        <item>"Botó d'ordre"</item>
+        <item>"PIN des del punt d'accés"</item>
+        <item>"PIN des d'aquest dispositiu"</item>
+    </string-array>
+    <string-array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>Estàtic</item>
+    </string-array>
+    <string-array name="wifi_proxy_settings">
+        <item>Cap</item>
+        <item>Manual</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>Desactivat</item>
+        <item>Alerta</item>
+        <item>Vibrar</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>Cap</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP o CHAP</item>
+    </string-array>
+    <string-array name="bearer_entries">
+        <item>LTE</item>
+        <item>eHRPD</item>
+        <item>No especificat</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Emmagatzematge del dispositiu intern</item>
+        <item>Targeta SD extraïble</item>
+        <item>Selecció del sistema</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>Sempre</item>
+        <item>Mai</item>
+        <item>Només en mode silenci</item>
+        <item>Només quan no està en mode silenci</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_titles">
+        <item>Curt</item>
+        <item>Mitjà</item>
+        <item>Llarg</item>
+    </string-array>
+    <string-array name="hdcp_checking_titles">
+        <item>No comprovar mai</item>
+        <item>Només contingut DRM</item>
+        <item>Comprovar sempre</item>
+    </string-array>
+    <string-array name="hdcp_checking_summaries">
+        <item>No comprovar mai HDCP</item>
+        <item>Comprovar HDCP només per continguts DRM</item>
+        <item>Comprovar sempre HDCP</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>Animació desactivada</item>
+        <item>"Escala d'animació .5x"</item>
+        <item>"Escala d'animació 1x"</item>
+        <item>"Escala d'animació 1.5x"</item>
+        <item>"Escala d'animació 2x"</item>
+        <item>"Escala d'animació 5x"</item>
+        <item>"Escala d'animació 10x"</item>
+    </string-array>
+    <string-array name="transition_animation_scale_entries">
+        <item>Animació desactivada</item>
+        <item>"Escala d'animació .5x"</item>
+        <item>"Escala d'animació 1x"</item>
+        <item>"Escala d'animació 1.5x"</item>
+        <item>"Escala d'animació 2x"</item>
+        <item>"Escala d'animació 5x"</item>
+        <item>"Escala d'animació 10x"</item>
+    </string-array>
+    <string-array name="animator_duration_scale_entries">
+        <item>Animació desactivada</item>
+        <item>"Escala d'animació .5x"</item>
+        <item>"Escala d'animació 1x"</item>
+        <item>"Escala d'animació 1.5x"</item>
+        <item>"Escala d'animació 2x"</item>
+        <item>"Escala d'animació 5x"</item>
+        <item>"Escala d'animació 10x"</item>
+    </string-array>
+    <string-array name="overlay_display_devices_entries">
+        <item>Cap</item>
+        <item>720x480 mdpi</item>
+        <item>1280x720 tvdpi</item>
+        <item>1920x1080 xhdpi</item>
+        <item>1280x720 píxels TV i 1920x1080 píxels HD</item>
+    </string-array>
+    <string-array name="enable_opengl_traces_entries">
+        <item>Cap</item>
+        <item>Logcat</item>
+        <item>Systrace (Gràfics)</item>
+        <item>Pila de trucades a glGetError</item>
+    </string-array>
+    <string-array name="app_process_limit_entries">
+        <item>Límit estàndard</item>
+        <item>No hi ha processos de fons</item>
+        <item>Com a màx. 1 processos</item>
+        <item>Com a màx. 2 processos</item>
+        <item>Com a màx. 3 processos</item>
+        <item>Com a màx. 4 processos</item>
+    </string-array>
+    <string-array name="vpn_types_long">
+        <item>PPTP VPN</item>
+        <item>L2TP/IPSec VPN amb claus precompartides</item>
+        <item>L2TP/IPSec VPN amb certificats</item>
+        <item>IPSec VPN amb claus precompartides i autenticació Xauth</item>
+        <item>IPSec VPN amb certificats i autenticació Xauth</item>
+        <item>IPSec VPN amb certificats i autenticació híbrid</item>
+    </string-array>
+    <string-array name="vpn_states">
+        <item>Desconnectat</item>
+        <item>Inicialitzant...</item>
+        <item>Connectant...</item>
+        <item>"Connectat  "</item>
+        <item>"Temps d'espera"</item>
+        <item>Incorrecte</item>
+    </string-array>
+    <string-array name="security_settings_premium_sms_values">
+        <item>Preguntar</item>
+        <item>No permetre mai</item>
+        <item>Permetre sempre</item>
+    </string-array>
+    <string-array name="search_filter">
+        <item>Tots els dispositius</item>
+        <item>Auriculars</item>
+        <item>PC</item>
+        <item>Telèfon</item>
+        <item>Equip perifèric</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries_NORMAL">
+        <item>Imagen de usuario</item>
+        <item>Rellotge1</item>
+        <item>Rellotge 2</item>
+        <item>Rellotge 3</item>
+        <item>Rellotge 4</item>
+        <item>Rellotge 5</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL">
+        <item>1.5 segons</item>
+        <item>3 segons</item>
+        <item>5 seg.</item>
+        <item>Sempre activat</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL_ex">
+        <item>1.5 Seg.</item>
+        <item>3 seg.</item>
+        <item>5 seg.</item>
+        <item>Sempre activat</item>
+    </string-array>
+    <string-array name="sp_front_key_light_l1_NORMAL">
+        <item>3 segons</item>
+        <item>6 segons</item>
+        <item>10 segons</item>
+        <item>30 segons</item>
+        <item>Sempre activat</item>
+    </string-array>
+    <string-array name="sp_front_key_light_att_NORMAL">
+        <item>3 seg.</item>
+        <item>1 Seg.</item>
+        <item>10 seg.</item>
+        <item>30 seg.</item>
+        <item>Sempre activat</item>
+    </string-array>
+    <string-array name="sp_numlocdisp_entries_NORMAL">
+        <item>Inhabilitar</item>
+        <item>Habilitar</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_NORMAL">
+        <item>Alerta de protecció de dades</item>
+        <item>"Si s'utilitza una aplic. de tercers, és possible que aquesta recopili info. personal o sol·liciti a l'operador que faciliti info. personal, incloent info. d'ubicació (quan correspongui), al proveïdor de l'aplic. o a un altre tercer."</item>
+        <item>"Quina política de protecció de dades s'aplica? La política de protecció de dades i les condicions d'ús del proveïdor de serveis de telefonia mòbil no són aplicables en les aplic. del telèfon proporcionades únicament per tercers. Les polítiques de tercers són aplicables a l'ús d'aquesta aplicació. "</item>
+        <item>"On puc trobar més informació sobre polítiques de tercers? Consultar condicions d'ús de l'aplic. i/o polítiques del proveïdor de l'aplic. per obtenir més info. sobre com recopilarà, accedirà, usarà i divulgarà l'aplicació la seva informació. Les polítiques de protecció de dades, les condicions d'ús i altres avisos per als consumidors PODEN estar disponibles a la pàgina web del proveïdor. Abans d'usar una aplicació, assegurar-se de conèixer les polítiques que regeixen el seu ús. "</item>
+        <item>"On puc trobar la política de protecció de dades del meu proveïdor? D'altra banda, en cas de dubtes sobre política de protecció de dades del seu proveïdor de serveis de telefonia mòbil, visitar la pàgina web del proveïdor i fer clic a l'enllaç \"Política de protecció de dades\". "</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_spr_NORMAL">
+        <item>Sprint Privacy Alert</item>
+        <item>"Si feu servir una aplicació de tercers potser reculli directament la vostra informació personal o requereixi Sprint per revelar-la, incloent dades d'ubicació (quan escaigui), al proveïdor de l'aplicació o algun altre tercer."</item>
+        <item>"Which Privacy Policy Applies? Sprint's Privacy Policy and Terms of Use do not apply to apps on your handset that are solely provided by 3rd parties. The 3rd party's policies apply to your use of this app."</item>
+        <item>¿Dónde puedo encontrar más información acerca de Políticas de 3ras partes? Revise los términos de uso de la aplic. y/o las políticas del proveedor de aplic. para más información acerca de cómo la aplic. recolectará, accederá, usará y divulgará su información. Las Políticas de Privacidad, Términos de Uso y otros avisos al consumidor PUEDEN ESTAR disponibles en el sitio Web del proveedor. Asegúrese de estar cómodo con las políticas antes de usar una aplic.</item>
+        <item>¿Dónde puedo encontrar la Política de Privacidad de Sprint? Separadamente, si tiene preguntas acerca de la Política de Privacidad de Sprint, visite Sprint.com y haga clic en el enlace \"Política de Privacidad\".</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_bm_NORMAL">
+        <item>Alerta de privacitat de Boost Mobile</item>
+        <item>"Si feu servir una aplicació de tercers potser reculli directament la vostra informació personal o requereixi Boost Mobile per revelar-la, incloent dades d'ubicació (quan escaigui), al proveïdor de l'aplicació o algun altre tercer."</item>
+        <item>"Which Privacy Policy Applies? Boost Mobile's Privacy Policy and Terms of Use do not apply to apps on your handset that are solely provided by 3rd parties. The 3rd party's policies apply to your use of this app."</item>
+        <item>¿Dónde puedo encontrar más información acerca de Políticas de 3ras partes? Revise los términos de uso de la aplic. y/o las políticas del proveedor de aplic. para más información acerca de cómo la aplic. recolectará, accederá, usará y divulgará su información. Las Políticas de Privacidad, Términos de Uso y otros avisos al consumidor PUEDEN ESTAR disponibles en el sitio Web del proveedor. Asegúrese de estar cómodo con las políticas antes de usar una aplic.</item>
+        <item>¿Dónde puedo encontrar la Política de Privacidad de Boost Mobile? Separadamente, si tiene preguntas acerca de la Política de Privacidad de Boost Mobile, visite Boost Mobile.com y haga clic en el enlace \"Política de Privacidad\".</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_virgin_NORMAL">
+        <item>Alerta de privacitat de Virgin Mobile</item>
+        <item>"Si feu servir una aplicació de tercers potser reculli directament la vostra informació personal o requereixi Virgin Mobile per revelar-la, incloent dades d'ubicació (quan escaigui), al proveïdor de l'aplicació o algun altre tercer."</item>
+        <item>"Quina política de privacitat s'aplica? La política de privacitat i els termes d'ús de Virgin Mobile no s'apliquen a les aplicacions dels vostres telèfons exclusivament instal·lades per tercers. Les polítiques de tercers s'apliquen al vostre ús d'aquesta aplicació. "</item>
+        <item>¿Dónde puedo encontrar más información acerca de Políticas de 3ras partes? Revise los términos de uso de la aplic. y/o las políticas del proveedor de aplic. para más información acerca de cómo la aplic. recolectará, accederá, usará y divulgará su información. Las Políticas de Privacidad, Términos de Uso y otros avisos al consumidor PUEDEN ESTAR disponibles en el sitio Web del proveedor. Asegúrese de estar cómodo con las políticas antes de usar una aplic.</item>
+        <item>"On puc trobar la política de privacitat de Virgin Mobile? D'altra banda, si teniu preguntes sobre la política de privacitat de Virgin Mobile, visiteu VirginMobileUSA.com i feu clic a l'enllaç \"Política de Privacitat\". "</item>
+    </string-array>
+    <string-array name="sp_lock_screen_effect_entries_NORMAL">
+        <item>Bàsic</item>
+        <item>Ondulació</item>
+        <item>Estendre tinta</item>
+        <item>Gota de rosada</item>
+    </string-array>
+    <string-array name="sp_power_save_brightness_entries_NORMAL">
+        <item>10% de brillantor</item>
+        <item>20% de brillantor</item>
+        <item>30% de brillantor</item>
+        <item>50% de brillantor</item>
+    </string-array>
+    <string-array name="sp_power_save_screen_timeout_entries_NORMAL">
+        <item>15 segons</item>
+        <item>30 segons</item>
+        <item>1 min.</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_NORMAL">
+        <item>1.5 segons</item>
+        <item>Sempre off</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_att_NORMAL">
+        <item>3 segons</item>
+        <item>Sempre off</item>
+    </string-array>
+    <string-array name="sp_power_save_mode_entries_NORMAL">
+        <item>10% bateria</item>
+        <item>20% bateria</item>
+        <item>30% bateria</item>
+        <item>50% bateria</item>
+    </string-array>
+    <string-array name="sp_power_save_mode2_entries_NORMAL">
+        <item>Immediatament</item>
+        <item>10% bateria</item>
+        <item>20% bateria</item>
+        <item>30% bateria</item>
+        <item>50% bateria</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries">
+        <item>5 minuts</item>
+        <item>10 minuts</item>
+        <item>15 minuts</item>
+    </string-array>
+    <string-array name="sp_hotspot_timeout_entries_mx_NORMAL">
+        <item>Never timeout</item>
+        <item>5 min</item>
+        <item>10 min.</item>
+        <item>15 min</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries_jb">
+        <item>5 min</item>
+        <item>10 min.</item>
+        <item>15 min</item>
+        <item>30 min</item>
+        <item>Mai</item>
+    </string-array>
+    <string-array name="wifi_p2p_timeout_entries">
+        <item>15 min</item>
+        <item>30 min</item>
+        <item>Mai</item>
+    </string-array>
+    <string-array name="sp_wifi_ap_visibility_NORMAL">
+        <item>Mostrar</item>
+        <item>Ocultar</item>
+    </string-array>
+    <string-array name="sp_bt_search_filter_SHORT">
+        <item>Tots els dispositius</item>
+        <item>Auriculars</item>
+        <item>Telèfon mòbil</item>
+        <item>PC</item>
+        <item>Entrar dispositiu (teclat, ratolí, etc.)</item>
+    </string-array>
+    <string-array name="wifi_signal_strength_entries">
+        <item>Fort</item>
+        <item>Mitjà</item>
+        <item>Dèbil</item>
+        <item>Desactivat</item>
+    </string-array>
+</resources>

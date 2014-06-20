@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/launcher_list_divider" android:background="@drawable/ic_divider_dashed_holo_dark" android:layout_width="fill_parent" android:layout_height="2.0px" />
+</LinearLayout>

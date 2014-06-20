@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:scrollbarAlwaysDrawVerticalTrack="true" android:paddingRight="?android:scrollbarSize" android:scrollbars="vertical" android:title="@string/sp_quiet_mode_title" android:key="quiet_mode_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.lgesettings">
+    <com.android.lgesettings.quietmode.QuietModeSwitchForActivationNowPreference android:title="@string/sp_quiet_mode_activation_now" android:key="quiet_mode_activation_now" android:defaultValue="false" />
+    <PreferenceCategory android:persistent="false" android:title="@string/sp_quiet_mode_main_category" android:key="quiet_mode_settings_category">
+        <com.android.lgesettings.quietmode.QuietModeScheduledSwitchPreference android:persistent="false" android:title="@string/sp_quiet_mode_scheduled_title" android:key="quiet_mode_schedule_settings" android:summary="@string/sp_quiet_mode_scheduled_summary">
+            <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.quietmode.QuietModeScheduleSettingsActivity" />
+        </com.android.lgesettings.quietmode.QuietModeScheduledSwitchPreference>
+        <Preference android:title="@string/sp_quiet_mode_incoming_call_settings" android:key="quiet_mode_allowed_call_settings" android:summary="@string/sp_quiet_mode_incoming_call_settings_summary">
+            <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.quietmode.QuietModeAllowedCallSettingsActivity" />
+        </Preference>
+    </PreferenceCategory>
+    <PreferenceCategory android:persistent="false" android:title="@string/help_label" android:key="quiet_mode_description">
+        <com.android.lgesettings.quietmode.QuietModeSummaryDescriptionPreference android:persistent="false" android:key="quiet_mode_summary_description" />
+    </PreferenceCategory>
+</PreferenceScreen>

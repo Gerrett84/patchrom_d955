@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="ltr" android:paddingEnd="38.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <com.android.lgesettings.fuelgauge.PowerSaveBatteryChartAxis android:id="@id/battery_history_chart_axis" android:layout_width="wrap_content" android:layout_height="302.66406dip" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <HorizontalScrollView android:id="@id/horizontal_scroll_view" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <FrameLayout android:id="@id/frame_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="ltr">
+                <com.android.lgesettings.fuelgauge.PowerSaveBatteryChart2 android:textAppearance="?android:textAppearanceMedium" android:gravity="center_vertical" android:id="@id/battery_history_chart" android:layout_width="wrap_content" android:layout_height="302.66406dip" android:shadowColor="?android:colorBackground" android:shadowDx="2.0" android:shadowDy="2.0" android:shadowRadius="4.0" android:paddingEnd="?android:scrollbarSize" />
+                <ImageView android:id="@id/graph_dot" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_graph_dot" />
+            </FrameLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/defaultIcon" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="6.659973dip" android:layout_marginTop="9.0dip" android:layout_marginBottom="9.0dip" />
+    <LinearLayout android:gravity="left|center" android:orientation="vertical" android:focusable="false" android:focusableInTouchMode="true" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="9.0dip" android:layout_marginBottom="9.0dip" android:layout_weight="1.0">
+        <TextView android:textAppearance="@style/hig_white_list1_normal_defaultapp" android:ellipsize="marquee" android:id="@id/defaultName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:gravity="right|center" android:id="@id/defaultButtonLayout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <Button android:textAppearance="@style/apps_button_normal_fixed" android:id="@id/clear" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="86.66dip" android:text="@string/quick_launch_clear_dialog_title" />
+    </LinearLayout>
+</LinearLayout>

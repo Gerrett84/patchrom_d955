@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/about_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:title="@string/sp_sw_update_capital_NORMAL" android:key="software_update_settings_for_dcm" android:summary="@string/system_update_settings_list_item_summary">
+        <intent android:targetPackage="com.nttdocomo.android.fota" android:action="android.intent.action.MAIN" android:targetClass="com.nttdocomo.android.fota.screens.DmcFota" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/sp_title_upgrade_android_software" android:key="upgrade_android_software">
+        <intent android:targetPackage="com.nttdocomo.android.osv" android:action="android.intent.action.MAIN" android:targetClass="com.nttdocomo.android.osv.StartupActivity" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/app_updates_dcm" android:key="app_manger">
+        <intent android:targetPackage="com.lge.appbox.client" android:action="android.intent.action.MAIN" android:targetClass="com.lge.appbox.client.AppBoxClient" />
+    </PreferenceScreen>
+</PreferenceScreen>

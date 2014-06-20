@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/sp_notification_flash_NORMAL" android:key="front_key_screen"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.lgesettings">
+    <CheckBoxPreference android:title="@string/sp_notification_all_title_NORMAL" android:key="front_key_all" android:summary="@string/sp_notification_all_summary_NORMAL" android:defaultValue="false" />
+    <PreferenceCategory android:title="@string/sp_title_notification_flash_setting_NORMAL" android:key="front_category">
+        <Preference android:persistent="false" android:title="@string/sp_summary_select_notification_NORMAL" android:selectable="false" android:key="notification_summary" style="@style/PowersavePreference_information" />
+    </PreferenceCategory>
+    <Preference android:title="@string/cell_broadcast_messages" android:key="front_key_cell_broad" />
+    <Preference android:title="@string/sp_checkbox_front_key_area_mail_NORMAL" android:key="front_key_area_mail" android:summary="@string/sp_area_mail_summury_NORMAL" />
+    <CheckBoxPreference android:title="@string/sp_checkbox_front_key_missed_call_title_NORMAL" android:key="checkbox_front_key_missed_call" android:dependency="front_key_all" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/sp_checkbox_front_key_messaging_NORMAL" android:key="checkbox_front_key_messaging" android:dependency="front_key_all" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/sp_checkbox_front_voicemail_NORMAL" android:key="checkbox_front_key_voice_mail" android:dependency="front_key_all" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/sp_checkbox_front_key_email_NORMAL" android:key="checkbox_front_key_email" android:dependency="front_key_all" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/sp_checkbox_front_alarm_NORMAL" android:key="checkbox_front_key_alarm" android:dependency="front_key_all" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/sp_checkbox_front_calendar_reminder_NORMAL" android:key="checkbox_front_key_calandar_reminder" android:dependency="front_key_all" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/sp_emotional_led_gps" android:key="checkbox_front_key_gps" android:dependency="front_key_all" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/emotional_led_felica" android:key="checkbox_front_key_felica" android:dependency="front_key_all" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/sns_social_main" android:key="checkbox_front_key_social_event" android:dependency="front_key_all" android:defaultValue="false" />
+</PreferenceScreen>

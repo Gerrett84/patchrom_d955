@@ -1,0 +1,253 @@
+diff -rup ../android.policy/smali/com/android/internal/policy/impl/MiuiKeyguardViewMediator.smali ../android.policy/smali/com/android/internal/policy/impl/MiuiKeyguardViewMediator.smali
+--- ../android.policy/smali/com/android/internal/policy/impl/MiuiKeyguardViewMediator.smali	2014-05-12 20:01:19.000000000 +0200
++++ ../android.policy/smali/com/android/internal/policy/impl/MiuiKeyguardViewMediator.smali	2014-05-19 10:58:51.512986909 +0200
+@@ -62,6 +62,8 @@
+ 
+ 
+ # instance fields
++.field private isNaviHide:Z
++
+ .field private mAlarmManager:Landroid/app/AlarmManager;
+ 
+ .field private mAudioManager:Landroid/media/AudioManager;
+@@ -74,6 +76,10 @@
+ 
+ .field private mDelayedShowingSequence:I
+ 
++.field private mDisableExpandStatusBar:Z
++
++.field private mEnableUserUnlock:Z
++
+ .field private mExitSecureCallback:Landroid/view/WindowManagerPolicy$OnKeyguardExitResult;
+ 
+ .field private mExternallyEnabled:Z
+@@ -96,6 +102,8 @@
+ 
+ .field private mLockSounds:Landroid/media/SoundPool;
+ 
++.field private mLockoutMode:Z
++
+ .field private mMasterStreamType:I
+ 
+ .field private mNeedToReshowWhenReenabled:Z
+@@ -120,6 +128,8 @@
+ 
+ .field private mStatusBarManager:Landroid/app/StatusBarManager;
+ 
++.field private mStrPassword:Ljava/lang/String;
++
+ .field private mSuppressNextLockSound:Z
+ 
+ .field private mSystemReady:Z
+@@ -130,6 +140,8 @@
+ 
+ .field private mUpdateMonitor:Lcom/android/internal/policy/impl/MiuiKeyguardUpdateMonitor;
+ 
++.field private mUserMsg:Ljava/lang/String;
++
+ .field private mUserPresentIntent:Landroid/content/Intent;
+ 
+ .field private mWaitingUntilKeyguardVisible:Z
+@@ -1814,6 +1826,28 @@
+     return-void
+ .end method
+ 
++.method public clearLockPattern()V
++    .locals 2
++
++    .prologue
++    .line 2283
++    const-string v0, "KeyguardViewMediator"
++
++    const-string v1, "clearLockPattern message is sent"
++
++    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
++
++    .line 2285
++    iget-object v0, p0, Lcom/android/internal/policy/impl/MiuiKeyguardViewMediator;->mHandler:Landroid/os/Handler;
++
++    const/16 v1, 0xf
++
++    invoke-virtual {v0, v1}, Landroid/os/Handler;->sendEmptyMessage(I)Z
++
++    .line 2286
++    return-void
++.end method
++
+ .method public dismiss()V
+     .locals 1
+ 
+@@ -1897,6 +1931,39 @@
+     return-object v0
+ .end method
+ 
++.method public hideSKTLocked()V
++    .locals 2
++
++    .prologue
++    .line 2382
++    const-string v0, "KeyguardViewMediator"
++
++    const-string v1, "[SKT Lock&Wipe] hideSKTLocked()"
++
++    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
++
++    .line 2383
++    iget-object v0, p0, Lcom/android/internal/policy/impl/MiuiKeyguardViewMediator;->mKeyguardViewManager:Lcom/android/internal/policy/impl/MiuiKeyguardViewManager;
++
++    invoke-virtual {v0}, Lcom/android/internal/policy/impl/MiuiKeyguardViewManager;->hideSKTLocked()V
++
++    .line 2384
++    invoke-direct {p0}, Lcom/android/internal/policy/impl/MiuiKeyguardViewMediator;->hideLocked()V
++
++    .line 2385
++    return-void
++.end method
++
++.method public isDisabledUnlock()Z
++    .locals 1
++
++    .prologue
++    .line 725
++    iget-boolean v0, p0, Lcom/android/internal/policy/impl/MiuiKeyguardViewMediator;->mDisableExpandStatusBar:Z
++
++    return v0
++.end method
++
+ .method public isDismissable()Z
+     .locals 1
+ 
+@@ -1952,6 +2019,37 @@
+     goto :goto_0
+ .end method
+ 
++.method public isLockoutMode()Z
++    .locals 1
++
++    .prologue
++    .line 730
++    iget-boolean v0, p0, Lcom/android/internal/policy/impl/MiuiKeyguardViewMediator;->mLockoutMode:Z
++
++    return v0
++.end method
++
++.method public isNavigationHidden()Z
++    .locals 2
++
++    .prologue
++    const/4 v0, 0x1
++
++    .line 2541
++    iget-boolean v1, p0, Lcom/android/internal/policy/impl/MiuiKeyguardViewMediator;->isNaviHide:Z
++
++    if-ne v1, v0, :cond_0
++
++    .line 2544
++    :goto_0
++    return v0
++
++    :cond_0
++    const/4 v0, 0x0
++
++    goto :goto_0
++.end method
++
+ .method public isSecure()Z
+     .locals 1
+ 
+@@ -3306,6 +3404,95 @@
+     return-void
+ .end method
+ 
++.method public showSKTLocked(ZLjava/lang/String;Ljava/lang/String;)V
++    .locals 4
++    .parameter "enableUserUnlock"
++    .parameter "strPassword"
++    .parameter "userMsg"
++
++    .prologue
++    .line 2342
++    const-string v1, "KeyguardViewMediator"
++
++    new-instance v2, Ljava/lang/StringBuilder;
++
++    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
++
++    const-string v3, "[SKT Lock&Wipe] showSKTLocked("
++
++    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
++
++    move-result-object v2
++
++    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
++
++    move-result-object v2
++
++    const-string v3, ", "
++
++    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
++
++    move-result-object v2
++
++    invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
++
++    move-result-object v2
++
++    const-string v3, ", "
++
++    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
++
++    move-result-object v2
++
++    invoke-virtual {v2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
++
++    move-result-object v2
++
++    const-string v3, ")"
++
++    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
++
++    move-result-object v2
++
++    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
++
++    move-result-object v2
++
++    invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
++
++    .line 2343
++    iput-boolean p1, p0, Lcom/android/internal/policy/impl/MiuiKeyguardViewMediator;->mEnableUserUnlock:Z
++
++    .line 2344
++    iput-object p2, p0, Lcom/android/internal/policy/impl/MiuiKeyguardViewMediator;->mStrPassword:Ljava/lang/String;
++
++    .line 2345
++    iput-object p3, p0, Lcom/android/internal/policy/impl/MiuiKeyguardViewMediator;->mUserMsg:Ljava/lang/String;
++
++    .line 2347
++    iget-object v1, p0, Lcom/android/internal/policy/impl/MiuiKeyguardViewMediator;->mShowKeyguardWakeLock:Landroid/os/PowerManager$WakeLock;
++
++    invoke-virtual {v1}, Landroid/os/PowerManager$WakeLock;->acquire()V
++
++    .line 2348
++    iget-object v1, p0, Lcom/android/internal/policy/impl/MiuiKeyguardViewMediator;->mHandler:Landroid/os/Handler;
++
++    const/16 v2, 0x11
++
++    invoke-virtual {v1, v2}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
++
++    move-result-object v0
++
++    .line 2349
++    .local v0, msg:Landroid/os/Message;
++    iget-object v1, p0, Lcom/android/internal/policy/impl/MiuiKeyguardViewMediator;->mHandler:Landroid/os/Handler;
++
++    invoke-virtual {v1, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
++
++    .line 2350
++    return-void
++.end method
++
+ .method suppressNextLockSound()V
+     .locals 1
+ 

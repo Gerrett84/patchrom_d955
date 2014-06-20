@@ -1,0 +1,14 @@
+version: 1.5.2
+apkFileName: LGSettings.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+  - 2
+sdkInfo:
+  minSdkVersion: '17'
+  targetSdkVersion: '17'
+packageInfo:
+  cur_package: com.android.lgesettings
+  orig_package: com.android.lgesettings
+compressionType: false

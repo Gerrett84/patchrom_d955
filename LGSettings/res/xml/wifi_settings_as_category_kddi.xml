@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/wifi_settings_category"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:persistent="false" android:title="@string/sp_wifi_easy_settings_connection_NORMAL" android:key="wifi_easy_setting" android:summary="@string/sp_wifi_easy_settings_connection_summary_NORMAL">
+        <intent android:targetPackage="com.kddi.android.au_wifi_connect" android:action="android.intent.action.MAIN" android:targetClass="com.kddi.android.eyecuration.MainActivity" />
+    </PreferenceScreen>
+    <com.android.lgesettings.wifi.WifiProgressCategory android:title="@string/sp_wifi_access_point_category_NORMAL" android:key="wifi_access_point" />
+</PreferenceScreen>

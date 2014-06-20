@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/datePickerLinearLayout" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.lge.sui.widget.control.SUIDrumPicker android:layout_gravity="center_horizontal" android:id="@id/suid_drum_picker" android:layout_width="fill_parent" android:layout_height="170.0dip" />
+</LinearLayout>

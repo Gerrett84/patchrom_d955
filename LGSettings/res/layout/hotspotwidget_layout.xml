@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/widget_touch" android:layout_width="wrap_content" android:layout_height="80.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/widget_image" android:layout_width="37.0dip" android:layout_height="46.0dip" android:src="@drawable/off" />
+    <TextView android:textSize="13.0dip" android:textStyle="bold" android:gravity="center" android:id="@id/widgettext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sp_mobile_hotspot" android:shadowColor="#ff000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="0.1" />
+</LinearLayout>

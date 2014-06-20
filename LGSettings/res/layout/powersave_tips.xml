@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:persistent="false" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="6.659973dip" android:selectable="false" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip">
+                <TextView android:textSize="@dimen/help_guide_title_fontsize" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.3299866dip" android:text="@string/sp_power_save_auto_sync_NORMAL" />
+                <TextView android:textSize="@dimen/help_guide_description_fontsize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sp_power_save_tips_auto_sync_text_NORMAL" />
+            </LinearLayout>
+            <LinearLayout android:persistent="false" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="6.659973dip" android:selectable="false" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip">
+                <TextView android:textSize="@dimen/help_guide_title_fontsize" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.3299866dip" android:text="@string/sp_power_save_tips_wifi_NORMAL" />
+                <TextView android:textSize="@dimen/help_guide_description_fontsize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sp_power_save_tips_wifi_text2_NORMAL" />
+            </LinearLayout>
+            <LinearLayout android:persistent="false" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="6.659973dip" android:selectable="false" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip">
+                <TextView android:textSize="@dimen/help_guide_title_fontsize" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.3299866dip" android:text="@string/sp_power_save_tips_bluetooth_NORMAL" />
+                <TextView android:textSize="@dimen/help_guide_description_fontsize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sp_power_save_tips_bluetooth_text2_NORMAL" />
+            </LinearLayout>
+            <LinearLayout android:persistent="false" android:orientation="vertical" android:id="@id/power_save_tip_eco_mode" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="6.659973dip" android:selectable="false" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip">
+                <TextView android:textSize="@dimen/help_guide_title_fontsize" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.3299866dip" android:text="@string/sp_eco_mode_NORMAL" />
+                <TextView android:textSize="@dimen/help_guide_description_fontsize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sp_power_save_eco_mode_tip_NORMAL" />
+            </LinearLayout>
+            <LinearLayout android:persistent="false" android:orientation="vertical" android:id="@id/power_save_nfc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="6.659973dip" android:selectable="false" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip">
+                <TextView android:textSize="@dimen/help_guide_title_fontsize" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.3299866dip" android:text="@string/sp_power_save_tips_nfc_NORMAL" />
+                <TextView android:textSize="@dimen/help_guide_description_fontsize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sp_power_save_tips_nfc_text2_NORMAL" />
+            </LinearLayout>
+            <LinearLayout android:persistent="false" android:orientation="vertical" android:id="@id/power_save_touch" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="6.659973dip" android:selectable="false" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip">
+                <TextView android:textSize="@dimen/help_guide_title_fontsize" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.3299866dip" android:text="@string/sp_power_saver_select_touch_NORMAL" />
+                <TextView android:textSize="@dimen/help_guide_description_fontsize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sp_power_save_tips_touch_text_NORMAL" />
+            </LinearLayout>
+            <LinearLayout android:persistent="false" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="6.659973dip" android:selectable="false" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip">
+                <TextView android:textSize="@dimen/help_guide_title_fontsize" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.3299866dip" android:text="@string/sp_power_save_tips_brightness_NORMAL" />
+                <TextView android:textSize="@dimen/help_guide_description_fontsize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sp_power_save_tips_brightness_text_NORMAL" />
+            </LinearLayout>
+            <LinearLayout android:persistent="false" android:orientation="vertical" android:id="@id/power_save_oled" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="6.659973dip" android:selectable="false" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip">
+                <TextView android:textSize="@dimen/help_guide_title_fontsize" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.3299866dip" android:text="@string/sp_power_saver_select_auto_screen_tone_NORMAL" />
+                <TextView android:textSize="@dimen/help_guide_description_fontsize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sp_power_save_tips_auto_screen_tone_text_NORMAL" />
+            </LinearLayout>
+            <LinearLayout android:persistent="false" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="6.659973dip" android:selectable="false" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip">
+                <TextView android:textSize="@dimen/help_guide_title_fontsize" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.3299866dip" android:text="@string/sp_power_saver_select_screen_timeout_NORMAL" />
+                <TextView android:textSize="@dimen/help_guide_description_fontsize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sp_power_save_tips_screen_timeout_text_NORMAL" />
+            </LinearLayout>
+            <LinearLayout android:persistent="false" android:orientation="vertical" android:id="@id/power_save_front_light" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="6.659973dip" android:selectable="false" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip">
+                <TextView android:textSize="@dimen/help_guide_title_fontsize" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.3299866dip" android:text="@string/sp_power_saver_select_front_light_NORMAL" />
+                <TextView android:textSize="@dimen/help_guide_description_fontsize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sp_power_save_tips_front_light_text_NORMAL" />
+            </LinearLayout>
+            <LinearLayout android:persistent="false" android:orientation="vertical" android:id="@id/power_save_front_touch_light" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="6.659973dip" android:selectable="false" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip">
+                <TextView android:textSize="@dimen/help_guide_title_fontsize" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.3299866dip" android:text="@string/sp_power_saver_select_front_touch_light_NORMAL" />
+                <TextView android:textSize="@dimen/help_guide_description_fontsize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sp_power_save_tips_front_touch_light_text_NORMAL" />
+            </LinearLayout>
+            <LinearLayout android:persistent="false" android:orientation="vertical" android:id="@id/power_save_emotional_led" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="6.659973dip" android:selectable="false" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip">
+                <TextView android:textSize="@dimen/help_guide_title_fontsize" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.3299866dip" android:text="@string/sp_home_button_led_title" />
+                <TextView android:textSize="@dimen/help_guide_description_fontsize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sp_power_save_tips_emotional_led_text_NORMAL" />
+            </LinearLayout>
+            <LinearLayout android:persistent="false" android:orientation="vertical" android:id="@id/power_save_notification_led" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="6.659973dip" android:selectable="false" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip">
+                <TextView android:textSize="@dimen/help_guide_title_fontsize" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.3299866dip" android:text="@string/sp_power_saver_select_notification_led_NORMAL" />
+                <TextView android:textSize="@dimen/help_guide_description_fontsize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sp_power_save_tips_notification_led_text_NORMAL" />
+            </LinearLayout>
+            <View android:layout_width="wrap_content" android:layout_height="20.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:measureWithLargestChild="true" style="?android:attr/buttonBarStyle">
+        <Button android:id="@id/tips_ok_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/def_ok_btn_caption" style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

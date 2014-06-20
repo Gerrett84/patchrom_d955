@@ -1,0 +1,51 @@
+diff -rup ../Phone/smali/com/android/phone/MiuiPhoneGlobals.smali ../Phone/smali/com/android/phone/MiuiPhoneGlobals.smali
+--- ../Phone/smali/com/android/phone/MiuiPhoneGlobals.smali	2014-05-31 19:20:10.000000000 +0200
++++ ../Phone/smali/com/android/phone/MiuiPhoneGlobals.smali	2014-05-31 19:23:22.043215471 +0200
+@@ -739,9 +739,9 @@
+ 
+     move-result-object v3
+ 
+-    sget-object v4, Lcom/android/internal/telephony/IccCardApplicationStatus$AppType;->APPTYPE_RUIM:Lcom/android/internal/telephony/IccCardApplicationStatus$AppType;
++    sget-object v4, Lcom/android/internal/telephony/uicc/IccCardApplicationStatus$AppType;->APPTYPE_RUIM:Lcom/android/internal/telephony/uicc/IccCardApplicationStatus$AppType;
+ 
+-    invoke-interface {v3, v4}, Lcom/android/internal/telephony/IccCard;->isApplicationOnIcc(Lcom/android/internal/telephony/IccCardApplicationStatus$AppType;)Z
++    invoke-interface {v3, v4}, Lcom/android/internal/telephony/IccCard;->isApplicationOnIcc(Lcom/android/internal/telephony/uicc/IccCardApplicationStatus$AppType;)Z
+ 
+     move-result v3
+ 
+@@ -751,9 +751,9 @@
+ 
+     move-result-object v3
+ 
+-    sget-object v4, Lcom/android/internal/telephony/IccCardApplicationStatus$AppType;->APPTYPE_CSIM:Lcom/android/internal/telephony/IccCardApplicationStatus$AppType;
++    sget-object v4, Lcom/android/internal/telephony/uicc/IccCardApplicationStatus$AppType;->APPTYPE_CSIM:Lcom/android/internal/telephony/uicc/IccCardApplicationStatus$AppType;
+ 
+-    invoke-interface {v3, v4}, Lcom/android/internal/telephony/IccCard;->isApplicationOnIcc(Lcom/android/internal/telephony/IccCardApplicationStatus$AppType;)Z
++    invoke-interface {v3, v4}, Lcom/android/internal/telephony/IccCard;->isApplicationOnIcc(Lcom/android/internal/telephony/uicc/IccCardApplicationStatus$AppType;)Z
+ 
+     move-result v3
+ 
+@@ -981,9 +981,9 @@
+ 
+     move-result-object v3
+ 
+-    sget-object v4, Lcom/android/internal/telephony/IccCardApplicationStatus$AppType;->APPTYPE_SIM:Lcom/android/internal/telephony/IccCardApplicationStatus$AppType;
++    sget-object v4, Lcom/android/internal/telephony/uicc/IccCardApplicationStatus$AppType;->APPTYPE_SIM:Lcom/android/internal/telephony/uicc/IccCardApplicationStatus$AppType;
+ 
+-    invoke-interface {v3, v4}, Lcom/android/internal/telephony/IccCard;->isApplicationOnIcc(Lcom/android/internal/telephony/IccCardApplicationStatus$AppType;)Z
++    invoke-interface {v3, v4}, Lcom/android/internal/telephony/IccCard;->isApplicationOnIcc(Lcom/android/internal/telephony/uicc/IccCardApplicationStatus$AppType;)Z
+ 
+     move-result v3
+ 
+@@ -993,9 +993,9 @@
+ 
+     move-result-object v3
+ 
+-    sget-object v4, Lcom/android/internal/telephony/IccCardApplicationStatus$AppType;->APPTYPE_USIM:Lcom/android/internal/telephony/IccCardApplicationStatus$AppType;
++    sget-object v4, Lcom/android/internal/telephony/uicc/IccCardApplicationStatus$AppType;->APPTYPE_USIM:Lcom/android/internal/telephony/uicc/IccCardApplicationStatus$AppType;
+ 
+-    invoke-interface {v3, v4}, Lcom/android/internal/telephony/IccCard;->isApplicationOnIcc(Lcom/android/internal/telephony/IccCardApplicationStatus$AppType;)Z
++    invoke-interface {v3, v4}, Lcom/android/internal/telephony/IccCard;->isApplicationOnIcc(Lcom/android/internal/telephony/uicc/IccCardApplicationStatus$AppType;)Z
+ 
+     move-result v3
+ 

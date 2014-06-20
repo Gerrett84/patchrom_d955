@@ -1,0 +1,12 @@
+diff -rup ../Phone/smali/com/android/phone/PhoneGlobals$1.smali ../Phone/smali/com/android/phone/PhoneGlobals$1.smali
+--- ../Phone/smali/com/android/phone/PhoneGlobals$1.smali	2014-06-06 21:32:18.000000000 +0200
++++ ../Phone/smali/com/android/phone/PhoneGlobals$1.smali	2014-06-06 22:26:09.508743735 +0200
+@@ -83,7 +83,7 @@
+     .line 331
+     const-string v4, "PhoneApp"
+ 
+-    const-string v5, "Ignoring EVENT_SIM_NETWORK_LOCKED event; not showing \'SIM network unlock\' PIN entry screen"
++    const-string v5, "Ignoring EVENT_SIM_PERSO_LOCKED event; not showing \'SIM network unlock\' PIN entry screen"
+ 
+     invoke-static {v4, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+ 

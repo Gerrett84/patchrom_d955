@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_label">Bộ Lưu Trữ Cài Đặt</string>
+    <string name="sp_quietmode_autoreply_def_message">Tôi sẽ liên hệ với bạn ngay khi có thể</string>
+</resources>

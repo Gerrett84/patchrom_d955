@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:orientation="vertical" android:id="@id/temp_btn" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    <include android:id="@id/list_item_section_text" layout="@android:layout/preference_category" />
+</LinearLayout>

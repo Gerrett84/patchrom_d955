@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:scrollbarAlwaysDrawVerticalTrack="true" android:paddingRight="?android:scrollbarSize" android:scrollbars="vertical" android:title="@string/voice_notifications_title" android:key="quiet_mode_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.lgesettings">
+    <PreferenceCategory android:persistent="false" android:title="@string/hands_free_mode_read_out_title" android:key="hands_free_mode_settings_category">
+        <CheckBoxPreference android:persistent="false" android:title="@string/hands_free_mode_read_out_call_title" android:key="hands_free_mode_call" android:summary="@string/hands_free_mode_read_out_call_summary" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/hands_free_mode_read_out_message_title" android:key="hands_free_mode_message" android:summary="@string/hands_free_mode_read_out_message_summary" android:defaultValue="false" android:disableDependentsState="false" />
+        <com.android.lgesettings.handsfreemode.HandsFreeModeSubPreference android:persistent="false" android:title="@string/hands_free_mode_read_out_readmessage_title" android:key="hands_free_mode_readmessage" android:summary="@string/hands_free_mode_read_out_readmessage_summary" android:dependency="hands_free_mode_message" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:persistent="false" android:title="@string/tts_default_lang_title" android:key="hands_free_mode_settings_category">
+        <Preference android:persistent="false" android:title="@string/voice_notifications_language" android:key="hands_free_mode_tts_settings" />
+    </PreferenceCategory>
+</PreferenceScreen>

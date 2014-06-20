@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>M76339</item>
+        <item>M76340</item>
+        <item>M93125</item>
+        <item>M93126</item>
+        <item>M61234</item>
+        <item>M93114</item>
+        <item>F01510</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>M88427</item>
+        <item>M94840</item>
+        <item>M76238</item>
+        <item>M94846</item>
+        <item>M88365</item>
+        <item>M70273</item>
+        <item>F05676</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries2_NORMAL">
+        <item>M88427</item>
+        <item>M94840</item>
+        <item>M76238</item>
+        <item>F03221</item>
+        <item>M88365</item>
+        <item>M70273</item>
+        <item>E55574</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL">
+        <item>M88427</item>
+        <item>M94840</item>
+        <item>M94866</item>
+        <item>T33858</item>
+        <item>M88365</item>
+        <item>M88210</item>
+        <item>M88211</item>
+        <item>E55574</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL_ex">
+        <item>M03501</item>
+        <item>T42368</item>
+        <item>M70120</item>
+        <item>F01675</item>
+        <item>M93062</item>
+        <item>F10648</item>
+        <item>T42657</item>
+        <item>E55574</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled">
+        <item>M88427</item>
+        <item>M94840</item>
+        <item>M94866</item>
+        <item>T33858</item>
+        <item>M88365</item>
+        <item>M88210</item>
+        <item>M88211</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled_ex">
+        <item>M03501</item>
+        <item>T42368</item>
+        <item>M70120</item>
+        <item>F01675</item>
+        <item>M93062</item>
+        <item>F10648</item>
+        <item>T42657</item>
+    </string-array>
+    <string-array name="sp_pouch_default_clock_entries2_NORMAL">
+        <item>T53895</item>
+        <item>T53896</item>
+        <item>T53897</item>
+        <item>T67662</item>
+        <item>T67663</item>
+        <item>T67664</item>
+        <item>T98183</item>
+        <item>T98184</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries1_NORMAL">
+        <item>F05424</item>
+        <item>F05933</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_position_entries1_NORMAL">
+        <item>T36158</item>
+        <item>T94553</item>
+        <item>T94554</item>
+        <item>F02482</item>
+        <item>F02481</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_font_entries1_NORMAL">
+        <item>T94555</item>
+        <item>T94556</item>
+    </string-array>
+    <string-array name="sp_sound_profile_entries_NORMAL">
+        <item>T83957</item>
+        <item>T83958</item>
+        <item>T83959</item>
+    </string-array>
+    <string-array name="dream_timeout_entries">
+        <item>F07771</item>
+        <item>M88427</item>
+        <item>M94840</item>
+        <item>M76238</item>
+        <item>M94846</item>
+        <item>M88365</item>
+        <item>M70273</item>
+        <item>F05676</item>
+    </string-array>
+    <string-array name="lock_after_timeout_entries">
+        <item>F02534</item>
+        <item>F02466</item>
+        <item>M88427</item>
+        <item>M94840</item>
+        <item>M76238</item>
+        <item>M94846</item>
+        <item>M88365</item>
+        <item>M70273</item>
+        <item>M84767</item>
+    </string-array>
+    <string-array name="sp_lock_after_timeout_entries_NORMAL">
+        <item>F02534</item>
+        <item>M88427</item>
+        <item>M94840</item>
+        <item>M76238</item>
+        <item>M94846</item>
+        <item>M70273</item>
+        <item>F05676</item>
+    </string-array>
+    <string-array name="entries_font_size">
+        <item>E26127</item>
+        <item>E26126</item>
+        <item>E26125</item>
+        <item>E26124</item>
+    </string-array>
+    <string-array name="sp_entries_font_size2">
+        <item>E29045</item>
+        <item>E26127</item>
+        <item>E29047</item>
+        <item>E26125</item>
+        <item>E29049</item>
+        <item>E29050</item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>M76657</item>
+        <item>M88604</item>
+        <item>M70073</item>
+        <item>M88605</item>
+        <item>M76668</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>M76637</item>
+        <item>M95047</item>
+        <item>M70073</item>
+        <item>T23470</item>
+        <item>M76667</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>T35420</item>
+        <item>F07117</item>
+        <item>T33910</item>
+        <item>T33933</item>
+        <item>M92286</item>
+        <item>M85086</item>
+        <item>M76512</item>
+        <item>M75657</item>
+        <item>M76186</item>
+        <item>M87947</item>
+        <item>E15262</item>
+        <item>E15262</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>T35420</item>
+        <item>T79971</item>
+        <item>M84983</item>
+        <item>T80134</item>
+        <item>M85085</item>
+        <item>M85086</item>
+        <item>M85106</item>
+        <item>M75657</item>
+        <item>M76186</item>
+        <item>M87947</item>
+        <item>E15262</item>
+    </string-array>
+    <string-array name="wifi_ap_security">
+        <item>T48672</item>
+        <item>WPA PSK</item>
+        <item>WPA2 PSK</item>
+    </string-array>
+    <string-array name="wifi_p2p_wps_setup">
+        <item>T33172</item>
+        <item>T80154</item>
+    </string-array>
+    <string-array name="wifi_p2p_status">
+        <item>M92286</item>
+        <item>T38701</item>
+        <item>M76186</item>
+        <item>E06708</item>
+        <item>T80139</item>
+    </string-array>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>M94846</item>
+        <item>M88365</item>
+        <item>M88515</item>
+        <item>T80117</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>M76441</item>
+        <item>M80944</item>
+        <item>M85195</item>
+        <item>M80945</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>E01604</item>
+        <item>T80137</item>
+        <item>E58714</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <item>E01604</item>
+        <item>T80137</item>
+        <item>E69469</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_entries">
+        <item>M77403</item>
+        <item>T40959</item>
+        <item>T40960</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>M76464</item>
+        <item>T80083</item>
+        <item>T79911</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>M88363</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>M76569</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_network_setup">
+        <item>M83477</item>
+        <item>T33172</item>
+        <item>T80152</item>
+        <item>T80154</item>
+    </string-array>
+    <string-array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>G09540</item>
+    </string-array>
+    <string-array name="wifi_proxy_settings">
+        <item>M88363</item>
+        <item>T23573</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>M83477</item>
+        <item>T09275</item>
+        <item>M91783</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>M88363</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>M78924</item>
+    </string-array>
+    <string-array name="bearer_entries">
+        <item>LTE</item>
+        <item>eHRPD</item>
+        <item>T47450</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>M83499</item>
+        <item>M83500</item>
+        <item>M83511</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>M94791</item>
+        <item>F07771</item>
+        <item>M85092</item>
+        <item>T58425</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_titles">
+        <item>T24761</item>
+        <item>M95048</item>
+        <item>M80812</item>
+    </string-array>
+    <string-array name="hdcp_checking_titles">
+        <item>T80116</item>
+        <item>T79953</item>
+        <item>T79875</item>
+    </string-array>
+    <string-array name="hdcp_checking_summaries">
+        <item>T80118</item>
+        <item>T80356</item>
+        <item>T79876</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>T79890</item>
+        <item>T79892</item>
+        <item>T79898</item>
+        <item>T79893</item>
+        <item>T79900</item>
+        <item>T79901</item>
+        <item>T79895</item>
+    </string-array>
+    <string-array name="transition_animation_scale_entries">
+        <item>T79890</item>
+        <item>T79892</item>
+        <item>T79898</item>
+        <item>T79893</item>
+        <item>T79900</item>
+        <item>T79901</item>
+        <item>T79895</item>
+    </string-array>
+    <string-array name="animator_duration_scale_entries">
+        <item>T79890</item>
+        <item>T79892</item>
+        <item>T79898</item>
+        <item>T79893</item>
+        <item>T79900</item>
+        <item>T79901</item>
+        <item>T79895</item>
+    </string-array>
+    <string-array name="overlay_display_devices_entries">
+        <item>M88363</item>
+        <item>720x480 mdpi</item>
+        <item>1280x720 tvdpi</item>
+        <item>1920x1080 xhdpi</item>
+        <item>E41547</item>
+    </string-array>
+    <string-array name="enable_opengl_traces_entries">
+        <item>M88363</item>
+        <item>E41584</item>
+        <item>E41611</item>
+        <item>E41558</item>
+    </string-array>
+    <string-array name="app_process_limit_entries">
+        <item>T80250</item>
+        <item>T80121</item>
+        <item>T79916</item>
+        <item>T79917</item>
+        <item>T79918</item>
+        <item>T79919</item>
+    </string-array>
+    <string-array name="vpn_types_long">
+        <item>PPTP VPN</item>
+        <item>T80082</item>
+        <item>T80081</item>
+        <item>T80076</item>
+        <item>T80075</item>
+        <item>T80074</item>
+    </string-array>
+    <string-array name="vpn_states">
+        <item>M75657</item>
+        <item>F05810</item>
+        <item>F07117</item>
+        <item>M92286</item>
+        <item>M83726</item>
+        <item>M76186</item>
+    </string-array>
+    <string-array name="user_content_ratings_entries">
+        <item>E15313</item>
+        <item>T00325</item>
+        <item>E15314</item>
+        <item>E15315</item>
+        <item>T63254</item>
+    </string-array>
+    <string-array name="security_settings_premium_sms_values">
+        <item>F07770</item>
+        <item>F06832</item>
+        <item>F06898</item>
+    </string-array>
+    <string-array name="search_filter">
+        <item>T83222</item>
+        <item>F01394</item>
+        <item>M65047</item>
+        <item>M71161</item>
+        <item>T83223</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries_NORMAL">
+        <item>T82170</item>
+        <item>T53895</item>
+        <item>T53896</item>
+        <item>T53897</item>
+        <item>T67662</item>
+        <item>T67663</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL">
+        <item>T83703</item>
+        <item>F02553</item>
+        <item>F02466</item>
+        <item>F02248</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL_ex">
+        <item>E71093</item>
+        <item>M74454</item>
+        <item>M82264</item>
+        <item>F02248</item>
+    </string-array>
+    <string-array name="sp_front_key_light_l1_NORMAL">
+        <item>F02553</item>
+        <item>M83964</item>
+        <item>F02467</item>
+        <item>M94840</item>
+        <item>F02248</item>
+    </string-array>
+    <string-array name="sp_front_key_light_att_NORMAL">
+        <item>M74454</item>
+        <item>E71094</item>
+        <item>F01669</item>
+        <item>T42368</item>
+        <item>F02248</item>
+    </string-array>
+    <string-array name="sp_numlocdisp_entries_NORMAL">
+        <item>M77143</item>
+        <item>M82396</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_NORMAL">
+        <item>T88021</item>
+        <item>E04647</item>
+        <item>E04648</item>
+        <item>E04649</item>
+        <item>E04650</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_spr_NORMAL">
+        <item>E06752</item>
+        <item>E06753</item>
+        <item>E06754</item>
+        <item>E06755</item>
+        <item>E06790</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_bm_NORMAL">
+        <item>E06767</item>
+        <item>E06768</item>
+        <item>E06769</item>
+        <item>E06770</item>
+        <item>E06791</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_virgin_NORMAL">
+        <item>E29244</item>
+        <item>E29245</item>
+        <item>E29246</item>
+        <item>E06770</item>
+        <item>E29247</item>
+    </string-array>
+    <string-array name="sp_lock_screen_effect_entries_NORMAL">
+        <item>T37766</item>
+        <item>E14534</item>
+        <item>E14535</item>
+        <item>E14537</item>
+    </string-array>
+    <string-array name="sp_power_save_brightness_entries_NORMAL">
+        <item>T86074</item>
+        <item>T86075</item>
+        <item>T86077</item>
+        <item>T86078</item>
+    </string-array>
+    <string-array name="sp_power_save_screen_timeout_entries_NORMAL">
+        <item>M88427</item>
+        <item>M94840</item>
+        <item>M94866</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_NORMAL">
+        <item>T83703</item>
+        <item>F01855</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_att_NORMAL">
+        <item>F02553</item>
+        <item>F01855</item>
+    </string-array>
+    <string-array name="sp_power_save_mode_entries_NORMAL">
+        <item>T83941</item>
+        <item>T91174</item>
+        <item>T83942</item>
+        <item>T83943</item>
+    </string-array>
+    <string-array name="sp_power_save_mode2_entries_NORMAL">
+        <item>F02534</item>
+        <item>T83941</item>
+        <item>T91174</item>
+        <item>T83942</item>
+        <item>T83943</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries">
+        <item>M88365</item>
+        <item>M70273</item>
+        <item>E02891</item>
+    </string-array>
+    <string-array name="hotspot_timeout_values">
+        <item>M83734</item>
+        <item>M84771</item>
+        <item>M83736</item>
+    </string-array>
+    <string-array name="sp_hotspot_timeout_entries_mx_NORMAL">
+        <item>E10337</item>
+        <item>M93062</item>
+        <item>F10648</item>
+        <item>T42657</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries_jb">
+        <item>M93062</item>
+        <item>F10648</item>
+        <item>T42657</item>
+        <item>M93068</item>
+        <item>T84802</item>
+    </string-array>
+    <string-array name="wifi_p2p_timeout_entries">
+        <item>T42657</item>
+        <item>M93068</item>
+        <item>T84802</item>
+    </string-array>
+    <string-array name="wifi_p2p_timeout_values">
+        <item>M83736</item>
+        <item>M84772</item>
+        <item>M89771</item>
+    </string-array>
+    <string-array name="sp_wifi_ap_visibility_NORMAL">
+        <item>T94235</item>
+        <item>T94236</item>
+    </string-array>
+    <string-array name="sp_bt_search_filter_SHORT">
+        <item>T83222</item>
+        <item>F01394</item>
+        <item>M16847</item>
+        <item>T93122</item>
+        <item>T93124</item>
+    </string-array>
+    <string-array name="wifi_signal_strength_entries">
+        <item>T20064</item>
+        <item>M95048</item>
+        <item>E71654</item>
+        <item>M83477</item>
+    </string-array>
+    <string-array name="wifi_Dual_band_AP_connection_entries">
+        <item>M82778</item>
+        <item>5 GHz</item>
+        <item>2.4 GHz</item>
+    </string-array>
+</resources>

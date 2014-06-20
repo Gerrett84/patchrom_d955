@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingTop="9.329987dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/usb_tethering_help_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="38.5dip" android:src="@drawable/settings_usb_tethering_help" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/help_guide_description_fontsize" android:id="@id/usb_tethering_help_guide1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/sp_connectivity_help_09_NORMAL" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/help_guide_description_fontsize" android:id="@id/usb_tethering_help_guide1_vzw" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/help_guide_description_fontsize" android:autoLink="web" android:id="@id/usb_tethering_help_guide2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/sp_connectivity_help_10_NORMAL" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/help_guide_description_fontsize" android:id="@id/usb_tethering_help_guide3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/sp_connectivity_help_11_NORMAL" />
+            <Button android:textSize="16.0sp" android:gravity="center" android:id="@id/download_xp_driver" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/usb_tethering_download_windows_driver" android:drawableLeft="@drawable/tethering_download_icon" android:drawablePadding="8.0dip" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/help_guide_description_fontsize" android:autoLink="web" android:id="@id/usb_tethering_help_guide4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/sp_connectivity_help_12_NORMAL" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/help_guide_description_fontsize" android:id="@id/usb_tethering_help_guide2_vzw" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

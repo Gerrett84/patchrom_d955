@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.lge.sui.widget.control.SUIWheelSpinner android:layout_gravity="center" android:id="@id/suid_number_wheel" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.lge.sui.widget.control.SUIEditText android:textSize="30.669983dip" android:textStyle="normal" android:gravity="center" android:id="@id/suid_number_input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:selectAllOnFocus="true" />
+</merge>

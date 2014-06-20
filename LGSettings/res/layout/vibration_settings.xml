@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:icon="@drawable/ic_vibrate_type" android:title="@string/sp_vibrate_type_title_SHORT" android:key="vibration_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:persistent="false" android:title="@string/sp_vibrate_Call_NORMAL" android:key="incoming_vibration" />
+    <Preference android:persistent="false" android:title="@string/sp_vibrate_Call_SIM2_NORMAL" android:key="sub_incoming_vibration" />
+    <Preference android:persistent="false" android:title="@string/sp_vibrate_Call_SIM3_NORMAL" android:key="third_incoming_vibration" />
+    <Preference android:persistent="false" android:title="@string/sp_vibrate_Message_NORMAL" android:key="message_vibration" />
+    <Preference android:persistent="false" android:title="@string/sp_vibrate_Email_NORMAL" android:key="email_vibration" />
+    <Preference android:persistent="false" android:title="@string/sp_vibrate_Alarm_NORMAL" android:key="alarm_vibration" />
+    <Preference android:persistent="false" android:title="@string/sp_vibrate_Calendar_NORMAL" android:key="calendar_vibration" />
+</PreferenceScreen>

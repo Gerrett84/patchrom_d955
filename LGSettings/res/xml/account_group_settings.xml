@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.lgesettings">
+    <CheckBoxPreference android:title="@string/data_usage_menu_auto_sync" android:key="auto_sync_checkbox" />
+    <PreferenceCategory android:title="@string/account_settings" android:key="providerAccount" />
+</PreferenceScreen>

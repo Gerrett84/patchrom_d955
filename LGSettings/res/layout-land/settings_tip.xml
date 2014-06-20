@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:layout_width="450.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/primary_relative_layout" android:background="@drawable/lg_settings_tip_bubble" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/title_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="17.299988sp" android:textStyle="bold" android:textColor="#ff0095e3" android:id="@id/tip_text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:layout_marginBottom="13.0dip" android:text="@string/sp_tip_NORMAL" android:layout_marginStart="24.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="12.0dip" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip">
+                <RelativeLayout android:id="@id/tip_image_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:id="@id/tips_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lg_setting_tip_vzw_key_land" android:scaleType="fitStart" android:layout_weight="1.0" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <ScrollView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.36">
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/tip_image_layout" android:layout_alignTop="@id/tip_image_layout" android:layout_marginStart="11.0dip" android:layout_marginEnd="3.0dip">
+                        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="15.269989sp" android:id="@id/guide_tip_text_title_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings_tip_message_layout" />
+                        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="15.269989sp" android:id="@id/guide_tip_text_title_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.329987dip" android:layout_marginBottom="2.5dip" android:text="@string/settings_tip_message" android:layout_below="@id/guide_tip_text_title_1" />
+                        <CheckBox android:textSize="16.0sp" android:textStyle="bold" android:id="@id/guide_tip_text_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/develop_do_not_show" android:layout_below="@id/guide_tip_text_title_2" android:layout_centerHorizontal="true" />
+                        <Button android:textStyle="bold" android:id="@id/guide_tip_button" android:layout_width="158.5dip" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/dlg_ok" android:layout_below="@id/guide_tip_text_checkbox" android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

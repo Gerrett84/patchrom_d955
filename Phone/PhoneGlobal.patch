@@ -1,0 +1,21 @@
+diff -rup ../Phone/smali/com/android/phone/PhoneGlobals.smali ../Phone/smali/com/android/phone/PhoneGlobals.smali
+--- ../Phone/smali/com/android/phone/PhoneGlobals.smali	2014-05-28 21:57:08.000000000 +0200
++++ ../Phone/smali/com/android/phone/PhoneGlobals.smali	2014-05-28 23:44:26.871131873 +0200
+@@ -1031,7 +1031,7 @@
+ 
+     const/4 v3, 0x0
+ 
+-    invoke-interface {v0, v1, v2, v3}, Lcom/android/internal/telephony/IccCard;->registerForNetworkLocked(Landroid/os/Handler;ILjava/lang/Object;)V
++    invoke-interface {v0, v1, v2, v3}, Lcom/android/internal/telephony/IccCard;->registerForPersoLocked(Landroid/os/Handler;ILjava/lang/Object;)V
+ 
+     .line 1383
+     :cond_9
+@@ -2217,7 +2217,7 @@
+ 
+     const/4 v3, 0x3
+ 
+-    invoke-interface {v0, v2, v3, v4}, Lcom/android/internal/telephony/IccCard;->registerForNetworkLocked(Landroid/os/Handler;ILjava/lang/Object;)V
++    invoke-interface {v0, v2, v3, v4}, Lcom/android/internal/telephony/IccCard;->registerForPersoLocked(Landroid/os/Handler;ILjava/lang/Object;)V
+ 
+     .line 592
+     :cond_5

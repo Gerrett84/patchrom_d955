@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="9.329987dip" android:layout_marginRight="9.329987dip" android:layout_marginBottom="22.0dip">
+            <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/hotspot_img" android:background="@drawable/settings_portable_wifi_hotspot_help2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="35.329987dip" />
+            </LinearLayout>
+            <TextView android:textSize="15.669983sp" android:id="@id/help_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="17.659973dip" android:text="@string/sp_wifi_hotspot_help_desc_NORMAL" />
+            <TextView android:textSize="19.329987sp" android:textStyle="bold" android:id="@id/step1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.3299866dip" android:text="@string/sp_wifi_hotspot_help_step1_NORMAL" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.669983sp" android:id="@id/mark1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="15.669983sp" android:id="@id/step1_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sp_wifi_hotspot_help_step1_1_NORMAL" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.669983sp" android:id="@id/mark2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="15.669983sp" android:id="@id/step1_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="17.659973dip" android:text="@string/sp_wifi_hotspot_help_step1_2_NORMAL" />
+            </LinearLayout>
+            <TextView android:textSize="19.329987sp" android:textStyle="bold" android:id="@id/step2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.3299866dip" android:text="@string/sp_wifi_hotspot_help_step2_NORMAL" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.669983sp" android:id="@id/mark3" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="15.669983sp" android:id="@id/step2_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sp_wifi_hotspot_help_step2_1_NORMAL" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.669983sp" android:id="@id/mark4" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="15.669983sp" android:id="@id/step2_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sp_wifi_hotspot_help_step2_2_NORMAL" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.669983sp" android:id="@id/mark5" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="15.669983sp" android:id="@id/step2_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="17.659973dip" android:text="@string/sp_wifi_hotspot_help_step2_3_NORMAL" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.669983sp" android:id="@id/mark6" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="15.669983sp" android:autoLink="web" android:id="@id/help_link" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="22.0dip" android:text="@string/sp_wifi_hotspot_help_link_NORMAL" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0" android:measureWithLargestChild="true" style="?android:attr/buttonBarStyle">
+        <Button android:id="@id/ok_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/def_ok_btn_caption" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

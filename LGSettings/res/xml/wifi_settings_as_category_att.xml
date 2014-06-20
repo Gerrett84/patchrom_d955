@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/wifi_settings_category"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:persistent="false" android:title="@string/sp_atnt_hotspot_setting_NORMAL" android:key="atnt_hotspot_setting" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/sp_wifi_hotspot_auto_connect_NORMAL" android:key="hotspot_auto_connect" android:summary="@string/sp_wifi_hotspot_auto_connect_summary_NORMAL" />
+    <com.android.lgesettings.wifi.WifiProgressCategory android:title="@string/sp_wifi_access_point_category_NORMAL" android:key="wifi_access_point" />
+</PreferenceScreen>

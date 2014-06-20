@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="42.669983dip">
+        <TextView android:textColor="#ff000000" android:gravity="center" android:layout_gravity="center" android:id="@id/suid_month_name" android:background="#ffdddddd" android:layout_width="wrap_content" android:layout_height="42.669983dip" android:layout_marginRight="5.5dip" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="42.669983dip">
+            <Button android:id="@id/suid_cal_btn_up" android:layout_width="5.0dip" android:layout_height="5.0dip" android:layout_marginBottom="2.5dip" />
+            <Button android:id="@id/suid_cal_btn_down" android:layout_width="5.0dip" android:layout_height="5.0dip" android:layout_marginTop="2.5dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/suid_day_names" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="14.669983dip">
+        <TextView android:textSize="10.0sp" android:gravity="right|center" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="3.3299866dip" android:layout_weight="1.0" />
+        <TextView android:textSize="10.0sp" android:gravity="right|center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="3.3299866dip" android:layout_weight="1.0" />
+        <TextView android:textSize="10.0sp" android:gravity="right|center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="3.3299866dip" android:layout_weight="1.0" />
+        <TextView android:textSize="10.0sp" android:gravity="right|center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="3.3299866dip" android:layout_weight="1.0" />
+        <TextView android:textSize="10.0sp" android:gravity="right|center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="3.3299866dip" android:layout_weight="1.0" />
+        <TextView android:textSize="10.0sp" android:gravity="right|center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="3.3299866dip" android:layout_weight="1.0" />
+        <TextView android:textSize="10.0sp" android:gravity="right|center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="3.3299866dip" android:layout_weight="1.0" />
+        <TextView android:textSize="10.0sp" android:gravity="right|center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="3.3299866dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ImageView android:gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="0.6700001dip" android:src="?android:dividerHorizontal" android:scaleType="fitXY" />
+    <com.lge.sui.widget.list2.SUIAutoScrollListView android:id="@id/suid_cal_scroll_list" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="0.0dip" android:drawSelectorOnTop="false" android:cacheColorHint="@*android:color/transparent" android:layout_weight="1.0" android:fastScrollEnabled="false" android:overScrollMode="never" />
+</LinearLayout>

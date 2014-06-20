@@ -1,0 +1,69 @@
+diff -rup ../MiuiSystemUI/smali/com/android/systemui/statusbar/BaseCommandQueue.smali ../MiuiSystemUI/smali/com/android/systemui/statusbar/BaseCommandQueue.smali
+--- ../MiuiSystemUI/smali/com/android/systemui/statusbar/BaseCommandQueue.smali	2014-05-18 20:17:06.000000000 +0200
++++ ../MiuiSystemUI/smali/com/android/systemui/statusbar/BaseCommandQueue.smali	2014-05-18 20:18:09.000000000 +0200
+@@ -396,6 +396,14 @@
+     throw v0
+ .end method
+ 
++.method public disableTouch(Z)V
++    .locals 0
++    .parameter "disable"
++
++    .prologue
++    return-void
++.end method
++
+ .method public preloadRecentApps()V
+     .locals 6
+ 
+@@ -741,6 +749,18 @@
+     throw v0
+ .end method
+ 
++.method public setNavigationBackground(Ljava/lang/String;IIII)V
++    .locals 0
++    .parameter "stringa"
++    .parameter "inta"
++    .parameter "intb"
++    .parameter "intc"
++    .parameter "intd"
++
++    .prologue
++    return-void
++.end method
++
+ .method public setNavigationIconHints(I)V
+     .locals 5
+     .parameter "hints"
+@@ -791,6 +811,16 @@
+     throw v0
+ .end method
+ 
++.method public setNavigationRotation(III)V
++    .locals 0
++    .parameter "inta"
++    .parameter "intb"
++    .parameter "intc"
++
++    .prologue
++    return-void
++.end method
++
+ .method public setStatus(ILjava/lang/String;Landroid/os/Bundle;)V
+     .locals 6
+     .parameter "what"
+@@ -858,6 +888,14 @@
+     throw v1
+ .end method
+ 
++.method public setSystemBarType(I)V
++    .locals 0
++    .parameter "type"
++
++    .prologue
++    return-void
++.end method
++
+ .method public setSystemUiVisibility(II)V
+     .locals 4
+     .parameter "vis"

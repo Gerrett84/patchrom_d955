@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:sharedUserId="android.uid.system" android:versionCode="17" android:versionName="4.0.00" package="com.android.providers.settings" coreApp="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <application android:label="@string/app_label" android:icon="@drawable/ic_launcher_settings" android:allowClearUserData="false" android:process="system" android:backupAgent="SettingsBackupAgent" android:killAfterRestore="false">
+        <uses-library android:name="com.lge.mdm" android:required="false" />
+        <provider android:name="SettingsProvider" android:writePermission="android.permission.WRITE_SETTINGS" android:exported="true" android:multiprocess="false" android:authorities="settings" android:initOrder="100" />
+        <receiver android:name="com.android.providers.settings.CustChangedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_SCANNER_FINISHED" />
+                <data android:scheme="file" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="SimChangedReceiver">
+            <intent-filter android:priority="0">
+                <action android:name="android.intent.action.SIM_STATE_CHANGED" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="SimChangedReceiver_Test">
+            <intent-filter android:priority="0">
+                <action android:name="lge.intent.action.ACTION_USER_INFO_CHANGED" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

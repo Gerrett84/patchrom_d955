@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android1:orientation="vertical" android1:layout_width="fill_parent" android1:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:android1="http://schemas.android.com/apk/res/android">
+    <LinearLayout android1:orientation="vertical" android1:background="@drawable/help_image_bg_popup" android1:paddingLeft="0.0dip" android1:paddingTop="0.0dip" android1:paddingRight="0.0dip" android1:paddingBottom="0.0dip" android1:layout_width="fill_parent" android1:layout_height="@dimen/help_image_popup_height1_3" android1:layout_marginLeft="6.669983dip" android1:layout_marginRight="6.669983dip">
+        <LinearLayout android1:orientation="vertical" android1:layout_width="fill_parent" android1:layout_height="wrap_content">
+            <FrameLayout android1:orientation="horizontal" android1:layout_width="fill_parent" android1:layout_height="wrap_content">
+                <TextView android1:textAppearance="@style/help_image_popup_title" android1:layout_gravity="left" android1:id="@id/guide_tip_title" android1:layout_width="wrap_content" android1:layout_height="wrap_content" android1:layout_marginLeft="26.0dip" android1:layout_marginTop="22.0dip" android1:text="@string/sp_tip_NORMAL" android1:includeFontPadding="false" />
+                <ImageView android1:layout_gravity="right" android1:id="@id/dismiss_imageView" android1:layout_width="wrap_content" android1:layout_height="28.0dip" android1:layout_marginTop="12.0dip" android1:layout_marginRight="12.0dip" android1:src="@drawable/lg_editmenu_btn_close" />
+            </FrameLayout>
+            <LinearLayout android1:orientation="vertical" android1:layout_width="fill_parent" android1:layout_height="fill_parent">
+                <TextView android1:textAppearance="@style/help_image_popup_list" android1:gravity="left" android1:id="@id/guide_tip_text" android1:layout_width="wrap_content" android1:layout_height="wrap_content" android1:layout_marginLeft="26.0dip" android1:layout_marginTop="9.0dip" android1:layout_marginRight="12.0dip" android1:includeFontPadding="false" android1:lineSpacingExtra="0.6600001dip" />
+            </LinearLayout>
+            <LinearLayout android1:gravity="center_vertical" android1:layout_gravity="center_horizontal" android1:orientation="vertical" android1:visibility="visible" android1:layout_width="fill_parent" android1:layout_height="fill_parent" android1:layout_marginTop="7.0dip" android1:layout_marginBottom="5.0dip">
+                <Button android1:textAppearance="@style/help_image_popup_list" android1:textColor="#ff000000" android1:gravity="center" android1:layout_gravity="center" android1:id="@id/guide_tip_button" android1:visibility="visible" android1:layout_width="@dimen/help_image_popup_button_size" android1:layout_height="wrap_content" android1:text="@string/sp_wifi_inter_help_ok" android1:includeFontPadding="false" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

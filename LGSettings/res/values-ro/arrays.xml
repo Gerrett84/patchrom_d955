@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>America</item>
+        <item>Europa</item>
+        <item>Africa</item>
+        <item>Asia</item>
+        <item>Australia</item>
+        <item>Pacific</item>
+        <item>Toate</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 secunde</item>
+        <item>30 secunde</item>
+        <item>1 minut</item>
+        <item>2 minute</item>
+        <item>5 minute</item>
+        <item>10 minute</item>
+        <item>30 minute</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries2_NORMAL">
+        <item>15 secunde</item>
+        <item>30 secunde</item>
+        <item>1 minut</item>
+        <item>2 minute</item>
+        <item>5 minute</item>
+        <item>10 minute</item>
+        <item>Păstraţi ecranul pornit</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL">
+        <item>15 secunde</item>
+        <item>30 secunde</item>
+        <item>1 minut</item>
+        <item>2 minute</item>
+        <item>5 minute</item>
+        <item>10 minute</item>
+        <item>15 minute</item>
+        <item>Păstraţi ecranul pornit</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL_ex">
+        <item>15 secunde</item>
+        <item>30 Sec</item>
+        <item>1 min</item>
+        <item>2 minute</item>
+        <item>5 min.</item>
+        <item>10 min.</item>
+        <item>15 min.</item>
+        <item>Păstraţi ecranul pornit</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled">
+        <item>15 secunde</item>
+        <item>30 secunde</item>
+        <item>1 minut</item>
+        <item>2 minute</item>
+        <item>5 minute</item>
+        <item>10 minute</item>
+        <item>15 minute</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled_ex">
+        <item>15 secunde</item>
+        <item>30 Sec</item>
+        <item>1 min</item>
+        <item>2 minute</item>
+        <item>5 min.</item>
+        <item>10 min.</item>
+        <item>15 min.</item>
+    </string-array>
+    <string-array name="sp_pouch_default_clock_entries2_NORMAL">
+        <item>Ceas 1</item>
+        <item>Ceas 2</item>
+        <item>Ceas 3</item>
+        <item>Ceas 4</item>
+        <item>Ceas 5</item>
+        <item>Ceas 6</item>
+        <item>Ceas 7</item>
+        <item>Ceas 8</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries1_NORMAL">
+        <item>Analogic</item>
+        <item>Digital</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_position_entries1_NORMAL">
+        <item>Centru</item>
+        <item>Dreapta sus</item>
+        <item>Stânga sus</item>
+        <item>Dreapta jos</item>
+        <item>Stânga jos</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_font_entries1_NORMAL">
+        <item>Nume set de caractere 1</item>
+        <item>Nume set de caractere 2</item>
+    </string-array>
+    <string-array name="sp_sound_profile_entries_NORMAL">
+        <item>Sunet</item>
+        <item>Numai vibraţie</item>
+        <item>Silenţios</item>
+    </string-array>
+    <string-array name="dream_timeout_entries">
+        <item>Niciodată</item>
+        <item>15 secunde</item>
+        <item>30 secunde</item>
+        <item>1 minut</item>
+        <item>2 minute</item>
+        <item>5 minute</item>
+        <item>10 minute</item>
+        <item>30 minute</item>
+    </string-array>
+    <string-array name="lock_after_timeout_entries">
+        <item>Imediat</item>
+        <item>5 secunde</item>
+        <item>15 secunde</item>
+        <item>30 secunde</item>
+        <item>1 minut</item>
+        <item>2 minute</item>
+        <item>5 minute</item>
+        <item>10 minute</item>
+        <item>30 minute</item>
+    </string-array>
+    <string-array name="sp_lock_after_timeout_entries_NORMAL">
+        <item>Imediat</item>
+        <item>15 secunde</item>
+        <item>30 secunde</item>
+        <item>1 minut</item>
+        <item>2 minute</item>
+        <item>10 minute</item>
+        <item>30 minute</item>
+    </string-array>
+    <string-array name="entries_font_size">
+        <item>&amp;lt;font size=16 align=middle>Mică&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>Normală&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>Mare&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>Foarte mare&amp;lt;/font></item>
+    </string-array>
+    <string-array name="sp_entries_font_size2">
+        <item>&amp;lt;font size=14 align=middle>Minimum&amp;lt;/font></item>
+        <item>&amp;lt;font size=16 align=middle>Mică&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>Mediu&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>Mare&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>Foarte mare&amp;lt;/font></item>
+        <item>&amp;lt;font size=27 align=middle>Maxim&amp;lt;/font></item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>Foarte lentă</item>
+        <item>Încet</item>
+        <item>Normală</item>
+        <item>Rapidă</item>
+        <item>Foarte rapidă</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>Foarte scăzută</item>
+        <item>Scăzut</item>
+        <item>Normală</item>
+        <item>Ridicată</item>
+        <item>Foarte ridicată</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Scanare...</item>
+        <item>Conectare...</item>
+        <item>Autentificare …</item>
+        <item>Obţinere adresă IP…</item>
+        <item>Conectat</item>
+        <item>Suspendat</item>
+        <item>Deconectare...</item>
+        <item>Deconectat</item>
+        <item>Nereuşit</item>
+        <item>Blocat</item>
+        <item>Se evită temporar conexiunea slabă</item>
+        <item>Se evită temporar conexiunea slabă</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Scanare...</item>
+        <item>Conectare la %1$s...</item>
+        <item>Autentificare cu %1$s…</item>
+        <item>Obţinere adresă IP de la %1$s...</item>
+        <item>Conectat la %1$s</item>
+        <item>Suspendat</item>
+        <item>Deconectare de la %1$s…</item>
+        <item>Deconectat</item>
+        <item>Nereuşit</item>
+        <item>Blocat</item>
+        <item>Se evită temporar conexiunea slabă</item>
+    </string-array>
+    <string-array name="wifi_ap_security">
+        <item>Nesecurizat</item>
+        <item>WPA PSK</item>
+        <item>WPA2 PSK</item>
+    </string-array>
+    <string-array name="wifi_p2p_wps_setup">
+        <item>Butonul funcţiei Push</item>
+        <item>PIN de la acest dispozitiv</item>
+    </string-array>
+    <string-array name="wifi_p2p_status">
+        <item>Conectat</item>
+        <item>Conectare</item>
+        <item>Nereuşit</item>
+        <item>Disponibil</item>
+        <item>În afara intervalului</item>
+    </string-array>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>2 minute</item>
+        <item>5 minute</item>
+        <item>1 oră</item>
+        <item>Niciodată pauză</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Slab</item>
+        <item>Corect</item>
+        <item>Bun</item>
+        <item>Excelent</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Întotdeauna</item>
+        <item>Doar la conectare încărcător</item>
+        <item>Wi-Fi oprit (din cauza utilizării de date)</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <item>Întotdeauna</item>
+        <item>Doar la conectare încărcător</item>
+        <item>Wi-Fi oprit</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_entries">
+        <item>Automat</item>
+        <item>Doar 5 GHz</item>
+        <item>Doar 2.4 GHz</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>Timp utilizare</item>
+        <item>Lansare contor</item>
+        <item>Nume aplicaţie</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>Niciunul</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_network_setup">
+        <item>Dezact.</item>
+        <item>Butonul funcţiei Push</item>
+        <item>PIN de la punctul de acces</item>
+        <item>PIN de la acest dispozitiv</item>
+    </string-array>
+    <string-array name="wifi_proxy_settings">
+        <item>Niciunul</item>
+        <item>Manuală</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>Dezact.</item>
+        <item>Alertă</item>
+        <item>Vibrează</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>Niciunul</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP sau CHAP</item>
+    </string-array>
+    <string-array name="bearer_entries">
+        <item>LTE</item>
+        <item>eHRPD</item>
+        <item>Nespecificată</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Stocare internă dispozitiv</item>
+        <item>Card SD amovibil</item>
+        <item>Lăsaţi sistemul să decidă</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>Întotdeauna</item>
+        <item>Niciodată</item>
+        <item>Doar în mod Silenţios</item>
+        <item>Doar când nu este în mod Silenţios</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_titles">
+        <item>Scurt</item>
+        <item>Mediu</item>
+        <item>Lung</item>
+    </string-array>
+    <string-array name="hdcp_checking_titles">
+        <item>Nu se verifică niciodată</item>
+        <item>Verificare doar conținut DRM</item>
+        <item>Verificați întotdeauna</item>
+    </string-array>
+    <string-array name="hdcp_checking_summaries">
+        <item>Nu se folosește niciodată verificarea HDCP</item>
+        <item>Utilizați verificarea HDCP doar pentru conținut DRM</item>
+        <item>Utilizați întotdeauna verificarea HDCP</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>Animație oprită</item>
+        <item>Scală Animație .5x</item>
+        <item>Scală animaţie 1x</item>
+        <item>Scală Animație 1.5x</item>
+        <item>Scală animaţie 2x</item>
+        <item>Scală animaţie 5x</item>
+        <item>Scală Animație 10x</item>
+    </string-array>
+    <string-array name="transition_animation_scale_entries">
+        <item>Animație oprită</item>
+        <item>Scală Animație .5x</item>
+        <item>Scală animaţie 1x</item>
+        <item>Scală Animație 1.5x</item>
+        <item>Scală animaţie 2x</item>
+        <item>Scală animaţie 5x</item>
+        <item>Scală Animație 10x</item>
+    </string-array>
+    <string-array name="animator_duration_scale_entries">
+        <item>Animație oprită</item>
+        <item>Scală Animație .5x</item>
+        <item>Scală animaţie 1x</item>
+        <item>Scală Animație 1.5x</item>
+        <item>Scală animaţie 2x</item>
+        <item>Scală animaţie 5x</item>
+        <item>Scală Animație 10x</item>
+    </string-array>
+    <string-array name="overlay_display_devices_entries">
+        <item>Niciunul</item>
+        <item>720x480 mdpi</item>
+        <item>1280x720 tvdpi</item>
+        <item>1920x1080 xhdpi</item>
+        <item>1280x720 tvdpi și 1920x1080 xhdpi</item>
+    </string-array>
+    <string-array name="enable_opengl_traces_entries">
+        <item>Niciunul</item>
+        <item>Logcat</item>
+        <item>Traseu sistem (Grafică)</item>
+        <item>Apelați mulțimea pe glGetError</item>
+    </string-array>
+    <string-array name="app_process_limit_entries">
+        <item>Limită standard</item>
+        <item>Nu există procese de fundal</item>
+        <item>Cel mult 1 proces</item>
+        <item>Cel mult 2 procese</item>
+        <item>Cel mult 3 procese</item>
+        <item>Cel mult 4 procese</item>
+    </string-array>
+    <string-array name="vpn_types_long">
+        <item>PPTP VPN</item>
+        <item>L2TP/VPN IPSec cu chei prepartajate</item>
+        <item>L2TP/VPN IPSec cu certificate</item>
+        <item>VPN IPSec cu chei prepartajate și autentificare Xauth</item>
+        <item>VPN IPSec cu certificate și autentificate Xauth</item>
+        <item>VPN IPSec cu certificate și autentificate hibridă</item>
+    </string-array>
+    <string-array name="vpn_states">
+        <item>Deconectat</item>
+        <item>Iniţializare...</item>
+        <item>Conectare...</item>
+        <item>Conectat</item>
+        <item>Expirare</item>
+        <item>Nereuşit</item>
+    </string-array>
+    <string-array name="security_settings_premium_sms_values">
+        <item>Confirmare</item>
+        <item>Nu se permite niciodată</item>
+        <item>Se permite întotdeauna</item>
+    </string-array>
+    <string-array name="search_filter">
+        <item>Toate dispozitivele</item>
+        <item>Căşti</item>
+        <item>PC</item>
+        <item>Telefon</item>
+        <item>Periferic</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries_NORMAL">
+        <item>Imagine utilizator</item>
+        <item>Ceas 1</item>
+        <item>Ceas 2</item>
+        <item>Ceas 3</item>
+        <item>Ceas 4</item>
+        <item>Ceas 5</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL">
+        <item>1.5 secunde</item>
+        <item>3 secunde</item>
+        <item>5 secunde</item>
+        <item>Mereu activ</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL_ex">
+        <item>1.5 Sec.</item>
+        <item>3 Secs</item>
+        <item>5 Secs</item>
+        <item>Mereu activ</item>
+    </string-array>
+    <string-array name="sp_front_key_light_l1_NORMAL">
+        <item>3 secunde</item>
+        <item>6 secunde</item>
+        <item>10 secunde</item>
+        <item>30 secunde</item>
+        <item>Mereu activ</item>
+    </string-array>
+    <string-array name="sp_front_key_light_att_NORMAL">
+        <item>3 Secs</item>
+        <item>6 Sec.</item>
+        <item>10 Secs</item>
+        <item>30 Sec</item>
+        <item>Mereu activ</item>
+    </string-array>
+    <string-array name="sp_numlocdisp_entries_NORMAL">
+        <item>Dezactivare</item>
+        <item>Activare</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_NORMAL">
+        <item>Alertă referitoare la confidenţialitate</item>
+        <item>Dacă utilizaţi o aplicaţie de la o terţă parte, s-ar putea ca aceasta să colecteze direct informaţii personale despre dvs. sau să ceară furnizorului dvs. de semnal divulgarea unor informaţii personale, inclusiv cele legate de locaţia dvs. (unde se impune) furnizorului aplicaţiei sau altor terţe părţi.</item>
+        <item>Care din politicile de confidenţialitate au aplicabilitate aici? Politica de confidenţialitate şi Termenii de utilizare nu au aplicabilitate asupra aplicaţiilor furnizate exclusiv de terţe părţi şi instalate în telefonul dvs. Politicile părţilor terţe se referă numai la utilizarea aplicaţiei respective.</item>
+        <item>Unde pot să găsesc mai multe informaţii despre politica terţilor? Consultaţi termenii de utilizare ai aplicaţiei şi/sau politicile furnizorului aplicaţiei pentru a afla mai multe despre modalitatea de colectare, accesare, utilizare şi divulgare a informaţiilor personale. Politicile de confidenţialitate, Termenii de utilizare şi alte precizări POT FI disponibile pe site-ul web al furnizorului. Înainte de a începe utilizarea unei aplicaţii, asiguraţi-vă că v-aţi deprins cu politicile aferente.</item>
+        <item>Unde pot să găsesc politica de confidenţialitate a furnizorului meu de semnal? Dacă aveţi întrebări legate de politica de confidenţialitate a furnizorului dvs. de semnal, vă rugăm să vizitaţi pagina web a respectivului şi daţi clic pe legătura \"Politica de confidenţialitate\".</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_spr_NORMAL">
+        <item>Alertă confidențialitate Sprint</item>
+        <item>Dacă folosiți o aplicație a unei terțe părți, ea vă poate aduna direct informațiile personale sau poate cere Sprint să vă dezvăluie informațiile personale, inclusiv informațiile privind poziția (unde este cazul), furnizorului aplicației sau unei alte terțe părți.</item>
+        <item>Care din politicile de confidenţialitate au aplicabilitate aici? Politica de confidenţialitate şi Termenii de utilizare Sprint se referă numai la aplicaţiile care nu au fost furnizate de părţi terţe, dar sunt instalate pe telefonul dvs.</item>
+        <item>Unde pot să găsesc informaţii suplimentare despre politicile părţilor terţe? Verificaţi termenii de utilizare ai aplicaţiei şi/sau politicile furnizorului aplicaţiei pentru mai multe informaţii privitoare la modul în care aplicaţia respectivă colectează, accesează, utilizează şi divulgă datele dvs. personale. S-AR PUTEA ca politicile de confidenţialitate, termenii de utilizare şi alte note destinate utilizatorilor să fie disponibile numai pe site-ul web al furnizorului aplicaţiei respective. Înainte de a trece la utilizarea aplicaţiei respective, asiguraţi-vă că v-aţi familiarizat cu aceste politici.</item>
+        <item>Unde pot găsi politica de confidenţialitate Sprint? Dacă aveţi şi alte întrebări legate de politica de confidenţialitate Sprint, vă rugăm să vizitaţi Sprint.com şi daţi clic pe legătura \"Politica de confidenţialitate\".</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_bm_NORMAL">
+        <item>Amplificare alertă confidențialitate mobilă</item>
+        <item>Dacă folosiți o aplicație a unei terțe părți, ea vă poate aduna direct informațiile personale sau poate cere Sprint să vă dezvăluie informațiile personale, inclusiv informațiile privind poziția (unde este cazul), furnizorului aplicației sau unei alte terțe părți.</item>
+        <item>Care din politicile de confidenţialitate au aplicabilitate aici? Politica de confidenţialitate şi Termenii de utilizare ai Boost Mobile se referă numai la aplicaţiile care nu au fost furnizate de părţi terţe, dar sunt instalate pe telefonul dvs.</item>
+        <item>Unde pot să găsesc informaţii suplimentare despre politicile părţilor terţe? Verificaţi termenii de utilizare ai aplicaţiei şi/sau politicile furnizorului aplicaţiei pentru mai multe informaţii privitoare la modul în care aplicaţia respectivă colectează, accesează, utilizează şi divulgă datele dvs. personale. S-AR PUTEA ca politicile de confidenţialitate, termenii de utilizare şi alte note destinate utilizatorilor să fie disponibile numai pe site-ul web al furnizorului aplicaţiei respective. Înainte de a trece la utilizarea aplicaţiei respective, asiguraţi-vă că v-aţi familiarizat cu aceste politici.</item>
+        <item>Unde pot găsi politica de confidenţialitate Boost Mobile? Dacă aveţi şi alte întrebări despre politica de confidenţialitate Boost Mobile, vă rugăm să vizitaţi Boost Mobile.com şi daţi clic pe legătura \"Politica de confidenţialitate\".</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_virgin_NORMAL">
+        <item>Alertă confidențialitate Virgin Mobile</item>
+        <item>Dacă folosiți o aplicație a unei terțe părți, ea vă poate aduna direct informațiile personale sau poate cere Amplificării mobilului să vă dezvăluie informațiile personale, inclusiv informațiile privind poziția (unde este cazul), furnizorului aplicației sau unei alte terțe părți.</item>
+        <item>Care Politică privind confidențialitatea se aplică? Politica privind confidențialitatea și Termenii de utilizare ai Virgin Mobile nu se aplică aplicațiilor de pe telefonul dvs. care sunt furnizate doar de către terțe părți. Pentru utilizarea de către dvs. a acestei aplicații se aplică politicile terței părți.</item>
+        <item>Unde pot să găsesc informaţii suplimentare despre politicile părţilor terţe? Verificaţi termenii de utilizare ai aplicaţiei şi/sau politicile furnizorului aplicaţiei pentru mai multe informaţii privitoare la modul în care aplicaţia respectivă colectează, accesează, utilizează şi divulgă datele dvs. personale. S-AR PUTEA ca politicile de confidenţialitate, termenii de utilizare şi alte note destinate utilizatorilor să fie disponibile numai pe site-ul web al furnizorului aplicaţiei respective. Înainte de a trece la utilizarea aplicaţiei respective, asiguraţi-vă că v-aţi familiarizat cu aceste politici.</item>
+        <item>Unde pot găsi Politica privind confidențialitatea a Virgin Mobile? Separat, dacă aveți întrebări despre Politica privind confidențialitatea a Virgin Mobile, vă rugăm să vizitați VirginMobileUSA.com și faceți clic pe linkul \"Privacy Policy\".</item>
+    </string-array>
+    <string-array name="sp_lock_screen_effect_entries_NORMAL">
+        <item>De bază</item>
+        <item>Cădere de frunze</item>
+        <item>Împrăștiere cerneală</item>
+        <item>Picătură</item>
+    </string-array>
+    <string-array name="sp_power_save_brightness_entries_NORMAL">
+        <item>Luminozitate 10%</item>
+        <item>Luminozitate 20%</item>
+        <item>Luminozitate 30%</item>
+        <item>Luminozitate 50%</item>
+    </string-array>
+    <string-array name="sp_power_save_screen_timeout_entries_NORMAL">
+        <item>15 secunde</item>
+        <item>30 secunde</item>
+        <item>1 minut</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_NORMAL">
+        <item>1.5 secunde</item>
+        <item>Dezactivat întotdeauna</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_att_NORMAL">
+        <item>3 secunde</item>
+        <item>Dezactivat întotdeauna</item>
+    </string-array>
+    <string-array name="sp_power_save_mode_entries_NORMAL">
+        <item>10% baterie</item>
+        <item>20% baterie</item>
+        <item>30% baterie</item>
+        <item>50% baterie</item>
+    </string-array>
+    <string-array name="sp_power_save_mode2_entries_NORMAL">
+        <item>Imediat</item>
+        <item>10% baterie</item>
+        <item>20% baterie</item>
+        <item>30% baterie</item>
+        <item>50% baterie</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries">
+        <item>5 minute</item>
+        <item>10 minute</item>
+        <item>15 minute</item>
+    </string-array>
+    <string-array name="sp_hotspot_timeout_entries_mx_NORMAL">
+        <item>Nu expiră niciodată</item>
+        <item>5 min.</item>
+        <item>10 min.</item>
+        <item>15 min.</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries_jb">
+        <item>5 min.</item>
+        <item>10 min.</item>
+        <item>15 min.</item>
+        <item>30 min.</item>
+        <item>Niciodată</item>
+    </string-array>
+    <string-array name="wifi_p2p_timeout_entries">
+        <item>15 min.</item>
+        <item>30 min.</item>
+        <item>Niciodată</item>
+    </string-array>
+    <string-array name="sp_wifi_ap_visibility_NORMAL">
+        <item>Afişare</item>
+        <item>Ascundere</item>
+    </string-array>
+    <string-array name="sp_bt_search_filter_SHORT">
+        <item>Toate dispozitivele</item>
+        <item>Căşti</item>
+        <item>Telefon mobil</item>
+        <item>PC</item>
+        <item>Dispozitiv intrare (Tastatură, mouse, etc.)</item>
+    </string-array>
+    <string-array name="wifi_signal_strength_entries">
+        <item>Puternic</item>
+        <item>Mediu</item>
+        <item>Slab</item>
+        <item>Dezact.</item>
+    </string-array>
+</resources>

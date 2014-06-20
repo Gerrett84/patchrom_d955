@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider android:label="@string/sp_mobile_hotspot" android:minWidth="50.0dip" android:minHeight="79.0dip" android:initialLayout="@layout/hotspotwidget_layout" android:previewImage="@drawable/off"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

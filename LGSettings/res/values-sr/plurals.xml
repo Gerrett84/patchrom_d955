@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="other">Лозинка мора садржати барем %d слова</item>
+        <item quantity="one">Лозинка мора садржати бар једно слово</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="other">Лозинка мора садржати барем %d малих слова</item>
+        <item quantity="one">Лозинка мора да има барем једно мало слово</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="other">Лозинка мора садржати барем %d великих слова</item>
+        <item quantity="one">Лозинка мора да има барем једно велико слово</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="other">Лозинка мора садржати барем %d цифара</item>
+        <item quantity="one">Лозинка мора да има барем један број</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="other">Лозинка мора садржати барем %d специјална/и симбол/а</item>
+        <item quantity="one">Лозинка мора да има барем један посебан симбол</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="other">Лозинка мора садржати барем %d карактера који нису слова</item>
+        <item quantity="one">Лозинка мора да има барем један карактер који није слово</item>
+    </plurals>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/sp_quiet_mode_scheduled_title" android:key="quiet_mode_schedule_settings_act"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.lgesettings">
+    <com.android.lgesettings.quietmode.QuietModeTimePreference android:title="@string/sp_quiet_time_NORMAL" android:key="quiet_mode_time" android:summary="@string/sp_quiet_time_summary_NORMAL" android:defaultValue="false" />
+    <com.android.lgesettings.quietmode.QuietModeDayPreference android:title="@string/sp_quiet_time_NORMAL" android:key="quiet_mode_day" android:summary="@string/sp_quiet_time_summary_NORMAL" android:defaultValue="false" />
+</PreferenceScreen>

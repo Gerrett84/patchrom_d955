@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>アメリカ</item>
+        <item>ヨーロッパ</item>
+        <item>アフリカ</item>
+        <item>Asia</item>
+        <item>オーストラリア</item>
+        <item>Pacific</item>
+        <item>すべて</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15秒</item>
+        <item>30秒</item>
+        <item>1分</item>
+        <item>2分</item>
+        <item>5分</item>
+        <item>10分</item>
+        <item>30分毎</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries2_NORMAL">
+        <item>15秒</item>
+        <item>30秒</item>
+        <item>1分</item>
+        <item>2分</item>
+        <item>5分</item>
+        <item>10分</item>
+        <item>常時点灯</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL">
+        <item>15秒</item>
+        <item>30秒</item>
+        <item>1分</item>
+        <item>2分</item>
+        <item>5分</item>
+        <item>10分</item>
+        <item>15分</item>
+        <item>常時点灯</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL_ex">
+        <item>15秒</item>
+        <item>30秒</item>
+        <item>1分</item>
+        <item>2分</item>
+        <item>5分</item>
+        <item>10分</item>
+        <item>15分</item>
+        <item>常時点灯</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled">
+        <item>15秒</item>
+        <item>30秒</item>
+        <item>1分</item>
+        <item>2分</item>
+        <item>5分</item>
+        <item>10分</item>
+        <item>15分</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled_ex">
+        <item>15秒</item>
+        <item>30秒</item>
+        <item>1分</item>
+        <item>2分</item>
+        <item>5分</item>
+        <item>10分</item>
+        <item>15分</item>
+    </string-array>
+    <string-array name="sp_pouch_default_clock_entries2_NORMAL">
+        <item>時計1</item>
+        <item>時計2</item>
+        <item>時計3</item>
+        <item>時計4</item>
+        <item>時計5</item>
+        <item>時計6</item>
+        <item>時計7</item>
+        <item>時計8</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries1_NORMAL">
+        <item>アナログ</item>
+        <item>デジタル</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_position_entries1_NORMAL">
+        <item>センター</item>
+        <item>上部の右</item>
+        <item>上部の左</item>
+        <item>右下</item>
+        <item>左下</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_font_entries1_NORMAL">
+        <item>フォント名1</item>
+        <item>フォント名2</item>
+    </string-array>
+    <string-array name="sp_sound_profile_entries_NORMAL">
+        <item>サウンド</item>
+        <item>バイブレートのみ</item>
+        <item>サイレント</item>
+    </string-array>
+    <string-array name="dream_timeout_entries">
+        <item>保存しない</item>
+        <item>15秒</item>
+        <item>30秒</item>
+        <item>1分</item>
+        <item>2分</item>
+        <item>5分</item>
+        <item>10分</item>
+        <item>30分毎</item>
+    </string-array>
+    <string-array name="lock_after_timeout_entries">
+        <item>すぐに</item>
+        <item>5秒</item>
+        <item>15秒</item>
+        <item>30秒</item>
+        <item>1分</item>
+        <item>2分</item>
+        <item>5分</item>
+        <item>10分</item>
+        <item>30分</item>
+    </string-array>
+    <string-array name="sp_lock_after_timeout_entries_NORMAL">
+        <item>すぐに</item>
+        <item>15秒</item>
+        <item>30秒</item>
+        <item>1分</item>
+        <item>2分</item>
+        <item>10分</item>
+        <item>30分毎</item>
+    </string-array>
+    <string-array name="entries_font_size">
+        <item>&amp;lt;font size=16 align=middle>小&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>中&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>大&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>特大&amp;lt;/font></item>
+    </string-array>
+    <string-array name="sp_entries_font_size2">
+        <item>&amp;lt;font size=14 align=middle>極小&amp;lt;/font></item>
+        <item>&amp;lt;font size=16 align=middle>小&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>中&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>大&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>特大&amp;lt;/font></item>
+        <item>&amp;lt;font size=27 align=middle>極大&amp;lt;/font></item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>とてもゆっくり</item>
+        <item>ゆっくり</item>
+        <item>中</item>
+        <item>速い</item>
+        <item>とても速い</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>とても低い</item>
+        <item>低</item>
+        <item>中</item>
+        <item>高</item>
+        <item>とても高い</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>スキャン中...</item>
+        <item>接続中...</item>
+        <item>認証中...</item>
+        <item>IPアドレス取得中...</item>
+        <item>接続しました</item>
+        <item>保留中</item>
+        <item>切断中...</item>
+        <item>切断しました</item>
+        <item>失敗しました</item>
+        <item>ブロックしました</item>
+        <item>一時的に接続不良を防止する</item>
+        <item>一時的に接続不良を防止する</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>スキャン中...</item>
+        <item>接続中%1$s...</item>
+        <item>%1$sによる認証中...</item>
+        <item>%1$sからIPアドレスを取得中...</item>
+        <item>%1$sに接続しました</item>
+        <item>保留中</item>
+        <item>%1$sと切断中...</item>
+        <item>切断しました</item>
+        <item>失敗しました</item>
+        <item>ブロックしました</item>
+        <item>一時的に接続不良を防止する</item>
+    </string-array>
+    <string-array name="wifi_p2p_wps_setup">
+        <item>プッシュボタン</item>
+        <item>デバイスPIN</item>
+    </string-array>
+    <string-array name="wifi_p2p_status">
+        <item>接続しました</item>
+        <item>接続中...</item>
+        <item>失敗しました</item>
+        <item>利用可能</item>
+        <item>範囲外</item>
+    </string-array>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>2分</item>
+        <item>5分</item>
+        <item>1時間</item>
+        <item>タイムアウトなし</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>弱</item>
+        <item>中</item>
+        <item>強</item>
+        <item>非常に強い</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>接続を維持</item>
+        <item>充電中のみ接続を維持</item>
+        <item>自動的に切断する(モバイルデータ使用量の増加)</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <item>接続を維持</item>
+        <item>充電中のみ接続を維持</item>
+        <item>自動的に切断する(モバイルデータ使用量の増加)</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_entries">
+        <item>オート</item>
+        <item>5 GHzのみ</item>
+        <item>2.4 GHzのみ</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>使用時間</item>
+        <item>カウント開始</item>
+        <item>アプリケーション名</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>なし</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_network_setup">
+        <item>OFF</item>
+        <item>プッシュボタン</item>
+        <item>アクセスポイントのPIN</item>
+        <item>デバイスPIN</item>
+    </string-array>
+    <string-array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>静的</item>
+    </string-array>
+    <string-array name="wifi_proxy_settings">
+        <item>なし</item>
+        <item>手動</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>OFF</item>
+        <item>アラート</item>
+        <item>バイブレート</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>なし</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAPまたはCHAP</item>
+    </string-array>
+    <string-array name="bearer_entries">
+        <item>LTE</item>
+        <item>eHRPD</item>
+        <item>未設定</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>本体メモリ</item>
+        <item>SDカード</item>
+        <item>システムにまかせる</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>常時</item>
+        <item>保存しない</item>
+        <item>マナーモード時のみ</item>
+        <item>マナーモード時以外</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_titles">
+        <item>短め</item>
+        <item>中</item>
+        <item>長め</item>
+    </string-array>
+    <string-array name="hdcp_checking_titles">
+        <item>チェックしない</item>
+        <item>DRMコンテンツのみチェックする</item>
+        <item>常時確認</item>
+    </string-array>
+    <string-array name="hdcp_checking_summaries">
+        <item>HDCPチェックを使用しない</item>
+        <item>DRMコンテンツのみHDCPチェックを使用します</item>
+        <item>HDCPチェックを常に行う</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>アニメーションしない</item>
+        <item>アニメーションスケール:0.5倍</item>
+        <item>アニメーションスケール:1倍</item>
+        <item>アニメーションスケール:1.5倍</item>
+        <item>アニメーションスケール:2倍</item>
+        <item>アニメーションスケール:5倍</item>
+        <item>アニメーションスケール:10倍</item>
+    </string-array>
+    <string-array name="transition_animation_scale_entries">
+        <item>アニメーションしない</item>
+        <item>アニメーションスケール:0.5倍</item>
+        <item>アニメーションスケール:1倍</item>
+        <item>アニメーションスケール:1.5倍</item>
+        <item>アニメーションスケール:2倍</item>
+        <item>アニメーションスケール:5倍</item>
+        <item>アニメーションスケール:10倍</item>
+    </string-array>
+    <string-array name="animator_duration_scale_entries">
+        <item>アニメーションしない</item>
+        <item>アニメーションスケール:0.5倍</item>
+        <item>アニメーションスケール:1倍</item>
+        <item>アニメーションスケール:1.5倍</item>
+        <item>アニメーションスケール:2倍</item>
+        <item>アニメーションスケール:5倍</item>
+        <item>アニメーションスケール:10倍</item>
+    </string-array>
+    <string-array name="overlay_display_devices_entries">
+        <item>なし</item>
+        <item>720x480 mdpi</item>
+        <item>1280x720 tvdpi</item>
+        <item>1920x1080 xhdpi</item>
+        <item>1280x720 tvdpi と 1920x1080 xhdpi</item>
+    </string-array>
+    <string-array name="enable_opengl_traces_entries">
+        <item>なし</item>
+        <item>Logcat</item>
+        <item>Systrace (画像)</item>
+        <item>glGetErrorでのスタック呼び出し</item>
+    </string-array>
+    <string-array name="app_process_limit_entries">
+        <item>通常の制限値</item>
+        <item>バックグラウンドプロセスなし</item>
+        <item>1プロセスのみ</item>
+        <item>2プロセスまで</item>
+        <item>3プロセスまで</item>
+        <item>4プロセスまで</item>
+    </string-array>
+    <string-array name="vpn_types_long">
+        <item>PPTP VPN</item>
+        <item>L2TP/IPSec VPN プリシェアードキーを使用</item>
+        <item>L2TP/IPSec VPN 証明書を使用</item>
+        <item>IPSec VPN プリシェアードキーとXauth認証を使用</item>
+        <item>IPSec VPN 証明書とXauth認証を使用</item>
+        <item>IPSec VPN 証明書とハイブリッド認証を使用</item>
+    </string-array>
+    <string-array name="vpn_states">
+        <item>切断しました</item>
+        <item>初期化中…</item>
+        <item>接続中...</item>
+        <item>接続しました</item>
+        <item>タイムアウト</item>
+        <item>失敗しました</item>
+    </string-array>
+    <string-array name="security_settings_premium_sms_values">
+        <item>問い合わせ</item>
+        <item>常に許可しない</item>
+        <item>常に許可</item>
+    </string-array>
+    <string-array name="search_filter">
+        <item>すべてのデバイス</item>
+        <item>ヘッドセット</item>
+        <item>PC</item>
+        <item>電話</item>
+        <item>周辺デバイス</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries_NORMAL">
+        <item>ユーザーイメージ</item>
+        <item>時計1</item>
+        <item>時計2</item>
+        <item>時計3</item>
+        <item>時計4</item>
+        <item>時計5</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL">
+        <item>1.5秒</item>
+        <item>3秒</item>
+        <item>5秒</item>
+        <item>常にON</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL_ex">
+        <item>1.5秒</item>
+        <item>3秒</item>
+        <item>5秒</item>
+        <item>常にON</item>
+    </string-array>
+    <string-array name="sp_front_key_light_l1_NORMAL">
+        <item>3秒</item>
+        <item>6秒</item>
+        <item>10秒</item>
+        <item>30秒</item>
+        <item>常にON</item>
+    </string-array>
+    <string-array name="sp_front_key_light_att_NORMAL">
+        <item>3秒</item>
+        <item>6秒</item>
+        <item>10秒</item>
+        <item>30秒</item>
+        <item>常にON</item>
+    </string-array>
+    <string-array name="sp_numlocdisp_entries_NORMAL">
+        <item>無効にする</item>
+        <item>有効</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_NORMAL">
+        <item>プライバシーの警告</item>
+        <item>If you use a 3rd party app, it may directly collect your personal information or require your carrier to disclose your personal information, including location information (where applicable), to the app provider or some other 3rd party.</item>
+        <item>"Which Privacy Policy Applies? Your carrier's Privacy Policy and Terms of Use do not apply to apps on your handset that are solely provided by 3rd parties. The 3rd party's policies apply to your use of this app."</item>
+        <item>"Where Can I Find More Information About the 3rd Party's Policies? Check the app's terms of use and/or the app provider's policies for more information about how the app will collect, access, use and disclose your information. Privacy Policies, Terms of Use and other consumer notices MAY BE available on the provider's website. Be sure you are comfortable with the policies before you use an app."</item>
+        <item>"Where Can I Find my carrier's Privacy Policy? Separately, if you have questions about your carrier's Privacy Policy, please visit your carrier's homepage and click on the \"Privacy Policy\" link."</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_spr_NORMAL">
+        <item>Sprintプライバシー警告</item>
+        <item>第三者のアプリを使用すると、ユーザーの個人情報が第三者もしくはアブプロバイダーによって直接収集したり、Sprintを介して位置情報（使用可能時）を含むユーザーの情報が公開されることがあります。</item>
+        <item>どのプライバシーポリシーを適用しますか？サードパーティが単独で提供しているアプリには、Sprintのプライバシーポリシーおよび利用規約は適用されません。このアプリの使用には、サードパーティのポリシーが適用されます。</item>
+        <item>第三者に関するポリシーに関するより詳しい情報はどちらで確認できますか？当アプリによる顧客の情報収集、接続、使用、そして公開に関するより詳しい情報は、アプリの利用規約、そして/またはアプリ供給者のポリシーを確認してください。プライバシーポリシー、利用規約、そしてその他の消費者通知は提供者のウェブサイトで確認できます。アプリを使用する前に該当のポリシーが適切であるかを確認してください。</item>
+        <item>Sprintの「プライバシーポリシー」はどちらで確認しますか？これとは別に、Sprintのプライバシーポリシーに関して質問がある場合は、Sprint.comを訪問し「プライバシーポリシー」リンクをクリックしてください。</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_bm_NORMAL">
+        <item>Boost Mobileプライバシーの警告</item>
+        <item>第三者アプリを使用すると、ユーザーの個人情報が第三者もしくはアブプロバイダーによって直接収集したり、Boost Mobileを使用したロケーションの情報（使用可能時）を含むユーザーの情報が公開されることがあります。</item>
+        <item>どのプライバシーポリシーを適用しますか？サードパーティが単独で提供しているアプリには、Boost Mobileのプライバシーポリシーおよび利用規約は適用されません。このアプリの使用には、サードパーティのポリシーが適用されます。</item>
+        <item>第三者に関するポリシーに関するより詳しい情報はどちらで確認できますか？当アプリによる顧客の情報収集、接続、使用、そして公開に関するより詳しい情報は、アプリの利用規約、そして/またはアプリ供給者のポリシーを確認してください。プライバシーポリシー、利用規約、そしてその他の消費者通知は提供者のウェブサイトで確認できます。アプリを使用する前に該当のポリシーが適切であるかを確認してください。</item>
+        <item>Boost Mobileの「プライバシーポリシー」はどちらで確認しますか？これとは別に、Boost Mobileのプライバシーポリシーに関して質問がある場合は、Boost Mobile.comを訪問し「プライバシーポリシー」リンクをクリックしてください。</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_virgin_NORMAL">
+        <item>Virgin Mobile個人情報保護通知</item>
+        <item>サードパーティー製のアプリを使用する場合、直接ユーザーの個人情報を収集したり、Virgin Mobileが位置情報（該当する場合）を含むユーザーの個人情報をアプリケーションプロバイダまたは一部の他のサードパーティに開示することがあります。</item>
+        <item>どのプライバシーポリシーが適用されますか？Virgin Mobileのプライバシーポリシーと利用規約は第三者から単独で提供されたアプリには適用されません。第三者のプライバシーポリシーが本アプリの使用に適用されます。</item>
+        <item>第三者に関するポリシーに関するより詳しい情報はどちらで確認できますか？当アプリによる顧客の情報収集、接続、使用、そして公開に関するより詳しい情報は、アプリの利用規約、そして/またはアプリ供給者のポリシーを確認してください。プライバシーポリシー、利用規約、そしてその他の消費者通知は提供者のウェブサイトで確認できます。アプリを使用する前に該当のポリシーが適切であるかを確認してください。</item>
+        <item>どこでVirgin Mobileのプライバシーポリシーを検索できますか？Virgin Mobileのプライバシーポリシーについてご質問がある場合は、別途VirginMobileUSA.comを訪問し、「プライバシーポリシー」のリンクをクリックしてください。</item>
+    </string-array>
+    <string-array name="sp_lock_screen_effect_entries_NORMAL">
+        <item>基本</item>
+        <item>波</item>
+        <item>インク</item>
+        <item>しずく</item>
+    </string-array>
+    <string-array name="sp_power_save_brightness_entries_NORMAL">
+        <item>明るさ:10%</item>
+        <item>明るさ:20%</item>
+        <item>明るさ:30%</item>
+        <item>明るさ:50%</item>
+    </string-array>
+    <string-array name="sp_power_save_screen_timeout_entries_NORMAL">
+        <item>15秒</item>
+        <item>30秒</item>
+        <item>1分</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_NORMAL">
+        <item>1.5秒</item>
+        <item>常にOFF</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_att_NORMAL">
+        <item>3秒</item>
+        <item>常にOFF</item>
+    </string-array>
+    <string-array name="sp_power_save_mode_entries_NORMAL">
+        <item>バッテリー残量:10%</item>
+        <item>バッテリー残量:20%</item>
+        <item>バッテリー残量:30%</item>
+        <item>バッテリー残量:50%</item>
+    </string-array>
+    <string-array name="sp_power_save_mode2_entries_NORMAL">
+        <item>すぐに</item>
+        <item>バッテリー残量:10%</item>
+        <item>バッテリー残量:20%</item>
+        <item>バッテリー残量:30%</item>
+        <item>バッテリー残量:50%</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries">
+        <item>5分</item>
+        <item>10分</item>
+        <item>15分</item>
+    </string-array>
+    <string-array name="sp_hotspot_timeout_entries_mx_NORMAL">
+        <item>タイムアウトなし</item>
+        <item>5分</item>
+        <item>10分</item>
+        <item>15分</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries_jb">
+        <item>5分</item>
+        <item>10分</item>
+        <item>15分</item>
+        <item>30分</item>
+        <item>なし</item>
+    </string-array>
+    <string-array name="wifi_p2p_timeout_entries">
+        <item>15分</item>
+        <item>30分</item>
+        <item>なし</item>
+    </string-array>
+    <string-array name="sp_wifi_ap_visibility_NORMAL">
+        <item>表示</item>
+        <item>非表示</item>
+    </string-array>
+    <string-array name="sp_bt_search_filter_SHORT">
+        <item>すべてのデバイス</item>
+        <item>ヘッドセット</item>
+        <item>携帯電話</item>
+        <item>PC</item>
+        <item>入力デバイス(キーボード、マウスなど)</item>
+    </string-array>
+    <string-array name="wifi_signal_strength_entries">
+        <item>強い</item>
+        <item>中</item>
+        <item>弱い</item>
+        <item>OFF</item>
+    </string-array>
+    <string-array name="wifi_Dual_band_AP_connection_entries">
+        <item>オート</item>
+        <item>5 GHz</item>
+        <item>2.4 GHz</item>
+    </string-array>
+</resources>

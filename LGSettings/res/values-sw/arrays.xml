@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>Marekani</item>
+        <item>Ulaya</item>
+        <item>Afrika</item>
+        <item>Asia</item>
+        <item>Australia</item>
+        <item>Pasifiki</item>
+        <item>Zote</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>"Sek 15 "</item>
+        <item>Sekunde 30</item>
+        <item>"Dakika 1 "</item>
+        <item>Dakika 2</item>
+        <item>Dakika 5</item>
+        <item>"Dakika 10 "</item>
+        <item>Dakika 30</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries2_NORMAL">
+        <item>"Sek 15 "</item>
+        <item>Sekunde 30</item>
+        <item>"Dakika 1 "</item>
+        <item>Dakika 2</item>
+        <item>Dakika 5</item>
+        <item>"Dakika 10 "</item>
+        <item>Weka skrini kama imewashwa</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL">
+        <item>"Sek 15 "</item>
+        <item>Sekunde 30</item>
+        <item>Dakika 1</item>
+        <item>Dakika 2</item>
+        <item>Dakika 5</item>
+        <item>"Dakika 10 "</item>
+        <item>Dakika 15</item>
+        <item>Weka skrini kama imewashwa</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL_ex">
+        <item>15Secs</item>
+        <item>30Secs</item>
+        <item>"Dak 1 "</item>
+        <item>Dak 2</item>
+        <item>Dak 5</item>
+        <item>Dak 10</item>
+        <item>"Dak 15 "</item>
+        <item>Weka skrini kama imewashwa</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled">
+        <item>"Sek 15 "</item>
+        <item>Sekunde 30</item>
+        <item>Dakika 1</item>
+        <item>Dakika 2</item>
+        <item>Dakika 5</item>
+        <item>"Dakika 10 "</item>
+        <item>Dakika 15</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled_ex">
+        <item>15Secs</item>
+        <item>30Secs</item>
+        <item>"Dak 1 "</item>
+        <item>Dak 2</item>
+        <item>Dak 5</item>
+        <item>Dak 10</item>
+        <item>"Dak 15 "</item>
+    </string-array>
+    <string-array name="sp_pouch_default_clock_entries2_NORMAL">
+        <item>Saa 1</item>
+        <item>Saa 2</item>
+        <item>Saa 3</item>
+        <item>Saa 4</item>
+        <item>Saa 5</item>
+        <item>Saa 6</item>
+        <item>Saa 7</item>
+        <item>Saa 8</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries1_NORMAL">
+        <item>Analogi</item>
+        <item>Dijito</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_position_entries1_NORMAL">
+        <item>Kati</item>
+        <item>Juu kulia</item>
+        <item>Juu kushoto</item>
+        <item>Chini kulia</item>
+        <item>Chini kushoto</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_font_entries1_NORMAL">
+        <item>Jina la fonti1</item>
+        <item>Jina la fonti2</item>
+    </string-array>
+    <string-array name="sp_sound_profile_entries_NORMAL">
+        <item>Sauti</item>
+        <item>Mtetemo tu</item>
+        <item>Kimya</item>
+    </string-array>
+    <string-array name="dream_timeout_entries">
+        <item>Kamwe</item>
+        <item>"Sek 15 "</item>
+        <item>Sekunde 30</item>
+        <item>"Dakika 1 "</item>
+        <item>Dakika 2</item>
+        <item>Dakika 5</item>
+        <item>"Dakika 10 "</item>
+        <item>Dakika 30</item>
+    </string-array>
+    <string-array name="lock_after_timeout_entries">
+        <item>Mara moja</item>
+        <item>Sekunde 5</item>
+        <item>"Sek 15 "</item>
+        <item>Sekunde 30</item>
+        <item>"Dakika 1 "</item>
+        <item>Dakika 2</item>
+        <item>Dakika 5</item>
+        <item>"Dakika 10 "</item>
+        <item>Dakika 30</item>
+    </string-array>
+    <string-array name="sp_lock_after_timeout_entries_NORMAL">
+        <item>Mara moja</item>
+        <item>"Sek 15 "</item>
+        <item>Sekunde 30</item>
+        <item>"Dakika 1 "</item>
+        <item>Dakika 2</item>
+        <item>"Dakika 10 "</item>
+        <item>Dakika 30</item>
+    </string-array>
+    <string-array name="entries_font_size">
+        <item>&amp;lt;font size=16 align=middle>Ndogo&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>Kawaida&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>Kubwa&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>Kubwa zaidi&amp;lt;/font></item>
+    </string-array>
+    <string-array name="sp_entries_font_size2">
+        <item>&amp;lt;font size=14 align=middle>Kima cha chini&amp;lt;/font></item>
+        <item>&amp;lt;font size=16 align=middle>Ndogo&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>Wastani&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>Kubwa&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>Kubwa sana&amp;lt;/font></item>
+        <item>&amp;lt;font size=27 align=middle>Upeo&amp;lt;/font></item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>"Polepole sana "</item>
+        <item>Polepole</item>
+        <item>Kawaida</item>
+        <item>Funga</item>
+        <item>Kasi sana</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>Chini sana</item>
+        <item>Chini</item>
+        <item>Kawaida</item>
+        <item>Juu</item>
+        <item>"Juu sana "</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Inatambaza…</item>
+        <item>Inaunganisha...</item>
+        <item>Inahalaliisha...</item>
+        <item>Inachukua anwani IP…</item>
+        <item>Imeunganishwa</item>
+        <item>Imeahirishwa</item>
+        <item>Inatenganisha...</item>
+        <item>Imetenganishwa</item>
+        <item>Haikufaulu</item>
+        <item>Imezuiliwa</item>
+        <item>Inajiepusha kwa muda na muunganisho duni</item>
+        <item>Inajiepusha kwa muda na muunganisho duni</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Inatambaza…</item>
+        <item>Kuunganisha kwa %1$s...</item>
+        <item>Inahalalisha na %1$s...</item>
+        <item>Inachukua anwani IP kutoka %1$s...</item>
+        <item>Imeunganishwa kwa %1$s</item>
+        <item>Imeahirishwa</item>
+        <item>Inatenganisha kutoka %1$s...</item>
+        <item>Imetenganishwa</item>
+        <item>Haikufaulu</item>
+        <item>Imezuiliwa</item>
+        <item>Inajiepusha kwa muda na muunganisho duni</item>
+    </string-array>
+    <string-array name="wifi_ap_security">
+        <item>Wazi</item>
+        <item>WPA PSK</item>
+        <item>WPA2 PSK</item>
+    </string-array>
+    <string-array name="wifi_p2p_wps_setup">
+        <item>Kitufe Bonyezi</item>
+        <item>PIN kutoka kwa kifaa hiki</item>
+    </string-array>
+    <string-array name="wifi_p2p_status">
+        <item>Imeunganishwa</item>
+        <item>Kuunganisha</item>
+        <item>Haikufaulu</item>
+        <item>Inayopatikana</item>
+        <item>Nje ya eneo</item>
+    </string-array>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>Dakika 2</item>
+        <item>Dakika 5</item>
+        <item>"Saa 1 "</item>
+        <item>Kamwe muda usiishe</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Duni</item>
+        <item>Wastani</item>
+        <item>Nzuri</item>
+        <item>Bora</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Daima</item>
+        <item>Wakati imechomeka plagi tu</item>
+        <item>Wi-Fi imnezimwa (kutokana na matumizi ya data)</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <item>Daima</item>
+        <item>Wakati imechomeka plagi tu</item>
+        <item>Wi-Fi imnezimwa</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_entries">
+        <item>Oto</item>
+        <item>GHz 5 tu</item>
+        <item>GHz 2.4 tu</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>Wakati wa matumizi</item>
+        <item>Zindua hesabu</item>
+        <item>Jina la prog</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>Bila</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_network_setup">
+        <item>Zima</item>
+        <item>Kitufe Bonyezi</item>
+        <item>PIN kutoka kiungio ufikivu</item>
+        <item>PIN kutoka kwa kifaa hiki</item>
+    </string-array>
+    <string-array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>Tuli</item>
+    </string-array>
+    <string-array name="wifi_proxy_settings">
+        <item>Bila</item>
+        <item>Kutumia mkono</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>Zima</item>
+        <item>Arifu</item>
+        <item>Mtetemo</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>Bila</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP au CHAP</item>
+    </string-array>
+    <string-array name="bearer_entries">
+        <item>LTE</item>
+        <item>eHRPD</item>
+        <item>Isiotajwa</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Hifadhi ya ndani ya kifaa</item>
+        <item>Kadi ya SD ya Kuondolewa</item>
+        <item>Wacha mfumo kuamua</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>Daima</item>
+        <item>Kamwe</item>
+        <item>Katika modi kimya tu</item>
+        <item>Wakati tu haiko katika modi kimya</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_titles">
+        <item>Fupi</item>
+        <item>Wastani</item>
+        <item>Refu</item>
+    </string-array>
+    <string-array name="hdcp_checking_titles">
+        <item>Kamwe usikague</item>
+        <item>Maudhui ya DRM tu</item>
+        <item>Daima kagua</item>
+    </string-array>
+    <string-array name="hdcp_checking_summaries">
+        <item>Kamwe usikague HDCP</item>
+        <item>Angalia HDCP tu kwa maudhui ya DRM</item>
+        <item>Daima kagua HDCP</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>Uhuishaji imezimwa</item>
+        <item>Mzani wa uhuishaji .5x</item>
+        <item>Mzani wa uhuishaji 1x</item>
+        <item>Mzani wa uhuishaji 1.5x</item>
+        <item>Mzani wa uhuishaji 2x</item>
+        <item>Uzani wa uhuishaji 5x</item>
+        <item>Mzani wa uhuishaji 10x</item>
+    </string-array>
+    <string-array name="transition_animation_scale_entries">
+        <item>Uhuishaji imezimwa</item>
+        <item>Mzani wa uhuishaji .5x</item>
+        <item>Mzani wa uhuishaji 1x</item>
+        <item>Mzani wa uhuishaji 1.5x</item>
+        <item>Mzani wa uhuishaji 2x</item>
+        <item>Uzani wa uhuishaji 5x</item>
+        <item>Mzani wa uhuishaji 10x</item>
+    </string-array>
+    <string-array name="animator_duration_scale_entries">
+        <item>Uhuishaji imezimwa</item>
+        <item>Mzani wa uhuishaji .5x</item>
+        <item>Mzani wa uhuishaji 1x</item>
+        <item>Mzani wa uhuishaji 1.5x</item>
+        <item>Mzani wa uhuishaji 2x</item>
+        <item>Uzani wa uhuishaji 5x</item>
+        <item>Mzani wa uhuishaji 10x</item>
+    </string-array>
+    <string-array name="overlay_display_devices_entries">
+        <item>Bila</item>
+        <item>720x480 mdpi</item>
+        <item>1280x720 tvdpi</item>
+        <item>1920x1080 xhdpi</item>
+        <item>1280x720 tvdpi na 1920x1080 xhdpi</item>
+    </string-array>
+    <string-array name="enable_opengl_traces_entries">
+        <item>Bila</item>
+        <item>Logcat</item>
+        <item>Systrace (Grafiki)</item>
+        <item>Simu imekwama kwa glGetError</item>
+    </string-array>
+    <string-array name="app_process_limit_entries">
+        <item>Kikomo cha kawaida</item>
+        <item>Hakuna michakato ya usuli</item>
+        <item>Ikizidi michakati 1</item>
+        <item>Ikizidi michakati 2</item>
+        <item>Ikizidi michakati 3</item>
+        <item>Ikizidi michakati 4</item>
+    </string-array>
+    <string-array name="vpn_types_long">
+        <item>PPTP VPN</item>
+        <item>L2TP/IPSec VPN na vitufe vinavyogawizwa kabla</item>
+        <item>L2TP/IPSec VPN na vyeti</item>
+        <item>IPSec VPN na vitufe vilivyogawizwa kabla na uthibitishaji wa Xauth</item>
+        <item>"IPSec VPN na vyeti na uthibitishaji wa Xauth "</item>
+        <item>IPSec VPN na vyeti na uthibitishaji mseto</item>
+    </string-array>
+    <string-array name="vpn_states">
+        <item>Imetenganishwa</item>
+        <item>Inaanzilisha...</item>
+        <item>Inaunganisha...</item>
+        <item>Imeunganishwa</item>
+        <item>Muda umeisha</item>
+        <item>Haikufaulu</item>
+    </string-array>
+    <string-array name="security_settings_premium_sms_values">
+        <item>Uliza</item>
+        <item>Kamwe usiruhusu</item>
+        <item>Daima ruhusu</item>
+    </string-array>
+    <string-array name="search_filter">
+        <item>Vifaa vyote</item>
+        <item>Kifaa cha kusikiliza</item>
+        <item>PC</item>
+        <item>Simu</item>
+        <item>Kipembezo</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries_NORMAL">
+        <item>Picha ya mtumiaji</item>
+        <item>Saa 1</item>
+        <item>Saa 2</item>
+        <item>Saa 3</item>
+        <item>Saa 4</item>
+        <item>Saa 5</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL">
+        <item>Sekunde 1.5</item>
+        <item>Sekunde 3</item>
+        <item>Sekunde 5</item>
+        <item>Daima imewashwa</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL_ex">
+        <item>1.5Secs</item>
+        <item>"Sek 3 "</item>
+        <item>Sek 5</item>
+        <item>Daima imewashwa</item>
+    </string-array>
+    <string-array name="sp_front_key_light_l1_NORMAL">
+        <item>Sekunde 3</item>
+        <item>Sekunde 6</item>
+        <item>Sekunde 10</item>
+        <item>Sekunde 30</item>
+        <item>Daima imewashwa</item>
+    </string-array>
+    <string-array name="sp_front_key_light_att_NORMAL">
+        <item>"Sek 3 "</item>
+        <item>1Secs</item>
+        <item>Sek 10</item>
+        <item>30Secs</item>
+        <item>Daima imewashwa</item>
+    </string-array>
+    <string-array name="sp_numlocdisp_entries_NORMAL">
+        <item>Lemaza</item>
+        <item>Wezesha</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_NORMAL">
+        <item>Tahadhari ya faragha</item>
+        <item>Kama unatumia prog ya mtu wa tatu, inaweza moja kwa moja kukusanya taarifa yako binafsi au kuhitaji mhudumu kufichua habari yako binafsi, ikiwa ni pamoja na habari ya eneo (mahali inatumika), kwa mtoa programu au kwa mtu mwingine wa 3.</item>
+        <item>Ni Sera zipi za Faragha Ambazo Zinatumika? Sera ya Faragha ya mhudumu wako na Masharti ya matumizi haitumiki kwenye simu yako ambayo inatolewa tu na watu wa 3. Sera za watu wa tatu zinaweza kutumika kwa matumizi yako ya programu hii.</item>
+        <item>Ni wapi naweza kupata Maelezo Zaidi Kuhusu Sera za Mtu wa 3? Angalia masharti ya matumizi ya programu na/au sera za mtoa programu kwa habari zaidi kuhusu jinsi programu itakusanya, kufikia, kutumia na kutoa taarifa yako. Sera za Faragha, Masharti ya Matumizi na matangazo mengine ya mtumiaji PENGINE inaweza kupatikana kwenye tovuti ya mtoaji huduma. Hakikisha unaridhika na sera kabla ya wewe kutumia programu.</item>
+        <item>Ni wapi Naweza Kupata Sera ya Faragha mhudumu wangu? Tofauti, kama una maswali kuhusu Sera ya Faragha ya mhudumu wako, tafadhali tembelea tovuti ya mhudumu wako ya ukurasa wa nyumbani na bonyeza kwenye kiungo cha \"Sera ya Faragha\".</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_spr_NORMAL">
+        <item>Tahadhari ya Faragha ya Kutimka</item>
+        <item>Kama unatumia prog ya mtu wa tatu, inaweza moja kwa moja kukusanya taarifa yako binafsi au kuhitaji Kutimka ili kufichua habari yako binafsi, ikiwa ni pamoja na habari ya eneo (mahali inatumika), kwa mtoa programu au kwa mtu mwingine wa 3.</item>
+        <item>Ni Sera zipi za Faragha Ambazo Zinatumika? Sera ya Faragha ya Sprint na Masharti ya matumizi haitumiki kwenye simu yako ambayo inatolewa tu na watu wa 3. Sera za watu wa tatu zinaweza kutumika kwa matumizi yako ya programu hii.</item>
+        <item>Ni wapi naweza kupata Maelezo Zaidi Kuhusu Sera za Mtu wa 3? Angalia masharti ya matumizi ya programu na/au sera za mtoa programu kwa habari zaidi kuhusu jinsi programu itakusanya, kufikia, kutumia na kutoa taarifa yako. Sera za Faragha, Masharti ya Matumizi na matangazo mengine ya mtumiaji PENGINE inaweza kupatikana kwenye tovuti ya mtoaji huduma. Hakikisha unaridhika na sera kabla ya wewe kutumia programu.</item>
+        <item>Ni wapi Naweza Kupata Sera ya Faragha mhudumu wangu? Tofauti, kama una maswali kuhusu Sera ya Faragha ya Sprint, tafadhali tembelea tovuti ya Sprint.com na bonyeza kwenye kiungo cha \"Sera ya Faragha\".</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_bm_NORMAL">
+        <item>Tahadhari ya Boost Mobile Privacy</item>
+        <item>Kama unatumia prog ya mtu wa tatu, inaweza moja kwa moja kukusanya taarifa yako binafsi au kuhitaji Kusaidia Simu ya mkono kufichua habari yako binafsi, ikiwa ni pamoja na habari ya eneo (mahali inatumika), kwa mtoa programu au kwa mtu mwingine wa 3.</item>
+        <item>Ni Sera zipi za Faragha Ambazo Zinatumika? Saidia Sera ya Faragha ya Simu ya mkononi na Masharti ya matumizi haitumiki kwenye simu yako ambayo inatolewa tu na watu wa 3. Sera za watu wa tatu zinaweza kutumika kwa matumizi yako ya programu hii.</item>
+        <item>Ni wapi naweza kupata Maelezo Zaidi Kuhusu Sera za Mtu wa 3? Angalia masharti ya matumizi ya programu na/au sera za mtoa programu kwa habari zaidi kuhusu jinsi programu itakusanya, kufikia, kutumia na kutoa taarifa yako. Sera za Faragha, Masharti ya Matumizi na matangazo mengine ya mtumiaji PENGINE inaweza kupatikana kwenye tovuti ya mtoaji huduma. Hakikisha unaridhika na sera kabla ya wewe kutumia programu.</item>
+        <item>Ni wapi Naweza Kupata Kusaidia Sera ya Faragha ya Simu ya mkononi? Tofauti, kama una maswali kuhusu Kusaidia Sera ya Faragha ya simu ya mkononi, tafadhali tembelea Boost Mobile.com na bonyeza kwenye kiungo cha \"Sera ya Faragha\".</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_virgin_NORMAL">
+        <item>Tahadhari ya Faragha ya Virgin Mobile</item>
+        <item>Kama unatumia prog ya mtu wa tatu, inaweza moja kwa moja kukusanya taarifa yako binafsi au kuhitaji Virgin Mobile kufichua habari yako binafsi, ikiwa ni pamoja na habari ya eneo (mahali inatumika), kwa mtoa programu au kwa mtu mwingine wa 3.</item>
+        <item>Ni Sera zipi za Faragha Ambazo Zinatumika? Sera ya Faragha ya Virgin Mobile na Masharti ya matumizi haitumiki kwenye simu yako ambayo inatolewa tu na watu wa 3. Sera za watu wa tatu zinaweza kutumika kwa matumizi yako ya programu hii.</item>
+        <item>Ni wapi naweza kupata Maelezo Zaidi Kuhusu Sera za Mtu wa 3? Angalia masharti ya matumizi ya programu na/au sera za mtoa programu kwa habari zaidi kuhusu jinsi programu itakusanya, kufikia, kutumia na kutoa taarifa yako. Sera za Faragha, Masharti ya Matumizi na matangazo mengine ya mtumiaji PENGINE inaweza kupatikana kwenye tovuti ya mtoaji huduma. Hakikisha unaridhika na sera kabla ya wewe kutumia programu.</item>
+        <item>"Ni wapi Naweza Kupata Sera ya Faragha mhudumu wangu? Tofauti, kama una maswali kuhusu Sera ya Faragha ya Virgin Mobile's, tafadhali tembelea tovuti ya VirginMobileUSA.com na bonyeza kwenye kiungo cha \"Sera ya Faragha\"."</item>
+    </string-array>
+    <string-array name="sp_lock_screen_effect_entries_NORMAL">
+        <item>Msingi</item>
+        <item>Kiwimbi</item>
+        <item>Kueneza wino</item>
+        <item>Tone la umande</item>
+    </string-array>
+    <string-array name="sp_power_save_brightness_entries_NORMAL">
+        <item>Asilimia 10 ya mwangaza</item>
+        <item>Asimilia 20 ya mwangaza</item>
+        <item>Asilimia 30 ya mwangaza</item>
+        <item>Asilimia 50 ya mwangaza</item>
+    </string-array>
+    <string-array name="sp_power_save_screen_timeout_entries_NORMAL">
+        <item>"Sek 15 "</item>
+        <item>Sekunde 30</item>
+        <item>Dakika 1</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_NORMAL">
+        <item>Sekunde 1.5</item>
+        <item>Daima imezimwa</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_att_NORMAL">
+        <item>Sekunde 3</item>
+        <item>Daima imezimwa</item>
+    </string-array>
+    <string-array name="sp_power_save_mode_entries_NORMAL">
+        <item>Asilimia 10 ya betri</item>
+        <item>Asilimia 20 ya betri</item>
+        <item>Asilimia 30 ya betri</item>
+        <item>Asilimia 50 ya betri</item>
+    </string-array>
+    <string-array name="sp_power_save_mode2_entries_NORMAL">
+        <item>Mara moja</item>
+        <item>Asilimia 10 ya betri</item>
+        <item>Asilimia 20 ya betri</item>
+        <item>Asilimia 30 ya betri</item>
+        <item>Asilimia 50 ya betri</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries">
+        <item>Dakika 5</item>
+        <item>"Dakika 10 "</item>
+        <item>Dakika 15</item>
+    </string-array>
+    <string-array name="sp_hotspot_timeout_entries_mx_NORMAL">
+        <item>Kamwe muda umeisha</item>
+        <item>Dak 5</item>
+        <item>Dak 10</item>
+        <item>"Dak 15 "</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries_jb">
+        <item>Dak 5</item>
+        <item>Dak 10</item>
+        <item>"Dak 15 "</item>
+        <item>Dak 30</item>
+        <item>Kamwe</item>
+    </string-array>
+    <string-array name="wifi_p2p_timeout_entries">
+        <item>"Dak 15 "</item>
+        <item>Dak 30</item>
+        <item>Kamwe</item>
+    </string-array>
+    <string-array name="sp_wifi_ap_visibility_NORMAL">
+        <item>Onyesha</item>
+        <item>Ficha</item>
+    </string-array>
+    <string-array name="sp_bt_search_filter_SHORT">
+        <item>Vifaa vyote</item>
+        <item>Kifaa cha kusikiliza</item>
+        <item>Simu ya mkono</item>
+        <item>PC</item>
+        <item>Kifaa ingizo (baobonye, kipanya, nk.)</item>
+    </string-array>
+    <string-array name="wifi_signal_strength_entries">
+        <item>Thabiti</item>
+        <item>Wastani</item>
+        <item>Dhaifu</item>
+        <item>Zima</item>
+    </string-array>
+    <string-array name="wifi_Dual_band_AP_connection_entries">
+        <item>Oto</item>
+        <item>5 GHz</item>
+        <item>2.4 GHz</item>
+    </string-array>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/easy_settings_help" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="350.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/imageview_guide" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/settings_usb_connection_normal" android:scaleType="fitStart" android:layout_marginStart="8.0dip" />
+    </LinearLayout>
+    <ScrollView android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.36">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="15.269989sp" android:id="@id/textview_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/autorun_first_dialog_content" android:layout_weight="0.0" android:layout_marginStart="1.0dip" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="15.269989sp" android:id="@id/textview_desc1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/autorun_first_dialog_content_desc1" android:layout_weight="0.0" android:layout_marginStart="1.0dip" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="15.269989sp" android:id="@id/textview_desc2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/autorun_first_dialog_content_desc2" android:layout_weight="0.0" android:layout_marginStart="1.0dip" />
+            <TextView android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/no_text_msg" android:layout_weight="1.0" />
+            <CheckBox android:textSize="16.0sp" android:textStyle="bold" android:id="@id/checkbox_donotshow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sp_do_not_show_again_NORMAL" android:layout_weight="0.0" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

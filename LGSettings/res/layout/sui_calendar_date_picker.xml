@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper android:id="@id/suid_viewFlipper" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.lge.sui.widget.control.SUICalendarPicker android:id="@id/suid_calendar_in_flipper" android:layout_width="fill_parent" android:layout_height="300.0dip" />
+    </RelativeLayout>
+    <com.lge.sui.widget.control.SUIDrumDatePicker android:layout_gravity="center" android:id="@id/suid_drum_date_in_flipper" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</ViewFlipper>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/sp_settings_slideaside"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.lgesettings">
+    <Preference android:selectable="false" android:key="slide_aside" android:summary="@string/slideaside_help_guide" />
+    <com.android.lgesettings.CustomImagePreference android:key="slide_aside_image" />
+</PreferenceScreen>

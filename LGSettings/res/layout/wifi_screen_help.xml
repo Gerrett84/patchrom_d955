@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.329987dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="19.329987sp" android:textStyle="bold" android:id="@id/introduction_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.329987dip" android:layout_marginRight="9.329987dip" android:layout_marginBottom="3.0dip" android:text="@string/sp_wifi_scr_shr_guide_intro_title_NORMAL" style="@style/miracast_help_description" />
+            <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/img" android:background="@drawable/miracast_help" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.329987dip" android:layout_marginRight="9.329987dip" android:layout_marginBottom="35.329987dip" />
+            </LinearLayout>
+            <TextView android:textSize="15.669983sp" android:id="@id/introduction_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.329987dip" android:layout_marginRight="9.329987dip" android:layout_marginBottom="17.659973dip" android:text="@string/sp_miracast_guide_intro_desc_NORMAL" style="@style/miracast_help_description" />
+            <TextView android:textSize="19.329987sp" android:textStyle="bold" android:id="@id/how_to_use_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.329987dip" android:layout_marginRight="9.329987dip" android:layout_marginBottom="2.3299866dip" android:text="@string/sp_wifi_scr_shr_guide_how_to_title_NORMAL" style="@style/miracast_help_description" />
+            <TextView android:textSize="15.669983sp" android:id="@id/how_to_use_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.329987dip" android:layout_marginRight="9.329987dip" android:layout_marginBottom="2.3299866dip" android:text="@string/sp_miracast_guide_how_to_desc_2_NORMAL" style="@style/miracast_help_description" />
+            <TextView android:textSize="19.329987sp" android:textStyle="bold" android:id="@id/tips_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.329987dip" android:layout_marginRight="9.329987dip" android:layout_marginBottom="2.3299866dip" android:text="@string/sp_wifi_scr_shr_guide_tips_title_NORMAL" style="@style/miracast_help_description" />
+            <TextView android:textSize="15.669983sp" android:id="@id/tips_text_icon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.329987dip" android:layout_marginRight="9.329987dip" android:layout_marginBottom="17.659973dip" android:text="@string/sp_miracast_guide_tips_icon_desc_NORMAL" style="@style/miracast_help_description" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="15.669983sp" android:id="@id/reference_mark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.329987dip" style="@style/miracast_help_description" />
+                <TextView android:textSize="15.669983sp" android:id="@id/notes_text_battery" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="9.329987dip" android:layout_marginBottom="17.659973dip" android:text="@string/sp_wifi_miracast_guide_tips_desc_2_batt_NORMAL" style="@style/miracast_help_description" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

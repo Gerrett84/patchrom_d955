@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <header android:icon="@drawable/ic_settings_display" android:id="@id/display_settings" android:title="@string/display_settings" android:fragment="com.android.lgesettings.DisplaySettings" />
+    <header android:icon="@drawable/ic_settings_multitasking" android:id="@id/settings_multitasking" android:title="@string/sp_settings_slideaside" android:fragment="com.android.lgesettings.MultiTaskingSettings" />
+    <header android:icon="@drawable/connectivity" android:id="@id/connectivity_settings" android:title="@string/pc_connection" android:fragment="com.android.lgesettings.lge.ConnectivitySettings" />
+</preference-headers>

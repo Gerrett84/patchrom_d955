@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="10.0dip" android:paddingEnd="10.0dip">
+        <TextView android:layout_marginTop="27.329987dip" android:text="@string/sp_bluetooth_sound_and_other_settings_guide1" android:lineSpacingExtra="0.6700001dip" style="@style/Guide.Text" />
+        <TextView android:text="@string/sp_bluetooth_sound_and_other_settings_guide2" android:lineSpacingExtra="0.6700001dip" style="@style/Guide.Title" />
+        <TextView android:text="@string/sp_bluetooth_sound_and_other_settings_guide3" android:lineSpacingExtra="0.6700001dip" style="@style/Guide.Text" />
+        <TextView android:text="@string/sp_bluetooth_sound_and_other_settings_guide4" android:lineSpacingExtra="0.6700001dip" style="@style/Guide.Title" />
+        <TextView android:text="@string/sp_bluetooth_sound_and_other_settings_guide5" android:lineSpacingExtra="0.6700001dip" style="@style/Guide.Text" />
+        <TextView android:text="@string/sp_bluetooth_sound_and_other_settings_guide6" android:lineSpacingExtra="0.6700001dip" style="@style/Guide.Title" />
+        <TextView android:text="@string/sp_bluetooth_sound_and_other_settings_guide7" android:lineSpacingExtra="0.6700001dip" style="@style/Guide.Text" />
+        <TextView android:text="@string/sp_bluetooth_sound_and_other_settings_guide8" android:lineSpacingExtra="0.6700001dip" style="@style/Guide.Text" />
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/bluetooth_guide_07" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+            <TextView android:layout_marginTop="4.669983dip" android:text="@string/bluetooth_preference_paired_devices" android:lineSpacingExtra="0.0dip" android:layout_marginStart="37.329987dip" style="@style/Guide.PreferenceGroup" />
+            <TextView android:layout_marginTop="22.669983dip" android:text="@string/sp_Bluetooth_Headset1" android:layout_marginStart="80.66998dip" style="@style/Guide.Line1" />
+        </LinearLayout>
+        <TextView android:layout_marginTop="30.0dip" android:text="@string/sp_bluetooth_sound_and_other_settings_guide9" android:lineSpacingExtra="0.6700001dip" style="@style/Guide.Text" />
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/bluetooth_guide_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="0.0dip">
+            <TextView android:layout_marginTop="4.669983dip" android:text="@string/bluetooth_device_advanced_profile_header_title" android:layout_marginStart="37.329987dip" style="@style/Guide.PreferenceGroup" />
+            <TextView android:layout_marginTop="12.669983dip" android:text="@string/bluetooth_profile_headset" android:layout_marginStart="80.66998dip" style="@style/Guide.Line1" />
+            <TextView android:layout_marginTop="2.0dip" android:text="@string/bluetooth_headset_profile_summary_connected" android:layout_marginStart="80.66998dip" style="@style/Guide.Line2" />
+            <TextView android:layout_marginTop="16.669983dip" android:text="@string/bluetooth_profile_a2dp" android:layout_marginStart="80.66998dip" style="@style/Guide.Line1" />
+            <TextView android:layout_marginTop="2.0dip" android:text="@string/bluetooth_a2dp_profile_summary_connected" android:layout_marginStart="80.66998dip" style="@style/Guide.Line2" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

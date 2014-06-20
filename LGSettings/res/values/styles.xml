@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="info_label">
+        <item name="android:textAppearance">@style/TextAppearance.info_label</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingEnd">4.0dip</item>
+    </style>
+    <style name="info_value">
+        <item name="android:textAppearance">@style/TextAppearance.info_value</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="info_small">
+        <item name="android:textAppearance">@style/TextAppearance.info_small</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="info_layout">
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingTop">10.0dip</item>
+        <item name="android:paddingBottom">10.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:paddingStart">10.0dip</item>
+        <item name="android:paddingEnd">10.0dip</item>
+    </style>
+    <style name="entry_layout">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="form_value">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="TextAppearance" parent="@*android:style/TextAppearance" />
+    <style name="TextAppearance.info_label" parent="@style/TextAppearance">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextAppearance.info_small" parent="@style/TextAppearance">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="TextAppearance.info_value" parent="@style/TextAppearance">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="TallTitleBarTheme" parent="@*android:style/Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="Theme.CreateShortCut" parent="@*android:style/Theme.Holo.DialogWhenLarge" />
+    <style name="setup_wizard_theme" parent="@*android:style/Theme.Holo.NoActionBar">
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="android:preferencePanelStyle">@*android:style/PreferencePanel.Dialog</item>
+    </style>
+    <style name="TopDivider">
+        <item name="android:background">@color/setup_divider_color</item>
+        <item name="android:focusable">false</item>
+        <item name="android:clickable">false</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/divider_height</item>
+        <item name="android:layout_marginTop">@dimen/divider_margin_top</item>
+        <item name="android:layout_marginBottom">@dimen/divider_margin_bottom</item>
+    </style>
+    <style name="SetupTitle">
+        <item name="android:textSize">@dimen/setup_title_size</item>
+        <item name="android:textColor">@color/title_color</item>
+        <item name="android:clickable">false</item>
+        <item name="android:longClickable">false</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+    <style name="wifi_item">
+        <item name="android:gravity">start</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8.0dip</item>
+        <item name="android:layout_marginStart">16.0dip</item>
+        <item name="android:layout_marginEnd">16.0dip</item>
+    </style>
+    <style name="wifi_item_label">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="wifi_item_content">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="wifi_section">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="setup_wizard_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Transparent">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <style name="CryptKeeperBlankTheme" parent="@*android:style/Theme.Holo.NoActionBar">
+        <item name="android:background">#ff000000</item>
+    </style>
+    <style name="SecurityPreferenceButtonContainer" parent="@*android:style/Holo.SegmentedButton">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:weightSum">2.0</item>
+        <item name="android:dividerPadding">8.0dip</item>
+    </style>
+    <style name="SecurityPreferenceButton" parent="@*android:style/Widget.Holo.Button.Borderless">
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="vpn_label">
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="vpn_value">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="InputMethodPreferenceStyle">
+        <item name="android:layout">@layout/preference_inputmethod</item>
+        <item name="android:widgetLayout">@layout/preference_inputmethod_widget</item>
+    </style>
+    <style name="TextAppearance.Switch" parent="@*android:style/TextAppearance.Holo.Widget.Switch">
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="TextAppearance.PagerTabs" parent="@*android:style/TextAppearance.DeviceDefault.Small">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="Settings.Theme.Holo.NoActionBar" parent="@com.lge.internal:style/Theme.LGE.White.NoActionBar" />
+    <style name="Settings.Theme.Holo.DialogWhenLarge" parent="@com.lge.internal:style/Theme.LGE.White.DialogWhenLarge" />
+    <style name="Settings.Theme.Holo.Panel" parent="@com.lge.internal:style/Theme.LGE.White.Panel" />
+    <style name="Settings.Theme.Holo.Dialog.Alert" parent="@com.lge.internal:style/Theme.LGE.White.Dialog.Alert" />
+    <style name="Settings.Theme.Dialog.Alert" parent="@com.lge.internal:style/Theme.LGE.White.Dialog.Alert" />
+    <style name="Settings.Theme.Dialog" parent="@com.lge.internal:style/Theme.LGE.White.Dialog" />
+    <style name="Settings.Theme.CreateShortCut" parent="@com.lge.internal:style/Theme.LGE.White.DialogWhenLarge" />
+    <style name="Settings.Theme.AccessibilityTutorialActivity" parent="@com.lge.internal:style/Theme.LGE.White" />
+    <style name="Settings.CryptKeeperBlankTheme" parent="@com.lge.internal:style/Theme.LGE.White.NoActionBar">
+        <item name="android:background">#ff000000</item>
+    </style>
+    <style name="Settings.Transparent" parent="@com.lge.internal:style/Theme.LGE.White.NoDisplay" />
+    <style name="Settings.Theme.Translucent" parent="@com.lge.internal:style/Theme.LGE.White.Dialog.Alert">
+        <item name="android:colorForeground">#ffffffff</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="Settings.Theme.Transparent" parent="@com.lge.internal:style/Theme.LGE.White">
+        <item name="android:colorForeground">#ffffffff</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@*android:style/Animation.Translucent</item>
+    </style>
+    <style name="Settings.initialDataAndTime" parent="@com.lge.internal:style/Theme.LGE.White">
+        <item name="android:startYear">1970</item>
+        <item name="android:endYear">2036</item>
+    </style>
+    <style name="Settings.Theme.Holo.DialogWhenLarge.Translucent" parent="@com.lge.internal:style/Theme.LGE.White.DialogWhenLarge">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@*android:style/Animation</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <style name="Encryption.Transparent" parent="@com.lge.internal:style/Theme.LGE.White">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <style name="hig_white_list1_normal">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="hig_white_list2_normal">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ff333333</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="hig_white_list3_normal">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ff333333</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="hig_black_list1_normal">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="hig_black_list2_normal">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="checkbox_multi_selection_size">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="checkbox_multi_selection_extra_size">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="hig_command_bar">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/hig_command_bar_color</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="InsertOrEditGroupDialogTheme" parent="@com.lge.internal:style/Theme.LGE.White.Translucent.NoTitleBar">
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+    <style name="TipSettings" parent="@style/InsertOrEditGroupDialogTheme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+    <style name="Settings.UserDictionary" parent="@com.lge.internal:style/Theme.LGE.White.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+    <style name="PowersavePreference_information">
+        <item name="android:enabled">false</item>
+        <item name="android:layout">@layout/powersave_preference_information</item>
+        <item name="android:shouldDisableView">false</item>
+    </style>
+    <style name="PowersaveTipsPreference_information">
+        <item name="android:enabled">false</item>
+        <item name="android:layout">@layout/powersave_tips_preference_information</item>
+        <item name="android:shouldDisableView">false</item>
+    </style>
+    <style name="PowersavePreference_information_vzw">
+        <item name="android:enabled">false</item>
+        <item name="android:layout">@layout/powersave_preference_information2</item>
+        <item name="android:shouldDisableView">false</item>
+    </style>
+    <style name="KeyguardAppWidgetItem">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="Bluetooth.Theme.Holo.Dialog.Alert" parent="@style/Settings.Theme.Holo.Dialog.Alert">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="user_dictionary_empty_list_text">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="user_dictionary_locale_spinner_text">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="help_list_text">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="help_list_title">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="front_touch_button_information">
+        <item name="android:enabled">false</item>
+        <item name="android:layout">@layout/front_touch_button_information</item>
+        <item name="android:shouldDisableView">false</item>
+    </style>
+    <style name="description_preference_information">
+        <item name="android:enabled">false</item>
+        <item name="android:layout">@layout/description_preference_information</item>
+        <item name="android:shouldDisableView">false</item>
+    </style>
+    <style name="onscreenphone_help_title_text">
+        <item name="android:textSize">19.329987sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="onscreenphone_help_list_text">
+        <item name="android:textSize">15.659973sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="Setup_PreferencesTheme_img">
+        <item name="android:windowBackground">@drawable/startup_wizard_sub_bg_black</item>
+    </style>
+    <style name="MyPreferenceFragmentStyle">
+        <item name="android:paddingStart">0.0dip</item>
+        <item name="android:paddingEnd">0.0dip</item>
+    </style>
+    <style name="MyHoloTheme" parent="@*android:style/Theme.Holo">
+        <item name="android:preferenceFragmentStyle">@style/MyPreferenceFragmentStyle</item>
+    </style>
+    <style name="startup_wizard_command_bar_normal">
+        <item name="android:textSize">19.329987sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="hig_white_list1_normal_defaultapp">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="apps_button_normal_fixed">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="apps_no_contents_text">
+        <item name="android:textSize">24.5sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="system_action_access_app_name">
+        <item name="android:textSize">27.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="hw_keymode_title">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="hw_keymode_text">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff505050</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="hw_keymode_list_1line">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff323232</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="hw_keymode_list_2line">
+        <item name="android:textSize">13.329987sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff505050</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="hw_keymode_title_small">
+        <item name="android:textSize">13.329987sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff323232</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="hw_keymode_text_small">
+        <item name="android:textSize">10.669983sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff505050</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="guestmode_setpattern_title_style" parent="@*android:style/Widget.TextView">
+        <item name="android:shadowColor">@color/white</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.6</item>
+        <item name="android:shadowRadius">1.2</item>
+    </style>
+    <style name="Theme.WifiDialog" parent="@style/Settings.Theme.Holo.Dialog.Alert">
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+    <style name="Theme_Settings" parent="@com.lge.internal:style/Theme.LGE.White">
+        <item name="android:startYear">1980</item>
+    </style>
+    <style name="Theme.Holo.WifiDialog" parent="@*android:style/Theme.Holo.Dialog.Alert">
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+    <style name="SUI" />
+    <style name="SUITextAppearance">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:textColorHighlight">?android:textColorHighlight</item>
+        <item name="android:textColorHint">?android:textColorHint</item>
+        <item name="android:textColorLink">?android:textColorLink</item>
+    </style>
+    <style name="SUITextAppearance.Button" parent="@style/SUITextAppearance">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">@color/sui_black</item>
+    </style>
+    <style name="SUITextAppearance.Button.Long" parent="@style/SUITextAppearance.Button">
+        <item name="android:textSize">17.0sp</item>
+    </style>
+    <style name="SUITextAppearance.Button.Toggle" parent="@style/SUITextAppearance.Button">
+        <item name="android:textSize">18.0sp</item>
+    </style>
+    <style name="SUITextAppearance.Button.Command" parent="@style/SUITextAppearance.Button">
+        <item name="android:textSize">16.0sp</item>
+    </style>
+    <style name="SUITextAppearance.Text" parent="@style/SUITextAppearance">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">@color/sui_black</item>
+    </style>
+    <style name="SUITextAppearance.Text.Input" parent="@style/SUITextAppearance.Text">
+        <item name="android:textSize">18.0sp</item>
+    </style>
+    <style name="SUITextAppearance.Text.Guide" parent="@style/SUITextAppearance.Text">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">?android:textColorHint</item>
+    </style>
+    <style name="SUITextAppearance.CalendarView" parent="@style/SUITextAppearance">
+        <item name="android:textColor">@color/sui_black</item>
+    </style>
+    <style name="SUITextAppearance.CalendarView.Small" parent="@style/SUITextAppearance.CalendarView">
+        <item name="android:textSize">14.0sp</item>
+    </style>
+    <style name="SUITextAppearance.CalendarView.Large" parent="@style/SUITextAppearance.CalendarView">
+        <item name="android:textSize">18.0sp</item>
+    </style>
+    <style name="SUITextAppearance.PickerTitle" parent="@style/SUITextAppearance">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/sui_black</item>
+    </style>
+    <style name="SUITextAppearance.ListPrimary" parent="@style/SUITextAppearance">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/sui_list_primary_text_color_dark</item>
+    </style>
+    <style name="SUITextAppearance.ListSecondary" parent="@style/SUITextAppearance">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/sui_list_secondary_text_color_dark</item>
+    </style>
+    <style name="SUITextAppearance.ListTertiary" parent="@style/SUITextAppearance">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/sui_list_tertiary_text_color_dark</item>
+    </style>
+    <style name="SUITextAppearance.ListPrimaryLight" parent="@style/SUITextAppearance">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/sui_list_primary_text_color_light</item>
+    </style>
+    <style name="SUITextAppearance.ListSecondaryLight" parent="@style/SUITextAppearance">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/sui_list_secondary_text_color_light</item>
+    </style>
+    <style name="SUITextAppearance.ListTertiaryLight" parent="@style/SUITextAppearance">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/sui_list_tertiary_text_color_light</item>
+    </style>
+    <style name="SUITextAppearance.ListCmdButton" parent="@style/SUITextAppearance">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/sui_black</item>
+    </style>
+    <style name="SUITextAppearance.ListSectionHeader" parent="@style/SUITextAppearance">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/sui_list_section_header</item>
+    </style>
+    <style name="SUITextAppearance.ListSectionCount" parent="@style/SUITextAppearance">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/sui_list_section_count</item>
+    </style>
+    <style name="SUITextAppearance.ListSectionIndexer" parent="@style/SUITextAppearance">
+        <item name="android:textSize">9.329987sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/sui_list_quick_jump_index</item>
+    </style>
+    <style name="SUITextAppearance.Toast" parent="@style/SUITextAppearance">
+        <item name="android:textSize">20.0sp</item>
+    </style>
+    <style name="SUITextAppearance.Dialog" parent="@style/SUITextAppearance">
+        <item name="android:textSize">18.0sp</item>
+    </style>
+    <style name="SUITextAppearance.Dialog.Title" parent="@style/SUITextAppearance.Dialog">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+    <style name="SUITextAppearance.Dialog.Button" parent="@style/SUITextAppearance.Dialog">
+        <item name="android:textSize">16.0sp</item>
+    </style>
+    <style name="SUITextAppearance.Dialog.Error" parent="@style/SUITextAppearance.Dialog">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="SUIDialogWindowTitle">
+        <item name="android:textAppearance">@style/SUITextAppearance.Dialog.Title</item>
+    </style>
+    <style name="SUIDialogPickerTitle">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="SUIDialogPickerLargeTitle">
+        <item name="android:textSize">22.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="SUIWidget" parent="@*android:style/Widget" />
+    <style name="SUIWidget.SUINumberPicker" parent="@style/SUIWidget">
+        <item name="android:orientation">vertical</item>
+        <item name="android:fadingEdge">vertical</item>
+        <item name="android:fadingEdgeLength">50.0dip</item>
+    </style>
+    <style name="SUIWidget.SUITimePicker" parent="@style/SUIWidget" />
+    <style name="SUIWidget.SUIDatePicker" parent="@style/SUIWidget">
+        <item name="android:calendarViewShown">false</item>
+    </style>
+    <style name="SUIPicker">
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:background">?android:colorBackground</item>
+    </style>
+    <style name="SUIWidget.AbsListView" parent="@*android:style/Widget.AbsListView" />
+    <style name="SUIWidget.ListView" parent="@*android:style/Widget.ListView">
+        <item name="android:listSelector">@drawable/sui_list_selector_holo_dark</item>
+    </style>
+    <style name="SUIWidget.ListView.White" parent="@*android:style/Widget.ListView.White">
+        <item name="android:listSelector">@drawable/sui_list_selector_holo_light</item>
+    </style>
+    <style name="SUIWidget.IndexedListView" parent="@*android:style/Widget.ListView">
+        <item name="android:scrollbars">none</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:listSelector">@drawable/sui_list_selector_holo_dark</item>
+        <item name="android:groupIndicator">@null</item>
+        <item name="android:childDivider">@drawable/sui_list_divider_holo_light</item>
+    </style>
+    <style name="SUIWidget.IndexedListView.Light" parent="@style/SUIWidget.IndexedListView">
+        <item name="android:listSelector">@drawable/sui_list_selector_holo_light</item>
+    </style>
+    <style name="Bluetooth.TextAppearance" parent="@*android:style/TextAppearance" />
+    <style name="Bluetooth.TextAppearance.LGTheme" parent="@style/Bluetooth.TextAppearance">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="edittext_rename">
+        <item name="android:textAppearance">@style/Bluetooth.TextAppearance.LGTheme</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:selectAllOnFocus">true</item>
+        <item name="android:inputType">textNoSuggestions</item>
+    </style>
+    <style name="Guide" />
+    <style name="Guide.Text" parent="@style/Guide">
+        <item name="android:textAppearance">@style/Bluetooth.TextAppearance.Guide.Text</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Guide.Title" parent="@style/Guide">
+        <item name="android:textAppearance">@style/Bluetooth.TextAppearance.Guide.Title</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Guide.PreferenceGroup" parent="@style/Guide">
+        <item name="android:textAppearance">@style/Bluetooth.TextAppearance.Guide.PreferenceGroup</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Guide.Line1" parent="@style/Guide">
+        <item name="android:textAppearance">@style/Bluetooth.TextAppearance.Guide.Line1</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Guide.Line2" parent="@style/Guide">
+        <item name="android:textAppearance">@style/Bluetooth.TextAppearance.Guide.Line2</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Guide.Button" parent="@style/Guide">
+        <item name="android:textAppearance">@style/Bluetooth.TextAppearance.Guide.Button</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Bluetooth.TextAppearance.Guide" parent="@style/Bluetooth.TextAppearance" />
+    <style name="Bluetooth.TextAppearance.Guide.Text" parent="@style/Bluetooth.TextAppearance.Guide">
+        <item name="android:textSize">@dimen/bluetooth_help_guide_text</item>
+        <item name="android:textColor">@color/help_guide_text</item>
+    </style>
+    <style name="Bluetooth.TextAppearance.Guide.Title" parent="@style/Bluetooth.TextAppearance.Guide">
+        <item name="android:textSize">@dimen/bluetooth_help_guide_title</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/help_guide_text</item>
+    </style>
+    <style name="Bluetooth.TextAppearance.Guide.PreferenceGroup" parent="@style/Bluetooth.TextAppearance.Guide">
+        <item name="android:textSize">@dimen/bluetooth_help_guide_preferenceGroup</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/help_guide_preference_group_title</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="Bluetooth.TextAppearance.Guide.Line1" parent="@style/Bluetooth.TextAppearance.Guide">
+        <item name="android:textSize">@dimen/bluetooth_help_guide_line1</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/help_guide_device</item>
+    </style>
+    <style name="Bluetooth.TextAppearance.Guide.Line2" parent="@style/Bluetooth.TextAppearance.Guide">
+        <item name="android:textSize">@dimen/bluetooth_help_guide_line2</item>
+        <item name="android:textColor">@color/help_guide_device</item>
+    </style>
+    <style name="Bluetooth.TextAppearance.Guide.Button" parent="@style/Bluetooth.TextAppearance.Guide">
+        <item name="android:textSize">@dimen/bluetooth_help_guide_button</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/help_guide_device</item>
+    </style>
+    <style name="hyperlink_device_help_guide">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ff5dcde6</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="HeaderTitle" parent="@*android:style/Widget.Holo.TextView">
+        <item name="android:textSize">20.0dip</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">8.0dip</item>
+        <item name="android:layout_marginRight">8.0dip</item>
+    </style>
+    <style name="HeaderDescription" parent="@style/HeaderTitle">
+        <item name="android:textSize">16.0sp</item>
+    </style>
+    <style name="list_main_text" parent="@*android:style/Widget.Holo.TextView">
+        <item name="android:textSize">@dimen/list_main_text_size</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="list_sub_text" parent="@*android:style/Widget.Holo.TextView">
+        <item name="android:textSize">@dimen/list_sub_text_size</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="ButtonsLayout">
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">0.0dip</item>
+        <item name="android:layout_weight">0.0</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+    <style name="ButtonBottom" parent="@com.lge.internal:style/Widget.Holo.Light.Button.Borderless">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">4.0dip</item>
+        <item name="android:layout_marginTop">4.0dip</item>
+        <item name="android:layout_marginRight">4.0dip</item>
+        <item name="android:layout_marginBottom">3.3299866dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="MovableList" parent="@*android:style/Widget.Holo.ListView">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:listSelector">@color/transparent</item>
+        <item name="android:divider">@color/transparent</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="MovableListWrapper">
+        <item name="android:paddingLeft">0.0dip</item>
+        <item name="android:paddingRight">0.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="WifiSettingsActivityTheme" parent="@*android:style/Theme.Holo.Light">
+        <item name="android:actionBarSplitStyle">@style/WifiSettingsActionBarSplitStyle</item>
+    </style>
+    <style name="WifiSettingsActionBarSplitStyle" parent="@*android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textSize">50.0dip</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Wifi_dialog_text">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="wifi_item_content_2">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="WifiOffloading.Dialog" parent="@*android:style/Theme.Dialog">
+        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="except_scan_list_no_list">
+        <item name="android:textSize">22.669983sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="hig_list_section">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff4baac8</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="hig_no_contents">
+        <item name="android:textSize">22.669983sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="help_image_popup_title">
+        <item name="android:textSize">@dimen/help_image_popup_title_font_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff4baac8</item>
+    </style>
+    <style name="help_image_popup_list">
+        <item name="android:textSize">@dimen/help_image_popup_list_font_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="help_image_popup_info">
+        <item name="android:textSize">@dimen/help_image_popup_info_font_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="miracast_help_description">
+        <item name="android:includeFontPadding">false</item>
+    </style>
+</resources>

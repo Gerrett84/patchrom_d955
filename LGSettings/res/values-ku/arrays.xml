@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>‏ئه‌مریکا</item>
+        <item>‏ئه‌وروپا</item>
+        <item>‏ئافریقا</item>
+        <item>‏ئاسیا</item>
+        <item>‏ئوسترالیا</item>
+        <item>‏زه‌ریای ئارام (په‌سیفیک)</item>
+        <item>‏هەموو</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>‏15 چرکه‌</item>
+        <item>‏30 چرکه‌</item>
+        <item>‏1 خوله‌ک</item>
+        <item>‏2 خوله‌ک</item>
+        <item>‏5 خوله‌ک</item>
+        <item>‏10 خوله‌ک</item>
+        <item>‏30 خولەک</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries2_NORMAL">
+        <item>‏15 چرکه‌</item>
+        <item>‏30 چرکه‌</item>
+        <item>‏1 خوله‌ک</item>
+        <item>‏2 خولەک</item>
+        <item>‏5 خوله‌ک</item>
+        <item>‏10 خوله‌ک</item>
+        <item>‏هێشتنی شاشەکە بەداگیرساوی</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL">
+        <item>‏15 چرکه‌</item>
+        <item>‏30 چرکه‌</item>
+        <item>‏1 خوله‌ک</item>
+        <item>‏2 خوله‌ک</item>
+        <item>‏5 خوله‌ک</item>
+        <item>‏10 خوله‌ک</item>
+        <item>‏15 خوله‌ک</item>
+        <item>‏هێشتنی شاشەکە بەداگیرساوی</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL_ex">
+        <item>‏15که‌رته‌کان</item>
+        <item>‏30که‌رته‌کان</item>
+        <item>‏1 خوله‌ک</item>
+        <item>‏2 خوله‌ک</item>
+        <item>‏5 خوله‌ک</item>
+        <item>‏10 خوله‌ک</item>
+        <item>‏15 خوله‌ک</item>
+        <item>‏هێشتنی شاشەکە بەداگیرساوی</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled">
+        <item>‏15 چرکه‌</item>
+        <item>‏30 چرکه‌</item>
+        <item>‏1 خوله‌ک</item>
+        <item>‏2 خوله‌ک</item>
+        <item>‏5 خوله‌ک</item>
+        <item>‏10 خوله‌ک</item>
+        <item>‏15 خوله‌ک</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled_ex">
+        <item>‏15که‌رته‌کان</item>
+        <item>‏30که‌رته‌کان</item>
+        <item>‏1 خوله‌ک</item>
+        <item>‏2 خوله‌ک</item>
+        <item>‏5 خوله‌ک</item>
+        <item>‏10 خوله‌ک</item>
+        <item>‏15 خوله‌ک</item>
+    </string-array>
+    <string-array name="sp_pouch_default_clock_entries2_NORMAL">
+        <item>‏کاتژمێری 1</item>
+        <item>‏کاتژمێری 2</item>
+        <item>‏کاتژمێری 3</item>
+        <item>‏کاتژمێری 4</item>
+        <item>‏کاتژمێری 5</item>
+        <item>‏کاتژمێری 6</item>
+        <item>‏کاتژمێر 7</item>
+        <item>‏کاتژمێر 8</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries1_NORMAL">
+        <item>‏بەچاوبینراو</item>
+        <item>‏دیجیتاڵ</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_position_entries1_NORMAL">
+        <item>‏ناوه‌ند</item>
+        <item>‏سه‌ره‌وه‌ لای راست</item>
+        <item>‏سه‌ره‌وه‌ لای چه‌پ</item>
+        <item>‏خوارەوەی راست</item>
+        <item>‏خوارەوەی چەپ</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_font_entries1_NORMAL">
+        <item>‏ناوی فۆنت 1</item>
+        <item>‏ناوی فۆنت 1</item>
+    </string-array>
+    <string-array name="sp_sound_profile_entries_NORMAL">
+        <item>‏ده‌نگ</item>
+        <item>‏تەنیا هەرزە</item>
+        <item>‏بێده‌نگ</item>
+    </string-array>
+    <string-array name="dream_timeout_entries">
+        <item>‏قه‌ت</item>
+        <item>‏15 چرکه‌</item>
+        <item>‏30 چرکه‌</item>
+        <item>‏1 خوله‌ک</item>
+        <item>‏2 خوله‌ک</item>
+        <item>‏5 خوله‌ک</item>
+        <item>‏10 خوله‌ک</item>
+        <item>‏30 خولەک</item>
+    </string-array>
+    <string-array name="lock_after_timeout_entries">
+        <item>‏هەر ئێستا</item>
+        <item>‏5 چرکه‌</item>
+        <item>‏15 چرکه‌</item>
+        <item>‏30 چرکه‌</item>
+        <item>‏1 خوله‌ک</item>
+        <item>‏2 خوله‌ک</item>
+        <item>‏5 خوله‌ک</item>
+        <item>‏10 خوله‌ک</item>
+        <item>‏30 خوله‌ک</item>
+    </string-array>
+    <string-array name="sp_lock_after_timeout_entries_NORMAL">
+        <item>‏هەر ئێستا</item>
+        <item>‏15 چرکه‌</item>
+        <item>‏30 چرکه‌</item>
+        <item>‏1 خوله‌ک</item>
+        <item>‏2 خوله‌ک</item>
+        <item>‏10 خوله‌ک</item>
+        <item>‏30 خولەک</item>
+    </string-array>
+    <string-array name="entries_font_size">
+        <item>‏&amp;lt;font size=16 align=middle>بچووک&amp;lt;/font></item>
+        <item>‏&amp;lt;font size=18 align=middle>ئاسایی&amp;lt;/font></item>
+        <item>‏&amp;lt;font size=21 align=middle>گه‌وره‌&amp;lt;/font></item>
+        <item>‏&amp;lt;font size=24 align=middle>زۆر گەورە&amp;lt;/font></item>
+    </string-array>
+    <string-array name="sp_entries_font_size2">
+        <item>‏&amp;lt;font size=14 align=middle>لانیکه‌م&amp;lt;/font></item>
+        <item>‏&amp;lt;font size=16 align=middle>بچووک&amp;lt;/font></item>
+        <item>‏&amp;lt;font size=18 align=middle>نێوه‌نجی&amp;lt;/font></item>
+        <item>‏&amp;lt;font size=21 align=middle>گه‌وره‌&amp;lt;/font></item>
+        <item>‏&amp;lt;font size=24 align=middle>زۆر گه‌وره‌&amp;lt;/font></item>
+        <item>‏&amp;lt;font size=27 align=middle>لانی زۆر&amp;lt;/font></item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>‏زۆر بەسەبری</item>
+        <item>‏هێور</item>
+        <item>‏ئاسایی</item>
+        <item>‏خێرا</item>
+        <item>‏زۆر خێرا</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>‏زۆر لەخوارێ</item>
+        <item>‏خواره‌وه‌</item>
+        <item>‏ئاسایی</item>
+        <item>‏به‌رز (زۆر)</item>
+        <item>‏زۆر بەرز</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>‏خه‌ریکی سکان…</item>
+        <item>‏خه‌ریکه‌ لێده‌خرێت...</item>
+        <item>‏خه‌ریکی په‌سه‌ندی شوناس...</item>
+        <item>‏خه‌ریکی وه‌رگرتنی ناونیشانی IP...</item>
+        <item>‏لێخرا</item>
+        <item>‏هه‌ڵاواسراو</item>
+        <item>‏...خه‌ریکی پچڕانی لێخستن</item>
+        <item>‏پچڕدرا</item>
+        <item>‏ناکام</item>
+        <item>‏داخراو</item>
+        <item>‏به‌رگیری کاتیی له‌ لێخستنی لاواز</item>
+        <item>‏به‌رگیری کاتیی له‌ لێخستنی لاواز</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>‏خه‌ریکی سکان…</item>
+        <item>‏پەیوەندیکردن بە %1$s...</item>
+        <item>‏سەلماندن لە گەڵ%1$s...</item>
+        <item>‏خه‌ریکی وه‌رگرتنی ناونیشانیIP له‌%1$s...</item>
+        <item>‏خرا له‌ %1$s</item>
+        <item>‏هه‌ڵاواسراو</item>
+        <item>‏خه‌ریکی پچڕانی خستن له‌ %1$s...</item>
+        <item>‏پچڕدرا</item>
+        <item>‏ناکام</item>
+        <item>‏داخراو</item>
+        <item>‏به‌رگیری کاتیی له‌ لێخستنی لاواز</item>
+    </string-array>
+    <string-array name="wifi_ap_security">
+        <item>‏کراوه‌</item>
+        <item>WPA PSK</item>
+        <item>WPA2 PSK</item>
+    </string-array>
+    <string-array name="wifi_p2p_wps_setup">
+        <item>‏دوگمه‌ی گوشاریی</item>
+        <item>‏PIN له‌م ئامێره‌</item>
+    </string-array>
+    <string-array name="wifi_p2p_status">
+        <item>‏لێخرا</item>
+        <item>‏پەیوەندیکردنی</item>
+        <item>‏ناکام</item>
+        <item>"‏رێگە پێدراو "</item>
+        <item>‏ده‌ره‌وه‌ی بازنه‌</item>
+    </string-array>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>‏2 خوله‌ک</item>
+        <item>‏5 خوله‌ک</item>
+        <item>‏1 کاتژمێر</item>
+        <item>‏کۆتایی کات قه‌ت</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>‏لاواز</item>
+        <item>‏چاک</item>
+        <item>‏چاکه‌</item>
+        <item>‏زۆر چاک</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>‏هه‌موو کاتێک</item>
+        <item>‏ته‌نیا کاتی لێخستن</item>
+        <item>‏Wi-Fi کوژاوەتەوە (بەهۆی بەکارهێنانی داتا)</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <item>‏هه‌موو کاتێک</item>
+        <item>‏ته‌نیا کاتی لێخستن</item>
+        <item>‏Wi-Fi کوژاوەتەوە</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_entries">
+        <item>‏خۆکار</item>
+        <item>‏ته‌نیا 5 گیگاهه‌رتز</item>
+        <item>‏ته‌نیا 2.4 گیگاهه‌رتز</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>‏کاتی بەکارهێنان</item>
+        <item>‏ده‌سپێکردنی ژماردن</item>
+        <item>‏ناوی کاربەرنامە</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>‏هیچ</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_network_setup">
+        <item>‏کوژاوه‌</item>
+        <item>‏دوگمه‌ی گوشاریی</item>
+        <item>‏PIN له‌ خاڵی ده‌سڕاگه‌یشتن</item>
+        <item>‏PIN له‌م ئامێره‌</item>
+    </string-array>
+    <string-array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>‏ستاتیک</item>
+    </string-array>
+    <string-array name="wifi_proxy_settings">
+        <item>‏هیچ</item>
+        <item>‏ده‌ستی</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>‏کوژاوه‌</item>
+        <item>‏زه‌نگی ئاگادارکردنه‌وه‌</item>
+        <item>‏هەرزە</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>‏هیچ</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>‏PAP یانCHAP</item>
+    </string-array>
+    <string-array name="bearer_entries">
+        <item>LTE</item>
+        <item>eHRPD</item>
+        <item>‏نادیار</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>‏بیرگه‌ی خزنکردنی ناوه‌کی ئامێر</item>
+        <item>‏کارتی SD ده‌کرێ جیا بکرێته‌وه‌</item>
+        <item>‏رێگه‌ بده‌ن سیسته‌م بڕیار بدات</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>‏هه‌موو کاتێک</item>
+        <item>‏قه‌ت</item>
+        <item>‏ته‌نیا له‌ ره‌وشی بێده‌نگیدا</item>
+        <item>‏ته‌نیا کاتێ که‌ له‌ ره‌وشی بێده‌نگدا نه‌بێت</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_titles">
+        <item>‏کورت</item>
+        <item>‏نێوه‌نجی</item>
+        <item>‏درێژ</item>
+    </string-array>
+    <string-array name="hdcp_checking_titles">
+        <item>‏قه‌ت نه‌پشکندرێت</item>
+        <item>‏ناوەڕۆکەکانDRM تەنها</item>
+        <item>‏لێکۆڵەرەوە هەمیشە</item>
+    </string-array>
+    <string-array name="hdcp_checking_summaries">
+        <item>‏HDCP قه‌ت نه‌پشکندرێت</item>
+        <item>‏ته‌نیا HDCPبۆ نێوه‌ڕۆکه‌کانی DRMبپشکندرێت</item>
+        <item>‏لێکۆڵەرەوە هەمیشە لە HDCP</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>‏لەکارخستنی وێنە جوڵاوەکان</item>
+        <item>‏پێوه‌ری ئه‌نیمه‌یشن 0.5x</item>
+        <item>‏پێوه‌ری ئه‌نیمه‌یشن 1x</item>
+        <item>‏پێوه‌ری ئه‌نیمه‌یشن 1.5x</item>
+        <item>‏پێوه‌ری ئه‌نیمه‌یشن 2x</item>
+        <item>‏5X خشتەی وێنەجوڵاوەکان</item>
+        <item>‏پێوه‌ری ئه‌نیمه‌یشن 10x</item>
+    </string-array>
+    <string-array name="transition_animation_scale_entries">
+        <item>‏لەکارخستنی وێنە جوڵاوەکان</item>
+        <item>‏پێوه‌ری ئه‌نیمه‌یشن 0.5x</item>
+        <item>‏پێوه‌ری ئه‌نیمه‌یشن 1x</item>
+        <item>‏پێوه‌ری ئه‌نیمه‌یشن 1.5x</item>
+        <item>‏پێوه‌ری ئه‌نیمه‌یشن 2x</item>
+        <item>‏5X خشتەی وێنەجوڵاوەکان</item>
+        <item>‏پێوه‌ری ئه‌نیمه‌یشن 10x</item>
+    </string-array>
+    <string-array name="animator_duration_scale_entries">
+        <item>‏لەکارخستنی وێنە جوڵاوەکان</item>
+        <item>‏پێوه‌ری ئه‌نیمه‌یشن 0.5x</item>
+        <item>‏پێوه‌ری ئه‌نیمه‌یشن 1x</item>
+        <item>‏پێوه‌ری ئه‌نیمه‌یشن 1.5x</item>
+        <item>‏پێوه‌ری ئه‌نیمه‌یشن 2x</item>
+        <item>‏5X خشتەی وێنەجوڵاوەکان</item>
+        <item>‏پێوه‌ری ئه‌نیمه‌یشن 10x</item>
+    </string-array>
+    <string-array name="overlay_display_devices_entries">
+        <item>‏هیچ</item>
+        <item>720x480 mdpi</item>
+        <item>1280x720 tvdpi</item>
+        <item>1920x1080 xhdpi</item>
+        <item>‏1280x720 tvdpi و 1920x1080 xhdpi</item>
+    </string-array>
+    <string-array name="enable_opengl_traces_entries">
+        <item>‏هیچ</item>
+        <item>Logcat</item>
+        <item>‏Systrace (گرافیک)</item>
+        <item>‏کۆپڵه‌ی په‌یوه‌ندی له‌ glGetError</item>
+    </string-array>
+    <string-array name="app_process_limit_entries">
+        <item>‏ئاستی ستاندارد</item>
+        <item>‏هیچ ره‌وتێکی پشت بوار نییه‌</item>
+        <item>‏لانی زۆر 1 ره‌وت</item>
+        <item>‏لانی زۆر 2 ره‌وت</item>
+        <item>‏لانی زۆر 3 ره‌وت</item>
+        <item>‏لانی زۆر 4 ره‌وت</item>
+    </string-array>
+    <string-array name="vpn_types_long">
+        <item>PPTP VPN</item>
+        <item>‏L2TP/IPSec VPN له‌گه‌ڵ کلێڵه‌ پێش هاوبه‌شییه‌کان</item>
+        <item>‏L2TP/IPSec VPN له‌گه‌ڵ به‌ڵگه‌کان</item>
+        <item>‏IPSec VPN له‌گه‌ڵ کلێله‌کانی پێش هاوبه‌شی و په‌سه‌ندی شوناسی Xauth</item>
+        <item>‏IPSec VPN له‌گه‌ڵ به‌ڵگه‌کان و په‌سه‌ندی شوناسی Xauth</item>
+        <item>‏IPSec VPN له‌گه‌ڵ به‌ڵگه‌کان و په‌سه‌ندی شوناسی تێکه‌ڵ</item>
+    </string-array>
+    <string-array name="vpn_states">
+        <item>‏پچڕدرا</item>
+        <item>‏خه‌ریکی راده‌پێدان...</item>
+        <item>‏خه‌ریکه‌ لێده‌خرێت...</item>
+        <item>‏لێخرا</item>
+        <item>‏کۆتایی کات</item>
+        <item>‏ناکام</item>
+    </string-array>
+    <string-array name="security_settings_premium_sms_values">
+        <item>‏داوادەکات</item>
+        <item>‏هەرگیز رێگە مەدە</item>
+        <item>‏رێگە دەدات هەمیشە</item>
+    </string-array>
+    <string-array name="search_filter">
+        <item>‏هەموو ئامێرs</item>
+        <item>‏بیستۆك</item>
+        <item>PC</item>
+        <item>‏ته‌له‌فۆن</item>
+        <item>‏ئامرازی لاوه‌کی</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries_NORMAL">
+        <item>‏وێنەی بەکارهینەر</item>
+        <item>‏کاتژمێری 1</item>
+        <item>‏کاتژمێری 2</item>
+        <item>‏کاتژمێری 3</item>
+        <item>‏کاتژمێری 4</item>
+        <item>‏کاتژمێری 5</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL">
+        <item>‏1.5 چرکه‌</item>
+        <item>‏3 چرکه‌</item>
+        <item>‏5 چرکه‌</item>
+        <item>‏هەمیشە لە کاردا</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL_ex">
+        <item>‏1.5که‌رته‌کان</item>
+        <item>‏3 چرکه‌</item>
+        <item>‏5 چرکه‌</item>
+        <item>‏هەمیشە لە کاردا</item>
+    </string-array>
+    <string-array name="sp_front_key_light_l1_NORMAL">
+        <item>‏3 چرکه‌</item>
+        <item>‏6 چرکه‌</item>
+        <item>‏10 چرکه‌</item>
+        <item>‏30 چرکه‌</item>
+        <item>‏هەمیشە لە کاردا</item>
+    </string-array>
+    <string-array name="sp_front_key_light_att_NORMAL">
+        <item>‏3 چرکه‌</item>
+        <item>‏1که‌رته‌کان</item>
+        <item>‏10 چرکە</item>
+        <item>‏30که‌رته‌کان</item>
+        <item>‏هەمیشە لە کاردا</item>
+    </string-array>
+    <string-array name="sp_numlocdisp_entries_NORMAL">
+        <item>‏ناچالاک</item>
+        <item>‏چالاک کردن</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_NORMAL">
+        <item>‏ئاگادارکردنه‌وه‌ی هه‌رێمی تایبه‌تی</item>
+        <item>‏ئه‌گه‌ر له‌ به‌رنامه‌یه‌کی که‌سی سێیه‌م که‌ڵک وه‌رگرن، زانیاریی تاکه‌که‌سی ئێوه‌ راسته‌وخۆ کۆ ده‌کرێته‌وه‌ یان بۆ ده‌رخستنی زانیاریی تاکه‌که‌سی ئێوه‌، بریتی له‌ زانیاریی شوێن (ئه‌گه‌ر جێبه‌جێ بکرێت) بۆ پێشکه‌شکاری به‌رنامه‌ یان دیکه‌ی که‌سانی سێیه‌م، پێویست به‌ هه‌ڵگری ئێوه‌ ده‌بێت.</item>
+        <item>‏کام سیاسەت سەبارەت بە هەرێمی تاتبەتی بەکارهێنەران بەکار دەهێندرێت؟ سیاسەتی هەرێمی تایبەت و هەلومەرجی کەڵک­وەرگرتنی هەڵگر سەبارەت بە بەرنامەکانی مۆبایلەکەی تۆ کەڵکی نییە و تەنیا لە لایەن کەسی سێهەمەوە پێشکەش دەکرێت. سیاسەتەکانی کەسێ سێهەم سەبارەت بە کەڵک­وەرگرتنی تۆ لەم بەرنامەیە بەکار دەهێندرێ.</item>
+        <item>‏لە کوێ دەتوانم لەبارەی سیاسەتەکانی کەسی سێهەمدا زانیاری زۆرتر بدۆزمەوە؟ بۆ وەدەستهێنانی زانیاری زۆرتر لە بارەی چۆنیەتی، کۆکردنەوە، لەبەر دەست بوون، کەڵک­وەرگرتن و دەرخستنی زانیارییەکانی خۆ لە ڕێگای بەرنامە، هەلومەرجی کەڵکوەرگرتن لە بەرنامە / یان سیاسەتەکانی پێشکەشکەری، بەرنامەکە چاو لێکەوە. سیاسەتەکانی هەرێمی تایبەتی، هەلومەرجی کەڵک­وەرگرتن و ڕاگەیێندنەکانی تری مشتەری لەوانەیە لە ماڵپەڕی پێشکەشکەردا لەبەر دەست بێت. بەر لە کەڵک­وەرگرتن لە بەرنامەیەک، دڵنیا بە کە هیچ کیشەیەکی لەگەڵ سیاسەتەکانی ئەو نییە.</item>
+        <item>‏لە کوێ دەتوانم هەرێمی تایبەتی هەڵگر بدۆزمەوە؟ سەبارەت بە هەر چەشنە پرسیارێکی جیا لەبارەی سیاسەتی هەرێمی تایبەتی هەڵگری خۆتدا تکایە سەردانی لاپەڕەی سەرەکی هەڵگر بکە و لەسەر لینکی \"Privacy Policy\" کلیک کە.</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_spr_NORMAL">
+        <item>‏ئاگادارکردنه‌وه‌ی هه‌رێمی تایبه‌تی Sprint</item>
+        <item>‏ئه‌گه‌ر له‌ به‌رنامه‌یه‌کی که‌سی سێیه‌م که‌ڵک وه‌رگرن، زانیاریی تاکه‌که‌سی ئێوه‌ راسته‌وخۆ کۆ ده‌کرێته‌وه‌ یان بۆ ده‌رخستنی زانیاریی تاکه‌که‌سی ئێوه‌، بریتی له‌ زانیاریی شوێن (ئه‌گه‌ر جێبه‌جێ بکرێت) بۆ پێشکه‌شکاری به‌رنامه‌ یان دیکه‌ی که‌سانی سێیه‌م، پێویست به‌ Sprint ده‌بێت.</item>
+        <item>‏کام سیاسەت سەبارەت بە هەرێمی تاتبەتی بەکارهێنەران بەکار دەهێندرێت؟ سیاسەتی هەرێمی تایبەت و هەلومەرجی کەڵک­وەرگرتن لە Sprint سەبارەت بە بەرنامەکانی ناو مۆبایلەکەت کە تەنیا لە لایەن کەسانی سێهەمەوە پێشکەش دەکرێن، بەکار ناهێندرێت. سیاسەتەکانی کەسێ سێهەم سەبارەت بە کەڵک­وەرگرتنی تۆ لەم بەرنامەیە بەکار دەهێندرێ.</item>
+        <item>‏لە کوێ دەتوانم لەبارەی سیاسەتەکانی کەسی سێهەمدا زانیاری زۆرتر بدۆزمەوە؟ بۆ وەدەستهێنانی زانیاری زۆرتر لە بارەی چۆنیەتی، کۆکردنەوە، لەبەر دەست بوون، کەڵک­وەرگرتن و دەرخستنی زانیارییەکانی خۆ لە ڕێگای بەرنامە، هەلومەرجی کەڵکوەرگرتن لە بەرنامە / یان سیاسەتەکانی پێشکەشکەری، بەرنامەکە چاو لێکەوە. سیاسەتەکانی هەرێمی تایبەتی، هەلومەرجی کەڵک­وەرگرتن و ڕاگەیێندنەکانی تری مشتەری لەوانەیە لە ماڵپەڕی پێشکەشکەردا لەبەر دەست بێت. بەر لە کەڵک­وەرگرتن لە بەرنامەیەک، دڵنیا بە کە هیچ کیشەیەکی لەگەڵ سیاسەتەکانی ئەو نییە.</item>
+        <item>‏لە کوێ دەتوانم هەرێمی تایبەتی Sprint بدۆزمەوە؟ سەبارەت بە هەر چەشنە پرسیارێک لەبارەی سیاسەتی هەرێمی تایبەتی Sprint دا تکایە سەردانی Sprint.com بکە و لەسەر لینکی \"Privacy Policy\" کلیک کە.</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_bm_NORMAL">
+        <item>‏ئاگادارکردنه‌وه‌ی هه‌رێمی تایبه‌تی Boost Mobile</item>
+        <item>‏ئه‌گه‌ر له‌ به‌رنامه‌یه‌کی که‌سی سێیه‌م که‌ڵک وه‌رگرن، زانیارییه‌ تاکه‌که‌سیه‌کانی ئێوه‌ راسته‌وخۆ کۆ ده‌کرێته‌وه‌ یان بۆ ده‌رخستنی زانیاریی تاکه‌که‌سی ئێوه‌، بریتی له‌ زانیاریی شوێن (ئه‌گه‌ر جێبه‌جێ بکرێت) بۆ پێشکه‌شکاری به‌رنامه‌ یان دیکه‌ی که‌سانی سێیه‌م، پێویست به‌ Boost Mobile ده‌بێت.</item>
+        <item>‏کام سیاسەت سەبارەت بە هەرێمی تاتبەتی بەکارهێنەران بەکار دەهێندرێت؟ سیاسەتی هەرێمی تایبەت و هەلومەرجی کەڵک­وەرگرتن لە Boost Mobile سەبارەت بە بەرنامەکانی ناو مۆبایلەکەت کە تەنیا لە لایەن کەسانی سێهەمەوە پێشکەش دەکرێن، بەکار ناهێندرێت. سیاسەتەکانی کەسی سێهەم سەبارەت بە کەڵک­وەرگرتنی تۆ لەم بەرنامەیە بەکار دەهێندرێ.</item>
+        <item>‏لە کوێ دەتوانم لەبارەی سیاسەتەکانی کەسی سێهەمدا زانیاری زۆرتر بدۆزمەوە؟ بۆ وەدەستهێنانی زانیاری زۆرتر لە بارەی چۆنیەتی، کۆکردنەوە، لەبەر دەست بوون، کەڵک­وەرگرتن و دەرخستنی زانیارییەکانی خۆ لە ڕێگای بەرنامە، هەلومەرجی کەڵکوەرگرتن لە بەرنامە / یان سیاسەتەکانی پێشکەشکەری، بەرنامەکە چاو لێکەوە. سیاسەتەکانی هەرێمی تایبەتی، هەلومەرجی کەڵک­وەرگرتن و ڕاگەیێندنەکانی تری مشتەری لەوانەیە لە ماڵپەڕی پێشکەشکەردا لەبەر دەست بێت. بەر لە کەڵک­وەرگرتن لە بەرنامەیەک، دڵنیا بە کە هیچ کیشەیەکی لەگەڵ سیاسەتەکانی ئەو نییە.</item>
+        <item>‏لە کوێ دەتوانم هەرێمی تایبەتی Boost Mobile بدۆزمەوە؟ سەبارەت بە هەر چەشنە پرسیارێکی جیا لەبارەی سیاسەتی هەرێمی تایبەتی Boost Mobile دا تکایە سەردانی Boost Mobile.com بکە و لەسەر لینکی \"Privacy Policy\" کلیک بکە.</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_virgin_NORMAL">
+        <item>‏ئاگاداری هەرێمی تایبەتی Virgin Mobile</item>
+        <item>‏ئه‌گه‌ر له‌ به‌رنامه‌یه‌کی که‌سی سێیه‌م که‌ڵک وه‌رگرن، زانیاریی تاکه‌که‌سی ئێوه‌ راسته‌وخۆ کۆ ده‌کرێته‌وه‌ یان بۆ ده‌رخستنی زانیاریی تاکه‌که‌سی ئێوه‌، بریتی له‌ زانیاریی شوێن (ئه‌گه‌ر جێبه‌جێ بکرێت) بۆ پێشکه‌شکاری به‌رنامه‌ یان دیکه‌ی که‌سانی سێیه‌م، پێویست به‌ Virgin Mobile ده‌بێت.</item>
+        <item>‏کام سیاسەت سەبارەت بە هەرێمی تاتبەتی بەکارهێنەران بەکار دەهێندرێت؟ سیاسەتی هەرێمی تایبەت و هەلومەرجی کەڵک­وەرگرتن لە Virgin Mobile سەبارەت بە بەرنامەکانی ناو مۆبایلەکەت کە تەنیا لە لایەن کەسانی سێهەمەوە پێشکەش دەکرێن، بەکار ناهێندرێت. سیاسەتەکانی کەسێ سێهەم سەبارەت بە کەڵک­وەرگرتنی تۆ لەم بەرنامەیە بەکار دەهێندرێ.</item>
+        <item>‏لە کوێ دەتوانم لەبارەی سیاسەتەکانی کەسی سێهەمدا زانیاری زۆرتر بدۆزمەوە؟ بۆ وەدەستهێنانی زانیاری زۆرتر لە بارەی چۆنیەتی، کۆکردنەوە، لەبەر دەست بوون، کەڵک­وەرگرتن و دەرخستنی زانیارییەکانی خۆ لە ڕێگای بەرنامە، هەلومەرجی کەڵکوەرگرتن لە بەرنامە / یان سیاسەتەکانی پێشکەشکەری، بەرنامەکە چاو لێکەوە. سیاسەتەکانی هەرێمی تایبەتی، هەلومەرجی کەڵک­وەرگرتن و ڕاگەیێندنەکانی تری مشتەری لەوانەیە لە ماڵپەڕی پێشکەشکەردا لەبەر دەست بێت. بەر لە کەڵک­وەرگرتن لە بەرنامەیەک، دڵنیا بە کە هیچ کیشەیەکی لەگەڵ سیاسەتەکانی ئەو نییە.</item>
+        <item>‏لە کوێ دەتوانم هەرێمی تایبەتی Virgin Mobile بدۆزمەوە؟ سەبارەت بە هەر چەشنە پرسیارێک لەبارەی سیاسەتی هەرێمی تایبەتی Virgin Mobile دا تکایە سەردانی VirginMobileUSA.com بکە و لەسەر لینکی \"Privacy Policy\" کلیک کە.</item>
+    </string-array>
+    <string-array name="sp_lock_screen_effect_entries_NORMAL">
+        <item>‏سه‌ره‌تایی</item>
+        <item>‏شه‌پۆلدار</item>
+        <item>‏مه‌ره‌که‌بی بڵاوه‌یی</item>
+        <item>‏شەونم</item>
+    </string-array>
+    <string-array name="sp_power_save_brightness_entries_NORMAL">
+        <item>‏10% رووناکی</item>
+        <item>‏20% رووناکی</item>
+        <item>‏30% رووناکی</item>
+        <item>‏50% رووناکی</item>
+    </string-array>
+    <string-array name="sp_power_save_screen_timeout_entries_NORMAL">
+        <item>‏15 چرکه‌</item>
+        <item>‏30 چرکه‌</item>
+        <item>‏1 خوله‌ک</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_NORMAL">
+        <item>‏1.5 چرکه‌</item>
+        <item>‏هەمیشە کوژاوە.</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_att_NORMAL">
+        <item>‏3 چرکه‌</item>
+        <item>‏هەمیشە کوژاوە.</item>
+    </string-array>
+    <string-array name="sp_power_save_mode_entries_NORMAL">
+        <item>‏10% باتری</item>
+        <item>‏20% باتری</item>
+        <item>‏30% باتری</item>
+        <item>‏50% باتری</item>
+    </string-array>
+    <string-array name="sp_power_save_mode2_entries_NORMAL">
+        <item>‏هەر ئێستا</item>
+        <item>‏10% باتری</item>
+        <item>‏20% باتری</item>
+        <item>‏30% باتری</item>
+        <item>‏50% باتری</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries">
+        <item>‏5 خوله‌ک</item>
+        <item>‏10 خوله‌ک</item>
+        <item>‏15 خوله‌ک</item>
+    </string-array>
+    <string-array name="sp_hotspot_timeout_entries_mx_NORMAL">
+        <item>‏کۆتایی کات قه‌ت</item>
+        <item>‏5 خوله‌ک</item>
+        <item>‏10 خوله‌ک</item>
+        <item>‏15 خوله‌ک</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries_jb">
+        <item>‏5 خوله‌ک</item>
+        <item>‏10 خوله‌ک</item>
+        <item>‏15 خوله‌ک</item>
+        <item>‏30 خوله‌ک</item>
+        <item>‏قه‌ت</item>
+    </string-array>
+    <string-array name="wifi_p2p_timeout_entries">
+        <item>‏15 خوله‌ک</item>
+        <item>‏30 خوله‌ک</item>
+        <item>‏قه‌ت</item>
+    </string-array>
+    <string-array name="sp_wifi_ap_visibility_NORMAL">
+        <item>‏پیشاندان</item>
+        <item>‏شاردنه‌وه‌</item>
+    </string-array>
+    <string-array name="sp_bt_search_filter_SHORT">
+        <item>‏هەموو ئامێرs</item>
+        <item>‏بیستۆك</item>
+        <item>‏ته‌له‌فۆنی له‌گه‌ڵ (مۆبایل)</item>
+        <item>PC</item>
+        <item>‏ئامێری ناوکه‌وت (ته‌خته‌کلێڵ، ماوس و هتد)</item>
+    </string-array>
+    <string-array name="wifi_signal_strength_entries">
+        <item>‏بەهێز</item>
+        <item>‏نێوه‌نجی</item>
+        <item>‏لاواز</item>
+        <item>‏کوژاوه‌</item>
+    </string-array>
+    <string-array name="wifi_Dual_band_AP_connection_entries">
+        <item>‏خۆکار</item>
+        <item>5 GHz</item>
+        <item>2.4 GHz</item>
+    </string-array>
+</resources>

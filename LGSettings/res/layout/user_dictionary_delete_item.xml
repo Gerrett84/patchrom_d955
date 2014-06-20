@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/list_item_view" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:paddingEnd="?android:scrollbarSize"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:gravity="center_vertical" android:id="@id/user_dict_del_chk" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:checked="false" android:button="@com.lge.internal:drawable/btn_check_holo_light" style="@style/checkbox_multi_selection_size" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:layout_weight="1.0" android:layout_marginStart="15.0dip" android:layout_marginEnd="6.0dip">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="normal" android:textColor="@color/black" android:ellipsize="marquee" android:id="@id/lbltext" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/hig_white_list1_normal" />
+    </LinearLayout>
+</LinearLayout>

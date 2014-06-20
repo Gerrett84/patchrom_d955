@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>Amerika</item>
+        <item>Yevropa</item>
+        <item>Afrika</item>
+        <item>Osiyo</item>
+        <item>Avstraliya</item>
+        <item>Tinch okeani</item>
+        <item>Barcha</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 soniya</item>
+        <item>30 soniya</item>
+        <item>1 daqiqa</item>
+        <item>2 daqiqa</item>
+        <item>5 daqiqa</item>
+        <item>10 daqiqa</item>
+        <item>30 daqiqa</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries2_NORMAL">
+        <item>15 soniya</item>
+        <item>30 soniya</item>
+        <item>1 daqiqa</item>
+        <item>2 daqiqa</item>
+        <item>5 daqiqa</item>
+        <item>10 daqiqa</item>
+        <item>Ekranni yoqilgan holatda saqlang</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL">
+        <item>15 soniya</item>
+        <item>30 soniya</item>
+        <item>1 daqiqa</item>
+        <item>2 daqiqa</item>
+        <item>5 daqiqa</item>
+        <item>10 daqiqa</item>
+        <item>15 daqiqa</item>
+        <item>Ekranni yoqilgan holatda saqlang</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL_ex">
+        <item>15 soniya.</item>
+        <item>30 soniya.</item>
+        <item>1 min</item>
+        <item>2 daqiqa</item>
+        <item>5 daqiqa</item>
+        <item>10 daqiqa</item>
+        <item>15 daqiqa</item>
+        <item>Ekranni yoqilgan holatda saqlang</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled">
+        <item>15 soniya</item>
+        <item>30 soniya</item>
+        <item>1 daqiqa</item>
+        <item>2 daqiqa</item>
+        <item>5 daqiqa</item>
+        <item>10 daqiqa</item>
+        <item>15 daqiqa</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled_ex">
+        <item>15 soniya.</item>
+        <item>30 soniya.</item>
+        <item>1 min</item>
+        <item>2 daqiqa</item>
+        <item>5 daqiqa</item>
+        <item>10 daqiqa</item>
+        <item>15 daqiqa</item>
+    </string-array>
+    <string-array name="sp_pouch_default_clock_entries2_NORMAL">
+        <item>Soat 1</item>
+        <item>Soat 2</item>
+        <item>Soat 3</item>
+        <item>Soat 4</item>
+        <item>Soat 5</item>
+        <item>Soat 6</item>
+        <item>Soat 7</item>
+        <item>Soat 8</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries1_NORMAL">
+        <item>Analog</item>
+        <item>Raqamli</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_position_entries1_NORMAL">
+        <item>Markaz</item>
+        <item>"Tepa o'ng"</item>
+        <item>Tepa chap</item>
+        <item>Pastki Chap</item>
+        <item>Pastki Chap</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_font_entries1_NORMAL">
+        <item>Shrift nomi1</item>
+        <item>Shrift nomi2</item>
+    </string-array>
+    <string-array name="sp_sound_profile_entries_NORMAL">
+        <item>Tovush</item>
+        <item>Faqat vibratsiya</item>
+        <item>Sukut</item>
+    </string-array>
+    <string-array name="dream_timeout_entries">
+        <item>Hech qachon</item>
+        <item>15 soniya</item>
+        <item>30 soniya</item>
+        <item>1 daqiqa</item>
+        <item>2 daqiqa</item>
+        <item>5 daqiqa</item>
+        <item>10 daqiqa</item>
+        <item>30 daqiqa</item>
+    </string-array>
+    <string-array name="lock_after_timeout_entries">
+        <item>Darhol</item>
+        <item>5 soniya</item>
+        <item>15 soniya</item>
+        <item>30 soniya</item>
+        <item>1 daqiqa</item>
+        <item>2 daqiqa</item>
+        <item>5 daqiqa</item>
+        <item>10 daqiqa</item>
+        <item>30 daqiqa</item>
+    </string-array>
+    <string-array name="sp_lock_after_timeout_entries_NORMAL">
+        <item>Darhol</item>
+        <item>15 soniya</item>
+        <item>30 soniya</item>
+        <item>1 daqiqa</item>
+        <item>2 daqiqa</item>
+        <item>10 daqiqa</item>
+        <item>30 daqiqa</item>
+    </string-array>
+    <string-array name="entries_font_size">
+        <item>&amp;lt;font size=16 align=middle>Kichik&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>Odatiy&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>Yirik&amp;lt;/font></item>
+        <item>"&amp;lt;font size=24 align=middle>O'ta katta&amp;lt;/font>"</item>
+    </string-array>
+    <string-array name="sp_entries_font_size2">
+        <item>&amp;lt;font size=14 align=middle>Minimum&amp;lt;/font></item>
+        <item>&amp;lt;font size=16 align=middle>Kichik&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>Ortacha&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>Yirik&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>Juda katta&amp;lt;/font></item>
+        <item>&amp;lt;font size=27 align=middle>Maksimum&amp;lt;/font></item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>Juda sekin</item>
+        <item>Sekin</item>
+        <item>Odatiy</item>
+        <item>Tez</item>
+        <item>Juda tez</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>Juda past</item>
+        <item>Past</item>
+        <item>Odatiy</item>
+        <item>Yuqori</item>
+        <item>Juda yuqori</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Skanerlanmoqda...</item>
+        <item>Ulanish...</item>
+        <item>Autentifikatsiyalanmoqda...</item>
+        <item>IP manzil olinmoqda…</item>
+        <item>Ulangan</item>
+        <item>"To'xtatib qo'yildi"</item>
+        <item>Uzish...</item>
+        <item>Uzildi</item>
+        <item>Muvaffaqiyatsiz</item>
+        <item>Bloklangan</item>
+        <item>Vaqtincha past sifatli ulanishdan saqlanish.</item>
+        <item>Vaqtincha past sifatli ulanishdan saqlanish.</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Skanerlanmoqda...</item>
+        <item>%1$sga ulash...</item>
+        <item>%1$s bilan autentifikatsilash...</item>
+        <item>%1$s dan IP manzil olinmoqda...</item>
+        <item>%1$s ga ulangan</item>
+        <item>"To'xtatib qo'yildi"</item>
+        <item>%1$sdan uzilmoqda...</item>
+        <item>Uzildi</item>
+        <item>Muvaffaqiyatsiz</item>
+        <item>Bloklangan</item>
+        <item>Vaqtincha past sifatli ulanishdan saqlanish.</item>
+    </string-array>
+    <string-array name="wifi_ap_security">
+        <item>Ochiq</item>
+        <item>WPA PSK</item>
+        <item>WPA2 PSK</item>
+    </string-array>
+    <string-array name="wifi_p2p_wps_setup">
+        <item>Tugmani bosing</item>
+        <item>Ushbu qurilmadan PIN</item>
+    </string-array>
+    <string-array name="wifi_p2p_status">
+        <item>Ulangan</item>
+        <item>Ulanish</item>
+        <item>Muvaffaqiyatsiz</item>
+        <item>Mavjud</item>
+        <item>Doiradan tashqari</item>
+    </string-array>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>2 daqiqa</item>
+        <item>5 daqiqa</item>
+        <item>1 soat</item>
+        <item>"Hech qachon vaqt limiti bo'lmaydi"</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Yomon</item>
+        <item>Adolatli</item>
+        <item>Yaxshi</item>
+        <item>"A'lo"</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Doim</item>
+        <item>"Faqat elektr tarmog'iga ulanganda"</item>
+        <item>"Wi-Fi o'chirildi (ma'lumotlar uzatish trafigi sababli)"</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <item>Doim</item>
+        <item>"Faqat elektr tarmog'iga ulanganda"</item>
+        <item>"Wi-Fi o'chirildi"</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_entries">
+        <item>Avto</item>
+        <item>Faqat 5 GGts</item>
+        <item>Faqat 2.4 GGtsy</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>Foydalanish vaqti</item>
+        <item>Ishga tushirishlar soni</item>
+        <item>Ilova-dastur nomi</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>Hech biri</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_network_setup">
+        <item>"O'ch."</item>
+        <item>Tugmani bosing</item>
+        <item>Kirish nuqtasidan PIN</item>
+        <item>Ushbu qurilmadan PIN</item>
+    </string-array>
+    <string-array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>Statik</item>
+    </string-array>
+    <string-array name="wifi_proxy_settings">
+        <item>Hech biri</item>
+        <item>"Qo'llanma"</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>"O'ch."</item>
+        <item>Ogohlantirish</item>
+        <item>Vibratsiya</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>Hech biri</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP yoki CHAP</item>
+    </string-array>
+    <string-array name="bearer_entries">
+        <item>LTE</item>
+        <item>eHRPD</item>
+        <item>"Ko'rsatilmagan"</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Ichki qurilma xotirasi</item>
+        <item>Chiqariv olinuvchan SD xotira karta</item>
+        <item>Tizim qaror chiqarsin</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>Doim</item>
+        <item>Hech qachon</item>
+        <item>Faqat sukut rejimida</item>
+        <item>"Faqat sukut rejimida bo'lmaganda"</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_titles">
+        <item>Qisqa</item>
+        <item>Ortacha</item>
+        <item>Uzun</item>
+    </string-array>
+    <string-array name="hdcp_checking_titles">
+        <item>Hech qachon tekshirilmasin</item>
+        <item>Faqat RHB kontentlar</item>
+        <item>Doim tekshirilsin</item>
+    </string-array>
+    <string-array name="hdcp_checking_summaries">
+        <item>"Hech qachon 'HDCP' tekshirilmasin"</item>
+        <item>"'HDCP' faqat DRM kontentlar uchun tekshiring"</item>
+        <item>Doim HDCP tekshirilsin</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>"Animatsiya o'chirilgan"</item>
+        <item>Animatsiya masshtabi .5x</item>
+        <item>"Animatsiya masshtabi  1x"</item>
+        <item>Animatsiya masshtabi 1.5x</item>
+        <item>"Animatsiya masshtabi  2x"</item>
+        <item>Animatsiya masshtabi 5x</item>
+        <item>Animatsiya masshtabi 10x</item>
+    </string-array>
+    <string-array name="transition_animation_scale_entries">
+        <item>"Animatsiya o'chirilgan"</item>
+        <item>Animatsiya masshtabi .5x</item>
+        <item>"Animatsiya masshtabi  1x"</item>
+        <item>Animatsiya masshtabi 1.5x</item>
+        <item>"Animatsiya masshtabi  2x"</item>
+        <item>Animatsiya masshtabi 5x</item>
+        <item>Animatsiya masshtabi 10x</item>
+    </string-array>
+    <string-array name="animator_duration_scale_entries">
+        <item>"Animatsiya o'chirilgan"</item>
+        <item>Animatsiya masshtabi .5x</item>
+        <item>"Animatsiya masshtabi  1x"</item>
+        <item>Animatsiya masshtabi 1.5x</item>
+        <item>"Animatsiya masshtabi  2x"</item>
+        <item>Animatsiya masshtabi 5x</item>
+        <item>Animatsiya masshtabi 10x</item>
+    </string-array>
+    <string-array name="overlay_display_devices_entries">
+        <item>Hech biri</item>
+        <item>720x480 mdpi</item>
+        <item>1280x720 tvdpi</item>
+        <item>1920x1080 xhdpi</item>
+        <item>1280x720 tv nuqta/dyuym va 1920x1080 xh nuqta/dyuym</item>
+    </string-array>
+    <string-array name="enable_opengl_traces_entries">
+        <item>Hech biri</item>
+        <item>Logcat</item>
+        <item>Systrace (Grafika)</item>
+        <item>"'glGetError'dagi qo'ng'iroqlar steki"</item>
+    </string-array>
+    <string-array name="app_process_limit_entries">
+        <item>Standart limit</item>
+        <item>"Fon jarayonlar yo'q"</item>
+        <item>"Ko'pi bilan 1 jarayon"</item>
+        <item>"Ko'pi bilan 2 jarayon"</item>
+        <item>"Ko'pi bilan 3 jarayon"</item>
+        <item>"Ko'pi bilan 4 jarayon"</item>
+    </string-array>
+    <string-array name="vpn_types_long">
+        <item>PPTP VPN</item>
+        <item>"L2TP/IPSec VPN oldindan bo'lishilgan kalitlar bilan"</item>
+        <item>L2TP/IPSec VPN sertifikatlar bilan</item>
+        <item>"IPSec VPN oldindan bo'lishilgan kalitlar bilan va Xauth autentifikatsiya"</item>
+        <item>IPSec VPN, sertifikatlar va Xauth autentitfikatsiya bilan</item>
+        <item>IPSec VPN sertifikati bilan va gibrid autentifikatsiya</item>
+    </string-array>
+    <string-array name="vpn_states">
+        <item>Uzildi</item>
+        <item>Initsializatsiyalandi...</item>
+        <item>Ulanish...</item>
+        <item>Ulangan</item>
+        <item>Taym-aut</item>
+        <item>Muvaffaqiyatsiz</item>
+    </string-array>
+    <string-array name="security_settings_premium_sms_values">
+        <item>"So'ra"</item>
+        <item>Hech qachon ruxsat berish</item>
+        <item>Doim Ruxsat berish</item>
+    </string-array>
+    <string-array name="search_filter">
+        <item>Barcha qurilmalar</item>
+        <item>Quloqchin</item>
+        <item>SHK (Shaxsiy kompyuter)</item>
+        <item>Telefon</item>
+        <item>Tashqi qurilma</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries_NORMAL">
+        <item>Foydalanuvchi tasviri</item>
+        <item>Soat 1</item>
+        <item>Soat 2</item>
+        <item>Soat 3</item>
+        <item>Soat 4</item>
+        <item>Soat 5</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL">
+        <item>1.5 soniya</item>
+        <item>3 soniya</item>
+        <item>5 soniya</item>
+        <item>Doim Yoqilgan</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL_ex">
+        <item>1.5 soniya.</item>
+        <item>3 soniya</item>
+        <item>5 soniya</item>
+        <item>Doim Yoqilgan</item>
+    </string-array>
+    <string-array name="sp_front_key_light_l1_NORMAL">
+        <item>3 soniya</item>
+        <item>6 soniya</item>
+        <item>10 soniya</item>
+        <item>30 soniya</item>
+        <item>Doim Yoqilgan</item>
+    </string-array>
+    <string-array name="sp_front_key_light_att_NORMAL">
+        <item>3 soniya</item>
+        <item>6 soniya</item>
+        <item>10 soniya</item>
+        <item>30 soniya.</item>
+        <item>Doim Yoqilgan</item>
+    </string-array>
+    <string-array name="sp_numlocdisp_entries_NORMAL">
+        <item>Man etish</item>
+        <item>Ruxsat berish</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_NORMAL">
+        <item>Maxfiylik ogohlantirishi</item>
+        <item>"Agar 3-tomon ilova-dasturidan foydalansangiz, u sizning shaxsiy ma'lumotlaringizni to'g'ridan-to'g'ri to'plashi mumkin yoki shaxsiy ma'lumotlaringizni, jumladan, joylashuv joyingiz ma'lumotlarini (o'rinli bo'lsa) ilova-dastur ta'minotchisiga yoki boshqa 3-tomonga oshkor etish uchun operatoringizni talab qilishi mumkin."</item>
+        <item>"Qaysi Maxfiylik Siyosati amal qiladi? Qo'l telefoningizda 3-tomonidan beriladigan ilova-dastur uchun uyali aloqa operatoringiz Maxfiylik Siyosati va foydalanish shartlari amal qilmaydi. Ushbu ilova-dasturidan foydalanishingizga 3-tomon siyosatlar amal qiladi."</item>
+        <item>"3-tomon Siyosatlar haqida qayerdan ma'lumot olsam bo'ladi? Ilova-dasturlar ma'lumotlaringizni qay taxlit to'plashi, kirishi, foydalanishi va oshkor etishi haqida ma'lumot olish uchun ilova-dasturdan foydalanish shartlari va/yoki ilova-dastur yaratuvchisi siyosatlari bilan tanishib chiqing. maxfiylik siyosatlari, foydalanish shartlari va boshqa iste'molchilar uchun eslatmalar ilova-dastur ta'monotchisining veb-saytida bo'ladi. Ilova-dasturdan foydalanishdan oldin mazkur siyosatlarga sizga ma'qul ekaniga ishinch hosil qiling."</item>
+        <item>"Mobil operatorim Maxfiylik Siyosatini qayerdan topsam bo'ladi? Agar mobil operator Maxfiylik Siyosati yuzasidan savollaringiz bo'lsa, operator veb-saytiga kiring va \"Konfiddensiallik siyosati\" havolasini bosing."</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_spr_NORMAL">
+        <item>Sprint Maxfiylik ogohlantirishi</item>
+        <item>"Agar 3-tomon ilova-dasturidan foydalansangiz, u bevosita shaxsiy ma'lumotlaringizni to'plashi yoki 'Sprint'dan shaxsiy ma'lumotlaringizni, jumladan, joylashuv joyi haqidagi ma'lumotlarni (agar o'rinli bo'lsa) ilova-dastur ta'minotchisi yoki boshqa 3-tomonga oshkor etishni talab qilishi mumkin."</item>
+        <item>"Qaysi Maxfiylik Siyosati amal qiladi? Qo'l telefoningizda 3-tomonidan beriladigan ilova-dastur uchun Sprint Maxfiylik Siyosati va foydalanish shartlari amal qilmaydi. Ushbu ilova-dasturidan foydalanishingizga 3-tomon siyosatlar amal qiladi."</item>
+        <item>"3-tomon Siyosatlar haqida qayerdan ma'lumot olsam bo'ladi? Ilova-dasturlar ma'lumotlaringizni qay taxlit to'plashi, kirishi, foydalanishi va oshkor etishi haqida ma'lumot olish uchun ilova-dasturdan foydalanish shartlari va/yoki ilova-dastur yaratuvchisi siyosatlari bilan tanishib chiqing. maxfiylik siyosatlari, foydalanish shartlari va boshqa iste'molchilar uchun eslatmalar ilova-dastur ta'monotchisining veb-saytida bo'ladi. Ilova-dasturdan foydalanishdan oldin mazkur siyosatlarga sizga ma'qul ekaniga ishinch hosil qiling."</item>
+        <item>"Sprint Maxfiylik Siyosatini qayerdan topsam bo'ladi? Agar Sprint maxfiylik siyosati yuzasidan savollaringiz bo'lsa, Sprint.com ga kiring va \"Konfiddensiallik siyosati\" havolasini bosing."</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_bm_NORMAL">
+        <item>Boost Mobile Maxfiylik xabarnomasi</item>
+        <item>"Agar 3-tomon ilova-dasturidan foydalansangiz, u sizning shaxsiy ma'lumotlaringizni to'g'ridan-to'g'ri to'plashi mumkin yoki shaxsiy ma'lumotlaringizni, jumladan, joylashuv joyingiz ma'lumotlarini (o'rinli bo'lsa) ilova-dastur ta'minotchisiga yoki boshqa 3-tomonga oshkor etish uchun 'Boost Mobile'ni talab qilishi mumkin."</item>
+        <item>"Qaysi Maxfiylik Siyosati amal qiladi? Qo'l telefoningizda 3-tomonidan beriladigan ilova-dastur uchun Boost Mobile Maxfiylik Siyosati va foydalanish shartlari amal qilmaydi. Ushbu ilova-dasturidan foydalanishingizga 3-tomon Siyosatlar amal qiladi."</item>
+        <item>"3-tomon Siyosatlar haqida qayerdan ma'lumot olsam bo'ladi? Ilova-dasturlar ma'lumotlaringizni qay taxlit to'plashi, kirishi, foydalanishi va oshkor etishi haqida ma'lumot olish uchun ilova-dasturdan foydalanish shartlari va/yoki ilova-dastur yaratuvchisi siyosatlari bilan tanishib chiqing. maxfiylik siyosatlari, foydalanish shartlari va boshqa iste'molchilar uchun eslatmalar ilova-dastur ta'monotchisining veb-saytida bo'ladi. Ilova-dasturdan foydalanishdan oldin mazkur siyosatlarga sizga ma'qul ekaniga ishinch hosil qiling."</item>
+        <item>"Boost Mobile Maxfiylik Siyosatini qayerdan topsam bo'ladi? Agar Boost Mobile Maxfiylik Siyosati yuzasidan savollaringiz bo'lsa, Boost Mobile.com ga kiring va \"Konfiddensiallik siyosati\" havolasini bosing."</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_virgin_NORMAL">
+        <item>Virgin Mobile Maxfiylik Ogohlantirishi</item>
+        <item>"Agar 3-tomon ilova-dasturidan foydalansangiz, u bevosita shaxsiy ma'lumotlaringizni to'plashi yoki 'Virgin Mobile'dan shaxsiy ma'lumotlaringizni, jumladan, joylashuv joyi haqidagi ma'lumotlarni (agar o'rinli bo'lsa) ilova-dastur ta'minotchisi yoki boshqa 3-tomonga oshkor etishni talab qilishi mumkin."</item>
+        <item>"Qaysi Maxfiylik Siyosati amal qiladi? Qo'l telefoningizda 3-tomonidan beriladigan ilova-dastur uchun Virgin Mobile Maxfiylik Siyosati va foydalanish shartlari amal qilmaydi. Ushbu ilova-dasturidan foydalanishingizga 3-tomon siyosatlar amal qiladi."</item>
+        <item>"3-tomon Siyosatlar haqida qayerdan ma'lumot olsam bo'ladi? Ilova-dasturlar ma'lumotlaringizni qay taxlit to'plashi, kirishi, foydalanishi va oshkor etishi haqida ma'lumot olish uchun ilova-dasturdan foydalanish shartlari va/yoki ilova-dastur yaratuvchisi siyosatlari bilan tanishib chiqing. maxfiylik siyosatlari, foydalanish shartlari va boshqa iste'molchilar uchun eslatmalar ilova-dastur ta'monotchisining veb-saytida bo'ladi. Ilova-dasturdan foydalanishdan oldin mazkur siyosatlarga sizga ma'qul ekaniga ishinch hosil qiling."</item>
+        <item>"Virgin Mobile Maxfiylik Siyosatini qayerdan topsam bo'ladi? Agar Virgin Mobile Maxfiylik Siyosati yuzasidan savollaringiz bo'lsa, VirginMobileUSA.com ga kiring va \"Konfiddensiallik siyosati\" havolasini bosing."</item>
+    </string-array>
+    <string-array name="sp_lock_screen_effect_entries_NORMAL">
+        <item>Asosiy</item>
+        <item>Mavj</item>
+        <item>Siyoh tarqalishi</item>
+        <item>Dewdrop</item>
+    </string-array>
+    <string-array name="sp_power_save_brightness_entries_NORMAL">
+        <item>10% yorqinlik</item>
+        <item>20% yorqinlik</item>
+        <item>30% yorqinlik</item>
+        <item>50% yorqinlik</item>
+    </string-array>
+    <string-array name="sp_power_save_screen_timeout_entries_NORMAL">
+        <item>15 soniya</item>
+        <item>30 soniya</item>
+        <item>1 daqiqa</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_NORMAL">
+        <item>1.5 soniya</item>
+        <item>"Doim O'chgan"</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_att_NORMAL">
+        <item>3 soniya</item>
+        <item>"Doim O'chgan"</item>
+    </string-array>
+    <string-array name="sp_power_save_mode_entries_NORMAL">
+        <item>10% batareya quvvati</item>
+        <item>20% batareya quvvati</item>
+        <item>30% batareya quvvati</item>
+        <item>50% batareya quvvati</item>
+    </string-array>
+    <string-array name="sp_power_save_mode2_entries_NORMAL">
+        <item>Darhol</item>
+        <item>10% batareya quvvati</item>
+        <item>20% batareya quvvati</item>
+        <item>30% batareya quvvati</item>
+        <item>50% batareya quvvati</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries">
+        <item>5 daqiqa</item>
+        <item>10 daqiqa</item>
+        <item>15 daqiqa</item>
+    </string-array>
+    <string-array name="sp_hotspot_timeout_entries_mx_NORMAL">
+        <item>"Hech qachon taym-aut bo'lmasin"</item>
+        <item>5 daqiqa</item>
+        <item>10 daq</item>
+        <item>15 daq</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries_jb">
+        <item>5 daqiqa</item>
+        <item>10 daq</item>
+        <item>15 daq</item>
+        <item>30 daqiqa</item>
+        <item>Hech qachon</item>
+    </string-array>
+    <string-array name="wifi_p2p_timeout_entries">
+        <item>15 daq</item>
+        <item>30 daqiqa</item>
+        <item>Hech qachon</item>
+    </string-array>
+    <string-array name="sp_wifi_ap_visibility_NORMAL">
+        <item>"Ko'rsatish"</item>
+        <item>Yashirish</item>
+    </string-array>
+    <string-array name="sp_bt_search_filter_SHORT">
+        <item>Barcha qurilmalar</item>
+        <item>Quloqchin</item>
+        <item>Mobil Telefonga</item>
+        <item>SHK</item>
+        <item>Kiritish qurilmasi (klaviatura, sichqoncha va h.k.)</item>
+    </string-array>
+    <string-array name="wifi_signal_strength_entries">
+        <item>Kuchli</item>
+        <item>Ortacha</item>
+        <item>Zaif</item>
+        <item>"O'ch."</item>
+    </string-array>
+    <string-array name="wifi_Dual_band_AP_connection_entries">
+        <item>Avto</item>
+        <item>5 GHz</item>
+        <item>2.4 GHz</item>
+    </string-array>
+</resources>

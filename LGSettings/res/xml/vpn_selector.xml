@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/sp_vpn_selector_title_NORMAL"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:title="@string/sp_basic_vpn_NORMAL" android:key="vpn_settings" android:summary="@string/sp_basic_vpn_summary_NORMAL" android:fragment="com.android.lgesettings.vpn2.VpnSettings" />
+    <PreferenceScreen android:title="@string/sp_lg_vpn_NORMAL" android:key="lg_vpn" android:summary="@string/sp_lg_vpn_summary_NORMAL" />
+</PreferenceScreen>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:persistent="false" android:title="@string/hide_navigation_select_apps" android:key="select_hide_navigation" android:summary="@string/hide_navigation_select_apps_desc" android:fragment="com.android.lgesettings.lge.HideNavigationAppSelect" />
+    <PreferenceCategory android:title="@string/tethering_help_button_text" android:key="hide_navigation_help_category" />
+</PreferenceScreen>

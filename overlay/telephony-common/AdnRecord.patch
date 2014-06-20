@@ -1,0 +1,53 @@
+diff -rup ../telephony-common/smali/com/android/internal/telephony/AdnRecord$Injector.smali ../telephony-common/smali/com/android/internal/telephony/AdnRecord$Injector.smali
+--- ../telephony-common/smali/com/android/internal/telephony/AdnRecord$Injector.smali	2014-05-25 00:25:37.000000000 +0200
++++ ../telephony-common/smali/com/android/internal/telephony/AdnRecord$Injector.smali	2014-05-16 16:55:47.000000000 +0200
+@@ -1,11 +1,11 @@
+-.class Lcom/android/internal/telephony/AdnRecord$Injector;
++.class Lcom/android/internal/telephony/uicc/AdnRecord$Injector;
+ .super Ljava/lang/Object;
+ .source "AdnRecord.java"
+ 
+ 
+ # annotations
+ .annotation system Ldalvik/annotation/EnclosingClass;
+-    value = Lcom/android/internal/telephony/AdnRecord;
++    value = Lcom/android/internal/telephony/uicc/AdnRecord;
+ .end annotation
+ 
+ .annotation system Ldalvik/annotation/InnerClass;
+@@ -25,7 +25,7 @@
+     return-void
+ .end method
+ 
+-.method static adnRecordError(Lcom/android/internal/telephony/AdnRecord;Ljava/lang/String;)Ljava/lang/String;
++.method static adnRecordError(Lcom/android/internal/telephony/uicc/AdnRecord;Ljava/lang/String;)Ljava/lang/String;
+     .locals 2
+     .parameter "record"
+     .parameter "prefix"
+@@ -46,7 +46,7 @@
+ 
+     move-result-object v0
+ 
+-    iget-object v1, p0, Lcom/android/internal/telephony/AdnRecord;->number:Ljava/lang/String;
++    iget-object v1, p0, Lcom/android/internal/telephony/uicc/AdnRecord;->number:Ljava/lang/String;
+ 
+     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+ 
+@@ -58,7 +58,7 @@
+ 
+     move-result-object v0
+ 
+-    iget-object v1, p0, Lcom/android/internal/telephony/AdnRecord;->alphaTag:Ljava/lang/String;
++    iget-object v1, p0, Lcom/android/internal/telephony/uicc/AdnRecord;->alphaTag:Ljava/lang/String;
+ 
+     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+ 
+@@ -70,7 +70,7 @@
+ 
+     move-result-object v0
+ 
+-    iget-object v1, p0, Lcom/android/internal/telephony/AdnRecord;->emails:[Ljava/lang/String;
++    iget-object v1, p0, Lcom/android/internal/telephony/uicc/AdnRecord;->emails:[Ljava/lang/String;
+ 
+     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+ 

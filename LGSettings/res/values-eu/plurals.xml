@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="other">Pasahitzak, gutxienez, %d letra izan behar ditu</item>
+        <item quantity="one">Pasahitzak gutxienez 1 letra izan behar du</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="other">Pasahitzak, gutxienez, %d minuskula izan behar ditu</item>
+        <item quantity="one">Pasahitzak, gutxienez, 1 minuskula izan behar ditu</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="other">Pasahitzak, gutxienez, %d maiuskula izan behar ditu</item>
+        <item quantity="one">Pasahitzak, gutxienez, 1 maiuskula izan behar ditu</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="other">Pasahitzak, gutxienez, %d zenbaki izan behar ditu</item>
+        <item quantity="one">Pasahitzak, gutxienez, 1 zenbaki izan behar ditu</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="other">Pasahitzak, gutxienez, %d sinbolo berezi izan behar ditu</item>
+        <item quantity="one">Pasahitzak, gutxienez, 1 sinbolo berezi izan behar ditu</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="other">Pasahitzak, gutxienez, letrak ez diren %d karaktere izan behar ditu</item>
+        <item quantity="one">Pasahitzak, gutxienez, letrak ez diren 1 karaktere izan behar ditu</item>
+    </plurals>
+</resources>

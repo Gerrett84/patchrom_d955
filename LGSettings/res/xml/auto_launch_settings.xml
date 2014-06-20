@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/sp_auto_launch_NORMAL"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.lgesettings">
+    <CheckBoxPreference android:persistent="false" android:title="@string/sp_car_home_NORMAL" android:key="car_home" android:summary="@string/sp_car_home_summary_NORMAL" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/sp_desk_home_NORMAL" android:key="desk_home" android:summary="@string/sp_desk_home_summary_NORMAL" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/sp_media_home_NORMAL" android:key="media_home" android:summary="@string/sp_media_home_summary_NORMAL" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/sp_pouch_mode_NORMAL" android:key="pouch_mode" android:summary="@string/sp_pouch_mode_summary_NORMAL" />
+    <Preference android:persistent="false" android:title="@string/sp_pouch_launch_noti_title_NORMAL" android:key="pouch_notification" android:summary="@string/sp_pouch_launch_noti_summury_NORMAL" android:dependency="pouch_mode">
+        <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.lge.ConnectivityPouchNotification" />
+    </Preference>
+</PreferenceScreen>

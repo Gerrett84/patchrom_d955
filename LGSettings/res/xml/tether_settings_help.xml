@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/help_label"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.lgesettings">
+    <PreferenceScreen android:title="@string/tether_settings_title_usb" android:key="usb_tethering" />
+    <PreferenceScreen android:title="@string/sp_wifi_hotspot_NORMAL" android:key="wifi_tethering">
+        <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.wifi.WifiHotspotHelp" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/sp_wifi_hotspot_NORMAL" android:key="wifi_tethering_spr">
+        <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.wifi.WifiHotspotHelp" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/sp_mobile_hotspot_HELP_tmus" android:key="wifi_tethering_vzw">
+        <intent android:targetPackage="com.lge.mobilehotspot.ui" android:action="android.intent.action.MAIN" android:targetClass="com.lge.mobilehotspot.ui.MHPHelp" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/tether_settings_title_bluetooth" android:key="bluetooth_tethering">
+        <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.bluetooth.LGBluetoothTetheringHelp" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/mobile_hotspot_help" android:key="wifi_tethering_u2_tmus" />
+    <PreferenceScreen android:title="@string/usb_tethering_help" android:key="usb_tethering_u2_tmus" />
+</PreferenceScreen>

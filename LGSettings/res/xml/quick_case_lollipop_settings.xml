@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/accessory_quick_case_title" android:key="quick_case_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.lgesettings">
+    <PreferenceCategory android:title="@string/display_quick_case_window_category" android:key="front_quick_case_category">
+        <com.android.lgesettings.lge.LollipopRadioButtonPreference android:title="@string/lollipop_none_title" android:key="lollipop_never" />
+        <com.android.lgesettings.lge.LollipopRadioButtonPreference android:title="@string/lollipop_quickcover_title" android:key="lollipop_quick_cover" android:summary="@string/lollipop_quickcover_summary" />
+        <com.android.lgesettings.lge.LollipopRadioButtonPreference android:title="@string/lollipop_quickcover_lollipop_title_silver" android:key="lollipop_quick_cover_lollipop_white" android:summary="@string/lollipop_quickcover_lollipop_summary" />
+        <com.android.lgesettings.lge.LollipopRadioButtonPreference android:title="@string/lollipop_quickcover_lollipop_title_black" android:key="lollipop_quick_cover_lollipop_black" android:summary="@string/lollipop_quickcover_lollipop_summary" />
+    </PreferenceCategory>
+</PreferenceScreen>

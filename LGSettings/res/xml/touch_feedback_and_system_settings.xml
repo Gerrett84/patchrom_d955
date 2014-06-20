@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:icon="@drawable/touch_feedback_system" android:title="@string/sp_sound_category_feedback_title_NORMAL" android:key="feedback_and_system"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/dtmf_tone_enable_title" android:key="dtmf_tone" android:summary="@string/dtmf_tone_enable_summary_on" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/sound_effects_enable_title" android:key="sound_effects" android:summary="@string/sound_effects_enable_summary_on" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/lock_sounds_enable_title" android:key="lock_sounds" android:summary="@string/lock_sounds_enable_summary_on" android:defaultValue="true" />
+    <Preference android:title="@string/sp_sound_power_up_tone" android:key="mpcs_power_up_tone">
+        <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.MPCSPowerTonePicker" />
+    </Preference>
+    <CheckBoxPreference android:title="@string/sp_Sound_when_roaming_NORMAL" android:key="Eri_sounds" android:defaultValue="true" />
+    <ListPreference android:entries="@array/emergency_tone_entries" android:title="@string/emergency_tone_title" android:key="emergency_tone" android:summary="@string/emergency_tone_summary" android:entryValues="@array/emergency_tone_values" />
+    <CheckBoxPreference android:title="@string/haptic_feedback_enable_title" android:key="haptic_feedback" android:summary="@string/vibrate_on_touch_summary" android:defaultValue="true" />
+</PreferenceScreen>

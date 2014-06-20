@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/sp_quiet_mode_contact_allowed_auto_reply_about_reject_call_title" android:key="sound_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.lgesettings.quietmode.QuietModeAutoReplySummaryDescriptionPreference android:key="quiet_mode_auto_reply_summary_description" />
+    <com.android.lgesettings.quietmode.QuietModeRadioPreference android:textStyle="bold" android:title="@string/sp_quiet_mode_autoreply_noreply_NORMAL" android:key="no_reply" />
+    <com.android.lgesettings.quietmode.QuietModeRadioPreference android:textStyle="bold" android:title="@string/sp_quietmode_autoreply_def_message" android:key="message" />
+</PreferenceScreen>

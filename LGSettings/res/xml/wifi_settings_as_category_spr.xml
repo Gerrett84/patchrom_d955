@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/wifi_settings_category"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference android:persistent="false" android:entries="@array/sp_wifi_available_networks_settings_NORMAL" android:title="@string/wifi_notify_open_networks" android:key="notify_available_networks" android:summary="@string/wifi_notify_open_networks_summary" android:entryValues="@array/sp_wifi_available_networks_values_NORMAL" />
+    <Preference android:persistent="false" android:title="@string/smart_mode" android:key="smart_mode" android:summary="@string/smart_mode_summary" />
+    <com.android.lgesettings.wifi.WifiProgressCategory android:title="@string/sp_wifi_access_point_category_NORMAL" android:key="wifi_access_point" />
+</PreferenceScreen>

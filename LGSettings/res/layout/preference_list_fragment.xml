@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@*android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:scrollbarAlwaysDrawVerticalTrack="true" android:scrollbarStyle="@integer/preference_fragment_scrollbarStyle" android:id="@*android:id/list" android:paddingTop="0.0dip" android:paddingBottom="@dimen/preference_fragment_padding_bottom" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0px" android:drawSelectorOnTop="false" android:cacheColorHint="@*android:color/transparent" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/empty_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentEnd="true">
+        <ImageView android:id="@id/add_button_sec" android:padding="@dimen/preference_fragment_padding_side" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_dic_empty" />
+        <TextView android:gravity="center" android:id="@id/empty_ud" android:padding="@dimen/preference_fragment_padding_side" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-21.669983dip" android:text="@string/sp_tap_button_to_add_word_NORMAL" style="@style/user_dictionary_empty_list_text" />
+    </LinearLayout>
+</LinearLayout>

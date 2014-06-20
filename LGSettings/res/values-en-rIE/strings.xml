@@ -1,0 +1,1197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sdcard_unmount">Unmount USB storage</string>
+    <string name="sdcard_format">Erase USB storage</string>
+    <string name="sdcard_setting">USB storage</string>
+    <string name="battery_info_status_discharging">Discharging</string>
+    <string name="battery_info_status_full_vzw">Battery fully charged.</string>
+    <string name="bluetooth_is_discoverable_always">"Being visible on other devices.
+Tap to stop  being visible."</string>
+    <string name="bluetooth_visibility_timeout">Visibility timeout</string>
+    <string name="bluetooth_profile_details">Profile setting</string>
+    <string name="bluetooth_rename_device">Rename phone</string>
+    <string name="bluetooth_disable_profile_title">Disable profile</string>
+    <string name="bluetooth_disable_profile_message">%1$s will be disabled for %2$s&lt;br>Continue?</string>
+    <string name="bluetooth_disconnecting">Disconnecting...</string>
+    <string name="bluetooth_connecting">Connecting…</string>
+    <string name="bluetooth_pairing">Pairing...</string>
+    <string name="bluetooth_notif_title">Pairing request</string>
+    <string name="bluetooth_notif_message">Touch to pair with %1$s</string>
+    <string name="device_picker">Bluetooth device picker</string>
+    <string name="bluetooth_ask_discovery">An app on your phone wants to make your phone discoverable by other Bluetooth devices for %1$d seconds. Allow?</string>
+    <string name="bluetooth_ask_lasting_discovery">An app on your phone wants to make your phone \"always discoverable\" by other Bluetooth devices. Allow?</string>
+    <string name="bluetooth_ask_enablement_and_discovery">An app on your phone wants to turn on Bluetooth and make your phone discoverable by other devices for %1$d seconds. Allow?</string>
+    <string name="bluetooth_ask_enablement_and_lasting_discovery">An app on your phone wants to turn on Bluetooth and make your phone discoverable by other devices. Allow?</string>
+    <string name="bluetooth_turning_on">Turning Bluetooth on...</string>
+    <string name="bluetooth_turning_off">Turning Bluetooth off...</string>
+    <string name="bluetooth_connection_notif_message">Touch to connect to \"%1$s\".</string>
+    <string name="bluetooth_connection_dialog_text">Do you want to connect to \"%1$s\"?</string>
+    <string name="bluetooth_pb_acceptance_dialog_text">%1$s would like to access your contacts and call history. Give access to %2$s?</string>
+    <string name="proxy_error_empty_port">You must complete the port field.</string>
+    <string name="radio_info_neighboring_location_label">Neighbouring CID:</string>
+    <string name="radio_info_phone_number_label">Phone number:</string>
+    <string name="band_mode_loading">Loading band list...</string>
+    <string name="sdcard_changes_instructions">Changes take effect when USB cable is reconnected</string>
+    <string name="sdcard_settings_not_present_status">USB storage not mounted</string>
+    <string name="sdcard_settings_mass_storage_status">USB storage is being used as a mass storage device.</string>
+    <string name="sdcard_settings_unmounted_status">"It's now safe to remove the USB storage"</string>
+    <string name="sdcard_settings_bad_removal_status">USB storage was removed while still in use!</string>
+    <string name="sdcard_settings_scanning_status">Scanning USB storage for media...</string>
+    <string name="sdcard_settings_read_only_status">USB storage mounted read-only</string>
+    <string name="phone_info_label">Phone info</string>
+    <string name="sd_card_settings_label">USB storage</string>
+    <string name="radio_controls_title">More ...</string>
+    <string name="roaming_warning">Allow data roaming? You may incur significant roaming charges!</string>
+    <string name="roaming_warning_multiuser">"When you allow data roaming, you may incur significant roaming charges!
+
+This setting affects all users on this phone."</string>
+    <string name="roaming_reenable_title">Attention</string>
+    <string name="date_and_time_settings_summary">Set date, time, time zone &amp; formats</string>
+    <string name="zone_auto_summaryOn">Use network provided time zone</string>
+    <string name="zone_auto_summaryOff">Use network provided time zone</string>
+    <string name="date_time_date_format">Select date format</string>
+    <string name="show_owner_info_on_lockscreen_label">Show owner info on Lock screen</string>
+    <string name="sp_type_owner_NORMAL">Enter owner info</string>
+    <string name="owner_info_settings_edit_text_hint">Enter text to display on Lock screen</string>
+    <string name="show_user_info_on_lockscreen_label">Show user info on Lock screen</string>
+    <string name="location_settings_title">Location services</string>
+    <string name="crypt_keeper_encrypt_title">Encrypt phone</string>
+    <string name="crypt_keeper_encrypt_summary">Require a numeric PIN or password to decrypt your phone each time you turn it on</string>
+    <string name="crypt_keeper_desc">"You can encrypt your accounts, settings, downloaded apps and their data, media, and other files. Once you encrypt your phone, you must enter a numeric PIN or password to decrypt it each time you power it on: you can't unencrypt your phone except by performing a factory data reset, erasing all your data.
+
+Encryption takes an hour or more. You must start with a charged battery and keep your phone plugged in until encryption is complete. If you interrupt the encryption process, you will lose some or all of your data."</string>
+    <string name="crypt_keeper_button_text">Encrypt phone</string>
+    <string name="crypt_keeper_dialog_need_password_title">No Lock screen PIN or password</string>
+    <string name="crypt_keeper_dialog_need_password_message">You must set a Lock screen PIN or password before you can start encryption.</string>
+    <string name="crypt_keeper_confirm_title">Confirm encryption</string>
+    <string name="crypt_keeper_final_desc">Encrypt phone? This operation is irreversible and if you interrupt it, you will lose data. Encryption takes an hour or more, during which the phone will restart several times.</string>
+    <string name="crypt_keeper_setup_description">Wait while your phone is being encrypted. ^1% complete.</string>
+    <string name="crypt_keeper_failed_summary">"Encryption was interrupted and can't complete. As a result, the data on your phone is no longer accessible. 
+
+To resume using your phone, you must perform a factory reset. When you set up your phone after the reset, you'll have an opportunity to restore any data that was backed up to your Google Account."</string>
+    <string name="unlock_set_unlock_launch_picker_change_title">Change Lock screen</string>
+    <string name="lockpassword_pin_too_short">PIN must be at least %d characters</string>
+    <string name="lockpassword_password_too_long">Password must be fewer than %d characters</string>
+    <string name="lockpassword_pin_too_long">PIN must be fewer than %d digits</string>
+    <string name="device_admin_title">Phone administration</string>
+    <string name="manage_device_admin">Phone administrators</string>
+    <string name="manage_device_admin_summary">View or deactivate phone administrators</string>
+    <string name="bluetooth_enter_pin_other_device">You may also need to enter this PIN on the other device.</string>
+    <string name="bluetooth_enter_passkey_other_device">You may also need to enter this passkey on the other device.</string>
+    <string name="bluetooth_error_title">Attention</string>
+    <string name="bluetooth_pairing_error_message">There was a problem pairing with %1$s.</string>
+    <string name="bluetooth_pairing_pin_error_message">There was a problem pairing with %1$s because the PIN or Passkey is incorrect.</string>
+    <string name="bluetooth_pairing_device_down_error_message">Cannot establish communication with %1$s.</string>
+    <string name="bluetooth_connecting_error_message">There was a problem connecting to %1$s.</string>
+    <string name="bluetooth_searching_for_devices">Searching...</string>
+    <string name="bluetooth_device_context_connect_advanced">Options...</string>
+    <string name="bluetooth_connect_specific_profiles_title">Connect to...</string>
+    <string name="bluetooth_profile_headset">Phone audio</string>
+    <string name="bluetooth_profile_hid">Input Device</string>
+    <string name="bluetooth_disconnect_pan_nap_profile">"%1$s will be disconnected from sharing this phone's Internet connection."</string>
+    <string name="bluetooth_dock_settings">Dock settings</string>
+    <string name="wifi_display_searching_for_devices">Searching...</string>
+    <string name="nfc_quick_toggle_summary">Allow data exchange when the phone touches another device</string>
+    <string name="sp_nfc_quick_toggle_summary_a_NORMAL">Allow read/write and exchange data when the phone touches NFC support device or NFC tag</string>
+    <string name="sp_nfc_card_off_NORMAL">Enable to use NFC service and manage Android BEAM</string>
+    <string name="sp_use_p2p_title_SHORT">Use P2P</string>
+    <string name="sp_p2p_body_on_NORMAL">Receive NFC information by P2P</string>
+    <string name="sp_p2p_body_off_NORMAL">P2P is not available.NFC turned off</string>
+    <string name="sp_attention_disable_nfc_NORMAL">When disabling NFC, you cannot use Credit and transport Card.</string>
+    <string name="sp_android_beam_when_p2poff_NORMAL">Android Beam not available. Read and Write/P2P turned off</string>
+    <string name="sp_android_beam_when_p2poff_a_NORMAL">Android Beam not available. Read and Write/P2P turned off</string>
+    <string name="sp_nfc_lock_body_unlocked_SHORT">NFC card mode is enabled</string>
+    <string name="sp_nfc_body_press_ok_NORMAL">Press OK when done</string>
+    <string name="sp_nfc_body_init_pin_NORMAL">PIN for initializing NFC. Attempt remaining%d time(s)</string>
+    <string name="sp_nfc_body_invalid_pin_NORMAL">Invalid password,PIN out error. PIN is wrong. Please check it and input it again</string>
+    <string name="sp_nfc_body_invalid_puk_NORMAL">Invalid password,PIN out error. PIN is wrong. You have %d times from now.Please check it and input it again.</string>
+    <string name="sp_nfc_body_different_pin_NORMAL">"PINs don't match. Please check it and input it again."</string>
+    <string name="sp_p2p_body_on_b_NORMAL">Receive NFC information by Read and write/P2P receive</string>
+    <string name="nfc_preference_title_init_pin">NFC/Osaifu-Keitai lock No. initialize</string>
+    <string name="nfc_popup_summary_input_pin">Enter a NFC/Osaifu-Keitai lock number.</string>
+    <string name="nfc_popup_summary_input_new_pin">Enter new NFC / Osaifu-Keitai lock number. New number must be 4~8 digits.</string>
+    <string name="nfc_popup_summary_init_pin">Enter NFC / Osaifu-Keitai lock No. initialization PIN. It will be locked when failed 10 times continually. attempt remaining %d time(s)</string>
+    <string name="nfc_popup_summary_invalid_pin">Invalid NFC / Osaifu-Keitai lock No. Please check it and input it again.</string>
+    <string name="nfc_toast_no_uim_for_nfc">UIM card does not support NFC.</string>
+    <string name="nfc_toast_no_uim">No UIM card.</string>
+    <string name="nfc_preference_seperator_lock_menu_dcm">Lock password settings</string>
+    <string name="nfc_preference_title_change_pin_dcm">Lock password change</string>
+    <string name="nfc_popup_summary_input_new_pin_dcm">Enter new NFC/Osaifu-Keitai lock password. New password must be 4~16 alphanumeric.</string>
+    <string name="nfc_toast_remote_lock1_docomo">NFC/Osaifu-Keitai of Docomo UIM card is locked remotely</string>
+    <string name="sp_nfclock_toast_UIMRemoteLock_NORMAL">NFC/Osaifu-Keitai of Docomo UIM card is still locked remotely</string>
+    <string name="nfc_direct_beam_tm_ea_title">Android Beam</string>
+    <string name="nfc_preference_direct_beam_summary_easily">Allow sharing of images or music by holding devices together</string>
+    <string name="nfc_description_direct_beam_global">"When Direct/Android Beam is turned on, you can beam app content or files to other mobile devices by holding them close together.
+
+1. NFC and Wi-Fi Direct devices are needed.
+2. Turn on Direct/Android Beam on each device.
+3. Select the screen or files to share (e.g. images from the Gallery).
+4. Hold devices together (e.g. back to back). 
+5. Tap the screen that you want to send after shrinking the screen. (Each app determines what is sent or received.)
+
+* Data that can be shared: browser pages, contacts, YouTube videos, images from the Gallery, music from the Music app, documents from Polaris Office."</string>
+    <string name="nfc_description_android_beam_globa">"When Android Beam is turned on, you can beam app content or files to other mobile devices by holding them close together.
+
+1. NFC and Bluetooth devices are needed.
+2. Turn on Android Beam on each device.
+3. Select the screen or files to share (e.g. images from the Gallery).
+4. Hold devices together (e.g. back to back). 
+5. Tap the screen that you want to send after shrinking the screen. (Each app determines what is sent or received.)
+
+* Data that can be shared: browser pages, contacts, YouTube videos, images from the Gallery, music from the Music app, documents from Polaris Office."</string>
+    <string name="nfc_seperator_display">Display confirmation</string>
+    <string name="nfc_preference_summary_disp_p2p">Alert me when receiving information via NFC</string>
+    <string name="nfc_preference_summary_disp_handover">Alert me when pairing devices via NFC</string>
+    <string name="nfc_popup_summary_disp_handover">Turning off this option will allow Bluetooth pairing without any notification. Continue?</string>
+    <string name="nfc_preference_category_typeof">Alerts to show</string>
+    <string name="nfc_preference_category_sound">NFC Sound</string>
+    <string name="wifi_starting">Turning Wi-Fi on...</string>
+    <string name="wifi_stopping">Turning Wi-Fi off...</string>
+    <string name="wifi_in_airplane_mode">In airplane mode</string>
+    <string name="wifi_empty_list_wifi_on">Searching for Wi-Fi networks…</string>
+    <string name="wifi_other_network">Other network…</string>
+    <string name="wifi_wps_setup_title">WPS setup</string>
+    <string name="wifi_wps_setup_msg">Starting WPS…</string>
+    <string name="wifi_wps_complete">WPS succeeded. Connecting to the network…</string>
+    <string name="wifi_wps_in_progress">WPS is already in progress and can take tens of seconds to complete</string>
+    <string name="wifi_wps_available_first_item">Protected network available</string>
+    <string name="wifi_wps_available_second_item">(protected network available)</string>
+    <string name="wifi_skipped_message">"WARNING: You may incur extra carrier data charges.
+
+Phone setup can require significant network activity."</string>
+    <string name="wifi_and_mobile_skipped_message">"WARNING: The phone won't be able to verify that your software is up to date."</string>
+    <string name="wifi_connect_failed_message">The phone was unable to connect to this Wi-Fi network.</string>
+    <string name="wifi_p2p_menu_search">Search</string>
+    <string name="wifi_p2p_menu_searching">Searching...</string>
+    <string name="wifi_tether_starting">Turning hotspot on…</string>
+    <string name="wifi_tether_stopping">Turning off hotspot…</string>
+    <string name="wifi_tether_configure_ap_text">Configure Wi-Fi hotspot</string>
+    <string name="ringtone_title">Phone ringtone</string>
+    <string name="notification_sound_title">Notification ringtone</string>
+    <string name="sp_volume_media_description_NORMAL">Music, video, games &amp; other media</string>
+    <string name="sp_smart_ringtone_summary_NORMAL">Increase phone ringtone volume automatically in noisy environments</string>
+    <string name="sp_sub_sim1_ringtone_title_NORMAL">SIM1 phone ringtone</string>
+    <string name="sp_sub_sim2_ringtone_title_NORMAL">SIM2 phone ringtone</string>
+    <string name="sp_sub_sim3_ringtone_title_NORMAL">SIM3 phone ringtone</string>
+    <string name="dock_audio_summary_none">Phone not docked</string>
+    <string name="dock_not_found_text">You must dock the phone before setting up dock audio.</string>
+    <string name="dock_sounds_enable_summary_on">Play sound when inserting or removing phone from dock</string>
+    <string name="dock_sounds_enable_summary_off">"Don't play sound when inserting or removing phone from dock"</string>
+    <string name="sp_accelerometer_summary_NORMAL">Screen is rotated according to phone orientation</string>
+    <string name="keepscreenon_title">Wise screen</string>
+    <string name="sp_keepscreenon_skip">"Don't show this again"</string>
+    <string name="display_help_desc_video_2">When the phone is in the dark or against the light.</string>
+    <string name="accelerometer_summary_on">Switch orientation automatically when rotating phone</string>
+    <string name="accelerometer_summary_off">Switch orientation automatically when rotating phone</string>
+    <string name="screensaver_settings_title">Daydream</string>
+    <string name="screensaver_settings_disabled_prompt">To control what happens when the phone is docked and/or sleeping, turn screen saver on.</string>
+    <string name="screensaver_settings_when_to_dream">When to Daydream</string>
+    <string name="sim_lock_on">Require PIN to use phone</string>
+    <string name="sim_lock_off">Require PIN to use phone</string>
+    <string name="sim_change_succeeded">SIM PIN changed successfully.</string>
+    <string name="device_info_settings">Phone status</string>
+    <string name="sp_PhoneSummary_NORMAL">My phone number, Model number, IMEI, etc.</string>
+    <string name="sp_phone_identity_NORMAL">Phone identity</string>
+    <string name="sp_PhoneSummary_MEID_NORMAL">My phone number, Model number, etc.</string>
+    <string name="sp_patent_information_NORMAL">"This LG product may be covered by, but not limited to, one or more US patents  listed on LG’s website at http://www.lg.com/us/Patent"</string>
+    <string name="sp_title_phone_information">Phone information</string>
+    <string name="sp_title_status_summary">My phone number, signal, etc.</string>
+    <string name="sp_title_phoneinformation_summary">Model number, Wi-Fi MAC address, Bluetooth address, etc.</string>
+    <string name="sp_phone_name_title">Phone name</string>
+    <string name="sp_phone_name_dialog_title">Edit phone name</string>
+    <string name="sp_phone_name_dialog_description">This will be your phone name for Bluetooth, Wi-Fi Direct, etc.</string>
+    <string name="sp_tablet_name_dialog_description">This will be your phone name for Bluetooth, Wi-Fi Direct, etc. This name applies to all users of this tablet.</string>
+    <string name="sp_phoneinformation_cdma">My phone number, MEID, etc.</string>
+    <string name="sp_phoneinformation_not_cdma">My phone number, IMEI, etc.</string>
+    <string name="status_smsc">SMS Centre</string>
+    <string name="sp_ManufacCompanyCountry_NORMAL">Manufacture company / Manufacture country</string>
+    <string name="sp_LGElecKorea_NORMAL">LG Electronics Inc. / Korea</string>
+    <string name="sp_WarningMsg_NORMAL">"A radio interference is possible
+while using this wireless equipment."</string>
+    <string name="sp_manufacture_mark_ucrf">"UCRF Mark "</string>
+    <string name="sp_PRL_update_warning_no_service_NORMAL">You cannot update PRL while the device is in no service.</string>
+    <string name="sp_Profile_update_warning_no_service_NORMAL">You cannot update profile while the device is in no service.</string>
+    <string name="sp_sp_Firmware_update_warning_no_service_NORMAL">You cannot update firmware while the device is in no service</string>
+    <string name="device_status_summary">Phone number, signal, etc.</string>
+    <string name="sp_dcm_status_summary_NORMAL">Phone number, Service state, etc.</string>
+    <string name="storage_settings_summary">Unmount USB storage, view available storage.</string>
+    <string name="status_number">My phone number</string>
+    <string name="status_prl_version">PRL Version</string>
+    <string name="sd_memory">USB storage</string>
+    <string name="memory_calculating_size">Calculating...</string>
+    <string name="memory_apps_usage">Apps</string>
+    <string name="sd_eject">Unmount shared storage</string>
+    <string name="sd_eject_summary">Unmount the internal USB storage</string>
+    <string name="sd_insert_summary">Insert USB card to mount it</string>
+    <string name="sd_mount">Mount USB storage</string>
+    <string name="sd_mount_summary">Mount the USB storage</string>
+    <string name="sd_format">Erase USB storage</string>
+    <string name="sd_format_summary">Erases all data on the internal USB storage, such as music and photos.</string>
+    <string name="dlg_confirm_unmount_title">Unmount USB storage?</string>
+    <string name="dlg_confirm_unmount_text">If you unmount the USB storage, some apps you are using will stop and may be unavailable until you remount the USB storage.</string>
+    <string name="dlg_error_unmount_title">Unmounting USB storage failed</string>
+    <string name="dlg_error_unmount_text">"Couldn't unmount USB storage. Try again later."</string>
+    <string name="unmount_inform_text">USB storage will be unmounted.</string>
+    <string name="apn_user">User name</string>
+    <string name="error_title">Attention</string>
+    <string name="error_name_empty">The Name field cannot be empty.</string>
+    <string name="master_clear_summary">Erase all data and restore default settings</string>
+    <string name="master_clear_desc">"This will erase all data from your phone's "<b>internal storage</b>", including:
+
+"<li>Your Google account</li>"
+"<li>System and app data and settings</li>"
+"<li>Downloaded apps</li></string>
+    <string name="master_clear_accounts">Following accounts are currently active:</string>
+    <string name="master_clear_desc_also_erases_external"><li>Music</li>"
+"<li>Image</li>"
+"<li>Other user data</li></string>
+    <string name="master_clear_desc_erase_external_storage">To clear music, pictures, and other user data, the <b>USB storage</b> needs to be erased.</string>
+    <string name="erase_external_storage">Erase USB storage</string>
+    <string name="erase_external_storage_description">Erase all the data on the internal USB storage, such as music or photos.</string>
+    <string name="master_clear_button_text">Reset phone</string>
+    <string name="master_clear_description">"This will erase all data from your phone's "<b>internal storage</b>", including:
+
+"<li>Your account information including Google account</li>"
+"<li>System and app data and settings</li>"
+"<li>Downloaded apps</li>"
+"<li>DRM licenses</li>"
+"<li>Music, image, document and backup file</li>"
+"<li>Other user data</li></string>
+    <string name="master_clear_description_upgrade">"This will erase all data from your phone's "<b>internal memory</b>", including:
+
+"<li>Your account information including Google account</li>"
+"<li>System and app data and settings</li>"
+"<li>Downloaded apps</li>"
+"<li>DRM licenses</li>"
+"<li>Music, image, document and backup file</li>"
+"<li>Other user data</li></string>
+    <string name="master_clear_description_Credentials">"This will erase all data from your phone's "<b>internal storage</b>", including:
+
+"<li>Your account information including Google account</li>"
+"<li>System and app data and settings</li>"
+"<li>Downloaded apps</li>"
+"<li>Credentials(e.g. credit cards) stored on the secure element</li>"
+"<li>DRM licenses</li>"
+"<li>Music, image, document and backup file</li>"
+"<li>Other user data</li></string>
+    <string name="master_clear_description_cmcc">"This will erase all data from your phone's "<b>internal memory</b>", including:
+
+"<li>System and app data and settings</li>"
+"<li>Downloaded apps</li>"
+"<li>DRM licenses</li>"
+"<li>Music, image, document and backup file</li>"
+"<li>Other user data</li></string>
+    <string name="backup_lg_service_title">LG Backup service</string>
+    <string name="backup_lg_service_description">Backup, scheduled backup, restore and quick data transfer are available</string>
+    <string name="media_format_title">Erase USB storage</string>
+    <string name="media_format_summary">Erases all data in USB storage.</string>
+    <string name="media_format_desc">Erase all USB storage? You will lose <b>all</b> stored data!</string>
+    <string name="media_format_button_text">Erase USB storage</string>
+    <string name="media_format_final_desc">"Erase the USB storage, deleting all files stored there? You can't reverse this action!"</string>
+    <string name="media_format_gesture_explanation">You must draw your unlock pattern to confirm that you want to erase the USB storage.</string>
+    <string name="usb_tethering_help_guide_tmus1">Use tethering to share your phone’s mobile data connection with a single computer over a USB cable.</string>
+    <string name="usb_tethering_help_guide_tmus2">To use your phone’s tethering capability, you must have the Smartphone Mobile HotSpot service added to your rate plan.</string>
+    <string name="usb_tethering_help_guide_tmus3">To tether your phone connect your phone to a computer with a USB cable and on your phone tap to select \"USB tethering\" located under \"Settings >> More… >> USB tethering &amp; Mobile HotSpot\". Tethering works with Windows®7, Windows Vista®, and Linux. For more information on tethering with operating systems, go to <a href="www.android.com/tether">www.android.com/tether</a> .</string>
+    <string name="usb_tethering_help_guide_tmus4">For Windows XP, you may have to install a USB driver on your computer before you can tether your phone. To install the drivers enter the following URL on your computer’s browser.</string>
+    <string name="usb_tethering_help_guide_tmus5">When you connect your phone to a computer with a USB cable, you can either share your mobile data connection by tethering OR you can share files—you cannot do both. Do not turn on tethering if you want to use your computer to access your phone’s memory card.</string>
+    <string name="usb_tethering_download_windows_driver">Download Windows XP Driver</string>
+    <string name="no_sim_card_message">Please install SIM card in order to share your phone’s data connection with other devices using Mobile Wi-Fi HotSpot or USB tethering for internet access.</string>
+    <string name="usb_tethering_storage_active_subtext">"Can't tether when USB storage in use"</string>
+    <string name="bluetooth_tethering_available_subtext">"Sharing this phone's internet connection"</string>
+    <string name="bluetooth_tethering_device_connected_subtext">"Sharing this phone's Internet connection to 1 device"</string>
+    <string name="bluetooth_tethering_devices_connected_subtext">"Sharing this phone's internet connection to %1$d devices"</string>
+    <string name="bluetooth_tethering_off_subtext">"Not sharing this phone's internet connection"</string>
+    <string name="bluetooth_tethering_overflow_error">Cannot tether to more than %1$d devices</string>
+    <string name="location_network_based">"Google's location service"</string>
+    <string name="location_neighborhood_level">Let apps use data from sources such as Wi-Fi and mobile networks to determine your approximate location</string>
+    <string name="about_settings">About phone</string>
+    <string name="regulatory_information">"Regulatory information "</string>
+    <string name="terms_title">Terms and Conditions</string>
+    <string name="system_tutorial_list_item_summary">Learn how to use your phone</string>
+    <string name="settings_license_activity_loading">Loading...</string>
+    <string name="settings_safetylegal_activity_loading">Loading...</string>
+    <string name="sp_carrier_legal_NORMAL">Carrier legal</string>
+    <string name="lock_settings_title">Screen security</string>
+    <string name="lockpattern_recording_inprogress">Release finger when done</string>
+    <string name="lockpattern_need_to_confirm">Draw pattern again to confirm</string>
+    <string name="lockpattern_pattern_confirmed_header">Your new unlock pattern</string>
+    <string name="lockpattern_hidden_pattern_title">Hidden pattern</string>
+    <string name="activity_not_found">Application is not installed on your phone.</string>
+    <string name="lock_title">Secure your phone</string>
+    <string name="lock_intro_message">"Protect your phone from unauthorized use by creating a personal screen unlock pattern. Slide your finger to connect at least four dots in any order on the next screen. 
+
+Ready to start? Touch Next."</string>
+    <string name="install_unknown_applications">Allow installation of non-Market apps</string>
+    <string name="install_all_warning">Your phone and personal data are more vulnerable to attack by apps from unknown sources. You agree that you are solely responsible for any damage to your phone or loss of data that may result from using these apps.</string>
+    <string name="external_data_size_label">USB storage data</string>
+    <string name="auto_launch_disable_text">No defaults set</string>
+    <string name="reset_app_preferences_desc">"This will reset all preferences for:
+
+"<li>Disabled apps</li>"
+"<li>Disabled app notifications</li>"
+"<li>Default applications for actions</li>"
+"<li>Background data restrictions for apps</li>"
+
+You will not lose any app data."</string>
+    <string name="filter_apps_onsdcard">USB storage</string>
+    <string name="no_applications">No apps</string>
+    <string name="sd_card_storage">USB storage</string>
+    <string name="recompute_size">Recomputing size...</string>
+    <string name="app_not_found_dlg_title">Application not found.</string>
+    <string name="security_settings_desc">This app can access the following on your phone:</string>
+    <string name="security_settings_desc_multi">This app can access the following on your phone. In order to improve performance and reduce memory usage, some of these permissions are available to %1$s because it runs in the same process as %2$s:</string>
+    <string name="computing_size">Computing...</string>
+    <string name="invalid_size_value">Unable to compute package size</string>
+    <string name="move_app_to_internal">Move to phone</string>
+    <string name="move_app_to_sdcard">Move to USB storage</string>
+    <string name="move_app_failed_dlg_title">Move application</string>
+    <string name="sp_App_Disable_DLG_Text_NORMAL">If you disable a built-in app, you cannot see this app in the phone and unexpected error may be occurred in other apps.</string>
+    <string name="service_manage_description">"%1$s: currently in use.  Touch Settings to control it."</string>
+    <string name="main_running_process_description">Main process in use</string>
+    <string name="runningservicedetails_stop_dlg_text">If you stop this service, some features of your phone may stop working correctly until you power it off and then on again.</string>
+    <string name="auto_caps">Auto-capitalisation</string>
+    <string name="auto_caps_summary">Capitalise first letter in sentences</string>
+    <string name="show_password_summary">Show password as you type</string>
+    <string name="user_dict_settings_all_languages">All languages</string>
+    <string name="testing_phone_info">Phone information</string>
+    <string name="configure_input_method">Setup input methods</string>
+    <string name="enable_adb_summary">Turn on debug mode when USB is connected</string>
+    <string name="keep_screen_on_summary">Screen will never timeout while charging</string>
+    <string name="dev_settings_warning_message">These settings are intended for development use only. They can cause your device and the applications on it to break or misbehave.</string>
+    <string name="enforce_read_external_title">Protect USB storage</string>
+    <string name="enforce_read_external_summary">Apps must request permission to read USB storage</string>
+    <string name="enforce_read_external_confirm_title">Protect USB storage?</string>
+    <string name="enforce_read_external_confirm_message">"When USB storage is protected, apps must request permission to read data from external storage.
+
+Some apps may not work until updated by their developers."</string>
+    <string name="accessibility_screen_magnification_summary">"When this feature is turned on, you can zoom in and out by triple-tapping the screen.
+
+While zoomed in, you can:
+"<li>Pan: Drag two or more fingers across the screen.</li>"
+"<li>Adjust zoom level: Pinch two or more fingers together or spread them apart.</li>"
+
+You can also temporarily magnify what's under your finger by triple-tapping and holding. In this magnified state, you can drag your finger to explore different parts of the screen. Lift your finger to return to your previous state.
+
+Note: Triple-tap for magnification works everywhere except the keyboard and navigation bar."</string>
+    <string name="accessibility_script_injection_button_disallow">Don’t Allow</string>
+    <string name="accessibility_service_security_warning_summary">%1$s can collect all of the text you type, except passwords. This includes personal data such as credit card numbers. It can also collect data about your interactions with the phone.</string>
+    <string name="accessibility_service_no_apps_message">TalkBack provides spoken feedback to help blind and low-vision users. Do you want to install it for free from Google Play Store?</string>
+    <string name="power_usage_not_available">Battery usage data not available</string>
+    <string name="power_idle">Phone idle</string>
+    <string name="usage_type_phone">Phone</string>
+    <string name="battery_desc_standby">Battery used when phone is idle</string>
+    <string name="battery_desc_bluetooth">Battery used by bluetooth</string>
+    <string name="battery_sugg_bluetooth_basic">"Turn off bluetooth when you aren't using it"</string>
+    <string name="battery_sugg_bluetooth_headset">Try connecting to a different bluetooth device</string>
+    <string name="tts_default_lang_summary">Set the language-specific voice for the spoken text</string>
+    <string name="tts_engine_error">The engine you selected is unable to run</string>
+    <string name="tts_engine_security_warning">"This speech synthesis engine may be able to collect all the text that will be spoken, including personal data like passwords and credit card numbers.  It comes from the %s engine. Enable the use of this speech synthesis engine?"</string>
+    <string name="tts_notif_engine_install_message">Enable new engine before use</string>
+    <string name="gadget_state_turning_on">Turning on</string>
+    <string name="gadget_state_turning_off">Turning off</string>
+    <string name="credentials_install">Install from storage</string>
+    <string name="credentials_install_summary">Install certificates from storage</string>
+    <string name="credentials_unlock">Enter password</string>
+    <string name="credentials_old_password">"Current password: "</string>
+    <string name="credentials_configure_lock_screen_hint">You must set a Lock screen PIN or password before you can use credential storage.</string>
+    <string name="emergency_tone_summary">Set behaviour when an emergency call is placed</string>
+    <string name="backup_data_title">Backup my data</string>
+    <string name="backup_data_summary">Backup app data, Wi-Fi passwords, and other settings to Google servers</string>
+    <string name="local_backup_password_summary_none">No password set for device backup to desktop</string>
+    <string name="local_backup_password_summary_change">Change or remove password for device backup to desktop</string>
+    <string name="backup_erase_dialog_title">Backup</string>
+    <string name="active_device_admin_msg">Phone administrator</string>
+    <string name="select_device_admin_msg">Phone administrators</string>
+    <string name="no_device_admins">No phone administrators available</string>
+    <string name="add_device_admin_msg">Activate phone administrator?</string>
+    <string name="device_admin_add_title">Phone administrator</string>
+    <string name="device_admin_status">This administrator is active and allows the app %1$s to perform the following operations.</string>
+    <string name="wifi_setup_title_connecting_network">Connecting to Wi-Fi network %s...</string>
+    <string name="wifi_setup_title_add_network">Add network</string>
+    <string name="wifi_setup_status_scanning">Scanning networks...</string>
+    <string name="wifi_setup_status_connecting">Connecting…</string>
+    <string name="wifi_setup_description_connecting">Connecting can take a few minutes...</string>
+    <string name="accessibility_sync_error">Sync error</string>
+    <string name="account_sync_settings_title">Sync settings</string>
+    <string name="sync_in_progress">Syncing now...</string>
+    <string name="sync_plug"><font fgcolor="#ffffffff">Welcome to Google sync!</font>" 
+A Google approach to synchronising data to allow access to your contacts, appointments, and more from wherever you are."</string>
+    <string name="header_data_and_synchronization">Data &amp; synchronisation</string>
+    <string name="really_remove_account_message">Removing this account will delete all of its messages, contacts, and other data from the phone!</string>
+    <string name="remove_account_failed">This account is required by some apps. You can only remove it by resetting the phone to factory defaults (which deletes all your personal data) in Settings > Backup &amp; reset.</string>
+    <string name="sync_item_title">Sync %s</string>
+    <string name="cant_sync_dialog_title">Cannot manually sync</string>
+    <string name="enter_password">Enter PIN/password to decrypt</string>
+    <string name="try_again">Try again</string>
+    <string name="misc_files_selected_count">Selected %1$d out of %2$d</string>
+    <string name="hdcp_checking_title">HDCP check</string>
+    <string name="hdcp_checking_dialog_title">Set HDCP checking behaviour</string>
+    <string name="strict_mode">Enable strict mode</string>
+    <string name="strict_mode_summary">Flash screen when apps operates for a long time on main thread</string>
+    <string name="pointer_location">Show touch data</string>
+    <string name="pointer_location_summary">Touch data is visible on screen</string>
+    <string name="show_touches_summary">Show visual feedback when screen is touched</string>
+    <string name="show_screen_updates">Show screen updates</string>
+    <string name="show_screen_updates_summary">Flash updated screen area</string>
+    <string name="show_cpu_usage_summary">CPU usage is visible on screen</string>
+    <string name="force_hw_ui_summary">Use 2D hardware acceleration in applications</string>
+    <string name="immediately_destroy_activities_summary">Force quit every activity on exiting apps</string>
+    <string name="data_usage_change_cycle">Change cycle...</string>
+    <string name="data_usage_app_restricted">Restricted</string>
+    <string name="data_usage_disable_mobile_limit">Limit mobile data usage</string>
+    <string name="data_usage_list_mobile">mobile</string>
+    <string name="data_usage_app_restrict_background_summary">Disable background data on mobile data network only. Wi-Fi will be used if available.</string>
+    <string name="data_usage_app_restrict_dialog_title">Restrict background data</string>
+    <string name="data_usage_app_restrict_dialog">"This feature may cause an app that depends on background data to stop working when Wi-Fi isn't available.
+
+You can find more appropriate data usage controls in the settings available within the app."</string>
+    <string name="data_usage_auto_sync_on_dialog">"Any changes you make to your accounts on the web will be automatically copied to your phone.
+
+Some accounts may also automatically copy any changes you make on the phone to the web. A Google Account works this way.
+
+To choose which kinds of information to sync within each account, go to Settings > Accounts."</string>
+    <string name="data_usage_limit_dialog_mobile">"Your mobile data connection will be disabled when the specified limit is reached.
+
+Since data usage is measured by your phone, and your carrier may account for usage differently, consider using a conservative limit."</string>
+    <string name="data_usage_restrict_background_title">Restrict background data</string>
+    <string name="data_usage_restrict_background_multiuser">"If you restrict background mobile data, some apps and services won't work unless you're connected to a Wi-Fi network.
+
+This setting affects all users on this phone."</string>
+    <string name="data_usage_total_during_range">%2$s: about %1$s used</string>
+    <string name="data_usage_total_during_range_mobile">"%2$s: about %1$s used, as measured by your phone. Your carrier's data usage accounting may differ."</string>
+    <string name="data_usage_metered_body">Select the Wi-Fi networks which are mobile hotspots. Apps can be restricted from using these networks when in the background. Apps may also warn before using these networks for large downloads.</string>
+    <string name="vpn_username">User name</string>
+    <string name="vpn_edit">Edit VPN network</string>
+    <string name="vpn_connect_to">Connect to %s</string>
+    <string name="vpn_create">Add VPN network</string>
+    <string name="vpn_menu_edit">Edit network</string>
+    <string name="vpn_menu_delete">Delete network</string>
+    <string name="spellcheckers_settings_title">Spelling correction</string>
+    <string name="sel_sub_summary">Select the Subscription for SUB-1 and SUB-2</string>
+    <string name="multi_sim_settings_summary">Set up Multi SIM Settings for Voice, Data and SMS</string>
+    <string name="voice_summary">Select Subscription for Voice Call</string>
+    <string name="data_summary">Select Subscription for Data Call</string>
+    <string name="sms_summary">Select the Subscription for Sending SMS</string>
+    <string name="user_settings_title">Users &amp; restrictions</string>
+    <string name="user_list_title">Users</string>
+    <string name="user_cannot_manage_message">"Only the phone's owner can manage users."</string>
+    <string name="user_remove_user_menu">Remove user</string>
+    <string name="user_confirm_remove_self_message">"You will lose your space and data on this phone. You can't undo this action."</string>
+    <string name="user_confirm_remove_message">"This user's space and data will disappear from this phone. You can't undo this action."</string>
+    <string name="user_adding_new_user">Adding new user...</string>
+    <string name="global_change_warning">This setting affects all users on this phone.</string>
+    <string name="sp_warning_msg_vzw_service_NORMAL">By selecting “VZW Location Services”, you are enabling Verizon Wireless and third party authenticated and validated location services to access certain location information available through this device and/or the network.</string>
+    <string name="sp_gesture_category_home_NOMAL">Home screen &amp; Applications list</string>
+    <string name="sp_gesture_summary_home_NOMAL">Press and hold item and tilt device to move item within Home screens or applications edit mode</string>
+    <string name="sp_gesture_summary_calls_NOMAL">Flip phone to silence incoming call</string>
+    <string name="sp_gesture_summary_alarms_NOMAL">Flip device to snooze/ stop alarm</string>
+    <string name="sp_gesture_summary_video_NOMAL">Flip phone to pause video</string>
+    <string name="sp_gesture_tilt_test_pressed_NOMAL">Tilt phone left or right.</string>
+    <string name="sp_gesture_help_desc_tilt_NOMAL">Tilt phone left or right while holding item to move within Home screens or edit mode of apps.</string>
+    <string name="sp_gesture_help_desc_flip_NOMAL">Flip device to mute incoming calls, snooze/ stop alarm or pause playing video.</string>
+    <string name="gesture_move_home_fixed">To move an icon to another screen, touch and hold the icon and tilt the phone left or right, then let go on the screen where you want the icon</string>
+    <string name="sp_gesture_summary_home_NORMAL">Press and hold item and tilt phone to move item within Home screens or apps</string>
+    <string name="sp_gesture_title_gallery_browse_NORMAL">Browse items in gallery</string>
+    <string name="sp_gesture_summary_gallery_browse_NORMAL">Tap left or right side of phone to view previous or next item</string>
+    <string name="sp_ges_help_flip_call_sum_NORMAL">Flip phone to silence incoming call</string>
+    <string name="sp_ges_help_flip_alarm_sum_NORMAL">Flip phone to snooze or stop alarm</string>
+    <string name="sp_ges_help_flip_video_sum_NORMAL">Flip phone to pause video</string>
+    <string name="sp_gestures_summary_alarm_NORMAL">Flip phone to snooze or stop alarm</string>
+    <string name="sp_gestures_summary_video_NORMAL">Flip phone to pause video</string>
+    <string name="sp_gesture_ghome_NORMAL">Scroll Home screens (+ G key)</string>
+    <string name="sp_gesture_gcall_end_NORMAL">End calls (+ G key)</string>
+    <string name="sp_gesture_gcamera_sum_NORMAL">Press and hold G key and shake phone to jump to camera mode in Lock screen</string>
+    <string name="sp_gesture_panning_web_sum_NORMAL">Panning in web pages (+ G key)</string>
+    <string name="sp_rcs_e_terms_title_NORMAL">Terms and conditions</string>
+    <string name="gesture_summary_alarms_help">Flip device to snooze/ stop alarm</string>
+    <string name="gesture_knockon_answerme">Answer Me</string>
+    <string name="gesture_knockon_others">Others</string>
+    <string name="gesture_help_summary_turn_screen_on">Quickly double-tap centre screen to turn it on. Screen will be turned off when you double-tap status bar or empty area on LG Home screen and Lock screen. KnockON works better when phone position stands still. Calibrate the motion sensor to improve accuracy.</string>
+    <string name="gesture_summary_turn_screen_on">"Double-tap phone quickly to turn screen on "</string>
+    <string name="gesture_summary_hide_display">Put your palm on display for a second to hide upper part of the screen. Put it again to clear.</string>
+    <string name="gesture_fade_out_ringtone_summary">During an incoming call, pick up the phone from the flat surface to fade out the ringtone</string>
+    <string name="gesture_answer_the_incoming_call_summary">During an incoming call, bring the phone to your ear to answer the call</string>
+    <string name="gesture_turn_onoff_speakerphone_summary">During a call, put the phone on the flat surface to turn on speakerphone and pick up the phone and bring it to ear to turn it off</string>
+    <string name="gesture_fade_out_ringtone_help_desc">During the incoming call, pick up the phone from the flat surface to fade out the ringtone.</string>
+    <string name="gesture_answer_the_incoming_call_help_desc">During the incoming call, bring the phone to ear to accept the incoming call.</string>
+    <string name="gesture_turn_onoff_speakerphone_help_desc">During a call, put the phone on the flat surface to turn on speakerphone and pick up the phone and bring it to ear to turn it off.</string>
+    <string name="sp_one_hand_dial_keypad_summary2_NORMAL">Tap LEFT arrow or RIGHT arrow to adjust the position of dial keypad</string>
+    <string name="sp_one_hand_lg_keyboard_summary3_NORMAL">Tap LEFT arrow or RIGHT arrow to adjust the position of LG keyboard</string>
+    <string name="sp_one_hand_lockscreen_summary2_NORMAL">Tap LEFT arrow or RIGHT arrow to adjust the position of PIN</string>
+    <string name="sp_one_hand_keyboard_gesture_summary3_NORMAL">Swipe the keyboard left or right to adjust the position of LG keyboard</string>
+    <string name="sp_one_hand_help2_dial_keypad_NORMAL">Tap arrow to move the dial keypad to the left or right side of the display in order to use it easily with one hand.</string>
+    <string name="sp_one_hand_help2_lg_keyboard_NORMAL">Swipe the keyboard or tap arrow to move the LG keyboard to the left or right side of the display in order to use it easily with one hand.</string>
+    <string name="sp_one_hand_help2_lockscreen_NORMAL">Tap arrow to move the PIN input keypad to the left or right side of the display in order to use it easily with one hand.</string>
+    <string name="sp_one_hand_call_screen_summary_NORMAL">Tap LEFT arrow or RIGHT arrow to adjust the position of button of call screen</string>
+    <string name="sp_one_hand_help_call_screen_NORMAL">Tap arrow to move the button of call screen to the left or right side of the display in order to use it easily with one hand.</string>
+    <string name="one_hand_floating_front_touch_buttons_summary_hardkey_disabled">Navigation buttons can not be used with Universal touch</string>
+    <string name="sp_one_hand_pull_down_screen_summary_NORMAL">Swipe the screen down to easily tap and view call logs, messages, e-mail list or Internet pages</string>
+    <string name="sp_one_hand_help_pull_down_screen_NORMAL">Swipe down with one hand to easily view call logs, messages, e-mail messages, and Internet logs or to pull down the screen to enter an Internet address.</string>
+    <string name="sp_hotkey_NORMAL">QButton</string>
+    <string name="sp_hotkey_information_NORMAL">Select apps you wish to get quick access to using QButton</string>
+    <string name="sp_q_button_NORMAL">QuickButton</string>
+    <string name="sp_q_button_information_NORMAL">Select apps you wish to get quick access to using QuickButton</string>
+    <string name="reset_settings_more_info_desc">"If you have changed your system settings, resetting settings returns your phone back to the way it originally behaved.
+Keep in mind that selecting \"reset settings\" may cause changes to some of the customizations you have made, such as the ringtone you have selected, the brightness of the screen, and the behavior of the keyboard."</string>
+    <string name="sp_reset_sensor_desc_NORMAL">Place the phone on a flat surface. When you are ready, press the calibration button at the bottom</string>
+    <string name="sp_pouch_pick_photo_from_gallery_NORMAL">Pick from gallery</string>
+    <string name="sp_pouch_userimage_menu_gallery_NORMAL">Pick from gallery</string>
+    <string name="sp_pouch_launch_noti_summury_NORMAL">Launch app for notification when phone is pulled out while notification is displayed.</string>
+    <string name="sp_pouch_launch_noti_description_NORMAL">Select for what notifications the app will be launched when phone is pulled out.</string>
+    <string name="sp_pouch_missed_call_summury_NORMAL">Launches Phone app on missed call events.</string>
+    <string name="sp_pouch_message_title_NORMAL">messages</string>
+    <string name="sp_pouch_voice_message_summury_NORMAL">Launches Phone app on voice message events.</string>
+    <string name="sp_pouch_email_title_NORMAL">E-mail</string>
+    <string name="sp_pouch_email_summury_NORMAL">Launches E-mail app on E-mail events.</string>
+    <string name="sp_sensor_calibrating_NORMAL">"Calibrating…
+Do not move phone."</string>
+    <string name="sp_sensor_calibration_desc_NORMAL">Place phone on flat surface. When ready, tap Calibrate sensor.</string>
+    <string name="sp_motion_sensor_calibration_summary_NORMAL">Improve the accuracy of the tilt and speed of the sensor</string>
+    <string name="screen_off_effect_circle_ex">Black hole</string>
+    <string name="auto_adjust_screen_tone_summary">Save battery power by adjusting screen brightness automatically with analysis of image colour</string>
+    <string name="sp_usb_always_ask_desc_NORMAL">Ask USB connection mode when connecting to a computer</string>
+    <string name="sp_connectivity_help_03_NORMAL"><b>Media sync(MTP)</b></string>
+    <string name="sp_connectivity_help_04_NORMAL">You can synchronise your phone with Windows media player to facilitate the transfer and management of media files.</string>
+    <string name="sp_connectivity_help_05_NORMAL">- MTP works with Windows Vista and Windows 7</string>
+    <string name="sp_connectivity_help_06_NORMAL">- MTP also works with Windows XP if Windows media player 10 or latest versions are installed</string>
+    <string name="sp_connectivity_help_07_NORMAL">- On Mac or other OSs, you can transfer files between computer and your phone by installing MTP software to your computer</string>
+    <string name="sp_connectivity_help_09_NORMAL">"You can tether your phone to your computer with a USB cable, to share your phone's Internet connection with your computer."</string>
+    <string name="sp_connectivity_help_10_NORMAL">- Tethering works with Windows Vista, Windows 7 and Linux</string>
+    <string name="sp_connectivity_help_11_NORMAL">"- You can't mount your phone's SD card on your computer when USB is tethered"</string>
+    <string name="sp_connectivity_help_12_NORMAL">- For more information, including using USB tethering with other OSs see http://www.android.com/tether#usb</string>
+    <string name="sp_connectivity_help_15_NORMAL">You can use helpful LG software installed in your computer by connecting via USB.</string>
+    <string name="sp_connectivity_help_17_NORMAL"><b>Camera(PTP)</b></string>
+    <string name="sp_connectivity_help_18_NORMAL">You can connect your phone as camera to facilitate the transfer and management of photos or videos (When MTP is not supported, you can transfer files between computer and your phone with PTP connection).</string>
+    <string name="sp_connectivity_help_19_NORMAL">- PTP works with Windows Vista, Windows 7 and Mac</string>
+    <string name="sp_connectivity_help_20_NORMAL">- On Linux or other OSs, you can use PTP connection by installing PTP software to your computer</string>
+    <string name="usbtype_mtp_summary2">Transfer files in Windows; for Macs, use Android file transfer (see www.android.com/filetransfer)</string>
+    <string name="sp_usbtype_pcsoftware_summary_NORMAL">Connect to LG mobile computer software</string>
+    <string name="sp_usbtype_ptp_summary_NORMAL">Transfer photos by connecting as a camera (transfer files when MTP is not supported)</string>
+    <string name="sp_askon_summary_NORMAL">Ask USB connection type when connection to PC</string>
+    <string name="sp_usbtype_tethering_summary_NORMAL">Share mobile network of the phone with computers</string>
+    <string name="sp_connectivity_help_mass_storage_NORMAL">Mass storage mode enables you to transfer files between a storage in your phone and your computer when you connect your device to your computer via USB.</string>
+    <string name="sp_connectivity_help_modem_NORMAL">You can use your phone as a modem for a dial-up network.</string>
+    <string name="sp_connectivity_hep_charge_NORMAL">You can charge your phone via USB without any data interaction.</string>
+    <string name="sp_usb_storage_help_NORMAL">USB storage mode enables you to transfer files between a storage in your phone and your computer when you connect your device to your computer via USB</string>
+    <string name="sp_tether_exc_code_33_NORMAL">To enable tethering on this device, go to att.com/mywireless or dial 611.</string>
+    <string name="sp_usb_tether_intro_usc_link_NORMAL">Smartphone Modem Terms</string>
+    <string name="sp_pc_suite_wifi_connection_allow_summary_NORMAL">Allow Wi-Fi connection to transfer music and images between computer and phone</string>
+    <string name="sp_osp_wifi_connection_summary_NORMAL">"Allow Wi-Fi connection  to view and control your phone screens using your computer"</string>
+    <string name="pc_connection">PC connection</string>
+    <string name="sp_car_home_summary_NORMAL">Automatically start Car Home when the phone is mounted on car cradle</string>
+    <string name="sp_desk_home_summary_NORMAL">Automatically start Desk Home when the phone is mounted on desk cradle</string>
+    <string name="sp_media_home_summary_NORMAL">Automatically start Media Home when the phone is connected to the MHL cable or mounted on the desk cradle</string>
+    <string name="sp_pouch_mode_summary_NORMAL">Automatically start Pouch mode when the phone is put into pouch</string>
+    <string name="sp_3d_settings_NORMAL">3D settings</string>
+    <string name="sp_3d_warning_popup2_NORMAL">When viewing 3D content it is recommended to take a break if your eyes are tired or you experience any dizziness.</string>
+    <string name="sp_tether_settings_summary_usb_NORMAL">"Share your phone's mobile data connection via USB"</string>
+    <string name="sp_usb_tether_active_summary_NORMAL">Set USB connection to internet connection mode</string>
+    <string name="sp_usb_tether_help_sub_title_NORMAL">"Share your phone's Internet connection with your PC using a USB cable."</string>
+    <string name="sp_usb_tethering_help_content1_NORMAL">Connect your phone and a PC with a USB cable</string>
+    <string name="sp_usb_tethering_help_content2_NORMAL">Set USB connection mode to \"Internet connection\".</string>
+    <string name="sp_usb_tethering_help_content3_NORMAL">"Turn on \"Mobile Broadband Connect\" to share your phone's Internet connection with your PC"</string>
+    <string name="sp_usb_tethering_help_content4_NORMAL">Mobile Broadband Connect is now active.</string>
+    <string name="sp_lg_software_help_pcsuite_NORMAL">PC Suite helps you manage media contents and applications in your phone through connecting phone to your PC.</string>
+    <string name="sp_lg_software_help_osp_NORMAL">On-Screen Phone allows you to remotely control your phone through PC via USB or Wi-Fi connection.</string>
+    <string name="sp_lg_software_help_desc01_1_NORMAL">%1$s can be downloaded from %2$s.</string>
+    <string name="sp_lg_software_help_desc02_NORMAL">Install %s onto your PC.</string>
+    <string name="sp_lg_software_help_desc03_NORMAL">Connect your phone to PC via USB cable or Wi-Fi.</string>
+    <string name="sp_lg_software_help_desc04_NORMAL">Launch %s on PC.</string>
+    <string name="sp_usbtether_may_incur_charges_NORMAL">USB tethering may incur mobile network charges.</string>
+    <string name="sp_usb_connecting_NORMAL">Connecting…</string>
+    <string name="sp_cdma_roaming_mode_NORMAL">CDMA roaming mode</string>
+    <string name="def_ask_remove_all_dialog_message">All number will be deleted.</string>
+    <string name="def_update_failed_dialog_message">Update Failed</string>
+    <string name="sp_apn_settings_NORMAL">Access point names</string>
+    <string name="sp_format_not_support_NORMAL">"'%s' format not supported."</string>
+    <string name="body_your_phone_will_alert">Your phone will alert you when your mobile data usage reaches the warning amount you set below.</string>
+    <string name="body_your_mobile_data_turn_off">"Your mobile data connection will be turned off when your data usage reaches the limit you set below.
+
+Data usage is measured by your phone. Your carrier may account for usage differently, so consider setting a limit that’s a little lower than your data plan."</string>
+    <string name="sp_regulatory_information_NORMAL">"Regulatory information "</string>
+    <string name="e911_only_summary">E911 Location cannot be turned off on any mobile cellular phone</string>
+    <string name="sp_wifi_auto_on_summary_NORMAL">Automatically turn on Wi-Fi when launching apps, if Wi-Fi is turned off.</string>
+    <string name="sp_email_sns_accounts_NORMAL">E-mail/SNS accounts</string>
+    <string name="sp_email_sns_desc_NORMAL">These accounts set up e-mail, social networks.</string>
+    <string name="sp_owner_info_skt_NORMAL">Contact for lost</string>
+    <string name="sp_owner_info_skt_summary_NORMAL">Show contact on Lock screen</string>
+    <string name="roamingnotification_for_lgt">International roaming charge will be applied while using roaming service(messaging and voice) from abroad.</string>
+    <string name="sp_Mobile_Network_Charge_NORMAL">Mobile network charges may apply</string>
+    <string name="sp_wifi_description_NORMAL">Data service is not available when Wi-Fi is not connected</string>
+    <string name="sp_email_accounts_NORMAL">E-mail accounts</string>
+    <string name="sp_quiet_time_summary_NORMAL">Set Quiet time to turn off sounds except alarm and media</string>
+    <string name="sp_sim_change_failed_enable_sim_lock_NORMAL">"Unable to Change SIM/RUIM PIN.
+ Enable SIM/RUIM LOCK."</string>
+    <string name="sp_sim_lock_change_not_supported_NORMAL">"Unable to Change SIM PIN.
+ Enable SIM LOCK."</string>
+    <string name="sp_choose_lock_password_NORMAL">Set new password</string>
+    <string name="sp_choose_lock_pin_NORMAL">Set new PIN</string>
+    <string name="sp_password_guide2_NORMAL">Tap Continue when done</string>
+    <string name="sp_incorrect_pin_MLINE">"Wrong PIN
+Try again"</string>
+    <string name="sp_incorrect_password_MLINE">"Wrong password
+Try again"</string>
+    <string name="sp_kr_location_gps_NORMAL">Use GPS Satellites</string>
+    <string name="sp_kr_location_gps_noncheck_NORMAL">"See accurate location outdoors
+(can take a long time)"</string>
+    <string name="sp_kr_location_gps_check_NORMAL">"See accurate location outdoors
+(can be affected by surrounding environment)"</string>
+    <string name="sp_none_lock_NORMAL">No Lock screen</string>
+    <string name="sp_custom_lock_NORMAL">Customize Lock screen widgets</string>
+    <string name="sp_pattern_guide_MLINE">"After 5 failed pattern attempts you can use Google account to unlock phone.
+
+Ready to start? Tap Next."</string>
+    <string name="sp_lock_into_message_NORMAL">Protect your phone from unauthorized use by creating a personal screen lock pattern. Slide finger to connect at least four dots in any order on the next screen.</string>
+    <string name="sp_kr_contact_lost_skt_summary_NORMAL">Show contact for lost on Lock screen</string>
+    <string name="sp_select_wall_NORMAL">Set wallpaper</string>
+    <string name="sp_screen_widget_shorcuts_NORMAL">Clocks &amp; shortcuts</string>
+    <string name="sp_widget_shorcuts_summary_NORMAL">Customize clocks and shortcuts on Lock screen</string>
+    <string name="sp_clock_shorcuts_summary_NORMAL">Customize clocks and shortcuts on Lock screen</string>
+    <string name="sp_erase_internal_memory_summary_NORMAL">Erase all data on internal USB storage, including music and photos.</string>
+    <string name="sp_sd_format_summary_NORMAL">Erases all data on the internal USB storage, including music and photos.</string>
+    <string name="sp_sd_eject_summary_NORMAL">Unmount internal USB storage.</string>
+    <string name="sp_sd_mount_summary_NORMAL">Mount USB storage</string>
+    <string name="sp_sd_insert_summary_NORMAL">Insert USB card to mount it</string>
+    <string name="sp_lock_pw_sequential_NORMAL">"Sequential characters '%s' are not allowed."</string>
+    <string name="sp_block_usb_thering_NORMAL">USB tethering is disabled by server policy</string>
+    <string name="sp_lgmdm_phone_encryption_done">Phone encryption is controlled by server policy</string>
+    <string name="sp_lgmdm_block_airplane_NORMAL">Airplane mode is disabled by server policy</string>
+    <string name="sp_lgmdm_block_password_typing_visible_NORMAL">Password typing visible is disabled by server policy</string>
+    <string name="sp_lgmdm_block_setting_wifi_profile_NORMAL">Profile setting is disabled by server policy</string>
+    <string name="sp_lgmdm_lab_dis_multiuser_NORMAL">Prevent login of Multi user</string>
+    <string name="sp_brightness_over_max_NORMAL">Unable to brighten more due to temperature increase.</string>
+    <string name="sp_encrypt_device_NORMAL">Encrypt phone</string>
+    <string name="sp_encrypt_device_summary_NORMAL">Require a PIN or password to decrypt your device each time you power it on</string>
+    <string name="sp_sd_encryptin_storage_summary_NORMAL">Require a PIN or password to decrypt your storage each time you insert SD card</string>
+    <string name="sp_unkown_popup_NORMAL">Phone and personal data are more vulnerable to attacks by apps from unknown sources. Agree that you are solely responsible for any damage to your phone or loss of data that can result from using these apps.</string>
+    <string name="sp_credentials_configure_lock_screen_hint_NORMAL">You must change screen lock before you use credential storage.</string>
+    <string name="sp_dlg_checkbox_NORMAL">"Don't show this message again"</string>
+    <string name="sp_vc_ringtone_title_NORMAL">VT ringtone</string>
+    <string name="sp_use_enable_sim_lock_NORMAL">Use after enabling SIM card lock</string>
+    <string name="sp_account_update_NORMAL">"Touch to update now
+%1$s"</string>
+    <string name="sp_data_enabled_uncheck_NORMAL">Data service is not available when Wi-Fi is not connected.</string>
+    <string name="sp_no_entitlement_NORMAL">The APN type cannot be set to entitlement</string>
+    <string name="can_not_save_one_letter_word">Cannot save one-letter word.</string>
+    <string name="sp_data_network_mode_enabled_desc_lgu_NORMAL">"It will incur additional charges if you are not using a flat rate pricing plan or you are using pay-services.
+Allow 3G/4G connection?"</string>
+    <string name="sp_data_network_mode_disabled_desc_lgu_NORMAL">"Data services will be limited when data connection is disallowed.
+Disallow 3G/4G connection?"</string>
+    <string name="sp_battery_info_status_charging_wireless_NORMAL">(Wireless)</string>
+    <string name="sp_sd_encryption_summary_NORMAL">Require a PIN or password to decrypt your device each time you power it on</string>
+    <string name="sp_sd_card_encryption_desc_MLINE">"You can encrypt your accounts, settings, downloaded apps and their data, media, and other files. You can disable encryption by performing disabling storage encryption.
+
+Only data created on storage after enabling storage encryption will be encrypted. Encrypted data can not be read in other devices. By disabling storage will not be encrypted.
+
+If you interrupt the process, you will lose some or all of your data."</string>
+    <string name="sp_sd_encryption_need_password_message_NORMAL">For encryption, you must set PIN or password for Lock screen. Do you want to continue?</string>
+    <string name="sp_mount_sdcard_fail_pin_desc_NORMAL">Fails to read data on SD card. It is not allowed to access to data encypted. Current PIN is required every time SD card is mounted.</string>
+    <string name="sp_mount_sdcard_fail_password_desc_NORMAL">Fails to read data on SD card. It is not allowed to access to data encypted. Current password is required every time SD card is mounted.</string>
+    <string name="sp_quad_core_control_NORMAL">Quad core control</string>
+    <string name="sp_quad_core_control_help_MLINE">"Eco mode extends battery life by dynamically optimizing CPU control policy.
+
+
+When Eco mode is turned off, Automatic mode is used to control the Quad cores to provide optimized system performance."</string>
+    <string name="sp_power_save_eco_mode_tip_NORMAL">Enabling Eco mode can extend battery life by dynamically optimizing CPU control policy</string>
+    <string name="sp_tuto_backuppin_desc2_MLINE">"If you fail to draw the correct pattern 5 times, press the button on the bottom of the screen, and the PIN code entry appears.
+Create a backup PIN code that is easy to remember. (E.g: Birthday, anniversary etc.)"</string>
+    <string name="sp_pattern_guide_kr_MLINE">"After 5 failed pattern attempts you can use Google account to unlock phone. (You can reset pattern lock at \"http://www.lgmobile.co.kr/\")
+
+Ready to start? Tap Next."</string>
+    <string name="sp_vpn_iwlan_running_NORMAL">WLAN is running. Try it later.</string>
+    <string name="sp_owner_text_size_NORMAL">Cannot enter more letters.</string>
+    <string name="sp_lgu_gps_desc_NORMAL">Let apps use assisted GPS data to improve GPS performance</string>
+    <string name="sp_vibrate_Email_NORMAL">E-mail</string>
+    <string name="sp_notification_summary_NORMAL">Blink LED light for notifications</string>
+    <string name="sp_title_notification_flash_setting_NORMAL">Notification flash items</string>
+    <string name="sp_checkbox_front_calendar_reminder_NORMAL">Calendar reminder</string>
+    <string name="sp_checkbox_front_key_social_event_NORMAL">Social + event</string>
+    <string name="sp_checkbox_front_key_email_NORMAL">E-mail</string>
+    <string name="sp_checkbox_front_key_felica_NORMAL">FeliCa</string>
+    <string name="sp_develop_enter_popup_NORMAL">Turning on developer options might result in irregular behaviour in your device. These options are recommended only for advanced users.</string>
+    <string name="sp_lock_title_time_NORMAL">Lock time</string>
+    <string name="sp_lock_screen_complete_popup_NORMAL">Lock screen changed</string>
+    <string name="sp_status_wdc_NORMAL">Warranty Date Code</string>
+    <string name="sp_front_key_indicator_summary2_NORMAL">"Front keys turn on for missed calls, SMS and sp-mode mail "</string>
+    <string name="sp_crypt_keeper_device_desc_MLINE">"You can encrypt your system data(accounts, settings, downloaded applications and other files) stored in the internal storage by pressing the corresponding \"Encrypt device\" button below. Once you encrypt your phone, you will be required to enter a numeric PIN or password to decrypt it each time you power it on: you cannot un-encrypt your device except by performing a factory reset, erasing all your data.
+
+Encryption takes an hour or more. You must start with a charged battery and keep your device plugged in until encryption is completed. If you interrupt the process, you will lose some or all of your data."</string>
+    <string name="sp_sd_encryption_storage_desc_MLINE">"You can encrypt your user data(downloaded applications, media and other files) stored in the internal storage or the SD card by pressing the corresponding \"Enable encryption\" button below. After you have enabled encryption, you may choose to disable it by pressing \"Disable encryption\" button. Once you encrypt your storage, you will be required to enter a numeric PIN or password to read encrypted data on SD card when PIN or password is changed without mounted SD card.
+
+Only the data created or updated after enabling encryption on the storage you have selected will be encrypted. Any data created or updated prior to enabling encryption will remain unencrypted. Once data is encrypted, you will not be able to use it in other devices. (Any data that is created or updated after disabling encryption will not be encrypted but the data that has been previously encrypted will remain encrypted.)
+
+If you perform a factory reset, you are not able to read the encrypted data stored in the internal storage or the SD card even if you do not check 'Erase SD card'. If you want to keep your data, backup the data before you perform a factory reset. If you interrupt the process, you will lose some or all of your data."</string>
+    <string name="sp_vpn_manual_list">Manual Settings</string>
+    <string name="title_remote_control_settings">QRemote</string>
+    <string name="autorun_usb_driver_check2">"Checking computer...
+If a PC driver is already installed or your computer is a Mac, tap Skip."</string>
+    <string name="LauncherActivity_header_title">Select a setting to add a shortcut on Home screen</string>
+    <string name="develop_do_not_show">"Don't show this again"</string>
+    <string name="sp_lock_screen_display_swipe_summary_NORMAL">Show swipe Lock screen before secured Lock screen</string>
+    <string name="sp_security_encrypt_phone_summary_NORMAL">Encrypt all data on phone including system data. Require a numeric PIN or password to decrypt your phone each time you turn it on.</string>
+    <string name="sp_security_encrypt_detail_third_NORMAL">Encryption takes an hour or more. You must start with a charged battery and keep your phone plugged in until encryption is completed. If you interrupt the process, you will lose some or all of your data.</string>
+    <string name="sp_security_encrypt_detail_confirm_NORMAL">Encrypt phone? If you interrupt it, you will lose data. Encryption takes an hour or more, during which the device will restart several times.</string>
+    <string name="sp_security_unencrypt_detail_first_NORMAL">Phone is encrypted.</string>
+    <string name="sp_security_unencrypt_detail_second_NORMAL">"If you want un-encrypt all data stored in the internal storage including system data, tap 'Un-encrypt phone' button below."</string>
+    <string name="sp_security_unencrypt_detail_third_NORMAL">Un-encryption takes an hour or more. You must start with a charged battery and keep your phone plugged in until encryption is completed. If you interrupt the process, you will lose some or all of your data.</string>
+    <string name="sp_security_unencrypt_detail_confirm_NORMAL">Un-encrypt phone? If you interrupt it, you will lose data. Un-encryption takes an hour or more, during which the device will restart several times.</string>
+    <string name="sp_security_unencrypt_button_NORMAL">Un-encrypt phone</string>
+    <string name="sp_data_disable_lgt_NORMAL">"MMS connection and data services will be disabled, when data connection is disallowed.
+Disallow 3G/4G connection?"</string>
+    <string name="wise_ringtone_title">Wise ringtone</string>
+    <string name="easytouse_title">Mode Change</string>
+    <string name="easytouse_lock_screen">How to unlock the phone</string>
+    <string name="easytouse_home_starter_desc2">You tap a page indicator at the top of the screen to jump to your favourite apps, settings and contacts on the different Home screens.</string>
+    <string name="easytouse_lock_starter_desc2">You touch and hold the Unlock button to unlock the phone.</string>
+    <string name="easytouse_home_standard_desc1">Useful widgets and apps are placed on Home screen.</string>
+    <string name="easytouse_lock_standard_desc2">You swipe in any direction to unlock the phone.</string>
+    <string name="sp_storage_sd_card_full_dec3_NORMAL">Encryption takes an hour or more. You must start with a charged battery and keep your phone plugged in until encryption is completed. If you interrupt the process, you will lose some or all of your data.</string>
+    <string name="encrypt_other_device_msg">SD card has inaccessible data. If you want to use the SD card on this phone, format it first.</string>
+    <string name="crypt_keeper_setup_description_un">Wait while your phone is being unencrypted. ^1% complete.</string>
+    <string name="sp_home_button_led_calendar_summary">LED light is on when Calendar notification is set</string>
+    <string name="sp_home_button_led_alarm_summary">LED light is displayed when Alarm is set</string>
+    <string name="sp_emotional_led_gps_summary">LED light is on when GPS is turned on</string>
+    <string name="emotional_led_felica">Osaifu-keitai, NFC</string>
+    <string name="sp_emotional_led_incoming_call_summary_dcm">LED light is on when there is an incoming call</string>
+    <string name="sp_emotional_led_missed_event_reminder">Missed event reminder</string>
+    <string name="sp_emotional_led_missed_event_reminder_summary">LED light is displayed to remind you of missed event(s)</string>
+    <string name="sp_emotional_led_reminder_missed_call">Missed call</string>
+    <string name="sp_emotional_led_reminder_email">E-mail</string>
+    <string name="sp_emotional_led_reminder_msg">Messaging</string>
+    <string name="sp_emotional_led_download_apps">Downloaded apps</string>
+    <string name="sp_emotional_led_download_apps_summary">LED light is displayed for the Download apps with LED Notification on</string>
+    <string name="sp_emotional_led_incoming_call_favorite">Favourites incoming call</string>
+    <string name="emotional_led_favorite_contacts_title">Favourite contacts</string>
+    <string name="emotional_led_favorite_contacts_summary">LED light is displayed in case of calls/video calls or missed events from Favourite contacts. With this setting off, incoming call LED light is on for all incoming calls and missed event LED light for all missed events.</string>
+    <string name="sp_home_button_led_summary">Multi-pattern colour Home button LED lighting appears depending on item(s) you select. Select the item you wish to apply LED lighting.</string>
+    <string name="sp_home_button_battery_charging_summary">LED light is on while charging battery</string>
+    <string name="sp_home_button_led_reminder_summary">Set LED display reminder for missed calls, messages and email. Missed event LED will appear only when the screen is off.</string>
+    <string name="sp_tether_summary_DCM_NORMAL">"Share your phone's mobile data connection via a USB or as a Wi-Fi hotspot"</string>
+    <string name="sp_ts_ringtones_NORMAL">TS RINGTONES</string>
+    <string name="sp_vibrate_create_pattern_short_repeated">Short repeated</string>
+    <string name="vibration_creator_title">Vibration creator</string>
+    <string name="vibrate_pattern_short_repeated">Short repeated</string>
+    <string name="vzw_popup_show_check">"Don't show me this again"</string>
+    <string name="vzw_location_services_dec">By selecting this setting, you are enabling Verizon Wireless and third party authenticated and validated location services to access certain location information available through this device and/or the network. Data usage will apply.</string>
+    <string name="sp_MannerMode_DCM">Manner mode</string>
+    <string name="lock_sounds_enable_summary_on">Play sound when locking and unlocking the screen</string>
+    <string name="sp_quiet_mode_scheduled_time_NORMAL">Scheduled time</string>
+    <string name="sp_quiet_mode_incoming_call_setting_NORMAL">Incoming call settings</string>
+    <string name="sp_quiet_mode_contact_allowed_favorites">Favourites</string>
+    <string name="sp_quiet_mode_contact_delete_contact_item_NORMAL">Delete contacts</string>
+    <string name="sp_quiet_mode_category_blocked_settings_activity">Block incoming call</string>
+    <string name="sp_dlg_exit_quiet_mode">"Device is on Quiet mode. 
+You should exit Quiet mode to change sound profile. Exit Quiet mode now?"</string>
+    <string name="sp_quiet_mode_auto_reply_guide">"When receiving calls from contact registered numbers, send auto reply message as below. "</string>
+    <string name="sp_quiet_mode_description"><li>Turn off all sounds except alarm and media.</li>"
+"<li>Block calls except calls from allowed contacts and repeated calls.</li></string>
+    <string name="sp_quiet_mode_blocked_calls">Auto reply to blocked calls</string>
+    <string name="sp_quiet_mode_allowed_calls">Select contacts to allow calls.</string>
+    <string name="sp_quiet_mode_schedule_check_popup">"Quiet mode will be activated automatically at the scheduled time.
+Until then, Quiet mode will appear off."</string>
+    <string name="sp_quiet_mode_contact_allowed_setting_summary">Allow or block incoming calls from certain contacts</string>
+    <string name="sp_quiet_mode_repeated_second_call_summary_NORMAL_ex">Second call from the same person within 3 minutes will ring</string>
+    <string name="sp_quiet_mode_description_new">"Turn sound profile to silent which  mute all sounds except alarms and media.
+
+Allow repeat calls or calls from certain contacts to ring.
+
+New messages will not turn the screen on."</string>
+    <string name="sp_quiet_mode_allowed_call_settings_summary_main_activity_ex">Allow repeat calls or calls from certain contacts. Set up auto-reply</string>
+    <string name="sp_quiet_mode_blocked_calls_ex">Auto reply to silenced calls</string>
+    <string name="hands_free_mode_off_summary">" Read out Incoming call and message event automatically"</string>
+    <string name="hands_free_mode_read_out_call_summary">Read out caller information</string>
+    <string name="hands_free_mode_read_out_message_summary">Read out sender information</string>
+    <string name="autorun_first_dialog_content">Install PC programs required when connected to computer.</string>
+    <string name="autorun_first_dialog_content_desc1">"- If you have installed on your computer, skip by checking Don't show this again."</string>
+    <string name="autorun_first_dialog_content_desc2">- You can install again via the options under Select USB connection method.</string>
+    <string name="autorun_usb_driver_check3">"Installing PC programs...
+Please check your PC."</string>
+    <string name="sp_data_networks_disabled_KT_NORMAL">WCDMA/LTE Data connection will be blocked. Then, MMS can not be used and your data sync will not be completed without Wi-Fi connection.</string>
+    <string name="sp_data_popup_checked">"Don't show this again"</string>
+    <string name="sp_encryption_settings_enable_NORMAL">Encryption settings</string>
+    <string name="sp_encryption_settings_disable_NORMAL">Un-encryption settings</string>
+    <string name="sp_encryption_multimedia_NORMAL">Multimedia file settings</string>
+    <string name="sp_encryption_guide_NORMAL">Encryption guide</string>
+    <string name="sp_encrypt_full_enable_NORMAL">All data on SD card is fully encrypted and New data on SD card will be encrypted.</string>
+    <string name="sp_encrypt_full_disable_NORMAL">All data on SD card is fully un-encrypted and Encryption disabled.</string>
+    <string name="sp_full_encryption_warning_msg">Full encryption is failed. To continue full encryption, Please un-encrypt your SD card first and try again.</string>
+    <string name="sp_full_encryption_fail_toast_NORMAL">The encryption of all data on SD card is failed. New data on SD card will be encrypted.</string>
+    <string name="sp_full_encryption_spaces_NORMAL">Encryption is failed. Please make more spaces on the SD card and try again.</string>
+    <string name="sp_storage_sd_card_full_dec0_NORMAL">Encrypted data is not available on other devices to prevent unauthorised use of your information</string>
+    <string name="uncrypt_keeper_failed_summary">"Un-encryption was interrupted and can't complete. As a result, the data on your phone is no longer accessible. 
+
+To resume using your phone, you must perform a factory reset. When you set up your phone after the reset, you'll have an opportunity to restore any data that was backed up to your Google Account."</string>
+    <string name="sp_data_usage_autosync_on_dialog">"Any changes you make to your accounts on the web will be automatically copied to your phone.
+
+Some accounts may also automatically copy any changes you make on the phone to the web. A Google Account works this way.
+
+To choose which kinds of information to sync within each account, go to Settings > Accounts &amp; sync."</string>
+    <string name="sp_security_encrypt_detail_change_NORMAL">You can encrypt your system data (accounts, settings, downloaded applications and other files) stored in the internal storage. Once you encrypt your phone, you will be required to enter a numeric PIN or password to decrypt it each time you power it on.</string>
+    <string name="sp_mobile_data_off_VZW_NORMAL">"Unless you use Wi-Fi, you will no longer be able to use the Internet, e-mail or other apps that require a data connection. 
+
+Turn off the mobile data connection?"</string>
+    <string name="sp_switch1_msg_location_NORMAL">Your phone can share its approximate location with apps, which is useful for things like maps, shopping and weather. Apps that use your location should inform you. Be cautious and read their policies carefully to understand how they collect, use and share your location information.</string>
+    <string name="sp_switch2_msg_location_NORMAL">Some apps may need more location information to work properly or for certain features such as turn-by-turn navigation or phone locator services. Sharing will result in data usage.</string>
+    <string name="sp_airplane_mode_on_vzw_JB_NORMAL">"Airplane mode is on.
+You will not be able to make or receive calls while in airplane mode."</string>
+    <string name="quickcover_summary_final">Activate the Quick Cover. The screen will be automatically turned on or off.</string>
+    <string name="quickcover_info_final1">This setting is for the Quick Cover. Other phone cases are not supported.</string>
+    <string name="quickcover_info_final2">To lock your phone automatically, activate the Quick Cover and close it. To unlock the phone, open the Quick Cover.</string>
+    <string name="quickcover_info_desc1">This setting is for the Quick Cover. Other phone cases are not supported.</string>
+    <string name="quickcover_info_final3">"Note that this auto-function is available only when your phone is set to unlock or swipe mode. "</string>
+    <string name="quickcover_help_desc">The rule is applicable only when Lock screen was not used or swipe was used.</string>
+    <string name="unused_apps">Idle apps</string>
+    <string name="sp_MobileNetSummary_NORMAL">Data access always over Mobile network. Mobile network charges may apply.</string>
+    <string name="settings_tip_message">To switch between views, press the Menu key and then tap the other option.</string>
+    <string name="sp_data_pay_popup_VZW_NORMAL">Your mobile data connection is turned off. Unless you use Wi-Fi, you will no longer be able to use the Internet, e-mail or other apps that require a data connection.</string>
+    <string name="emotional_led_battery_charging_off_text">LED light is displayed while charging battery with the phone off.</string>
+    <string name="emotional_led_area_mail_summary">LED light is on when you receive Area mail</string>
+    <string name="sp_encryption_low_charge_text_change">"Current battery is at %1$d%%.
+To encrypt your phone, charge the battery to above 80%%."</string>
+    <string name="encyption_not_battery_plug">"Current battery is at %1$d%%.
+To encrypt your phone, plug in your charger and charge the battery to above 80%%."</string>
+    <string name="led_apps_osaifu_summary">LED light is on while transferring data via NFC with Osaifu-Keitai, Android Beam or other NFC-enabled apps</string>
+    <string name="lollipop_quickcover_desc_3">"Note that this auto-function is available only when your phone is set to unlock or swipe mode. "</string>
+    <string name="lollipop_quickcover_lollipop_title_white">QuickVu case (white)</string>
+    <string name="lollipop_quickcover_lollipop_title_black">QuickVu case (black)</string>
+    <string name="sp_home_button_led_alarm_summary_new">LED light is on when Alarm rings</string>
+    <string name="sp_smartshare_beam_summary_NORMAL">Enable to receive files from LG phones</string>
+    <string name="sp_data_roaming_background_restrict_uncheck_lgt_popup">Significant roaming charges may apply to the services with background data updates even not in use. Turn off Restrict background data?</string>
+    <string name="sp_data_roaming_background_restrict_lgt_summary">Restrict use of background data on global roaming</string>
+    <string name="sp_data_roaming_background_data_limit_lgt_Toast_popup">Background data connection is restricted. Service that keeps updated may not be up-to-date.</string>
+    <string name="sp_data_roaming_background_restrict_check_lgt_popup">No data connection will happen except while using data service. So you can prevent unnecessary data usage and charges. Restrict background data?</string>
+    <string name="sp_data_roaming_warning_lgt_Toast_popup">Your global roaming charges will cover data roaming. Significant additional charges may apply to use of background data such as Messenger and GPS.</string>
+    <string name="ask_uninstall_app_widget_message">This app and any associated widgets will be deleted. Continue?</string>
+    <string name="ask_disable_app_message">This app and any associated widgets will be disabled. Continue?</string>
+    <string name="backup_pin_dialog_msg">Backup PIN has been inputted. Enter new backup PIN?</string>
+    <string name="sp_emotional_led_alarm_ring">Alarm</string>
+    <string name="sp_emotional_led_notification_title">Notification</string>
+    <string name="led_light">LED Light</string>
+    <string name="settings_tip_message_layout">Your phone supports two layouts for the Settings menu (list and tab view).</string>
+    <string name="led_brightness_category">LED brightness</string>
+    <string name="sp_data_roaming_charges_enable_lgt_popup">Your global roaming charges will cover data roaming. Note you cannot use background data. To access it, go to Settings> Global roaming and turn off Restrict background data.</string>
+    <string name="display_smart_on">Smart on</string>
+    <string name="display_smart_view">Smart view</string>
+    <string name="display_smart_video_summary">Pause video while playing automatically when phone detects you are not looking at the screen</string>
+    <string name="display_smart_video_popup_warning">(Applies to LG video player only.)</string>
+    <string name="slideaside_help_guide">Use three-finger swipe to save running apps to the left or bring them back to the display.</string>
+    <string name="accessory_quick_case_title">Quick Case</string>
+    <string name="accessory_usb_storage_summary">All USB storage devices connected to phone via OTG USB cable</string>
+    <string name="app_name">Unused apps</string>
+    <string name="sp_text_link_help_01">Text Link recommends apps relating to selected text.</string>
+    <string name="noti_initialGuideText02_2">- Touch the text in a message bubble.</string>
+    <string name="textlink_main_summary">Perform actions following text-related recommendations easy and fast.</string>
+    <string name="textlink_turnon_summary">Turn on Text Link in Message app</string>
+    <string name="display_case_view_help_first">This setting is for the Quick Cover View case. Other phone cases are not supported.</string>
+    <string name="display_camera_case_title">Quick Camera Case</string>
+    <string name="display_camera_case_menu">Quick Camera Case setting</string>
+    <string name="display_camera_case_desc">Open the Quick Camera Case to launch the camera app automatically.</string>
+    <string name="display_camera_case_help_first">This setting is for the Quick Camera Case are not supported.</string>
+    <string name="display_camera_case_help_seconds">Activate the Quick Camera Case and open the rear lens cover to launch the camera app automatically.</string>
+    <string name="display_quick_cover_window_title">QuickWindow case</string>
+    <string name="display_quick_cover_window_desc">Activate the QuickWindow case which lets you see a small portion of the screen with the cover closed.</string>
+    <string name="display_quick_cover_window_menu">QuickWindow case setting</string>
+    <string name="display_quick_camera_case_desc2">Activate the Quick Camera Case to launch Camera automatically.</string>
+    <string name="display_quick_case_window_on">QuickWindow case is on</string>
+    <string name="display_quick_case_window_off">QuickWindow case is off</string>
+    <string name="display_quick_case_camera_on">Quick Camera Case is on</string>
+    <string name="display_quick_case_camera_off">Quick Camera Case is off</string>
+    <string name="display_quick_case_window_category">Front Quick Case</string>
+    <string name="display_quick_case_window_dec">Activate the QuickWindow case to use functions available on the small view window.</string>
+    <string name="display_quick_case_window_help_first">This setting is for the QuickWindow case. Other phone cases are not supported.</string>
+    <string name="display_quick_case_window_help_seconds">When QuickWindow case is on, features such as music, weather and clock are available in small view on the cover.</string>
+    <string name="sp_brightness_over_max_2_NORMAL">High brightness setting may increase temperature of your phone.</string>
+    <string name="display_front_touch_key_other">Other settings</string>
+    <string name="display_front_vzw_summary">Front touch key will light up when phone is in use</string>
+    <string name="sp_bluetooth_tethering_available_subtext">Sharing Internet connection…</string>
+    <string name="sp_bluetooth_tethering_device_connected_subtext">Sharing Internet connection with 1 device…</string>
+    <string name="sp_bluetooth_tethering_devices_connected_subtext">Sharing Internet connection with %1$d devices…</string>
+    <string name="impossible_unmount_sd_card">SD card not unmounted in USB connection mode. Disconnect phone from USB cable and try again.</string>
+    <string name="impossible_erase_sd_card">SD card not erased in USB connection mode. Disconnect phone from USB cable and try again.</string>
+    <string name="sp_data_roaming_lgu_popup_explanation">Your global roaming &lt;u>&lt;font color=#FF0000>charges will include data roaming. No plan in Korea is applied.&lt;/font>&lt;/u> &lt;br>&lt;br>&lt;u>&lt;font color=#FF0000>Restrict background data&lt;/font>&lt;/u> for mobile messenger and automatic weather updates to &lt;u>&lt;font color=#FF0000>prevent significant roaming charges.&lt;/font>&lt;/u></string>
+    <string name="sp_data_roaming_enable_lgu_Toast_popup">Automatic update will be restricted when background data is restricted.</string>
+    <string name="sp_data_roaming_warning_lgu_Toast_popup">Be careful of automatic sync and background data when roaming.</string>
+    <string name="sp_data_roaming_enable_check_lgu_Toast_popup">Data roaming is disabled. To turn it on, select in the quick settings and global roaming.</string>
+    <string name="display_daydream_off_dec">To view info such as clocks and images when the phone is sleeping while docked and/or charging, turn Daydream on</string>
+    <string name="display_daydream_off_dec_ex">To view info such as clocks and images when the phone is sleeping while charging, turn Daydream on</string>
+    <string name="lockscreen_friend_mode_pattern_instructions">Draw pattern to unlock screen for Friend mode</string>
+    <string name="lockscreen_changing_lock_type">Change lock type</string>
+    <string name="lockscreen_friend_mode_pop_up_msg">In Friend mode, unable to change lock screen type. To solve this problem, escape from Friend mode and try it again.</string>
+    <string name="lockscreen_guest_mode_pop_up_msg">In Guest mode, Lock screen type cannot be changed. To change it, exit Guest mode and try again.</string>
+    <string name="sp_usb_charger_title_ex_NORMAL">Charge phone</string>
+    <string name="sp_usbtype_charge_summary_ex_NORMAL">Charge phone</string>
+    <string name="sp_usbtype_tethering_summary_ex_NORMAL">Share mobile network of the phone with computers</string>
+    <string name="sp_usbtype_ptp_summary_ex_NORMAL">Send images from phone (Use when MTP is not supported)</string>
+    <string name="sp_smartshare_beam_summary_NORMAL_jb_plus">Turn on to receive multimedia content via SmartShare Beam from LG phone</string>
+    <string name="sp_airplane_mode_summary_NORMAL_jb_plus">Turn off all wireless connections (Wi-Fi, Bluetooth and data) and calls</string>
+    <string name="sp_bluetooth_tethering_off_subtext_jb_plus">Turn on Bluetooth tethering and connect other devices to phone via Bluetooth</string>
+    <string name="sp_settings_tethering_choice">"Connect other devices to your phone's Internet connection. Select connection method."</string>
+    <string name="display_daydream_summary_ex">Screensaver will be on when the phone is sleeping while docked and/or charging</string>
+    <string name="sp_data_network_yes_toast_msg_lgu">Access to mobile data connection will be allowed. Data connection may occur by user requests for data transfer, GPS, account sync, etc thru smart phone.</string>
+    <string name="sp_easysettings_bt_turning_on_NORMAL">Turning on...</string>
+    <string name="sp_user_popup_checkbox_NORMAL">"Don't show this again"</string>
+    <string name="sp_basic_vpn_create_NORMAL">Add Basic VPN network</string>
+    <string name="sp_data_usage_background_optimization">Background data optimization</string>
+    <string name="gesture_help_summary_turn_screen_on_tablet">"Double-tap the center screen quickly to turn screen on.
+Screen will be turned off when you double-tap status bar or empty area on LG Home screen and Lock screen."</string>
+    <string name="display_help_desc_1_ex">When front camera cannot detect your face.</string>
+    <string name="sp_smartscreen_summary_ex">Screen stays on when phone detects your face</string>
+    <string name="display_smart_video_summary_ex">Video pauses when phone cannot detect your face</string>
+    <string name="sp_weather_update_summary">"To use this feature, enable  Update data in Weather. Enable now?"</string>
+    <string name="nfc_popup_title_invalid_pin_KDDI">Enter NFC/Osaifu-Keitai lock number initialization PIN. If the wrong NFC/Osaifu-Keitai lock number initialization PIN is entered 10 times in a row, it will be locked. %d attempts remaining.</string>
+    <string name="nfc_popup_summary_invalid_puk_KDDI">"Wrong NFC/Osaifu-Keitai lock number initialization PIN. Check lock number and re-enter initialization PIN. 
+%d attempts remaining."</string>
+    <string name="nfc_no_uim_card">No UIM card in phone.</string>
+    <string name="sp_smartshare_beam_summary_Public">Turn on to receive multimedia content via SmartShare Beam from LG phones or tablets</string>
+    <string name="sp_data_disable_msg_mms_enabled_kt">"WCDMA/LTE data connection blocked. You can send or receive multimedia messages. To use data service, connect to Wi-Fi. "</string>
+    <string name="sp_data_disable_msg_mms_disabled_kt">"WCDMA/LTE data connection blocked. You cannot send or receive multimedia messages. To use data service, connect to Wi-Fi. "</string>
+    <string name="multi_users_enter_show_owner_info">Show owner info on Lock screen</string>
+    <string name="accessibility_category_physical_and_motor_title">Physical and motor</string>
+    <string name="accessibility_preference_invert_color_title">Invert colour</string>
+    <string name="sp_easy_access_ask_invert_color_text">Invert colour</string>
+    <string name="sp_easy_access_invert_color_is_on_text">Invert colour is on.</string>
+    <string name="sp_easy_access_invert_color_is_off_text">Invert colour is off.</string>
+    <string name="sp_assistive_touch_help_guide_text_01">You can use the physical buttons and multi-gestures with simple interaction such as one tap and drag.</string>
+    <string name="sp_universal_touch_help_guide_text_02">Draw \"C\" on Universal touch board, then will go to phone directly.</string>
+    <string name="sp_universal_touch_help_guide_text_03">Draw \"M\" on Universal touch board, then will go to message directly.</string>
+    <string name="sp_universal_touch_help_guide_text_04">Draw \"W\" on Universal touch board, then will go to web(internet) directly.</string>
+    <string name="sp_invertcolor_guide_text_2">Invert colour helps you view screen in greater colour contrast. With Invert colour on, tap and drag the screen to adjust contrast.</string>
+    <string name="sp_assistive_touch_gesture_item_pinch_contentdescription">You can pinch action by pressing this button</string>
+    <string name="accessibility_menu_invert_colors_summary">Invert the colours of screen and content</string>
+    <string name="sp_dual_sim_settings_NORMAL">Dual SIM</string>
+    <string name="data_enable_summary">Enable data access over mobile network</string>
+    <string name="gemini_sim_mode_progress_activating_message">Activating...</string>
+    <string name="gemini_sim_mode_progress_deactivating_message">Deactivating...</string>
+    <string name="gemini_3g_disable_warning_case1">3G service is not available with this selected SIM. This may load data slower. You can change the 3G service setting under Settings > Wireless &amp; networks > Mobile networks. Are you sure to select this SIM?</string>
+    <string name="sp_Data_access_enabled_sim1_NORMAL">Data access over SIM 1 mobile network</string>
+    <string name="sp_Data_access_enavled_sim2_NORMAL">Data access over SIM 2 mobile network</string>
+    <string name="sp_Data_access_enavled_sim3_NORMAL">Data access over SIM 3 mobile network</string>
+    <string name="sp_assist_dial_empty_SHORT">Empty</string>
+    <string name="sp_lgfont3_NORMAL">HYSerif</string>
+    <string name="jp_font1">Diary</string>
+    <string name="jp_font2">Sunday</string>
+    <string name="jp_font3">Curve</string>
+    <string name="lcd_appears_to_be_demaged">"LCD appears to be damaged. 
+Turn on Hardware key control mode to use options below."</string>
+    <string name="answer_call">Answer Call</string>
+    <string name="wireless_storage_settings_info">Share files with computer via Wi-Fi</string>
+    <string name="network_storage_settings">File networking</string>
+    <string name="sp_power_saver_brightness_adjust_summary_NORMAL">Adjust screen brightness</string>
+    <string name="sp_power_save_tips_sync_NORMAL">AutoSync</string>
+    <string name="sp_power_save_tips_nfc_text_NORMAL">Turning off ‘Read and Write/P2P’ and ‘Android Beam’ can extend battery life. NFC is not turned off even if power saver is activated. Thus users can use Credit and transport Card.</string>
+    <string name="sp_power_save_tips_brightness_text_NORMAL">Reducing screen brightness can extend battery life</string>
+    <string name="sp_power_save_warning_battery_text_NORMAL">Start saving battery by turning off or changing your selected features.</string>
+    <string name="sp_power_save_tips_auto_sync_text_NORMAL">Apps such as E-mail, Calendar, Contacts and Facebook (listed under Settings > Accounts &amp; sync) are automatically synced using the mobile or Wi-Fi network. Turning off Auto-sync can extend battery life.</string>
+    <string name="sp_power_save_tips_bluetooth_text2_NORMAL">Turning off Bluetooth can extend battery life</string>
+    <string name="sp_power_save_tips_touch_text_NORMAL">Turning off Vibrate on touch can extend battery life</string>
+    <string name="sp_power_save_tips_screen_timeout_text_NORMAL">Making Screen timeout short can extend battery life</string>
+    <string name="sp_power_save_tips_front_light_text_NORMAL">Making front key light short can extend battery life</string>
+    <string name="sp_power_saver_nfc_summary_NORMAL">Turn off ‘Read and Write/P2P’ and ‘Android Beam’</string>
+    <string name="sp_powersave_battery_charging_expect_time_text_NORMAL">Estimated time to full charging</string>
+    <string name="sp_powersave_battery_use_text_NORMAL">Use</string>
+    <string name="sp_powersave_battery_no_data_text_NORMAL">Collecting battery info... Please wait.</string>
+    <string name="sp_power_saver_select_notification_flash_summary_NORMAL">Turn off LED light for notifications</string>
+    <string name="sp_power_save_tips_auto_screen_tone_text_NORMAL">Save battery power by adjusting screen brightness automatically with analysis of image colour</string>
+    <string name="sp_powersave_battery_charging_expect_time_text_vzw_NORMAL">Estimated time to full charge</string>
+    <string name="Loading">Loading...</string>
+    <string name="unused_app_noti_messages">You have %1$d apps that have been idle for %2$s</string>
+    <string name="unused_app_noti_message">You have %1$d app that have been idle for %2$s</string>
+    <string name="unused_apps_list">List of idle apps</string>
+    <string name="unused_apps_list_summary">Show list of apps not used for a selected period of time</string>
+    <string name="settings_unused_period">Idle time period</string>
+    <string name="settings_notice_interval">Notification interval</string>
+    <string name="unused_apps_desc">Apps idle for %1$s</string>
+    <string name="sp_personal_dictionary_exist_word_title_NORMAL">Notice</string>
+    <string name="tether_settings_title_tmus_all">USB tethering &amp; Mobile HotSpot</string>
+    <string name="wifi_tether_configure_subtext_tmus">%1$s %2$s Mobile HotSpot</string>
+    <string name="sp_mobile_hotspot_help_1_MLINE">Turn your phone into a portable Wi-Fi HotSpot so you can share your mobile data connection with other devices.</string>
+    <string name="sp_mobile_hotspot_help_2_NORMAL">"To use your phone's hotspot capability, you must have the Smartphone Mobile HotSpot service added to your rate plan."</string>
+    <string name="sp_mobile_hotspot_help_3_NORMAL">To turn on Smartphone Mobile HotSpot tap to select \"Mobile HotSpot\" located under \"Settings >> More...>> USB tethering &amp; Mobile HotSpot\".</string>
+    <string name="sp_mobile_hotspot_help_4_NORMAL">To configure Smartphone Mobile HotSpot, tap on \"Configure Mobile HotSpot\".</string>
+    <string name="upsell_data_enable_message">Mobile data currently off, please enable Mobile Data service.</string>
+    <string name="sp_hotspot_timeout_att_summary_jb_NORMAL">Turn Mobile HotSpot off automatically when not used for %1$d minutes.</string>
+    <string name="tether_settings_title_tmus_wifi">USB tethering &amp; Mobile HotSpot</string>
+    <string name="hotspot_timeout_summary_tmus">Turn off Mobile HotSpot automatically when not using it for %1$d minutes and not in charging</string>
+    <string name="wifi_p2p_advanced_titlebar">Advanced</string>
+    <string name="sp_save_NORMAL">Save</string>
+    <string name="sp_cancel_NORMAL">Cancel</string>
+    <string name="sp_wifi_Notify_MHP_ON_NORMAL">Wi-Fi and Mobile Hotspot cannot run at the same time. Do you want turn Mobile Hotspot off?</string>
+    <string name="sp_wifi_unsecured_connect_NORMAL">You are connecting to the unsecured network \"%1$s\". Information sent is not encrypted and may be visible to others. Do you still want to connect?</string>
+    <string name="sp_hotspot_off_wifi_on_NORMAL">"Mobile Hotspot has been turned off.
+Wi-Fi is now on."</string>
+    <string name="sp_wifi_not_on_hotspot_still_active_NORMAL">"Wi-Fi has not been turned on.
+Mobile Hotspot is still active."</string>
+    <string name="wifi_stopping_dcm">Turning off Wi-Fi…</string>
+    <string name="sp_tether_hotspot_notify_acg_NORMAL">While Wireless Hotspot or USB tethering is active, all data usage will be billed according to your Wireless Hotspot data plan.</string>
+    <string name="sp_wifi_hotspot_auto_connect_summary_NORMAL">Automatically connect to an available AT&amp;T Wi-Fi HotSpot</string>
+    <string name="sp_atnt_hotspot_setting_NORMAL">AT&amp;T Wi-Fi HotSpot setting</string>
+    <string name="sp_entitlement_error_code_33_NORMAL">To enable mobile hotspot on this device, go to att.com/mywireless or dial 611</string>
+    <string name="sp_entitlement_authenticating_SHORT">Authenticating…</string>
+    <string name="sp_notify_me_summary_NORMAL">Tell me if Wi-Fi is available when I open an app</string>
+    <string name="sp_do_not_show_again_NORMAL">"Don't show this again"</string>
+    <string name="sp_wifi_screen_share_warn_other_device_NORMAL">Devices connected Wi-Fi Direct will be disconnected.</string>
+    <string name="sp_do_not_show_this_again_NORMAL">"Don't show this again."</string>
+    <string name="sp_wifi_scr_shr_guide_how_to_title_NORMAL">How to use</string>
+    <string name="sp_wifi_scr_shr_warn_for_wifi_direct_NORMAL">Devices connected Wi-Fi Direct will be disconnected.</string>
+    <string name="sp_wifi_scr_shr_cannot_run_concurrently_NORMAL">"This feature can not run in mirroring mode. 
+Stop mirroring and run this feature ?"</string>
+    <string name="sp_miracast_guide_how_to_desc_NORMAL">Turn on Miracast on TV. If there is no Miracast on TV, connect Miracast dongle to TV.</string>
+    <string name="sp_miracast_guide_tips_desc_NORMAL">To start Miracast quickly, tap the Miracast icon in the notification panel.</string>
+    <string name="sp_miracast_noti_enabled_NORMAL">Screen share on</string>
+    <string name="sp_miracast_no_device_found_msg_NORMAL">Turn on Miracast on TV or connect Miracast dongle to TV, then search again.</string>
+    <string name="sp_miracast_summary_NORMAL">Wirelessly mirror phone screen and sound</string>
+    <string name="sp_useagenotimessage_NORMAL">"The 4G Mobile Hotspot feature is required.  If you do not already have this feature added to your rate plan, please visit a local MetroPCS store"</string>
+    <string name="sp_wifi_hotspot_enable_warning_toast_NORMAL">As other devices are connected to Wi-Fi hot spot through 3G/4G network on this mobile phone. It may charge and uses more battery power.</string>
+    <string name="sp_mwlan_denied_2_NORMAL">You should check the option to use services requiring the Wi-Fi secure connection.</string>
+    <string name="sp_wifi_offload_notify_on_summary_NORMAL">Tell me if Wi-Fi is available when I open an app.</string>
+    <string name="network_detect_when_ap_launched_wifi_on">To connect to Wi-Fi, tap a network below</string>
+    <string name="do_not_use_wifi">"Don’t use Wi-Fi,
+remind me later"</string>
+    <string name="network_detect_when_ap_launched_wifi_off">"Wi-Fi was turned-on. 
+Select a network if you would like to connect to Wi-Fi."</string>
+    <string name="never_anto_turn_on_wifi">"Do not automatically
+turn-on Wi-Fi"</string>
+    <string name="turn_off_wifi_remind_me_land">Turn off Wi-Fi, remind me later</string>
+    <string name="do_not_remind">Do not display this reminder in the future.</string>
+    <string name="sp_turnoff_wifi_on_cell_NORMAL">Turn-off Wi-Fi and use cellular</string>
+    <string name="sp_auto_connect_pre_ap_NORMAL">Auto-connect to previously connected Wi-Fi</string>
+    <string name="sp_wifi_auto_connected_goforward_NORMAL">Going forward, to have Wi-Fi automatically turned-on go to \"Wi-Fi settings\"</string>
+    <string name="sp_wifi_noti_goto_setting_NORMAL">To turn Wi-Fi notification off, go to Wi-Fi settings.</string>
+    <string name="edit_dialog_title">Edit device</string>
+    <string name="list_selected_count">%1$s selected</string>
+    <string name="devices_count">%1$s device</string>
+    <string name="authdlg_service_ftp">This phone to transfer files</string>
+    <string name="authdlg_service_map">This phone to access messages</string>
+    <string name="authdlg_service_opp">this phone to transfer contacts</string>
+    <string name="authdlg_service_pbap">This phone to download contacts</string>
+    <string name="authdlg_service_spp">the bluetooth serial port on this phone</string>
+    <string name="bluetooth_profile_pbap">Access to Phonebook</string>
+    <string name="airplane_error_msg">"You can't use Bluetooth when the phone is in airplane mode."</string>
+    <string name="enabling_progress_content">Turning on bluetooth…</string>
+    <string name="bt_pref_svccfg">Advanced Settings</string>
+    <string name="bt_pref_opp_svc">OPP</string>
+    <string name="bt_pref_bpp_svc">BPP</string>
+    <string name="bluetooth_available_services_title">Device Profiles</string>
+    <string name="bluetooth_did">Device Identification</string>
+    <string name="bluetooth_did_0">Device Identification - not available</string>
+    <string name="bluetooth_did_1">Device Identification (v%1$s.%2$s)</string>
+    <string name="bluetooth_pointing_device_connected_confirmation_text">"Connection with %1$s has been established successfully. To confirm that the correct mouse is being connected, please use it to click the %2$s button.
+
+Time remaining: %3$d seconds"</string>
+    <string name="toast_ftp_no_sdcard">Unable to accept request. Please insert SD Card.</string>
+    <string name="ErrorNoSpaceLeft">Unable to receive %1$s. Insufficient space on SD Card.</string>
+    <string name="sp_bt_vcard_option_lbl_SHORT">Contact transfer setting</string>
+    <string name="sp_bt_visible_lbl_SHORT">Make phone visible</string>
+    <string name="sp_bt_rename_description_NORMAL">Tap to edit phone name</string>
+    <string name="sp_pairing_rejected_err_NORMAL">Pairing rejected by %1$s. Try again?</string>
+    <string name="sp_pairing_dev_down_err_NORMAL">%1$s unavailable. Try again?</string>
+    <string name="sp_pairing_error_msg_NORMAL">There was a problem pairing with %1$s. Try again?</string>
+    <string name="sp_bt_pairing_failure_toast_NORMAL">"Cannot pair with this device.
+Please try again later."</string>
+    <string name="sp_pairing_dev_down_err2_NORMAL">%1$s unavailable. Try again?</string>
+    <string name="sp_disconnect_pan_client_NORMAL">Internet Access will be disconnected for %1$s. Continue?</string>
+    <string name="sp_bluetooth_Search_for_devices_sub_title">Having trouble finding devices?</string>
+    <string name="device_name_Summary">Tap to edit phone name</string>
+    <string name="visible">Make phone visible</string>
+    <string name="sp_bluetooth_sap_notif_message_NORMAL">Bluetooth is connected with %1$s.</string>
+    <string name="sp_visible_description_NORMAL">Allow other Bluetooth devices to find my phone</string>
+    <string name="sp_bluetooth_being_visible_NORMAL">"Being visible on other devices.
+Tap to stop  being visible."</string>
+    <string name="bsmr2_bluetooth_disable_profile_message2">%1$s will be disabled for %2$s&lt;br>Continue?</string>
+    <string name="sp_bluetooth_introduction_guide2">- Wirelessly connect to a headset, car kit, keyboard or other Bluetooth devices.</string>
+    <string name="sp_bluetooth_introduction_guide3">- Share files (music, photos, documents, etc.) with other Bluetooth devices.</string>
+    <string name="sp_bluetooth_guide_step_1_guide1">Other Bluetooth devices must be in the pairing mode to be connected. (If a device is already in pair, turn it on and select the device from my phone)</string>
+    <string name="sp_bluetooth_guide_step_1_guide4">- Press and hold the power or send key</string>
+    <string name="sp_bluetooth_guide_step_1_guide5">- Press and hold the pairing key</string>
+    <string name="sp_bluetooth_guide_step_1_guide6">- Turn power on while holding the send key</string>
+    <string name="sp_bluetooth_guide_step_2">Step2. Search for Bluetooth device to pair with</string>
+    <string name="sp_bluetooth_guide_step_3">Step 3. Pair with Bluetooth device</string>
+    <string name="sp_bluetooth_guide_step_4">Step4. Connect to Bluetooth device</string>
+    <string name="sp_bluetooth_make_my_phone_visible_guide1">Your phone needs to be visible so other Bluetooth devices can find it.</string>
+    <string name="sp_bluetooth_make_my_phone_visible_guide2">Tap Make phone visible.</string>
+    <string name="sp_bluetooth_make_my_phone_visible_guide4">Press the menu key and tap Visibility timeout to change duration of the visibility.</string>
+    <string name="sp_bluetooth_search_for_devices_guide">If the device you are trying to pair with cannot be found, check if the device is in pairing mode.</string>
+    <string name="sp_bluetooth_sound_and_other_settings_guide2">- Media audio</string>
+    <string name="sp_bluetooth_sound_and_other_settings_guide4">- Phone audio</string>
+    <string name="sp_bluetooth_sound_and_other_settings_guide5">: Check to activate the sound for ringtones, voice call, Notifications.</string>
+    <string name="sp_bluetooth_sound_and_other_settings_guide6">- Input device</string>
+    <string name="sp_Bluetooth_AVAILABLE_DEVICES">Available devices</string>
+    <string name="sp_bluetooth_Search_for_devices_guide_2">For phones, computers, etc.</string>
+    <string name="sp_bluetooth_help_guide_configure_a_bluetooth_device_guide_2">Tap the settings icon beside the paired device to change its profile.</string>
+    <string name="sp_bluetooth_customize_profiles_to_use_input_audio">"- Keyboard, mouse, etc. "</string>
+    <string name="sp_bluetooth_help_guide_step_1_guide_1n2">To connect your phone with another Bluetooth device, the device you want to pair with must be in pairing mode.</string>
+    <string name="sp_bluetooth_help_guide_step_1_guide3">The following pages show typical ways to set a Bluetooth device to pairing mode.</string>
+    <string name="sp_bluetooth_help_guide_step_1_guide4">"In case of headsets, input devices, etc. "</string>
+    <string name="sp_bluetooth_help_guide_step_1_guide5">"The following actions are typical ways to activate pairing mode on the device: "</string>
+    <string name="sp_bluetooth_help_guide_step_1_guide6">"Refer to device's manual for more details."</string>
+    <string name="sp_bluetooth_help_guide_step_1_guide7">In case of phones, computers, etc.</string>
+    <string name="sp_bluetooth_help_guide_step_1_guide8">Turn Bluetooth on and make the device visible.</string>
+    <string name="sp_bluetooth_help_guide_step_2">Step 2. Search for a Bluetooth device to pair with</string>
+    <string name="sp_bluetooth_help_guide_step_2_guide1">Tap “Search for devices” to find your Bluetooth device. Return to the previous step if the device you want to pair with is not in the list.</string>
+    <string name="sp_bluetooth_help_guide_step_3">Step 3. Pair with Bluetooth device</string>
+    <string name="sp_bluetooth_help_guide_step_3_guide1">Tap the device you want to pair with your phone and follow the instructions to complete the pairing.</string>
+    <string name="sp_bluetooth_help_guide_step_3_guide2">"If you are asked to enter a PIN, try entering 0000 or 1234, or check the device's user guide."</string>
+    <string name="sp_bluetooth_help_guide_step_4">Step 4. Connect to Bluetooth device</string>
+    <string name="sp_bluetooth_help_guide_step_4_guide_1">If you are trying to use headsets or keyboards wirelessly, you need to connect to the devices.</string>
+    <string name="sp_bluetooth_help_guide_step_4_guide_2">To connect, tap the device on the paired devices list or press any key on the paired device.</string>
+    <string name="sp_bluetooth_help_guide_search_for_devices_guide2">Make sure the device is in pairing mode.</string>
+    <string name="sp_bluetooth_help_guide_search_for_devices_guide4">"Being visible on the other devices. 
+Tap to stop being visible"</string>
+    <string name="sp_bluetooth_help_guide_configure_a_bluetooth_device_guide_4">Profile for playing music and video.</string>
+    <string name="sp_bluetooth_help_guide_configure_a_bluetooth_device_guide_5">Profile for ringtones, voice calls and notifications.</string>
+    <string name="sp_bluetooth_help_guide_configure_a_bluetooth_device_guide_6">Profile for input devices.</string>
+    <string name="sp_bluetooth_no_device_to_pair">Device search guide</string>
+    <string name="sp_bluetooth_tethering_guide_1_1">If your computer can obtain an internet connection via Bluetooth, you can set up your phone to share its mobile data connection with your computer.</string>
+    <string name="sp_bluetooth_tethering_guide_2_1">Pair your phone with your computer.</string>
+    <string name="sp_bluetooth_tethering_guide_2_2">Configure your computer to obtain its network connection via Bluetooth.</string>
+    <string name="sp_bluetooth_tethering_guide_2_4">Turn on Bluetooth tethering.</string>
+    <string name="sp_bluetooth_tethering_guide_2_5">To stop sharing your data connection, turn off Bluetooth tethering.</string>
+    <string name="sp_bluetooth_tethering_guide_4_1">Set up Bluetooth on the other devices.</string>
+    <string name="sp_bluetooth_tethering_guide_4_4">*For more information, visit <a href="http://www.android.com/tether#Bluetooth_tethering">http://www.android.com/tether#Bluetooth_tethering</a></string>
+    <string name="sp_bluetooth_help_guide_configure_a_bluetooth_device_guide_1">You can select which profile you want to use with your phone.</string>
+    <string name="sp_bluetooth_help_guide_configure_a_bluetooth_device_guide_3">Typical examples of profiles:</string>
+    <string name="sp_bluetooth_make_my_phone_visible_guide2_new">Tap phone name to make your phone visible</string>
+    <string name="sp_bluetooth_make_my_phone_visible_guide4_new">To change the duration of visibility, press the menu button and tap \"Visibility timeout\".</string>
+    <string name="le_onekey_not_supported">Cannot connect to this device. Unsupported device.</string>
+    <string name="le_onekey_voice_call">Voice call</string>
+    <string name="sp_kt_invalid_usim_request_NORMAL">Invalid USIM card</string>
+    <string name="sp_wifi_hotspot_enable_warning_network_off_toast_NORMAL">Enable Mobile networks to use data on the connected devices.</string>
+    <string name="iwlan_ready">I-WLAN ready</string>
+    <string name="iwlan_ok">OK</string>
+    <string name="sp_except_scan_list_add_title">Add network</string>
+    <string name="sp_fail_save">Saving fails</string>
+    <string name="sp_exists_list_NORMAL">Exist list</string>
+    <string name="wifi_signal_strength_title">Wi-Fi Signal Strength</string>
+    <string name="sp_wifi_notify_deactivate_airplane_mode_NORMAL">"Deactivate airplane mode to use Wi-Fi. "</string>
+    <string name="sp_wifi_incompatible_hotspot_att_NORMAL">Wi-Fi is currently on. Mobile hotspot and Wi-Fi cannot run at the same time. Do you want turn Wi-Fi off?</string>
+    <string name="sp_wifi_enable_warning_msg_3_NORMAL">As other devices are connected to the Mobile Hotspot through the mobile network on this device, it may incur data charges and your battery may run out quickly.</string>
+    <string name="sp_wifi_hotspot_help_page1_desc_0_NORMAL">"You can turn your phone into a Wi-Fi access point, to share your phone's Internet connection with one or more computers or other devices."</string>
+    <string name="sp_wifi_hotspot_help_page1_desc_1_NORMAL">Turn on Portable Wi-Fi hotspot on your device.</string>
+    <string name="sp_wifi_hotspot_help_page1_desc_1_att_NORMAL">Turn on Mobile Hotspot on your device.</string>
+    <string name="sp_wifi_hotspot_help_page1_desc_2_NORMAL">"Set your phone's network name(SSID) and security options."</string>
+    <string name="sp_wifi_hotspot_help_page2_desc_1_NORMAL">Turn on Wi-Fi on the other device.</string>
+    <string name="sp_wifi_hotspot_help_page2_desc_2_NORMAL">Find \"%1$s\" in the list of Wi-Fi networks.</string>
+    <string name="sp_wifi_hotspot_help_page2_desc_3_NORMAL">Select \"%1$s\" and enter \"%2$s\" in the security key field.</string>
+    <string name="sp_wifi_hotspot_help_page2_desc_4_NORMAL">Start using the internet on your device.</string>
+    <string name="sp_wifi_menu_disconnect_NORMAL">Disconnect network</string>
+    <string name="wifi_advanced_wifi_rssi_less_setting_summary_city">Configured as city</string>
+    <string name="wifi_advanced_wifi_rssi_less_home_summary">This area has a few number of Wi-Fi AP, so Wi-Fi connection will be used more longer</string>
+    <string name="wifi_advanced_wifi_rssi_less_warning_popup">WCDMA/LTE data connection will be activated when WCDMA/LTE data connection is enabled, and It can cause billing issue. But It is disabled, It just disconnect WiFi connection.</string>
+    <string name="wifi_menu_history">Wi-Fi Access history</string>
+    <string name="wifi_history_titlebar">Wi-Fi Access history</string>
+    <string name="wifi_history_success">Done</string>
+    <string name="wifi_history_failure">Failed</string>
+    <string name="sp_mobile_hotspot_help_3_NORMAL_JB">To turn on Smartphone Mobile HotSpot tap to select \"Mobile HotSpot\" located under \"Settings > Tethering &amp; Networks > Mobile HotSpot\".</string>
+    <string name="sp_wifi_hotspot_help_page2_desc_3_NORMAL_tmo_no_password">Select \"%1$s\" and enter password</string>
+    <string name="wifi_internet_availability_detection">Check Internet availability</string>
+    <string name="wifi_internet_availability_detection_summary">Disconnect AP automatically when AP has no internet connection</string>
+    <string name="sp_wifi_internet_unavailable_alert_NORMAL">"Disconnected \"%1$s\" network.Internet unavailable with  for \"%1$s\"."</string>
+    <string name="sp_wifi_internet_unavailable_alert_for_uncheck_NORMAL">"Internet unavailable with  for \"%1$s\"."</string>
+    <string name="sp_wifi_inter_help_tabto_turnon">Tap the Wi-Fi switch to turn it on</string>
+    <string name="sp_wifi_inter_help_enter_pass">Enter password</string>
+    <string name="sp_wifi_inter_help_connect_done">"You're connected
+The icon in the Status Bar shows your Wi-Fi status"</string>
+    <string name="edit_device_name">"Edit phone name "</string>
+    <string name="sp_Firsttimeuse_wifiMsg_NORMAL">Would you like to learn more about Wi-Fi sharing on your phone?</string>
+    <string name="sp_Firsttimeuse_usb_Msg_NORMAL">Would you like to learn more about tethering on your phone?</string>
+</resources>

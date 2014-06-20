@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/sp_wifi_auto_control_title_NORMAL"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:persistent="false" android:title="@string/sp_wifi_auto_control_title_NORMAL" android:key="enable_wifi_auto_control" />
+    <PreferenceScreen android:title="@string/sp_wifi_auto_control_on_title_NORMAL" android:key="wifi_auto_control_on_time" />
+    <PreferenceScreen android:title="@string/sp_wifi_auto_control_off_title_NORMAL" android:key="wifi_auto_control_off_time" />
+</PreferenceScreen>

@@ -1,0 +1,15 @@
+diff -rup ../framework_ext/smali/miui/os/Environment.smali ../framework_ext/smali/miui/os/Environment.smali
+--- ../framework_ext/smali/miui/os/Environment.smali	2014-05-25 00:47:08.000000000 +0200
++++ ../framework_ext/smali/miui/os/Environment.smali	2014-05-25 01:05:27.105451972 +0200
+@@ -298,9 +298,9 @@
+     .line 261
+     sget-object v0, Lmiui/os/Environment;->sDevice2Memory:Ljava/util/HashMap;
+ 
+-    const-string v1, "HM2013022"
++    const-string v1, "zee"
+ 
+-    invoke-static {v3, v4}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
++    invoke-static {v5, v6}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+ 
+     move-result-object v2
+ 

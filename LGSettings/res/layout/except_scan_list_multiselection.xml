@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:id="@id/list_layout" android:background="#ffffffff" android:focusable="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ListView android:id="@*android:id/list" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:cacheColorHint="@null" android:divider="@null" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/no_messages" android:background="@*android:color/background_light" android:focusable="false" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:focusable="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <RelativeLayout android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/ic_no_messages" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+            <TextView android:id="@id/no_message" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.3299866dip" android:text="@string/sp_except_scan_list_empty" android:includeFontPadding="false" android:layout_below="@id/ic_no_messages" android:layout_centerHorizontal="true" style="@style/hig_no_contents" />
+        </RelativeLayout>
+        <View android:focusable="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.2" />
+    </RelativeLayout>
+    <include android:id="@id/cancel_ok_layout" layout="@layout/except_scan_list_cancel_ok_button" />
+</LinearLayout>

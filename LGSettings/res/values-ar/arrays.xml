@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>‏أمريكا</item>
+        <item>‏أوروبا</item>
+        <item>‏افريقيا</item>
+        <item>‏آسيا</item>
+        <item>‏أستراليا</item>
+        <item>‏المحيط الهادئ</item>
+        <item>‏الكل</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>‏١٥ ثانية</item>
+        <item>‏٣٠ ثانية</item>
+        <item>‏دقيقة واحدة</item>
+        <item>‏دقيقتان</item>
+        <item>‏٥ دقائق</item>
+        <item>‏١٠دقائق</item>
+        <item>‏٣٠ دقيقة</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries2_NORMAL">
+        <item>‏١٥ ثانية</item>
+        <item>‏٣٠ ثانية</item>
+        <item>‏دقيقة واحدة</item>
+        <item>‏دقيقتان</item>
+        <item>‏٥ دقائق</item>
+        <item>‏١٠دقائق</item>
+        <item>‏ابقي الشاشة مشغلة</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL">
+        <item>‏١٥ ثانية</item>
+        <item>‏٣٠ ثانية</item>
+        <item>‏دقيقة واحدة</item>
+        <item>‏دقيقتان</item>
+        <item>‏٥ دقائق</item>
+        <item>‏١٠دقائق</item>
+        <item>‏١٥دقيقة</item>
+        <item>‏ابقي الشاشة مشغلة</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL_ex">
+        <item>"‏١٥  ثانية"</item>
+        <item>‏٣٠ ثانية</item>
+        <item>"‏١ دقيقة "</item>
+        <item>‏دقيقتان</item>
+        <item>‏٥ دقائق</item>
+        <item>"‏١٠  دقائق"</item>
+        <item>‏١٥ دقيقة</item>
+        <item>‏ابقي الشاشة مشغلة</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled">
+        <item>‏١٥ ثانية</item>
+        <item>‏٣٠ ثانية</item>
+        <item>‏دقيقة واحدة</item>
+        <item>‏دقيقتان</item>
+        <item>‏٥ دقائق</item>
+        <item>‏١٠دقائق</item>
+        <item>‏١٥دقيقة</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled_ex">
+        <item>"‏١٥  ثانية"</item>
+        <item>‏٣٠ ثانية</item>
+        <item>"‏١ دقيقة "</item>
+        <item>‏دقيقتان</item>
+        <item>‏٥ دقائق</item>
+        <item>"‏١٠  دقائق"</item>
+        <item>‏١٥ دقيقة</item>
+    </string-array>
+    <string-array name="sp_pouch_default_clock_entries2_NORMAL">
+        <item>‏الساعة 1</item>
+        <item>‏الساعة 2</item>
+        <item>‏الساعة 3</item>
+        <item>‏الساعة 4</item>
+        <item>‏الساعة 5</item>
+        <item>‏الساعة 6</item>
+        <item>‏الساعة 7</item>
+        <item>‏الساعة 8</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries1_NORMAL">
+        <item>‏تناظري</item>
+        <item>‏رقمي</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_position_entries1_NORMAL">
+        <item>‏مركز</item>
+        <item>‏أعلى اليمين</item>
+        <item>‏أعلى اليسار</item>
+        <item>‏الجانب السفلي الأيمن</item>
+        <item>‏الجانب السفلي الأيسر</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_font_entries1_NORMAL">
+        <item>‏اسم الخط 1</item>
+        <item>‏اسم الخط 2</item>
+    </string-array>
+    <string-array name="sp_sound_profile_entries_NORMAL">
+        <item>‏الصوت</item>
+        <item>‏اهتزاز فقط</item>
+        <item>‏صامت</item>
+    </string-array>
+    <string-array name="dream_timeout_entries">
+        <item>‏أبدا</item>
+        <item>‏١٥ ثانية</item>
+        <item>‏٣٠ ثانية</item>
+        <item>‏دقيقة واحدة</item>
+        <item>‏دقيقتان</item>
+        <item>‏٥ دقائق</item>
+        <item>‏١٠دقائق</item>
+        <item>‏٣٠ دقيقة</item>
+    </string-array>
+    <string-array name="lock_after_timeout_entries">
+        <item>‏على الفور</item>
+        <item>‏٥ ثواني</item>
+        <item>‏١٥ ثانية</item>
+        <item>‏٣٠ ثانية</item>
+        <item>‏دقيقة واحدة</item>
+        <item>‏دقيقتان</item>
+        <item>‏٥ دقائق</item>
+        <item>‏١٠دقائق</item>
+        <item>‏٣٠ دقيقة</item>
+    </string-array>
+    <string-array name="sp_lock_after_timeout_entries_NORMAL">
+        <item>‏على الفور</item>
+        <item>‏١٥ ثانية</item>
+        <item>‏٣٠ ثانية</item>
+        <item>‏دقيقة واحدة</item>
+        <item>‏دقيقتان</item>
+        <item>‏١٠دقائق</item>
+        <item>‏٣٠ دقيقة</item>
+    </string-array>
+    <string-array name="entries_font_size">
+        <item>‏&amp;lt;font size=16 align=middle>صغير&amp;lt;/font></item>
+        <item>‏&amp;lt;font size=18 align=middle>ﻋﺎﺩﻱ&amp;lt;/font></item>
+        <item>‏&amp;lt;font size=21 align=middle>ﻛﺒﻴﺮ&amp;lt;/font></item>
+        <item>‏&amp;lt;font size=24 align=middle>كبير جدا&amp;lt;/font></item>
+    </string-array>
+    <string-array name="sp_entries_font_size2">
+        <item>‏&amp;lt;font size=14 align=middle>الحد الأدنى&amp;lt;/font></item>
+        <item>‏&amp;lt;font size=16 align=middle>صغير&amp;lt;/font></item>
+        <item>‏&amp;lt;font size=18 align=middle>متوسط&amp;lt;/font></item>
+        <item>‏&amp;lt;font size=21 align=middle>ﻛﺒﻴﺮ&amp;lt;/font></item>
+        <item>‏&amp;lt;font size=24 align=middle>كبير جداً&amp;lt;/font></item>
+        <item>‏&amp;lt;font size=27 align=middle>الحد الأقصى&amp;lt;/font></item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>‏بطيء جدًا</item>
+        <item>‏بطيء</item>
+        <item>‏ﻋﺎﺩﻱ</item>
+        <item>‏سريع</item>
+        <item>‏سريع جدًا</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>‏منخفض جدًا</item>
+        <item>‏منخفض</item>
+        <item>‏ﻋﺎﺩﻱ</item>
+        <item>‏مرتفعة</item>
+        <item>‏عالٍ جدًا</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>‏جاري البحث...</item>
+        <item>‏جاري الاتصال...</item>
+        <item>‏مصادقة...</item>
+        <item>‏الحصول على عنوان IP...</item>
+        <item>‏متصل</item>
+        <item>‏معلق</item>
+        <item>‏جاري قطع الاتصال...</item>
+        <item>‏تم قطع الاتصال</item>
+        <item>‏غير ناجح</item>
+        <item>‏محظور</item>
+        <item>‏تجنب الاتصال الضعيف مؤقتًا</item>
+        <item>‏تجنب الاتصال الضعيف مؤقتًا</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>‏جاري البحث...</item>
+        <item>‏الاتصال ب- %1$s...</item>
+        <item>‏مصادقة مع %1$s…</item>
+        <item>‏الحصول على عنوان IP‏ من %1$s...</item>
+        <item>‏متصل بـ %1$s</item>
+        <item>‏معلق</item>
+        <item>‏قطع الاتصال من %1$s…‏</item>
+        <item>‏تم قطع الاتصال</item>
+        <item>‏غير ناجح</item>
+        <item>‏محظور</item>
+        <item>‏تجنب الاتصال الضعيف مؤقتًا</item>
+    </string-array>
+    <string-array name="wifi_ap_security">
+        <item>‏بدون حماية</item>
+        <item>WPA PSK</item>
+        <item>WPA2 PSK</item>
+    </string-array>
+    <string-array name="wifi_p2p_wps_setup">
+        <item>‏اضغط على زر</item>
+        <item>‏رمز PIN من هذا الجهاز</item>
+    </string-array>
+    <string-array name="wifi_p2p_status">
+        <item>‏متصل</item>
+        <item>‏التوصيل</item>
+        <item>‏غير ناجح</item>
+        <item>‏متوفر</item>
+        <item>‏خارج النطاق.</item>
+    </string-array>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>‏دقيقتان</item>
+        <item>‏٥ دقائق</item>
+        <item>‏ساعة واحدة</item>
+        <item>‏لا تعطل الوقت مطلقًا</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>‏ضعيف</item>
+        <item>‏مقبول</item>
+        <item>‏جيد</item>
+        <item>‏ممتاز</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>‏دائما</item>
+        <item>‏عند التوصيل فقط</item>
+        <item>‏تم قطع اتصال Wi-Fi (بسبب استخدام البيانات)</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <item>‏دائما</item>
+        <item>‏عند التوصيل فقط</item>
+        <item>‏تم قطع اتصال Wi-Fi</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_entries">
+        <item>‏تلقائي</item>
+        <item>‏٥ غيغاهيرتز فقط</item>
+        <item>‏٢.٤ غيغاهيرتر فقط</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>‏وقت الاستخدام</item>
+        <item>‏بدء العد</item>
+        <item>‏اسم التطبيق</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>‏بلا</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_network_setup">
+        <item>‏إيقاف</item>
+        <item>‏اضغط على زر</item>
+        <item>"‏رمز PIN  من نقطة الوصول"</item>
+        <item>‏رمز PIN من هذا الجهاز</item>
+    </string-array>
+    <string-array name="wifi_proxy_settings">
+        <item>‏بلا</item>
+        <item>‏يدوي</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>‏إيقاف</item>
+        <item>‏تنبيه</item>
+        <item>‏اهتزاز</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>‏بلا</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>‏PAP أو CHAP</item>
+    </string-array>
+    <string-array name="bearer_entries">
+        <item>LTE</item>
+        <item>eHRPD</item>
+        <item>‏غير محدد</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>‏تخزين الجهاز الداخلي</item>
+        <item>‏بطاقة SD الخارجية</item>
+        <item>‏دع النظام يقرر</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>‏دائما</item>
+        <item>‏أبدا</item>
+        <item>‏فقط في الوضع الصامت</item>
+        <item>‏فقط حينما لا يكون في الوضع الصامت</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_titles">
+        <item>‏قصير</item>
+        <item>‏متوسط</item>
+        <item>‏طويل</item>
+    </string-array>
+    <string-array name="hdcp_checking_titles">
+        <item>‏لا تفحص مطلقًا</item>
+        <item>‏فحص محتوى إدارة الحقوق الرقمية فقط</item>
+        <item>‏التأكد دائماً</item>
+    </string-array>
+    <string-array name="hdcp_checking_summaries">
+        <item>‏لا تستخدم فحص HDCP مطلقًا</item>
+        <item>‏استخدام مراجعة HDCP مع محتوى DRM فقط</item>
+        <item>‏استخدم دائماً فحص HDCP</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>‏إيقاف الرسوم المتحركة</item>
+        <item>‏مقياس الرسوم المتحركة ٥x.</item>
+        <item>‏مقياس الرسوم المتحركة ١x</item>
+        <item>"‏مقياس الرسوم المتحركة  ١,٥x"</item>
+        <item>‏مقياس الرسوم المتحركة ٢x</item>
+        <item>‏مقياس الرسوم المتحركة ٥x</item>
+        <item>"‏مقياس الرسوم المتحركة  ١٠x"</item>
+    </string-array>
+    <string-array name="transition_animation_scale_entries">
+        <item>‏إيقاف الرسوم المتحركة</item>
+        <item>‏مقياس الرسوم المتحركة ٥x.</item>
+        <item>‏مقياس الرسوم المتحركة ١x</item>
+        <item>"‏مقياس الرسوم المتحركة  ١,٥x"</item>
+        <item>‏مقياس الرسوم المتحركة ٢x</item>
+        <item>‏مقياس الرسوم المتحركة ٥x</item>
+        <item>"‏مقياس الرسوم المتحركة  ١٠x"</item>
+    </string-array>
+    <string-array name="animator_duration_scale_entries">
+        <item>‏إيقاف الرسوم المتحركة</item>
+        <item>‏مقياس الرسوم المتحركة ٥x.</item>
+        <item>‏مقياس الرسوم المتحركة ١x</item>
+        <item>"‏مقياس الرسوم المتحركة  ١,٥x"</item>
+        <item>‏مقياس الرسوم المتحركة ٢x</item>
+        <item>‏مقياس الرسوم المتحركة ٥x</item>
+        <item>"‏مقياس الرسوم المتحركة  ١٠x"</item>
+    </string-array>
+    <string-array name="overlay_display_devices_entries">
+        <item>‏بلا</item>
+        <item>720x480 mdpi</item>
+        <item>1280x720 tvdpi</item>
+        <item>1920x1080 xhdpi</item>
+        <item>‏1280 ×720 tvdpi و 1920 ×1080 xhdpi</item>
+    </string-array>
+    <string-array name="enable_opengl_traces_entries">
+        <item>‏بلا</item>
+        <item>Logcat</item>
+        <item>‏Systrace (رسومات)</item>
+        <item>‏مكدس الاستدعاءات في glGetError</item>
+    </string-array>
+    <string-array name="app_process_limit_entries">
+        <item>‏الحد القياسي</item>
+        <item>‏لا توجد عمليات في الخلفية</item>
+        <item>‏عملية واحدة كحد أقصى</item>
+        <item>‏عمليتين كحد أقصى</item>
+        <item>‏ ثلاث عمليات كحد أقصى</item>
+        <item>‏أربع عمليات كحد أقصى</item>
+    </string-array>
+    <string-array name="vpn_types_long">
+        <item>PPTP VPN</item>
+        <item>‏شبكة L2TP/IPSec الظاهرية محتوية على مفاتيح مشتركة مسبقًا</item>
+        <item>‏شبكة L2TP/IPSec الظاهرية محتوية على شهادات</item>
+        <item>‏شبكة IPSec الظاهرية الخاصة محتوية على مفاتيح مشتركة مسبقًا ومصادقة Xauth</item>
+        <item>‏IPSec VPN مع شهادات و مصادقة Xauth</item>
+        <item>‏شبكة IPSec الظاهرية الخاصة محتوية على شهادات ومصادقة مهجنة</item>
+    </string-array>
+    <string-array name="vpn_states">
+        <item>‏تم قطع الاتصال</item>
+        <item>‏يتم الآن التهيئة...</item>
+        <item>‏جاري الاتصال...</item>
+        <item>‏متصل</item>
+        <item>‏المهلة</item>
+        <item>‏غير ناجح</item>
+    </string-array>
+    <string-array name="security_settings_premium_sms_values">
+        <item>‏سؤال</item>
+        <item>‏عدم السماح أبدا</item>
+        <item>‏السماح دوما</item>
+    </string-array>
+    <string-array name="search_filter">
+        <item>‏جميع الأجهزة</item>
+        <item>‏سماعة الرأس</item>
+        <item>PC</item>
+        <item>‏الهاتف</item>
+        <item>‏جهاز طرفي</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries_NORMAL">
+        <item>‏صورة المستخدم</item>
+        <item>‏الساعة 1</item>
+        <item>‏الساعة 2</item>
+        <item>‏الساعة 3</item>
+        <item>‏الساعة 4</item>
+        <item>‏الساعة 5</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL">
+        <item>‏١٫٥ ثانية</item>
+        <item>‏٣ ثواني</item>
+        <item>‏٥ ثواني</item>
+        <item>‏تشغيل دائما</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL_ex">
+        <item>‏١ ثانية</item>
+        <item>‏٣ ثواني</item>
+        <item>‏٥ ثواني</item>
+        <item>‏تشغيل دائما</item>
+    </string-array>
+    <string-array name="sp_front_key_light_l1_NORMAL">
+        <item>‏٣ ثواني</item>
+        <item>‏٦ ثواني</item>
+        <item>‏١٠ثواني</item>
+        <item>‏٣٠ ثانية</item>
+        <item>‏تشغيل دائما</item>
+    </string-array>
+    <string-array name="sp_front_key_light_att_NORMAL">
+        <item>‏٣ ثواني</item>
+        <item>‏١ ثانية</item>
+        <item>‏١٠ ثواني</item>
+        <item>‏٣٠ ثانية</item>
+        <item>‏تشغيل دائما</item>
+    </string-array>
+    <string-array name="sp_numlocdisp_entries_NORMAL">
+        <item>"‏إيقاف "</item>
+        <item>‏تفعيل</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_NORMAL">
+        <item>‏تنبيه الخصوصية</item>
+        <item>‏إذا كنت تستخدم تطبيق طرف ثالث، يفقد يجمع بياناتك الشخصية أو يطلب من مزود الخدمة الخاصة بك الكشف عن معلوماتك الشخصية، بما في ذلك معلومات الموقع (حيثما كانت مطبقة)، على مزود التطبيق أو طرف ثالث آخر.</item>
+        <item>‏أي سياسة خصوصية ستطبق؟ لا يُطبق مزود الخدمة الخاص بك سياسة الخصوصية وشروط الاستخدام التي لا تُطبق على تطبيقات سماعتك اليدوية المزودة فقط من طرف ثالث. تُطبق سياسات الطرف الثالث على استخدامك لهذا التطبيق.</item>
+        <item>‏أين يمكنني العثور على المزيد من المعلومات عن سياسات الطرف الثالث؟ راجع شروط استخدام التطبيق و/أو سياسات مزود الخدمة لمزيد من المعلومات عن كيفية جمع التطبيق لمعلوماتك والوصول إليها واستخدامها والكشف عنها. سياسات الخصوصية، وشروط الاستخدام وغيرها من إعلامات المستهلك الأخرى التي قد تكون متوفرة على الموقع الإلكتروني الخاص بمزود الخدمة. تأكد من قبولك للسياسات قبل استخدام التطبيق.</item>
+        <item>‏أين يمكنني العثور على سياسة الخصوصية الخاصة بمزود الخدمة الخاص بي؟ على حدة، إذا كان لديك أسئلة حول سياسة الخصوصية الخاصة بمزود الخدمة الخاص بك، يُرجى زيارة الصفحة الرئيسية لمزود الخدمة الخاص بك وانقر فوق الارتباط \"سياسة الخصوصية\".</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_spr_NORMAL">
+        <item>‏تنبيه خصوصية Sprint</item>
+        <item>‏إذا كنت تستخدم تطبيق طرف ثالث، يمكن أن يجمع بياناتك الشخصية أو يطلب من Sprint الخاص بك الكشف عن معلوماتك الشخصية، بما في ذلك معلومات الموقع (حيثما كان مطبقًا)، على مزود التطبيق أو طرف ثالث آخر.</item>
+        <item>‏أي سياسة خصوصية ستطبق؟ لا يُطبق مزود الخدمة الخاص بك سياسة الخصوصية وشروط الاستخدام التي لا تُطبق على تطبيقات سماعتك اليدوية المزودة فقط من طرف ثالث. تُطبق سياسات الطرف الثالث على استخدامك لهذا التطبيق.</item>
+        <item>‏أين يمكنني العثور على المزيد من المعلومات عن سياسات الطرف الثالث؟ راجع شروط استخدام التطبيق و/أو سياسات مزود الخدمة لمزيد من المعلومات عن كيفية جمع التطبيق لمعلوماتك والوصول إليها واستخدامها والكشف عنها. سياسات الخصوصية، وشروط الاستخدام وغيرها من إعلامات المستهلك الأخرى التي قد تكون متوفرة على الموقع الإلكتروني الخاص بمزود الخدمة. تأكد من قبولك للسياسات قبل استخدام التطبيق.</item>
+        <item>"‏أين يمكنني العثور على سياسة الخصوصية الخاصة بSprint's؟ على حدة، إذا كان لديك أسئلة عن سياسة الخصوصية الخاصة بSprint's، يُرجى زيارة موقع Sprint.com وانقر فوق ارتباط \"سياسة الخصوصية\"."</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_bm_NORMAL">
+        <item>‏تحسين تنبيه خصوصية الهاتف الجوال</item>
+        <item>‏إذا كنت تستخدم تطبيق طرف ثالث، يمكن أن يجمع بياناتك الشخصية أو يطلب من Boost Mobile الخاص بك الكشف عن معلوماتك الشخصية، بما في ذلك معلومات الموقع (حيثما كان مطبقًا)، على مزود التطبيق أو طرف ثالث آخر.</item>
+        <item>‏أي سياسة خصوصية ستطبق؟ لا يُطبق مزود الخدمة الخاص بك سياسة الخصوصية وشروط الاستخدام التي لا تُطبق على تطبيقات سماعتك اليدوية المزودة فقط من طرف ثالث. تُطبق سياسات الطرف الثالث على استخدامك لهذا التطبيق.</item>
+        <item>‏أين يمكنني العثور على المزيد من المعلومات عن سياسات الطرف الثالث؟ راجع شروط استخدام التطبيق و/أو سياسات مزود الخدمة لمزيد من المعلومات عن كيفية جمع التطبيق لمعلوماتك والوصول إليها واستخدامها والكشف عنها. سياسات الخصوصية، وشروط الاستخدام وغيرها من إعلامات المستهلك الأخرى التي قد تكون متوفرة على الموقع الإلكتروني الخاص بمزود الخدمة. تأكد من قبولك للسياسات قبل استخدام التطبيق.</item>
+        <item>‏أين يمكنني العثور على سياسة الخصوصية الخاصة بBoost Mobile؟ على حدة، إذا كان لديك أسئلة عن سياسة الخصوصية الخاصة بBoost Mobile، يُرجى زيارة موقع Boost Mobile.com وانقر فوق ارتباط \"سياسة الخصوصية\".</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_virgin_NORMAL">
+        <item>"‏تنبيه خصوصية Virgin Mobile "</item>
+        <item>‏إذا كنت تستخدم تطبيق طرف ثالث، يمكن أن يجمع بياناتك الشخصية أو يطلب من Virgin Mobile الخاص بك الكشف عن معلوماتك الشخصية، بما في ذلك معلومات الموقع (حيثما كان مطبقًا)، على مزود التطبيق أو طرف ثالث آخر.</item>
+        <item>‏أي سياسة خصوصية تنطبق؟ لا تنطبق سياسة الخصوصية وشروط الاستخدام الخاصة بـ Virgin Mobile على التطبيقات الموجودة على سماعتك التي يتم تزويدها من قبل أطراف ثالثة فقط. تُطبق سياسات الطرف الثالث على استخدامك لهذا التطبيق.</item>
+        <item>‏أين يمكنني العثور على المزيد من المعلومات عن سياسات الطرف الثالث؟ راجع شروط استخدام التطبيق و/أو سياسات مزود الخدمة لمزيد من المعلومات عن كيفية جمع التطبيق لمعلوماتك والوصول إليها واستخدامها والكشف عنها. سياسات الخصوصية، وشروط الاستخدام وغيرها من إعلامات المستهلك الأخرى التي قد تكون متوفرة على الموقع الإلكتروني الخاص بمزود الخدمة. تأكد من قبولك للسياسات قبل استخدام التطبيق.</item>
+        <item>‏أين يمكنني العثور على سياسة الخصوصية الخاصة بـVirgin Mobile؟ وبشكل منفصل، إذا كان لديك أسئلة عن سياسة الخصوصية الخاصة بـVirgin Mobile، يُرجى زيارة موقع VirginMobileUSA.com وانقر فوق ارتباط \"سياسة الخصوصية\".</item>
+    </string-array>
+    <string-array name="sp_lock_screen_effect_entries_NORMAL">
+        <item>‏أساسي</item>
+        <item>‏تموج بالأوراق</item>
+        <item>‏انتشار الحبر</item>
+        <item>‏قطرة الندى</item>
+    </string-array>
+    <string-array name="sp_power_save_brightness_entries_NORMAL">
+        <item>"‏درجة سطوع  ١٠%"</item>
+        <item>"‏درجة سطوع  ٢٠%"</item>
+        <item>"‏درجة سطوع  ٣٠%"</item>
+        <item>"‏درجة سطوع  ٥٠%"</item>
+    </string-array>
+    <string-array name="sp_power_save_screen_timeout_entries_NORMAL">
+        <item>‏١٥ ثانية</item>
+        <item>‏٣٠ ثانية</item>
+        <item>‏دقيقة واحدة</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_NORMAL">
+        <item>‏١٫٥ ثانية</item>
+        <item>‏متوقف عن التشغيل دائماً</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_att_NORMAL">
+        <item>‏٣ ثواني</item>
+        <item>‏متوقف عن التشغيل دائماً</item>
+    </string-array>
+    <string-array name="sp_power_save_mode_entries_NORMAL">
+        <item>‏۱۰ ٪ بالبطارية</item>
+        <item>‏۲۰ ٪ بالبطارية</item>
+        <item>‏٣۰ ٪ بالبطارية</item>
+        <item>‏٥۰ ٪ بالبطارية</item>
+    </string-array>
+    <string-array name="sp_power_save_mode2_entries_NORMAL">
+        <item>‏على الفور</item>
+        <item>‏۱۰ ٪ بالبطارية</item>
+        <item>‏۲۰ ٪ بالبطارية</item>
+        <item>‏٣۰ ٪ بالبطارية</item>
+        <item>‏٥۰ ٪ بالبطارية</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries">
+        <item>‏٥ دقائق</item>
+        <item>‏١٠دقائق</item>
+        <item>‏١٥دقيقة</item>
+    </string-array>
+    <string-array name="sp_hotspot_timeout_entries_mx_NORMAL">
+        <item>‏أبدا مهلة</item>
+        <item>‏٥ دقيقة</item>
+        <item>"‏١٠  دقائق"</item>
+        <item>‏١٥ دقيقة</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries_jb">
+        <item>‏٥ دقيقة</item>
+        <item>"‏١٠  دقائق"</item>
+        <item>‏١٥ دقيقة</item>
+        <item>‏٣٠ دقيقة</item>
+        <item>‏أبدا</item>
+    </string-array>
+    <string-array name="wifi_p2p_timeout_entries">
+        <item>‏١٥ دقيقة</item>
+        <item>‏٣٠ دقيقة</item>
+        <item>‏أبدا</item>
+    </string-array>
+    <string-array name="sp_wifi_ap_visibility_NORMAL">
+        <item>‏إظهار</item>
+        <item>‏إخفاء</item>
+    </string-array>
+    <string-array name="sp_bt_search_filter_SHORT">
+        <item>‏جميع الأجهزة</item>
+        <item>‏سماعة الرأس</item>
+        <item>‏الهاتف المحمول</item>
+        <item>PC</item>
+        <item>‏جهاز الإدخال (لوحة المفاتيح، والفأرة ،الخ.)</item>
+    </string-array>
+    <string-array name="wifi_signal_strength_entries">
+        <item>‏قوي</item>
+        <item>‏متوسط</item>
+        <item>‏ضعيف</item>
+        <item>‏إيقاف</item>
+    </string-array>
+    <string-array name="wifi_Dual_band_AP_connection_entries">
+        <item>‏تلقائي</item>
+        <item>5 GHz</item>
+        <item>2.4 GHz</item>
+    </string-array>
+</resources>

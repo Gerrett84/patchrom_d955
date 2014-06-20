@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="other">ពាក្យសម្ងាត់​ត្រូវតែមានផ្ទុក​យ៉ាង​តិច%d អក្សរ</item>
+        <item quantity="one">ពាក្យសម្ងាត់​ត្រូវតែមានផ្ទុក​យ៉ាង​តិច1អក្សរ</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="other">ពាក្យសម្ងាត់​ត្រូវតែ​មាន​ផ្ទុក​យ៉ាង​តិច %d អក្សរតូច</item>
+        <item quantity="one">ពាក្យសម្ងាត់​ត្រូវតែ​មាន​ផ្ទុក​យ៉ាង​តិច 1 អក្សរតូច</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="other">ពាក្យសម្ងាត់​ត្រូវតែមានផ្ទុក​យ៉ាងតិច %d អក្សរធំ</item>
+        <item quantity="one">ពាក្យសម្ងាត់​ត្រូវតែមានផ្ទុក​យ៉ាងតិច 1 អក្សរធំ</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="other">ពាក្យសម្ងាត់​ត្រូវតែ​មាន​ផ្ទុកយ៉ាងតិចលេខ %d ខ្ទង់</item>
+        <item quantity="one">ពាក្យសម្ងាត់​ត្រូវតែ​មាន​ផ្ទុកយ៉ាងតិចលេខ 1 ខ្ទង់</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="other">ពាក្យសម្ងាត់​ត្រូវតែមានផ្ទុក​យ៉ាងតិច %d សញ្ញាពិសេស</item>
+        <item quantity="one">ពាក្យសម្ងាត់​ត្រូវតែមានផ្ទុក​យ៉ាងតិច 1 សញ្ញាពិសេស</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="other">ពាក្យសម្ងាត់​ត្រូវ​តែ​មានផ្ទុក​យ៉ាងតិច %d តួអក្សរមិនមែនអក្សរ</item>
+        <item quantity="one">ពាក្យសម្ងាត់​ត្រូវ​តែ​មានផ្ទុក​យ៉ាងតិច 1 តួអក្សរមិនមែនអក្សរ</item>
+    </plurals>
+</resources>

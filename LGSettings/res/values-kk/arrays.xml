@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>Америка</item>
+        <item>Еуропа</item>
+        <item>Африка</item>
+        <item>Азия</item>
+        <item>Австралия</item>
+        <item>Тынық мұхиты</item>
+        <item>Бәрі</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 секунд</item>
+        <item>30 секунд</item>
+        <item>1 минут</item>
+        <item>2 минут</item>
+        <item>5 минут</item>
+        <item>10 минут</item>
+        <item>30 минут</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries2_NORMAL">
+        <item>15 секунд</item>
+        <item>30 секунд</item>
+        <item>1 минут</item>
+        <item>2 минут</item>
+        <item>5 минут</item>
+        <item>10 минут</item>
+        <item>Экранды қосулы қалдыру</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL">
+        <item>15 секунд</item>
+        <item>30 секунд</item>
+        <item>1 минут</item>
+        <item>2 минут</item>
+        <item>5 минут</item>
+        <item>10 минут</item>
+        <item>15 минут</item>
+        <item>Экранды қосулы қалдыру</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL_ex">
+        <item>15 сек</item>
+        <item>30 сек.</item>
+        <item>1 минут</item>
+        <item>2 мин.</item>
+        <item>5 мин</item>
+        <item>10 мин</item>
+        <item>15 мин</item>
+        <item>Экранды қосулы қалдыру</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled">
+        <item>15 секунд</item>
+        <item>30 секунд</item>
+        <item>1 минут</item>
+        <item>2 минут</item>
+        <item>5 минут</item>
+        <item>10 минут</item>
+        <item>15 минут</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled_ex">
+        <item>15 сек</item>
+        <item>30 сек.</item>
+        <item>1 минут</item>
+        <item>2 мин.</item>
+        <item>5 мин</item>
+        <item>10 мин</item>
+        <item>15 мин</item>
+    </string-array>
+    <string-array name="sp_pouch_default_clock_entries2_NORMAL">
+        <item>Сағат 1</item>
+        <item>Сағат 2</item>
+        <item>Сағат 3</item>
+        <item>Сағат 4</item>
+        <item>Сағат 5</item>
+        <item>Сағат 6</item>
+        <item>Сағат 7</item>
+        <item>Сағат 8</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries1_NORMAL">
+        <item>Аналог</item>
+        <item>Сандық</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_position_entries1_NORMAL">
+        <item>Орта</item>
+        <item>Жоғарғы оң жақ</item>
+        <item>Жоғарғы сол жақ</item>
+        <item>Оң жақ төменгі</item>
+        <item>Сол жақ төменгі</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_font_entries1_NORMAL">
+        <item>Қаріп атауы1</item>
+        <item>Қаріп атауы2</item>
+    </string-array>
+    <string-array name="sp_sound_profile_entries_NORMAL">
+        <item>Дыбыс</item>
+        <item>Тек діріл</item>
+        <item>Үнсіз</item>
+    </string-array>
+    <string-array name="dream_timeout_entries">
+        <item>Ешқашан</item>
+        <item>15 секунд</item>
+        <item>30 секунд</item>
+        <item>1 минут</item>
+        <item>2 минут</item>
+        <item>5 минут</item>
+        <item>10 минут</item>
+        <item>30 минут</item>
+    </string-array>
+    <string-array name="lock_after_timeout_entries">
+        <item>Дереу</item>
+        <item>5 секунд</item>
+        <item>15 секунд</item>
+        <item>30 секунд</item>
+        <item>1 минут</item>
+        <item>2 минут</item>
+        <item>5 минут</item>
+        <item>10 минут</item>
+        <item>30 минут</item>
+    </string-array>
+    <string-array name="sp_lock_after_timeout_entries_NORMAL">
+        <item>Дереу</item>
+        <item>15 секунд</item>
+        <item>30 секунд</item>
+        <item>1 минут</item>
+        <item>2 минут</item>
+        <item>10 минут</item>
+        <item>30 минут</item>
+    </string-array>
+    <string-array name="entries_font_size">
+        <item>&amp;lt;font size=16 align=middle>Кіші&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>Жалпы&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>Үлкен&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>Тым үлкен&amp;lt;/font></item>
+    </string-array>
+    <string-array name="sp_entries_font_size2">
+        <item>&amp;lt;font size=14 align=middle>Ең аз&amp;lt;/font></item>
+        <item>&amp;lt;font size=16 align=middle>Кіші&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>Орташа&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>Үлкен&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>Өте үлкен&amp;lt;/font></item>
+        <item>&amp;lt;font size=27 align=middle>Ең көп&amp;lt;/font></item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>Өте баяу</item>
+        <item>Баяу</item>
+        <item>Жалпы</item>
+        <item>Жылдам</item>
+        <item>Өте жылдам</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>Өте баяу</item>
+        <item>Төмен</item>
+        <item>Жалпы</item>
+        <item>Жоғары</item>
+        <item>Өте жоғары</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Іздеуде...</item>
+        <item>Қосылуда...</item>
+        <item>Аутентификация…</item>
+        <item>IP адрес қабылдауда...</item>
+        <item>Қосылды</item>
+        <item>Тоқтатылды</item>
+        <item>Ажыратылуда...</item>
+        <item>Ажыратылды</item>
+        <item>Сәтсіз</item>
+        <item>Құлыптанған</item>
+        <item>Нашар байланысты уақытша болдырмау</item>
+        <item>Нашар байланысты уақытша болдырмау</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Іздеуде...</item>
+        <item>Қосылу %1$s...</item>
+        <item>Аутентификация %1$s…</item>
+        <item>%1$sқұрылғысынан IP адрес алынуда ...</item>
+        <item>%1$s қосылды</item>
+        <item>Тоқтатылды</item>
+        <item>%1$s… құрылғысынан ажыратылуда</item>
+        <item>Ажыратылды</item>
+        <item>Сәтсіз</item>
+        <item>Құлыптанған</item>
+        <item>Нашар байланысты уақытша болдырмау</item>
+    </string-array>
+    <string-array name="wifi_ap_security">
+        <item>Ашу</item>
+        <item>WPA PSK</item>
+        <item>WPA2 PSK</item>
+    </string-array>
+    <string-array name="wifi_p2p_wps_setup">
+        <item>Сұрау түймешігін</item>
+        <item>Осы құрылғыдан алынған PIN код</item>
+    </string-array>
+    <string-array name="wifi_p2p_status">
+        <item>Қосылды</item>
+        <item>Қосылыс</item>
+        <item>Сәтсіз</item>
+        <item>Бар</item>
+        <item>Ауқымы шектен тыс</item>
+    </string-array>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>2 минут</item>
+        <item>5 минут</item>
+        <item>1 сағат</item>
+        <item>Уақыты ешқашан бітпеу</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Нашар</item>
+        <item>Орташа</item>
+        <item>Жақсы</item>
+        <item>Өте жақсы</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Әрқашан</item>
+        <item>Тек жалғаулы болғанда</item>
+        <item>Wi-Fi өшірулі (деректер трафигіне байланысты)</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <item>Әрқашан</item>
+        <item>Тек жалғаулы болғанда</item>
+        <item>Wi-Fi өшірулі</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_entries">
+        <item>Автоматты</item>
+        <item>Тек 5 ГГц</item>
+        <item>Тек 2.4 ГГц</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>Қолдану уақыты</item>
+        <item>Санақты бастау</item>
+        <item>Қосымша аты</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>Жоқ</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_network_setup">
+        <item>Өшіру</item>
+        <item>Сұрау түймешігін</item>
+        <item>Кіру нүктесінен алынған PIN код</item>
+        <item>Осы құрылғыдан алынған PIN код</item>
+    </string-array>
+    <string-array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>Тұрақты</item>
+    </string-array>
+    <string-array name="wifi_proxy_settings">
+        <item>Жоқ</item>
+        <item>Қолмен</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>Өшіру</item>
+        <item>Дабыл</item>
+        <item>Діріл</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>Жоқ</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP немесе CHAP</item>
+    </string-array>
+    <string-array name="bearer_entries">
+        <item>LTE</item>
+        <item>eHRPD</item>
+        <item>Анықталмаған</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Құрал ішкі жады</item>
+        <item>Алмалы-салмалы SD картасы</item>
+        <item>Жүйе білгенінше</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>Әрқашан</item>
+        <item>Ешқашан</item>
+        <item>Тек үнсіз режимінде</item>
+        <item>Тек үнсіз режимінде емес</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_titles">
+        <item>Қысқа</item>
+        <item>Орташа</item>
+        <item>Ұзын</item>
+    </string-array>
+    <string-array name="hdcp_checking_titles">
+        <item>Ешқашан тексермеу</item>
+        <item>DRM мазмұнын ғана тексеру</item>
+        <item>Әрдайым тексеру</item>
+    </string-array>
+    <string-array name="hdcp_checking_summaries">
+        <item>HDCP тексеруді ешқашан пайдаланбау</item>
+        <item>HDCP тексеруді тек DRM мазмұны үшін ғана пайдалану</item>
+        <item>Әрдайым HDCP тексеру пайдалану</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>Анимацияны өшіру</item>
+        <item>Желпіністің көлемі .5x</item>
+        <item>Желпіністің көлемі 1x</item>
+        <item>Желпіністің көлемі 1.5x</item>
+        <item>Желпіністің көлемі 2x</item>
+        <item>Желпіністің көлемі 5x</item>
+        <item>Желпіністің көлемі 10x</item>
+    </string-array>
+    <string-array name="transition_animation_scale_entries">
+        <item>Анимацияны өшіру</item>
+        <item>Желпіністің көлемі .5x</item>
+        <item>Желпіністің көлемі 1x</item>
+        <item>Желпіністің көлемі 1.5x</item>
+        <item>Желпіністің көлемі 2x</item>
+        <item>Желпіністің көлемі 5x</item>
+        <item>Желпіністің көлемі 10x</item>
+    </string-array>
+    <string-array name="animator_duration_scale_entries">
+        <item>Анимацияны өшіру</item>
+        <item>Желпіністің көлемі .5x</item>
+        <item>Желпіністің көлемі 1x</item>
+        <item>Желпіністің көлемі 1.5x</item>
+        <item>Желпіністің көлемі 2x</item>
+        <item>Желпіністің көлемі 5x</item>
+        <item>Желпіністің көлемі 10x</item>
+    </string-array>
+    <string-array name="overlay_display_devices_entries">
+        <item>Жоқ</item>
+        <item>720x480 mdpi</item>
+        <item>1280x720 tvdpi</item>
+        <item>1920x1080 xhdpi</item>
+        <item>1280x720 tvdpi және 1920x1080 xhdpi</item>
+    </string-array>
+    <string-array name="enable_opengl_traces_entries">
+        <item>Жоқ</item>
+        <item>Logcat</item>
+        <item>Systrace құралы (Графика)</item>
+        <item>glGetError-дегі қоңырау жинағы</item>
+    </string-array>
+    <string-array name="app_process_limit_entries">
+        <item>Стандартты шектеу</item>
+        <item>Фон үрдістері жоқ</item>
+        <item>Арада көпшілікте 1 үдеріс</item>
+        <item>Арада көпшілікте 2 үдеріс</item>
+        <item>Арада көпшілікте 3 үдеріс</item>
+        <item>Арада көпшілікте 4 үдеріс</item>
+    </string-array>
+    <string-array name="vpn_types_long">
+        <item>PPTP VPN</item>
+        <item>Алдын ала бөлісілген кілттері бар L2TP/IPSec VPN</item>
+        <item>Сертификаттары бар L2TP/IPSec VPN</item>
+        <item>Алдын ала бөлісілген кілттері және Xauth куәландыруы бар IPSec VPN</item>
+        <item>IPSec VPN куәліктермен және бірдейлестіру Xauth</item>
+        <item>Сертификаттары және аралас куәландыруы бар IPSec VPN</item>
+    </string-array>
+    <string-array name="vpn_states">
+        <item>Ажыратылды</item>
+        <item>Басталуда...</item>
+        <item>Қосылуда...</item>
+        <item>Қосылды</item>
+        <item>Тайм-аут</item>
+        <item>Сәтсіз</item>
+    </string-array>
+    <string-array name="security_settings_premium_sms_values">
+        <item>Сұрау</item>
+        <item>Ешқашан рұқсат жоқ</item>
+        <item>Әрдайым рұқсат</item>
+    </string-array>
+    <string-array name="search_filter">
+        <item>Барлық құрылымдар</item>
+        <item>Құлақаспап</item>
+        <item>PC</item>
+        <item>Телефон</item>
+        <item>Сыртқы құрылғы</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries_NORMAL">
+        <item>Пайдаланушы суреті</item>
+        <item>Сағат 1</item>
+        <item>Сағат 2</item>
+        <item>Сағат 3</item>
+        <item>Сағат 4</item>
+        <item>Сағат 5</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL">
+        <item>1.5 секунд</item>
+        <item>3 секунд</item>
+        <item>5 секунд</item>
+        <item>Әрқашан қосулы</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL_ex">
+        <item>1.5 Cек.</item>
+        <item>3 сек.</item>
+        <item>5 сек.</item>
+        <item>Әрқашан қосулы</item>
+    </string-array>
+    <string-array name="sp_front_key_light_l1_NORMAL">
+        <item>3 секунд</item>
+        <item>6 секунд</item>
+        <item>10 секунд</item>
+        <item>30 секунд</item>
+        <item>Әрқашан қосулы</item>
+    </string-array>
+    <string-array name="sp_front_key_light_att_NORMAL">
+        <item>3 сек.</item>
+        <item>1 Cек.</item>
+        <item>10 сек.</item>
+        <item>30 сек.</item>
+        <item>Әрқашан қосулы</item>
+    </string-array>
+    <string-array name="sp_numlocdisp_entries_NORMAL">
+        <item>Өшіру</item>
+        <item>Қосу</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_NORMAL">
+        <item>Құпиялылық ескертуі</item>
+        <item>Егер 3-ші тараптан алынған қолданбаны пайдалансаңыз, ол жеке ақпаратыңызды тікелей жинауы немесе операторыңыздан сіздің жеке ақпаратыңызды, оның ішінде орналасқан жеріңіздің ақпаратын (қолданылатын жерде) қолданба провайдеріне немесе кейбір басқа 3-ші тарапқа жариялауды талап етуі мүмкін.</item>
+        <item>Қандай құпиялылық саясат қолданылады? Операторыңыздың құпиялылық саясаты және пайдалану шарттары тек 3-ші тарап қамтамасыз еткен телефондағы қолданбаларға қолданылмайды. 3-ші тарап саясаты осы қолданбаны пайдалану үшін қолданылады.</item>
+        <item>3-ші тараптың саясаты туралы қосымша ақпаратты қайдан таба аламын? Қолданбаның ақпаратыңызды қалай жинайтыны, кіретіні, пайдаланатыны және жариялайтыны туралы қосымша ақпарат алу үшін қолданбаның пайдалану шарттарын және/немесе қолданба провайдерлерінің саясатын тексеріңіз. Құпиялылық саясаттары, пайдалану шарттары мен басқа тұтынушы ескертпелері провайдердің веб-торабында қол жетімді БОЛУЫ МҮМКІН. Қолданбаны пайдаланудан бұрын саясаттарымен келісетініңізге сенімді болыңыз.</item>
+        <item>Операторымның құпиялылық саясатын қайдан таба аламын? Егер операторыңыздың құпиялылық саясаты туралы сұрақтарыңыз болса, операторыңыздың негізгі бетіне өтіңіз және \"Құпиялылық саясаты\" сілтемесін басыңыз.</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_spr_NORMAL">
+        <item>Sprint құпиялылық ескертуі</item>
+        <item>Егер 3-ші тараптан алынған қолданбаны пайдалансаңыз, ол жеке ақпаратыңызды тікелей жинауы немесе Sprint-ды сіздің жеке ақпаратыңызды, оның ішінде орналасқан жеріңіздің ақпаратын (қолданылатын жерде) қолданба провайдеріне немесе кейбір басқа 3-ші тарапқа жариялауды талап етуі мүмкін.</item>
+        <item>Қандай құпиялылық саясат қолданылады? Sprint құпиялылық саясаты және пайдалану шарттары тек 3-ші тарап қамтамасыз еткен телефондағы қолданбаларға қолданылмайды.</item>
+        <item>3-ші тараптың саясаты туралы қосымша ақпаратты қайдан таба аламын? Қолданбаның ақпаратыңызды қалай жинайтыны, кіретіні, пайдаланатыны және жариялайтыны туралы қосымша ақпарат алу үшін қолданбаның пайдалану шарттарын және/немесе қолданба провайдерлерінің саясатын тексеріңіз. Құпиялылық саясаттары, пайдалану шарттары мен басқа тұтынушы ескертпелері провайдердің веб-торабында қол жетімді БОЛУЫ МҮМКІН. Қолданбаны пайдаланудан бұрын саясаттарымен келісетініңізге сенімді болыңыз.</item>
+        <item>Sprint сымсыз желісінің құпиялылық саясатын қайдан таба аламын? Егер Sprint сымсыз желісінің құпиялылық саясаты туралы сұрақтарыңыз болса, Sprint.com веб-торабына өтіңіз және \"Құпиялылық саясаты\" сілтемесін басыңыз.</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_bm_NORMAL">
+        <item>Boost Mobile құпиялылық туралы ескертуі</item>
+        <item>Егер 3-ші тараптан алынған қолданбаны пайдалансаңыз, ол жеке ақпаратыңызды тікелей жинауы немесе Boost Mobile-ды сіздің жеке ақпаратыңызды, оның ішінде орналасқан жеріңіздің ақпаратын (қолданылатын жерде) қолданба провайдеріне немесе кейбір басқа 3-ші тарапқа жариялауды талап етуі мүмкін.</item>
+        <item>Қандай құпиялылық саясат қолданылады? Boost Mobile құпиялылық саясаты және пайдалану шарттары тек 3-ші тарап қамтамасыз еткен телефондағы қолданбаларға қолданылмайды.</item>
+        <item>3-ші тараптың саясаты туралы қосымша ақпаратты қайдан таба аламын? Қолданбаның ақпаратыңызды қалай жинайтыны, кіретіні, пайдаланатыны және жариялайтыны туралы қосымша ақпарат алу үшін қолданбаның пайдалану шарттарын және/немесе қолданба провайдерлерінің саясатын тексеріңіз. Құпиялылық саясаттары, пайдалану шарттары мен басқа тұтынушы ескертпелері провайдердің веб-торабында қол жетімді БОЛУЫ МҮМКІН. Қолданбаны пайдаланудан бұрын саясаттарымен келісетініңізге сенімді болыңыз.</item>
+        <item>Boost Mobile желісінің құпиялылық саясатын қайдан таба аламын? Егер Boost Mobile желісінің құпиялылық саясаты туралы сұрақтарыңыз болса, Boost Mobile.com веб-торабына өтіңіз және \"Құпиялылық саясаты\" сілтемесін басыңыз.</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_virgin_NORMAL">
+        <item>Virgin Mobile құпиялылық туралы ескертуі</item>
+        <item>Егер 3-ші тараптан алынған қолданбаны пайдалансаңыз, ол жеке ақпаратыңызды тікелей жинауы немесе Virgin Mobile-ды сіздің жеке ақпаратыңызды, оның ішінде орналасқан жеріңіздің ақпаратын (қолданылатын жерде) қолданба провайдеріне немесе кейбір басқа 3-ші тарапқа жариялауды талап етуі мүмкін.</item>
+        <item>Қандай құпиялылық саясат қолданылады? Virgin Mobile құпиялылық саясаты және пайдалану шарттары тек 3-ші тарап қамтамасыз еткен телефондағы қолданбаларға қолданылмайды. 3-ші тарап саясаты осы қолданбаны пайдалану үшін қолданылады.</item>
+        <item>3-ші тараптың саясаты туралы қосымша ақпаратты қайдан таба аламын? Қолданбаның ақпаратыңызды қалай жинайтыны, кіретіні, пайдаланатыны және жариялайтыны туралы қосымша ақпарат алу үшін қолданбаның пайдалану шарттарын және/немесе қолданба провайдерлерінің саясатын тексеріңіз. Құпиялылық саясаттары, пайдалану шарттары мен басқа тұтынушы ескертпелері провайдердің веб-торабында қол жетімді БОЛУЫ МҮМКІН. Қолданбаны пайдаланудан бұрын саясаттарымен келісетініңізге сенімді болыңыз.</item>
+        <item>Virgin Mobile желісінің құпиялылық саясатын қайдан таба аламын? Егер Virgin Mobile құпиялылық саясаты туралы сұрақтарыңыз болса, VirginMobileUSA.com веб-торабына өтіңіз және \"Құпиялылық саясаты\" сілтемесін басыңыз.</item>
+    </string-array>
+    <string-array name="sp_lock_screen_effect_entries_NORMAL">
+        <item>Негізгі</item>
+        <item>Жапырақтармен шымырлаған діріл</item>
+        <item>Жайылатын сия</item>
+        <item>Шық тамшысы</item>
+    </string-array>
+    <string-array name="sp_power_save_brightness_entries_NORMAL">
+        <item>10% жарықтық</item>
+        <item>20% жарықтық</item>
+        <item>30% жарықтық</item>
+        <item>50% жарықтық</item>
+    </string-array>
+    <string-array name="sp_power_save_screen_timeout_entries_NORMAL">
+        <item>15 секунд</item>
+        <item>30 секунд</item>
+        <item>1 минут</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_NORMAL">
+        <item>1.5 секунд</item>
+        <item>Әрдайым өшірулі</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_att_NORMAL">
+        <item>3 секунд</item>
+        <item>Әрдайым өшірулі</item>
+    </string-array>
+    <string-array name="sp_power_save_mode_entries_NORMAL">
+        <item>10% батареяда</item>
+        <item>20% батареяда</item>
+        <item>30% батареяда</item>
+        <item>50% батареяда</item>
+    </string-array>
+    <string-array name="sp_power_save_mode2_entries_NORMAL">
+        <item>Дереу</item>
+        <item>10% батареяда</item>
+        <item>20% батареяда</item>
+        <item>30% батареяда</item>
+        <item>50% батареяда</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries">
+        <item>5 минут</item>
+        <item>10 минут</item>
+        <item>15 минут</item>
+    </string-array>
+    <string-array name="sp_hotspot_timeout_entries_mx_NORMAL">
+        <item>Ешқашан</item>
+        <item>5 мин</item>
+        <item>10 мин</item>
+        <item>15 мин</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries_jb">
+        <item>5 мин</item>
+        <item>10 мин</item>
+        <item>15 мин</item>
+        <item>30 мин</item>
+        <item>Ешқашан</item>
+    </string-array>
+    <string-array name="wifi_p2p_timeout_entries">
+        <item>15 мин</item>
+        <item>30 мин</item>
+        <item>Ешқашан</item>
+    </string-array>
+    <string-array name="sp_wifi_ap_visibility_NORMAL">
+        <item>Көрсету</item>
+        <item>Жасыру</item>
+    </string-array>
+    <string-array name="sp_bt_search_filter_SHORT">
+        <item>Барлық құрылымдар</item>
+        <item>Құлақаспап</item>
+        <item>Ұялы телефон</item>
+        <item>ДК</item>
+        <item>Пернетақта, тінтуір, т.б.</item>
+    </string-array>
+    <string-array name="wifi_signal_strength_entries">
+        <item>Күшті</item>
+        <item>Орташа</item>
+        <item>Әлсіз</item>
+        <item>Өшіру</item>
+    </string-array>
+    <string-array name="wifi_Dual_band_AP_connection_entries">
+        <item>Авто</item>
+        <item>5 GHz</item>
+        <item>2.4 GHz</item>
+    </string-array>
+</resources>

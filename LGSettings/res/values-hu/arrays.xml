@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="timezone_filters">
+        <item>Amerika</item>
+        <item>Európa</item>
+        <item>Afrika</item>
+        <item>Ázsia</item>
+        <item>Ausztrália</item>
+        <item>Csendes-óceáni térség</item>
+        <item>Összes</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 másodperc</item>
+        <item>30 másodperc</item>
+        <item>1 perc</item>
+        <item>2 perc</item>
+        <item>5 perc</item>
+        <item>10 perc</item>
+        <item>30 perc</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries2_NORMAL">
+        <item>15 másodperc</item>
+        <item>30 másodperc</item>
+        <item>1 perc</item>
+        <item>2 perc</item>
+        <item>5 perc</item>
+        <item>10 perc</item>
+        <item>A képernyő bekapcsolva tartása</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL">
+        <item>15 másodperc</item>
+        <item>30 másodperc</item>
+        <item>1 perc</item>
+        <item>2 perc</item>
+        <item>5 perc</item>
+        <item>10 perc</item>
+        <item>15 perc</item>
+        <item>A képernyő bekapcsolva tartása</item>
+    </string-array>
+    <string-array name="sp_screen_timeout_entries3_NORMAL_ex">
+        <item>15 mp</item>
+        <item>30 mp</item>
+        <item>1 perc</item>
+        <item>2 perc</item>
+        <item>5 Perc</item>
+        <item>10 perc</item>
+        <item>15 perc</item>
+        <item>A képernyő bekapcsolva tartása</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled">
+        <item>15 másodperc</item>
+        <item>30 másodperc</item>
+        <item>1 perc</item>
+        <item>2 perc</item>
+        <item>5 perc</item>
+        <item>10 perc</item>
+        <item>15 perc</item>
+    </string-array>
+    <string-array name="screen_timeout_entries_oled_ex">
+        <item>15 mp</item>
+        <item>30 mp</item>
+        <item>1 perc</item>
+        <item>2 perc</item>
+        <item>5 Perc</item>
+        <item>10 perc</item>
+        <item>15 perc</item>
+    </string-array>
+    <string-array name="sp_pouch_default_clock_entries2_NORMAL">
+        <item>Óra 1</item>
+        <item>Óra 2</item>
+        <item>Óra 3</item>
+        <item>Óra 4</item>
+        <item>Óra 5</item>
+        <item>Óra 6</item>
+        <item>Óra 7</item>
+        <item>Óra 8</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries1_NORMAL">
+        <item>Analóg</item>
+        <item>Digitális</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_position_entries1_NORMAL">
+        <item>Központ</item>
+        <item>Jobb felső</item>
+        <item>Bal felső</item>
+        <item>Jobb alsó</item>
+        <item>Bal alsó</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_font_entries1_NORMAL">
+        <item>1-es betűtípus</item>
+        <item>2-es betűtípus</item>
+    </string-array>
+    <string-array name="sp_sound_profile_entries_NORMAL">
+        <item>Hangos</item>
+        <item>Csak rezgő</item>
+        <item>Néma</item>
+    </string-array>
+    <string-array name="dream_timeout_entries">
+        <item>Soha</item>
+        <item>15 másodperc</item>
+        <item>30 másodperc</item>
+        <item>1 perc</item>
+        <item>2 perc</item>
+        <item>5 perc</item>
+        <item>10 perc</item>
+        <item>30 perc</item>
+    </string-array>
+    <string-array name="lock_after_timeout_entries">
+        <item>Azonnal</item>
+        <item>5 másodperc</item>
+        <item>15 másodperc</item>
+        <item>30 másodperc</item>
+        <item>1 perc</item>
+        <item>2 perc</item>
+        <item>5 perc</item>
+        <item>10 perc</item>
+        <item>30 perc</item>
+    </string-array>
+    <string-array name="sp_lock_after_timeout_entries_NORMAL">
+        <item>Azonnal</item>
+        <item>15 másodperc</item>
+        <item>30 másodperc</item>
+        <item>1 perc</item>
+        <item>2 perc</item>
+        <item>10 perc</item>
+        <item>30 perc</item>
+    </string-array>
+    <string-array name="entries_font_size">
+        <item>&amp;lt;font size=16 align=middle>Kicsi&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>Normál&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>Nagy&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>Extra nagy&amp;lt;/font></item>
+    </string-array>
+    <string-array name="sp_entries_font_size2">
+        <item>&amp;lt;font size=14 align=middle>Legkisebb&amp;lt;/font></item>
+        <item>&amp;lt;font size=16 align=middle>Kicsi&amp;lt;/font></item>
+        <item>&amp;lt;font size=18 align=middle>Közepes&amp;lt;/font></item>
+        <item>&amp;lt;font size=21 align=middle>Nagy&amp;lt;/font></item>
+        <item>&amp;lt;font size=24 align=middle>Nagyon nagy&amp;lt;/font></item>
+        <item>&amp;lt;font size=27 align=middle>Legnagyobb&amp;lt;/font></item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>Nagyon lassú</item>
+        <item>Lassú</item>
+        <item>Normál</item>
+        <item>Gyors</item>
+        <item>Nagyon gyors</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>Nagyon alacsony</item>
+        <item>Alacsony</item>
+        <item>Normál</item>
+        <item>Magas</item>
+        <item>Nagyon magas</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Keresés...</item>
+        <item>Csatlakozás...</item>
+        <item>Hitelesítés…</item>
+        <item>IP cím lekérése…</item>
+        <item>Csatlakoztatva</item>
+        <item>"Felfüggesztett  "</item>
+        <item>Kapcsolat bontása...</item>
+        <item>Lecsatlakoztatva</item>
+        <item>Sikertelen</item>
+        <item>Zárolva</item>
+        <item>Gyenge kapcsolat ideiglenes elkerülése</item>
+        <item>Gyenge kapcsolat ideiglenes elkerülése</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Keresés...</item>
+        <item>Kapcsolódás:%1$s...</item>
+        <item>Hitelesítés ezzel: %1$s…</item>
+        <item>IP cím lekérése %1$s...</item>
+        <item>Csatlakoztatva: %1$s</item>
+        <item>"Felfüggesztett  "</item>
+        <item>Lecsatlakozik ettől %1$s…</item>
+        <item>Lecsatlakoztatva</item>
+        <item>Sikertelen</item>
+        <item>Zárolva</item>
+        <item>Gyenge kapcsolat ideiglenes elkerülése</item>
+    </string-array>
+    <string-array name="wifi_ap_security">
+        <item>Nyílt</item>
+        <item>WPA PSK</item>
+        <item>WPA2 PSK</item>
+    </string-array>
+    <string-array name="wifi_p2p_wps_setup">
+        <item>Nyomja meg a gombot</item>
+        <item>PIN erről az eszközről</item>
+    </string-array>
+    <string-array name="wifi_p2p_status">
+        <item>Csatlakoztatva</item>
+        <item>Kapcsolódás</item>
+        <item>Sikertelen</item>
+        <item>Elérhető</item>
+        <item>Tartományon kívül</item>
+    </string-array>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>2 perc</item>
+        <item>5 perc</item>
+        <item>1 óra</item>
+        <item>Soha nincs időtúllépés</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Nem jó</item>
+        <item>"Kedvező "</item>
+        <item>Jó</item>
+        <item>Kiváló</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Mindig</item>
+        <item>Csak amikor csatlakoztatva van</item>
+        <item>A Wi-Fi kikapcsolva (az adatforgalom miatt)</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <item>Mindig</item>
+        <item>Csak amikor csatlakoztatva van</item>
+        <item>A Wi-Fi kikapcsolva</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_entries">
+        <item>Automatikus</item>
+        <item>Csak 5 GHz</item>
+        <item>Csak 2.4 GHz</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>Használati idő</item>
+        <item>Számlálás indítása</item>
+        <item>Alkalmazás neve</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>Semmi</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_network_setup">
+        <item>Ki</item>
+        <item>Nyomja meg a gombot</item>
+        <item>PIN a hozzáférési pontról</item>
+        <item>PIN erről az eszközről</item>
+    </string-array>
+    <string-array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>Statikus</item>
+    </string-array>
+    <string-array name="wifi_proxy_settings">
+        <item>Semmi</item>
+        <item>Kézi</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>Ki</item>
+        <item>Figyelmeztetés</item>
+        <item>Rezgés</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>Semmi</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP vagy CHAP</item>
+    </string-array>
+    <string-array name="bearer_entries">
+        <item>LTE</item>
+        <item>eHRPD</item>
+        <item>Nem meghatározott</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Külső eszköz memória</item>
+        <item>Eltávolítható SD kártya</item>
+        <item>Renszer beállítás használata</item>
+    </string-array>
+    <string-array name="vibrate_entries">
+        <item>Mindig</item>
+        <item>Soha</item>
+        <item>Csak néma módban</item>
+        <item>Kivéve néma módban</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_titles">
+        <item>Rövid</item>
+        <item>Közepes</item>
+        <item>Hosszú</item>
+    </string-array>
+    <string-array name="hdcp_checking_titles">
+        <item>Soha nem ellenőriz</item>
+        <item>Csak a DRM tartalmat ellenőrizze</item>
+        <item>Mindig legyen ellenőrzés</item>
+    </string-array>
+    <string-array name="hdcp_checking_summaries">
+        <item>Soha nem használ HDCP ellenőrzést</item>
+        <item>Használja a HDCP ellenőrzést csak a DRM tartalmaknál</item>
+        <item>Mindig alkalmazza a HDCP (digitális másolásvédelmi eljárás) ellenőrzést</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>Animáció kikapcsolása</item>
+        <item>Animációs skála 5x</item>
+        <item>Animációs skála 1x</item>
+        <item>Animációs skála 1.5x</item>
+        <item>Animációs skála 2x</item>
+        <item>Animációs skála 5x</item>
+        <item>Animációs skála 10x</item>
+    </string-array>
+    <string-array name="transition_animation_scale_entries">
+        <item>Animáció kikapcsolása</item>
+        <item>Animációs skála 5x</item>
+        <item>Animációs skála 1x</item>
+        <item>Animációs skála 1.5x</item>
+        <item>Animációs skála 2x</item>
+        <item>Animációs skála 5x</item>
+        <item>Animációs skála 10x</item>
+    </string-array>
+    <string-array name="animator_duration_scale_entries">
+        <item>Animáció kikapcsolása</item>
+        <item>Animációs skála 5x</item>
+        <item>Animációs skála 1x</item>
+        <item>Animációs skála 1.5x</item>
+        <item>Animációs skála 2x</item>
+        <item>Animációs skála 5x</item>
+        <item>Animációs skála 10x</item>
+    </string-array>
+    <string-array name="overlay_display_devices_entries">
+        <item>Semmi</item>
+        <item>720x480 mdpi</item>
+        <item>1280x720 tvdpi</item>
+        <item>1920x1080 xhdpi</item>
+        <item>1280x720 tvdpi és 1920x1080 xhdpi</item>
+    </string-array>
+    <string-array name="enable_opengl_traces_entries">
+        <item>Semmi</item>
+        <item>Logcat</item>
+        <item>Systrace (Grafika)</item>
+        <item>Hívássorozat glGetError</item>
+    </string-array>
+    <string-array name="app_process_limit_entries">
+        <item>Szokásos korlátozás</item>
+        <item>Nincsenek háttér folyamatok</item>
+        <item>Legfeljebb 1 folyamatnál</item>
+        <item>Legfeljebb 2 folyamatnál</item>
+        <item>Legfeljebb 3 folyamatnál</item>
+        <item>Legfeljebb 4 folyamatnál</item>
+    </string-array>
+    <string-array name="vpn_types_long">
+        <item>PPTP VPN</item>
+        <item>L2TP/IPSec VPN előre megosztott kulcsokkal</item>
+        <item>L2TP/IPSec VPN tanúsítványokkal</item>
+        <item>IPSec VPN előre megosztott kulcsokkal és Xauth hitelesítéssel</item>
+        <item>IPSec VPN tanúsítványokkal és Xauth hitelesítéssel</item>
+        <item>IPSec VPN tanúsítványokkal és hibrid hitelesítéssel</item>
+    </string-array>
+    <string-array name="vpn_states">
+        <item>Lecsatlakoztatva</item>
+        <item>Inicializálás...</item>
+        <item>Csatlakozás...</item>
+        <item>Csatlakoztatva</item>
+        <item>Időtúllépés</item>
+        <item>Sikertelen</item>
+    </string-array>
+    <string-array name="security_settings_premium_sms_values">
+        <item>Rákérdez</item>
+        <item>Soha ne engedélyezze</item>
+        <item>Mindig engedélyezze</item>
+    </string-array>
+    <string-array name="search_filter">
+        <item>Minden eszköz</item>
+        <item>Fejhallgató</item>
+        <item>PC</item>
+        <item>Telefon</item>
+        <item>Periférikus</item>
+    </string-array>
+    <string-array name="sp_pouch_clock_entries_NORMAL">
+        <item>Felhasználói kép</item>
+        <item>Óra 1</item>
+        <item>Óra 2</item>
+        <item>Óra 3</item>
+        <item>Óra 4</item>
+        <item>Óra 5</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL">
+        <item>1.5 másodperc</item>
+        <item>3 másodperc</item>
+        <item>5 másodperc</item>
+        <item>Mindig be</item>
+    </string-array>
+    <string-array name="sp_front_key_light_NORMAL_ex">
+        <item>1.5 mp</item>
+        <item>3 mp</item>
+        <item>5 mp</item>
+        <item>Mindig be</item>
+    </string-array>
+    <string-array name="sp_front_key_light_l1_NORMAL">
+        <item>3 másodperc</item>
+        <item>6 másodperc</item>
+        <item>10 másodperc</item>
+        <item>30 másodperc</item>
+        <item>Mindig be</item>
+    </string-array>
+    <string-array name="sp_front_key_light_att_NORMAL">
+        <item>3 mp</item>
+        <item>1 mp</item>
+        <item>10 mp</item>
+        <item>30 mp</item>
+        <item>Mindig be</item>
+    </string-array>
+    <string-array name="sp_numlocdisp_entries_NORMAL">
+        <item>Letilt</item>
+        <item>Engedélyez</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_NORMAL">
+        <item>Adatvédelmi riasztás</item>
+        <item>Ha egy harmadik fél alkalmazását használja, az közvetlenül begyűjtheti a személyes adatait vagy kötelezheti a szolgáltatót a személyes adatok továbbítására, beleértve a helyzet adatokat (ahol ez rendelkezésre áll), az alkalmazás szolgáltatójának vagy más harmadik félnek.</item>
+        <item>Milyen adatvédelmi szabályzatot alkalmaznak? A szolgáltatója adatvédelmi szabályzata és használati feltételei nem érvényesek a készülékén található harmadik fél által kiadott alkalmazásokra. Az alkalmazás használatára a harmadik fél adatvédelmi szabályzata érvényes.</item>
+        <item>Hol találhatok adatokat a harmadik fél irányelveiről? Ellenőrizze az alkalmazás szolgáltatójának alkalmazás használati feltételeit és/vagy a szolgáltató irányelveit arról, hogy az alkalmazás milyen módon gyűjti be, éri el, használja fel vagy továbbítja az Ön adatait. A szolgáltató honlapján LEHETSÉGES, hogy elérhető az adatvédelmi szabályzat, a használati feltételek és egyéb felhasználói értesítések. Az alkalmazás használata előtt győződjön meg arról, hogy Önnek megfelelnek-e az adott irányelvek.</item>
+        <item>Hol találom a szolgáltatóm adatvédelmi szabályzatát? Ha kérdése merülne fel a szolgáltatója adatvédelmi szabályzatát illetően, kérjük, látogassa meg a szolgáltatója honlapját és kattintson az \"Adatvédelmi szabályzat\" hivatkozásra.</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_spr_NORMAL">
+        <item>Sprint biztonsági figyelmeztetés</item>
+        <item>Ha külső alkalmazást használ, az közvetlenül összegyűjtheti az Ön személyes adatait vagy Sprint alkalmazást igényelhet a személyes adatok alkalmazás-szolgáltatónak vagy más harmadik félnek való kiadása érdekében, beleértve a tartózkodási adatokat (ha elérhetők).</item>
+        <item>Milyen adatvédelmi szabályzatot alkalmaznak? Sprint adatvédelmi szabályzata és használati feltételei nem érvényesek azokra az alkalmazásokra a kézibeszélőn, amelyeket csupán 3. fél biztosított.</item>
+        <item>Hol találok adatokat a harmadik fél irányelveiről? Ellenőrizze az alkalmazás használati feltételeit és/vagy az alkalmazás szolgáltató irányelvét arról, hogy az alkalmazás milyen módon gyűjti, éri el, használja és teszi közzé az Ön adatait. Az adatvédelmi szabályzatok, a használati feltételek és más fogyasztói figyelmeztetések valószínűleg rendelkezésre állnak a szolgáltató honlapján. Legyen tisztában az alkalmazás használata előtt az irányelvekkel.</item>
+        <item>"Hol találom meg a Sprint adatvédelmi szabályzatát? Ha kérdése van a Sprint adatvédelmi szabályzatával kapcsolatban, kérjük, látogassa meg a Sprint.com honlapot és kattintson az 'Adatvédelmi szabályzat' hivatkozásra."</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_bm_NORMAL">
+        <item>Boost Mobile biztonsági figyelmeztetése</item>
+        <item>Ha külső alkalmazást használ, az közvetlenül összegyűjtheti az Ön személyes adatait vagy Boost Mobil alkalmazást igényelhet a személyes adatok alkalmazás-szolgáltatónak vagy más harmadik félnek való kiadása érdekében, beleértve a tartózkodási adatokat (ha elérhetők).</item>
+        <item>Milyen adatvédelmi szabályzatot alkalmaznak? Boost Mobile adatvédelmi szabályzata és használati feltételei nem érvényesek azokra az alkalmazásokra a kézibeszélőn, amelyeket csupán 3. fél biztosított.</item>
+        <item>Hol találok adatokat a harmadik fél irányelveiről? Ellenőrizze az alkalmazás használati feltételeit és/vagy az alkalmazás szolgáltató irányelvét arról, hogy az alkalmazás milyen módon gyűjti, éri el, használja és teszi közzé az Ön adatait. Az adatvédelmi szabályzatok, a használati feltételek és más fogyasztói figyelmeztetések valószínűleg rendelkezésre állnak a szolgáltató honlapján. Legyen tisztában az alkalmazás használata előtt az irányelvekkel.</item>
+        <item>"Hol találom meg a Boost Mobile adatvédelmi szabályzatát? Ha kérdése van a Boost Mobile adatvédelmi szabályzatával kapcsolatban, kérjük, látogassa meg a Boost Mobile.com honlapot és kattintson az 'Adatvédelmi szabályzat' hivatkozásra."</item>
+    </string-array>
+    <string-array name="sp_carrier_legal_virgin_NORMAL">
+        <item>Virgin Mobile biztonsági figyelmeztetése</item>
+        <item>Ha külső alkalmazást használ, az közvetlenül összegyűjtheti az Ön személyes adatait vagy Virgin Mobile alkalmazást igényelhet a személyes adatok alkalmazás-szolgáltatónak vagy más harmadik félnek való kiadása érdekében, beleértve a tartózkodási adatokat (ha elérhetők).</item>
+        <item>Melyek az érvényes adatvédelmi irányelvek? A Virgin Mobile adatvédelmi szabályzata és használati feltételei nem érvényesek azokra az alkalmazásokra az Ön készülékén, amelyeket csupán külső cég biztosított. Az alkalmazás használatára a külső cég irányelvei érvényesek.</item>
+        <item>Hol találok adatokat a harmadik fél irányelveiről? Ellenőrizze az alkalmazás használati feltételeit és/vagy az alkalmazás szolgáltató irányelvét arról, hogy az alkalmazás milyen módon gyűjti, éri el, használja és teszi közzé az Ön adatait. Az adatvédelmi szabályzatok, a használati feltételek és más fogyasztói figyelmeztetések valószínűleg rendelkezésre állnak a szolgáltató honlapján. Legyen tisztában az alkalmazás használata előtt az irányelvekkel.</item>
+        <item>Hol találom meg a Virgin Mobile adatvédelmi irányelvét? Ha kérdése lenne a Virgin Mobile adatvédelmi irányelvéről, látogasson el a VirginMobileUSA.com weboldalra és kattintson a \"Adatvédelmi irányelv\" hivatkozásra.</item>
+    </string-array>
+    <string-array name="sp_lock_screen_effect_entries_NORMAL">
+        <item>Alap</item>
+        <item>Falevelek hullámzása</item>
+        <item>Terjedő festék</item>
+        <item>Harmatcsepp</item>
+    </string-array>
+    <string-array name="sp_power_save_brightness_entries_NORMAL">
+        <item>10% fényerő</item>
+        <item>20% fényerő</item>
+        <item>30% fényerő</item>
+        <item>50% fényerő</item>
+    </string-array>
+    <string-array name="sp_power_save_screen_timeout_entries_NORMAL">
+        <item>15 másodperc</item>
+        <item>30 másodperc</item>
+        <item>1 perc</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_NORMAL">
+        <item>1.5 másodperc</item>
+        <item>Mindig ki</item>
+    </string-array>
+    <string-array name="sp_power_save_front_led_entries_att_NORMAL">
+        <item>3 másodperc</item>
+        <item>Mindig ki</item>
+    </string-array>
+    <string-array name="sp_power_save_mode_entries_NORMAL">
+        <item>10% akkumulátoron</item>
+        <item>20% akkumulátoron</item>
+        <item>30% akkumulátoron</item>
+        <item>50% akkumulátoron</item>
+    </string-array>
+    <string-array name="sp_power_save_mode2_entries_NORMAL">
+        <item>Azonnal</item>
+        <item>10% akkumulátoron</item>
+        <item>20% akkumulátoron</item>
+        <item>30% akkumulátoron</item>
+        <item>50% akkumulátoron</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries">
+        <item>5 perc</item>
+        <item>10 perc</item>
+        <item>15 perc</item>
+    </string-array>
+    <string-array name="sp_hotspot_timeout_entries_mx_NORMAL">
+        <item>nincs megadva</item>
+        <item>5 Perc</item>
+        <item>10 perc</item>
+        <item>15 perc</item>
+    </string-array>
+    <string-array name="hotspot_timeout_entries_jb">
+        <item>5 Perc</item>
+        <item>10 perc</item>
+        <item>15 perc</item>
+        <item>30 Perc</item>
+        <item>Soha</item>
+    </string-array>
+    <string-array name="wifi_p2p_timeout_entries">
+        <item>15 perc</item>
+        <item>30 Perc</item>
+        <item>Soha</item>
+    </string-array>
+    <string-array name="sp_wifi_ap_visibility_NORMAL">
+        <item>Mutat</item>
+        <item>Elrejt</item>
+    </string-array>
+    <string-array name="sp_bt_search_filter_SHORT">
+        <item>Minden eszköz</item>
+        <item>Fejhallgató</item>
+        <item>Mobiltelefon</item>
+        <item>PC</item>
+        <item>Bevitel eszköz (Billentyűzet, Egér, stb.)</item>
+    </string-array>
+    <string-array name="wifi_signal_strength_entries">
+        <item>Erős</item>
+        <item>Közepes</item>
+        <item>Gyenge</item>
+        <item>Ki</item>
+    </string-array>
+</resources>

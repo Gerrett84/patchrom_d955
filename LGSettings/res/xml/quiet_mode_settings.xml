@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/sp_quiet_mode_title" android:key="quiet_mode_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.lgesettings">
+    <com.android.lgesettings.quietmode.QuietModeSummaryPreference android:key="quiet_mode_time_description" android:summary="@string/sp_quiet_mode_time_description" />
+    <PreferenceCategory android:title="@string/sp_quiet_mode_incoming_call_setting_NORMAL" android:key="category_quiet_mode_incoming_call_setting" />
+    <CheckBoxPreference android:title="@string/sp_quiet_mode_repeated_call_title_NORMAL" android:key="quiet_mode_repeated_call" android:summary="@string/sp_quiet_mode_repeated_second_call_summary_NORMAL" android:defaultValue="false" />
+    <Preference android:persistent="false" android:title="@string/sp_quiet_mode_repeated_contacts_allowed_title_NORMAL_ex" android:key="quiet_mode_contacts_allowed" android:summary="@string/sp_quiet_mode_repeated_contacts_allowed_summary_NORMAL">
+        <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.quietmode.QuietModeContactsAllowedPreferenceActivity" />
+    </Preference>
+    <Preference android:title="@string/sp_quiet_mode_autoreply_title_NORMAL" android:key="quiet_mode_auto_reply" android:summary="@string/sp_quietmode_autoreply_def_message">
+        <intent android:targetPackage="com.android.lgesettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.lgesettings.quietmode.QuietModeAutoReplyPreferenceActivity" />
+    </Preference>
+    <PreferenceCategory android:title="@string/sp_quiet_mode_time_setting_NORMAL" android:key="category_quiet_mode_time_setting" />
+    <CheckBoxPreference android:title="@string/sp_quiet_mode_scheduled_time_NORMAL" android:key="quiet_mode_scheduled_time" android:defaultValue="false" android:disableDependentsState="false" />
+    <com.android.lgesettings.quietmode.QuietModeTimePreference android:title="@string/sp_quiet_time_NORMAL" android:key="quiet_mode_time" android:summary="@string/sp_quiet_time_summary_NORMAL" android:dependency="quiet_mode_scheduled_time" android:defaultValue="false" />
+    <com.android.lgesettings.quietmode.QuietModeDayPreference android:title="@string/sp_quiet_time_NORMAL" android:key="quiet_mode_day" android:summary="@string/sp_quiet_time_summary_NORMAL" android:dependency="quiet_mode_scheduled_time" android:defaultValue="false" />
+    <Preference android:persistent="false" android:title="@string/sp_quiet_mode_add_me_time_event_title_NORMAL" android:key="quiet_mode_add_calendar_event" android:summary="@string/sp_quiet_mode_add_me_time_event_summary_NORMAL" />
+</PreferenceScreen>

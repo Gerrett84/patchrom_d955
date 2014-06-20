@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_label">设置存储</string>
+    <string name="sp_quietmode_autoreply_def_message">我会尽快联系你</string>
+</resources>

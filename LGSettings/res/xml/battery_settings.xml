@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/sp_power_save_battery_NORMAL"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.lgesettings">
+    <PreferenceCategory android:title="@string/sp_power_save_battery_information_NORMAL" android:key="battery_infomation_category">
+        <com.android.lgesettings.powersave.PowerSaveBatteryInfoPreference android:key="power_save_battery" android:fragment="com.android.lgesettings.fuelgauge.PowerSaveBatteryDetail" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/sp_power_save_battery_percentage_NORMAL" android:key="power_save_battery_percentage" android:summary="@string/sp_power_save_battery_percentage_summary_NORMAL" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/sp_power_saver_NORMAL" android:key="power_saver_category">
+        <com.android.lgesettings.powersave.PowerSaveSwitchPreference android:title="@string/sp_power_saver_NORMAL" android:key="power_save_enabler" android:fragment="com.android.lgesettings.powersave.PowerSaveSettings" />
+        <com.android.lgesettings.powersave.PowerSaveSwitchPreference android:title="@string/sp_quad_core_control_NORMAL" android:key="power_save_eco_mode" android:summary="@string/sp_eco_mode_desc_NORMAL" />
+        <PreferenceScreen android:title="@string/sp_power_saver_tips_NORMAL" android:key="power_saver_tips" android:fragment="com.android.lgesettings.powersave.PowerSaverTips" />
+    </PreferenceCategory>
+</PreferenceScreen>

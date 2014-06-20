@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:scrollbarAlwaysDrawVerticalTrack="true" android:id="@*android:id/list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:drawSelectorOnTop="false" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/lollipop_desc_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:measureWithLargestChild="true">
+        <TextView android:textSize="18.0sp" android:id="@id/lollipop_desc" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="20.0dip" android:text="@string/lollipop_quickcover_info" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/lollipop_button_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:measureWithLargestChild="true" style="?android:attr/buttonBarStyle">
+        <Button android:id="@id/lollipop_cancel_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/dlg_cancel" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+        <Button android:id="@id/lollipop_ok_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/tethering_popup_kddi_ok" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

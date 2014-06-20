@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="state_encrypted" format="boolean" />
+    <attr name="icon" format="reference" />
+    <attr name="emptyColor" format="color" />
+    <attr name="minTickWidth" format="dimension" />
+    <attr name="optimalWidth" format="dimension" />
+    <attr name="optimalWidthWeight" format="float" />
+    <attr name="sweepDrawable" format="reference" />
+    <attr name="followAxis">
+        <enum name="horizontal" value="0" />
+        <enum name="vertical" value="1" />
+    </attr>
+    <attr name="neighborMargin" format="dimension" />
+    <attr name="labelSize" format="dimension" />
+    <attr name="labelTemplate" format="reference" />
+    <attr name="labelColor" format="color" />
+    <attr name="primaryDrawable" format="reference" />
+    <attr name="secondaryDrawable" format="reference" />
+    <attr name="borderDrawable" format="reference" />
+    <attr name="strokeColor" format="color" />
+    <attr name="fillColor" format="color" />
+    <attr name="fillColorSecondary" format="color" />
+    <attr name="is_checkable" format="integer" />
+    <attr name="power_widget" format="integer" />
+    <attr name="solidColor" format="reference|color" />
+    <attr name="flingable" format="boolean" />
+    <attr name="selectionDividerHeight" format="dimension" />
+    <attr name="dateFormat">
+        <enum name="mmddyyyy" value="0" />
+        <enum name="mmyyyy" value="1" />
+    </attr>
+    <attr name="startYear" format="integer" />
+    <attr name="endYear" format="integer" />
+    <attr name="spinnersShown" format="boolean" />
+    <attr name="minDate" format="string" />
+    <attr name="maxDate" format="string" />
+    <attr name="internalLayout" format="reference" />
+    <attr name="timeFormat">
+        <enum name="ampm" value="0" />
+        <enum name="hhmm" value="1" />
+        <enum name="hhmmss" value="2" />
+    </attr>
+    <attr name="autoAmPmEnabled" format="boolean" />
+    <attr name="suiIndexTextStyle" format="reference" />
+    <attr name="suiAnimated" format="boolean" />
+    <attr name="suiExpandAnimDuration" format="integer" />
+    <attr name="suiCollapseAnimDuration" format="integer" />
+    <attr name="pressedLeftSlop" format="integer" />
+    <attr name="pressedTopSlop" format="integer" />
+    <attr name="pressedRightSlop" format="integer" />
+    <attr name="pressedBottomSlop" format="integer" />
+    <attr name="releasedLeftSlop" format="integer" />
+    <attr name="releasedTopSlop" format="integer" />
+    <attr name="releasedRightSlop" format="integer" />
+    <attr name="releasedBottomSlop" format="integer" />
+    <attr name="firstDayOfWeek" format="integer" />
+    <attr name="showWeekNumber" format="boolean" />
+    <attr name="shownWeekCount" format="integer" />
+    <attr name="selectedWeekBackgroundColor" format="reference|color" />
+    <attr name="focusedMonthDateColor" format="reference|color" />
+    <attr name="unfocusedMonthDateColor" format="reference|color" />
+    <attr name="weekNumberColor" format="reference|color" />
+    <attr name="weekSeparatorLineColor" format="reference|color" />
+    <attr name="selectedDateVerticalBar" format="reference" />
+    <attr name="weekDayTextAppearance" format="reference" />
+    <attr name="dateTextAppearance" format="reference" />
+    <attr name="dateTextSize" format="dimension" />
+    <attr name="monthTitleTextSize" format="dimension" />
+    <attr name="monthWeekTextSize" format="dimension" />
+    <attr name="dateLunarTextSize" format="dimension" />
+</resources>

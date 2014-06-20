@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="def_navigation_bar_theme">com.lge.systemui.theme.white</string>
+    <string name="def_navigation_bar_theme_oled">com.lge.systemui.theme.black</string>
+    <string name="def_airplane_mode_radios">cell,bluetooth,wifi,nfc</string>
+    <string name="airplane_mode_toggleable_radios">bluetooth,wifi,nfc</string>
+    <string name="def_ip_code_number">17951</string>
+    <string name="def_location_providers_allowed">gps</string>
+    <string name="def_backup_transport">com.google.android.backup/.BackupTransportService</string>
+    <string name="def_low_battery_sound">/system/media/audio/ui/LowBattery.ogg</string>
+    <string name="def_desk_dock_sound">/system/media/audio/ui/Dock.ogg</string>
+    <string name="def_desk_undock_sound">/system/media/audio/ui/Undock.ogg</string>
+    <string name="def_car_dock_sound">/system/media/audio/ui/Dock.ogg</string>
+    <string name="def_car_undock_sound">/system/media/audio/ui/Undock.ogg</string>
+    <string name="def_lock_sound">/system/media/audio/ui/Lock.ogg</string>
+    <string name="def_unlock_sound">/system/media/audio/ui/Unlock.ogg</string>
+    <string name="def_usb_connected_sound">/system/media/audio/ui/LG_Cable_Connect.ogg</string>
+    <string name="def_time_12_24">24</string>
+    <string name="def_date_format">yyyy-MM-dd</string>
+    <string name="def_time_zone_id" />
+    <string name="def_gps_supl_host" />
+    <string name="def_gps_supl_port" />
+    <string name="def_accessibility_web_content_key_bindings">0x13=0x01000100; 0x14=0x01010100; 0x15=0x02000001; 0x16=0x02010001; 0x200000013=0x02000601; 0x200000014=0x02010601; 0x200000015=0x03020101; 0x200000016=0x03010201; 0x200000023=0x02000301; 0x200000024=0x02010301; 0x200000037=0x03070201; 0x200000038=0x03000701:0x03010701:0x03020701;</string>
+    <string name="def_accessibility_screen_reader_url">https://ssl.gstatic.com/accessibility/javascript/android/AndroidVox_v1.js</string>
+    <string name="def_hotkey_short_package">com.lge.QuickClip</string>
+    <string name="def_hotkey_short_class">com.lge.QuickClip.QuickClipActivity</string>
+    <string name="def_hotkey_long_package">none</string>
+    <string name="def_hotkey_long_class">none</string>
+    <string name="mynetwork_1" />
+    <string name="mynetwork_2" />
+    <string name="mynetwork_3" />
+    <string name="def_international_plus_dial">011</string>
+    <string name="def_omadm_prl_auto_update">OFF</string>
+    <string name="def_omadm_check_version">unknown</string>
+    <string name="def_homepage_url">http://sprint.com/powerdeck</string>
+    <string name="def_vibrtion_pattern">0,960,320,960,320,960,320,0</string>
+    <string name="sprint_qchat_hpptt_domain_id_map">d.00=sprint.com|d.01=group.sprint.com|d.02=chat.sprint.com</string>
+    <string name="sprint_qchat_hpptt_alert_msg_map">"a.00=Empty|a.01=Can't talk right now.|a.02=Will call you back.|a.03=I'm in a meeting.|a.04=Call me.|a.05=Direct Connect me.|a.06=Yes|a.07=No|a.08=Where are you?|a.09=Let's get lunch.|a.10=The meeting has been cancelled.|a.11=I'll be there shortly.|a.12=I love you.|a.13=Meeting still on?|a.14=Are you free?|a.15=Please stop by.|a.16=Can I call you?|a.17=In the office?|a.18=On my way.|a.19=Need help.|a.20=Where you at?"</string>
+    <string name="sprint_qchat_hpptt_foreign_domain_map" />
+    <string name="sprint_qchat_hpptt_pref_vocoder">v.00=0:0:1:6:E:H:1500|v.01=1:0:1:6:E:H:1500|v.02=2:0:1:6:E:H:1500</string>
+    <string name="sprint_qchat_hpptt_call_restrictions" />
+    <string name="sprint_qchat_hpptt_Roaming_Subnet_ID">s.00=00840AC0000000000000000000000000:26</string>
+    <string name="sprint_qchat_hpptt_Roaming_SID_NID">n.00=32:0xFFFF|n.01=144:0xFFFF|n.02=16A:0xFFFF|n.03=5F2:0xFFFF|n.04=62C:0xFFFF|n.05=1001:0xFFFF|n.06=1007:0xFFFF|n.07=100A:0xFFFF|n.08=100B:0xFFFF|n.09=1018:0xFFFF|n.10=1019:0xFFFF|n.11=101C:0xFFFF|n.12=101E:0xFFFF|n.13=1024:0xFFFF|n.14=1027:0xFFFF|n.15=102B:0xFFFF|n.16=1030:0xFFFF|n.17=1031:0xFFFF|n.18=1034:0xFFFF|n.19=1037:0xFFFF|n.20=1039:0xFFFF|n.21=103B:0xFFFF|n.22=103D:0xFFFF|n.23=103F:0xFFFF|n.24=1042:0xFFFF|n.25=1044:0xFFFF|n.26=1046:0xFFFF|n.27=1048:0xFFFF|n.28=104A:0xFFFF|n.29=104B:0xFFFF|n.30=104E:0xFFFF|n.31=1054:0xFFFF|n.32=1055:0xFFFF|n.33=1057:0xFFFF|n.34=105A:0xFFFF|n.35=105C:0xFFFF|n.36=105E:0xFFFF|n.37=1063:0xFFFF|n.38=1066:0xFFFF|n.39=10B2:0xFFFF|n.40=10D3:0xFFFF|n.41=1118:0xFFFF|n.42=111B:0xFFFF|n.43=1120:0xFFFF|n.44=1126:0xFFFF|n.45=112C:0xFFFF|n.46=1142:0xFFFF|n.47=1194:0xFFFF|n.48=120E:0xFFFF|n.49=122E:0xFFFF|n.50=1256:0xFFFF|n.51=12CC:0xFFFF|n.52=1376:0xFFFF|n.53=13FC:0xFFFF|n.54=1416:0xFFFF|n.55=149A:0xFFFF|n.56=1614:0xFFFF|n.57=1962:0xFFFF|n.58=1963:0xFFFF|n.59=270F:0xFFFF|n.60=5787:0xFFFF|n.61=57A7:0xFFFF</string>
+    <string name="sprint_subscriber_acctsubtype" />
+    <string name="sprint_subscriber_accttype" />
+    <string name="sprint_subscriber_ban" />
+    <string name="sprint_subscriber_billcycledata" />
+    <string name="sprint_subscriber_carrierid">Chameleon</string>
+    <string name="sprint_subscriber_csa" />
+    <string name="sprint_subscriber_state" />
+    <string name="sprint_subscriber_usermode" />
+    <string name="sprint_subscriber_zipcode" />
+    <string name="def_mhp_dhcp_start_ip">192.168.1.2</string>
+    <string name="def_mhp_dhcp_end_ip">192.168.1.254</string>
+    <string name="def_mhp_dhcp_mask">255.255.255.0</string>
+    <string name="def_mhp_dhcp_gateway">192.168.1.1</string>
+    <string name="def_mhp_dhcp_dns">151.197.0.38</string>
+    <string name="def_lg_device_name">Optimus</string>
+    <string name="def_text_link">1</string>
+    <string name="default_input_method_service">com.lge.ime/.LgeImeImpl</string>
+    <string name="canada_default_input_method_service">com.android.inputmethod.latin/.LatinIME</string>
+    <string name="app_label">Settings Storage</string>
+    <string name="sp_quietmode_autoreply_def_message">I will contact you as soon as possible</string>
+</resources>

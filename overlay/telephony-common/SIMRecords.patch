@@ -1,0 +1,60 @@
+diff -rup ../telephony-common/smali/com/android/internal/telephony/gsm/SIMRecords$Injector.smali ../telephony-common/smali/com/android/internal/telephony/gsm/SIMRecords$Injector.smali
+--- ../telephony-common/smali/com/android/internal/telephony/gsm/SIMRecords$Injector.smali	2014-05-25 00:25:36.000000000 +0200
++++ ../telephony-common/smali/com/android/internal/telephony/gsm/SIMRecords$Injector.smali	2014-05-16 16:55:47.000000000 +0200
+@@ -1,11 +1,11 @@
+-.class Lcom/android/internal/telephony/gsm/SIMRecords$Injector;
++.class Lcom/android/internal/telephony/uicc/SIMRecords$Injector;
+ .super Ljava/lang/Object;
+ .source "SIMRecords.java"
+ 
+ 
+ # annotations
+ .annotation system Ldalvik/annotation/EnclosingClass;
+-    value = Lcom/android/internal/telephony/gsm/SIMRecords;
++    value = Lcom/android/internal/telephony/uicc/SIMRecords;
+ .end annotation
+ 
+ .annotation system Ldalvik/annotation/InnerClass;
+@@ -25,7 +25,7 @@
+     return-void
+ .end method
+ 
+-.method static isMatchingOperator(Lcom/android/internal/telephony/gsm/SIMRecords;Ljava/lang/String;Ljava/lang/String;)Z
++.method static isMatchingOperator(Lcom/android/internal/telephony/uicc/SIMRecords;Ljava/lang/String;Ljava/lang/String;)Z
+     .locals 4
+     .parameter "records"
+     .parameter "plmn"
+@@ -60,7 +60,7 @@
+ 
+     move-result-object v2
+ 
+-    invoke-virtual {p0}, Lcom/android/internal/telephony/gsm/SIMRecords;->getOperatorNumeric()Ljava/lang/String;
++    invoke-virtual {p0}, Lcom/android/internal/telephony/uicc/SIMRecords;->getOperatorNumeric()Ljava/lang/String;
+ 
+     move-result-object v3
+ 
+@@ -80,13 +80,13 @@
+     goto :goto_0
+ .end method
+ 
+-.method static updateSpnDisplayCondition(Lcom/android/internal/telephony/gsm/SIMRecords;)V
++.method static updateSpnDisplayCondition(Lcom/android/internal/telephony/uicc/SIMRecords;)V
+     .locals 1
+     .parameter "records"
+ 
+     .prologue
+     .line 64
+-    invoke-virtual {p0}, Lcom/android/internal/telephony/gsm/SIMRecords;->getSpn()Ljava/lang/String;
++    invoke-virtual {p0}, Lcom/android/internal/telephony/uicc/SIMRecords;->getSpn()Ljava/lang/String;
+ 
+     move-result-object v0
+ 
+@@ -99,7 +99,7 @@
+     .line 65
+     const/4 v0, 0x0
+ 
+-    iput v0, p0, Lcom/android/internal/telephony/gsm/SIMRecords;->spnDisplayCondition:I
++    iput v0, p0, Lcom/android/internal/telephony/uicc/SIMRecords;->spnDisplayCondition:I
+ 
+     .line 67
+     :cond_0
