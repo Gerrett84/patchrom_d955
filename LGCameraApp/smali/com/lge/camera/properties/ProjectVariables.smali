@@ -53,7 +53,7 @@
     sput v0, Lcom/lge/camera/properties/ProjectVariables;->KEYCODE_QCLIP_HOT_KEY:I
 
     .line 156
-    const-string v0, "/DCIM/100LGDSC/"
+    const-string v0, "/DCIM/Camera/"
 
     sput-object v0, Lcom/lge/camera/properties/ProjectVariables;->DCF_DIRECTORY:Ljava/lang/String;
 
