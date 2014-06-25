@@ -131,12 +131,16 @@
 
     move-result v0
 
+    const v0, 0x28
+
     iput v0, p0, Landroid/appwidget/AppWidgetProviderInfo;->minResizeWidth:I
 
     .line 211
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
+
+    const v0, 0x28
 
     iput v0, p0, Landroid/appwidget/AppWidgetProviderInfo;->minResizeHeight:I
 
@@ -208,6 +212,8 @@
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
+
+    const v0, 0x3
 
     iput v0, p0, Landroid/appwidget/AppWidgetProviderInfo;->resizeMode:I
 
