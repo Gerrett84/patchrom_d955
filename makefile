@@ -42,12 +42,10 @@ include $(PORT_BUILD)/porting.mk
 # To define any local-target
 updater := $(ZIP_DIR)/META-INF/com/google/android/updater-script
 local-pre-zip-misc:
-	cp other/spn-conf.xml $(ZIP_DIR)/system/etc/spn-conf.xml
-	cp other/build.prop $(ZIP_DIR)/system/build.prop
 #	cp -r stockrom/data/app/ $(ZIP_DIR)/data/app
 	cp -rf other/system $(ZIP_DIR)/
 	mv $(ZIP_DIR)/system/framework/framework_ext.jar $(ZIP_DIR)/system/framework/framework2.jar &
-	sed -i '/# end build properties/r other/customize.prop' $(ZIP_DIR)/system/build.prop
+#	sed -i '/# end build properties/r other/customize.prop' $(ZIP_DIR)/system/build.prop
 	rm -rf $(ZIP_DIR)/system/apps
 	rm -rf $(ZIP_DIR)/system/Preload
 	rm -rf $(ZIP_DIR)/system/vendor/carrier
