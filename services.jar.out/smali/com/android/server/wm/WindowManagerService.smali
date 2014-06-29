@@ -30,6 +30,8 @@
 
 
 # static fields
+.field private static final ACTION_ZWAIT_ENABLE:Ljava/lang/String; = "sys.lge.zwait.enable"
+
 .field static final ADJUST_WALLPAPER_LAYERS_CHANGED:I = 0x2
 
 .field static final ADJUST_WALLPAPER_VISIBILITY_CHANGED:I = 0x4
@@ -48208,16 +48210,51 @@
 .end method
 
 .method public shutdown(Z)V
-    .locals 1
+    .locals 3
     .parameter "confirm"
 
     .prologue
-    .line 6583
+    .line 6892
+    const-string v0, "ro.lge.zwait"
+
+    const-string v1, "false"
+
+    invoke-static {v0, v1}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "true"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 6893
+    const-string v0, "WindowManager"
+
+    const-string v1, "Send Intent to ZeroWait is true"
+
+    invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 6894
+    iget-object v0, p0, Lcom/android/server/wm/WindowManagerService;->mContext:Landroid/content/Context;
+
+    new-instance v1, Landroid/content/Intent;
+
+    const-string v2, "sys.lge.zwait.enable"
+
+    invoke-direct {v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0, v1}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
+
+    .line 6897
+    :cond_0
     iget-object v0, p0, Lcom/android/server/wm/WindowManagerService;->mContext:Landroid/content/Context;
 
     invoke-static {v0, p1}, Lcom/android/server/power/ShutdownThread;->shutdown(Landroid/content/Context;Z)V
 
-    .line 6584
     return-void
 .end method
 
