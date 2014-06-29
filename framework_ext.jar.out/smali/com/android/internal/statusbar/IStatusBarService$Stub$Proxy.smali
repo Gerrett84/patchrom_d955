@@ -1667,7 +1667,7 @@
     :goto_0
     iget-object v2, p0, Lcom/android/internal/statusbar/IStatusBarService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v3, 0x16
+    const/16 v3, 0x1a
 
     const/4 v4, 0x0
 
