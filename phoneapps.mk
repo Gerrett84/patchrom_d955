@@ -13,7 +13,6 @@ local-phone-apps := ApplicationsProvider \
 		    KeyChain \
 		    LteConfigs \
 		    LGBluetooth4 \
-		    LGFmRadio \
 		    LGEIME_THEME_ZEEBLACK \
 		    LGLiveWallpapersPicker \
 		    LGSlideAside \
