@@ -157,7 +157,7 @@ ro.config.vibrate_type=1
 ro.blue_handler.level=0
 
 # LGE_CHANGE_S [g2][framework][common] the screen auto-brightness adjustment setting
-persist.power.useautobrightadj=true
+#persist.power.useautobrightadj=true
 # LGE_CHANGE_E [g2][framework][common] the screen auto-brightness adjustment setting
 
 # LGE_CHANGE_S [g2][framework][protocol]
