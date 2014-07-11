@@ -10,6 +10,7 @@ local-phone-apps := ApplicationsProvider \
 		    GnssAirTest \
 		    GnssPosTest \
 		    GnssTest \
+		    HiddenMenu \
 		    KeyChain \
 		    LteConfigs \
 		    LGBluetooth4 \
