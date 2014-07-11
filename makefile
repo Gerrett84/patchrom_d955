@@ -13,14 +13,14 @@ local-previous-target-dir := ~/workspace/ota_base/flex
 
 # All apps from original ZIP, but has smali files chanded
 
-local-modified-apps := LGSettingsProvider LGSettings Cusettings LGCameraApp TelephonyProvider
+local-modified-apps := LGSettingsProvider LGSettings Cusettings LGCameraApp
 
 local-modified-jars := services-ext
 
 # All apks from MIUI
-local-miui-removed-apps := LiveWallpapersPicker MediaProvider Stk SettingsProvider TelephonyProvider
+local-miui-removed-apps := LiveWallpapersPicker MediaProvider Stk SettingsProvider
 
-local-miui-modified-apps := MiuiSystemUI Phone Settings MiuiHome Mms
+local-miui-modified-apps := MiuiSystemUI Phone Settings MiuiHome Mms TelephonyProvider
 
 include phoneapps.mk
 
