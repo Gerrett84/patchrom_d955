@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<parameters>
+  <parameter db="system" name="auto_split_view">1</parameter>
+  <parameter db="system" name="default_sub_vibrate_pattern">0,960,320,960,320,960,320,0</parameter>
+  <parameter db="system" name="default_third_vibrate_pattern">0,960,320,960,320,960,320,0</parameter>
+  <parameter db="system" name="default_vibrate_pattern">0,960,320,960,320,960,320,0</parameter>
+  <parameter db="system" name="dual_window">1</parameter>
+  <parameter db="system" name="lg_device_name">G Flex</parameter>
+  <parameter db="system" name="screen_mode_set">1</parameter>
+  <parameter db="system" name="screen_off_effect_set">3</parameter>
+  <parameter db="system" name="screen_off_timeout">30000</parameter>
+  <parameter db="system" name="gesture_slide_aside">1</parameter>
+  <parameter db="system" name="gesture_trun_screen_on">1</parameter>
+  <parameter db="system" name="keep_screen_on">1</parameter>
+</parameters>
