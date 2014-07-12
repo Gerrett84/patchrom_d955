@@ -1,0 +1,76 @@
+diff -rup ../TelephonyProvider/smali/com/android/providers/telephony/MmsSmsDatabaseHelper.smali ../TelephonyProvider/smali/com/android/providers/telephony/MmsSmsDatabaseHelper.smali
+--- ../TelephonyProvider/smali/com/android/providers/telephony/MmsSmsDatabaseHelper.smali	2014-07-11 23:10:34.995527022 +0200
++++ ../TelephonyProvider/smali/com/android/providers/telephony/MmsSmsDatabaseHelper.smali	2014-07-11 23:09:48.531517869 +0200
+@@ -354,7 +354,7 @@
+ 
+     .prologue
+     .line 680
+-    const-string v0, "CREATE TABLE pdu (_id INTEGER PRIMARY KEY,thread_id INTEGER,date INTEGER,date_sent INTEGER DEFAULT 0,msg_box INTEGER,read INTEGER DEFAULT 0,m_id TEXT,sub TEXT,sub_cs INTEGER,ct_t TEXT,ct_l TEXT,exp INTEGER,m_cls TEXT,m_type INTEGER,v INTEGER,m_size INTEGER,pri INTEGER,rr INTEGER,rpt_a INTEGER,resp_st INTEGER,st INTEGER,tr_id TEXT,retr_st INTEGER,retr_txt TEXT,retr_txt_cs INTEGER,read_status INTEGER,ct_cls INTEGER,resp_txt TEXT,d_tm INTEGER,d_rpt INTEGER,locked INTEGER DEFAULT 0,seen INTEGER DEFAULT 0,timed INTEGER DEFAULT 0,date_ms_part INTEGER DEFAULT 0,deleted INTEGER DEFAULT 0,sync_state INTEGER DEFAULT 0,marker INTEGER DEFAULT 0,source TEXT,bind_id INTEGER DEFAULT 0,mx_status INTEGER DEFAULT 0,mx_id INTEGER,file_id TEXT,need_download INTEGER DEFAULT 0,account TEXT,out_time INTEGER DEFAULT 0,snippet TEXT,preview_type INTEGER DEFAULT 0,preview_data BLOB,preview_data_ts INTEGER DEFAULT 0,sim_id INTEGER DEFAULT 0,block_type INTEGER DEFAULT 0,advanced_seen INTEGER DEFAULT 0,mx_type INTEGER DEFAULT 0,mx_extension TEXT);"
++    const-string v0, "CREATE TABLE pdu (_id INTEGER PRIMARY KEY,thread_id INTEGER,date INTEGER,date_sent INTEGER DEFAULT 0,msg_box INTEGER,read INTEGER DEFAULT 0,m_id TEXT,sub TEXT,sub_cs INTEGER,ct_t TEXT,ct_l TEXT,exp INTEGER,m_cls TEXT,m_type INTEGER,v INTEGER,m_size INTEGER,pri INTEGER,rr INTEGER,rpt_a INTEGER,resp_st INTEGER,st INTEGER,tr_id TEXT,retr_st INTEGER,retr_txt TEXT,retr_txt_cs INTEGER,read_status INTEGER,ct_cls INTEGER,resp_txt TEXT,d_tm INTEGER,d_rpt INTEGER,locked INTEGER DEFAULT 0,seen INTEGER DEFAULT 0,sub_id INTEGER DEFAULT 0,timed INTEGER DEFAULT 0,date_ms_part INTEGER DEFAULT 0,deleted INTEGER DEFAULT 0,sync_state INTEGER DEFAULT 0,marker INTEGER DEFAULT 0,source TEXT,bind_id INTEGER DEFAULT 0,mx_status INTEGER DEFAULT 0,mx_id INTEGER,file_id TEXT,need_download INTEGER DEFAULT 0,account TEXT,out_time INTEGER DEFAULT 0,snippet TEXT,preview_type INTEGER DEFAULT 0,preview_data BLOB,preview_data_ts INTEGER DEFAULT 0,sim_id INTEGER DEFAULT 0,block_type INTEGER DEFAULT 0,advanced_seen INTEGER DEFAULT 0,mx_type INTEGER DEFAULT 0,mx_extension TEXT);"
+ 
+     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
+ 
+@@ -417,7 +417,7 @@
+ 
+     .prologue
+     .line 782
+-    const-string v0, "CREATE TABLE sms (_id INTEGER PRIMARY KEY,thread_id INTEGER,address TEXT,person INTEGER,date INTEGER,date_sent INTEGER DEFAULT 0,protocol INTEGER,read INTEGER DEFAULT 0,status INTEGER DEFAULT -1,type INTEGER,reply_path_present INTEGER,subject TEXT,body TEXT,service_center TEXT,locked INTEGER DEFAULT 0,error_code INTEGER DEFAULT 0,seen INTEGER DEFAULT 0,timed INTEGER DEFAULT 0,deleted INTEGER DEFAULT 0,sync_state INTEGER DEFAULT 0,marker INTEGER DEFAULT 0,source TEXT,bind_id INTEGER DEFAULT 0,mx_status INTEGER DEFAULT 0,mx_id INTEGER,out_time INTEGER DEFAULT 0,account TEXT,sim_id INTEGER DEFAULT 0,block_type INTEGER DEFAULT 0,advanced_seen INTEGER DEFAULT 0);"
++    const-string v0, "CREATE TABLE sms (_id INTEGER PRIMARY KEY,thread_id INTEGER,address TEXT,person INTEGER,date INTEGER,date_sent INTEGER DEFAULT 0,protocol INTEGER,read INTEGER DEFAULT 0,status INTEGER DEFAULT -1,type INTEGER,reply_path_present INTEGER,subject TEXT,body TEXT,service_center TEXT,locked INTEGER DEFAULT 0,error_code INTEGER DEFAULT 0,seen INTEGER DEFAULT 0,sub_id INTEGER DEFAULT 0,timed INTEGER DEFAULT 0,deleted INTEGER DEFAULT 0,sync_state INTEGER DEFAULT 0,marker INTEGER DEFAULT 0,source TEXT,bind_id INTEGER DEFAULT 0,mx_status INTEGER DEFAULT 0,mx_id INTEGER,out_time INTEGER DEFAULT 0,account TEXT,sim_id INTEGER DEFAULT 0,block_type INTEGER DEFAULT 0,advanced_seen INTEGER DEFAULT 0);"
+ 
+     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
+ 
+@@ -4756,6 +4756,12 @@
+ 
+     invoke-virtual {p1, v1, v0, v2, v3}, Landroid/database/sqlite/SQLiteDatabase;->update(Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
+ 
++    const-string v1, "pdu"
++
++    const-string v2, "sub_id>0"
++
++    invoke-virtual {p1, v1, v0, v2, v3}, Landroid/database/sqlite/SQLiteDatabase;->update(Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
++
+     .line 2147
+     return-void
+ .end method
+@@ -5231,22 +5237,22 @@
+     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
+ 
+     .line 2278
+-    const-string v0, "CREATE TABLE sms (_id INTEGER PRIMARY KEY,thread_id INTEGER,address TEXT,person INTEGER,date INTEGER,date_sent INTEGER DEFAULT 0,protocol INTEGER,read INTEGER DEFAULT 0,status INTEGER DEFAULT -1,type INTEGER,reply_path_present INTEGER,subject TEXT,body TEXT,service_center TEXT,locked INTEGER DEFAULT 0,error_code INTEGER DEFAULT 0,seen INTEGER DEFAULT 0,timed INTEGER DEFAULT 0,deleted INTEGER DEFAULT 0,sync_state INTEGER DEFAULT 0,marker INTEGER DEFAULT 0,source TEXT,bind_id INTEGER DEFAULT 0,mx_status INTEGER DEFAULT 0,mx_id INTEGER,out_time INTEGER DEFAULT 0,account TEXT,sim_id INTEGER DEFAULT 0,block_type INTEGER DEFAULT 0);"
++    const-string v0, "CREATE TABLE sms (_id INTEGER PRIMARY KEY,thread_id INTEGER,address TEXT,person INTEGER,date INTEGER,date_sent INTEGER DEFAULT 0,protocol INTEGER,read INTEGER DEFAULT 0,status INTEGER DEFAULT -1,type INTEGER,reply_path_present INTEGER,subject TEXT,body TEXT,service_center TEXT,locked INTEGER DEFAULT 0,sub_id INTEGER DEFAULT 0,error_code INTEGER DEFAULT 0,seen INTEGER DEFAULT 0,timed INTEGER DEFAULT 0,deleted INTEGER DEFAULT 0,sync_state INTEGER DEFAULT 0,marker INTEGER DEFAULT 0,source TEXT,bind_id INTEGER DEFAULT 0,mx_status INTEGER DEFAULT 0,mx_id INTEGER,out_time INTEGER DEFAULT 0,account TEXT,sim_id INTEGER DEFAULT 0,block_type INTEGER DEFAULT 0);"
+ 
+     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
+ 
+     .line 2313
+-    const-string v0, "CREATE TABLE pdu (_id INTEGER PRIMARY KEY,thread_id INTEGER,date INTEGER,date_sent INTEGER DEFAULT 0,msg_box INTEGER,read INTEGER DEFAULT 0,m_id TEXT,sub TEXT,sub_cs INTEGER,ct_t TEXT,ct_l TEXT,exp INTEGER,m_cls TEXT,m_type INTEGER,v INTEGER,m_size INTEGER,pri INTEGER,rr INTEGER,rpt_a INTEGER,resp_st INTEGER,st INTEGER,tr_id TEXT,retr_st INTEGER,retr_txt TEXT,retr_txt_cs INTEGER,read_status INTEGER,ct_cls INTEGER,resp_txt TEXT,d_tm INTEGER,d_rpt INTEGER,locked INTEGER DEFAULT 0,seen INTEGER DEFAULT 0,timed INTEGER DEFAULT 0,date_ms_part INTEGER DEFAULT 0,deleted INTEGER DEFAULT 0,sync_state INTEGER DEFAULT 0,marker INTEGER DEFAULT 0,source TEXT,bind_id INTEGER DEFAULT 0,mx_status INTEGER DEFAULT 0,mx_id INTEGER,file_id TEXT,need_download INTEGER DEFAULT 0,account TEXT,out_time INTEGER DEFAULT 0,snippet TEXT,preview_type INTEGER DEFAULT 0,preview_data BLOB,preview_data_ts INTEGER DEFAULT 0,sim_id INTEGER DEFAULT 0,block_type INTEGER DEFAULT 0);"
++    const-string v0, "CREATE TABLE pdu (_id INTEGER PRIMARY KEY,thread_id INTEGER,date INTEGER,date_sent INTEGER DEFAULT 0,msg_box INTEGER,read INTEGER DEFAULT 0,m_id TEXT,sub TEXT,sub_cs INTEGER,ct_t TEXT,ct_l TEXT,exp INTEGER,m_cls TEXT,m_type INTEGER,v INTEGER,m_size INTEGER,pri INTEGER,rr INTEGER,rpt_a INTEGER,resp_st INTEGER,st INTEGER,tr_id TEXT,retr_st INTEGER,retr_txt TEXT,retr_txt_cs INTEGER,read_status INTEGER,ct_cls INTEGER,resp_txt TEXT,d_tm INTEGER,d_rpt INTEGER,locked INTEGER DEFAULT 0,sub_id INTEGER DEFAULT 0,seen INTEGER DEFAULT 0,timed INTEGER DEFAULT 0,date_ms_part INTEGER DEFAULT 0,deleted INTEGER DEFAULT 0,sync_state INTEGER DEFAULT 0,marker INTEGER DEFAULT 0,source TEXT,bind_id INTEGER DEFAULT 0,mx_status INTEGER DEFAULT 0,mx_id INTEGER,file_id TEXT,need_download INTEGER DEFAULT 0,account TEXT,out_time INTEGER DEFAULT 0,snippet TEXT,preview_type INTEGER DEFAULT 0,preview_data BLOB,preview_data_ts INTEGER DEFAULT 0,sim_id INTEGER DEFAULT 0,block_type INTEGER DEFAULT 0);"
+ 
+     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
+ 
+     .line 2367
+-    const-string v0, "INSERT INTO sms (_id, thread_id, address, person, date, date_sent, protocol, read, status, type, reply_path_present, subject, body, service_center, locked, error_code, seen, timed, deleted, sync_state, marker, source, bind_id, mx_status, mx_id, out_time, account) SELECT _id, thread_id, address, person, date, date_sent, protocol, read, status, type, reply_path_present, subject, body, service_center, locked, error_code, seen, timed, deleted, sync_state, marker, source, bind_id, mx_status, mx_id, out_time, account FROM old_sms;"
++    const-string v0, "INSERT INTO sms (_id, thread_id, address, person, date, date_sent, protocol, read, status, type, reply_path_present, subject, body, service_center, locked, sub_id, error_code, seen, timed, deleted, sync_state, marker, source, bind_id, mx_status, mx_id, out_time, account) SELECT _id, thread_id, address, person, date, date_sent, protocol, read, status, type, reply_path_present, subject, body, service_center, locked, sub_id, error_code, seen, timed, deleted, sync_state, marker, source, bind_id, mx_status, mx_id, out_time, account FROM old_sms;"
+ 
+     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
+ 
+     .line 2373
+-    const-string v0, "INSERT INTO pdu (_id, thread_id, date, date_sent, msg_box, read, m_id, sub, sub_cs, ct_t, ct_l, exp, m_cls, m_type, v, m_size, pri, rr, rpt_a, resp_st, st, tr_id, retr_st, retr_txt, retr_txt_cs, read_status, ct_cls, resp_txt, d_tm, d_rpt, locked, seen, timed, date_ms_part, deleted, sync_state, marker, source, bind_id, mx_status, mx_id, file_id, need_download, account, out_time, snippet, preview_type, preview_data, preview_data_ts)SELECT _id, thread_id, date, date_sent, msg_box, read, m_id, sub, sub_cs, ct_t, ct_l, exp, m_cls, m_type, v, m_size, pri, rr, rpt_a, resp_st, st, tr_id, retr_st, retr_txt, retr_txt_cs, read_status, ct_cls, resp_txt, d_tm, d_rpt, locked, seen, timed, date_ms_part, deleted, sync_state, marker, source, bind_id, mx_status, mx_id, file_id, need_download, account, out_time, snippet, preview_type, preview_data, preview_data_ts FROM old_pdu;"
++    const-string v0, "INSERT INTO pdu (_id, thread_id, date, date_sent, msg_box, read, m_id, sub, sub_cs, ct_t, ct_l, exp, m_cls, m_type, v, m_size, pri, rr, rpt_a, resp_st, st, tr_id, retr_st, retr_txt, retr_txt_cs, read_status, ct_cls, resp_txt, d_tm, d_rpt, locked, sub_id, seen, timed, date_ms_part, deleted, sync_state, marker, source, bind_id, mx_status, mx_id, file_id, need_download, account, out_time, snippet, preview_type, preview_data, preview_data_ts)SELECT _id, thread_id, date, date_sent, msg_box, read, m_id, sub, sub_cs, ct_t, ct_l, exp, m_cls, m_type, v, m_size, pri, rr, rpt_a, resp_st, st, tr_id, retr_st, retr_txt, retr_txt_cs, read_status, ct_cls, resp_txt, d_tm, d_rpt, locked, sub_id, seen, timed, date_ms_part, deleted, sync_state, marker, source, bind_id, mx_status, mx_id, file_id, need_download, account, out_time, snippet, preview_type, preview_data, preview_data_ts FROM old_pdu;"
+ 
+     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
+ 
+diff -rup ../TelephonyProvider/smali/com/android/providers/telephony/MmsSmsProvider.smali ../TelephonyProvider/smali/com/android/providers/telephony/MmsSmsProvider.smali
+--- ../TelephonyProvider/smali/com/android/providers/telephony/MmsSmsProvider.smali	2014-07-11 23:10:35.039527031 +0200
++++ ../TelephonyProvider/smali/com/android/providers/telephony/MmsSmsProvider.smali	2014-07-11 22:57:49.095365259 +0200
+@@ -113,6 +113,11 @@
+     const-string v2, "locked"
+ 
+     aput-object v2, v0, v1
++    const/4 v1, 0x6
++
++    const-string v2, "sub_id"
++
++    aput-object v2, v0, v1
+ 
+     const/4 v1, 0x7
+ 
