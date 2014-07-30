@@ -5,7 +5,7 @@ STOCKROM="$PORT_ROOT/d955/stockrom/"
 cd $STOCKROM
 
 echo "Download missing files..."
-wget -q http://roms.gerrett84.de/d955/miui/patchrom/missing_files2.zip
+wget -q http://roms.gerrett84.de/d955/miui/patchrom/jb42/missing_files2.zip
 
 if [ ! -s "missing_files2.zip" ];then
     echo "Download failed, try again later"
