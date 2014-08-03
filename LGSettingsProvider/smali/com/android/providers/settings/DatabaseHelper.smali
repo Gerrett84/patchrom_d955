@@ -6800,6 +6800,26 @@
     invoke-direct {p0, v1, v3, v4}, Lcom/android/providers/settings/DatabaseHelper;->loadBooleanSetting(Landroid/database/sqlite/SQLiteStatement;Ljava/lang/String;I)V
 
     .line 2628
+    const-string v3, "emotional_led_back_camera_timer_noti"
+
+    const v4, 0x7f04008c
+
+    invoke-direct {p0, v1, v3, v4}, Lcom/android/providers/settings/DatabaseHelper;->loadBooleanSetting(Landroid/database/sqlite/SQLiteStatement;Ljava/lang/String;I)V
+
+    .line 2629
+    const-string v3, "emotional_led_back_camera_face_detecting_noti"
+
+    const v4, 0x7f04008d
+
+    invoke-direct {p0, v1, v3, v4}, Lcom/android/providers/settings/DatabaseHelper;->loadBooleanSetting(Landroid/database/sqlite/SQLiteStatement;Ljava/lang/String;I)V
+
+    .line 2630
+    const-string v3, "notification_light_pulse_back"
+
+    const v4, 0x7f04008e
+
+    invoke-direct {p0, v1, v3, v4}, Lcom/android/providers/settings/DatabaseHelper;->loadBooleanSetting(Landroid/database/sqlite/SQLiteStatement;Ljava/lang/String;I)V
+
     :goto_d
     const-string v3, "emotional_led_reminder_missed_favorite_call"
 
@@ -6807,7 +6827,7 @@
 
     invoke-direct {p0, v1, v3, v4}, Lcom/android/providers/settings/DatabaseHelper;->loadBooleanSetting(Landroid/database/sqlite/SQLiteStatement;Ljava/lang/String;I)V
 
-    .line 2630
+    .line 2631
     const-string v3, "emotional_led_reminder_missed_call"
 
     const v4, 0x7f040068
@@ -7856,6 +7876,27 @@
     const-string v3, "emotional_led_back_voice_recording"
 
     const v4, 0x7f040066
+
+    invoke-direct {p0, v1, v3, v4}, Lcom/android/providers/settings/DatabaseHelper;->loadBooleanSetting(Landroid/database/sqlite/SQLiteStatement;Ljava/lang/String;I)V
+
+    .line 2625
+    const-string v3, "emotional_led_back_camera_timer_noti"
+
+    const v4, 0x7f04008c
+
+    invoke-direct {p0, v1, v3, v4}, Lcom/android/providers/settings/DatabaseHelper;->loadBooleanSetting(Landroid/database/sqlite/SQLiteStatement;Ljava/lang/String;I)V
+
+    .line 2626
+    const-string v3, "emotional_led_back_camera_face_detecting_noti"
+
+    const v4, 0x7f04008d
+
+    invoke-direct {p0, v1, v3, v4}, Lcom/android/providers/settings/DatabaseHelper;->loadBooleanSetting(Landroid/database/sqlite/SQLiteStatement;Ljava/lang/String;I)V
+
+    .line 2627
+    const-string v3, "notification_light_pulse_back"
+
+    const v4, 0x7f04008e
 
     invoke-direct {p0, v1, v3, v4}, Lcom/android/providers/settings/DatabaseHelper;->loadBooleanSetting(Landroid/database/sqlite/SQLiteStatement;Ljava/lang/String;I)V
 

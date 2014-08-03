@@ -165,4 +165,9 @@
     <integer name="tangible_earphone_panel_enable_def">1</integer>
     <integer name="tangible_dock_panel_enable_def">1</integer>
     <integer name="tangible_usbstorage_panel_enable_def">1</integer>
+    <integer name="def_gesture_tilt_view">0</integer>
+    <integer name="def_dual_window">1</integer>
+    <integer name="def_auto_split_view">0</integer>
+    <integer name="def_call_mode_setting">1</integer>
+    <integer name="def_power_save_auto_brightness">0</integer>
 </resources>

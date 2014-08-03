@@ -144,6 +144,9 @@
     <public type="bool" name="def_pouch_mode_auto_launch_calendar_events" id="0x7f040089" />
     <public type="bool" name="def_pouch_mode_auto_launch_email" id="0x7f04008a" />
     <public type="bool" name="def_wifi_internet_unavailable" id="0x7f04008b" />
+    <public type="bool" name="def_emotional_led_back_camera_timer" id="0x7f04008c" />
+    <public type="bool" name="def_emotional_led_back_camera_face_detecting" id="0x7f04008d" />
+    <public type="bool" name="def_emotional_led_back_download_apps" id="0x7f04008e" />
     <public type="integer" name="def_screen_off_timeout" id="0x7f050000" />
     <public type="integer" name="def_navigation_bar" id="0x7f050001" />
     <public type="integer" name="def_navigation_bar_moving" id="0x7f050002" />
@@ -309,6 +312,11 @@
     <public type="integer" name="tangible_earphone_panel_enable_def" id="0x7f0500a2" />
     <public type="integer" name="tangible_dock_panel_enable_def" id="0x7f0500a3" />
     <public type="integer" name="tangible_usbstorage_panel_enable_def" id="0x7f0500a4" />
+    <public type="integer" name="def_gesture_tilt_view" id="0x7f0500a5" />
+    <public type="integer" name="def_dual_window" id="0x7f0500a6" />
+    <public type="integer" name="def_auto_split_view" id="0x7f0500a7" />
+    <public type="integer" name="def_call_mode_setting" id="0x7f0500a8" />
+    <public type="integer" name="def_power_save_auto_brightness" id="0x7f0500a9" />
     <public type="string" name="def_navigation_bar_theme" id="0x7f060000" />
     <public type="string" name="def_navigation_bar_theme_oled" id="0x7f060001" />
     <public type="string" name="def_airplane_mode_radios" id="0x7f060002" />

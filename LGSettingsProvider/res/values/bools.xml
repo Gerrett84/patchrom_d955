@@ -140,4 +140,7 @@
     <bool name="def_pouch_mode_auto_launch_calendar_events">false</bool>
     <bool name="def_pouch_mode_auto_launch_email">false</bool>
     <bool name="def_wifi_internet_unavailable">false</bool>
+    <bool name="def_emotional_led_back_camera_timer">true</bool>
+    <bool name="def_emotional_led_back_camera_face_detecting">true</bool>
+    <bool name="def_emotional_led_back_download_apps">true</bool>
 </resources>
