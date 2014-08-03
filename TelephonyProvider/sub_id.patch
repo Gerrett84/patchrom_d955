@@ -1,6 +1,6 @@
 diff -rup ../TelephonyProvider/smali/com/android/providers/telephony/MmsSmsDatabaseHelper.smali ../TelephonyProvider/smali/com/android/providers/telephony/MmsSmsDatabaseHelper.smali
---- ../TelephonyProvider/smali/com/android/providers/telephony/MmsSmsDatabaseHelper.smali	2014-07-11 23:10:34.995527022 +0200
-+++ ../TelephonyProvider/smali/com/android/providers/telephony/MmsSmsDatabaseHelper.smali	2014-07-11 23:09:48.531517869 +0200
+--- ../TelephonyProvider/smali/com/android/providers/telephony/MmsSmsDatabaseHelper.smali	2014-08-03 02:20:12.000000000 +0200
++++ ../TelephonyProvider/smali/com/android/providers/telephony/MmsSmsDatabaseHelper.smali	2014-08-03 02:20:26.000000000 +0200
 @@ -354,7 +354,7 @@
  
      .prologue
@@ -10,7 +10,7 @@ diff -rup ../TelephonyProvider/smali/com/android/providers/telephony/MmsSmsDatab
  
      invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
  
-@@ -417,7 +417,7 @@
+@@ -417,12 +417,12 @@
  
      .prologue
      .line 782
@@ -19,7 +19,35 @@ diff -rup ../TelephonyProvider/smali/com/android/providers/telephony/MmsSmsDatab
  
      invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
  
-@@ -4756,6 +4756,12 @@
+     .line 822
+-    const-string v0, "CREATE TABLE raw (_id INTEGER PRIMARY KEY,date INTEGER,reference_number INTEGER,count INTEGER,sequence INTEGER,destination_port INTEGER,address TEXT,sim_id INTEGER DEFAULT 0,pdu TEXT);"
++    const-string v0, "CREATE TABLE raw (_id INTEGER PRIMARY KEY,date INTEGER,reference_number INTEGER,count INTEGER,sequence INTEGER,destination_port INTEGER,address TEXT,sim_id INTEGER DEFAULT 0,pdu TEXT,icc_index INTEGER);"
+ 
+     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
+ 
+@@ -436,6 +436,10 @@
+ 
+     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
+ 
++    const-string v0, "CREATE TABLE sim_concat_parts (_id INTEGER PRIMARY KEY AUTOINCREMENT,count INTEGER,sequence INTEGER,reference INTEGER,body TEXT,icc_index INTEGER,sms_id INTEGER);"
++
++    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
++
+     .line 846
+     return-void
+ .end method
+@@ -4169,6 +4173,10 @@
+     .line 1989
+     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
+ 
++    const-string v0, "CREATE TABLE IF NOT EXISTS sim_concat_parts (_id INTEGER PRIMARY KEY AUTOINCREMENT,count INTEGER,sequence INTEGER,reference INTEGER,body TEXT,icc_index INTEGER,sms_id INTEGER);"
++
++    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
++
+     .line 1990
+     return-void
+ .end method
+@@ -4756,6 +4764,12 @@
  
      invoke-virtual {p1, v1, v0, v2, v3}, Landroid/database/sqlite/SQLiteDatabase;->update(Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
  
@@ -32,7 +60,7 @@ diff -rup ../TelephonyProvider/smali/com/android/providers/telephony/MmsSmsDatab
      .line 2147
      return-void
  .end method
-@@ -5231,22 +5237,22 @@
+@@ -5231,22 +5245,22 @@
      invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
  
      .line 2278
@@ -60,17 +88,18 @@ diff -rup ../TelephonyProvider/smali/com/android/providers/telephony/MmsSmsDatab
      invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
  
 diff -rup ../TelephonyProvider/smali/com/android/providers/telephony/MmsSmsProvider.smali ../TelephonyProvider/smali/com/android/providers/telephony/MmsSmsProvider.smali
---- ../TelephonyProvider/smali/com/android/providers/telephony/MmsSmsProvider.smali	2014-07-11 23:10:35.039527031 +0200
-+++ ../TelephonyProvider/smali/com/android/providers/telephony/MmsSmsProvider.smali	2014-07-11 22:57:49.095365259 +0200
-@@ -113,6 +113,11 @@
-     const-string v2, "locked"
+--- ../TelephonyProvider/smali/com/android/providers/telephony/MmsSmsProvider.smali	2014-08-03 02:20:12.000000000 +0200
++++ ../TelephonyProvider/smali/com/android/providers/telephony/MmsSmsProvider.smali	2014-08-03 02:20:26.000000000 +0200
+@@ -114,6 +114,12 @@
  
      aput-object v2, v0, v1
+ 
 +    const/4 v1, 0x6
 +
 +    const-string v2, "sub_id"
 +
 +    aput-object v2, v0, v1
- 
++
      const/4 v1, 0x7
  
+     const-string v2, "timed"
