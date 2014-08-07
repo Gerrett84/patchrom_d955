@@ -11,7 +11,7 @@
     <bool name="def_pouch_new_event">false</bool>
     <bool name="def_pouch_clock">false</bool>
     <bool name="def_show_warning_popup">true</bool>
-    <bool name="def_keep_screen_on">false</bool>
+    <bool name="def_keep_screen_on">true</bool>
     <bool name="def_keep_screen_on_do_not_show">false</bool>
     <bool name="def_keep_video_on">false</bool>
     <bool name="def_keep_video_on_do_not_show">false</bool>

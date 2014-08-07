@@ -29,8 +29,8 @@
         <CheckBoxPreference android:persistent="false" android:title="@string/sp_emotional_led_alarm_ring" android:key="alarm_back" />
         <CheckBoxPreference android:persistent="false" android:title="@string/sp_emotional_led_calendar_notification" android:key="calendar_noti_back" />
         <CheckBoxPreference android:persistent="false" android:title="@string/display_led_voice_recording" android:key="voice_recording_back" />
-        <CheckBoxPreference android:persistent="false" android:title="@string/camera_timer_title" android:key="camera_timer_back" />
+        <!-- CheckBoxPreference android:persistent="false" android:title="@string/camera_timer_title" android:key="camera_timer_back" />
         <CheckBoxPreference android:persistent="false" android:title="@string/camera_face_detecting_title" android:key="camera_face_detecting_back" />
-        <CheckBoxPreference android:persistent="false" android:title="@string/sp_emotional_led_download_apps" android:key="emotional_led_effect_download_apps_back" android:summary="@string/sp_emotional_led_download_apps_3_ex" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/sp_emotional_led_download_apps" android:key="emotional_led_effect_download_apps_back" android:summary="@string/sp_emotional_led_download_apps_3_ex" /-->
     </PreferenceCategory>
 </PreferenceScreen>

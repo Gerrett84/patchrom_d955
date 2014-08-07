@@ -5,8 +5,8 @@
     <integer name="def_navigation_bar_moving">1</integer>
     <integer name="def_Nfc_first_on_check">0</integer>
     <integer name="def_one_hand_navigation_button_hardkey">0</integer>
-    <integer name="def_screen_off_effect_set">0</integer>
-    <integer name="def_screen_mode_set">0</integer>
+    <integer name="def_screen_off_effect_set">3</integer>
+    <integer name="def_screen_mode_set">1</integer>
     <integer name="def_plc_mode_set">1</integer>
     <integer name="def_led_brightness">255</integer>
     <integer name="def_screen_brightness">100</integer>
@@ -38,7 +38,7 @@
     <integer name="def_gesture_image_panning">0</integer>
     <integer name="def_gesture_video_player">0</integer>
     <integer name="def_gesture_turn_screen_on_do_not_show">0</integer>
-    <integer name="def_gesture_take_screenshot">1</integer>
+    <integer name="def_gesture_take_screenshot">0</integer>
     <integer name="def_gesture_hide_display">0</integer>
     <integer name="def_gesture_turn_screen_on">1</integer>
     <integer name="def_gesture_turn_screen_off">1</integer>
@@ -46,7 +46,7 @@
     <integer name="def_gesture_turn_screen_not_used_off">0</integer>
     <integer name="def_gesture_turn_screen_on_fixed">0</integer>
     <integer name="def_gesture_fadeout_ringtone">1</integer>
-    <integer name="def_gesture_answering">1</integer>
+    <integer name="def_gesture_answering">0</integer>
     <integer name="def_gesture_answering_fixed">0</integer>
     <integer name="def_gesture_trun_onoff_speakerphone">0</integer>
     <integer name="def_gesture_answer_support_model">0</integer>
@@ -167,7 +167,7 @@
     <integer name="tangible_usbstorage_panel_enable_def">1</integer>
     <integer name="def_gesture_tilt_view">0</integer>
     <integer name="def_dual_window">1</integer>
-    <integer name="def_auto_split_view">0</integer>
+    <integer name="def_auto_split_view">1</integer>
     <integer name="def_call_mode_setting">1</integer>
     <integer name="def_power_save_auto_brightness">0</integer>
 </resources>

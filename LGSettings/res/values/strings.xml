@@ -6144,9 +6144,7 @@ Please check password or certificates"</string>
     <string name="wifi_security_wapi_cert">WAPI CERT</string>
     <string name="wifi_security_wapi_psk_ascii">WAPI PSK ASCII</string>
     <string name="wifi_security_wapi_psk_hexadecimal">WAPI PSK hexadecimal</string>
-    <string name="camera_timer_title">camera timer</string>
-    <string name="camera_face_detecting_title">camera face detection</string>
-    <string name="sp_emotional_led_download_apps_3_ex">test</string>
-
-
+    <string name="camera_timer_title">Camera timer</string>
+    <string name="camera_face_detecting_title">Camera face detection</string>
+    <string name="sp_emotional_led_download_apps_3_ex">Use LED notification with downloaded apps</string>
 </resources>
