@@ -5,7 +5,7 @@
     <integer name="def_navigation_bar_moving">1</integer>
     <integer name="def_Nfc_first_on_check">0</integer>
     <integer name="def_one_hand_navigation_button_hardkey">0</integer>
-    <integer name="def_screen_off_effect_set">3</integer>
+    <integer name="def_screen_off_effect_set">1</integer>
     <integer name="def_screen_mode_set">1</integer>
     <integer name="def_plc_mode_set">1</integer>
     <integer name="def_led_brightness">255</integer>
