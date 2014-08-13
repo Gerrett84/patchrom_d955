@@ -24117,7 +24117,7 @@
 
     move-result v21
 
-    if-nez v21, :cond_54
+    if-nez v21, :cond_55
 
     move-object/from16 v0, p0
 
@@ -24136,42 +24136,6 @@
     if-eqz v21, :cond_49
 
     .line 7013
-    :cond_54
-    invoke-interface/range {v19 .. v19}, Lcom/android/internal/telephony/ITelephony;->isHeadsetPlugged()Z
-
-    move-result v21
-
-    if-nez v21, :cond_55
-
-    invoke-interface/range {v19 .. v19}, Lcom/android/internal/telephony/ITelephony;->isBluetoothAudioOn()Z
-
-    move-result v21
-
-    if-nez v21, :cond_55
-
-    invoke-interface {v5}, Landroid/media/IAudioService;->isSpeakerphoneOn()Z
-
-    move-result v21
-
-    if-nez v21, :cond_55
-
-    move-object/from16 v0, p0
-
-    iget-boolean v0, v0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mVolumeDownKeyTriggered:Z
-
-    move/from16 v21, v0
-
-    if-nez v21, :cond_55
-
-    move-object/from16 v0, p0
-
-    iget-boolean v0, v0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mVolumeUpKeyTriggered:Z
-
-    move/from16 v21, v0
-
-    if-nez v21, :cond_55
-
-    .line 7018
     invoke-interface/range {v19 .. v19}, Lcom/android/internal/telephony/ITelephony;->endCall()Z
 
     move-result v10
