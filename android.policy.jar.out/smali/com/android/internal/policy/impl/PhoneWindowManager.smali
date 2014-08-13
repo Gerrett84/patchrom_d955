@@ -22424,13 +22424,6 @@
 
     .line 6757
     :cond_20
-    invoke-interface/range {v19 .. v19}, Lcom/android/internal/telephony/ITelephony;->isReservedCall()Z
-
-    move-result v21
-
-    if-nez v21, :cond_2f
-
-    .line 6761
     invoke-interface/range {v19 .. v19}, Lcom/android/internal/telephony/ITelephony;->silenceRinger()V
 
     .line 6765
@@ -24031,13 +24024,6 @@
     .restart local v19       #telephonyService:Lcom/android/internal/telephony/ITelephony;
     :cond_4f
     :try_start_c
-    invoke-interface/range {v19 .. v19}, Lcom/android/internal/telephony/ITelephony;->isReservedCall()Z
-
-    move-result v21
-
-    if-nez v21, :cond_50
-
-    .line 6996
     invoke-interface/range {v19 .. v19}, Lcom/android/internal/telephony/ITelephony;->silenceRinger()V
 
     .line 6997
