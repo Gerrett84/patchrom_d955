@@ -20,6 +20,7 @@ local-phone-apps := ApplicationsProvider \
 		    SystemUI_Provider \
 		    LgNfc \
 		    PermissionToAccessLgeApi \
+		    QuicksetSDK \
 		    MediaUploader \
 		    MediaProvider \
 		    NetworkLocation \
