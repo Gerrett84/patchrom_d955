@@ -64,7 +64,7 @@
 
     const/4 v6, 0x0
 
-    .line 274
+    .line 279
     new-instance v4, Lcom/android/internal/telephony/PhoneConstants$EmcFailCause;
 
     const-string v5, "NONE"
@@ -73,7 +73,7 @@
 
     sput-object v4, Lcom/android/internal/telephony/PhoneConstants$EmcFailCause;->NONE:Lcom/android/internal/telephony/PhoneConstants$EmcFailCause;
 
-    .line 275
+    .line 280
     new-instance v4, Lcom/android/internal/telephony/PhoneConstants$EmcFailCause;
 
     const-string v5, "PDN_FAILED"
@@ -82,7 +82,7 @@
 
     sput-object v4, Lcom/android/internal/telephony/PhoneConstants$EmcFailCause;->PDN_FAILED:Lcom/android/internal/telephony/PhoneConstants$EmcFailCause;
 
-    .line 276
+    .line 281
     new-instance v4, Lcom/android/internal/telephony/PhoneConstants$EmcFailCause;
 
     const-string v5, "ATTACH_FAILED"
@@ -91,7 +91,7 @@
 
     sput-object v4, Lcom/android/internal/telephony/PhoneConstants$EmcFailCause;->ATTACH_FAILED:Lcom/android/internal/telephony/PhoneConstants$EmcFailCause;
 
-    .line 277
+    .line 282
     new-instance v4, Lcom/android/internal/telephony/PhoneConstants$EmcFailCause;
 
     const-string v5, "BARRED"
@@ -100,7 +100,7 @@
 
     sput-object v4, Lcom/android/internal/telephony/PhoneConstants$EmcFailCause;->BARRED:Lcom/android/internal/telephony/PhoneConstants$EmcFailCause;
 
-    .line 273
+    .line 278
     const/4 v4, 0x4
 
     new-array v4, v4, [Lcom/android/internal/telephony/PhoneConstants$EmcFailCause;
@@ -123,14 +123,14 @@
 
     sput-object v4, Lcom/android/internal/telephony/PhoneConstants$EmcFailCause;->$VALUES:[Lcom/android/internal/telephony/PhoneConstants$EmcFailCause;
 
-    .line 282
+    .line 287
     new-instance v4, Ljava/util/HashMap;
 
     invoke-direct {v4}, Ljava/util/HashMap;-><init>()V
 
     sput-object v4, Lcom/android/internal/telephony/PhoneConstants$EmcFailCause;->sEmcFailCauseMap:Ljava/util/HashMap;
 
-    .line 283
+    .line 288
     invoke-static {}, Lcom/android/internal/telephony/PhoneConstants$EmcFailCause;->values()[Lcom/android/internal/telephony/PhoneConstants$EmcFailCause;
 
     move-result-object v0
@@ -147,7 +147,7 @@
 
     aget-object v1, v0, v2
 
-    .line 284
+    .line 289
     .local v1, efc:Lcom/android/internal/telephony/PhoneConstants$EmcFailCause;
     sget-object v4, Lcom/android/internal/telephony/PhoneConstants$EmcFailCause;->sEmcFailCauseMap:Ljava/util/HashMap;
 
@@ -161,12 +161,12 @@
 
     invoke-virtual {v4, v5, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 283
+    .line 288
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 286
+    .line 291
     .end local v1           #efc:Lcom/android/internal/telephony/PhoneConstants$EmcFailCause;
     :cond_0
     return-void
@@ -184,13 +184,13 @@
     .end annotation
 
     .prologue
-    .line 288
+    .line 293
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 289
+    .line 294
     iput p3, p0, Lcom/android/internal/telephony/PhoneConstants$EmcFailCause;->mCode:I
 
-    .line 290
+    .line 295
     return-void
 .end method
 
@@ -199,7 +199,7 @@
     .parameter "code"
 
     .prologue
-    .line 297
+    .line 302
     sget-object v1, Lcom/android/internal/telephony/PhoneConstants$EmcFailCause;->sEmcFailCauseMap:Ljava/util/HashMap;
 
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -212,14 +212,14 @@
 
     check-cast v0, Lcom/android/internal/telephony/PhoneConstants$EmcFailCause;
 
-    .line 298
+    .line 303
     .local v0, efc:Lcom/android/internal/telephony/PhoneConstants$EmcFailCause;
     if-nez v0, :cond_0
 
-    .line 299
+    .line 304
     sget-object v0, Lcom/android/internal/telephony/PhoneConstants$EmcFailCause;->NONE:Lcom/android/internal/telephony/PhoneConstants$EmcFailCause;
 
-    .line 301
+    .line 306
     :cond_0
     return-object v0
 .end method
@@ -229,7 +229,7 @@
     .parameter "name"
 
     .prologue
-    .line 273
+    .line 278
     const-class v0, Lcom/android/internal/telephony/PhoneConstants$EmcFailCause;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -245,7 +245,7 @@
     .locals 1
 
     .prologue
-    .line 273
+    .line 278
     sget-object v0, Lcom/android/internal/telephony/PhoneConstants$EmcFailCause;->$VALUES:[Lcom/android/internal/telephony/PhoneConstants$EmcFailCause;
 
     invoke-virtual {v0}, [Lcom/android/internal/telephony/PhoneConstants$EmcFailCause;->clone()Ljava/lang/Object;
@@ -263,7 +263,7 @@
     .locals 1
 
     .prologue
-    .line 293
+    .line 298
     iget v0, p0, Lcom/android/internal/telephony/PhoneConstants$EmcFailCause;->mCode:I
 
     return v0

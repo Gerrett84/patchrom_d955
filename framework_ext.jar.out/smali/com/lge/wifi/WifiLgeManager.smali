@@ -6,6 +6,8 @@
 # static fields
 .field public static final ACTION_WIFI_SETTINGS:Ljava/lang/String; = "android.settings.WIFI_SETTINGS"
 
+.field public static AKA_AP:I = 0x0
+
 .field public static final AUTOIP_NOTIFICATION_ACTION:Ljava/lang/String; = "android.net.wifi.AUTOIP_CONNECTION_NOTIFICATION"
 
 .field public static ENTERPRISE_AP:I = 0x0
@@ -113,6 +115,11 @@
 
     sput v0, Lcom/lge/wifi/WifiLgeManager;->MSCHAP_AP:I
 
+    .line 38
+    const/4 v0, 0x5
+
+    sput v0, Lcom/lge/wifi/WifiLgeManager;->AKA_AP:I
+
     return-void
 .end method
 
@@ -120,9 +127,9 @@
     .locals 0
 
     .prologue
-    .line 78
+    .line 79
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 79
+    .line 80
     return-void
 .end method

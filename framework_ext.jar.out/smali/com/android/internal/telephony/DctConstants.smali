@@ -57,6 +57,8 @@
 
 .field protected static final APN_VZWAPP_ID:I = 0x9
 
+.field protected static final APN_XCAP_ID:I = 0x13
+
 .field public static final BASE:I = 0x42000
 
 .field public static final CMD_SET_DEPENDENCY_MET:I = 0x4201f
@@ -187,12 +189,12 @@
     .locals 1
 
     .prologue
-    .line 207
+    .line 211
     const-string v0, "com.android.internal.telephony"
 
     sput-object v0, Lcom/android/internal/telephony/DctConstants;->ACTION_DATA_CONNECTION_TRACKER_MESSENGER:Ljava/lang/String;
 
-    .line 209
+    .line 213
     const-string v0, "EXTRA_MESSENGER"
 
     sput-object v0, Lcom/android/internal/telephony/DctConstants;->EXTRA_MESSENGER:Ljava/lang/String;

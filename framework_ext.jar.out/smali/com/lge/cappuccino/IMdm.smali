@@ -172,6 +172,9 @@
 .method public abstract checkDisallowPasswordTypingVisible()Z
 .end method
 
+.method public abstract checkInstallByMDM(I)Z
+.end method
+
 .method public abstract checkMessageMdmWifiP2p(I)Z
 .end method
 

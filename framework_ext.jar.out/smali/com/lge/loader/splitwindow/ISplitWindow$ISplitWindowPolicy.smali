@@ -14,6 +14,16 @@
 .end annotation
 
 
+# static fields
+.field public static final TYPE_SCREEN_FOCUS_CHANGE_NONE:I = 0x0
+
+.field public static final TYPE_SCREEN_FOCUS_CHANGE_RESUMED:I = 0x1
+
+.field public static final TYPE_SCREEN_FOCUS_CHANGE_SWITCHED:I = 0x3
+
+.field public static final TYPE_SCREEN_FOCUS_CHANGE_TOUCHED:I = 0x2
+
+
 # virtual methods
 .method public abstract cancelSplitMode()V
     .annotation system Ldalvik/annotation/Throws;
@@ -48,6 +58,14 @@
 .end method
 
 .method public abstract getCurrentNumberOfScreens()I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract getLastScreenZone()I
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -95,6 +113,14 @@
     .end annotation
 .end method
 
+.method public abstract isAppDrawerOpen()Z
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
 .method public abstract isShowSlidingIME()Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -127,7 +153,23 @@
     .end annotation
 .end method
 
+.method public abstract notifyScreenFocusChanged(II)V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
 .method public abstract prepareSplitMode()V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract setLastScreenZone(I)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

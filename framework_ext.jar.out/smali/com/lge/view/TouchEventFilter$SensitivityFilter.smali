@@ -38,34 +38,34 @@
     .parameter "view"
 
     .prologue
-    .line 723
+    .line 759
     iput-object p1, p0, Lcom/lge/view/TouchEventFilter$SensitivityFilter;->this$0:Lcom/lge/view/TouchEventFilter;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 718
+    .line 754
     const/16 v0, 0x28
 
     iput v0, p0, Lcom/lge/view/TouchEventFilter$SensitivityFilter;->PRESSURE_LIMIT:I
 
-    .line 720
+    .line 756
     new-instance v0, Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;
 
     invoke-direct {v0}, Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;-><init>()V
 
     iput-object v0, p0, Lcom/lge/view/TouchEventFilter$SensitivityFilter;->downMask:Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;
 
-    .line 721
+    .line 757
     new-instance v0, Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;
 
     invoke-direct {v0}, Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;-><init>()V
 
     iput-object v0, p0, Lcom/lge/view/TouchEventFilter$SensitivityFilter;->reportMask:Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;
 
-    .line 724
+    .line 760
     invoke-virtual {p0}, Lcom/lge/view/TouchEventFilter$SensitivityFilter;->init()V
 
-    .line 725
+    .line 761
     return-void
 .end method
 
@@ -79,36 +79,36 @@
     .prologue
     const/4 v7, 0x1
 
-    .line 735
+    .line 771
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getPointerCount()I
 
     move-result v0
 
-    .line 736
+    .line 772
     .local v0, NI:I
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getActionMasked()I
 
     move-result v1
 
-    .line 738
+    .line 774
     .local v1, action:I
     iget-object v8, p0, Lcom/lge/view/TouchEventFilter$SensitivityFilter;->reportMask:Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;
 
     invoke-virtual {v8}, Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;->clearAllMask()I
 
-    .line 740
+    .line 776
     const/4 v2, 0x0
 
     .local v2, i:I
     :goto_0
     if-ge v2, v0, :cond_3
 
-    .line 741
+    .line 777
     invoke-virtual {p1, v2}, Landroid/view/MotionEvent;->getPointerId(I)I
 
     move-result v3
 
-    .line 742
+    .line 778
     .local v3, id:I
     invoke-virtual {p1, v2}, Landroid/view/MotionEvent;->getPressure(I)F
 
@@ -120,7 +120,7 @@
 
     float-to-int v5, v8
 
-    .line 743
+    .line 779
     .local v5, pressure:I
     const/16 v8, 0x28
 
@@ -128,7 +128,7 @@
 
     move v6, v7
 
-    .line 745
+    .line 781
     .local v6, validPressure:Z
     :goto_1
     iget-object v8, p0, Lcom/lge/view/TouchEventFilter$SensitivityFilter;->downMask:Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;
@@ -139,15 +139,15 @@
 
     if-nez v8, :cond_0
 
-    .line 746
+    .line 782
     if-eqz v6, :cond_0
 
-    .line 747
+    .line 783
     iget-object v8, p0, Lcom/lge/view/TouchEventFilter$SensitivityFilter;->downMask:Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;
 
     invoke-virtual {v8, v3}, Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;->setMask(I)I
 
-    .line 750
+    .line 786
     :cond_0
     iget-object v8, p0, Lcom/lge/view/TouchEventFilter$SensitivityFilter;->downMask:Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;
 
@@ -157,25 +157,25 @@
 
     if-eqz v8, :cond_1
 
-    .line 751
+    .line 787
     iget-object v8, p0, Lcom/lge/view/TouchEventFilter$SensitivityFilter;->reportMask:Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;
 
     invoke-virtual {v8, v3}, Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;->setMask(I)I
 
-    .line 740
+    .line 776
     :cond_1
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 743
+    .line 779
     .end local v6           #validPressure:Z
     :cond_2
     const/4 v6, 0x0
 
     goto :goto_1
 
-    .line 754
+    .line 790
     .end local v3           #id:I
     .end local v5           #pressure:I
     :cond_3
@@ -185,30 +185,30 @@
 
     if-ne v1, v7, :cond_5
 
-    .line 755
+    .line 791
     :cond_4
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getActionIndex()I
 
     move-result v4
 
-    .line 756
+    .line 792
     .local v4, index:I
     invoke-virtual {p1, v4}, Landroid/view/MotionEvent;->getPointerId(I)I
 
     move-result v3
 
-    .line 757
+    .line 793
     .restart local v3       #id:I
     iget-object v8, p0, Lcom/lge/view/TouchEventFilter$SensitivityFilter;->downMask:Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;
 
     invoke-virtual {v8, v3}, Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;->clearMask(I)I
 
-    .line 758
+    .line 794
     iget-object v8, p0, Lcom/lge/view/TouchEventFilter$SensitivityFilter;->reportMask:Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;
 
     invoke-virtual {v8, v3}, Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;->clearMask(I)I
 
-    .line 761
+    .line 797
     .end local v3           #id:I
     .end local v4           #index:I
     :cond_5
@@ -220,7 +220,7 @@
 
     iput v8, p0, Lcom/lge/view/TouchEventFilter$SensitivityFilter;->reportIdBits:I
 
-    .line 763
+    .line 799
     return v7
 .end method
 
@@ -228,7 +228,7 @@
     .locals 1
 
     .prologue
-    .line 767
+    .line 803
     iget-object v0, p0, Lcom/lge/view/TouchEventFilter$SensitivityFilter;->act:Lcom/lge/view/TouchEventFilter$IEventFilter$ReturnAct;
 
     return-object v0
@@ -238,7 +238,7 @@
     .locals 1
 
     .prologue
-    .line 771
+    .line 807
     iget v0, p0, Lcom/lge/view/TouchEventFilter$SensitivityFilter;->reportIdBits:I
 
     return v0
@@ -248,27 +248,27 @@
     .locals 1
 
     .prologue
-    .line 728
+    .line 764
     sget-object v0, Lcom/lge/view/TouchEventFilter$IEventFilter$ReturnAct;->NONE:Lcom/lge/view/TouchEventFilter$IEventFilter$ReturnAct;
 
     iput-object v0, p0, Lcom/lge/view/TouchEventFilter$SensitivityFilter;->act:Lcom/lge/view/TouchEventFilter$IEventFilter$ReturnAct;
 
-    .line 729
+    .line 765
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/lge/view/TouchEventFilter$SensitivityFilter;->reportIdBits:I
 
-    .line 730
+    .line 766
     iget-object v0, p0, Lcom/lge/view/TouchEventFilter$SensitivityFilter;->downMask:Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;
 
     invoke-virtual {v0}, Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;->clearAllMask()I
 
-    .line 731
+    .line 767
     iget-object v0, p0, Lcom/lge/view/TouchEventFilter$SensitivityFilter;->reportMask:Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;
 
     invoke-virtual {v0}, Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;->clearAllMask()I
 
-    .line 732
+    .line 768
     return-void
 .end method
 
@@ -276,7 +276,7 @@
     .locals 2
 
     .prologue
-    .line 775
+    .line 811
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

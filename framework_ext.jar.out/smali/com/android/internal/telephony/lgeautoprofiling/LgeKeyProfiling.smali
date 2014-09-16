@@ -332,6 +332,8 @@
 
 .field public static final KEY_SUPPORT_NL_SINGLE_SHIFT:Ljava/lang/String; = "support_nl_single_shift"
 
+.field public static final KEY_SUPPORT_NOT_HANDLE_BC_SMS:Ljava/lang/String; = "not_handle_bc_sms"
+
 .field public static final KEY_SUPPORT_SEND_BURST_DTMF:Ljava/lang/String; = "support_send_burst_dtmf"
 
 .field public static final KEY_SUPPORT_SMART_DIALING:Ljava/lang/String; = "support_smart_dialing"
@@ -343,6 +345,8 @@
 .field public static final KEY_SUPPORT_SPRINT_SMS_ROAMING_GUARD:Ljava/lang/String; = "support_sprint_sms_roaming_guard"
 
 .field public static final KEY_SUPPORT_SPRINT_VVM:Ljava/lang/String; = "support_sprint_vvm"
+
+.field public static final KEY_SUPPORT_SRVCC:Ljava/lang/String; = "support_srvcc"
 
 .field public static final KEY_SUPPORT_SVLTE:Ljava/lang/String; = "support_svlte"
 

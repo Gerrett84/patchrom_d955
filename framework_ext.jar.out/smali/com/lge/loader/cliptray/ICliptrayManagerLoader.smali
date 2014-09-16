@@ -12,6 +12,9 @@
 
 
 # virtual methods
+.method public abstract UpdateContextforClipTray(Landroid/content/Context;)V
+.end method
+
 .method public abstract cliptrayPaste()V
 .end method
 

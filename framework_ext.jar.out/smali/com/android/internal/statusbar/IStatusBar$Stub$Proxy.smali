@@ -27,13 +27,13 @@
     .parameter "remote"
 
     .prologue
-    .line 242
+    .line 256
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 243
+    .line 257
     iput-object p1, p0, Lcom/android/internal/statusbar/IStatusBar$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    .line 244
+    .line 258
     return-void
 .end method
 
@@ -50,35 +50,35 @@
     .end annotation
 
     .prologue
-    .line 286
+    .line 300
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 288
+    .line 302
     .local v0, _data:Landroid/os/Parcel;
     :try_start_0
     const-string v1, "com.android.internal.statusbar.IStatusBar"
 
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 289
+    .line 303
     invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeStrongBinder(Landroid/os/IBinder;)V
 
-    .line 290
+    .line 304
     if-eqz p2, :cond_0
 
-    .line 291
+    .line 305
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 292
+    .line 306
     const/4 v1, 0x0
 
     invoke-virtual {p2, v0, v1}, Lcom/android/internal/statusbar/StatusBarNotification;->writeToParcel(Landroid/os/Parcel;I)V
 
-    .line 297
+    .line 311
     :goto_0
     iget-object v1, p0, Lcom/android/internal/statusbar/IStatusBar$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
@@ -92,13 +92,13 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 300
+    .line 314
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 302
+    .line 316
     return-void
 
-    .line 295
+    .line 309
     :cond_0
     const/4 v1, 0x0
 
@@ -109,7 +109,7 @@
 
     goto :goto_0
 
-    .line 300
+    .line 314
     :catchall_0
     move-exception v1
 
@@ -127,19 +127,19 @@
     .end annotation
 
     .prologue
-    .line 370
+    .line 384
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 372
+    .line 386
     .local v0, _data:Landroid/os/Parcel;
     :try_start_0
     const-string v1, "com.android.internal.statusbar.IStatusBar"
 
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 373
+    .line 387
     iget-object v1, p0, Lcom/android/internal/statusbar/IStatusBar$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/16 v2, 0x9
@@ -152,13 +152,13 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 376
+    .line 390
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 378
+    .line 392
     return-void
 
-    .line 376
+    .line 390
     :catchall_0
     move-exception v1
 
@@ -176,19 +176,19 @@
     .end annotation
 
     .prologue
-    .line 348
+    .line 362
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 350
+    .line 364
     .local v0, _data:Landroid/os/Parcel;
     :try_start_0
     const-string v1, "com.android.internal.statusbar.IStatusBar"
 
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 351
+    .line 365
     iget-object v1, p0, Lcom/android/internal/statusbar/IStatusBar$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/4 v2, 0x7
@@ -201,13 +201,13 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 354
+    .line 368
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 356
+    .line 370
     return-void
 
-    .line 354
+    .line 368
     :catchall_0
     move-exception v1
 
@@ -225,19 +225,19 @@
     .end annotation
 
     .prologue
-    .line 359
+    .line 373
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 361
+    .line 375
     .local v0, _data:Landroid/os/Parcel;
     :try_start_0
     const-string v1, "com.android.internal.statusbar.IStatusBar"
 
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 362
+    .line 376
     iget-object v1, p0, Lcom/android/internal/statusbar/IStatusBar$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/16 v2, 0x8
@@ -250,13 +250,13 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 365
+    .line 379
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 367
+    .line 381
     return-void
 
-    .line 365
+    .line 379
     :catchall_0
     move-exception v1
 
@@ -269,7 +269,7 @@
     .locals 1
 
     .prologue
-    .line 247
+    .line 261
     iget-object v0, p0, Lcom/android/internal/statusbar/IStatusBar$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     return-object v0
@@ -284,19 +284,19 @@
     .end annotation
 
     .prologue
-    .line 455
+    .line 469
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 457
+    .line 471
     .local v0, _data:Landroid/os/Parcel;
     :try_start_0
     const-string v1, "com.android.internal.statusbar.IStatusBar"
 
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 458
+    .line 472
     iget-object v1, p0, Lcom/android/internal/statusbar/IStatusBar$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/16 v2, 0x10
@@ -309,13 +309,13 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 461
+    .line 475
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 463
+    .line 477
     return-void
 
-    .line 461
+    .line 475
     :catchall_0
     move-exception v1
 
@@ -334,22 +334,22 @@
     .end annotation
 
     .prologue
-    .line 336
+    .line 350
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 338
+    .line 352
     .local v0, _data:Landroid/os/Parcel;
     :try_start_0
     const-string v1, "com.android.internal.statusbar.IStatusBar"
 
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 339
+    .line 353
     invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 340
+    .line 354
     iget-object v1, p0, Lcom/android/internal/statusbar/IStatusBar$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/4 v2, 0x6
@@ -362,13 +362,13 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 343
+    .line 357
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 345
+    .line 359
     return-void
 
-    .line 343
+    .line 357
     :catchall_0
     move-exception v1
 
@@ -389,25 +389,25 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 468
+    .line 482
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 470
+    .line 484
     .local v0, _data:Landroid/os/Parcel;
     :try_start_0
     const-string v2, "com.android.internal.statusbar.IStatusBar"
 
     invoke-virtual {v0, v2}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 471
+    .line 485
     if-eqz p1, :cond_0
 
     :goto_0
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 472
+    .line 486
     iget-object v1, p0, Lcom/android/internal/statusbar/IStatusBar$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/16 v2, 0x11
@@ -420,19 +420,19 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 475
+    .line 489
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 477
+    .line 491
     return-void
 
-    .line 471
+    .line 485
     :cond_0
     const/4 v1, 0x0
 
     goto :goto_0
 
-    .line 475
+    .line 489
     :catchall_0
     move-exception v1
 
@@ -445,7 +445,7 @@
     .locals 1
 
     .prologue
-    .line 251
+    .line 265
     const-string v0, "com.android.internal.statusbar.IStatusBar"
 
     return-object v0
@@ -460,19 +460,19 @@
     .end annotation
 
     .prologue
-    .line 444
+    .line 458
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 446
+    .line 460
     .local v0, _data:Landroid/os/Parcel;
     :try_start_0
     const-string v1, "com.android.internal.statusbar.IStatusBar"
 
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 447
+    .line 461
     iget-object v1, p0, Lcom/android/internal/statusbar/IStatusBar$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/16 v2, 0xf
@@ -485,13 +485,13 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 450
+    .line 464
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 452
+    .line 466
     return-void
 
-    .line 450
+    .line 464
     :catchall_0
     move-exception v1
 
@@ -510,22 +510,22 @@
     .end annotation
 
     .prologue
-    .line 274
+    .line 288
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 276
+    .line 290
     .local v0, _data:Landroid/os/Parcel;
     :try_start_0
     const-string v1, "com.android.internal.statusbar.IStatusBar"
 
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 277
+    .line 291
     invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 278
+    .line 292
     iget-object v1, p0, Lcom/android/internal/statusbar/IStatusBar$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/4 v2, 0x2
@@ -538,13 +538,13 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 281
+    .line 295
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 283
+    .line 297
     return-void
 
-    .line 281
+    .line 295
     :catchall_0
     move-exception v1
 
@@ -563,22 +563,22 @@
     .end annotation
 
     .prologue
-    .line 324
+    .line 338
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 326
+    .line 340
     .local v0, _data:Landroid/os/Parcel;
     :try_start_0
     const-string v1, "com.android.internal.statusbar.IStatusBar"
 
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 327
+    .line 341
     invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeStrongBinder(Landroid/os/IBinder;)V
 
-    .line 328
+    .line 342
     iget-object v1, p0, Lcom/android/internal/statusbar/IStatusBar$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/4 v2, 0x5
@@ -591,13 +591,13 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 331
+    .line 345
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 333
+    .line 347
     return-void
 
-    .line 331
+    .line 345
     :catchall_0
     move-exception v1
 
@@ -621,19 +621,19 @@
 
     const/4 v1, 0x1
 
-    .line 420
+    .line 434
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 422
+    .line 436
     .local v0, _data:Landroid/os/Parcel;
     :try_start_0
     const-string v3, "com.android.internal.statusbar.IStatusBar"
 
     invoke-virtual {v0, v3}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 423
+    .line 437
     if-eqz p1, :cond_0
 
     move v3, v1
@@ -641,13 +641,13 @@
     :goto_0
     invoke-virtual {v0, v3}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 424
+    .line 438
     if-eqz p2, :cond_1
 
     :goto_1
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 425
+    .line 439
     iget-object v1, p0, Lcom/android/internal/statusbar/IStatusBar$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/16 v2, 0xd
@@ -660,25 +660,25 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 428
+    .line 442
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 430
+    .line 444
     return-void
 
     :cond_0
     move v3, v2
 
-    .line 423
+    .line 437
     goto :goto_0
 
     :cond_1
     move v1, v2
 
-    .line 424
+    .line 438
     goto :goto_1
 
-    .line 428
+    .line 442
     :catchall_0
     move-exception v1
 
@@ -698,35 +698,35 @@
     .end annotation
 
     .prologue
-    .line 255
+    .line 269
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 257
+    .line 271
     .local v0, _data:Landroid/os/Parcel;
     :try_start_0
     const-string v1, "com.android.internal.statusbar.IStatusBar"
 
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 258
+    .line 272
     invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 259
+    .line 273
     if-eqz p2, :cond_0
 
-    .line 260
+    .line 274
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 261
+    .line 275
     const/4 v1, 0x0
 
     invoke-virtual {p2, v0, v1}, Lcom/android/internal/statusbar/StatusBarIcon;->writeToParcel(Landroid/os/Parcel;I)V
 
-    .line 266
+    .line 280
     :goto_0
     iget-object v1, p0, Lcom/android/internal/statusbar/IStatusBar$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
@@ -740,13 +740,13 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 269
+    .line 283
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 271
+    .line 285
     return-void
 
-    .line 264
+    .line 278
     :cond_0
     const/4 v1, 0x0
 
@@ -757,7 +757,7 @@
 
     goto :goto_0
 
-    .line 269
+    .line 283
     :catchall_0
     move-exception v1
 
@@ -778,28 +778,28 @@
     .end annotation
 
     .prologue
-    .line 406
+    .line 420
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 408
+    .line 422
     .local v0, _data:Landroid/os/Parcel;
     :try_start_0
     const-string v1, "com.android.internal.statusbar.IStatusBar"
 
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 409
+    .line 423
     invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeStrongBinder(Landroid/os/IBinder;)V
 
-    .line 410
+    .line 424
     invoke-virtual {v0, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 411
+    .line 425
     invoke-virtual {v0, p3}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 412
+    .line 426
     iget-object v1, p0, Lcom/android/internal/statusbar/IStatusBar$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/16 v2, 0xc
@@ -812,13 +812,13 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 415
+    .line 429
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 417
+    .line 431
     return-void
 
-    .line 415
+    .line 429
     :catchall_0
     move-exception v1
 
@@ -841,34 +841,34 @@
     .end annotation
 
     .prologue
-    .line 495
+    .line 509
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 497
+    .line 511
     .local v0, _data:Landroid/os/Parcel;
     :try_start_0
     const-string v1, "com.android.internal.statusbar.IStatusBar"
 
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 498
+    .line 512
     invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 499
+    .line 513
     invoke-virtual {v0, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 500
+    .line 514
     invoke-virtual {v0, p3}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 501
+    .line 515
     invoke-virtual {v0, p4}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 502
+    .line 516
     invoke-virtual {v0, p5}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 503
+    .line 517
     iget-object v1, p0, Lcom/android/internal/statusbar/IStatusBar$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/16 v2, 0x13
@@ -881,13 +881,66 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 506
+    .line 520
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 508
+    .line 522
     return-void
 
-    .line 506
+    .line 520
+    :catchall_0
+    move-exception v1
+
+    invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
+
+    throw v1
+.end method
+
+.method public setNavigationBackgroundColor(I)V
+    .locals 5
+    .parameter "color"
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+
+    .prologue
+    .line 553
+    invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
+
+    move-result-object v0
+
+    .line 555
+    .local v0, _data:Landroid/os/Parcel;
+    :try_start_0
+    const-string v1, "com.android.internal.statusbar.IStatusBar"
+
+    invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
+
+    .line 556
+    invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeInt(I)V
+
+    .line 557
+    iget-object v1, p0, Lcom/android/internal/statusbar/IStatusBar$Stub$Proxy;->mRemote:Landroid/os/IBinder;
+
+    const/16 v2, 0x16
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x1
+
+    invoke-interface {v1, v2, v0, v3, v4}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 560
+    invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
+
+    .line 562
+    return-void
+
+    .line 560
     :catchall_0
     move-exception v1
 
@@ -908,28 +961,28 @@
     .end annotation
 
     .prologue
-    .line 511
+    .line 525
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 513
+    .line 527
     .local v0, _data:Landroid/os/Parcel;
     :try_start_0
     const-string v1, "com.android.internal.statusbar.IStatusBar"
 
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 514
+    .line 528
     invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 515
+    .line 529
     invoke-virtual {v0, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 516
+    .line 530
     invoke-virtual {v0, p3}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 517
+    .line 531
     iget-object v1, p0, Lcom/android/internal/statusbar/IStatusBar$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/16 v2, 0x14
@@ -942,13 +995,13 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 520
+    .line 534
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 522
+    .line 536
     return-void
 
-    .line 520
+    .line 534
     :catchall_0
     move-exception v1
 
@@ -996,7 +1049,7 @@
     :goto_0
     iget-object v1, p0, Lcom/android/internal/statusbar/IStatusBar$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v2, 0x15
+    const/16 v2, 0x17
 
     const/4 v3, 0x0
 
@@ -1028,6 +1081,55 @@
     throw v1
 .end method
 
+.method public setSystemBarShift()V
+    .locals 5
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+
+    .prologue
+    .line 539
+    invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
+
+    move-result-object v0
+
+    .line 541
+    .local v0, _data:Landroid/os/Parcel;
+    :try_start_0
+    const-string v1, "com.android.internal.statusbar.IStatusBar"
+
+    invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
+
+    .line 542
+    iget-object v1, p0, Lcom/android/internal/statusbar/IStatusBar$Stub$Proxy;->mRemote:Landroid/os/IBinder;
+
+    const/16 v2, 0x15
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x1
+
+    invoke-interface {v1, v2, v0, v3, v4}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 545
+    invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
+
+    .line 547
+    return-void
+
+    .line 545
+    :catchall_0
+    move-exception v1
+
+    invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
+
+    throw v1
+.end method
+
 .method public setSystemBarType(I)V
     .locals 5
     .parameter "type"
@@ -1038,22 +1140,22 @@
     .end annotation
 
     .prologue
-    .line 483
+    .line 497
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 485
+    .line 499
     .local v0, _data:Landroid/os/Parcel;
     :try_start_0
     const-string v1, "com.android.internal.statusbar.IStatusBar"
 
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 486
+    .line 500
     invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 487
+    .line 501
     iget-object v1, p0, Lcom/android/internal/statusbar/IStatusBar$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/16 v2, 0x12
@@ -1066,13 +1168,13 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 490
+    .line 504
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 492
+    .line 506
     return-void
 
-    .line 490
+    .line 504
     :catchall_0
     move-exception v1
 
@@ -1092,25 +1194,25 @@
     .end annotation
 
     .prologue
-    .line 381
+    .line 395
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 383
+    .line 397
     .local v0, _data:Landroid/os/Parcel;
     :try_start_0
     const-string v1, "com.android.internal.statusbar.IStatusBar"
 
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 384
+    .line 398
     invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 385
+    .line 399
     invoke-virtual {v0, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 386
+    .line 400
     iget-object v1, p0, Lcom/android/internal/statusbar/IStatusBar$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/16 v2, 0xa
@@ -1123,13 +1225,13 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 389
+    .line 403
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 391
+    .line 405
     return-void
 
-    .line 389
+    .line 403
     :catchall_0
     move-exception v1
 
@@ -1147,19 +1249,19 @@
     .end annotation
 
     .prologue
-    .line 433
+    .line 447
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 435
+    .line 449
     .local v0, _data:Landroid/os/Parcel;
     :try_start_0
     const-string v1, "com.android.internal.statusbar.IStatusBar"
 
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 436
+    .line 450
     iget-object v1, p0, Lcom/android/internal/statusbar/IStatusBar$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/16 v2, 0xe
@@ -1172,13 +1274,13 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 439
+    .line 453
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 441
+    .line 455
     return-void
 
-    .line 439
+    .line 453
     :catchall_0
     move-exception v1
 
@@ -1199,25 +1301,25 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 394
+    .line 408
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 396
+    .line 410
     .local v0, _data:Landroid/os/Parcel;
     :try_start_0
     const-string v2, "com.android.internal.statusbar.IStatusBar"
 
     invoke-virtual {v0, v2}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 397
+    .line 411
     if-eqz p1, :cond_0
 
     :goto_0
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 398
+    .line 412
     iget-object v1, p0, Lcom/android/internal/statusbar/IStatusBar$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/16 v2, 0xb
@@ -1230,19 +1332,19 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 401
+    .line 415
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 403
+    .line 417
     return-void
 
-    .line 397
+    .line 411
     :cond_0
     const/4 v1, 0x0
 
     goto :goto_0
 
-    .line 401
+    .line 415
     :catchall_0
     move-exception v1
 
@@ -1262,35 +1364,35 @@
     .end annotation
 
     .prologue
-    .line 305
+    .line 319
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 307
+    .line 321
     .local v0, _data:Landroid/os/Parcel;
     :try_start_0
     const-string v1, "com.android.internal.statusbar.IStatusBar"
 
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 308
+    .line 322
     invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeStrongBinder(Landroid/os/IBinder;)V
 
-    .line 309
+    .line 323
     if-eqz p2, :cond_0
 
-    .line 310
+    .line 324
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 311
+    .line 325
     const/4 v1, 0x0
 
     invoke-virtual {p2, v0, v1}, Lcom/android/internal/statusbar/StatusBarNotification;->writeToParcel(Landroid/os/Parcel;I)V
 
-    .line 316
+    .line 330
     :goto_0
     iget-object v1, p0, Lcom/android/internal/statusbar/IStatusBar$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
@@ -1304,13 +1406,13 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 319
+    .line 333
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 321
+    .line 335
     return-void
 
-    .line 314
+    .line 328
     :cond_0
     const/4 v1, 0x0
 
@@ -1321,7 +1423,7 @@
 
     goto :goto_0
 
-    .line 319
+    .line 333
     :catchall_0
     move-exception v1
 

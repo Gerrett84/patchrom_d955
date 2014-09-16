@@ -77,6 +77,8 @@
 
 .field public static final APN_TYPE_VZWAPP:Ljava/lang/String; = "vzwapp"
 
+.field public static final APN_TYPE_XCAP:Ljava/lang/String; = "xcap"
+
 .field public static final DATA_APN_KEY:Ljava/lang/String; = "apn"
 
 .field public static final DATA_APN_TYPE_KEY:Ljava/lang/String; = "apnType"

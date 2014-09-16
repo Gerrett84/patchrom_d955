@@ -78,7 +78,7 @@
 
     const/4 v8, 0x0
 
-    .line 306
+    .line 311
     new-instance v4, Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;
 
     const-string v5, "NONE"
@@ -87,7 +87,7 @@
 
     sput-object v4, Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;->NONE:Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;
 
-    .line 307
+    .line 312
     new-instance v4, Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;
 
     const-string v5, "NORMAL_DETACHED"
@@ -96,7 +96,7 @@
 
     sput-object v4, Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;->NORMAL_DETACHED:Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;
 
-    .line 308
+    .line 313
     new-instance v4, Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;
 
     const-string v5, "EMERGENCY_ATTACHED"
@@ -105,7 +105,7 @@
 
     sput-object v4, Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;->EMERGENCY_ATTACHED:Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;
 
-    .line 309
+    .line 314
     new-instance v4, Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;
 
     const-string v5, "NORMAL_ATTACHED"
@@ -114,7 +114,7 @@
 
     sput-object v4, Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;->NORMAL_ATTACHED:Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;
 
-    .line 310
+    .line 315
     new-instance v4, Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;
 
     const-string v5, "EMERGENCY_DETACHED"
@@ -123,7 +123,7 @@
 
     sput-object v4, Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;->EMERGENCY_DETACHED:Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;
 
-    .line 312
+    .line 317
     new-instance v4, Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;
 
     const-string v5, "REATTACH_REQUIRED"
@@ -136,7 +136,7 @@
 
     sput-object v4, Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;->REATTACH_REQUIRED:Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;
 
-    .line 313
+    .line 318
     new-instance v4, Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;
 
     const-string v5, "REATTACH_NOT_REQUIURED"
@@ -149,7 +149,7 @@
 
     sput-object v4, Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;->REATTACH_NOT_REQUIURED:Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;
 
-    .line 314
+    .line 319
     new-instance v4, Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;
 
     const-string v5, "IMSI_DETACH_MT_DETACH"
@@ -162,7 +162,7 @@
 
     sput-object v4, Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;->IMSI_DETACH_MT_DETACH:Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;
 
-    .line 315
+    .line 320
     new-instance v4, Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;
 
     const-string v5, "RESERVED_MT_DETACH_TYPE_ONE"
@@ -175,7 +175,7 @@
 
     sput-object v4, Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;->RESERVED_MT_DETACH_TYPE_ONE:Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;
 
-    .line 316
+    .line 321
     new-instance v4, Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;
 
     const-string v5, "RESERVED_MT_DETACH_TYPE_TWO"
@@ -188,7 +188,7 @@
 
     sput-object v4, Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;->RESERVED_MT_DETACH_TYPE_TWO:Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;
 
-    .line 305
+    .line 310
     const/16 v4, 0xa
 
     new-array v4, v4, [Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;
@@ -245,14 +245,14 @@
 
     sput-object v4, Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;->$VALUES:[Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;
 
-    .line 321
+    .line 326
     new-instance v4, Ljava/util/HashMap;
 
     invoke-direct {v4}, Ljava/util/HashMap;-><init>()V
 
     sput-object v4, Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;->sLteStateInfoMap:Ljava/util/HashMap;
 
-    .line 322
+    .line 327
     invoke-static {}, Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;->values()[Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;
 
     move-result-object v0
@@ -269,7 +269,7 @@
 
     aget-object v3, v0, v1
 
-    .line 323
+    .line 328
     .local v3, lsi:Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;
     sget-object v4, Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;->sLteStateInfoMap:Ljava/util/HashMap;
 
@@ -283,12 +283,12 @@
 
     invoke-virtual {v4, v5, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 322
+    .line 327
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 325
+    .line 330
     .end local v3           #lsi:Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;
     :cond_0
     return-void
@@ -306,13 +306,13 @@
     .end annotation
 
     .prologue
-    .line 327
+    .line 332
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 328
+    .line 333
     iput p3, p0, Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;->mCode:I
 
-    .line 329
+    .line 334
     return-void
 .end method
 
@@ -321,7 +321,7 @@
     .parameter "code"
 
     .prologue
-    .line 336
+    .line 341
     sget-object v1, Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;->sLteStateInfoMap:Ljava/util/HashMap;
 
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -334,14 +334,14 @@
 
     check-cast v0, Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;
 
-    .line 337
+    .line 342
     .local v0, lsi:Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;
     if-nez v0, :cond_0
 
-    .line 338
+    .line 343
     sget-object v0, Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;->NONE:Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;
 
-    .line 340
+    .line 345
     :cond_0
     return-object v0
 .end method
@@ -351,7 +351,7 @@
     .parameter "name"
 
     .prologue
-    .line 305
+    .line 310
     const-class v0, Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -367,7 +367,7 @@
     .locals 1
 
     .prologue
-    .line 305
+    .line 310
     sget-object v0, Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;->$VALUES:[Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;
 
     invoke-virtual {v0}, [Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;->clone()Ljava/lang/Object;
@@ -385,7 +385,7 @@
     .locals 1
 
     .prologue
-    .line 332
+    .line 337
     iget v0, p0, Lcom/android/internal/telephony/PhoneConstants$LteStateInfo;->mCode:I
 
     return v0

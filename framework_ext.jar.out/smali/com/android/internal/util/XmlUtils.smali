@@ -1711,7 +1711,7 @@
     .end local v0           #eventType:I
     .end local v3           #value:Ljava/lang/String;
     :cond_7
-    const-string v5, "int"
+    const-string/jumbo v5, "int"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1840,7 +1840,7 @@
     .line 813
     .end local v1           #res:Ljava/lang/Boolean;
     :cond_c
-    const-string v5, "int-array"
+    const-string/jumbo v5, "int-array"
 
     invoke-virtual {v2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1852,7 +1852,7 @@
     invoke-interface {p0}, Lorg/xmlpull/v1/XmlPullParser;->next()I
 
     .line 815
-    const-string v5, "int-array"
+    const-string/jumbo v5, "int-array"
 
     invoke-static {p0, v5, p1}, Lcom/android/internal/util/XmlUtils;->readThisIntArrayXml(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;[Ljava/lang/String;)[I
 
@@ -2478,7 +2478,7 @@
 
     .line 376
     :cond_0
-    const-string v2, "int-array"
+    const-string/jumbo v2, "int-array"
 
     invoke-interface {p2, v4, v2}, Lorg/xmlpull/v1/XmlSerializer;->startTag(Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
@@ -2539,7 +2539,7 @@
 
     .line 390
     :cond_2
-    const-string v2, "int-array"
+    const-string/jumbo v2, "int-array"
 
     invoke-interface {p2, v4, v2}, Lorg/xmlpull/v1/XmlSerializer;->endTag(Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
@@ -2990,7 +2990,7 @@
     if-eqz v1, :cond_5
 
     .line 429
-    const-string v0, "int"
+    const-string/jumbo v0, "int"
 
     .line 468
     .local v0, typeStr:Ljava/lang/String;

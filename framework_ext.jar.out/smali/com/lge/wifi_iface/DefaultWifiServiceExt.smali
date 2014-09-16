@@ -521,6 +521,17 @@
     return v0
 .end method
 
+.method public isUPlusAP(Ljava/lang/String;)Z
+    .locals 1
+    .parameter "ssid"
+
+    .prologue
+    .line 115
+    const/4 v0, 0x1
+
+    return v0
+.end method
+
 .method public isUPulsMsCHAPv2AP(Ljava/lang/String;)Z
     .locals 1
     .parameter "ssid"

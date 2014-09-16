@@ -66,9 +66,13 @@
 
 .field static final TRANSACTION_setNavigationBackground:I = 0x18
 
+.field static final TRANSACTION_setNavigationBackgroundColor:I = 0x1b
+
 .field static final TRANSACTION_setNavigationRotation:I = 0x19
 
-.field static final TRANSACTION_setStatus:I = 0x1a
+.field static final TRANSACTION_setSystemBarShift:I = 0x1a
+
+.field static final TRANSACTION_setStatus:I = 0x1c
 
 .field static final TRANSACTION_setSystemBarType:I = 0x17
 
@@ -168,7 +172,7 @@
     .line 39
     sparse-switch p1, :sswitch_data_0
 
-    .line 333
+    .line 349
     invoke-super/range {p0 .. p4}, Landroid/os/Binder;->onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
     move-result v1
@@ -1090,30 +1094,82 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
 
+    .line 323
     invoke-virtual/range {p2 .. p2}, Landroid/os/Parcel;->readInt()I
 
     move-result v2
 
+    .line 325
     .local v2, _arg0:I
     invoke-virtual/range {p2 .. p2}, Landroid/os/Parcel;->readInt()I
 
     move-result v3
 
+    .line 327
     .restart local v3       #_arg1:I
     invoke-virtual/range {p2 .. p2}, Landroid/os/Parcel;->readInt()I
 
     move-result v4
 
+    .line 328
     .restart local v4       #_arg2:I
     invoke-virtual {p0, v2, v3, v4}, Lcom/android/internal/statusbar/IStatusBarService$Stub;->setNavigationRotation(III)V
 
+    .line 329
     invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
 
+    .line 330
     const/4 v1, 0x1
 
     goto/16 :goto_0
 
+    .line 334
+    .end local v2           #_arg0:I
+    .end local v3           #_arg1:I
+    .end local v4           #_arg2:I
     :sswitch_1a
+    const-string v1, "com.android.internal.statusbar.IStatusBarService"
+
+    move-object/from16 v0, p2
+
+    invoke-virtual {v0, v1}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
+
+    .line 335
+    invoke-virtual {p0}, Lcom/android/internal/statusbar/IStatusBarService$Stub;->setSystemBarShift()V
+
+    .line 336
+    invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
+
+    .line 337
+    const/4 v1, 0x1
+
+    goto/16 :goto_0
+
+    :sswitch_1b
+    const-string v1, "com.android.internal.statusbar.IStatusBarService"
+
+    move-object/from16 v0, p2
+
+    invoke-virtual {v0, v1}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
+
+    .line 343
+    invoke-virtual/range {p2 .. p2}, Landroid/os/Parcel;->readInt()I
+
+    move-result v2
+
+    .line 344
+    .restart local v2       #_arg0:I
+    invoke-virtual {p0, v2}, Lcom/android/internal/statusbar/IStatusBarService$Stub;->setNavigationBackgroundColor(I)V
+
+    .line 345
+    invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
+
+    .line 346
+    const/4 v1, 0x1
+
+    goto/16 :goto_0
+
+    :sswitch_1c
     const-string v1, "com.android.internal.statusbar.IStatusBarService"
 
     move-object/from16 v0, p2
@@ -1196,6 +1252,8 @@
         0x18 -> :sswitch_18
         0x19 -> :sswitch_19
         0x1a -> :sswitch_1a
+        0x1b -> :sswitch_1b
+		0x1c -> :sswitch_1c
         0x5f4e5446 -> :sswitch_0
     .end sparse-switch
 .end method

@@ -39,6 +39,8 @@
 
 .field public static final ACTION_STATIC_TEST:Ljava/lang/String; = "com.lge.android.intent.action.STATIC_TEST"
 
+.field public static final ACTION_TILT_GESTURE_EVENT:Ljava/lang/String; = "com.lge.android.intent.TILT_GESTURE_EVENT"
+
 .field public static final AUTORUN_ENABLE_CHANGED:Ljava/lang/String; = "com.lge.android.intent.AUTORUN_ENABLE_CHANGED"
 
 .field public static final CMAS_PRESIDENTIAL_ARRIVED:Ljava/lang/String; = "com.lge.android.intent.CMAS_PRESIDENTIAL_ARRIVED"

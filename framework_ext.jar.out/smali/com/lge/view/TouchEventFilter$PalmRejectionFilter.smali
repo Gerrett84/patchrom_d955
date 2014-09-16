@@ -34,15 +34,15 @@
     .parameter "view"
 
     .prologue
-    .line 564
+    .line 600
     iput-object p1, p0, Lcom/lge/view/TouchEventFilter$PalmRejectionFilter;->this$0:Lcom/lge/view/TouchEventFilter;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 565
+    .line 601
     invoke-virtual {p0}, Lcom/lge/view/TouchEventFilter$PalmRejectionFilter;->init()V
 
-    .line 566
+    .line 602
     return-void
 .end method
 
@@ -56,42 +56,42 @@
     .prologue
     const/4 v6, 0x1
 
-    .line 575
+    .line 611
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getPointerCount()I
 
     move-result v0
 
-    .line 576
+    .line 612
     .local v0, NI:I
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getActionMasked()I
 
     move-result v1
 
-    .line 578
+    .line 614
     .local v1, action:I
     const/4 v3, 0x0
 
-    .line 581
+    .line 617
     .local v3, isPalm:Z
     iget-boolean v5, p0, Lcom/lge/view/TouchEventFilter$PalmRejectionFilter;->ignore:Z
 
     if-eqz v5, :cond_0
 
-    .line 582
+    .line 618
     sget-object v5, Lcom/lge/view/TouchEventFilter$IEventFilter$ReturnAct;->IGNORE:Lcom/lge/view/TouchEventFilter$IEventFilter$ReturnAct;
 
     iput-object v5, p0, Lcom/lge/view/TouchEventFilter$PalmRejectionFilter;->act:Lcom/lge/view/TouchEventFilter$IEventFilter$ReturnAct;
 
-    .line 583
+    .line 619
     const/4 v5, 0x0
 
     iput v5, p0, Lcom/lge/view/TouchEventFilter$PalmRejectionFilter;->reportIdBits:I
 
-    .line 598
+    .line 634
     :goto_0
     return v6
 
-    .line 586
+    .line 622
     :cond_0
     const/4 v2, 0x0
 
@@ -99,12 +99,12 @@
     :goto_1
     if-ge v2, v0, :cond_3
 
-    .line 587
+    .line 623
     invoke-virtual {p1, v2}, Landroid/view/MotionEvent;->getToolType(I)I
 
     move-result v4
 
-    .line 588
+    .line 624
     .local v4, toolType:I
     const/4 v5, 0x5
 
@@ -114,30 +114,30 @@
 
     if-ne v4, v5, :cond_2
 
-    .line 589
+    .line 625
     :cond_1
     const/4 v3, 0x1
 
-    .line 586
+    .line 622
     :cond_2
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_1
 
-    .line 592
+    .line 628
     .end local v4           #toolType:I
     :cond_3
     if-eqz v3, :cond_4
 
-    .line 593
+    .line 629
     iput-boolean v6, p0, Lcom/lge/view/TouchEventFilter$PalmRejectionFilter;->ignore:Z
 
-    .line 594
+    .line 630
     sget-object v5, Lcom/lge/view/TouchEventFilter$IEventFilter$ReturnAct;->CANCEL:Lcom/lge/view/TouchEventFilter$IEventFilter$ReturnAct;
 
     iput-object v5, p0, Lcom/lge/view/TouchEventFilter$PalmRejectionFilter;->act:Lcom/lge/view/TouchEventFilter$IEventFilter$ReturnAct;
 
-    .line 596
+    .line 632
     :cond_4
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getPointerIdBits()I
 
@@ -152,7 +152,7 @@
     .locals 1
 
     .prologue
-    .line 602
+    .line 638
     iget-object v0, p0, Lcom/lge/view/TouchEventFilter$PalmRejectionFilter;->act:Lcom/lge/view/TouchEventFilter$IEventFilter$ReturnAct;
 
     return-object v0
@@ -162,7 +162,7 @@
     .locals 1
 
     .prologue
-    .line 606
+    .line 642
     iget v0, p0, Lcom/lge/view/TouchEventFilter$PalmRejectionFilter;->reportIdBits:I
 
     return v0
@@ -174,18 +174,18 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 569
+    .line 605
     sget-object v0, Lcom/lge/view/TouchEventFilter$IEventFilter$ReturnAct;->NONE:Lcom/lge/view/TouchEventFilter$IEventFilter$ReturnAct;
 
     iput-object v0, p0, Lcom/lge/view/TouchEventFilter$PalmRejectionFilter;->act:Lcom/lge/view/TouchEventFilter$IEventFilter$ReturnAct;
 
-    .line 570
+    .line 606
     iput v1, p0, Lcom/lge/view/TouchEventFilter$PalmRejectionFilter;->reportIdBits:I
 
-    .line 571
+    .line 607
     iput-boolean v1, p0, Lcom/lge/view/TouchEventFilter$PalmRejectionFilter;->ignore:Z
 
-    .line 572
+    .line 608
     return-void
 .end method
 
@@ -193,7 +193,7 @@
     .locals 2
 
     .prologue
-    .line 610
+    .line 646
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

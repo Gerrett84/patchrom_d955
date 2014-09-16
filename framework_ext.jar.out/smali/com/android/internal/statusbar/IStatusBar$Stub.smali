@@ -54,9 +54,13 @@
 
 .field static final TRANSACTION_setNavigationBackground:I = 0x13
 
+.field static final TRANSACTION_setNavigationBackgroundColor:I = 0x16
+
 .field static final TRANSACTION_setNavigationRotation:I = 0x14
 
-.field static final TRANSACTION_setStatus:I = 0x15
+.field static final TRANSACTION_setSystemBarShift:I = 0x15
+
+.field static final TRANSACTION_setStatus:I = 0x17
 
 .field static final TRANSACTION_setSystemBarType:I = 0x12
 
@@ -162,7 +166,7 @@
     .line 39
     sparse-switch p1, :sswitch_data_0
 
-    .line 236
+    .line 250
     invoke-super {p0, p1, p2, p3, p4}, Landroid/os/Binder;->onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
     move-result v6
@@ -669,26 +673,57 @@
 
     invoke-virtual {p2, v0}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
 
+    .line 227
     invoke-virtual {p2}, Landroid/os/Parcel;->readInt()I
 
     move-result v1
 
+    .line 229
     .local v1, _arg0:I
     invoke-virtual {p2}, Landroid/os/Parcel;->readInt()I
 
     move-result v2
 
+    .line 231
     .restart local v2       #_arg1:I
     invoke-virtual {p2}, Landroid/os/Parcel;->readInt()I
 
     move-result v3
 
+    .line 232
     .restart local v3       #_arg2:I
     invoke-virtual {p0, v1, v2, v3}, Lcom/android/internal/statusbar/IStatusBar$Stub;->setNavigationRotation(III)V
 
     goto/16 :goto_0
 
     :sswitch_15
+    const-string v0, "com.android.internal.statusbar.IStatusBar"
+
+    invoke-virtual {p2, v0}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
+
+    .line 238
+    invoke-virtual {p0}, Lcom/android/internal/statusbar/IStatusBar$Stub;->setSystemBarShift()V
+
+    goto/16 :goto_0
+
+    .line 243
+    :sswitch_16
+    const-string v0, "com.android.internal.statusbar.IStatusBar"
+
+    invoke-virtual {p2, v0}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
+
+    .line 245
+    invoke-virtual {p2}, Landroid/os/Parcel;->readInt()I
+
+    move-result v1
+
+    .line 246
+    .restart local v1       #_arg0:I
+    invoke-virtual {p0, v1}, Lcom/android/internal/statusbar/IStatusBar$Stub;->setNavigationBackgroundColor(I)V
+
+    goto/16 :goto_0
+
+    :sswitch_17
     const-string v0, "com.android.internal.statusbar.IStatusBar"
 
     invoke-virtual {p2, v0}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
@@ -753,6 +788,8 @@
         0x13 -> :sswitch_13
         0x14 -> :sswitch_14
         0x15 -> :sswitch_15
+        0x16 -> :sswitch_16
+		0x17 -> :sswitch_17
         0x5f4e5446 -> :sswitch_0
     .end sparse-switch
 .end method

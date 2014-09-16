@@ -1392,7 +1392,7 @@
 
     move-result-object v1
 
-    const-string v2, "package"
+    const-string/jumbo v2, "package"
 
     iget-object v3, p1, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
 

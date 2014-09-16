@@ -6,6 +6,8 @@
 # static fields
 .field public static final CAPP_ALMOND:Z
 
+.field public static final CAPP_APP_BLOCK:Z
+
 .field public static final CAPP_ART:Z
 
 .field public static final CAPP_BATTERY_CONDITION:Z
@@ -49,6 +51,8 @@
 .field public static final CAPP_OPTIMUSUI:Z
 
 .field public static final CAPP_OSP:Z
+
+.field public static final CAPP_PATCH_LOCKSCREEN:Z
 
 .field public static final CAPP_PRADAUI:Z
 
@@ -415,6 +419,15 @@
     sput-boolean v0, Lcom/lge/config/ConfigBuildFlags;->CAPP_TOUCH_PALM_COVER:Z
 
     .line 74
+    const-string/jumbo v0, "ro.lge.capp_app_block"
+
+    invoke-static {v0, v1}, Landroid/os/SystemProperties;->getBoolean(Ljava/lang/String;Z)Z
+
+    move-result v0
+
+    sput-boolean v0, Lcom/lge/config/ConfigBuildFlags;->CAPP_APP_BLOCK:Z
+
+    .line 75
     const-string/jumbo v0, "ro.lge.capp_splitwindow"
 
     invoke-static {v0, v1}, Landroid/os/SystemProperties;->getBoolean(Ljava/lang/String;Z)Z
@@ -423,7 +436,7 @@
 
     sput-boolean v0, Lcom/lge/config/ConfigBuildFlags;->CAPP_SPLITWINDOW:Z
 
-    .line 76
+    .line 77
     const-string/jumbo v0, "ro.lge.capp_ZDi_O"
 
     invoke-static {v0, v1}, Landroid/os/SystemProperties;->getBoolean(Ljava/lang/String;Z)Z
@@ -432,7 +445,7 @@
 
     sput-boolean v0, Lcom/lge/config/ConfigBuildFlags;->CAPP_ZDI_O:Z
 
-    .line 78
+    .line 79
     const-string/jumbo v0, "ro.lge.capp_ZDi_I"
 
     invoke-static {v0, v1}, Landroid/os/SystemProperties;->getBoolean(Ljava/lang/String;Z)Z
@@ -440,6 +453,15 @@
     move-result v0
 
     sput-boolean v0, Lcom/lge/config/ConfigBuildFlags;->CAPP_ZDI_I:Z
+
+    .line 80
+    const-string/jumbo v0, "ro.lge.capp_patch_lockscreen"
+
+    invoke-static {v0, v1}, Landroid/os/SystemProperties;->getBoolean(Ljava/lang/String;Z)Z
+
+    move-result v0
+
+    sput-boolean v0, Lcom/lge/config/ConfigBuildFlags;->CAPP_PATCH_LOCKSCREEN:Z
 
     return-void
 .end method

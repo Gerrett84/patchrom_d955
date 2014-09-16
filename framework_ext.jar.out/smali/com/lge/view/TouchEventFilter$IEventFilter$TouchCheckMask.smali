@@ -25,13 +25,13 @@
     .locals 0
 
     .prologue
-    .line 489
+    .line 525
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 490
+    .line 526
     invoke-virtual {p0}, Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;->clearAllMask()I
 
-    .line 491
+    .line 527
     return-void
 .end method
 
@@ -41,16 +41,16 @@
     .locals 3
 
     .prologue
-    .line 532
+    .line 568
     const/4 v1, 0x1
 
-    .line 533
+    .line 569
     .local v1, index:I
     const/4 v2, 0x0
 
     iput v2, p0, Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;->count:I
 
-    .line 534
+    .line 570
     const/4 v0, 0x0
 
     .local v0, i:I
@@ -59,30 +59,30 @@
 
     if-ge v0, v2, :cond_1
 
-    .line 535
+    .line 571
     iget v2, p0, Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;->mask:I
 
     and-int/2addr v2, v1
 
     if-eqz v2, :cond_0
 
-    .line 536
+    .line 572
     iget v2, p0, Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;->count:I
 
     add-int/lit8 v2, v2, 0x1
 
     iput v2, p0, Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;->count:I
 
-    .line 537
+    .line 573
     :cond_0
     shl-int/lit8 v1, v1, 0x1
 
-    .line 534
+    .line 570
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 539
+    .line 575
     :cond_1
     return-void
 .end method
@@ -94,7 +94,7 @@
     .prologue
     const/4 v0, 0x1
 
-    .line 520
+    .line 556
     iget v1, p0, Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;->mask:I
 
     shl-int v2, v0, p1
@@ -118,13 +118,13 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 514
+    .line 550
     iput v0, p0, Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;->mask:I
 
-    .line 515
+    .line 551
     invoke-virtual {p0, v0}, Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;->setCount(I)V
 
-    .line 516
+    .line 552
     iget v0, p0, Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;->mask:I
 
     return v0
@@ -135,17 +135,17 @@
     .parameter "i"
 
     .prologue
-    .line 507
+    .line 543
     invoke-virtual {p0, p1}, Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;->checkMask(I)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 508
+    .line 544
     invoke-virtual {p0}, Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;->decCount()V
 
-    .line 509
+    .line 545
     :cond_0
     iget v0, p0, Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;->mask:I
 
@@ -159,7 +159,7 @@
 
     iput v0, p0, Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;->mask:I
 
-    .line 510
+    .line 546
     iget v0, p0, Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;->mask:I
 
     return v0
@@ -169,7 +169,7 @@
     .locals 1
 
     .prologue
-    .line 529
+    .line 565
     iget v0, p0, Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;->count:I
 
     add-int/lit8 v0, v0, -0x1
@@ -183,7 +183,7 @@
     .locals 1
 
     .prologue
-    .line 527
+    .line 563
     iget v0, p0, Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;->count:I
 
     return v0
@@ -193,7 +193,7 @@
     .locals 2
 
     .prologue
-    .line 542
+    .line 578
     const/4 v0, 0x0
 
     .local v0, i:I
@@ -202,26 +202,26 @@
 
     if-ge v0, v1, :cond_1
 
-    .line 543
+    .line 579
     invoke-virtual {p0, v0}, Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;->checkMask(I)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 546
+    .line 582
     .end local v0           #i:I
     :goto_1
     return v0
 
-    .line 542
+    .line 578
     .restart local v0       #i:I
     :cond_0
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 546
+    .line 582
     :cond_1
     const/4 v0, -0x1
 
@@ -232,7 +232,7 @@
     .locals 1
 
     .prologue
-    .line 524
+    .line 560
     iget v0, p0, Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;->mask:I
 
     return v0
@@ -242,7 +242,7 @@
     .locals 1
 
     .prologue
-    .line 528
+    .line 564
     iget v0, p0, Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;->count:I
 
     add-int/lit8 v0, v0, 0x1
@@ -257,13 +257,13 @@
     .parameter "newMask"
 
     .prologue
-    .line 501
+    .line 537
     iput p1, p0, Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;->mask:I
 
-    .line 502
+    .line 538
     invoke-virtual {p0}, Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;->calCount()V
 
-    .line 503
+    .line 539
     iget v0, p0, Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;->mask:I
 
     return v0
@@ -274,7 +274,7 @@
     .parameter "newCount"
 
     .prologue
-    .line 530
+    .line 566
     iput p1, p0, Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;->count:I
 
     return-void
@@ -285,17 +285,17 @@
     .parameter "i"
 
     .prologue
-    .line 494
+    .line 530
     invoke-virtual {p0, p1}, Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;->checkMask(I)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 495
+    .line 531
     invoke-virtual {p0}, Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;->incCount()V
 
-    .line 496
+    .line 532
     :cond_0
     iget v0, p0, Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;->mask:I
 
@@ -307,7 +307,7 @@
 
     iput v0, p0, Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;->mask:I
 
-    .line 497
+    .line 533
     iget v0, p0, Lcom/lge/view/TouchEventFilter$IEventFilter$TouchCheckMask;->mask:I
 
     return v0
@@ -317,12 +317,12 @@
     .locals 3
 
     .prologue
-    .line 550
+    .line 586
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 551
+    .line 587
     .local v0, msg:Ljava/lang/StringBuilder;
     const-string v1, "["
 
@@ -356,7 +356,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 552
+    .line 588
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v1

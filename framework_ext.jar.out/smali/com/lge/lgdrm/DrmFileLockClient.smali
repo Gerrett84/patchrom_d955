@@ -92,38 +92,38 @@
     .locals 1
 
     .prologue
-    .line 595
+    .line 676
     iget v0, p0, Lcom/lge/lgdrm/DrmFileLockClient;->mLockSessionID:I
 
     if-eqz v0, :cond_0
 
-    .line 596
+    .line 677
     iget v0, p0, Lcom/lge/lgdrm/DrmFileLockClient;->mLockSessionID:I
 
     invoke-virtual {p0, v0}, Lcom/lge/lgdrm/DrmFileLockClient;->abortFileLockSession(I)I
 
-    .line 597
+    .line 678
     iget v0, p0, Lcom/lge/lgdrm/DrmFileLockClient;->mLockSessionID:I
 
     invoke-virtual {p0, v0}, Lcom/lge/lgdrm/DrmFileLockClient;->closeFileLockSession(I)I
 
-    .line 600
+    .line 681
     :cond_0
     iget v0, p0, Lcom/lge/lgdrm/DrmFileLockClient;->mUnlockSessionID:I
 
     if-eqz v0, :cond_1
 
-    .line 601
+    .line 682
     iget v0, p0, Lcom/lge/lgdrm/DrmFileLockClient;->mUnlockSessionID:I
 
     invoke-virtual {p0, v0}, Lcom/lge/lgdrm/DrmFileLockClient;->abortFileUnlockSession(I)I
 
-    .line 602
+    .line 683
     iget v0, p0, Lcom/lge/lgdrm/DrmFileLockClient;->mUnlockSessionID:I
 
     invoke-virtual {p0, v0}, Lcom/lge/lgdrm/DrmFileLockClient;->closeFileUnlockSession(I)I
 
-    .line 604
+    .line 685
     :cond_1
     return-void
 .end method
@@ -339,17 +339,17 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 402
+    .line 424
     sget-boolean v1, Lcom/lge/lgdrm/Drm;->LGDRM:Z
 
     if-nez v1, :cond_1
 
-    .line 410
+    .line 437
     :cond_0
     :goto_0
     return v0
 
-    .line 406
+    .line 428
     :cond_1
     invoke-static {}, Lcom/lge/lgdrm/DrmManager;->nativeAuthCaller()Z
 
@@ -357,7 +357,7 @@
 
     if-nez v1, :cond_2
 
-    .line 407
+    .line 429
     new-instance v0, Ljava/lang/SecurityException;
 
     const-string v1, "Need proper permission to access drm"
@@ -366,7 +366,7 @@
 
     throw v0
 
-    .line 410
+    .line 432
     :cond_2
     if-nez p0, :cond_3
 
@@ -504,16 +504,16 @@
     .prologue
     const/4 v0, -0x1
 
-    .line 340
+    .line 362
     sget-boolean v1, Lcom/lge/lgdrm/Drm;->LGDRM:Z
 
     if-nez v1, :cond_0
 
-    .line 355
+    .line 377
     :goto_0
     return v0
 
-    .line 344
+    .line 366
     :cond_0
     invoke-static {}, Lcom/lge/lgdrm/DrmManager;->nativeAuthCaller()Z
 
@@ -521,7 +521,7 @@
 
     if-nez v1, :cond_1
 
-    .line 345
+    .line 367
     new-instance v1, Ljava/lang/SecurityException;
 
     const-string v2, "Need proper permission to access drm"
@@ -530,7 +530,7 @@
 
     throw v1
 
-    .line 348
+    .line 370
     :cond_1
     if-eq p1, v0, :cond_2
 
@@ -540,7 +540,7 @@
 
     if-eq p1, v1, :cond_3
 
-    .line 349
+    .line 371
     :cond_2
     const-string v1, "DrmFileLockClient"
 
@@ -550,13 +550,13 @@
 
     goto :goto_0
 
-    .line 353
+    .line 375
     :cond_3
     invoke-static {p1}, Lcom/lge/lgdrm/DrmFileLockClient;->nativeAbortFileLockSession(I)I
 
     move-result v0
 
-    .line 355
+    .line 377
     .local v0, nResult:I
     goto :goto_0
 .end method
@@ -573,159 +573,12 @@
     .prologue
     const/4 v0, -0x1
 
-    .line 536
-    sget-boolean v1, Lcom/lge/lgdrm/Drm;->LGDRM:Z
-
-    if-nez v1, :cond_0
-
-    .line 551
-    :goto_0
-    return v0
-
-    .line 540
-    :cond_0
-    invoke-static {}, Lcom/lge/lgdrm/DrmManager;->nativeAuthCaller()Z
-
-    move-result v1
-
-    if-nez v1, :cond_1
-
-    .line 541
-    new-instance v1, Ljava/lang/SecurityException;
-
-    const-string v2, "Need proper permission to access drm"
-
-    invoke-direct {v1, v2}, Ljava/lang/SecurityException;-><init>(Ljava/lang/String;)V
-
-    throw v1
-
-    .line 544
-    :cond_1
-    if-eq p1, v0, :cond_2
-
-    if-eqz p1, :cond_2
-
-    iget v1, p0, Lcom/lge/lgdrm/DrmFileLockClient;->mUnlockSessionID:I
-
-    if-eq p1, v1, :cond_3
-
-    .line 545
-    :cond_2
-    const-string v1, "DrmFileLockClient"
-
-    const-string v2, "abortFileUnlockSession() : sessionID is invalid."
-
-    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    goto :goto_0
-
-    .line 549
-    :cond_3
-    invoke-static {p1}, Lcom/lge/lgdrm/DrmFileLockClient;->nativeAbortFileUnlockSession(I)I
-
-    move-result v0
-
-    .line 551
-    .local v0, nResult:I
-    goto :goto_0
-.end method
-
-.method public closeFileLockSession(I)I
-    .locals 3
-    .parameter "sessionID"
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/SecurityException;
-        }
-    .end annotation
-
-    .prologue
-    const/4 v0, -0x1
-
-    .line 373
-    sget-boolean v1, Lcom/lge/lgdrm/Drm;->LGDRM:Z
-
-    if-nez v1, :cond_0
-
-    .line 390
-    :goto_0
-    return v0
-
-    .line 377
-    :cond_0
-    invoke-static {}, Lcom/lge/lgdrm/DrmManager;->nativeAuthCaller()Z
-
-    move-result v1
-
-    if-nez v1, :cond_1
-
-    .line 378
-    new-instance v1, Ljava/lang/SecurityException;
-
-    const-string v2, "Need proper permission to access drm"
-
-    invoke-direct {v1, v2}, Ljava/lang/SecurityException;-><init>(Ljava/lang/String;)V
-
-    throw v1
-
-    .line 381
-    :cond_1
-    if-eq p1, v0, :cond_2
-
-    if-eqz p1, :cond_2
-
-    iget v1, p0, Lcom/lge/lgdrm/DrmFileLockClient;->mLockSessionID:I
-
-    if-eq p1, v1, :cond_3
-
-    .line 382
-    :cond_2
-    const-string v1, "DrmFileLockClient"
-
-    const-string v2, "closeFileLockSession() : sessionID is invalid."
-
-    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    goto :goto_0
-
-    .line 386
-    :cond_3
-    invoke-static {p1}, Lcom/lge/lgdrm/DrmFileLockClient;->nativeCloseFileLockSession(I)I
-
-    move-result v0
-
-    .line 387
-    .local v0, nResult:I
-    const/4 v1, 0x0
-
-    iput v1, p0, Lcom/lge/lgdrm/DrmFileLockClient;->mLockSessionID:I
-
-    .line 388
-    const-wide/16 v1, 0x0
-
-    iput-wide v1, p0, Lcom/lge/lgdrm/DrmFileLockClient;->mStartTime:J
-
-    goto :goto_0
-.end method
-
-.method public closeFileUnlockSession(I)I
-    .locals 3
-    .parameter "sessionID"
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/SecurityException;
-        }
-    .end annotation
-
-    .prologue
-    const/4 v0, -0x1
-
     .line 569
     sget-boolean v1, Lcom/lge/lgdrm/Drm;->LGDRM:Z
 
     if-nez v1, :cond_0
 
-    .line 586
+    .line 584
     :goto_0
     return v0
 
@@ -760,7 +613,7 @@
     :cond_2
     const-string v1, "DrmFileLockClient"
 
-    const-string v2, "closeFileUnlockSession() : sessionID is invalid."
+    const-string v2, "abortFileUnlockSession() : sessionID is invalid."
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -768,17 +621,164 @@
 
     .line 582
     :cond_3
+    invoke-static {p1}, Lcom/lge/lgdrm/DrmFileLockClient;->nativeAbortFileUnlockSession(I)I
+
+    move-result v0
+
+    .line 584
+    .local v0, nResult:I
+    goto :goto_0
+.end method
+
+.method public closeFileLockSession(I)I
+    .locals 3
+    .parameter "sessionID"
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/SecurityException;
+        }
+    .end annotation
+
+    .prologue
+    const/4 v0, -0x1
+
+    .line 395
+    sget-boolean v1, Lcom/lge/lgdrm/Drm;->LGDRM:Z
+
+    if-nez v1, :cond_0
+
+    .line 412
+    :goto_0
+    return v0
+
+    .line 399
+    :cond_0
+    invoke-static {}, Lcom/lge/lgdrm/DrmManager;->nativeAuthCaller()Z
+
+    move-result v1
+
+    if-nez v1, :cond_1
+
+    .line 400
+    new-instance v1, Ljava/lang/SecurityException;
+
+    const-string v2, "Need proper permission to access drm"
+
+    invoke-direct {v1, v2}, Ljava/lang/SecurityException;-><init>(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 403
+    :cond_1
+    if-eq p1, v0, :cond_2
+
+    if-eqz p1, :cond_2
+
+    iget v1, p0, Lcom/lge/lgdrm/DrmFileLockClient;->mLockSessionID:I
+
+    if-eq p1, v1, :cond_3
+
+    .line 404
+    :cond_2
+    const-string v1, "DrmFileLockClient"
+
+    const-string v2, "closeFileLockSession() : sessionID is invalid."
+
+    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_0
+
+    .line 408
+    :cond_3
+    invoke-static {p1}, Lcom/lge/lgdrm/DrmFileLockClient;->nativeCloseFileLockSession(I)I
+
+    move-result v0
+
+    .line 409
+    .local v0, nResult:I
+    const/4 v1, 0x0
+
+    iput v1, p0, Lcom/lge/lgdrm/DrmFileLockClient;->mLockSessionID:I
+
+    .line 410
+    const-wide/16 v1, 0x0
+
+    iput-wide v1, p0, Lcom/lge/lgdrm/DrmFileLockClient;->mStartTime:J
+
+    goto :goto_0
+.end method
+
+.method public closeFileUnlockSession(I)I
+    .locals 3
+    .parameter "sessionID"
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/SecurityException;
+        }
+    .end annotation
+
+    .prologue
+    const/4 v0, -0x1
+
+    .line 602
+    sget-boolean v1, Lcom/lge/lgdrm/Drm;->LGDRM:Z
+
+    if-nez v1, :cond_0
+
+    .line 619
+    :goto_0
+    return v0
+
+    .line 606
+    :cond_0
+    invoke-static {}, Lcom/lge/lgdrm/DrmManager;->nativeAuthCaller()Z
+
+    move-result v1
+
+    if-nez v1, :cond_1
+
+    .line 607
+    new-instance v1, Ljava/lang/SecurityException;
+
+    const-string v2, "Need proper permission to access drm"
+
+    invoke-direct {v1, v2}, Ljava/lang/SecurityException;-><init>(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 610
+    :cond_1
+    if-eq p1, v0, :cond_2
+
+    if-eqz p1, :cond_2
+
+    iget v1, p0, Lcom/lge/lgdrm/DrmFileLockClient;->mUnlockSessionID:I
+
+    if-eq p1, v1, :cond_3
+
+    .line 611
+    :cond_2
+    const-string v1, "DrmFileLockClient"
+
+    const-string v2, "closeFileUnlockSession() : sessionID is invalid."
+
+    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_0
+
+    .line 615
+    :cond_3
     invoke-static {p1}, Lcom/lge/lgdrm/DrmFileLockClient;->nativeCloseFileUnlockSession(I)I
 
     move-result v0
 
-    .line 583
+    .line 616
     .local v0, nResult:I
     const/4 v1, 0x0
 
     iput v1, p0, Lcom/lge/lgdrm/DrmFileLockClient;->mUnlockSessionID:I
 
-    .line 584
+    .line 617
     const-wide/16 v1, 0x0
 
     iput-wide v1, p0, Lcom/lge/lgdrm/DrmFileLockClient;->mStartTime:J
@@ -798,19 +798,19 @@
     .prologue
     const/4 v1, -0x1
 
-    .line 302
+    .line 324
     sget-boolean v2, Lcom/lge/lgdrm/Drm;->LGDRM:Z
 
     if-nez v2, :cond_1
 
     move v0, v1
 
-    .line 326
+    .line 348
     :cond_0
     :goto_0
     return v0
 
-    .line 306
+    .line 328
     :cond_1
     invoke-static {}, Lcom/lge/lgdrm/DrmManager;->nativeAuthCaller()Z
 
@@ -818,7 +818,7 @@
 
     if-nez v2, :cond_2
 
-    .line 307
+    .line 329
     new-instance v1, Ljava/lang/SecurityException;
 
     const-string v2, "Need proper permission to access drm"
@@ -827,7 +827,7 @@
 
     throw v1
 
-    .line 310
+    .line 332
     :cond_2
     if-eq p1, v1, :cond_3
 
@@ -837,7 +837,7 @@
 
     if-eq p1, v2, :cond_4
 
-    .line 311
+    .line 333
     :cond_3
     const-string v2, "DrmFileLockClient"
 
@@ -847,25 +847,25 @@
 
     move v0, v1
 
-    .line 312
+    .line 334
     goto :goto_0
 
-    .line 315
+    .line 337
     :cond_4
     invoke-static {p1}, Lcom/lge/lgdrm/DrmFileLockClient;->nativeFileLock(I)I
 
     move-result v0
 
-    .line 317
+    .line 339
     .local v0, nResult:I
     iget-object v2, p0, Lcom/lge/lgdrm/DrmFileLockClient;->mOnEventListener:Lcom/lge/lgdrm/DrmFileLockClient$OnEventListener;
 
     if-eqz v2, :cond_0
 
-    .line 318
+    .line 340
     if-ne v1, v0, :cond_5
 
-    .line 319
+    .line 341
     iget-object v1, p0, Lcom/lge/lgdrm/DrmFileLockClient;->mOnEventListener:Lcom/lge/lgdrm/DrmFileLockClient$OnEventListener;
 
     const/16 v2, -0xa
@@ -874,7 +874,7 @@
 
     goto :goto_0
 
-    .line 322
+    .line 344
     :cond_5
     iget-object v1, p0, Lcom/lge/lgdrm/DrmFileLockClient;->mOnEventListener:Lcom/lge/lgdrm/DrmFileLockClient$OnEventListener;
 
@@ -897,19 +897,19 @@
     .prologue
     const/4 v1, -0x1
 
-    .line 498
+    .line 531
     sget-boolean v2, Lcom/lge/lgdrm/Drm;->LGDRM:Z
 
     if-nez v2, :cond_1
 
     move v0, v1
 
-    .line 522
+    .line 555
     :cond_0
     :goto_0
     return v0
 
-    .line 502
+    .line 535
     :cond_1
     invoke-static {}, Lcom/lge/lgdrm/DrmManager;->nativeAuthCaller()Z
 
@@ -917,7 +917,7 @@
 
     if-nez v2, :cond_2
 
-    .line 503
+    .line 536
     new-instance v1, Ljava/lang/SecurityException;
 
     const-string v2, "Need proper permission to access drm"
@@ -926,7 +926,7 @@
 
     throw v1
 
-    .line 506
+    .line 539
     :cond_2
     if-eq p1, v1, :cond_3
 
@@ -936,7 +936,7 @@
 
     if-eq p1, v2, :cond_4
 
-    .line 507
+    .line 540
     :cond_3
     const-string v2, "DrmFileLockClient"
 
@@ -946,25 +946,25 @@
 
     move v0, v1
 
-    .line 508
+    .line 541
     goto :goto_0
 
-    .line 511
+    .line 544
     :cond_4
     invoke-static {p1}, Lcom/lge/lgdrm/DrmFileLockClient;->nativeFileUnlock(I)I
 
     move-result v0
 
-    .line 513
+    .line 546
     .local v0, nResult:I
     iget-object v2, p0, Lcom/lge/lgdrm/DrmFileLockClient;->mOnEventListener:Lcom/lge/lgdrm/DrmFileLockClient$OnEventListener;
 
     if-eqz v2, :cond_0
 
-    .line 514
+    .line 547
     if-ne v1, v0, :cond_5
 
-    .line 515
+    .line 548
     iget-object v1, p0, Lcom/lge/lgdrm/DrmFileLockClient;->mOnEventListener:Lcom/lge/lgdrm/DrmFileLockClient$OnEventListener;
 
     const/16 v2, -0x14
@@ -973,7 +973,7 @@
 
     goto :goto_0
 
-    .line 518
+    .line 551
     :cond_5
     iget-object v1, p0, Lcom/lge/lgdrm/DrmFileLockClient;->mOnEventListener:Lcom/lge/lgdrm/DrmFileLockClient$OnEventListener;
 
@@ -988,10 +988,10 @@
     .locals 0
 
     .prologue
-    .line 591
+    .line 672
     invoke-direct {p0}, Lcom/lge/lgdrm/DrmFileLockClient;->cleanSessions()V
 
-    .line 592
+    .line 673
     return-void
 .end method
 
@@ -1180,10 +1180,10 @@
     .end annotation
 
     .prologue
-    .line 223
+    .line 233
     const/4 v8, 0x0
 
-    .line 226
+    .line 236
     .local v8, nResult:I
     const/high16 v5, 0x4
 
@@ -1206,20 +1206,20 @@
 
     move-result v8
 
-    .line 231
+    .line 241
     return v8
 
-    .line 227
+    .line 237
     :catch_0
     move-exception v7
 
-    .line 228
+    .line 238
     .local v7, e:Ljava/lang/SecurityException;
     throw v7
 .end method
 
 .method public openFileLockSession(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;III)I
-    .locals 2
+    .locals 4
     .parameter "srcFile"
     .parameter "dstFile"
     .parameter "srcMimeType"
@@ -1235,17 +1235,17 @@
     .prologue
     const/4 v0, -0x1
 
-    .line 261
+    .line 271
     sget-boolean v1, Lcom/lge/lgdrm/Drm;->LGDRM:Z
 
     if-nez v1, :cond_1
 
-    .line 288
+    .line 310
     :cond_0
     :goto_0
     return v0
 
-    .line 265
+    .line 275
     :cond_1
     invoke-static {}, Lcom/lge/lgdrm/DrmManager;->nativeAuthCaller()Z
 
@@ -1253,7 +1253,7 @@
 
     if-nez v1, :cond_2
 
-    .line 266
+    .line 276
     new-instance v0, Ljava/lang/SecurityException;
 
     const-string v1, "Need proper permission to access drm"
@@ -1262,7 +1262,7 @@
 
     throw v0
 
-    .line 269
+    .line 279
     :cond_2
     if-eqz p1, :cond_3
 
@@ -1418,20 +1418,20 @@
     :cond_6
     if-ltz p6, :cond_0
 
-    .line 281
+    .line 303
     invoke-static/range {p1 .. p6}, Lcom/lge/lgdrm/DrmFileLockClient;->nativeOpenFileLockSession(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;III)I
 
     move-result v0
 
     iput v0, p0, Lcom/lge/lgdrm/DrmFileLockClient;->mLockSessionID:I
 
-    .line 283
+    .line 305
     iput-object p1, p0, Lcom/lge/lgdrm/DrmFileLockClient;->mSrcFilePath:Ljava/lang/String;
 
-    .line 284
+    .line 306
     iput-object p2, p0, Lcom/lge/lgdrm/DrmFileLockClient;->mDstFilePath:Ljava/lang/String;
 
-    .line 286
+    .line 308
     new-instance v0, Ljava/util/Date;
 
     invoke-direct {v0}, Ljava/util/Date;-><init>()V
@@ -1442,10 +1442,10 @@
 
     iput-wide v0, p0, Lcom/lge/lgdrm/DrmFileLockClient;->mStartTime:J
 
-    .line 288
+    .line 310
     iget v0, p0, Lcom/lge/lgdrm/DrmFileLockClient;->mLockSessionID:I
 
-    goto :goto_0
+    goto/16 :goto_0
 .end method
 
 .method public openFileUnlockSession(Ljava/lang/String;Ljava/lang/String;)I
@@ -1459,10 +1459,10 @@
     .end annotation
 
     .prologue
-    .line 424
+    .line 451
     const/4 v1, 0x0
 
-    .line 427
+    .line 454
     .local v1, nResult:I
     const/high16 v2, 0x4
 
@@ -1475,20 +1475,20 @@
 
     move-result v1
 
-    .line 432
+    .line 459
     return v1
 
-    .line 428
+    .line 455
     :catch_0
     move-exception v0
 
-    .line 429
+    .line 456
     .local v0, e:Ljava/lang/SecurityException;
     throw v0
 .end method
 
 .method public openFileUnlockSession(Ljava/lang/String;Ljava/lang/String;II)I
-    .locals 2
+    .locals 4
     .parameter "srcFile"
     .parameter "dstFile"
     .parameter "ioUnitSize"
@@ -1502,17 +1502,17 @@
     .prologue
     const/4 v0, -0x1
 
-    .line 457
+    .line 484
     sget-boolean v1, Lcom/lge/lgdrm/Drm;->LGDRM:Z
 
     if-nez v1, :cond_1
 
-    .line 484
+    .line 517
     :cond_0
     :goto_0
     return v0
 
-    .line 461
+    .line 488
     :cond_1
     invoke-static {}, Lcom/lge/lgdrm/DrmManager;->nativeAuthCaller()Z
 
@@ -1520,7 +1520,7 @@
 
     if-nez v1, :cond_2
 
-    .line 462
+    .line 489
     new-instance v0, Ljava/lang/SecurityException;
 
     const-string v1, "Need proper permission to access drm"
@@ -1529,7 +1529,7 @@
 
     throw v0
 
-    .line 465
+    .line 492
     :cond_2
     if-eqz p1, :cond_3
 
@@ -1615,7 +1615,7 @@
 
     if-eq p3, v1, :cond_5
 
-    .line 473
+    .line 502
     const-string v1, "DrmFileLockClient"
 
     const-string/jumbo v2, "openFileUnlockSession() : file unit size is wrong"
@@ -1628,20 +1628,20 @@
     :cond_5
     if-ltz p4, :cond_0
 
-    .line 477
+    .line 510
     invoke-static {p1, p2, p3, p4}, Lcom/lge/lgdrm/DrmFileLockClient;->nativeOpenFileUnlockSession(Ljava/lang/String;Ljava/lang/String;II)I
 
     move-result v0
 
     iput v0, p0, Lcom/lge/lgdrm/DrmFileLockClient;->mUnlockSessionID:I
 
-    .line 479
+    .line 512
     iput-object p1, p0, Lcom/lge/lgdrm/DrmFileLockClient;->mSrcFilePath:Ljava/lang/String;
 
-    .line 480
+    .line 513
     iput-object p2, p0, Lcom/lge/lgdrm/DrmFileLockClient;->mDstFilePath:Ljava/lang/String;
 
-    .line 482
+    .line 515
     new-instance v0, Ljava/util/Date;
 
     invoke-direct {v0}, Ljava/util/Date;-><init>()V
@@ -1652,7 +1652,7 @@
 
     iput-wide v0, p0, Lcom/lge/lgdrm/DrmFileLockClient;->mStartTime:J
 
-    .line 484
+    .line 517
     iget v0, p0, Lcom/lge/lgdrm/DrmFileLockClient;->mUnlockSessionID:I
 
     goto/16 :goto_0

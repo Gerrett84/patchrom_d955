@@ -130,6 +130,9 @@
 .method public abstract isTethered()Z
 .end method
 
+.method public abstract isUPlusAP(Ljava/lang/String;)Z
+.end method
+
 .method public abstract isUPulsMsCHAPv2AP(Ljava/lang/String;)Z
 .end method
 

@@ -26,6 +26,8 @@
 
 .field private static isDebugMode:Z
 
+.field private static isFirstSyncAfterSIMChange:Z
+
 .field private static isenable:Z
 
 .field private static mLogDialstring:I
@@ -39,17 +41,19 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 4
+    .locals 5
 
     .prologue
+    const/4 v2, 0x1
+
     const/4 v1, 0x0
 
     .line 52
     const-string v0, "US"
 
-    const-string v2, "TMO"
+    const-string v3, "TMO"
 
-    invoke-static {v0, v2}, Lcom/android/internal/telephony/lgeautoprofiling/LgeAutoProfiling;->isOperatorCountry(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v0, v3}, Lcom/android/internal/telephony/lgeautoprofiling/LgeAutoProfiling;->isOperatorCountry(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -75,15 +79,15 @@
     .line 62
     const-string v0, "1"
 
-    const-string/jumbo v2, "ro.debuggable"
+    const-string/jumbo v3, "ro.debuggable"
 
-    const-string v3, "0"
+    const-string v4, "0"
 
-    invoke-static {v2, v3}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3, v4}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v3
 
-    invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -103,10 +107,13 @@
     if-eqz v0, :cond_2
 
     :cond_0
-    const/4 v0, 0x1
+    move v0, v2
 
     :goto_1
     sput-boolean v0, Lcom/android/internal/telephony/lgeautoprofiling/LgeAutoProfiling;->isenable:Z
+
+    .line 69
+    sput-boolean v2, Lcom/android/internal/telephony/lgeautoprofiling/LgeAutoProfiling;->isFirstSyncAfterSIMChange:Z
 
     return-void
 
@@ -127,10 +134,10 @@
     .locals 0
 
     .prologue
-    .line 65
+    .line 72
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 67
+    .line 74
     return-void
 .end method
 
@@ -141,25 +148,25 @@
     .prologue
     const/4 v6, 0x0
 
-    .line 155
+    .line 170
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v7
 
     if-eqz v7, :cond_1
 
-    .line 171
+    .line 186
     :cond_0
     :goto_0
     return v6
 
-    .line 157
+    .line 172
     :cond_1
     invoke-static {}, Lcom/android/internal/telephony/lgeautoprofiling/LgeSimInfo;->getDefaultSubScription()I
 
     move-result v1
 
-    .line 159
+    .line 174
     .local v1, defaultSubId:I
     const/4 v7, 0x0
 
@@ -169,7 +176,7 @@
 
     move-result-object v2
 
-    .line 161
+    .line 176
     .local v2, eccIdleModeList:Ljava/lang/String;
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -177,7 +184,7 @@
 
     if-nez v7, :cond_0
 
-    .line 163
+    .line 178
     const-string v7, ","
 
     invoke-virtual {v2, v7}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
@@ -196,7 +203,7 @@
 
     aget-object v5, v0, v3
 
-    .line 164
+    .line 179
     .local v5, token:Ljava/lang/String;
     invoke-virtual {p0, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -204,12 +211,12 @@
 
     if-eqz v7, :cond_3
 
-    .line 165
+    .line 180
     sget-boolean v6, Lcom/android/internal/telephony/lgeautoprofiling/LgeAutoProfiling;->ENABLE_PRIVACY_LOG:Z
 
     if-eqz v6, :cond_2
 
-    .line 166
+    .line 181
     const-string v6, "TelephonyAutoProfiling"
 
     new-instance v7, Ljava/lang/StringBuilder;
@@ -232,13 +239,13 @@
 
     invoke-static {v6, v7}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 167
+    .line 182
     :cond_2
     const/4 v6, 0x1
 
     goto :goto_0
 
-    .line 163
+    .line 178
     :cond_3
     add-int/lit8 v3, v3, 0x1
 
@@ -253,25 +260,25 @@
     .prologue
     const/4 v6, 0x0
 
-    .line 199
+    .line 214
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v7
 
     if-eqz v7, :cond_1
 
-    .line 217
+    .line 232
     :cond_0
     :goto_0
     return v6
 
-    .line 203
+    .line 218
     :cond_1
     invoke-static {}, Lcom/android/internal/telephony/lgeautoprofiling/LgeSimInfo;->getDefaultSubScription()I
 
     move-result v1
 
-    .line 205
+    .line 220
     .local v1, defaultSubId:I
     const-string v7, "ShortCodeCall"
 
@@ -279,7 +286,7 @@
 
     move-result-object v4
 
-    .line 207
+    .line 222
     .local v4, shortCode:Ljava/lang/String;
     invoke-static {v4}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -287,7 +294,7 @@
 
     if-nez v7, :cond_0
 
-    .line 208
+    .line 223
     const-string v7, ","
 
     invoke-virtual {v4, v7}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
@@ -306,7 +313,7 @@
 
     aget-object v5, v0, v2
 
-    .line 209
+    .line 224
     .local v5, token:Ljava/lang/String;
     invoke-virtual {p1, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -314,12 +321,12 @@
 
     if-eqz v7, :cond_2
 
-    .line 212
+    .line 227
     const/4 v6, 0x1
 
     goto :goto_0
 
-    .line 208
+    .line 223
     :cond_2
     add-int/lit8 v2, v2, 0x1
 
@@ -331,18 +338,18 @@
     .parameter "context"
 
     .prologue
-    .line 123
+    .line 130
     invoke-static {}, Lcom/android/internal/telephony/lgeautoprofiling/LgeSimInfo;->getDefaultSubScription()I
 
     move-result v1
 
-    .line 124
+    .line 131
     .local v1, defaultSubId:I
     invoke-static {p0, v1}, Lcom/android/internal/telephony/lgeautoprofiling/LgeAutoProfiling;->getClirSettingValue(Landroid/content/Context;I)I
 
     move-result v0
 
-    .line 126
+    .line 133
     .local v0, clirSettingValue:I
     return v0
 .end method
@@ -353,14 +360,14 @@
     .parameter "sub"
 
     .prologue
-    .line 130
+    .line 137
     const-string v3, "SendMyNumberInformation"
 
     invoke-static {p0, v3, p1}, Lcom/android/internal/telephony/lgeautoprofiling/LgeAutoProfiling;->getProfileInfo(Landroid/content/Context;Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 131
+    .line 138
     .local v0, clirSetting:Ljava/lang/String;
     const-string/jumbo v3, "persist.radio.iccid-changed"
 
@@ -370,11 +377,11 @@
 
     move-result-object v2
 
-    .line 132
+    .line 139
     .local v2, sim_changed:Ljava/lang/String;
     const/4 v1, -0x1
 
-    .line 134
+    .line 146
     .local v1, clirSettingValue:I
     const-string v3, "0"
 
@@ -390,12 +397,28 @@
 
     if-nez v3, :cond_0
 
-    .line 135
+    sget-boolean v3, Lcom/android/internal/telephony/lgeautoprofiling/LgeAutoProfiling;->isFirstSyncAfterSIMChange:Z
+
+    if-eqz v3, :cond_0
+
+    .line 147
     invoke-static {v0}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
     move-result v1
 
-    .line 140
+    .line 148
+    const-string v3, "TelephonyAutoProfiling"
+
+    const-string v4, "[getClirSettingValue] This is First time after SIM change."
+
+    invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 149
+    const/4 v3, 0x0
+
+    sput-boolean v3, Lcom/android/internal/telephony/lgeautoprofiling/LgeAutoProfiling;->isFirstSyncAfterSIMChange:Z
+
+    .line 155
     :cond_0
     return v1
 .end method
@@ -405,12 +428,12 @@
     .parameter "context"
 
     .prologue
-    .line 262
+    .line 277
     invoke-static {}, Lcom/android/internal/telephony/lgeautoprofiling/LgeSimInfo;->getDefaultSubScription()I
 
     move-result v2
 
-    .line 263
+    .line 278
     .local v2, defaultSubId:I
     const-string v6, "ECC_list"
 
@@ -418,13 +441,13 @@
 
     move-result-object v0
 
-    .line 265
+    .line 280
     .local v0, NumberString:Ljava/lang/String;
     new-instance v4, Ljava/util/ArrayList;
 
     invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
 
-    .line 267
+    .line 282
     .local v4, list:Ljava/util/List;,"Ljava/util/List<Ljava/lang/String;>;"
     new-instance v5, Ljava/util/StringTokenizer;
 
@@ -432,7 +455,7 @@
 
     invoke-direct {v5, v0, v6}, Ljava/util/StringTokenizer;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 269
+    .line 284
     .local v5, st:Ljava/util/StringTokenizer;
     :goto_0
     invoke-virtual {v5}, Ljava/util/StringTokenizer;->hasMoreTokens()Z
@@ -441,7 +464,7 @@
 
     if-eqz v6, :cond_0
 
-    .line 270
+    .line 285
     invoke-virtual {v5}, Ljava/util/StringTokenizer;->nextToken()Ljava/lang/String;
 
     move-result-object v6
@@ -450,7 +473,7 @@
 
     goto :goto_0
 
-    .line 272
+    .line 287
     :cond_0
     invoke-interface {v4}, Ljava/util/List;->size()I
 
@@ -458,7 +481,7 @@
 
     new-array v1, v6, [Ljava/lang/String;
 
-    .line 274
+    .line 289
     .local v1, StrArray:[Ljava/lang/String;
     const/4 v3, 0x0
 
@@ -470,7 +493,7 @@
 
     if-ge v3, v6, :cond_1
 
-    .line 275
+    .line 290
     invoke-interface {v4, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v6
@@ -479,12 +502,12 @@
 
     aput-object v6, v1, v3
 
-    .line 274
+    .line 289
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_1
 
-    .line 278
+    .line 293
     :cond_1
     return-object v1
 .end method
@@ -494,18 +517,18 @@
     .parameter "eccList"
 
     .prologue
-    .line 175
+    .line 190
     const-string/jumbo v10, "ril.ecclist.autoprofile"
 
     invoke-static {v10}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 178
+    .line 193
     .local v3, eccListAutoProfile:Ljava/lang/String;
     const-string v8, ""
 
-    .line 180
+    .line 195
     .local v8, tempEcclist:Ljava/lang/String;
     const-string v10, ","
 
@@ -531,7 +554,7 @@
 
     aget-object v9, v0, v5
 
-    .line 181
+    .line 196
     .local v9, token:Ljava/lang/String;
     const-string v10, ","
 
@@ -552,7 +575,7 @@
 
     aget-object v2, v1, v4
 
-    .line 182
+    .line 197
     .local v2, ecc:Ljava/lang/String;
     invoke-virtual {v2, v9}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -560,7 +583,7 @@
 
     if-nez v10, :cond_1
 
-    .line 183
+    .line 198
     const-string v10, ","
 
     invoke-virtual {p0, v10}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
@@ -569,26 +592,26 @@
 
     if-nez v10, :cond_0
 
-    .line 184
+    .line 199
     const-string v10, ","
 
     invoke-virtual {v8, v10}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v8
 
-    .line 186
+    .line 201
     :cond_0
     invoke-virtual {v8, v9}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v8
 
-    .line 181
+    .line 196
     :cond_1
     add-int/lit8 v4, v4, 0x1
 
     goto :goto_1
 
-    .line 180
+    .line 195
     .end local v2           #ecc:Ljava/lang/String;
     :cond_2
     add-int/lit8 v4, v5, 0x1
@@ -599,7 +622,7 @@
     .restart local v5       #i$:I
     goto :goto_0
 
-    .line 190
+    .line 205
     .end local v1           #arr$:[Ljava/lang/String;
     .end local v7           #len$:I
     .end local v9           #token:Ljava/lang/String;
@@ -608,7 +631,7 @@
 
     move-result-object p0
 
-    .line 195
+    .line 210
     return-object p0
 .end method
 
@@ -618,7 +641,7 @@
     .parameter "key"
 
     .prologue
-    .line 98
+    .line 105
     invoke-static {p0}, Lcom/android/internal/telephony/lgeautoprofiling/LgeFeature;->getInstance(Landroid/content/Context;)Lcom/android/internal/telephony/lgeautoprofiling/LgeFeature;
 
     move-result-object v0
@@ -637,7 +660,7 @@
     .parameter "subId"
 
     .prologue
-    .line 93
+    .line 100
     invoke-static {p0}, Lcom/android/internal/telephony/lgeautoprofiling/LgeProfile;->getInstance(Landroid/content/Context;)Lcom/android/internal/telephony/lgeautoprofiling/LgeProfile;
 
     move-result-object v0
@@ -654,12 +677,12 @@
     .parameter "context"
 
     .prologue
-    .line 231
+    .line 246
     invoke-static {}, Lcom/android/internal/telephony/lgeautoprofiling/LgeSimInfo;->getDefaultSubScription()I
 
     move-result v0
 
-    .line 233
+    .line 248
     .local v0, defaultSubId:I
     invoke-static {p0, v0}, Lcom/android/internal/telephony/lgeautoprofiling/LgeAutoProfiling;->getRVMS(Landroid/content/Context;I)Ljava/lang/String;
 
@@ -674,7 +697,7 @@
     .parameter "subId"
 
     .prologue
-    .line 237
+    .line 252
     const-string v0, "RVMS"
 
     invoke-static {p0, v0, p1}, Lcom/android/internal/telephony/lgeautoprofiling/LgeAutoProfiling;->getProfileInfo(Landroid/content/Context;Ljava/lang/String;I)Ljava/lang/String;
@@ -689,12 +712,12 @@
     .parameter "context"
 
     .prologue
-    .line 221
+    .line 236
     invoke-static {}, Lcom/android/internal/telephony/lgeautoprofiling/LgeSimInfo;->getDefaultSubScription()I
 
     move-result v0
 
-    .line 223
+    .line 238
     .local v0, defaultSubId:I
     invoke-static {p0, v0}, Lcom/android/internal/telephony/lgeautoprofiling/LgeAutoProfiling;->getVMS(Landroid/content/Context;I)Ljava/lang/String;
 
@@ -709,7 +732,7 @@
     .parameter "subId"
 
     .prologue
-    .line 227
+    .line 242
     const-string v0, "VMS"
 
     invoke-static {p0, v0, p1}, Lcom/android/internal/telephony/lgeautoprofiling/LgeAutoProfiling;->getProfileInfo(Landroid/content/Context;Ljava/lang/String;I)Ljava/lang/String;
@@ -725,29 +748,29 @@
     .parameter "phoneType"
 
     .prologue
-    .line 70
+    .line 77
     const-string v1, "TelephonyAutoProfiling"
 
     const-string v2, "[init] ******** Telephony Auto Profiling *******"
 
     invoke-static {v1, v2}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 72
+    .line 79
     if-nez p0, :cond_1
 
-    .line 73
+    .line 80
     const-string v1, "TelephonyAutoProfiling"
 
     const-string v2, "[init] context is null, return"
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 86
+    .line 93
     :cond_0
     :goto_0
     return-void
 
-    .line 78
+    .line 85
     :cond_1
     invoke-static {p0}, Lcom/android/internal/telephony/lgeautoprofiling/LgeFeature;->getInstance(Landroid/content/Context;)Lcom/android/internal/telephony/lgeautoprofiling/LgeFeature;
 
@@ -755,12 +778,12 @@
 
     invoke-virtual {v1}, Lcom/android/internal/telephony/lgeautoprofiling/LgeFeature;->loadFeature()V
 
-    .line 80
+    .line 87
     invoke-static {}, Lcom/android/internal/telephony/lgeautoprofiling/LgeSimInfo;->getDefaultSubScription()I
 
     move-result v0
 
-    .line 81
+    .line 88
     .local v0, defaultSubId:I
     invoke-static {p0}, Lcom/android/internal/telephony/lgeautoprofiling/LgeProfile;->getInstance(Landroid/content/Context;)Lcom/android/internal/telephony/lgeautoprofiling/LgeProfile;
 
@@ -768,12 +791,12 @@
 
     invoke-virtual {v1, v0}, Lcom/android/internal/telephony/lgeautoprofiling/LgeProfile;->loadProfile(I)V
 
-    .line 83
+    .line 90
     const/4 v1, 0x2
 
     if-ne p1, v1, :cond_0
 
-    .line 84
+    .line 91
     const-string/jumbo v1, "ril.ecclist.autoprofile"
 
     const-string v2, "ECC_list"
@@ -792,7 +815,7 @@
     .parameter "country"
 
     .prologue
-    .line 245
+    .line 260
     sget-object v0, Lcom/android/internal/telephony/lgeautoprofiling/LgeAutoProfiling;->COUNTRY:Ljava/lang/String;
 
     invoke-static {p0, v0}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
@@ -811,35 +834,35 @@
 
     const/4 v1, 0x1
 
-    .line 339
+    .line 354
     sget-boolean v2, Lcom/android/internal/telephony/lgeautoprofiling/LgeAutoProfiling;->mLogFeatureLoaded:Z
 
     if-nez v2, :cond_0
 
-    .line 340
+    .line 355
     invoke-static {}, Lcom/android/internal/telephony/lgeautoprofiling/LgeAutoProfiling;->privateLogFeatureLoad()V
 
-    .line 341
+    .line 356
     sput-boolean v1, Lcom/android/internal/telephony/lgeautoprofiling/LgeAutoProfiling;->mLogFeatureLoaded:Z
 
-    .line 344
+    .line 359
     :cond_0
     sget-boolean v2, Lcom/android/internal/telephony/lgeautoprofiling/LgeAutoProfiling;->isenable:Z
 
     if-eqz v2, :cond_2
 
-    .line 364
+    .line 379
     :cond_1
     :goto_0
     return v0
 
-    .line 347
+    .line 362
     :cond_2
     sparse-switch p0, :sswitch_data_0
 
     goto :goto_0
 
-    .line 349
+    .line 364
     :sswitch_0
     sget v2, Lcom/android/internal/telephony/lgeautoprofiling/LgeAutoProfiling;->mLogUssd:I
 
@@ -849,7 +872,7 @@
 
     goto :goto_0
 
-    .line 353
+    .line 368
     :sswitch_1
     sget v2, Lcom/android/internal/telephony/lgeautoprofiling/LgeAutoProfiling;->mLogDialstring:I
 
@@ -859,7 +882,7 @@
 
     goto :goto_0
 
-    .line 357
+    .line 372
     :sswitch_2
     sget v2, Lcom/android/internal/telephony/lgeautoprofiling/LgeAutoProfiling;->mLogIdentity:I
 
@@ -869,7 +892,7 @@
 
     goto :goto_0
 
-    .line 347
+    .line 362
     :sswitch_data_0
     .sparse-switch
         0x1 -> :sswitch_0
@@ -883,7 +906,7 @@
     .parameter "operator"
 
     .prologue
-    .line 249
+    .line 264
     sget-object v0, Lcom/android/internal/telephony/lgeautoprofiling/LgeAutoProfiling;->OPERATOR:Ljava/lang/String;
 
     invoke-static {p0, v0}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
@@ -899,7 +922,7 @@
     .parameter "Operator"
 
     .prologue
-    .line 241
+    .line 256
     sget-object v0, Lcom/android/internal/telephony/lgeautoprofiling/LgeAutoProfiling;->COUNTRY:Ljava/lang/String;
 
     invoke-static {p0, v0}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
@@ -933,10 +956,10 @@
     .parameter "key"
 
     .prologue
-    .line 145
+    .line 160
     const/4 v0, 0x0
 
-    .line 148
+    .line 163
     .local v0, result:Z
     invoke-static {p0, p1}, Lcom/android/internal/telephony/lgeautoprofiling/LgeAutoProfiling;->getFeatureInfo(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
@@ -948,7 +971,7 @@
 
     move-result v0
 
-    .line 151
+    .line 166
     return v0
 .end method
 
@@ -956,10 +979,10 @@
     .locals 3
 
     .prologue
-    .line 284
+    .line 299
     const-string/jumbo v1, "user"
 
-    .line 285
+    .line 300
     .local v1, strUserMode:Ljava/lang/String;
     const-string/jumbo v2, "ro.build.type"
 
@@ -967,7 +990,7 @@
 
     move-result-object v0
 
-    .line 295
+    .line 310
     .local v0, buildType:Ljava/lang/String;
     invoke-static {v0, v1}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
@@ -980,7 +1003,7 @@
     .locals 5
 
     .prologue
-    .line 305
+    .line 320
     const/4 v2, 0x0
 
     const-string v3, "block_private_log_level"
@@ -989,11 +1012,11 @@
 
     move-result-object v0
 
-    .line 309
+    .line 324
     .local v0, feature:Ljava/lang/String;
     if-eqz v0, :cond_0
 
-    .line 310
+    .line 325
     const-string v2, "TelephonyAutoProfiling"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -1018,16 +1041,16 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 311
+    .line 326
     const/4 v1, 0x0
 
-    .line 313
+    .line 328
     .local v1, loglevel:I
     sget-boolean v2, Lcom/android/internal/telephony/lgeautoprofiling/LgeAutoProfiling;->isenable:Z
 
     if-nez v2, :cond_0
 
-    .line 315
+    .line 330
     :try_start_0
     invoke-static {v0}, Ljava/lang/Integer;->decode(Ljava/lang/String;)Ljava/lang/Integer;
 
@@ -1039,28 +1062,28 @@
 
     move-result v1
 
-    .line 320
+    .line 335
     :goto_0
     and-int/lit8 v2, v1, 0x1
 
     sput v2, Lcom/android/internal/telephony/lgeautoprofiling/LgeAutoProfiling;->mLogUssd:I
 
-    .line 321
+    .line 336
     and-int/lit8 v2, v1, 0x10
 
     sput v2, Lcom/android/internal/telephony/lgeautoprofiling/LgeAutoProfiling;->mLogDialstring:I
 
-    .line 322
+    .line 337
     and-int/lit16 v2, v1, 0x100
 
     sput v2, Lcom/android/internal/telephony/lgeautoprofiling/LgeAutoProfiling;->mLogIdentity:I
 
-    .line 330
+    .line 345
     .end local v1           #loglevel:I
     :cond_0
     return-void
 
-    .line 316
+    .line 331
     .restart local v1       #loglevel:I
     :catch_0
     move-exception v2
@@ -1074,18 +1097,18 @@
     .parameter "level"
 
     .prologue
-    .line 370
+    .line 385
     sget-boolean v0, Lcom/android/internal/telephony/lgeautoprofiling/LgeAutoProfiling;->isenable:Z
 
     if-eqz v0, :cond_1
 
-    .line 378
+    .line 393
     .end local p0
     :cond_0
     :goto_0
     return-object p0
 
-    .line 375
+    .line 390
     .restart local p0
     :cond_1
     invoke-static {p1}, Lcom/android/internal/telephony/lgeautoprofiling/LgeAutoProfiling;->isLogBlocked(I)Z
@@ -1094,7 +1117,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 376
+    .line 391
     const-string p0, ""
 
     goto :goto_0
@@ -1117,20 +1140,20 @@
     .end annotation
 
     .prologue
-    .line 102
+    .line 109
     new-instance v2, Ljava/util/HashMap;
 
     invoke-direct {v2}, Ljava/util/HashMap;-><init>()V
 
-    .line 104
+    .line 111
     .local v2, profileMap:Ljava/util/HashMap;,"Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/String;>;"
     const/4 v0, 0x0
 
-    .line 105
+    .line 112
     .local v0, key:Ljava/lang/String;
     const/4 v4, 0x0
 
-    .line 106
+    .line 113
     .local v4, value:Ljava/lang/String;
     invoke-virtual {p0}, Lcom/android/internal/telephony/lgeautoprofiling/LgeProfileParser$NameValueProfile;->getValueMap()Ljava/util/HashMap;
 
@@ -1140,13 +1163,13 @@
 
     move-result-object v3
 
-    .line 107
+    .line 114
     .local v3, set:Ljava/util/Set;,"Ljava/util/Set<Ljava/lang/String;>;"
     invoke-interface {v3}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
 
-    .line 109
+    .line 116
     .local v1, keys:Ljava/util/Iterator;,"Ljava/util/Iterator<Ljava/lang/String;>;"
     :goto_0
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
@@ -1155,7 +1178,7 @@
 
     if-eqz v5, :cond_0
 
-    .line 110
+    .line 117
     invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
@@ -1163,18 +1186,18 @@
     .end local v0           #key:Ljava/lang/String;
     check-cast v0, Ljava/lang/String;
 
-    .line 111
+    .line 118
     .restart local v0       #key:Ljava/lang/String;
     invoke-virtual {p0, v0}, Lcom/android/internal/telephony/lgeautoprofiling/LgeProfileParser$NameValueProfile;->getValue(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
-    .line 115
+    .line 122
     invoke-virtual {v2, v0, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
 
-    .line 118
+    .line 125
     :cond_0
     return-object v2
 .end method
@@ -1185,14 +1208,14 @@
     .parameter "intent"
 
     .prologue
-    .line 89
+    .line 96
     invoke-static {p0}, Lcom/android/internal/telephony/lgeautoprofiling/LgeProfile;->getInstance(Landroid/content/Context;)Lcom/android/internal/telephony/lgeautoprofiling/LgeProfile;
 
     move-result-object v0
 
     invoke-virtual {v0, p1}, Lcom/android/internal/telephony/lgeautoprofiling/LgeProfile;->updateProfile(Landroid/content/Intent;)V
 
-    .line 90
+    .line 97
     return-void
 .end method
 
@@ -1202,7 +1225,7 @@
     .locals 1
 
     .prologue
-    .line 257
+    .line 272
     sget-object v0, Lcom/android/internal/telephony/lgeautoprofiling/LgeAutoProfiling;->COUNTRY:Ljava/lang/String;
 
     return-object v0
@@ -1212,7 +1235,7 @@
     .locals 1
 
     .prologue
-    .line 253
+    .line 268
     sget-object v0, Lcom/android/internal/telephony/lgeautoprofiling/LgeAutoProfiling;->OPERATOR:Ljava/lang/String;
 
     return-object v0

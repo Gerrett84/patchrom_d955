@@ -60,6 +60,8 @@
 
 .field public static final EXTRA_BY_LTE_REJECT:Ljava/lang/String; = "byLteReject"
 
+.field public static final EXTRA_FAKE_MCC_CHANGE:Ljava/lang/String; = "FakeMccChange"
+
 .field public static final EXTRA_GMM_REJECT:Ljava/lang/String; = "gmmReject"
 
 .field public static final EXTRA_LTE_OVERLAY:Ljava/lang/String; = "LTE_Overlay"
@@ -83,6 +85,8 @@
 .field public static final SECRET_CODE_ACTION:Ljava/lang/String; = "android.provider.Telephony.SECRET_CODE"
 
 .field public static final SPN_STRINGS_UPDATED_ACTION:Ljava/lang/String; = "android.provider.Telephony.SPN_STRINGS_UPDATED"
+
+.field public static final TRF_DM_UPDATE_COMPLETE:Ljava/lang/String; = "tracfone.intent.action.TRF_DM_UPDATE_COMPLETE"
 
 .field public static final VOICE_STK_CC_MODIFIED:Ljava/lang/String; = "com.lge.android.intent.action.voice_stk_cc_modified"
 

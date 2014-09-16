@@ -8,6 +8,8 @@
 
 .field public static CDMA_CPA:Z = false
 
+.field public static final BELL:I = 0xd
+
 .field public static final DCMSET:I = 0x3
 
 .field public static final KDDI:I = 0x8
@@ -54,9 +56,35 @@
 
 .field public static LGP_DATA_TCPIP_DNS_KDDI_SET_TETHERING_DNS_KDDI:Z = false
 
+.field public static LGP_DATA_TEST_FOR_GCF_KDDI:Z = false
+
+.field public static LGP_DATA_TETHER_SEND_INTENT_ON_DUN_FAILURE_KDDI:Z = false
+
+.field public static LGP_DATA_TETHER_SUPPORT_INTERNETPDN_ON_ROAMING_KDDI:Z = false
+
 .field public static final LGUPLUS:I = 0x2
 
 .field static final LOG_TAG:Ljava/lang/String; = "LGfeature"
+
+.field public static final LPP_FEATURE_TYPE_BOOLEAN:I = 0x0
+
+.field public static final LPP_FEATURE_TYPE_BYTE:I = 0x6
+
+.field public static final LPP_FEATURE_TYPE_CHAR:I = 0x7
+
+.field public static final LPP_FEATURE_TYPE_DOUBLE:I = 0x5
+
+.field public static final LPP_FEATURE_TYPE_FLOAT:I = 0x4
+
+.field public static final LPP_FEATURE_TYPE_INTEGER:I = 0x1
+
+.field public static final LPP_FEATURE_TYPE_LONG:I = 0x3
+
+.field public static final LPP_FEATURE_TYPE_OBJECT:I = -0x1
+
+.field public static final LPP_FEATURE_TYPE_SHORT:I = 0x2
+
+.field public static final LPP_FEATURE_TYPE_STRING:I = 0x8
 
 .field public static final MPCS:I = 0x7
 
@@ -68,6 +96,8 @@
 
 .field public static Prefered_APN_DUN:Z = false
 
+.field public static final RGS:I = 0xc
+
 .field public static final SKT:I = 0x6
 
 .field public static final SPCS:I = 0x9
@@ -75,11 +105,23 @@
 #the value of this static final field might be set in the static constructor
 .field public static final SUPPORT_DEBUG:Z = false
 
+.field private static final TAG_FEATURE:Ljava/lang/String; = "feature"
+
+.field private static final TAG_FEATURE_ATTRIBUTE_LPP_NAME:Ljava/lang/String; = "name"
+
+.field private static final TAG_FEATURE_ATTRIBUTE_LPP_TYPE:Ljava/lang/String; = "type"
+
+.field private static final TAG_FEATURE_ATTRIBUTE_LPP_VALUE:Ljava/lang/String; = "value"
+
+.field private static final TAG_ROOT:Ljava/lang/String; = "lpp"
+
 .field public static final TMUS:I = 0xb
 
 .field public static final VDF:I = 0xa
 
 .field public static final VZWbaseSet:I = 0x1
+
+.field private static final XML_FILENAME:Ljava/lang/String; = "lpp_data"
 
 .field private static sLGfeature:Lcom/android/internal/telephony/LGfeature;
 
@@ -124,6 +166,8 @@
 .field public LGP_DATA_APN_ADD_DUN_TYPE:Z
 
 .field public LGP_DATA_APN_ADD_RCS_TYPE:Z
+
+.field public LGP_DATA_APN_ADD_XCAP_TYPE_RGS:Z
 
 .field public LGP_DATA_APN_APN2_ENABLE_BACKUP_RESTORE_VZW:Z
 
@@ -172,6 +216,8 @@
 .field public LGP_DATA_APN_EFS_PDN_LIST_ERASE:Z
 
 .field public LGP_DATA_APN_FOTA_UPGRADE_ATT:Z
+
+.field public LGP_DATA_APN_GSM_GLOBAL_PREFERED_APN_SPRINT:Z
 
 .field public LGP_DATA_APN_HANDLE_ALL_TYPE_KR:Z
 
@@ -255,6 +301,8 @@
 
 .field public LGP_DATA_CONNECTIVITYSERVICE_NETSEARCH:Z
 
+.field public LGP_DATA_CONNECTIVITYSERVICE_REMOVE_SYNCHRONIZED_BLOCK:Z
+
 .field public LGP_DATA_CONNECTIVITYSERVICE_VPN_DEF_PROXY_DCM:Z
 
 .field public LGP_DATA_DAEMON_NETD_BANDWIDTH:Z
@@ -334,6 +382,8 @@
 .field public LGP_DATA_DATACONNECTION_ENABLE_DUAL_APN:Z
 
 .field public LGP_DATA_DATACONNECTION_EXCEPTION_HANDLING_FOR_GET_SERVICESTATE:Z
+
+.field public LGP_DATA_DATACONNECTION_FAIL_ICON_DISPLAY_SPRINT:Z
 
 .field public LGP_DATA_DATACONNECTION_FAKE_ROAMING_APN_SETTING_KT:Z
 
@@ -488,6 +538,8 @@
 .field public LGP_DATA_EHRPD_INIT_EFS_CONFIG_FILE_UPLUS:Z
 
 .field public LGP_DATA_EHRPD_UPDATE_PROFILE_DB:Z
+
+.field public LGP_DATA_ENV_FEATURE_MANAGEMENT:Z
 
 .field public LGP_DATA_IMS_BARRING_UPLUS:Z
 
@@ -716,6 +768,8 @@
 .field public LGP_DATA_UIAPP_BLOCK_PAYPOPUP_BUT_TRYSETUP:Z
 
 .field public LGP_DATA_UIAPP_DSAC_NOTIFICATION_DCM:Z
+
+.field public LGP_DATA_UIAPP_GPRS_REJECTED:Z
 
 .field public LGP_DATA_UIAPP_GPRS_REJECTED_KT:Z
 

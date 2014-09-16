@@ -37,23 +37,25 @@
 
 # direct methods
 .method public constructor <init>(Lcom/lge/view/TouchEventFilter$PenPalmFilter;)V
-    .locals 3
+    .locals 4
     .parameter
 
     .prologue
-    .line 868
+    const/4 v3, 0x0
+
+    .line 913
     iput-object p1, p0, Lcom/lge/view/TouchEventFilter$PenPalmFilter$PalmRegion;->this$1:Lcom/lge/view/TouchEventFilter$PenPalmFilter;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 866
+    .line 911
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v1, p0, Lcom/lge/view/TouchEventFilter$PenPalmFilter$PalmRegion;->rectList:Ljava/util/ArrayList;
 
-    .line 869
+    .line 914
     const/4 v0, 0x0
 
     .local v0, i:I
@@ -62,25 +64,22 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 870
+    .line 916
     iget-object v1, p0, Lcom/lge/view/TouchEventFilter$PenPalmFilter$PalmRegion;->rectList:Ljava/util/ArrayList;
 
     new-instance v2, Landroid/graphics/Rect;
 
-    invoke-direct {v2}, Landroid/graphics/Rect;-><init>()V
+    invoke-direct {v2, v3, v3, v3, v3}, Landroid/graphics/Rect;-><init>(IIII)V
 
     invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 869
+    .line 914
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 872
+    .line 921
     :cond_0
-    invoke-virtual {p0}, Lcom/lge/view/TouchEventFilter$PenPalmFilter$PalmRegion;->init()V
-
-    .line 873
     return-void
 .end method
 
@@ -94,12 +93,12 @@
     .parameter "largePalm"
 
     .prologue
-    .line 883
+    .line 931
     if-eqz p4, :cond_0
 
     const/16 v1, 0x190
 
-    .line 884
+    .line 932
     .local v1, rectSize:I
     :goto_0
     iget-object v2, p0, Lcom/lge/view/TouchEventFilter$PenPalmFilter$PalmRegion;->rectList:Ljava/util/ArrayList;
@@ -110,7 +109,7 @@
 
     check-cast v0, Landroid/graphics/Rect;
 
-    .line 885
+    .line 933
     .local v0, mRect:Landroid/graphics/Rect;
     sub-int v2, p2, v1
 
@@ -122,10 +121,10 @@
 
     invoke-virtual {v0, v2, v3, v4, v5}, Landroid/graphics/Rect;->set(IIII)V
 
-    .line 886
+    .line 934
     return-void
 
-    .line 883
+    .line 931
     .end local v0           #mRect:Landroid/graphics/Rect;
     .end local v1           #rectSize:I
     :cond_0
@@ -140,7 +139,7 @@
     .parameter "y"
 
     .prologue
-    .line 889
+    .line 937
     const/4 v0, 0x0
 
     .local v0, i:I
@@ -153,7 +152,7 @@
 
     if-ge v0, v2, :cond_1
 
-    .line 890
+    .line 938
     iget-object v2, p0, Lcom/lge/view/TouchEventFilter$PenPalmFilter$PalmRegion;->rectList:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -162,7 +161,7 @@
 
     check-cast v1, Landroid/graphics/Rect;
 
-    .line 891
+    .line 939
     .local v1, mRect:Landroid/graphics/Rect;
     invoke-virtual {v1, p1, p2}, Landroid/graphics/Rect;->contains(II)Z
 
@@ -170,27 +169,69 @@
 
     if-eqz v2, :cond_0
 
-    .line 892
+    .line 940
     const/4 v2, 0x1
 
-    .line 895
+    .line 943
     .end local v1           #mRect:Landroid/graphics/Rect;
     :goto_1
     return v2
 
-    .line 889
+    .line 937
     .restart local v1       #mRect:Landroid/graphics/Rect;
     :cond_0
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 895
+    .line 943
     .end local v1           #mRect:Landroid/graphics/Rect;
     :cond_1
     const/4 v2, 0x0
 
     goto :goto_1
+.end method
+
+.method public checkPalmRegion(IIJ)Z
+    .locals 1
+    .parameter "x"
+    .parameter "y"
+    .parameter "t"
+
+    .prologue
+    .line 960
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public delete(I)V
+    .locals 0
+    .parameter "id"
+
+    .prologue
+    .line 964
+    return-void
+.end method
+
+.method public getMaxHeight()I
+    .locals 1
+
+    .prologue
+    .line 976
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public getMaxWidth()I
+    .locals 1
+
+    .prologue
+    .line 980
+    const/4 v0, 0x0
+
+    return v0
 .end method
 
 .method public init()V
@@ -199,7 +240,7 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 876
+    .line 924
     const/4 v0, 0x0
 
     .local v0, i:I
@@ -212,7 +253,7 @@
 
     if-ge v0, v2, :cond_0
 
-    .line 877
+    .line 925
     iget-object v2, p0, Lcom/lge/view/TouchEventFilter$PenPalmFilter$PalmRegion;->rectList:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -221,18 +262,47 @@
 
     check-cast v1, Landroid/graphics/Rect;
 
-    .line 878
+    .line 926
     .local v1, mRect:Landroid/graphics/Rect;
     invoke-virtual {v1, v3, v3, v3, v3}, Landroid/graphics/Rect;->set(IIII)V
 
-    .line 876
+    .line 924
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 880
+    .line 928
     .end local v1           #mRect:Landroid/graphics/Rect;
     :cond_0
+    return-void
+.end method
+
+.method public setPenUp(II)V
+    .locals 0
+    .parameter "x"
+    .parameter "y"
+
+    .prologue
+    .line 970
+    return-void
+.end method
+
+.method public setPenUpTime(J)V
+    .locals 0
+    .parameter "t"
+
+    .prologue
+    .line 973
+    return-void
+.end method
+
+.method public setUpTime(IJ)V
+    .locals 0
+    .parameter "id"
+    .parameter "time"
+
+    .prologue
+    .line 967
     return-void
 .end method
 
@@ -240,12 +310,12 @@
     .locals 5
 
     .prologue
-    .line 899
+    .line 947
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 901
+    .line 949
     .local v2, msg:Ljava/lang/StringBuilder;
     const/4 v0, 0x0
 
@@ -259,7 +329,7 @@
 
     if-ge v0, v3, :cond_1
 
-    .line 902
+    .line 950
     iget-object v3, p0, Lcom/lge/view/TouchEventFilter$PenPalmFilter$PalmRegion;->rectList:Ljava/util/ArrayList;
 
     invoke-virtual {v3, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -268,7 +338,7 @@
 
     check-cast v1, Landroid/graphics/Rect;
 
-    .line 903
+    .line 951
     .local v1, mRect:Landroid/graphics/Rect;
     invoke-virtual {v1}, Landroid/graphics/Rect;->isEmpty()Z
 
@@ -276,7 +346,7 @@
 
     if-nez v3, :cond_0
 
-    .line 904
+    .line 952
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -301,13 +371,13 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 901
+    .line 949
     :cond_0
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 907
+    .line 955
     .end local v1           #mRect:Landroid/graphics/Rect;
     :cond_1
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;

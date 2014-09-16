@@ -47,6 +47,10 @@
 
 .field public static final config_hasBackLed:I = 0x2070029
 
+.field public static final config_hasColorBackLed:I = 0x207002a
+
+.field public static final config_installed_qpair:I = 0x207003c
+
 .field public static final config_is_using_embedded_battery:I = 0x2070018
 
 .field public static final config_lcd_auto_brightness_mode:I = 0x2070034
