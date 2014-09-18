@@ -17,6 +17,8 @@
 # static fields
 .field public static final CMD:Ljava/lang/String; = "OFE_CMD"
 
+.field public static final CMD3:Ljava/lang/String; = "IOFE_CMD3"
+
 .field public static final CMD_2:Ljava/lang/String; = "IOFE_CMD"
 
 .field public static final DONE:Ljava/lang/String; = "DONE"

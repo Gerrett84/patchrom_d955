@@ -124,6 +124,8 @@
 
 .field public static final DATA_ROAM_GUARD_FIRST_ACCESS:Ljava/lang/String; = "lg_data_roam_guard_first_access"
 
+.field public static final DATA_STATE_SUSPENDED:Ljava/lang/String; = "data_state_suspended"
+
 .field public static final DATE_FORMAT:Ljava/lang/String; = "date_format"
 
 .field public static final DEBUG_APP:Ljava/lang/String; = "debug_app"
@@ -136,6 +138,8 @@
 .field public static final DEFAULT_NOTIFICATION_SIM2_URI:Landroid/net/Uri; = null
 
 .field public static final DEFAULT_NOTIFICATION_URI:Landroid/net/Uri; = null
+
+.field public static final DEFAULT_RINGFORME_URI:Landroid/net/Uri; = null
 
 .field public static final DEFAULT_RINGTONE_SIM2_URI:Landroid/net/Uri; = null
 
@@ -435,6 +439,8 @@
 .end field
 
 .field public static final REFERENCE_COUNTRY_IN_ASSISTED_DIAL:Ljava/lang/String; = "reference_country_in_assisted_dial"
+
+.field public static final RINGFORME:Ljava/lang/String; = "ringforme"
 
 .field public static final RINGTONE:Ljava/lang/String; = "ringtone"
 
@@ -1055,7 +1061,7 @@
     .line 966
     sget-object v0, Landroid/provider/Settings$System;->MOVED_TO_SECURE_THEN_GLOBAL:Ljava/util/HashSet;
 
-    const-string v1, "install_non_market_apps"
+    const-string/jumbo v1, "install_non_market_apps"
 
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
@@ -1492,7 +1498,16 @@
 
     sput-object v0, Landroid/provider/Settings$System;->DEFAULT_RINGTONE_VIDEOCALL_URI:Landroid/net/Uri;
 
-    .line 1994
+    .line 1997
+    const-string/jumbo v0, "ringforme"
+
+    invoke-static {v0}, Landroid/provider/Settings$System;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v0
+
+    sput-object v0, Landroid/provider/Settings$System;->DEFAULT_RINGFORME_URI:Landroid/net/Uri;
+
+    .line 2008
     const-string/jumbo v0, "ringtone"
 
     invoke-static {v0}, Landroid/provider/Settings$System;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
@@ -1501,7 +1516,7 @@
 
     sput-object v0, Landroid/provider/Settings$System;->DEFAULT_RINGTONE_URI:Landroid/net/Uri;
 
-    .line 2010
+    .line 2024
     const-string/jumbo v0, "notification_sound"
 
     invoke-static {v0}, Landroid/provider/Settings$System;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
@@ -1510,7 +1525,7 @@
 
     sput-object v0, Landroid/provider/Settings$System;->DEFAULT_NOTIFICATION_URI:Landroid/net/Uri;
 
-    .line 2026
+    .line 2040
     const-string v0, "alarm_alert"
 
     invoke-static {v0}, Landroid/provider/Settings$System;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
@@ -1519,7 +1534,7 @@
 
     sput-object v0, Landroid/provider/Settings$System;->DEFAULT_ALARM_ALERT_URI:Landroid/net/Uri;
 
-    .line 2660
+    .line 2682
     const/16 v0, 0x3f
 
     new-array v0, v0, [Ljava/lang/String;

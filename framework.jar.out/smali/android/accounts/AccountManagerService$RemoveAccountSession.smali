@@ -74,7 +74,7 @@
 
     if-eqz v3, :cond_3
 
-    const-string v3, "intent"
+    const-string/jumbo v3, "intent"
 
     invoke-virtual {p1, v3}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
 

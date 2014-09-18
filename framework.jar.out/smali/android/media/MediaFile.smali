@@ -57,7 +57,7 @@
 
 .field public static final FILE_TYPE_FLAC:I = 0xa
 
-.field public static final FILE_TYPE_FLV:I = 0xd1
+.field public static final FILE_TYPE_FLV:I = 0xca
 
 .field public static final FILE_TYPE_GIF:I = 0x21
 
@@ -201,7 +201,7 @@
 
 .field private static final LAST_VIDEO_FILE_TYPE:I = 0x1f
 
-.field private static final LAST_VIDEO_FILE_TYPE2:I = 0xd7
+.field private static final LAST_VIDEO_FILE_TYPE2:I = 0xd0
 
 .field private static final sFileTypeMap:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
@@ -612,6 +612,24 @@
     const/16 v1, 0xcc
 
     const-string/jumbo v2, "video/k3g"
+
+    invoke-static {v0, v1, v2}, Landroid/media/MediaFile;->addFileType(Ljava/lang/String;ILjava/lang/String;)V
+
+    .line 280
+    const-string v0, "FLV"
+
+    const/16 v1, 0xca
+
+    const-string/jumbo v2, "video/flv"
+
+    invoke-static {v0, v1, v2}, Landroid/media/MediaFile;->addFileType(Ljava/lang/String;ILjava/lang/String;)V
+
+    .line 281
+    const-string v0, "F4V"
+
+    const/16 v1, 0xca
+
+    const-string/jumbo v2, "video/flv"
 
     invoke-static {v0, v1, v2}, Landroid/media/MediaFile;->addFileType(Ljava/lang/String;ILjava/lang/String;)V
 
@@ -1827,7 +1845,7 @@
 
     if-lt p0, v0, :cond_2
 
-    const/16 v0, 0xd7
+    const/16 v0, 0xd0
 
     if-gt p0, v0, :cond_2
 

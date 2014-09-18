@@ -35,27 +35,27 @@
     .parameter "format"
 
     .prologue
-    .line 406
+    .line 399
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 407
+    .line 400
     iput-wide p1, p0, Landroid/media/MediaScanner$FileEntry;->mRowId:J
 
-    .line 408
+    .line 401
     iput-object p3, p0, Landroid/media/MediaScanner$FileEntry;->mPath:Ljava/lang/String;
 
-    .line 409
+    .line 402
     iput-wide p4, p0, Landroid/media/MediaScanner$FileEntry;->mLastModified:J
 
-    .line 410
+    .line 403
     iput p6, p0, Landroid/media/MediaScanner$FileEntry;->mFormat:I
 
-    .line 411
+    .line 404
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Landroid/media/MediaScanner$FileEntry;->mLastModifiedChanged:Z
 
-    .line 412
+    .line 405
     return-void
 .end method
 
@@ -65,7 +65,7 @@
     .locals 3
 
     .prologue
-    .line 416
+    .line 409
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

@@ -5296,6 +5296,46 @@
     goto :goto_0
 .end method
 
+.method public onConfigurationChanged(Landroid/content/res/Configuration;)V
+    .locals 2
+    .parameter "newConfig"
+
+    .prologue
+    .line 322
+    new-instance v0, Landroid/graphics/Rect;
+
+    invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
+
+    .line 323
+    .local v0, rect:Landroid/graphics/Rect;
+    sget-boolean v1, Lcom/lge/config/ConfigBuildFlags;->CAPP_SPLITWINDOW:Z
+
+    if-eqz v1, :cond_0
+
+    iget-object v1, p0, Landroid/widget/Editor;->mTextView:Landroid/widget/TextView;
+
+    if-eqz v1, :cond_0
+
+    iget-object v1, p0, Landroid/widget/Editor;->mTextView:Landroid/widget/TextView;
+
+    invoke-virtual {v1, v0}, Landroid/widget/TextView;->isWindowSplit(Landroid/graphics/Rect;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    .line 324
+    invoke-direct {p0}, Landroid/widget/Editor;->getPositionListener()Landroid/widget/Editor$PositionListener;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/widget/Editor$PositionListener;->onPreDraw()Z
+
+    .line 327
+    :cond_0
+    return-void
+.end method
+
 .method onDetachedFromWindow()V
     .locals 3
 

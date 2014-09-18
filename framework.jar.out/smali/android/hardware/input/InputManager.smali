@@ -236,7 +236,7 @@
     if-nez v1, :cond_0
 
     .line 187
-    const-string v1, "input"
+    const-string/jumbo v1, "input"
 
     invoke-static {v1}, Landroid/os/ServiceManager;->getService(Ljava/lang/String;)Landroid/os/IBinder;
 
@@ -615,7 +615,7 @@
     .line 457
     new-instance v1, Ljava/lang/IllegalArgumentException;
 
-    const-string v2, "inputDeviceDescriptor must not be null"
+    const-string/jumbo v2, "inputDeviceDescriptor must not be null"
 
     invoke-direct {v1, v2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -707,7 +707,7 @@
     .line 381
     new-instance v1, Ljava/lang/IllegalArgumentException;
 
-    const-string v2, "inputDeviceDescriptor must not be null"
+    const-string/jumbo v2, "inputDeviceDescriptor must not be null"
 
     invoke-direct {v1, v2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -1167,7 +1167,7 @@
     .line 431
     new-instance v1, Ljava/lang/IllegalArgumentException;
 
-    const-string v2, "inputDeviceDescriptor must not be null"
+    const-string/jumbo v2, "inputDeviceDescriptor must not be null"
 
     invoke-direct {v1, v2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -1385,7 +1385,7 @@
     .line 485
     new-instance v1, Ljava/lang/IllegalArgumentException;
 
-    const-string v2, "inputDeviceDescriptor must not be null"
+    const-string/jumbo v2, "inputDeviceDescriptor must not be null"
 
     invoke-direct {v1, v2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -1444,7 +1444,7 @@
     .line 407
     new-instance v1, Ljava/lang/IllegalArgumentException;
 
-    const-string v2, "inputDeviceDescriptor must not be null"
+    const-string/jumbo v2, "inputDeviceDescriptor must not be null"
 
     invoke-direct {v1, v2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 

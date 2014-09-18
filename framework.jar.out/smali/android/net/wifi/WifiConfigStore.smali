@@ -3542,7 +3542,7 @@
 
     .line 970
     :cond_4
-    const-string v19, "ipAssignment"
+    const-string/jumbo v19, "ipAssignment"
 
     move-object/from16 v0, v19
 

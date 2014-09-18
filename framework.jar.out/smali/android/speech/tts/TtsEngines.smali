@@ -45,18 +45,18 @@
     .locals 4
 
     .prologue
-    .line 359
+    .line 365
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
     move-result-object v1
 
-    .line 365
+    .line 371
     .local v1, locale:Ljava/util/Locale;
     invoke-virtual {v1}, Ljava/util/Locale;->getISO3Language()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 366
+    .line 372
     .local v0, defaultLocale:Ljava/lang/String;
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -64,21 +64,21 @@
 
     if-eqz v2, :cond_0
 
-    .line 367
+    .line 373
     const-string v2, "TtsEngines"
 
     const-string v3, "Default locale is empty."
 
     invoke-static {v2, v3}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 368
+    .line 374
     const-string v2, ""
 
-    .line 382
+    .line 388
     :goto_0
     return-object v2
 
-    .line 371
+    .line 377
     :cond_0
     invoke-virtual {v1}, Ljava/util/Locale;->getISO3Country()Ljava/lang/String;
 
@@ -90,7 +90,7 @@
 
     if-nez v2, :cond_2
 
-    .line 372
+    .line 378
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -117,7 +117,7 @@
 
     move-result-object v0
 
-    .line 378
+    .line 384
     invoke-virtual {v1}, Ljava/util/Locale;->getVariant()Ljava/lang/String;
 
     move-result-object v2
@@ -128,7 +128,7 @@
 
     if-nez v2, :cond_1
 
-    .line 379
+    .line 385
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -158,13 +158,13 @@
     :cond_1
     move-object v2, v0
 
-    .line 382
+    .line 388
     goto :goto_0
 
     :cond_2
     move-object v2, v0
 
-    .line 376
+    .line 382
     goto :goto_0
 .end method
 
@@ -258,14 +258,14 @@
     .locals 7
 
     .prologue
-    .line 334
+    .line 340
     iget-object v5, p0, Landroid/speech/tts/TtsEngines;->mContext:Landroid/content/Context;
 
     invoke-virtual {v5}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
-    .line 336
+    .line 342
     .local v1, cr:Landroid/content/ContentResolver;
     const-string/jumbo v5, "tts_default_lang"
 
@@ -273,7 +273,7 @@
 
     move-result-object v2
 
-    .line 337
+    .line 343
     .local v2, lang:Ljava/lang/String;
     const-string/jumbo v5, "tts_default_country"
 
@@ -281,7 +281,7 @@
 
     move-result-object v0
 
-    .line 338
+    .line 344
     .local v0, country:Ljava/lang/String;
     const-string/jumbo v5, "tts_default_variant"
 
@@ -289,7 +289,7 @@
 
     move-result-object v4
 
-    .line 340
+    .line 346
     .local v4, variant:Ljava/lang/String;
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -297,21 +297,21 @@
 
     if-eqz v5, :cond_1
 
-    .line 341
+    .line 347
     invoke-direct {p0}, Landroid/speech/tts/TtsEngines;->getDefaultLocale()Ljava/lang/String;
 
     move-result-object v3
 
-    .line 355
+    .line 361
     :cond_0
     :goto_0
     return-object v3
 
-    .line 344
+    .line 350
     :cond_1
     move-object v3, v2
 
-    .line 345
+    .line 351
     .local v3, v1Locale:Ljava/lang/String;
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -319,7 +319,7 @@
 
     if-nez v5, :cond_0
 
-    .line 346
+    .line 352
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
@@ -342,14 +342,14 @@
 
     move-result-object v3
 
-    .line 351
+    .line 357
     invoke-static {v4}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v5
 
     if-nez v5, :cond_0
 
-    .line 352
+    .line 358
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
@@ -412,19 +412,19 @@
     .prologue
     const/4 v6, 0x0
 
-    .line 392
+    .line 398
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v7
 
     if-eqz v7, :cond_1
 
-    .line 407
+    .line 413
     :cond_0
     :goto_0
     return-object v6
 
-    .line 396
+    .line 402
     :cond_1
     const-string v7, ","
 
@@ -432,7 +432,7 @@
 
     move-result-object v4
 
-    .line 398
+    .line 404
     .local v4, prefValues:[Ljava/lang/String;
     move-object v0, v4
 
@@ -448,7 +448,7 @@
 
     aget-object v5, v0, v2
 
-    .line 399
+    .line 405
     .local v5, value:Ljava/lang/String;
     const/16 v7, 0x3a
 
@@ -456,11 +456,11 @@
 
     move-result v1
 
-    .line 400
+    .line 406
     .local v1, delimiter:I
     if-lez v1, :cond_2
 
-    .line 401
+    .line 407
     const/4 v7, 0x0
 
     invoke-virtual {v5, v7, v1}, Ljava/lang/String;->substring(II)Ljava/lang/String;
@@ -473,7 +473,7 @@
 
     if-eqz v7, :cond_2
 
-    .line 402
+    .line 408
     add-int/lit8 v6, v1, 0x1
 
     invoke-virtual {v5, v6}, Ljava/lang/String;->substring(I)Ljava/lang/String;
@@ -482,7 +482,7 @@
 
     goto :goto_0
 
-    .line 398
+    .line 404
     :cond_2
     add-int/lit8 v2, v2, 0x1
 
@@ -496,7 +496,7 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 314
+    .line 320
     const/4 v2, 0x3
 
     new-array v0, v2, [Ljava/lang/String;
@@ -517,7 +517,7 @@
 
     aput-object v3, v0, v2
 
-    .line 315
+    .line 321
     .local v0, returnVal:[Ljava/lang/String;
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -525,20 +525,20 @@
 
     if-nez v2, :cond_0
 
-    .line 316
+    .line 322
     const-string v2, "-"
 
     invoke-virtual {p0, v2}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v1
 
-    .line 317
+    .line 323
     .local v1, split:[Ljava/lang/String;
     array-length v2, v1
 
     invoke-static {v1, v4, v0, v4, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 323
+    .line 329
     .end local v1           #split:[Ljava/lang/String;
     :cond_0
     return-object v0
@@ -930,12 +930,12 @@
 
     const/16 v10, 0x3a
 
-    .line 434
+    .line 440
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 435
+    .line 441
     .local v6, newPrefList:Ljava/lang/StringBuilder;
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -943,7 +943,7 @@
 
     if-eqz v9, :cond_1
 
-    .line 437
+    .line 443
     invoke-virtual {v6, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v9
@@ -954,7 +954,7 @@
 
     invoke-virtual {v9, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 475
+    .line 481
     :cond_0
     :goto_0
     invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
@@ -963,7 +963,7 @@
 
     return-object v9
 
-    .line 439
+    .line 445
     :cond_1
     const-string v9, ","
 
@@ -971,15 +971,15 @@
 
     move-result-object v7
 
-    .line 441
+    .line 447
     .local v7, prefValues:[Ljava/lang/String;
     const/4 v2, 0x1
 
-    .line 443
+    .line 449
     .local v2, first:Z
     const/4 v3, 0x0
 
-    .line 444
+    .line 450
     .local v3, found:Z
     move-object v0, v7
 
@@ -995,17 +995,17 @@
 
     aget-object v8, v0, v4
 
-    .line 445
+    .line 451
     .local v8, value:Ljava/lang/String;
     invoke-virtual {v8, v10}, Ljava/lang/String;->indexOf(I)I
 
     move-result v1
 
-    .line 446
+    .line 452
     .local v1, delimiter:I
     if-lez v1, :cond_2
 
-    .line 447
+    .line 453
     const/4 v9, 0x0
 
     invoke-virtual {v8, v9, v1}, Ljava/lang/String;->substring(II)Ljava/lang/String;
@@ -1018,17 +1018,17 @@
 
     if-eqz v9, :cond_4
 
-    .line 448
+    .line 454
     if-eqz v2, :cond_3
 
-    .line 449
+    .line 455
     const/4 v2, 0x0
 
-    .line 453
+    .line 459
     :goto_2
     const/4 v3, 0x1
 
-    .line 454
+    .line 460
     invoke-virtual {v6, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v9
@@ -1039,48 +1039,48 @@
 
     invoke-virtual {v9, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 444
+    .line 450
     :cond_2
     :goto_3
     add-int/lit8 v4, v4, 0x1
 
     goto :goto_1
 
-    .line 451
+    .line 457
     :cond_3
     invoke-virtual {v6, v11}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     goto :goto_2
 
-    .line 456
+    .line 462
     :cond_4
     if-eqz v2, :cond_5
 
-    .line 457
+    .line 463
     const/4 v2, 0x0
 
-    .line 462
+    .line 468
     :goto_4
     invoke-virtual {v6, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto :goto_3
 
-    .line 459
+    .line 465
     :cond_5
     invoke-virtual {v6, v11}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     goto :goto_4
 
-    .line 467
+    .line 473
     .end local v1           #delimiter:I
     .end local v8           #value:Ljava/lang/String;
     :cond_6
     if-nez v3, :cond_0
 
-    .line 470
+    .line 476
     invoke-virtual {v6, v11}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 471
+    .line 477
     invoke-virtual {v6, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v9
@@ -1381,15 +1381,61 @@
 
     move-result v1
 
-    if-eqz v1, :cond_0
+    if-eqz v1, :cond_1
 
     .line 300
     invoke-direct {p0}, Landroid/speech/tts/TtsEngines;->getV1Locale()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 305
+    .line 301
+    const-string v1, "com.google.android.tts"
+
+    invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    .line 302
+    const-string v1, "ara-EGY"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    const-string v1, "fas-IRN"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    const-string v1, "heb-ISR"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    const-string v1, "hin-IND"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    .line 304
     :cond_0
+    const-string v0, "eng-USA-FEMALE2"
+
+    .line 311
+    :cond_1
     return-object v0
 .end method
 
@@ -1515,7 +1561,7 @@
     .parameter "newLocale"
 
     .prologue
-    .line 411
+    .line 417
     monitor-enter p0
 
     :try_start_0
@@ -1531,13 +1577,13 @@
 
     move-result-object v1
 
-    .line 418
+    .line 424
     .local v1, prefList:Ljava/lang/String;
     invoke-direct {p0, v1, p1, p2}, Landroid/speech/tts/TtsEngines;->updateValueInCommaSeparatedList(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 423
+    .line 429
     .local v0, newPrefList:Ljava/lang/String;
     iget-object v2, p0, Landroid/speech/tts/TtsEngines;->mContext:Landroid/content/Context;
 
@@ -1555,12 +1601,12 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 425
+    .line 431
     monitor-exit p0
 
     return-void
 
-    .line 411
+    .line 417
     .end local v0           #newPrefList:Ljava/lang/String;
     .end local v1           #prefList:Ljava/lang/String;
     :catchall_0

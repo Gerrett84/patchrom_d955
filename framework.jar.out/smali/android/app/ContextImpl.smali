@@ -270,7 +270,7 @@
     invoke-static {v0, v1}, Landroid/app/ContextImpl;->registerService(Ljava/lang/String;Landroid/app/ContextImpl$ServiceFetcher;)V
 
     .line 391
-    const-string v0, "input"
+    const-string/jumbo v0, "input"
 
     new-instance v1, Landroid/app/ContextImpl$16;
 
@@ -288,7 +288,7 @@
     invoke-static {v0, v1}, Landroid/app/ContextImpl;->registerService(Ljava/lang/String;Landroid/app/ContextImpl$ServiceFetcher;)V
 
     .line 402
-    const-string v0, "input_method"
+    const-string/jumbo v0, "input_method"
 
     new-instance v1, Landroid/app/ContextImpl$18;
 
@@ -625,6 +625,7 @@
 
     invoke-static {v0, v1}, Landroid/app/ContextImpl;->registerService(Ljava/lang/String;Landroid/app/ContextImpl$ServiceFetcher;)V
 
+    .line 627
     :cond_3
     return-void
 .end method

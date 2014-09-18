@@ -1119,7 +1119,7 @@
 
     .line 229
     :cond_2
-    const-string v0, "inputRegion"
+    const-string/jumbo v0, "inputRegion"
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

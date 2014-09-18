@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 771
+    .line 789
     iput-object p1, p0, Landroid/media/Ringtone$1;->this$0:Landroid/media/Ringtone;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -46,10 +46,10 @@
     .prologue
     const/4 v3, 0x1
 
-    .line 773
+    .line 791
     packed-switch p2, :pswitch_data_0
 
-    .line 781
+    .line 799
     iget-object v4, p0, Landroid/media/Ringtone$1;->this$0:Landroid/media/Ringtone;
 
     #getter for: Landroid/media/Ringtone;->mLocalPlayer:Landroid/media/MediaPlayer;
@@ -59,7 +59,7 @@
 
     if-eqz v4, :cond_2
 
-    .line 782
+    .line 800
     iget-object v4, p0, Landroid/media/Ringtone$1;->this$0:Landroid/media/Ringtone;
 
     #getter for: Landroid/media/Ringtone;->mErrorCheck:I
@@ -69,20 +69,20 @@
 
     if-nez v4, :cond_0
 
-    .line 783
+    .line 801
     const-string v4, "Ringtone"
 
     const-string v5, "LocalPlayer play default ringtone."
 
     invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 784
+    .line 802
     iget-object v4, p0, Landroid/media/Ringtone$1;->this$0:Landroid/media/Ringtone;
 
     #setter for: Landroid/media/Ringtone;->mErrorCheck:I
     invoke-static {v4, v3}, Landroid/media/Ringtone;->access$002(Landroid/media/Ringtone;I)I
 
-    .line 785
+    .line 803
     iget-object v3, p0, Landroid/media/Ringtone$1;->this$0:Landroid/media/Ringtone;
 
     #getter for: Landroid/media/Ringtone;->mLocalPlayer:Landroid/media/MediaPlayer;
@@ -92,7 +92,7 @@
 
     invoke-virtual {v3}, Landroid/media/MediaPlayer;->release()V
 
-    .line 786
+    .line 804
     iget-object v3, p0, Landroid/media/Ringtone$1;->this$0:Landroid/media/Ringtone;
 
     const/4 v4, 0x0
@@ -100,7 +100,7 @@
     #setter for: Landroid/media/Ringtone;->mLocalPlayer:Landroid/media/MediaPlayer;
     invoke-static {v3, v4}, Landroid/media/Ringtone;->access$102(Landroid/media/Ringtone;Landroid/media/MediaPlayer;)Landroid/media/MediaPlayer;
 
-    .line 788
+    .line 806
     iget-object v3, p0, Landroid/media/Ringtone$1;->this$0:Landroid/media/Ringtone;
 
     #calls: Landroid/media/Ringtone;->getDefaultPath()Ljava/lang/String;
@@ -108,7 +108,7 @@
 
     move-result-object v0
 
-    .line 789
+    .line 807
     .local v0, defaultPath:Ljava/lang/String;
     const-string v3, "Ringtone"
 
@@ -132,10 +132,10 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 790
+    .line 808
     if-eqz v0, :cond_0
 
-    .line 791
+    .line 809
     iget-object v3, p0, Landroid/media/Ringtone$1;->this$0:Landroid/media/Ringtone;
 
     new-instance v4, Landroid/media/MediaPlayer;
@@ -145,7 +145,7 @@
     #setter for: Landroid/media/Ringtone;->mLocalPlayer:Landroid/media/MediaPlayer;
     invoke-static {v3, v4}, Landroid/media/Ringtone;->access$102(Landroid/media/Ringtone;Landroid/media/MediaPlayer;)Landroid/media/MediaPlayer;
 
-    .line 793
+    .line 811
     :try_start_0
     iget-object v3, p0, Landroid/media/Ringtone$1;->this$0:Landroid/media/Ringtone;
 
@@ -156,7 +156,7 @@
 
     invoke-virtual {v3, v0}, Landroid/media/MediaPlayer;->setDataSource(Ljava/lang/String;)V
 
-    .line 794
+    .line 812
     iget-object v3, p0, Landroid/media/Ringtone$1;->this$0:Landroid/media/Ringtone;
 
     #getter for: Landroid/media/Ringtone;->mLocalPlayer:Landroid/media/MediaPlayer;
@@ -173,7 +173,7 @@
 
     invoke-virtual {v3, v4}, Landroid/media/MediaPlayer;->setAudioStreamType(I)V
 
-    .line 795
+    .line 813
     iget-object v3, p0, Landroid/media/Ringtone$1;->this$0:Landroid/media/Ringtone;
 
     #getter for: Landroid/media/Ringtone;->mLocalPlayer:Landroid/media/MediaPlayer;
@@ -185,13 +185,13 @@
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 799
+    .line 817
     :goto_0
     iget-object v3, p0, Landroid/media/Ringtone$1;->this$0:Landroid/media/Ringtone;
 
     invoke-virtual {v3}, Landroid/media/Ringtone;->play()V
 
-    .line 800
+    .line 818
     iget-object v3, p0, Landroid/media/Ringtone$1;->this$0:Landroid/media/Ringtone;
 
     const/4 v4, 0x2
@@ -199,7 +199,7 @@
     #setter for: Landroid/media/Ringtone;->mErrorCheck:I
     invoke-static {v3, v4}, Landroid/media/Ringtone;->access$002(Landroid/media/Ringtone;I)I
 
-    .line 813
+    .line 831
     .end local v0           #defaultPath:Ljava/lang/String;
     :cond_0
     :goto_1
@@ -209,7 +209,7 @@
     :goto_2
     return v3
 
-    .line 775
+    .line 793
     :pswitch_0
     iget-object v4, p0, Landroid/media/Ringtone$1;->this$0:Landroid/media/Ringtone;
 
@@ -220,25 +220,25 @@
 
     if-nez v4, :cond_1
 
-    .line 776
+    .line 794
     iget-object v4, p0, Landroid/media/Ringtone$1;->this$0:Landroid/media/Ringtone;
 
     #setter for: Landroid/media/Ringtone;->mErrorCheck:I
     invoke-static {v4, v3}, Landroid/media/Ringtone;->access$002(Landroid/media/Ringtone;I)I
 
-    .line 777
+    .line 795
     iget-object v4, p0, Landroid/media/Ringtone$1;->this$0:Landroid/media/Ringtone;
 
     invoke-virtual {v4}, Landroid/media/Ringtone;->stop()V
 
     goto :goto_2
 
-    .line 796
+    .line 814
     .restart local v0       #defaultPath:Ljava/lang/String;
     :catch_0
     move-exception v2
 
-    .line 797
+    .line 815
     .local v2, ex:Ljava/io/IOException;
     const-string v3, "Ringtone"
 
@@ -248,7 +248,7 @@
 
     goto :goto_0
 
-    .line 803
+    .line 821
     .end local v0           #defaultPath:Ljava/lang/String;
     .end local v2           #ex:Ljava/io/IOException;
     :cond_2
@@ -261,7 +261,7 @@
 
     if-eqz v3, :cond_0
 
-    .line 805
+    .line 823
     :try_start_1
     const-string v3, "Ringtone"
 
@@ -269,7 +269,7 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 806
+    .line 824
     iget-object v3, p0, Landroid/media/Ringtone$1;->this$0:Landroid/media/Ringtone;
 
     #getter for: Landroid/media/Ringtone;->mRemotePlayer:Landroid/media/IRingtonePlayer;
@@ -308,11 +308,11 @@
 
     goto :goto_1
 
-    .line 807
+    .line 825
     :catch_1
     move-exception v1
 
-    .line 808
+    .line 826
     .local v1, e:Landroid/os/RemoteException;
     const-string v3, "Ringtone"
 
@@ -338,7 +338,7 @@
 
     goto :goto_1
 
-    .line 773
+    .line 791
     :pswitch_data_0
     .packed-switch 0x64
         :pswitch_0

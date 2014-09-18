@@ -206,7 +206,7 @@
 
     .prologue
     .line 333
-    const/16 v0, 0xb
+    const/16 v0, 0xa
 
     return v0
 .end method

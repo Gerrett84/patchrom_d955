@@ -207,7 +207,7 @@
     .locals 4
 
     .prologue
-    .line 1496
+    .line 1499
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mImm:Landroid/view/inputmethod/InputMethodManager;
 
     iget-object v1, p0, Landroid/inputmethodservice/InputMethodService;->mToken:Landroid/os/IBinder;
@@ -218,7 +218,7 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/view/inputmethod/InputMethodManager;->setImeWindowStatus(Landroid/os/IBinder;II)V
 
-    .line 1498
+    .line 1501
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "com.lge.intent.action.SOFT_INPUT_HIDDEN"
@@ -227,10 +227,10 @@
 
     invoke-virtual {p0, v0}, Landroid/inputmethodservice/InputMethodService;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 1499
+    .line 1502
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->hideWindow()V
 
-    .line 1500
+    .line 1503
     return-void
 .end method
 
@@ -240,32 +240,32 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 1484
+    .line 1487
     iget-boolean v0, p0, Landroid/inputmethodservice/InputMethodService;->mInputViewStarted:Z
 
     if-eqz v0, :cond_1
 
-    .line 1486
+    .line 1489
     invoke-virtual {p0, v1}, Landroid/inputmethodservice/InputMethodService;->onFinishInputView(Z)V
 
-    .line 1491
+    .line 1494
     :cond_0
     :goto_0
     iput-boolean v1, p0, Landroid/inputmethodservice/InputMethodService;->mInputViewStarted:Z
 
-    .line 1492
+    .line 1495
     iput-boolean v1, p0, Landroid/inputmethodservice/InputMethodService;->mCandidatesViewStarted:Z
 
-    .line 1493
+    .line 1496
     return-void
 
-    .line 1487
+    .line 1490
     :cond_1
     iget-boolean v0, p0, Landroid/inputmethodservice/InputMethodService;->mCandidatesViewStarted:Z
 
     if-eqz v0, :cond_0
 
-    .line 1489
+    .line 1492
     invoke-virtual {p0, v1}, Landroid/inputmethodservice/InputMethodService;->onFinishCandidatesView(Z)V
 
     goto :goto_0
@@ -280,12 +280,12 @@
 
     const/4 v2, 0x0
 
-    .line 1731
+    .line 1734
     iget-boolean v3, p0, Landroid/inputmethodservice/InputMethodService;->mShowInputRequested:Z
 
     if-eqz v3, :cond_2
 
-    .line 1732
+    .line 1735
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->isExtractViewShown()Z
 
     move-result v3
@@ -298,12 +298,12 @@
 
     if-eqz v3, :cond_1
 
-    .line 1733
+    .line 1736
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mExtractView:Landroid/view/View;
 
     check-cast v0, Landroid/inputmethodservice/ExtractEditLayout;
 
-    .line 1734
+    .line 1737
     .local v0, extractEditLayout:Landroid/inputmethodservice/ExtractEditLayout;
     invoke-virtual {v0}, Landroid/inputmethodservice/ExtractEditLayout;->isActionModeStarted()Z
 
@@ -311,18 +311,18 @@
 
     if-eqz v3, :cond_1
 
-    .line 1735
+    .line 1738
     if-eqz p1, :cond_0
 
     invoke-virtual {v0}, Landroid/inputmethodservice/ExtractEditLayout;->finishActionMode()V
 
-    .line 1756
+    .line 1759
     .end local v0           #extractEditLayout:Landroid/inputmethodservice/ExtractEditLayout;
     :cond_0
     :goto_0
     return v1
 
-    .line 1741
+    .line 1744
     :cond_1
     if-eqz p1, :cond_0
 
@@ -330,25 +330,25 @@
 
     goto :goto_0
 
-    .line 1743
+    .line 1746
     :cond_2
     iget-boolean v3, p0, Landroid/inputmethodservice/InputMethodService;->mWindowVisible:Z
 
     if-eqz v3, :cond_4
 
-    .line 1744
+    .line 1747
     iget v3, p0, Landroid/inputmethodservice/InputMethodService;->mCandidatesVisibility:I
 
     if-nez v3, :cond_3
 
-    .line 1747
+    .line 1750
     if-eqz p1, :cond_0
 
     invoke-virtual {p0, v2}, Landroid/inputmethodservice/InputMethodService;->setCandidatesViewShown(Z)V
 
     goto :goto_0
 
-    .line 1752
+    .line 1755
     :cond_3
     if-eqz p1, :cond_0
 
@@ -359,7 +359,7 @@
     :cond_4
     move v1, v2
 
-    .line 1756
+    .line 1759
     goto :goto_0
 .end method
 
@@ -369,21 +369,21 @@
     .parameter "hideFlags"
 
     .prologue
-    .line 1890
+    .line 1893
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->isInputViewShown()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 1891
+    .line 1894
     invoke-virtual {p0, p2}, Landroid/inputmethodservice/InputMethodService;->requestHideSelf(I)V
 
-    .line 1895
+    .line 1898
     :goto_0
     return-void
 
-    .line 1893
+    .line 1896
     :cond_0
     invoke-direct {p0, p1}, Landroid/inputmethodservice/InputMethodService;->requestShowSelf(I)V
 
@@ -395,14 +395,14 @@
     .parameter "flags"
 
     .prologue
-    .line 1727
+    .line 1730
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mImm:Landroid/view/inputmethod/InputMethodManager;
 
     iget-object v1, p0, Landroid/inputmethodservice/InputMethodService;->mToken:Landroid/os/IBinder;
 
     invoke-virtual {v0, v1, p1}, Landroid/view/inputmethod/InputMethodManager;->showSoftInputFromInputMethod(Landroid/os/IBinder;I)V
 
-    .line 1728
+    .line 1731
     return-void
 .end method
 
@@ -418,50 +418,50 @@
 
     const/4 v1, 0x0
 
-    .line 1567
+    .line 1570
     iget-boolean v0, p0, Landroid/inputmethodservice/InputMethodService;->mInputViewStarted:Z
 
     if-eqz v0, :cond_2
 
-    .line 1569
+    .line 1572
     invoke-virtual {p0, v2}, Landroid/inputmethodservice/InputMethodService;->onFinishInputView(Z)V
 
-    .line 1574
+    .line 1577
     :cond_0
     :goto_0
     iput-boolean v1, p0, Landroid/inputmethodservice/InputMethodService;->mInputViewStarted:Z
 
-    .line 1575
+    .line 1578
     iput-boolean v1, p0, Landroid/inputmethodservice/InputMethodService;->mCandidatesViewStarted:Z
 
-    .line 1576
+    .line 1579
     iget-boolean v0, p0, Landroid/inputmethodservice/InputMethodService;->mInputStarted:Z
 
     if-eqz v0, :cond_1
 
-    .line 1578
+    .line 1581
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->onFinishInput()V
 
-    .line 1580
+    .line 1583
     :cond_1
     iput-boolean v1, p0, Landroid/inputmethodservice/InputMethodService;->mInputStarted:Z
 
-    .line 1581
+    .line 1584
     iput-object v3, p0, Landroid/inputmethodservice/InputMethodService;->mStartedInputConnection:Landroid/view/inputmethod/InputConnection;
 
-    .line 1582
+    .line 1585
     iput-object v3, p0, Landroid/inputmethodservice/InputMethodService;->mCurCompletions:[Landroid/view/inputmethod/CompletionInfo;
 
-    .line 1583
+    .line 1586
     return-void
 
-    .line 1570
+    .line 1573
     :cond_2
     iget-boolean v0, p0, Landroid/inputmethodservice/InputMethodService;->mCandidatesViewStarted:Z
 
     if-eqz v0, :cond_0
 
-    .line 1572
+    .line 1575
     invoke-virtual {p0, v2}, Landroid/inputmethodservice/InputMethodService;->onFinishCandidatesView(Z)V
 
     goto :goto_0
@@ -478,10 +478,10 @@
 
     const/4 v5, 0x1
 
-    .line 1920
+    .line 1923
     iget-object v1, p0, Landroid/inputmethodservice/InputMethodService;->mExtractEditText:Landroid/inputmethodservice/ExtractEditText;
 
-    .line 1921
+    .line 1924
     .local v1, eet:Landroid/inputmethodservice/ExtractEditText;
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->isExtractViewShown()Z
 
@@ -497,29 +497,29 @@
 
     if-eqz v1, :cond_3
 
-    .line 1925
+    .line 1928
     invoke-virtual {v1}, Landroid/inputmethodservice/ExtractEditText;->getMovementMethod()Landroid/text/method/MovementMethod;
 
     move-result-object v3
 
-    .line 1926
+    .line 1929
     .local v3, movement:Landroid/text/method/MovementMethod;
     invoke-virtual {v1}, Landroid/inputmethodservice/ExtractEditText;->getLayout()Landroid/text/Layout;
 
     move-result-object v2
 
-    .line 1927
+    .line 1930
     .local v2, layout:Landroid/text/Layout;
     if-eqz v3, :cond_2
 
     if-eqz v2, :cond_2
 
-    .line 1930
+    .line 1933
     const/4 v7, -0x1
 
     if-ne p3, v7, :cond_1
 
-    .line 1931
+    .line 1934
     invoke-virtual {v1}, Landroid/inputmethodservice/ExtractEditText;->getText()Landroid/text/Editable;
 
     move-result-object v7
@@ -530,10 +530,10 @@
 
     if-eqz v7, :cond_2
 
-    .line 1933
+    .line 1936
     invoke-virtual {p0, p1, v5}, Landroid/inputmethodservice/InputMethodService;->reportExtractedMovement(II)V
 
-    .line 1973
+    .line 1976
     .end local v2           #layout:Landroid/text/Layout;
     .end local v3           #movement:Landroid/text/method/MovementMethod;
     :cond_0
@@ -541,7 +541,7 @@
     :pswitch_0
     return v5
 
-    .line 1936
+    .line 1939
     .restart local v2       #layout:Landroid/text/Layout;
     .restart local v3       #movement:Landroid/text/method/MovementMethod;
     :cond_1
@@ -549,7 +549,7 @@
 
     if-ne p3, v7, :cond_4
 
-    .line 1937
+    .line 1940
     invoke-virtual {v1}, Landroid/inputmethodservice/ExtractEditText;->getText()Landroid/text/Editable;
 
     move-result-object v7
@@ -560,7 +560,7 @@
 
     if-nez v7, :cond_0
 
-    .line 1964
+    .line 1967
     :cond_2
     :goto_1
     packed-switch p1, :pswitch_data_0
@@ -570,10 +570,10 @@
     :cond_3
     move v5, v6
 
-    .line 1973
+    .line 1976
     goto :goto_0
 
-    .line 1942
+    .line 1945
     .restart local v2       #layout:Landroid/text/Layout;
     .restart local v3       #movement:Landroid/text/method/MovementMethod;
     :cond_4
@@ -587,18 +587,18 @@
 
     if-eqz v7, :cond_5
 
-    .line 1943
+    .line 1946
     invoke-virtual {p0, p1, p3}, Landroid/inputmethodservice/InputMethodService;->reportExtractedMovement(II)V
 
     goto :goto_1
 
-    .line 1945
+    .line 1948
     :cond_5
     invoke-static {p2, v6}, Landroid/view/KeyEvent;->changeAction(Landroid/view/KeyEvent;I)Landroid/view/KeyEvent;
 
     move-result-object v0
 
-    .line 1946
+    .line 1949
     .local v0, down:Landroid/view/KeyEvent;
     invoke-virtual {v1}, Landroid/inputmethodservice/ExtractEditText;->getText()Landroid/text/Editable;
 
@@ -610,12 +610,12 @@
 
     if-eqz v7, :cond_2
 
-    .line 1948
+    .line 1951
     invoke-static {p2, v5}, Landroid/view/KeyEvent;->changeAction(Landroid/view/KeyEvent;I)Landroid/view/KeyEvent;
 
     move-result-object v4
 
-    .line 1949
+    .line 1952
     .local v4, up:Landroid/view/KeyEvent;
     invoke-virtual {v1}, Landroid/inputmethodservice/ExtractEditText;->getText()Landroid/text/Editable;
 
@@ -623,20 +623,20 @@
 
     invoke-interface {v3, v1, v7, p1, v4}, Landroid/text/method/MovementMethod;->onKeyUp(Landroid/widget/TextView;Landroid/text/Spannable;ILandroid/view/KeyEvent;)Z
 
-    .line 1951
+    .line 1954
     :goto_2
     add-int/lit8 p3, p3, -0x1
 
     if-lez p3, :cond_6
 
-    .line 1952
+    .line 1955
     invoke-virtual {v1}, Landroid/inputmethodservice/ExtractEditText;->getText()Landroid/text/Editable;
 
     move-result-object v7
 
     invoke-interface {v3, v1, v7, p1, v0}, Landroid/text/method/MovementMethod;->onKeyDown(Landroid/widget/TextView;Landroid/text/Spannable;ILandroid/view/KeyEvent;)Z
 
-    .line 1954
+    .line 1957
     invoke-virtual {v1}, Landroid/inputmethodservice/ExtractEditText;->getText()Landroid/text/Editable;
 
     move-result-object v7
@@ -645,13 +645,13 @@
 
     goto :goto_2
 
-    .line 1957
+    .line 1960
     :cond_6
     invoke-virtual {p0, p1, p3}, Landroid/inputmethodservice/InputMethodService;->reportExtractedMovement(II)V
 
     goto :goto_1
 
-    .line 1964
+    .line 1967
     nop
 
     :pswitch_data_0
@@ -672,64 +672,64 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 1586
+    .line 1589
     if-nez p3, :cond_0
 
-    .line 1587
+    .line 1590
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->doFinishInput()V
 
-    .line 1589
+    .line 1592
     :cond_0
     iput-boolean v1, p0, Landroid/inputmethodservice/InputMethodService;->mInputStarted:Z
 
-    .line 1590
+    .line 1593
     iput-object p1, p0, Landroid/inputmethodservice/InputMethodService;->mStartedInputConnection:Landroid/view/inputmethod/InputConnection;
 
-    .line 1591
+    .line 1594
     iput-object p2, p0, Landroid/inputmethodservice/InputMethodService;->mInputEditorInfo:Landroid/view/inputmethod/EditorInfo;
 
-    .line 1592
+    .line 1595
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->initialize()V
 
-    .line 1594
+    .line 1597
     invoke-virtual {p0, p2, p3}, Landroid/inputmethodservice/InputMethodService;->onStartInput(Landroid/view/inputmethod/EditorInfo;Z)V
 
-    .line 1595
+    .line 1598
     iget-boolean v0, p0, Landroid/inputmethodservice/InputMethodService;->mWindowVisible:Z
 
     if-eqz v0, :cond_1
 
-    .line 1596
+    .line 1599
     iget-boolean v0, p0, Landroid/inputmethodservice/InputMethodService;->mShowInputRequested:Z
 
     if-eqz v0, :cond_2
 
-    .line 1598
+    .line 1601
     iput-boolean v1, p0, Landroid/inputmethodservice/InputMethodService;->mInputViewStarted:Z
 
-    .line 1599
+    .line 1602
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mInputEditorInfo:Landroid/view/inputmethod/EditorInfo;
 
     invoke-virtual {p0, v0, p3}, Landroid/inputmethodservice/InputMethodService;->onStartInputView(Landroid/view/inputmethod/EditorInfo;Z)V
 
-    .line 1600
+    .line 1603
     invoke-virtual {p0, v1}, Landroid/inputmethodservice/InputMethodService;->startExtractingText(Z)V
 
-    .line 1607
+    .line 1610
     :cond_1
     :goto_0
     return-void
 
-    .line 1601
+    .line 1604
     :cond_2
     iget v0, p0, Landroid/inputmethodservice/InputMethodService;->mCandidatesVisibility:I
 
     if-nez v0, :cond_1
 
-    .line 1603
+    .line 1606
     iput-boolean v1, p0, Landroid/inputmethodservice/InputMethodService;->mCandidatesViewStarted:Z
 
-    .line 1604
+    .line 1607
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mInputEditorInfo:Landroid/view/inputmethod/EditorInfo;
 
     invoke-virtual {p0, v0, p3}, Landroid/inputmethodservice/InputMethodService;->onStartCandidatesView(Landroid/view/inputmethod/EditorInfo;Z)V
@@ -744,12 +744,12 @@
     .parameter "args"
 
     .prologue
-    .line 2379
+    .line 2382
     new-instance v0, Landroid/util/PrintWriterPrinter;
 
     invoke-direct {v0, p2}, Landroid/util/PrintWriterPrinter;-><init>(Ljava/io/PrintWriter;)V
 
-    .line 2380
+    .line 2383
     .local v0, p:Landroid/util/Printer;
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -777,7 +777,7 @@
 
     invoke-interface {v0, v1}, Landroid/util/Printer;->println(Ljava/lang/String;)V
 
-    .line 2381
+    .line 2384
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -812,7 +812,7 @@
 
     invoke-interface {v0, v1}, Landroid/util/Printer;->println(Ljava/lang/String;)V
 
-    .line 2383
+    .line 2386
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -859,7 +859,7 @@
 
     invoke-interface {v0, v1}, Landroid/util/Printer;->println(Ljava/lang/String;)V
 
-    .line 2386
+    .line 2389
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -888,7 +888,7 @@
 
     invoke-interface {v0, v1}, Landroid/util/Printer;->println(Ljava/lang/String;)V
 
-    .line 2387
+    .line 2390
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -911,7 +911,7 @@
 
     invoke-interface {v0, v1}, Landroid/util/Printer;->println(Ljava/lang/String;)V
 
-    .line 2388
+    .line 2391
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -934,7 +934,7 @@
 
     invoke-interface {v0, v1}, Landroid/util/Printer;->println(Ljava/lang/String;)V
 
-    .line 2389
+    .line 2392
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -957,7 +957,7 @@
 
     invoke-interface {v0, v1}, Landroid/util/Printer;->println(Ljava/lang/String;)V
 
-    .line 2390
+    .line 2393
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -980,7 +980,7 @@
 
     invoke-interface {v0, v1}, Landroid/util/Printer;->println(Ljava/lang/String;)V
 
-    .line 2391
+    .line 2394
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -1027,24 +1027,24 @@
 
     invoke-interface {v0, v1}, Landroid/util/Printer;->println(Ljava/lang/String;)V
 
-    .line 2395
+    .line 2398
     iget-object v1, p0, Landroid/inputmethodservice/InputMethodService;->mInputEditorInfo:Landroid/view/inputmethod/EditorInfo;
 
     if-eqz v1, :cond_0
 
-    .line 2396
+    .line 2399
     const-string v1, "  mInputEditorInfo:"
 
     invoke-interface {v0, v1}, Landroid/util/Printer;->println(Ljava/lang/String;)V
 
-    .line 2397
+    .line 2400
     iget-object v1, p0, Landroid/inputmethodservice/InputMethodService;->mInputEditorInfo:Landroid/view/inputmethod/EditorInfo;
 
     const-string v2, "    "
 
     invoke-virtual {v1, v0, v2}, Landroid/view/inputmethod/EditorInfo;->dump(Landroid/util/Printer;Ljava/lang/String;)V
 
-    .line 2402
+    .line 2405
     :goto_0
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1108,7 +1108,7 @@
 
     invoke-interface {v0, v1}, Landroid/util/Printer;->println(Ljava/lang/String;)V
 
-    .line 2406
+    .line 2409
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -1167,17 +1167,17 @@
 
     invoke-interface {v0, v1}, Landroid/util/Printer;->println(Ljava/lang/String;)V
 
-    .line 2411
+    .line 2414
     iget-object v1, p0, Landroid/inputmethodservice/InputMethodService;->mExtractedText:Landroid/view/inputmethod/ExtractedText;
 
     if-eqz v1, :cond_1
 
-    .line 2412
+    .line 2415
     const-string v1, "  mExtractedText:"
 
     invoke-interface {v0, v1}, Landroid/util/Printer;->println(Ljava/lang/String;)V
 
-    .line 2413
+    .line 2416
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -1226,7 +1226,7 @@
 
     invoke-interface {v0, v1}, Landroid/util/Printer;->println(Ljava/lang/String;)V
 
-    .line 2415
+    .line 2418
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -1283,7 +1283,7 @@
 
     invoke-interface {v0, v1}, Landroid/util/Printer;->println(Ljava/lang/String;)V
 
-    .line 2421
+    .line 2424
     :goto_1
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1307,7 +1307,7 @@
 
     invoke-interface {v0, v1}, Landroid/util/Printer;->println(Ljava/lang/String;)V
 
-    .line 2422
+    .line 2425
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -1342,12 +1342,12 @@
 
     invoke-interface {v0, v1}, Landroid/util/Printer;->println(Ljava/lang/String;)V
 
-    .line 2424
+    .line 2427
     const-string v1, "Last computed insets:"
 
     invoke-interface {v0, v1}, Landroid/util/Printer;->println(Ljava/lang/String;)V
 
-    .line 2425
+    .line 2428
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -1414,10 +1414,10 @@
 
     invoke-interface {v0, v1}, Landroid/util/Printer;->println(Ljava/lang/String;)V
 
-    .line 2429
+    .line 2432
     return-void
 
-    .line 2399
+    .line 2402
     :cond_0
     const-string v1, "  mInputEditorInfo: null"
 
@@ -1425,7 +1425,7 @@
 
     goto/16 :goto_0
 
-    .line 2419
+    .line 2422
     :cond_1
     const-string v1, "  mExtractedText: null"
 
@@ -1479,7 +1479,7 @@
     .locals 1
 
     .prologue
-    .line 828
+    .line 831
     iget v0, p0, Landroid/inputmethodservice/InputMethodService;->mBackDisposition:I
 
     return v0
@@ -1489,7 +1489,7 @@
     .locals 1
 
     .prologue
-    .line 1166
+    .line 1169
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->isExtractViewShown()Z
 
     move-result v0
@@ -1511,7 +1511,7 @@
     .locals 1
 
     .prologue
-    .line 857
+    .line 860
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mInputBinding:Landroid/view/inputmethod/InputBinding;
 
     return-object v0
@@ -1521,14 +1521,14 @@
     .locals 1
 
     .prologue
-    .line 865
+    .line 868
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mStartedInputConnection:Landroid/view/inputmethod/InputConnection;
 
-    .line 866
+    .line 869
     .local v0, ic:Landroid/view/inputmethod/InputConnection;
     if-eqz v0, :cond_0
 
-    .line 869
+    .line 872
     .end local v0           #ic:Landroid/view/inputmethod/InputConnection;
     :goto_0
     return-object v0
@@ -1544,7 +1544,7 @@
     .locals 1
 
     .prologue
-    .line 877
+    .line 880
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mInputEditorInfo:Landroid/view/inputmethod/EditorInfo;
 
     return-object v0
@@ -1554,7 +1554,7 @@
     .locals 1
 
     .prologue
-    .line 873
+    .line 876
     iget-boolean v0, p0, Landroid/inputmethodservice/InputMethodService;->mInputStarted:Z
 
     return v0
@@ -1564,7 +1564,7 @@
     .locals 1
 
     .prologue
-    .line 816
+    .line 819
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mInflater:Landroid/view/LayoutInflater;
 
     return-object v0
@@ -1574,7 +1574,7 @@
     .locals 2
 
     .prologue
-    .line 848
+    .line 851
     const-string/jumbo v1, "window"
 
     invoke-virtual {p0, v1}, Landroid/inputmethodservice/InputMethodService;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
@@ -1583,7 +1583,7 @@
 
     check-cast v0, Landroid/view/WindowManager;
 
-    .line 849
+    .line 852
     .local v0, wm:Landroid/view/WindowManager;
     invoke-interface {v0}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
 
@@ -1601,12 +1601,12 @@
     .parameter "imeOptions"
 
     .prologue
-    .line 2192
+    .line 2195
     and-int/lit16 v0, p1, 0xff
 
     packed-switch v0, :pswitch_data_0
 
-    .line 2208
+    .line 2211
     const v0, 0x104049f
 
     invoke-virtual {p0, v0}, Landroid/inputmethodservice/InputMethodService;->getText(I)Ljava/lang/CharSequence;
@@ -1616,13 +1616,13 @@
     :goto_0
     return-object v0
 
-    .line 2194
+    .line 2197
     :pswitch_0
     const/4 v0, 0x0
 
     goto :goto_0
 
-    .line 2196
+    .line 2199
     :pswitch_1
     const v0, 0x1040499
 
@@ -1632,7 +1632,7 @@
 
     goto :goto_0
 
-    .line 2198
+    .line 2201
     :pswitch_2
     const v0, 0x104049a
 
@@ -1642,7 +1642,7 @@
 
     goto :goto_0
 
-    .line 2200
+    .line 2203
     :pswitch_3
     const v0, 0x104049b
 
@@ -1652,7 +1652,7 @@
 
     goto :goto_0
 
-    .line 2202
+    .line 2205
     :pswitch_4
     const v0, 0x104049c
 
@@ -1662,7 +1662,7 @@
 
     goto :goto_0
 
-    .line 2204
+    .line 2207
     :pswitch_5
     const v0, 0x104049d
 
@@ -1672,7 +1672,7 @@
 
     goto :goto_0
 
-    .line 2206
+    .line 2209
     :pswitch_6
     const v0, 0x104049e
 
@@ -1682,7 +1682,7 @@
 
     goto :goto_0
 
-    .line 2192
+    .line 2195
     nop
 
     :pswitch_data_0
@@ -1701,7 +1701,7 @@
     .locals 1
 
     .prologue
-    .line 820
+    .line 823
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mWindow:Landroid/inputmethodservice/SoftInputWindow;
 
     return-object v0
@@ -1711,19 +1711,19 @@
     .locals 2
 
     .prologue
-    .line 1175
+    .line 1178
     const/4 v0, 0x0
 
     iput v0, p0, Landroid/inputmethodservice/InputMethodService;->mStatusIcon:I
 
-    .line 1176
+    .line 1179
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mImm:Landroid/view/inputmethod/InputMethodManager;
 
     iget-object v1, p0, Landroid/inputmethodservice/InputMethodService;->mToken:Landroid/os/IBinder;
 
     invoke-virtual {v0, v1}, Landroid/view/inputmethod/InputMethodManager;->hideStatusIcon(Landroid/os/IBinder;)V
 
-    .line 1177
+    .line 1180
     return-void
 .end method
 
@@ -1733,29 +1733,29 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 1503
+    .line 1506
     invoke-direct {p0}, Landroid/inputmethodservice/InputMethodService;->finishViews()V
 
-    .line 1504
+    .line 1507
     iget-boolean v0, p0, Landroid/inputmethodservice/InputMethodService;->mWindowVisible:Z
 
     if-eqz v0, :cond_0
 
-    .line 1505
+    .line 1508
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mWindow:Landroid/inputmethodservice/SoftInputWindow;
 
     invoke-virtual {v0}, Landroid/inputmethodservice/SoftInputWindow;->hide()V
 
-    .line 1506
+    .line 1509
     iput-boolean v1, p0, Landroid/inputmethodservice/InputMethodService;->mWindowVisible:Z
 
-    .line 1507
+    .line 1510
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->onWindowHidden()V
 
-    .line 1508
+    .line 1511
     iput-boolean v1, p0, Landroid/inputmethodservice/InputMethodService;->mWindowWasVisible:Z
 
-    .line 1510
+    .line 1513
     :cond_0
     return-void
 .end method
@@ -1809,7 +1809,18 @@
 
     invoke-virtual {v0, v1}, Landroid/inputmethodservice/SoftInputWindow;->setContentView(Landroid/view/View;)V
 
-    .line 700
+    .line 701
+    iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mRootView:Landroid/view/View;
+
+    invoke-virtual {v0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+
+    move-result-object v0
+
+    iget-object v1, p0, Landroid/inputmethodservice/InputMethodService;->mInsetsComputer:Landroid/view/ViewTreeObserver$OnComputeInternalInsetsListener;
+
+    invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->removeOnComputeInternalInsetsListener(Landroid/view/ViewTreeObserver$OnComputeInternalInsetsListener;)V
+
+    .line 703
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mRootView:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
@@ -1820,7 +1831,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->addOnComputeInternalInsetsListener(Landroid/view/ViewTreeObserver$OnComputeInternalInsetsListener;)V
 
-    .line 701
+    .line 704
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
@@ -1833,7 +1844,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 703
+    .line 706
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mWindow:Landroid/inputmethodservice/SoftInputWindow;
 
     invoke-virtual {v0}, Landroid/inputmethodservice/SoftInputWindow;->getWindow()Landroid/view/Window;
@@ -1844,7 +1855,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/Window;->setWindowAnimations(I)V
 
-    .line 706
+    .line 709
     :cond_0
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mRootView:Landroid/view/View;
 
@@ -1858,10 +1869,10 @@
 
     iput-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mFullscreenArea:Landroid/view/ViewGroup;
 
-    .line 707
+    .line 710
     iput-boolean v2, p0, Landroid/inputmethodservice/InputMethodService;->mExtractViewHidden:Z
 
-    .line 708
+    .line 711
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mRootView:Landroid/view/View;
 
     const v1, 0x102001c
@@ -1874,22 +1885,22 @@
 
     iput-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mExtractFrame:Landroid/widget/FrameLayout;
 
-    .line 709
+    .line 712
     iput-object v3, p0, Landroid/inputmethodservice/InputMethodService;->mExtractView:Landroid/view/View;
 
-    .line 710
+    .line 713
     iput-object v3, p0, Landroid/inputmethodservice/InputMethodService;->mExtractEditText:Landroid/inputmethodservice/ExtractEditText;
 
-    .line 711
+    .line 714
     iput-object v3, p0, Landroid/inputmethodservice/InputMethodService;->mExtractAccessories:Landroid/view/ViewGroup;
 
-    .line 712
+    .line 715
     iput-object v3, p0, Landroid/inputmethodservice/InputMethodService;->mExtractAction:Landroid/widget/Button;
 
-    .line 713
+    .line 716
     iput-boolean v2, p0, Landroid/inputmethodservice/InputMethodService;->mFullscreenApplied:Z
 
-    .line 715
+    .line 718
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mRootView:Landroid/view/View;
 
     const v1, 0x102001d
@@ -1902,7 +1913,7 @@
 
     iput-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mCandidatesFrame:Landroid/widget/FrameLayout;
 
-    .line 716
+    .line 719
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mRootView:Landroid/view/View;
 
     const v1, 0x102001e
@@ -1915,37 +1926,37 @@
 
     iput-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mInputFrame:Landroid/widget/FrameLayout;
 
-    .line 717
+    .line 720
     iput-object v3, p0, Landroid/inputmethodservice/InputMethodService;->mInputView:Landroid/view/View;
 
-    .line 718
+    .line 721
     iput-boolean v2, p0, Landroid/inputmethodservice/InputMethodService;->mIsInputViewShown:Z
 
-    .line 720
+    .line 723
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mExtractFrame:Landroid/widget/FrameLayout;
 
     invoke-virtual {v0, v4}, Landroid/widget/FrameLayout;->setVisibility(I)V
 
-    .line 721
+    .line 724
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->getCandidatesHiddenVisibility()I
 
     move-result v0
 
     iput v0, p0, Landroid/inputmethodservice/InputMethodService;->mCandidatesVisibility:I
 
-    .line 722
+    .line 725
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mCandidatesFrame:Landroid/widget/FrameLayout;
 
     iget v1, p0, Landroid/inputmethodservice/InputMethodService;->mCandidatesVisibility:I
 
     invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->setVisibility(I)V
 
-    .line 723
+    .line 726
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mInputFrame:Landroid/widget/FrameLayout;
 
     invoke-virtual {v0, v4}, Landroid/widget/FrameLayout;->setVisibility(I)V
 
-    .line 724
+    .line 727
     return-void
 .end method
 
@@ -1975,7 +1986,7 @@
     .locals 1
 
     .prologue
-    .line 1013
+    .line 1016
     iget-boolean v0, p0, Landroid/inputmethodservice/InputMethodService;->mIsFullscreen:Z
 
     if-eqz v0, :cond_0
@@ -1999,7 +2010,7 @@
     .locals 1
 
     .prologue
-    .line 963
+    .line 966
     iget-boolean v0, p0, Landroid/inputmethodservice/InputMethodService;->mIsFullscreen:Z
 
     return v0
@@ -2009,7 +2020,7 @@
     .locals 1
 
     .prologue
-    .line 1112
+    .line 1115
     iget-boolean v0, p0, Landroid/inputmethodservice/InputMethodService;->mIsInputViewShown:Z
 
     if-eqz v0, :cond_0
@@ -2033,7 +2044,7 @@
     .locals 1
 
     .prologue
-    .line 1103
+    .line 1106
     iget-boolean v0, p0, Landroid/inputmethodservice/InputMethodService;->mShowInputRequested:Z
 
     return v0
@@ -2045,7 +2056,7 @@
     .parameter "data"
 
     .prologue
-    .line 1883
+    .line 1886
     return-void
 .end method
 
@@ -2053,7 +2064,7 @@
     .locals 0
 
     .prologue
-    .line 1538
+    .line 1541
     return-void
 .end method
 
@@ -2064,10 +2075,10 @@
     .prologue
     const/4 v3, 0x1
 
-    .line 1054
+    .line 1057
     iget-object v1, p0, Landroid/inputmethodservice/InputMethodService;->mTmpLocation:[I
 
-    .line 1055
+    .line 1058
     .local v1, loc:[I
     iget-object v2, p0, Landroid/inputmethodservice/InputMethodService;->mInputFrame:Landroid/widget/FrameLayout;
 
@@ -2077,12 +2088,12 @@
 
     if-nez v2, :cond_1
 
-    .line 1056
+    .line 1059
     iget-object v2, p0, Landroid/inputmethodservice/InputMethodService;->mInputFrame:Landroid/widget/FrameLayout;
 
     invoke-virtual {v2, v1}, Landroid/widget/FrameLayout;->getLocationInWindow([I)V
 
-    .line 1061
+    .line 1064
     :goto_0
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->isFullscreenMode()Z
 
@@ -2090,7 +2101,7 @@
 
     if-eqz v2, :cond_2
 
-    .line 1063
+    .line 1066
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->getWindow()Landroid/app/Dialog;
 
     move-result-object v2
@@ -2103,7 +2114,7 @@
 
     move-result-object v0
 
-    .line 1064
+    .line 1067
     .local v0, decor:Landroid/view/View;
     invoke-virtual {v0}, Landroid/view/View;->getHeight()I
 
@@ -2111,7 +2122,7 @@
 
     iput v2, p1, Landroid/inputmethodservice/InputMethodService$Insets;->contentTopInsets:I
 
-    .line 1068
+    .line 1071
     .end local v0           #decor:Landroid/view/View;
     :goto_1
     iget-object v2, p0, Landroid/inputmethodservice/InputMethodService;->mCandidatesFrame:Landroid/widget/FrameLayout;
@@ -2122,31 +2133,31 @@
 
     if-nez v2, :cond_0
 
-    .line 1069
+    .line 1072
     iget-object v2, p0, Landroid/inputmethodservice/InputMethodService;->mCandidatesFrame:Landroid/widget/FrameLayout;
 
     invoke-virtual {v2, v1}, Landroid/widget/FrameLayout;->getLocationInWindow([I)V
 
-    .line 1071
+    .line 1074
     :cond_0
     aget v2, v1, v3
 
     iput v2, p1, Landroid/inputmethodservice/InputMethodService$Insets;->visibleTopInsets:I
 
-    .line 1072
+    .line 1075
     const/4 v2, 0x2
 
     iput v2, p1, Landroid/inputmethodservice/InputMethodService$Insets;->touchableInsets:I
 
-    .line 1073
+    .line 1076
     iget-object v2, p1, Landroid/inputmethodservice/InputMethodService$Insets;->touchableRegion:Landroid/graphics/Region;
 
     invoke-virtual {v2}, Landroid/graphics/Region;->setEmpty()V
 
-    .line 1074
+    .line 1077
     return-void
 
-    .line 1058
+    .line 1061
     :cond_1
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->getWindow()Landroid/app/Dialog;
 
@@ -2160,7 +2171,7 @@
 
     move-result-object v0
 
-    .line 1059
+    .line 1062
     .restart local v0       #decor:Landroid/view/View;
     invoke-virtual {v0}, Landroid/view/View;->getHeight()I
 
@@ -2170,7 +2181,7 @@
 
     goto :goto_0
 
-    .line 1066
+    .line 1069
     .end local v0           #decor:Landroid/view/View;
     :cond_2
     aget v2, v1, v3
@@ -2189,40 +2200,40 @@
 
     const/4 v5, 0x0
 
-    .line 757
+    .line 760
     invoke-super {p0, p1}, Landroid/inputmethodservice/AbstractInputMethodService;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
-    .line 759
+    .line 762
     iget-boolean v4, p0, Landroid/inputmethodservice/InputMethodService;->mWindowVisible:Z
 
-    .line 760
+    .line 763
     .local v4, visible:Z
     iget v1, p0, Landroid/inputmethodservice/InputMethodService;->mShowInputFlags:I
 
-    .line 761
+    .line 764
     .local v1, showFlags:I
     iget-boolean v3, p0, Landroid/inputmethodservice/InputMethodService;->mShowInputRequested:Z
 
-    .line 762
+    .line 765
     .local v3, showingInput:Z
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mCurCompletions:[Landroid/view/inputmethod/CompletionInfo;
 
-    .line 763
+    .line 766
     .local v0, completions:[Landroid/view/inputmethod/CompletionInfo;
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->initViews()V
 
-    .line 764
+    .line 767
     iput-boolean v5, p0, Landroid/inputmethodservice/InputMethodService;->mInputViewStarted:Z
 
-    .line 765
+    .line 768
     iput-boolean v5, p0, Landroid/inputmethodservice/InputMethodService;->mCandidatesViewStarted:Z
 
-    .line 766
+    .line 769
     iget-boolean v6, p0, Landroid/inputmethodservice/InputMethodService;->mInputStarted:Z
 
     if-eqz v6, :cond_0
 
-    .line 767
+    .line 770
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->getCurrentInputConnection()Landroid/view/inputmethod/InputConnection;
 
     move-result-object v6
@@ -2233,40 +2244,40 @@
 
     invoke-virtual {p0, v6, v7, v8}, Landroid/inputmethodservice/InputMethodService;->doStartInput(Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/EditorInfo;Z)V
 
-    .line 770
+    .line 773
     :cond_0
     if-eqz v4, :cond_3
 
-    .line 771
+    .line 774
     if-eqz v3, :cond_5
 
-    .line 773
+    .line 776
     invoke-virtual {p0, v1, v8}, Landroid/inputmethodservice/InputMethodService;->onShowInputRequested(IZ)Z
 
     move-result v6
 
     if-eqz v6, :cond_4
 
-    .line 774
+    .line 777
     invoke-virtual {p0, v8}, Landroid/inputmethodservice/InputMethodService;->showWindow(Z)V
 
-    .line 775
+    .line 778
     if-eqz v0, :cond_1
 
-    .line 776
+    .line 779
     iput-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mCurCompletions:[Landroid/view/inputmethod/CompletionInfo;
 
-    .line 777
+    .line 780
     invoke-virtual {p0, v0}, Landroid/inputmethodservice/InputMethodService;->onDisplayCompletions([Landroid/view/inputmethod/CompletionInfo;)V
 
-    .line 791
+    .line 794
     :cond_1
     :goto_0
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->onEvaluateInputViewShown()Z
 
     move-result v2
 
-    .line 792
+    .line 795
     .local v2, showing:Z
     iget-object v6, p0, Landroid/inputmethodservice/InputMethodService;->mImm:Landroid/view/inputmethod/InputMethodManager;
 
@@ -2283,29 +2294,29 @@
 
     invoke-virtual {v6, v7, v5, v8}, Landroid/view/inputmethod/InputMethodManager;->setImeWindowStatus(Landroid/os/IBinder;II)V
 
-    .line 795
+    .line 798
     .end local v2           #showing:Z
     :cond_3
     return-void
 
-    .line 780
+    .line 783
     :cond_4
     invoke-direct {p0}, Landroid/inputmethodservice/InputMethodService;->doHideWindow()V
 
     goto :goto_0
 
-    .line 782
+    .line 785
     :cond_5
     iget v6, p0, Landroid/inputmethodservice/InputMethodService;->mCandidatesVisibility:I
 
     if-nez v6, :cond_6
 
-    .line 785
+    .line 788
     invoke-virtual {p0, v5}, Landroid/inputmethodservice/InputMethodService;->showWindow(Z)V
 
     goto :goto_0
 
-    .line 788
+    .line 791
     :cond_6
     invoke-direct {p0}, Landroid/inputmethodservice/InputMethodService;->doHideWindow()V
 
@@ -2321,7 +2332,7 @@
     .prologue
     const/4 v2, -0x1
 
-    .line 948
+    .line 951
     iget-object v3, p0, Landroid/inputmethodservice/InputMethodService;->mWindow:Landroid/inputmethodservice/SoftInputWindow;
 
     invoke-virtual {v3}, Landroid/inputmethodservice/SoftInputWindow;->getWindow()Landroid/view/Window;
@@ -2334,13 +2345,13 @@
 
     iget v0, v3, Landroid/view/ViewGroup$LayoutParams;->height:I
 
-    .line 949
+    .line 952
     .local v0, currentHeight:I
     if-eqz p2, :cond_1
 
     move v1, v2
 
-    .line 950
+    .line 953
     .local v1, newHeight:I
     :goto_0
     iget-boolean v3, p0, Landroid/inputmethodservice/InputMethodService;->mIsInputViewShown:Z
@@ -2349,7 +2360,7 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 951
+    .line 954
     const-string v3, "InputMethodService"
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -2382,7 +2393,7 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 954
+    .line 957
     :cond_0
     iget-object v3, p0, Landroid/inputmethodservice/InputMethodService;->mWindow:Landroid/inputmethodservice/SoftInputWindow;
 
@@ -2392,10 +2403,10 @@
 
     invoke-virtual {v3, v2, v1}, Landroid/view/Window;->setLayout(II)V
 
-    .line 955
+    .line 958
     return-void
 
-    .line 949
+    .line 952
     .end local v1           #newHeight:I
     :cond_1
     const/4 v1, -0x2
@@ -2437,7 +2448,7 @@
     invoke-super {p0}, Landroid/inputmethodservice/AbstractInputMethodService;->onCreate()V
 
     .line 662
-    const-string v0, "input_method"
+    const-string/jumbo v0, "input_method"
 
     invoke-virtual {p0, v0}, Landroid/inputmethodservice/InputMethodService;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -2510,7 +2521,7 @@
     .locals 1
 
     .prologue
-    .line 1263
+    .line 1266
     const/4 v0, 0x0
 
     return-object v0
@@ -2520,7 +2531,7 @@
     .locals 3
 
     .prologue
-    .line 1248
+    .line 1251
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mInflater:Landroid/view/LayoutInflater;
 
     const v1, 0x109004b
@@ -2538,7 +2549,7 @@
     .locals 1
 
     .prologue
-    .line 803
+    .line 806
     new-instance v0, Landroid/inputmethodservice/InputMethodService$InputMethodImpl;
 
     invoke-direct {v0, p0}, Landroid/inputmethodservice/InputMethodService$InputMethodImpl;-><init>(Landroid/inputmethodservice/InputMethodService;)V
@@ -2550,7 +2561,7 @@
     .locals 1
 
     .prologue
-    .line 812
+    .line 815
     new-instance v0, Landroid/inputmethodservice/InputMethodService$InputMethodSessionImpl;
 
     invoke-direct {v0, p0}, Landroid/inputmethodservice/InputMethodService$InputMethodSessionImpl;-><init>(Landroid/inputmethodservice/InputMethodService;)V
@@ -2562,7 +2573,7 @@
     .locals 1
 
     .prologue
-    .line 1278
+    .line 1281
     const/4 v0, 0x0
 
     return-object v0
@@ -2573,7 +2584,7 @@
     .parameter "newSubtype"
 
     .prologue
-    .line 2372
+    .line 2375
     return-void
 .end method
 
@@ -2581,10 +2592,10 @@
     .locals 2
 
     .prologue
-    .line 727
+    .line 730
     invoke-super {p0}, Landroid/inputmethodservice/AbstractInputMethodService;->onDestroy()V
 
-    .line 728
+    .line 731
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mRootView:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
@@ -2595,15 +2606,15 @@
 
     invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->removeOnComputeInternalInsetsListener(Landroid/view/ViewTreeObserver$OnComputeInternalInsetsListener;)V
 
-    .line 730
+    .line 733
     invoke-direct {p0}, Landroid/inputmethodservice/InputMethodService;->finishViews()V
 
-    .line 731
+    .line 734
     iget-boolean v0, p0, Landroid/inputmethodservice/InputMethodService;->mWindowAdded:Z
 
     if-eqz v0, :cond_0
 
-    .line 735
+    .line 738
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mWindow:Landroid/inputmethodservice/SoftInputWindow;
 
     invoke-virtual {v0}, Landroid/inputmethodservice/SoftInputWindow;->getWindow()Landroid/view/Window;
@@ -2614,12 +2625,12 @@
 
     invoke-virtual {v0, v1}, Landroid/view/Window;->setWindowAnimations(I)V
 
-    .line 736
+    .line 739
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mWindow:Landroid/inputmethodservice/SoftInputWindow;
 
     invoke-virtual {v0}, Landroid/inputmethodservice/SoftInputWindow;->dismiss()V
 
-    .line 738
+    .line 741
     :cond_0
     return-void
 .end method
@@ -2629,7 +2640,7 @@
     .parameter "completions"
 
     .prologue
-    .line 1639
+    .line 1642
     return-void
 .end method
 
@@ -2639,7 +2650,7 @@
     .prologue
     const/4 v1, 0x0
 
-    .line 975
+    .line 978
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
@@ -2648,7 +2659,7 @@
 
     move-result-object v0
 
-    .line 976
+    .line 979
     .local v0, config:Landroid/content/res/Configuration;
     iget v2, v0, Landroid/content/res/Configuration;->orientation:I
 
@@ -2656,12 +2667,12 @@
 
     if-eq v2, v3, :cond_1
 
-    .line 983
+    .line 986
     :cond_0
     :goto_0
     return v1
 
-    .line 979
+    .line 982
     :cond_1
     iget-object v2, p0, Landroid/inputmethodservice/InputMethodService;->mInputEditorInfo:Landroid/view/inputmethod/EditorInfo;
 
@@ -2677,7 +2688,7 @@
 
     if-nez v2, :cond_0
 
-    .line 983
+    .line 986
     :cond_2
     const/4 v1, 0x1
 
@@ -2690,7 +2701,7 @@
     .prologue
     const/4 v1, 0x1
 
-    .line 1124
+    .line 1127
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
@@ -2699,7 +2710,7 @@
 
     move-result-object v0
 
-    .line 1125
+    .line 1128
     .local v0, config:Landroid/content/res/Configuration;
     iget v2, v0, Landroid/content/res/Configuration;->keyboard:I
 
@@ -2726,19 +2737,19 @@
     .parameter "id"
 
     .prologue
-    .line 2173
+    .line 2176
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->getCurrentInputConnection()Landroid/view/inputmethod/InputConnection;
 
     move-result-object v0
 
-    .line 2174
+    .line 2177
     .local v0, ic:Landroid/view/inputmethod/InputConnection;
     if-eqz v0, :cond_0
 
-    .line 2175
+    .line 2178
     invoke-interface {v0, p1}, Landroid/view/inputmethod/InputConnection;->performContextMenuAction(I)Z
 
-    .line 2177
+    .line 2180
     :cond_0
     const/4 v1, 0x1
 
@@ -2751,19 +2762,19 @@
     .parameter "dy"
 
     .prologue
-    .line 2156
+    .line 2159
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mExtractEditText:Landroid/inputmethodservice/ExtractEditText;
 
     if-eqz v0, :cond_0
 
     if-nez p2, :cond_1
 
-    .line 2162
+    .line 2165
     :cond_0
     :goto_0
     return-void
 
-    .line 2159
+    .line 2162
     :cond_1
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mExtractEditText:Landroid/inputmethodservice/ExtractEditText;
 
@@ -2773,7 +2784,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 2160
+    .line 2163
     const/4 v0, 0x0
 
     invoke-virtual {p0, v0}, Landroid/inputmethodservice/InputMethodService;->setCandidatesViewShown(Z)V
@@ -2787,26 +2798,26 @@
     .parameter "end"
 
     .prologue
-    .line 2095
+    .line 2098
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->getCurrentInputConnection()Landroid/view/inputmethod/InputConnection;
 
     move-result-object v0
 
-    .line 2096
+    .line 2099
     .local v0, conn:Landroid/view/inputmethod/InputConnection;
     if-eqz v0, :cond_0
 
-    .line 2097
+    .line 2100
     invoke-interface {v0, p1, p1}, Landroid/view/inputmethod/InputConnection;->setSelection(II)Z
 
-    .line 2098
+    .line 2101
     const/4 v1, 0x0
 
     sub-int v2, p2, p1
 
     invoke-interface {v0, v1, v2}, Landroid/view/inputmethod/InputConnection;->deleteSurroundingText(II)Z
 
-    .line 2100
+    .line 2103
     :cond_0
     return-void
 .end method
@@ -2818,24 +2829,24 @@
     .parameter "text"
 
     .prologue
-    .line 2106
+    .line 2109
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->getCurrentInputConnection()Landroid/view/inputmethod/InputConnection;
 
     move-result-object v0
 
-    .line 2107
+    .line 2110
     .local v0, conn:Landroid/view/inputmethod/InputConnection;
     if-eqz v0, :cond_0
 
-    .line 2108
+    .line 2111
     invoke-interface {v0, p1, p2}, Landroid/view/inputmethod/InputConnection;->setComposingRegion(II)Z
 
-    .line 2109
+    .line 2112
     const/4 v1, 0x1
 
     invoke-interface {v0, p3, v1}, Landroid/view/inputmethod/InputConnection;->commitText(Ljava/lang/CharSequence;I)Z
 
-    .line 2111
+    .line 2114
     :cond_0
     return-void
 .end method
@@ -2846,19 +2857,19 @@
     .parameter "end"
 
     .prologue
-    .line 2085
+    .line 2088
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->getCurrentInputConnection()Landroid/view/inputmethod/InputConnection;
 
     move-result-object v0
 
-    .line 2086
+    .line 2089
     .local v0, conn:Landroid/view/inputmethod/InputConnection;
     if-eqz v0, :cond_0
 
-    .line 2087
+    .line 2090
     invoke-interface {v0, p1, p2}, Landroid/view/inputmethod/InputConnection;->setSelection(II)Z
 
-    .line 2089
+    .line 2092
     :cond_0
     return-void
 .end method
@@ -2873,34 +2884,34 @@
     .prologue
     const/4 v5, 0x1
 
-    .line 2117
+    .line 2120
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->getCurrentInputConnection()Landroid/view/inputmethod/InputConnection;
 
     move-result-object v0
 
-    .line 2118
+    .line 2121
     .local v0, conn:Landroid/view/inputmethod/InputConnection;
     if-eqz v0, :cond_0
 
-    .line 2119
+    .line 2122
     invoke-interface {v0, p2, p3}, Landroid/view/inputmethod/InputConnection;->setSelection(II)Z
 
     move-result v2
 
     if-nez v2, :cond_1
 
-    .line 2127
+    .line 2130
     :cond_0
     :goto_0
     return-void
 
-    .line 2120
+    .line 2123
     :cond_1
     invoke-interface {v0, v5}, Landroid/view/inputmethod/InputConnection;->getSelectedText(I)Ljava/lang/CharSequence;
 
     move-result-object v1
 
-    .line 2121
+    .line 2124
     .local v1, text:Ljava/lang/CharSequence;
     instance-of v2, v1, Landroid/text/Spannable;
 
@@ -2908,7 +2919,7 @@
 
     move-object v2, v1
 
-    .line 2122
+    .line 2125
     check-cast v2, Landroid/text/Spannable;
 
     const/4 v3, 0x0
@@ -2919,10 +2930,10 @@
 
     invoke-interface {v2, p1, v3, v4, p4}, Landroid/text/Spannable;->setSpan(Ljava/lang/Object;III)V
 
-    .line 2123
+    .line 2126
     invoke-interface {v0, p2, p3}, Landroid/view/inputmethod/InputConnection;->setComposingRegion(II)Z
 
-    .line 2124
+    .line 2127
     invoke-interface {v0, v1, v5}, Landroid/view/inputmethod/InputConnection;->commitText(Ljava/lang/CharSequence;I)Z
 
     goto :goto_0
@@ -2932,17 +2943,17 @@
     .locals 1
 
     .prologue
-    .line 2137
+    .line 2140
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mExtractEditText:Landroid/inputmethodservice/ExtractEditText;
 
     if-nez v0, :cond_1
 
-    .line 2143
+    .line 2146
     :cond_0
     :goto_0
     return-void
 
-    .line 2140
+    .line 2143
     :cond_1
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mExtractEditText:Landroid/inputmethodservice/ExtractEditText;
 
@@ -2952,7 +2963,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 2141
+    .line 2144
     const/4 v0, 0x0
 
     invoke-virtual {p0, v0}, Landroid/inputmethodservice/InputMethodService;->setCandidatesViewShown(Z)V
@@ -2965,17 +2976,17 @@
     .parameter "ei"
 
     .prologue
-    .line 2284
+    .line 2287
     iget v0, p1, Landroid/view/inputmethod/EditorInfo;->inputType:I
 
     if-nez v0, :cond_0
 
-    .line 2285
+    .line 2288
     const/4 v0, 0x2
 
     invoke-virtual {p0, v0}, Landroid/inputmethodservice/InputMethodService;->requestHideSelf(I)V
 
-    .line 2287
+    .line 2290
     :cond_0
     return-void
 .end method
@@ -2985,22 +2996,22 @@
     .parameter "finishingInput"
 
     .prologue
-    .line 1355
+    .line 1358
     if-nez p1, :cond_0
 
-    .line 1356
+    .line 1359
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->getCurrentInputConnection()Landroid/view/inputmethod/InputConnection;
 
     move-result-object v0
 
-    .line 1357
+    .line 1360
     .local v0, ic:Landroid/view/inputmethod/InputConnection;
     if-eqz v0, :cond_0
 
-    .line 1358
+    .line 1361
     invoke-interface {v0}, Landroid/view/inputmethod/InputConnection;->finishComposingText()Z
 
-    .line 1361
+    .line 1364
     .end local v0           #ic:Landroid/view/inputmethod/InputConnection;
     :cond_0
     return-void
@@ -3010,19 +3021,19 @@
     .locals 1
 
     .prologue
-    .line 1622
+    .line 1625
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->getCurrentInputConnection()Landroid/view/inputmethod/InputConnection;
 
     move-result-object v0
 
-    .line 1623
+    .line 1626
     .local v0, ic:Landroid/view/inputmethod/InputConnection;
     if-eqz v0, :cond_0
 
-    .line 1624
+    .line 1627
     invoke-interface {v0}, Landroid/view/inputmethod/InputConnection;->finishComposingText()Z
 
-    .line 1626
+    .line 1629
     :cond_0
     return-void
 .end method
@@ -3032,22 +3043,22 @@
     .parameter "finishingInput"
 
     .prologue
-    .line 1310
+    .line 1313
     if-nez p1, :cond_0
 
-    .line 1311
+    .line 1314
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->getCurrentInputConnection()Landroid/view/inputmethod/InputConnection;
 
     move-result-object v0
 
-    .line 1312
+    .line 1315
     .local v0, ic:Landroid/view/inputmethod/InputConnection;
     if-eqz v0, :cond_0
 
-    .line 1313
+    .line 1316
     invoke-interface {v0}, Landroid/view/inputmethod/InputConnection;->finishComposingText()Z
 
-    .line 1316
+    .line 1319
     .end local v0           #ic:Landroid/view/inputmethod/InputConnection;
     :cond_0
     return-void
@@ -3058,7 +3069,7 @@
     .parameter "event"
 
     .prologue
-    .line 1879
+    .line 1882
     const/4 v0, 0x0
 
     return v0
@@ -3080,7 +3091,7 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 1773
+    .line 1776
     invoke-virtual {p2}, Landroid/view/KeyEvent;->getKeyCode()I
 
     move-result v1
@@ -3089,20 +3100,20 @@
 
     if-ne v1, v2, :cond_1
 
-    .line 1774
+    .line 1777
     invoke-direct {p0, v0}, Landroid/inputmethodservice/InputMethodService;->handleBack(Z)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 1775
+    .line 1778
     invoke-virtual {p2}, Landroid/view/KeyEvent;->startTracking()V
 
-    .line 1776
+    .line 1779
     const/4 v0, 0x1
 
-    .line 1780
+    .line 1783
     :cond_0
     :goto_0
     return v0
@@ -3123,7 +3134,7 @@
     .parameter "event"
 
     .prologue
-    .line 1789
+    .line 1792
     const/4 v0, 0x0
 
     return v0
@@ -3140,7 +3151,7 @@
 
     const/4 v3, 0x1
 
-    .line 1806
+    .line 1809
     sget-boolean v4, Lcom/lge/config/ConfigBuildFlags;->CAPP_OSP:Z
 
     if-eqz v4, :cond_2
@@ -3149,24 +3160,24 @@
 
     if-eqz p3, :cond_2
 
-    .line 1808
+    .line 1811
     invoke-virtual {p3}, Landroid/view/KeyEvent;->getCharacters()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 1809
+    .line 1812
     .local v2, text:Ljava/lang/String;
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->getCurrentInputConnection()Landroid/view/inputmethod/InputConnection;
 
     move-result-object v1
 
-    .line 1810
+    .line 1813
     .local v1, ic:Landroid/view/inputmethod/InputConnection;
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->getCurrentInputEditorInfo()Landroid/view/inputmethod/EditorInfo;
 
     move-result-object v0
 
-    .line 1812
+    .line 1815
     .local v0, ei:Landroid/view/inputmethod/EditorInfo;
     if-eqz v2, :cond_2
 
@@ -3180,15 +3191,15 @@
 
     if-eqz v0, :cond_2
 
-    .line 1813
+    .line 1816
     invoke-interface {v1}, Landroid/view/inputmethod/InputConnection;->finishComposingText()Z
 
-    .line 1814
+    .line 1817
     const/4 v4, 0x0
 
     invoke-virtual {p0, v4}, Landroid/inputmethodservice/InputMethodService;->requestHideSelf(I)V
 
-    .line 1816
+    .line 1819
     const-string v4, "\t"
 
     invoke-virtual {v2, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -3197,24 +3208,24 @@
 
     if-eqz v4, :cond_1
 
-    .line 1817
+    .line 1820
     iget v4, v0, Landroid/view/inputmethod/EditorInfo;->imeOptions:I
 
     and-int/lit16 v4, v4, 0xff
 
     if-ne v4, v5, :cond_0
 
-    .line 1819
+    .line 1822
     invoke-interface {v1, v5}, Landroid/view/inputmethod/InputConnection;->performEditorAction(I)Z
 
-    .line 1832
+    .line 1835
     .end local v0           #ei:Landroid/view/inputmethod/EditorInfo;
     .end local v1           #ic:Landroid/view/inputmethod/InputConnection;
     .end local v2           #text:Ljava/lang/String;
     :goto_0
     return v3
 
-    .line 1821
+    .line 1824
     .restart local v0       #ei:Landroid/view/inputmethod/EditorInfo;
     .restart local v1       #ic:Landroid/view/inputmethod/InputConnection;
     .restart local v2       #text:Ljava/lang/String;
@@ -3223,13 +3234,13 @@
 
     goto :goto_0
 
-    .line 1824
+    .line 1827
     :cond_1
     invoke-interface {v1, v2, v3}, Landroid/view/inputmethod/InputConnection;->commitText(Ljava/lang/CharSequence;I)Z
 
     goto :goto_0
 
-    .line 1832
+    .line 1835
     .end local v0           #ei:Landroid/view/inputmethod/EditorInfo;
     .end local v1           #ic:Landroid/view/inputmethod/InputConnection;
     .end local v2           #text:Ljava/lang/String;
@@ -3247,7 +3258,7 @@
     .parameter "event"
 
     .prologue
-    .line 1848
+    .line 1851
     invoke-virtual {p2}, Landroid/view/KeyEvent;->getKeyCode()I
 
     move-result v0
@@ -3268,14 +3279,14 @@
 
     if-nez v0, :cond_0
 
-    .line 1850
+    .line 1853
     const/4 v0, 0x1
 
     invoke-direct {p0, v0}, Landroid/inputmethodservice/InputMethodService;->handleBack(Z)Z
 
     move-result v0
 
-    .line 1853
+    .line 1856
     :goto_0
     return v0
 
@@ -3299,25 +3310,25 @@
 
     const/4 v1, 0x0
 
-    .line 1379
+    .line 1382
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->onEvaluateInputViewShown()Z
 
     move-result v3
 
     if-nez v3, :cond_1
 
-    .line 1402
+    .line 1405
     :cond_0
     :goto_0
     return v1
 
-    .line 1382
+    .line 1385
     :cond_1
     and-int/lit8 v3, p1, 0x1
 
     if-nez v3, :cond_3
 
-    .line 1383
+    .line 1386
     if-nez p2, :cond_2
 
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->onEvaluateFullscreenMode()Z
@@ -3326,7 +3337,7 @@
 
     if-nez v3, :cond_0
 
-    .line 1391
+    .line 1394
     :cond_2
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->getResources()Landroid/content/res/Resources;
 
@@ -3336,26 +3347,26 @@
 
     move-result-object v0
 
-    .line 1392
+    .line 1395
     .local v0, config:Landroid/content/res/Configuration;
     iget v3, v0, Landroid/content/res/Configuration;->keyboard:I
 
     if-ne v3, v2, :cond_0
 
-    .line 1399
+    .line 1402
     .end local v0           #config:Landroid/content/res/Configuration;
     :cond_3
     and-int/lit8 v1, p1, 0x2
 
     if-eqz v1, :cond_4
 
-    .line 1400
+    .line 1403
     iput-boolean v2, p0, Landroid/inputmethodservice/InputMethodService;->mShowInputForced:Z
 
     :cond_4
     move v1, v2
 
-    .line 1402
+    .line 1405
     goto :goto_0
 .end method
 
@@ -3365,7 +3376,7 @@
     .parameter "restarting"
 
     .prologue
-    .line 1339
+    .line 1342
     return-void
 .end method
 
@@ -3375,7 +3386,7 @@
     .parameter "restarting"
 
     .prologue
-    .line 1564
+    .line 1567
     return-void
 .end method
 
@@ -3385,7 +3396,7 @@
     .parameter "restarting"
 
     .prologue
-    .line 1294
+    .line 1297
     return-void
 .end method
 
@@ -3394,7 +3405,7 @@
     .parameter "event"
 
     .prologue
-    .line 1866
+    .line 1869
     const/4 v0, 0x0
 
     return v0
@@ -3404,7 +3415,7 @@
     .locals 0
 
     .prologue
-    .line 1548
+    .line 1551
     return-void
 .end method
 
@@ -3413,7 +3424,7 @@
     .parameter "newCursor"
 
     .prologue
-    .line 1705
+    .line 1708
     return-void
 .end method
 
@@ -3423,29 +3434,29 @@
     .parameter "text"
 
     .prologue
-    .line 1648
+    .line 1651
     iget v0, p0, Landroid/inputmethodservice/InputMethodService;->mExtractedToken:I
 
     if-eq v0, p1, :cond_1
 
-    .line 1657
+    .line 1660
     :cond_0
     :goto_0
     return-void
 
-    .line 1651
+    .line 1654
     :cond_1
     if-eqz p2, :cond_0
 
-    .line 1652
+    .line 1655
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mExtractEditText:Landroid/inputmethodservice/ExtractEditText;
 
     if-eqz v0, :cond_0
 
-    .line 1653
+    .line 1656
     iput-object p2, p0, Landroid/inputmethodservice/InputMethodService;->mExtractedText:Landroid/view/inputmethod/ExtractedText;
 
-    .line 1654
+    .line 1657
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mExtractEditText:Landroid/inputmethodservice/ExtractEditText;
 
     invoke-virtual {v0, p2}, Landroid/inputmethodservice/ExtractEditText;->setExtractedText(Landroid/view/inputmethod/ExtractedText;)V
@@ -3462,25 +3473,25 @@
 
     const/4 v1, 0x0
 
-    .line 2248
+    .line 2251
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->isExtractViewShown()Z
 
     move-result v2
 
     if-nez v2, :cond_1
 
-    .line 2275
+    .line 2278
     :cond_0
     :goto_0
     return-void
 
-    .line 2252
+    .line 2255
     :cond_1
     iget-object v2, p0, Landroid/inputmethodservice/InputMethodService;->mExtractAccessories:Landroid/view/ViewGroup;
 
     if-eqz v2, :cond_0
 
-    .line 2255
+    .line 2258
     iget-object v2, p1, Landroid/view/inputmethod/EditorInfo;->actionLabel:Ljava/lang/CharSequence;
 
     if-nez v2, :cond_2
@@ -3503,35 +3514,35 @@
 
     if-eqz v2, :cond_3
 
-    .line 2259
+    .line 2262
     .local v0, hasAction:Z
     :cond_2
     :goto_1
     if-eqz v0, :cond_5
 
-    .line 2260
+    .line 2263
     iget-object v2, p0, Landroid/inputmethodservice/InputMethodService;->mExtractAccessories:Landroid/view/ViewGroup;
 
     invoke-virtual {v2, v1}, Landroid/view/ViewGroup;->setVisibility(I)V
 
-    .line 2261
+    .line 2264
     iget-object v1, p0, Landroid/inputmethodservice/InputMethodService;->mExtractAction:Landroid/widget/Button;
 
     if-eqz v1, :cond_0
 
-    .line 2262
+    .line 2265
     iget-object v1, p1, Landroid/view/inputmethod/EditorInfo;->actionLabel:Ljava/lang/CharSequence;
 
     if-eqz v1, :cond_4
 
-    .line 2263
+    .line 2266
     iget-object v1, p0, Landroid/inputmethodservice/InputMethodService;->mExtractAction:Landroid/widget/Button;
 
     iget-object v2, p1, Landroid/view/inputmethod/EditorInfo;->actionLabel:Ljava/lang/CharSequence;
 
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
-    .line 2267
+    .line 2270
     :goto_2
     iget-object v1, p0, Landroid/inputmethodservice/InputMethodService;->mExtractAction:Landroid/widget/Button;
 
@@ -3545,10 +3556,10 @@
     :cond_3
     move v0, v1
 
-    .line 2255
+    .line 2258
     goto :goto_1
 
-    .line 2265
+    .line 2268
     .restart local v0       #hasAction:Z
     :cond_4
     iget-object v1, p0, Landroid/inputmethodservice/InputMethodService;->mExtractAction:Landroid/widget/Button;
@@ -3563,7 +3574,7 @@
 
     goto :goto_2
 
-    .line 2270
+    .line 2273
     :cond_5
     iget-object v1, p0, Landroid/inputmethodservice/InputMethodService;->mExtractAccessories:Landroid/view/ViewGroup;
 
@@ -3571,12 +3582,12 @@
 
     invoke-virtual {v1, v2}, Landroid/view/ViewGroup;->setVisibility(I)V
 
-    .line 2271
+    .line 2274
     iget-object v1, p0, Landroid/inputmethodservice/InputMethodService;->mExtractAction:Landroid/widget/Button;
 
     if-eqz v1, :cond_0
 
-    .line 2272
+    .line 2275
     iget-object v1, p0, Landroid/inputmethodservice/InputMethodService;->mExtractAction:Landroid/widget/Button;
 
     const/4 v2, 0x0
@@ -3591,7 +3602,7 @@
     .parameter "ei"
 
     .prologue
-    .line 2222
+    .line 2225
     iget v0, p1, Landroid/view/inputmethod/EditorInfo;->inputType:I
 
     if-eqz v0, :cond_0
@@ -3604,17 +3615,17 @@
 
     if-eqz v0, :cond_1
 
-    .line 2225
+    .line 2228
     :cond_0
     const/4 v0, 0x0
 
     invoke-virtual {p0, v0}, Landroid/inputmethodservice/InputMethodService;->setExtractViewShown(Z)V
 
-    .line 2230
+    .line 2233
     :goto_0
     return-void
 
-    .line 2229
+    .line 2232
     :cond_1
     const/4 v0, 0x1
 
@@ -3633,10 +3644,10 @@
     .parameter "candidatesEnd"
 
     .prologue
-    .line 1671
+    .line 1674
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mExtractEditText:Landroid/inputmethodservice/ExtractEditText;
 
-    .line 1672
+    .line 1675
     .local v0, eet:Landroid/inputmethodservice/ExtractEditText;
     if-eqz v0, :cond_2
 
@@ -3650,22 +3661,22 @@
 
     if-eqz v3, :cond_2
 
-    .line 1673
+    .line 1676
     iget-object v3, p0, Landroid/inputmethodservice/InputMethodService;->mExtractedText:Landroid/view/inputmethod/ExtractedText;
 
     iget v2, v3, Landroid/view/inputmethod/ExtractedText;->startOffset:I
 
-    .line 1674
+    .line 1677
     .local v2, off:I
     invoke-virtual {v0}, Landroid/inputmethodservice/ExtractEditText;->startInternalChanges()V
 
-    .line 1675
+    .line 1678
     sub-int/2addr p3, v2
 
-    .line 1676
+    .line 1679
     sub-int/2addr p4, v2
 
-    .line 1677
+    .line 1680
     invoke-virtual {v0}, Landroid/inputmethodservice/ExtractEditText;->getText()Landroid/text/Editable;
 
     move-result-object v3
@@ -3674,34 +3685,34 @@
 
     move-result v1
 
-    .line 1678
+    .line 1681
     .local v1, len:I
     if-gez p3, :cond_3
 
     const/4 p3, 0x0
 
-    .line 1680
+    .line 1683
     :cond_0
     :goto_0
     if-gez p4, :cond_4
 
     const/4 p4, 0x0
 
-    .line 1682
+    .line 1685
     :cond_1
     :goto_1
     invoke-virtual {v0, p3, p4}, Landroid/inputmethodservice/ExtractEditText;->setSelection(II)V
 
-    .line 1683
+    .line 1686
     invoke-virtual {v0}, Landroid/inputmethodservice/ExtractEditText;->finishInternalChanges()V
 
-    .line 1685
+    .line 1688
     .end local v1           #len:I
     .end local v2           #off:I
     :cond_2
     return-void
 
-    .line 1679
+    .line 1682
     .restart local v1       #len:I
     .restart local v2       #off:I
     :cond_3
@@ -3711,7 +3722,7 @@
 
     goto :goto_0
 
-    .line 1681
+    .line 1684
     :cond_4
     if-le p4, v1, :cond_1
 
@@ -3725,7 +3736,7 @@
     .parameter "focusChanged"
 
     .prologue
-    .line 1696
+    .line 1699
     return-void
 .end method
 
@@ -3733,7 +3744,7 @@
     .locals 0
 
     .prologue
-    .line 1527
+    .line 1530
     return-void
 .end method
 
@@ -3741,7 +3752,7 @@
     .locals 0
 
     .prologue
-    .line 1519
+    .line 1522
     return-void
 .end method
 
@@ -3751,51 +3762,51 @@
     .parameter "count"
 
     .prologue
-    .line 1901
+    .line 1904
     const/4 v0, 0x0
 
     .local v0, dx:I
     const/4 v1, 0x0
 
-    .line 1902
+    .line 1905
     .local v1, dy:I
     packed-switch p1, :pswitch_data_0
 
-    .line 1916
+    .line 1919
     :goto_0
     invoke-virtual {p0, v0, v1}, Landroid/inputmethodservice/InputMethodService;->onExtractedCursorMovement(II)V
 
-    .line 1917
+    .line 1920
     return-void
 
-    .line 1904
+    .line 1907
     :pswitch_0
     neg-int v0, p2
-
-    .line 1905
-    goto :goto_0
-
-    .line 1907
-    :pswitch_1
-    move v0, p2
 
     .line 1908
     goto :goto_0
 
     .line 1910
-    :pswitch_2
-    neg-int v1, p2
+    :pswitch_1
+    move v0, p2
 
     .line 1911
     goto :goto_0
 
     .line 1913
+    :pswitch_2
+    neg-int v1, p2
+
+    .line 1914
+    goto :goto_0
+
+    .line 1916
     :pswitch_3
     move v1, p2
 
     goto :goto_0
 
-    .line 1902
+    .line 1905
     nop
 
     :pswitch_data_0
@@ -3812,14 +3823,14 @@
     .parameter "flags"
 
     .prologue
-    .line 1716
+    .line 1719
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mImm:Landroid/view/inputmethod/InputMethodManager;
 
     iget-object v1, p0, Landroid/inputmethodservice/InputMethodService;->mToken:Landroid/os/IBinder;
 
     invoke-virtual {v0, v1, p1}, Landroid/view/inputmethod/InputMethodManager;->hideSoftInputFromInputMethod(Landroid/os/IBinder;I)V
 
-    .line 1717
+    .line 1720
     return-void
 .end method
 
@@ -3830,12 +3841,12 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 2024
+    .line 2027
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->getCurrentInputEditorInfo()Landroid/view/inputmethod/EditorInfo;
 
     move-result-object v0
 
-    .line 2025
+    .line 2028
     .local v0, ei:Landroid/view/inputmethod/EditorInfo;
     if-eqz v0, :cond_2
 
@@ -3856,23 +3867,23 @@
 
     if-eq v3, v2, :cond_2
 
-    .line 2033
+    .line 2036
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->getCurrentInputConnection()Landroid/view/inputmethod/InputConnection;
 
     move-result-object v1
 
-    .line 2034
+    .line 2037
     .local v1, ic:Landroid/view/inputmethod/InputConnection;
     if-eqz v1, :cond_1
 
-    .line 2035
+    .line 2038
     iget v3, v0, Landroid/view/inputmethod/EditorInfo;->imeOptions:I
 
     and-int/lit16 v3, v3, 0xff
 
     invoke-interface {v1, v3}, Landroid/view/inputmethod/InputConnection;->performEditorAction(I)Z
 
-    .line 2040
+    .line 2043
     .end local v1           #ic:Landroid/view/inputmethod/InputConnection;
     :cond_1
     :goto_0
@@ -3889,26 +3900,26 @@
     .parameter "keyEventCode"
 
     .prologue
-    .line 1996
+    .line 1999
     invoke-virtual/range {p0 .. p0}, Landroid/inputmethodservice/InputMethodService;->getCurrentInputConnection()Landroid/view/inputmethod/InputConnection;
 
     move-result-object v15
 
-    .line 1997
+    .line 2000
     .local v15, ic:Landroid/view/inputmethod/InputConnection;
     if-nez v15, :cond_0
 
-    .line 2005
+    .line 2008
     :goto_0
     return-void
 
-    .line 1998
+    .line 2001
     :cond_0
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v1
 
-    .line 1999
+    .line 2002
     .local v1, eventTime:J
     new-instance v0, Landroid/view/KeyEvent;
 
@@ -3932,7 +3943,7 @@
 
     invoke-interface {v15, v0}, Landroid/view/inputmethod/InputConnection;->sendKeyEvent(Landroid/view/KeyEvent;)Z
 
-    .line 2002
+    .line 2005
     new-instance v3, Landroid/view/KeyEvent;
 
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
@@ -3969,10 +3980,10 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 2058
+    .line 2061
     packed-switch p1, :pswitch_data_0
 
-    .line 2066
+    .line 2069
     const/16 v1, 0x30
 
     if-lt p1, v1, :cond_1
@@ -3981,19 +3992,19 @@
 
     if-gt p1, v1, :cond_1
 
-    .line 2067
+    .line 2070
     add-int/lit8 v1, p1, -0x30
 
     add-int/lit8 v1, v1, 0x7
 
     invoke-virtual {p0, v1}, Landroid/inputmethodservice/InputMethodService;->sendDownUpKeyEvents(I)V
 
-    .line 2076
+    .line 2079
     :cond_0
     :goto_0
     return-void
 
-    .line 2060
+    .line 2063
     :pswitch_0
     invoke-virtual {p0, v2}, Landroid/inputmethodservice/InputMethodService;->sendDefaultEditorAction(Z)Z
 
@@ -4001,24 +4012,24 @@
 
     if-nez v1, :cond_0
 
-    .line 2061
+    .line 2064
     const/16 v1, 0x42
 
     invoke-virtual {p0, v1}, Landroid/inputmethodservice/InputMethodService;->sendDownUpKeyEvents(I)V
 
     goto :goto_0
 
-    .line 2069
+    .line 2072
     :cond_1
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->getCurrentInputConnection()Landroid/view/inputmethod/InputConnection;
 
     move-result-object v0
 
-    .line 2070
+    .line 2073
     .local v0, ic:Landroid/view/inputmethod/InputConnection;
     if-eqz v0, :cond_0
 
-    .line 2071
+    .line 2074
     invoke-static {p1}, Ljava/lang/String;->valueOf(C)Ljava/lang/String;
 
     move-result-object v1
@@ -4027,7 +4038,7 @@
 
     goto :goto_0
 
-    .line 2058
+    .line 2061
     :pswitch_data_0
     .packed-switch 0xa
         :pswitch_0
@@ -4039,10 +4050,10 @@
     .parameter "disposition"
 
     .prologue
-    .line 824
+    .line 827
     iput p1, p0, Landroid/inputmethodservice/InputMethodService;->mBackDisposition:I
 
-    .line 825
+    .line 828
     return-void
 .end method
 
@@ -4051,12 +4062,12 @@
     .parameter "view"
 
     .prologue
-    .line 1221
+    .line 1224
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mCandidatesFrame:Landroid/widget/FrameLayout;
 
     invoke-virtual {v0}, Landroid/widget/FrameLayout;->removeAllViews()V
 
-    .line 1222
+    .line 1225
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mCandidatesFrame:Landroid/widget/FrameLayout;
 
     new-instance v1, Landroid/widget/FrameLayout$LayoutParams;
@@ -4069,7 +4080,7 @@
 
     invoke-virtual {v0, p1, v1}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 1225
+    .line 1228
     return-void
 .end method
 
@@ -4078,10 +4089,10 @@
     .parameter "shown"
 
     .prologue
-    .line 1134
+    .line 1137
     invoke-virtual {p0, p1}, Landroid/inputmethodservice/InputMethodService;->updateCandidatesVisibility(Z)V
 
-    .line 1135
+    .line 1138
     iget-boolean v0, p0, Landroid/inputmethodservice/InputMethodService;->mShowInputRequested:Z
 
     if-nez v0, :cond_0
@@ -4090,20 +4101,20 @@
 
     if-eq v0, p1, :cond_0
 
-    .line 1139
+    .line 1142
     if-eqz p1, :cond_1
 
-    .line 1140
+    .line 1143
     const/4 v0, 0x0
 
     invoke-virtual {p0, v0}, Landroid/inputmethodservice/InputMethodService;->showWindow(Z)V
 
-    .line 1145
+    .line 1148
     :cond_0
     :goto_0
     return-void
 
-    .line 1142
+    .line 1145
     :cond_1
     invoke-direct {p0}, Landroid/inputmethodservice/InputMethodService;->doHideWindow()V
 
@@ -4119,12 +4130,12 @@
 
     const/4 v2, 0x0
 
-    .line 1191
+    .line 1194
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mExtractFrame:Landroid/widget/FrameLayout;
 
     invoke-virtual {v0}, Landroid/widget/FrameLayout;->removeAllViews()V
 
-    .line 1192
+    .line 1195
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mExtractFrame:Landroid/widget/FrameLayout;
 
     new-instance v1, Landroid/widget/FrameLayout$LayoutParams;
@@ -4133,13 +4144,13 @@
 
     invoke-virtual {v0, p1, v1}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 1195
+    .line 1198
     iput-object p1, p0, Landroid/inputmethodservice/InputMethodService;->mExtractView:Landroid/view/View;
 
-    .line 1196
+    .line 1199
     if-eqz p1, :cond_1
 
-    .line 1197
+    .line 1200
     const v0, 0x1020025
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -4150,12 +4161,12 @@
 
     iput-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mExtractEditText:Landroid/inputmethodservice/ExtractEditText;
 
-    .line 1199
+    .line 1202
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mExtractEditText:Landroid/inputmethodservice/ExtractEditText;
 
     invoke-virtual {v0, p0}, Landroid/inputmethodservice/ExtractEditText;->setIME(Landroid/inputmethodservice/InputMethodService;)V
 
-    .line 1200
+    .line 1203
     const v0, 0x10202ac
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -4166,12 +4177,12 @@
 
     iput-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mExtractAction:Landroid/widget/Button;
 
-    .line 1202
+    .line 1205
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mExtractAction:Landroid/widget/Button;
 
     if-eqz v0, :cond_0
 
-    .line 1203
+    .line 1206
     const v0, 0x10202ab
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -4182,24 +4193,24 @@
 
     iput-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mExtractAccessories:Landroid/view/ViewGroup;
 
-    .line 1206
+    .line 1209
     :cond_0
     const/4 v0, 0x0
 
     invoke-virtual {p0, v0}, Landroid/inputmethodservice/InputMethodService;->startExtractingText(Z)V
 
-    .line 1212
+    .line 1215
     :goto_0
     return-void
 
-    .line 1208
+    .line 1211
     :cond_1
     iput-object v2, p0, Landroid/inputmethodservice/InputMethodService;->mExtractEditText:Landroid/inputmethodservice/ExtractEditText;
 
-    .line 1209
+    .line 1212
     iput-object v2, p0, Landroid/inputmethodservice/InputMethodService;->mExtractAccessories:Landroid/view/ViewGroup;
 
-    .line 1210
+    .line 1213
     iput-object v2, p0, Landroid/inputmethodservice/InputMethodService;->mExtractAction:Landroid/widget/Button;
 
     goto :goto_0
@@ -4210,12 +4221,12 @@
     .parameter "shown"
 
     .prologue
-    .line 996
+    .line 999
     iget-boolean v0, p0, Landroid/inputmethodservice/InputMethodService;->mExtractViewHidden:Z
 
     if-ne v0, p1, :cond_0
 
-    .line 997
+    .line 1000
     if-nez p1, :cond_1
 
     const/4 v0, 0x1
@@ -4223,14 +4234,14 @@
     :goto_0
     iput-boolean v0, p0, Landroid/inputmethodservice/InputMethodService;->mExtractViewHidden:Z
 
-    .line 998
+    .line 1001
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->updateExtractFrameVisibility()V
 
-    .line 1000
+    .line 1003
     :cond_0
     return-void
 
-    .line 997
+    .line 1000
     :cond_1
     const/4 v0, 0x0
 
@@ -4242,12 +4253,12 @@
     .parameter "view"
 
     .prologue
-    .line 1234
+    .line 1237
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mInputFrame:Landroid/widget/FrameLayout;
 
     invoke-virtual {v0}, Landroid/widget/FrameLayout;->removeAllViews()V
 
-    .line 1235
+    .line 1238
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mInputFrame:Landroid/widget/FrameLayout;
 
     new-instance v1, Landroid/widget/FrameLayout$LayoutParams;
@@ -4260,10 +4271,10 @@
 
     invoke-virtual {v0, p1, v1}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 1238
+    .line 1241
     iput-object p1, p0, Landroid/inputmethodservice/InputMethodService;->mInputView:Landroid/view/View;
 
-    .line 1239
+    .line 1242
     return-void
 .end method
 
@@ -4299,10 +4310,10 @@
     .parameter "iconResId"
 
     .prologue
-    .line 1170
+    .line 1173
     iput p1, p0, Landroid/inputmethodservice/InputMethodService;->mStatusIcon:I
 
-    .line 1171
+    .line 1174
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mImm:Landroid/view/inputmethod/InputMethodManager;
 
     iget-object v1, p0, Landroid/inputmethodservice/InputMethodService;->mToken:Landroid/os/IBinder;
@@ -4313,7 +4324,7 @@
 
     invoke-virtual {v0, v1, v2, p1}, Landroid/view/inputmethod/InputMethodManager;->showStatusIcon(Landroid/os/IBinder;Ljava/lang/String;I)V
 
-    .line 1172
+    .line 1175
     return-void
 .end method
 
@@ -4326,57 +4337,57 @@
 
     const/4 v1, 0x1
 
-    .line 1413
+    .line 1416
     iget-boolean v0, p0, Landroid/inputmethodservice/InputMethodService;->mInShowWindow:Z
 
     if-eqz v0, :cond_0
 
-    .line 1414
+    .line 1417
     const-string v0, "InputMethodService"
 
     const-string v1, "Re-entrance in to showWindow"
 
     invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1426
+    .line 1429
     :goto_0
     return-void
 
-    .line 1419
+    .line 1422
     :cond_0
     :try_start_0
     iget-boolean v0, p0, Landroid/inputmethodservice/InputMethodService;->mWindowVisible:Z
 
     iput-boolean v0, p0, Landroid/inputmethodservice/InputMethodService;->mWindowWasVisible:Z
 
-    .line 1420
+    .line 1423
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Landroid/inputmethodservice/InputMethodService;->mInShowWindow:Z
 
-    .line 1421
+    .line 1424
     invoke-virtual {p0, p1}, Landroid/inputmethodservice/InputMethodService;->showWindowInner(Z)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 1423
+    .line 1426
     iput-boolean v1, p0, Landroid/inputmethodservice/InputMethodService;->mWindowWasVisible:Z
 
-    .line 1424
+    .line 1427
     iput-boolean v2, p0, Landroid/inputmethodservice/InputMethodService;->mInShowWindow:Z
 
     goto :goto_0
 
-    .line 1423
+    .line 1426
     :catchall_0
     move-exception v0
 
     iput-boolean v1, p0, Landroid/inputmethodservice/InputMethodService;->mWindowWasVisible:Z
 
-    .line 1424
+    .line 1427
     iput-boolean v2, p0, Landroid/inputmethodservice/InputMethodService;->mInShowWindow:Z
 
-    .line 1423
+    .line 1426
     throw v0
 .end method
 
@@ -4389,48 +4400,48 @@
 
     const/4 v6, 0x1
 
-    .line 1429
+    .line 1432
     const/4 v0, 0x0
 
-    .line 1430
+    .line 1433
     .local v0, doShowInput:Z
     iget-boolean v2, p0, Landroid/inputmethodservice/InputMethodService;->mWindowVisible:Z
 
-    .line 1431
+    .line 1434
     .local v2, wasVisible:Z
     iput-boolean v6, p0, Landroid/inputmethodservice/InputMethodService;->mWindowVisible:Z
 
-    .line 1432
+    .line 1435
     iget-boolean v3, p0, Landroid/inputmethodservice/InputMethodService;->mShowInputRequested:Z
 
     if-nez v3, :cond_6
 
-    .line 1433
+    .line 1436
     iget-boolean v3, p0, Landroid/inputmethodservice/InputMethodService;->mInputStarted:Z
 
     if-eqz v3, :cond_0
 
-    .line 1434
+    .line 1437
     if-eqz p1, :cond_0
 
-    .line 1435
+    .line 1438
     const/4 v0, 0x1
 
-    .line 1436
+    .line 1439
     iput-boolean v6, p0, Landroid/inputmethodservice/InputMethodService;->mShowInputRequested:Z
 
-    .line 1444
+    .line 1447
     :cond_0
     :goto_0
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->initialize()V
 
-    .line 1445
+    .line 1448
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->updateFullscreenMode()V
 
-    .line 1446
+    .line 1449
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->updateInputViewShown()V
 
-    .line 1448
+    .line 1451
     iget-boolean v3, p0, Landroid/inputmethodservice/InputMethodService;->mWindowAdded:Z
 
     if-eqz v3, :cond_1
@@ -4439,61 +4450,61 @@
 
     if-nez v3, :cond_2
 
-    .line 1449
+    .line 1452
     :cond_1
     iput-boolean v6, p0, Landroid/inputmethodservice/InputMethodService;->mWindowAdded:Z
 
-    .line 1450
+    .line 1453
     iput-boolean v6, p0, Landroid/inputmethodservice/InputMethodService;->mWindowCreated:Z
 
-    .line 1451
+    .line 1454
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->initialize()V
 
-    .line 1453
+    .line 1456
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->onCreateCandidatesView()Landroid/view/View;
 
     move-result-object v1
 
-    .line 1455
+    .line 1458
     .local v1, v:Landroid/view/View;
     if-eqz v1, :cond_2
 
-    .line 1456
+    .line 1459
     invoke-virtual {p0, v1}, Landroid/inputmethodservice/InputMethodService;->setCandidatesView(Landroid/view/View;)V
 
-    .line 1459
+    .line 1462
     .end local v1           #v:Landroid/view/View;
     :cond_2
     iget-boolean v3, p0, Landroid/inputmethodservice/InputMethodService;->mShowInputRequested:Z
 
     if-eqz v3, :cond_7
 
-    .line 1460
+    .line 1463
     iget-boolean v3, p0, Landroid/inputmethodservice/InputMethodService;->mInputViewStarted:Z
 
     if-nez v3, :cond_3
 
-    .line 1462
+    .line 1465
     iput-boolean v6, p0, Landroid/inputmethodservice/InputMethodService;->mInputViewStarted:Z
 
-    .line 1463
+    .line 1466
     iget-object v3, p0, Landroid/inputmethodservice/InputMethodService;->mInputEditorInfo:Landroid/view/inputmethod/EditorInfo;
 
     invoke-virtual {p0, v3, v4}, Landroid/inputmethodservice/InputMethodService;->onStartInputView(Landroid/view/inputmethod/EditorInfo;Z)V
 
-    .line 1471
+    .line 1474
     :cond_3
     :goto_1
     if-eqz v0, :cond_4
 
-    .line 1472
+    .line 1475
     invoke-virtual {p0, v4}, Landroid/inputmethodservice/InputMethodService;->startExtractingText(Z)V
 
-    .line 1475
+    .line 1478
     :cond_4
     if-nez v2, :cond_5
 
-    .line 1477
+    .line 1480
     iget-object v3, p0, Landroid/inputmethodservice/InputMethodService;->mImm:Landroid/view/inputmethod/InputMethodManager;
 
     iget-object v4, p0, Landroid/inputmethodservice/InputMethodService;->mToken:Landroid/os/IBinder;
@@ -4502,34 +4513,34 @@
 
     invoke-virtual {v3, v4, v6, v5}, Landroid/view/inputmethod/InputMethodManager;->setImeWindowStatus(Landroid/os/IBinder;II)V
 
-    .line 1478
+    .line 1481
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->onWindowShown()V
 
-    .line 1479
+    .line 1482
     iget-object v3, p0, Landroid/inputmethodservice/InputMethodService;->mWindow:Landroid/inputmethodservice/SoftInputWindow;
 
     invoke-virtual {v3}, Landroid/inputmethodservice/SoftInputWindow;->show()V
 
-    .line 1481
+    .line 1484
     :cond_5
     return-void
 
-    .line 1440
+    .line 1443
     :cond_6
     const/4 p1, 0x1
 
     goto :goto_0
 
-    .line 1465
+    .line 1468
     :cond_7
     iget-boolean v3, p0, Landroid/inputmethodservice/InputMethodService;->mCandidatesViewStarted:Z
 
     if-nez v3, :cond_3
 
-    .line 1467
+    .line 1470
     iput-boolean v6, p0, Landroid/inputmethodservice/InputMethodService;->mCandidatesViewStarted:Z
 
-    .line 1468
+    .line 1471
     iget-object v3, p0, Landroid/inputmethodservice/InputMethodService;->mInputEditorInfo:Landroid/view/inputmethod/EditorInfo;
 
     invoke-virtual {p0, v3, v4}, Landroid/inputmethodservice/InputMethodService;->onStartCandidatesView(Landroid/view/inputmethod/EditorInfo;Z)V
@@ -4544,10 +4555,10 @@
     .prologue
     const/4 v9, 0x1
 
-    .line 2290
+    .line 2293
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mExtractEditText:Landroid/inputmethodservice/ExtractEditText;
 
-    .line 2291
+    .line 2294
     .local v0, eet:Landroid/inputmethodservice/ExtractEditText;
     if-eqz v0, :cond_4
 
@@ -4563,43 +4574,43 @@
 
     if-eqz v6, :cond_4
 
-    .line 2293
+    .line 2296
     iget v6, p0, Landroid/inputmethodservice/InputMethodService;->mExtractedToken:I
 
     add-int/lit8 v6, v6, 0x1
 
     iput v6, p0, Landroid/inputmethodservice/InputMethodService;->mExtractedToken:I
 
-    .line 2294
+    .line 2297
     new-instance v4, Landroid/view/inputmethod/ExtractedTextRequest;
 
     invoke-direct {v4}, Landroid/view/inputmethod/ExtractedTextRequest;-><init>()V
 
-    .line 2295
+    .line 2298
     .local v4, req:Landroid/view/inputmethod/ExtractedTextRequest;
     iget v6, p0, Landroid/inputmethodservice/InputMethodService;->mExtractedToken:I
 
     iput v6, v4, Landroid/view/inputmethod/ExtractedTextRequest;->token:I
 
-    .line 2296
+    .line 2299
     iput v9, v4, Landroid/view/inputmethod/ExtractedTextRequest;->flags:I
 
-    .line 2297
+    .line 2300
     const/16 v6, 0xa
 
     iput v6, v4, Landroid/view/inputmethod/ExtractedTextRequest;->hintMaxLines:I
 
-    .line 2298
+    .line 2301
     const/16 v6, 0x2710
 
     iput v6, v4, Landroid/view/inputmethod/ExtractedTextRequest;->hintMaxChars:I
 
-    .line 2299
+    .line 2302
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->getCurrentInputConnection()Landroid/view/inputmethod/InputConnection;
 
     move-result-object v2
 
-    .line 2300
+    .line 2303
     .local v2, ic:Landroid/view/inputmethod/InputConnection;
     if-nez v2, :cond_5
 
@@ -4608,14 +4619,14 @@
     :goto_0
     iput-object v6, p0, Landroid/inputmethodservice/InputMethodService;->mExtractedText:Landroid/view/inputmethod/ExtractedText;
 
-    .line 2302
+    .line 2305
     iget-object v6, p0, Landroid/inputmethodservice/InputMethodService;->mExtractedText:Landroid/view/inputmethod/ExtractedText;
 
     if-eqz v6, :cond_0
 
     if-nez v2, :cond_1
 
-    .line 2303
+    .line 2306
     :cond_0
     const-string v6, "InputMethodService"
 
@@ -4651,69 +4662,69 @@
 
     invoke-static {v6, v7}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2306
+    .line 2309
     :cond_1
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->getCurrentInputEditorInfo()Landroid/view/inputmethod/EditorInfo;
 
     move-result-object v1
 
-    .line 2309
+    .line 2312
     .local v1, ei:Landroid/view/inputmethod/EditorInfo;
     :try_start_0
     invoke-virtual {v0}, Landroid/inputmethodservice/ExtractEditText;->startInternalChanges()V
 
-    .line 2310
+    .line 2313
     invoke-virtual {p0, v1}, Landroid/inputmethodservice/InputMethodService;->onUpdateExtractingVisibility(Landroid/view/inputmethod/EditorInfo;)V
 
-    .line 2311
+    .line 2314
     invoke-virtual {p0, v1}, Landroid/inputmethodservice/InputMethodService;->onUpdateExtractingViews(Landroid/view/inputmethod/EditorInfo;)V
 
-    .line 2312
+    .line 2315
     iget v3, v1, Landroid/view/inputmethod/EditorInfo;->inputType:I
 
-    .line 2313
+    .line 2316
     .local v3, inputType:I
     and-int/lit8 v6, v3, 0xf
 
     if-ne v6, v9, :cond_2
 
-    .line 2315
+    .line 2318
     const/high16 v6, 0x4
 
     and-int/2addr v6, v3
 
     if-eqz v6, :cond_2
 
-    .line 2316
+    .line 2319
     const/high16 v6, 0x2
 
     or-int/2addr v3, v6
 
-    .line 2319
+    .line 2322
     :cond_2
     invoke-virtual {v0, v3}, Landroid/inputmethodservice/ExtractEditText;->setInputType(I)V
 
-    .line 2320
+    .line 2323
     iget-object v6, v1, Landroid/view/inputmethod/EditorInfo;->hintText:Ljava/lang/CharSequence;
 
     invoke-virtual {v0, v6}, Landroid/inputmethodservice/ExtractEditText;->setHint(Ljava/lang/CharSequence;)V
 
-    .line 2321
+    .line 2324
     iget-object v6, p0, Landroid/inputmethodservice/InputMethodService;->mExtractedText:Landroid/view/inputmethod/ExtractedText;
 
     if-eqz v6, :cond_9
 
-    .line 2322
+    .line 2325
     const/4 v6, 0x1
 
     invoke-virtual {v0, v6}, Landroid/inputmethodservice/ExtractEditText;->setEnabled(Z)V
 
-    .line 2323
+    .line 2326
     iget-object v6, p0, Landroid/inputmethodservice/InputMethodService;->mExtractedText:Landroid/view/inputmethod/ExtractedText;
 
     invoke-virtual {v0, v6}, Landroid/inputmethodservice/ExtractEditText;->setExtractedText(Landroid/view/inputmethod/ExtractedText;)V
 
-    .line 2324
+    .line 2327
     sget-boolean v6, Lcom/lge/config/ConfigBuildFlags;->CAPP_BUBBLE_POPUP:Z
 
     if-eqz v6, :cond_3
@@ -4722,10 +4733,10 @@
 
     if-eqz v6, :cond_3
 
-    .line 2326
+    .line 2329
     move-object v5, v0
 
-    .line 2327
+    .line 2330
     .local v5, view:Landroid/widget/TextView;
     iget-object v6, p0, Landroid/inputmethodservice/InputMethodService;->mExtractedText:Landroid/view/inputmethod/ExtractedText;
 
@@ -4735,12 +4746,12 @@
 
     if-eqz v6, :cond_6
 
-    .line 2328
+    .line 2331
     const/4 v6, 0x0
 
     iput-boolean v6, v5, Landroid/widget/TextView;->mCanCreateBubblePopup:Z
 
-    .line 2332
+    .line 2335
     :goto_1
     iget-object v6, p0, Landroid/inputmethodservice/InputMethodService;->mExtractedText:Landroid/view/inputmethod/ExtractedText;
 
@@ -4750,12 +4761,12 @@
 
     if-eqz v6, :cond_7
 
-    .line 2333
+    .line 2336
     const/4 v6, 0x0
 
     iput-boolean v6, v5, Landroid/widget/TextView;->mCanPasteBubblePopup:Z
 
-    .line 2337
+    .line 2340
     :goto_2
     iget-object v6, p0, Landroid/inputmethodservice/InputMethodService;->mExtractedText:Landroid/view/inputmethod/ExtractedText;
 
@@ -4765,26 +4776,26 @@
 
     if-eqz v6, :cond_8
 
-    .line 2338
+    .line 2341
     const/4 v6, 0x0
 
     iput-boolean v6, v5, Landroid/widget/TextView;->mCanCutBubblePopup:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2348
+    .line 2351
     .end local v5           #view:Landroid/widget/TextView;
     :cond_3
     :goto_3
     invoke-virtual {v0}, Landroid/inputmethodservice/ExtractEditText;->finishInternalChanges()V
 
-    .line 2351
+    .line 2354
     if-eqz p1, :cond_4
 
-    .line 2352
+    .line 2355
     invoke-virtual {p0, v1}, Landroid/inputmethodservice/InputMethodService;->onExtractingInputChanged(Landroid/view/inputmethod/EditorInfo;)V
 
-    .line 2355
+    .line 2358
     .end local v1           #ei:Landroid/view/inputmethod/EditorInfo;
     .end local v2           #ic:Landroid/view/inputmethod/InputConnection;
     .end local v3           #inputType:I
@@ -4792,7 +4803,7 @@
     :cond_4
     return-void
 
-    .line 2300
+    .line 2303
     .restart local v2       #ic:Landroid/view/inputmethod/InputConnection;
     .restart local v4       #req:Landroid/view/inputmethod/ExtractedTextRequest;
     :cond_5
@@ -4802,7 +4813,7 @@
 
     goto/16 :goto_0
 
-    .line 2330
+    .line 2333
     .restart local v1       #ei:Landroid/view/inputmethod/EditorInfo;
     .restart local v3       #inputType:I
     .restart local v5       #view:Landroid/widget/TextView;
@@ -4816,7 +4827,7 @@
 
     goto :goto_1
 
-    .line 2348
+    .line 2351
     .end local v3           #inputType:I
     .end local v5           #view:Landroid/widget/TextView;
     :catchall_0
@@ -4826,7 +4837,7 @@
 
     throw v6
 
-    .line 2335
+    .line 2338
     .restart local v3       #inputType:I
     .restart local v5       #view:Landroid/widget/TextView;
     :cond_7
@@ -4837,7 +4848,7 @@
 
     goto :goto_2
 
-    .line 2340
+    .line 2343
     :cond_8
     const/4 v6, 0x1
 
@@ -4845,14 +4856,14 @@
 
     goto :goto_3
 
-    .line 2344
+    .line 2347
     .end local v5           #view:Landroid/widget/TextView;
     :cond_9
     const/4 v6, 0x0
 
     invoke-virtual {v0, v6}, Landroid/inputmethodservice/ExtractEditText;->setEnabled(Z)V
 
-    .line 2345
+    .line 2348
     const-string v6, ""
 
     invoke-virtual {v0, v6}, Landroid/inputmethodservice/ExtractEditText;->setText(Ljava/lang/CharSequence;)V
@@ -4867,14 +4878,14 @@
     .parameter "id"
 
     .prologue
-    .line 1187
+    .line 1190
     iget-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mImm:Landroid/view/inputmethod/InputMethodManager;
 
     iget-object v1, p0, Landroid/inputmethodservice/InputMethodService;->mToken:Landroid/os/IBinder;
 
     invoke-virtual {v0, v1, p1}, Landroid/view/inputmethod/InputMethodManager;->setInputMethod(Landroid/os/IBinder;Ljava/lang/String;)V
 
-    .line 1188
+    .line 1191
     return-void
 .end method
 
@@ -4883,31 +4894,31 @@
     .parameter "shown"
 
     .prologue
-    .line 1148
+    .line 1151
     if-eqz p1, :cond_1
 
     const/4 v0, 0x0
 
-    .line 1149
+    .line 1152
     .local v0, vis:I
     :goto_0
     iget v1, p0, Landroid/inputmethodservice/InputMethodService;->mCandidatesVisibility:I
 
     if-eq v1, v0, :cond_0
 
-    .line 1150
+    .line 1153
     iget-object v1, p0, Landroid/inputmethodservice/InputMethodService;->mCandidatesFrame:Landroid/widget/FrameLayout;
 
     invoke-virtual {v1, v0}, Landroid/widget/FrameLayout;->setVisibility(I)V
 
-    .line 1151
+    .line 1154
     iput v0, p0, Landroid/inputmethodservice/InputMethodService;->mCandidatesVisibility:I
 
-    .line 1153
+    .line 1156
     :cond_0
     return-void
 
-    .line 1148
+    .line 1151
     .end local v0           #vis:I
     :cond_1
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->getCandidatesHiddenVisibility()I
@@ -4925,28 +4936,28 @@
 
     const/4 v2, 0x0
 
-    .line 1018
+    .line 1021
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->isFullscreenMode()Z
 
     move-result v3
 
     if-eqz v3, :cond_2
 
-    .line 1019
+    .line 1022
     iget-boolean v3, p0, Landroid/inputmethodservice/InputMethodService;->mExtractViewHidden:Z
 
     if-eqz v3, :cond_1
 
     const/4 v1, 0x4
 
-    .line 1021
+    .line 1024
     .local v1, vis:I
     :goto_0
     iget-object v3, p0, Landroid/inputmethodservice/InputMethodService;->mExtractFrame:Landroid/widget/FrameLayout;
 
     invoke-virtual {v3, v1}, Landroid/widget/FrameLayout;->setVisibility(I)V
 
-    .line 1026
+    .line 1029
     :goto_1
     iget v3, p0, Landroid/inputmethodservice/InputMethodService;->mCandidatesVisibility:I
 
@@ -4957,7 +4968,7 @@
     :goto_2
     invoke-virtual {p0, v3}, Landroid/inputmethodservice/InputMethodService;->updateCandidatesVisibility(Z)V
 
-    .line 1027
+    .line 1030
     iget-boolean v3, p0, Landroid/inputmethodservice/InputMethodService;->mWindowWasVisible:Z
 
     if-eqz v3, :cond_0
@@ -4970,7 +4981,7 @@
 
     if-eq v3, v1, :cond_0
 
-    .line 1028
+    .line 1031
     iget-object v3, p0, Landroid/inputmethodservice/InputMethodService;->mThemeAttrs:Landroid/content/res/TypedArray;
 
     if-nez v1, :cond_4
@@ -4980,11 +4991,11 @@
 
     move-result v0
 
-    .line 1032
+    .line 1035
     .local v0, animRes:I
     if-eqz v0, :cond_0
 
-    .line 1033
+    .line 1036
     iget-object v2, p0, Landroid/inputmethodservice/InputMethodService;->mFullscreenArea:Landroid/view/ViewGroup;
 
     invoke-static {p0, v0}, Landroid/view/animation/AnimationUtils;->loadAnimation(Landroid/content/Context;I)Landroid/view/animation/Animation;
@@ -4993,28 +5004,28 @@
 
     invoke-virtual {v2, v3}, Landroid/view/ViewGroup;->startAnimation(Landroid/view/animation/Animation;)V
 
-    .line 1037
+    .line 1040
     .end local v0           #animRes:I
     :cond_0
     iget-object v2, p0, Landroid/inputmethodservice/InputMethodService;->mFullscreenArea:Landroid/view/ViewGroup;
 
     invoke-virtual {v2, v1}, Landroid/view/ViewGroup;->setVisibility(I)V
 
-    .line 1038
+    .line 1041
     return-void
 
     .end local v1           #vis:I
     :cond_1
     move v1, v2
 
-    .line 1019
+    .line 1022
     goto :goto_0
 
-    .line 1023
+    .line 1026
     :cond_2
     const/4 v1, 0x0
 
-    .line 1024
+    .line 1027
     .restart local v1       #vis:I
     iget-object v3, p0, Landroid/inputmethodservice/InputMethodService;->mExtractFrame:Landroid/widget/FrameLayout;
 
@@ -5027,10 +5038,10 @@
     :cond_3
     move v3, v2
 
-    .line 1026
+    .line 1029
     goto :goto_2
 
-    .line 1028
+    .line 1031
     :cond_4
     const/4 v4, 0x2
 
@@ -5045,7 +5056,7 @@
 
     const/4 v7, 0x0
 
-    .line 889
+    .line 892
     iget-boolean v5, p0, Landroid/inputmethodservice/InputMethodService;->mShowInputRequested:Z
 
     if-eqz v5, :cond_6
@@ -5058,7 +5069,7 @@
 
     move v2, v6
 
-    .line 890
+    .line 893
     .local v2, isFullscreen:Z
     :goto_0
     iget-boolean v5, p0, Landroid/inputmethodservice/InputMethodService;->mLastShowInputRequested:Z
@@ -5069,7 +5080,7 @@
 
     move v0, v6
 
-    .line 891
+    .line 894
     .local v0, changed:Z
     :goto_1
     iget-boolean v5, p0, Landroid/inputmethodservice/InputMethodService;->mIsFullscreen:Z
@@ -5080,32 +5091,32 @@
 
     if-nez v5, :cond_4
 
-    .line 892
+    .line 895
     :cond_0
     const/4 v0, 0x1
 
-    .line 893
+    .line 896
     iput-boolean v2, p0, Landroid/inputmethodservice/InputMethodService;->mIsFullscreen:Z
 
-    .line 894
+    .line 897
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->getCurrentInputConnection()Landroid/view/inputmethod/InputConnection;
 
     move-result-object v1
 
-    .line 895
+    .line 898
     .local v1, ic:Landroid/view/inputmethod/InputConnection;
     if-eqz v1, :cond_1
 
     invoke-interface {v1, v2}, Landroid/view/inputmethod/InputConnection;->reportFullscreenMode(Z)Z
 
-    .line 896
+    .line 899
     :cond_1
     iput-boolean v6, p0, Landroid/inputmethodservice/InputMethodService;->mFullscreenApplied:Z
 
-    .line 897
+    .line 900
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->initialize()V
 
-    .line 898
+    .line 901
     iget-object v5, p0, Landroid/inputmethodservice/InputMethodService;->mFullscreenArea:Landroid/view/ViewGroup;
 
     invoke-virtual {v5}, Landroid/view/ViewGroup;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
@@ -5114,11 +5125,11 @@
 
     check-cast v3, Landroid/widget/LinearLayout$LayoutParams;
 
-    .line 900
+    .line 903
     .local v3, lp:Landroid/widget/LinearLayout$LayoutParams;
     if-eqz v2, :cond_8
 
-    .line 901
+    .line 904
     iget-object v5, p0, Landroid/inputmethodservice/InputMethodService;->mFullscreenArea:Landroid/view/ViewGroup;
 
     iget-object v8, p0, Landroid/inputmethodservice/InputMethodService;->mThemeAttrs:Landroid/content/res/TypedArray;
@@ -5129,15 +5140,15 @@
 
     invoke-virtual {v5, v8}, Landroid/view/ViewGroup;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 903
+    .line 906
     iput v7, v3, Landroid/view/ViewGroup$LayoutParams;->height:I
 
-    .line 904
+    .line 907
     const/high16 v5, 0x3f80
 
     iput v5, v3, Landroid/widget/LinearLayout$LayoutParams;->weight:F
 
-    .line 910
+    .line 913
     :goto_2
     iget-object v5, p0, Landroid/inputmethodservice/InputMethodService;->mFullscreenArea:Landroid/view/ViewGroup;
 
@@ -5151,42 +5162,42 @@
 
     invoke-virtual {v5, v8, v3}, Landroid/view/ViewGroup;->updateViewLayout(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 912
+    .line 915
     if-eqz v2, :cond_3
 
-    .line 913
+    .line 916
     iget-object v5, p0, Landroid/inputmethodservice/InputMethodService;->mExtractView:Landroid/view/View;
 
     if-nez v5, :cond_2
 
-    .line 914
+    .line 917
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->onCreateExtractTextView()Landroid/view/View;
 
     move-result-object v4
 
-    .line 915
+    .line 918
     .local v4, v:Landroid/view/View;
     if-eqz v4, :cond_2
 
-    .line 916
+    .line 919
     invoke-virtual {p0, v4}, Landroid/inputmethodservice/InputMethodService;->setExtractView(Landroid/view/View;)V
 
-    .line 919
+    .line 922
     .end local v4           #v:Landroid/view/View;
     :cond_2
     invoke-virtual {p0, v7}, Landroid/inputmethodservice/InputMethodService;->startExtractingText(Z)V
 
-    .line 921
+    .line 924
     :cond_3
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->updateExtractFrameVisibility()V
 
-    .line 924
+    .line 927
     .end local v1           #ic:Landroid/view/inputmethod/InputConnection;
     .end local v3           #lp:Landroid/widget/LinearLayout$LayoutParams;
     :cond_4
     if-eqz v0, :cond_5
 
-    .line 925
+    .line 928
     iget-object v5, p0, Landroid/inputmethodservice/InputMethodService;->mWindow:Landroid/inputmethodservice/SoftInputWindow;
 
     invoke-virtual {v5}, Landroid/inputmethodservice/SoftInputWindow;->getWindow()Landroid/view/Window;
@@ -5200,12 +5211,12 @@
     :goto_3
     invoke-virtual {p0, v5, v2, v6}, Landroid/inputmethodservice/InputMethodService;->onConfigureWindow(Landroid/view/Window;ZZ)V
 
-    .line 926
+    .line 929
     iget-boolean v5, p0, Landroid/inputmethodservice/InputMethodService;->mShowInputRequested:Z
 
     iput-boolean v5, p0, Landroid/inputmethodservice/InputMethodService;->mLastShowInputRequested:Z
 
-    .line 928
+    .line 931
     :cond_5
     return-void
 
@@ -5214,17 +5225,17 @@
     :cond_6
     move v2, v7
 
-    .line 889
+    .line 892
     goto :goto_0
 
     .restart local v2       #isFullscreen:Z
     :cond_7
     move v0, v7
 
-    .line 890
+    .line 893
     goto :goto_1
 
-    .line 906
+    .line 909
     .restart local v0       #changed:Z
     .restart local v1       #ic:Landroid/view/inputmethod/InputConnection;
     .restart local v3       #lp:Landroid/widget/LinearLayout$LayoutParams;
@@ -5235,12 +5246,12 @@
 
     invoke-virtual {v5, v8}, Landroid/view/ViewGroup;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 907
+    .line 910
     const/4 v5, -0x2
 
     iput v5, v3, Landroid/view/ViewGroup$LayoutParams;->height:I
 
-    .line 908
+    .line 911
     const/4 v5, 0x0
 
     iput v5, v3, Landroid/widget/LinearLayout$LayoutParams;->weight:F
@@ -5252,7 +5263,7 @@
     :cond_9
     move v6, v7
 
-    .line 925
+    .line 928
     goto :goto_3
 .end method
 
@@ -5262,7 +5273,7 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 1085
+    .line 1088
     iget-boolean v3, p0, Landroid/inputmethodservice/InputMethodService;->mShowInputRequested:Z
 
     if-eqz v3, :cond_1
@@ -5275,7 +5286,7 @@
 
     const/4 v0, 0x1
 
-    .line 1086
+    .line 1089
     .local v0, isShown:Z
     :goto_0
     iget-boolean v3, p0, Landroid/inputmethodservice/InputMethodService;->mIsInputViewShown:Z
@@ -5286,10 +5297,10 @@
 
     if-eqz v3, :cond_0
 
-    .line 1087
+    .line 1090
     iput-boolean v0, p0, Landroid/inputmethodservice/InputMethodService;->mIsInputViewShown:Z
 
-    .line 1088
+    .line 1091
     iget-object v3, p0, Landroid/inputmethodservice/InputMethodService;->mInputFrame:Landroid/widget/FrameLayout;
 
     if-eqz v0, :cond_2
@@ -5297,27 +5308,27 @@
     :goto_1
     invoke-virtual {v3, v2}, Landroid/widget/FrameLayout;->setVisibility(I)V
 
-    .line 1089
+    .line 1092
     iget-object v2, p0, Landroid/inputmethodservice/InputMethodService;->mInputView:Landroid/view/View;
 
     if-nez v2, :cond_0
 
-    .line 1090
+    .line 1093
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->initialize()V
 
-    .line 1091
+    .line 1094
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->onCreateInputView()Landroid/view/View;
 
     move-result-object v1
 
-    .line 1092
+    .line 1095
     .local v1, v:Landroid/view/View;
     if-eqz v1, :cond_0
 
-    .line 1093
+    .line 1096
     invoke-virtual {p0, v1}, Landroid/inputmethodservice/InputMethodService;->setInputView(Landroid/view/View;)V
 
-    .line 1097
+    .line 1100
     .end local v1           #v:Landroid/view/View;
     :cond_0
     return-void
@@ -5326,10 +5337,10 @@
     :cond_1
     move v0, v2
 
-    .line 1085
+    .line 1088
     goto :goto_0
 
-    .line 1088
+    .line 1091
     .restart local v0       #isShown:Z
     :cond_2
     const/16 v2, 0x8

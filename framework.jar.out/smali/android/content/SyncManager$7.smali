@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 310
+    .line 317
     iput-object p1, p0, Landroid/content/SyncManager$7;->this$0:Landroid/content/SyncManager;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -42,12 +42,12 @@
     .prologue
     const/16 v3, -0x2710
 
-    .line 313
+    .line 320
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 314
+    .line 321
     .local v0, action:Ljava/lang/String;
     const-string v2, "android.intent.extra.user_handle"
 
@@ -55,16 +55,16 @@
 
     move-result v1
 
-    .line 315
+    .line 322
     .local v1, userId:I
     if-ne v1, v3, :cond_1
 
-    .line 324
+    .line 331
     :cond_0
     :goto_0
     return-void
 
-    .line 317
+    .line 324
     :cond_1
     const-string v2, "android.intent.action.USER_REMOVED"
 
@@ -74,7 +74,7 @@
 
     if-eqz v2, :cond_2
 
-    .line 318
+    .line 325
     iget-object v2, p0, Landroid/content/SyncManager$7;->this$0:Landroid/content/SyncManager;
 
     #calls: Landroid/content/SyncManager;->onUserRemoved(I)V
@@ -82,7 +82,7 @@
 
     goto :goto_0
 
-    .line 319
+    .line 326
     :cond_2
     const-string v2, "android.intent.action.USER_STARTING"
 
@@ -92,7 +92,7 @@
 
     if-eqz v2, :cond_3
 
-    .line 320
+    .line 327
     iget-object v2, p0, Landroid/content/SyncManager$7;->this$0:Landroid/content/SyncManager;
 
     #calls: Landroid/content/SyncManager;->onUserStarting(I)V
@@ -100,7 +100,7 @@
 
     goto :goto_0
 
-    .line 321
+    .line 328
     :cond_3
     const-string v2, "android.intent.action.USER_STOPPING"
 
@@ -110,7 +110,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 322
+    .line 329
     iget-object v2, p0, Landroid/content/SyncManager$7;->this$0:Landroid/content/SyncManager;
 
     #calls: Landroid/content/SyncManager;->onUserStopping(I)V

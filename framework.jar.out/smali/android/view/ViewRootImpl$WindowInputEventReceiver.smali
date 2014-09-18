@@ -26,13 +26,13 @@
     .parameter "looper"
 
     .prologue
-    .line 4566
+    .line 4568
     iput-object p1, p0, Landroid/view/ViewRootImpl$WindowInputEventReceiver;->this$0:Landroid/view/ViewRootImpl;
 
-    .line 4567
+    .line 4569
     invoke-direct {p0, p2, p3}, Landroid/view/InputEventReceiver;-><init>(Landroid/view/InputChannel;Landroid/os/Looper;)V
 
-    .line 4568
+    .line 4570
     return-void
 .end method
 
@@ -42,15 +42,15 @@
     .locals 1
 
     .prologue
-    .line 4591
+    .line 4593
     iget-object v0, p0, Landroid/view/ViewRootImpl$WindowInputEventReceiver;->this$0:Landroid/view/ViewRootImpl;
 
     invoke-virtual {v0}, Landroid/view/ViewRootImpl;->unscheduleConsumeBatchedInput()V
 
-    .line 4592
+    .line 4594
     invoke-super {p0}, Landroid/view/InputEventReceiver;->dispose()V
 
-    .line 4593
+    .line 4595
     return-void
 .end method
 
@@ -58,12 +58,12 @@
     .locals 1
 
     .prologue
-    .line 4586
+    .line 4588
     iget-object v0, p0, Landroid/view/ViewRootImpl$WindowInputEventReceiver;->this$0:Landroid/view/ViewRootImpl;
 
     invoke-virtual {v0}, Landroid/view/ViewRootImpl;->scheduleConsumeBatchedInput()V
 
-    .line 4587
+    .line 4589
     return-void
 .end method
 
@@ -72,7 +72,7 @@
     .parameter "event"
 
     .prologue
-    .line 4581
+    .line 4583
     iget-object v0, p0, Landroid/view/ViewRootImpl$WindowInputEventReceiver;->this$0:Landroid/view/ViewRootImpl;
 
     const/4 v1, 0x0
@@ -81,6 +81,6 @@
 
     invoke-virtual {v0, p1, p0, v1, v2}, Landroid/view/ViewRootImpl;->enqueueInputEvent(Landroid/view/InputEvent;Landroid/view/InputEventReceiver;IZ)V
 
-    .line 4582
+    .line 4584
     return-void
 .end method

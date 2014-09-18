@@ -1028,7 +1028,7 @@
     :cond_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
-    const-string v1, "input param \'ids\' can\'t be null"
+    const-string/jumbo v1, "input param \'ids\' can\'t be null"
 
     invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
@@ -1103,7 +1103,7 @@
     :cond_0
     new-instance v1, Ljava/lang/IllegalArgumentException;
 
-    const-string v2, "input param \'ids\' can\'t be null"
+    const-string/jumbo v2, "input param \'ids\' can\'t be null"
 
     invoke-direct {v1, v2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 

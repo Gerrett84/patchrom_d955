@@ -260,12 +260,12 @@
     .parameter "enabled"
 
     .prologue
-    .line 222
+    .line 227
     iget-object v0, p0, Landroid/net/wifi/WifiStateTracker;->mDefaultRouteSet:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v0, p1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
-    .line 223
+    .line 228
     return-void
 .end method
 
@@ -273,7 +273,7 @@
     .locals 2
 
     .prologue
-    .line 208
+    .line 213
     new-instance v0, Landroid/net/LinkCapabilities;
 
     iget-object v1, p0, Landroid/net/wifi/WifiStateTracker;->mLinkCapabilities:Landroid/net/LinkCapabilities;
@@ -287,7 +287,7 @@
     .locals 2
 
     .prologue
-    .line 198
+    .line 203
     new-instance v0, Landroid/net/LinkProperties;
 
     iget-object v1, p0, Landroid/net/wifi/WifiStateTracker;->mLinkProperties:Landroid/net/LinkProperties;
@@ -301,7 +301,7 @@
     .locals 2
 
     .prologue
-    .line 191
+    .line 196
     new-instance v0, Landroid/net/NetworkInfo;
 
     iget-object v1, p0, Landroid/net/wifi/WifiStateTracker;->mNetworkInfo:Landroid/net/NetworkInfo;
@@ -315,7 +315,7 @@
     .locals 1
 
     .prologue
-    .line 230
+    .line 235
     const-string/jumbo v0, "net.tcp.buffersize.wifi"
 
     return-object v0
@@ -339,7 +339,7 @@
     .locals 1
 
     .prologue
-    .line 215
+    .line 220
     iget-object v0, p0, Landroid/net/wifi/WifiStateTracker;->mDefaultRouteSet:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
@@ -349,11 +349,21 @@
     return v0
 .end method
 
+.method public isPhoneIdle()Z
+    .locals 1
+
+    .prologue
+    .line 164
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
 .method public isPrivateDnsRouteSet()Z
     .locals 1
 
     .prologue
-    .line 177
+    .line 182
     iget-object v0, p0, Landroid/net/wifi/WifiStateTracker;->mPrivateDnsRouteSet:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
@@ -382,12 +392,12 @@
     .parameter "enabled"
 
     .prologue
-    .line 184
+    .line 189
     iget-object v0, p0, Landroid/net/wifi/WifiStateTracker;->mPrivateDnsRouteSet:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v0, p1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
-    .line 185
+    .line 190
     return-void
 .end method
 
@@ -418,7 +428,7 @@
     .parameter "msger"
 
     .prologue
-    .line 290
+    .line 295
     return-void
 .end method
 
@@ -427,7 +437,7 @@
     .parameter "met"
 
     .prologue
-    .line 287
+    .line 292
     return-void
 .end method
 
@@ -436,7 +446,7 @@
     .parameter "enabled"
 
     .prologue
-    .line 171
+    .line 176
     return-void
 .end method
 
@@ -475,7 +485,7 @@
     .parameter "enabled"
 
     .prologue
-    .line 165
+    .line 170
     const-string v0, "WifiStateTracker"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -504,7 +514,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 166
+    .line 171
     return-void
 .end method
 

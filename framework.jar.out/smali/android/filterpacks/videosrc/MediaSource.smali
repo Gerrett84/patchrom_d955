@@ -1888,7 +1888,7 @@
 
     const-string v3, "MediaSource"
 
-    const-string v5, "interrupted"
+    const-string/jumbo v5, "interrupted"
 
     invoke-static {v3, v5}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -2337,8 +2337,6 @@
     goto/16 :goto_1
 
     .line 314
-    nop
-
     :sswitch_data_0
     .sparse-switch
         0x5a -> :sswitch_0

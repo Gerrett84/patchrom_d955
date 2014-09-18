@@ -128,7 +128,7 @@
 
     .line 1161
     .local v7, bundle:Landroid/os/Bundle;
-    const-string v0, "intent"
+    const-string/jumbo v0, "intent"
 
     invoke-virtual {v7, v0, v4}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
@@ -216,7 +216,7 @@
     .end local v8           #name:Ljava/lang/String;
     .end local v9           #type:Ljava/lang/String;
     :cond_3
-    const-string v0, "intent"
+    const-string/jumbo v0, "intent"
 
     invoke-virtual {p1, v0}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
 

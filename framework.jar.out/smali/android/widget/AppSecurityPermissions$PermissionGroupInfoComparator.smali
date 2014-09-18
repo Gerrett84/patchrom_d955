@@ -36,17 +36,17 @@
     .locals 1
 
     .prologue
-    .line 579
+    .line 580
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 578
+    .line 579
     invoke-static {}, Ljava/text/Collator;->getInstance()Ljava/text/Collator;
 
     move-result-object v0
 
     iput-object v0, p0, Landroid/widget/AppSecurityPermissions$PermissionGroupInfoComparator;->sCollator:Ljava/text/Collator;
 
-    .line 580
+    .line 581
     return-void
 .end method
 
@@ -62,7 +62,7 @@
 
     const/4 v0, -0x1
 
-    .line 582
+    .line 583
     iget v2, p1, Landroid/content/pm/PermissionGroupInfo;->flags:I
 
     iget v3, p2, Landroid/content/pm/PermissionGroupInfo;->flags:I
@@ -73,14 +73,14 @@
 
     if-eqz v2, :cond_2
 
-    .line 583
+    .line 584
     iget v2, p1, Landroid/content/pm/PermissionGroupInfo;->flags:I
 
     and-int/lit8 v2, v2, 0x1
 
     if-eqz v2, :cond_1
 
-    .line 588
+    .line 589
     :cond_0
     :goto_0
     return v0
@@ -88,10 +88,10 @@
     :cond_1
     move v0, v1
 
-    .line 583
+    .line 584
     goto :goto_0
 
-    .line 585
+    .line 586
     :cond_2
     iget v2, p1, Landroid/content/pm/PermissionGroupInfo;->priority:I
 
@@ -99,7 +99,7 @@
 
     if-eq v2, v3, :cond_3
 
-    .line 586
+    .line 587
     iget v2, p1, Landroid/content/pm/PermissionGroupInfo;->priority:I
 
     iget v3, p2, Landroid/content/pm/PermissionGroupInfo;->priority:I
@@ -110,7 +110,7 @@
 
     goto :goto_0
 
-    .line 588
+    .line 589
     :cond_3
     iget-object v0, p0, Landroid/widget/AppSecurityPermissions$PermissionGroupInfoComparator;->sCollator:Ljava/text/Collator;
 
@@ -131,7 +131,7 @@
     .parameter "x1"
 
     .prologue
-    .line 577
+    .line 578
     check-cast p1, Landroid/widget/AppSecurityPermissions$MyPermissionGroupInfo;
 
     .end local p1

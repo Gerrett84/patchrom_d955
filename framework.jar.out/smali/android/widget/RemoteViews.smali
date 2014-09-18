@@ -1286,7 +1286,7 @@
 
     invoke-virtual {v0, v4}, Landroid/content/Context;->setTheme(I)V
 
-    const-string v4, "layout_inflater"
+    const-string/jumbo v4, "layout_inflater"
 
     invoke-virtual {v0, v4}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 

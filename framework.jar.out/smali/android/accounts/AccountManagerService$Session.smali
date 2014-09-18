@@ -905,7 +905,7 @@
 
     if-eqz p1, :cond_3
 
-    const-string v5, "intent"
+    const-string/jumbo v5, "intent"
 
     invoke-virtual {p1, v5}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
 

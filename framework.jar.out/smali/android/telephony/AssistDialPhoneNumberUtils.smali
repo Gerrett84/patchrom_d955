@@ -39,7 +39,7 @@
     .locals 1
 
     .prologue
-    .line 22
+    .line 23
     const/16 v0, 0x10
 
     invoke-static {v0}, Lcom/android/internal/telephony/lgeautoprofiling/LgeAutoProfiling;->isLogBlocked(I)Z
@@ -67,25 +67,25 @@
     .prologue
     const/4 v0, 0x0
 
-    .line 32
+    .line 33
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 25
+    .line 26
     iput-object v0, p0, Landroid/telephony/AssistDialPhoneNumberUtils;->areacodeInfo:[Landroid/telephony/AssistDialPhoneNumberUtils$AreaCode;
 
-    .line 26
+    .line 27
     iput-object v0, p0, Landroid/telephony/AssistDialPhoneNumberUtils;->countrySIDDataTable:[Landroid/telephony/AssistDialPhoneNumberUtils$SIDRangeType;
 
-    .line 27
+    .line 28
     iput-object v0, p0, Landroid/telephony/AssistDialPhoneNumberUtils;->mRefCountryList:[Landroid/provider/ReferenceCountry;
 
-    .line 33
+    .line 34
     invoke-direct {p0}, Landroid/telephony/AssistDialPhoneNumberUtils;->initAreaCodeInfo()V
 
-    .line 34
+    .line 35
     invoke-direct {p0}, Landroid/telephony/AssistDialPhoneNumberUtils;->initSIDRangeInfo()V
 
-    .line 35
+    .line 36
     return-void
 .end method
 
@@ -96,27 +96,27 @@
     .parameter "context"
 
     .prologue
-    .line 1063
+    .line 1064
     const/4 v0, 0x0
 
-    .line 1064
+    .line 1065
     .local v0, bNumberPos:I
     const/4 v6, 0x0
 
-    .line 1065
+    .line 1066
     .local v6, retVal:Z
     const/4 v5, 0x0
 
-    .line 1068
+    .line 1069
     .local v5, otaNdd:Ljava/lang/String;
     invoke-static {p1}, Landroid/telephony/AssistDialPhoneNumberUtils;->getDialLengthBeforePause(Ljava/lang/String;)I
 
     move-result v0
 
-    .line 1070
+    .line 1071
     sput-object p1, Landroid/telephony/AssistDialPhoneNumberUtils;->afterNumber:Ljava/lang/String;
 
-    .line 1072
+    .line 1073
     const-string v7, "AssistDialPhoneNumberUtils"
 
     new-instance v8, Ljava/lang/StringBuilder;
@@ -149,7 +149,7 @@
 
     invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1074
+    .line 1075
     const/4 v7, 0x0
 
     invoke-virtual {p1, v7}, Ljava/lang/String;->charAt(I)C
@@ -170,15 +170,15 @@
 
     if-ne v7, v8, :cond_1
 
-    .line 1076
+    .line 1077
     :cond_0
     sget-object v7, Landroid/telephony/AssistDialPhoneNumberUtils;->afterNumber:Ljava/lang/String;
 
-    .line 1207
+    .line 1208
     :goto_0
     return-object v7
 
-    .line 1078
+    .line 1079
     :cond_1
     const/16 v7, 0x20
 
@@ -192,22 +192,22 @@
 
     if-le v7, v8, :cond_3
 
-    .line 1081
+    .line 1082
     :cond_2
     sget-object v7, Landroid/telephony/AssistDialPhoneNumberUtils;->afterNumber:Ljava/lang/String;
 
     goto :goto_0
 
-    .line 1083
+    .line 1084
     :cond_3
     const/16 v7, 0xa
 
     if-gt v0, v7, :cond_10
 
-    .line 1085
+    .line 1086
     const/4 v1, 0x0
 
-    .line 1087
+    .line 1088
     .local v1, dialfromContact:I
     :try_start_0
     invoke-virtual {p3}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -222,7 +222,7 @@
 
     move-result v1
 
-    .line 1093
+    .line 1094
     :goto_1
     invoke-virtual {p0, p3}, Landroid/telephony/AssistDialPhoneNumberUtils;->getIsAssistedDialCheck(Landroid/content/Context;)I
 
@@ -236,12 +236,12 @@
 
     if-ne v1, v7, :cond_f
 
-    .line 1094
+    .line 1095
     invoke-direct {p0, p3}, Landroid/telephony/AssistDialPhoneNumberUtils;->getRefCountry(Landroid/content/Context;)Landroid/provider/ReferenceCountry;
 
     move-result-object v3
 
-    .line 1096
+    .line 1097
     .local v3, mRefer:Landroid/provider/ReferenceCountry;
     if-eqz v3, :cond_d
 
@@ -251,7 +251,7 @@
 
     if-nez v7, :cond_d
 
-    .line 1097
+    .line 1098
     sget-boolean v7, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
     if-eqz v7, :cond_4
@@ -262,7 +262,7 @@
 
     invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1098
+    .line 1099
     :cond_4
     sget-object v7, Landroid/telephony/AssistDialPhoneNumberUtils;->afterNumber:Ljava/lang/String;
 
@@ -280,7 +280,7 @@
 
     if-ne v7, v8, :cond_8
 
-    .line 1100
+    .line 1101
     sget-boolean v7, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
     if-eqz v7, :cond_5
@@ -291,7 +291,7 @@
 
     invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1101
+    .line 1102
     :cond_5
     sget-object v7, Landroid/telephony/AssistDialPhoneNumberUtils;->afterNumber:Ljava/lang/String;
 
@@ -303,7 +303,7 @@
 
     if-ne v7, v8, :cond_8
 
-    .line 1102
+    .line 1103
     sget-boolean v7, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
     if-eqz v7, :cond_6
@@ -314,7 +314,7 @@
 
     invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1103
+    .line 1104
     :cond_6
     new-instance v7, Ljava/lang/StringBuilder;
 
@@ -348,7 +348,7 @@
 
     sput-object v7, Landroid/telephony/AssistDialPhoneNumberUtils;->afterNumber:Ljava/lang/String;
 
-    .line 1104
+    .line 1105
     sget-object v7, Landroid/telephony/AssistDialPhoneNumberUtils;->afterNumber:Ljava/lang/String;
 
     invoke-static {p1, v7}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
@@ -357,7 +357,7 @@
 
     if-nez v7, :cond_7
 
-    .line 1105
+    .line 1106
     invoke-virtual {p3}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v7
@@ -368,24 +368,24 @@
 
     invoke-static {v7, v8, v9}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 1107
+    .line 1108
     :cond_7
     sget-object v7, Landroid/telephony/AssistDialPhoneNumberUtils;->afterNumber:Ljava/lang/String;
 
     goto/16 :goto_0
 
-    .line 1088
+    .line 1089
     .end local v3           #mRefer:Landroid/provider/ReferenceCountry;
     :catch_0
     move-exception v2
 
-    .line 1090
+    .line 1091
     .local v2, e:Landroid/provider/Settings$SettingNotFoundException;
     invoke-virtual {v2}, Landroid/provider/Settings$SettingNotFoundException;->printStackTrace()V
 
     goto/16 :goto_1
 
-    .line 1110
+    .line 1111
     .end local v2           #e:Landroid/provider/Settings$SettingNotFoundException;
     .restart local v3       #mRefer:Landroid/provider/ReferenceCountry;
     :cond_8
@@ -399,11 +399,11 @@
 
     invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1112
+    .line 1113
     :cond_9
     const/4 v4, 0x0
 
-    .line 1113
+    .line 1114
     .local v4, mReferAreaCodeLen:I
     invoke-virtual {v3}, Landroid/provider/ReferenceCountry;->getAreaCode()Ljava/lang/String;
 
@@ -411,7 +411,7 @@
 
     if-eqz v7, :cond_a
 
-    .line 1114
+    .line 1115
     invoke-virtual {v3}, Landroid/provider/ReferenceCountry;->getAreaCode()Ljava/lang/String;
 
     move-result-object v7
@@ -420,7 +420,7 @@
 
     move-result v4
 
-    .line 1117
+    .line 1118
     :cond_a
     sget-object v7, Landroid/telephony/AssistDialPhoneNumberUtils;->afterNumber:Ljava/lang/String;
 
@@ -440,7 +440,7 @@
 
     if-ne v7, v8, :cond_d
 
-    .line 1118
+    .line 1119
     sget-boolean v7, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
     if-eqz v7, :cond_b
@@ -451,7 +451,7 @@
 
     invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1119
+    .line 1120
     :cond_b
     new-instance v7, Ljava/lang/StringBuilder;
 
@@ -493,7 +493,7 @@
 
     sput-object v7, Landroid/telephony/AssistDialPhoneNumberUtils;->afterNumber:Ljava/lang/String;
 
-    .line 1123
+    .line 1124
     sget-object v7, Landroid/telephony/AssistDialPhoneNumberUtils;->afterNumber:Ljava/lang/String;
 
     invoke-static {p1, v7}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
@@ -502,7 +502,7 @@
 
     if-nez v7, :cond_c
 
-    .line 1124
+    .line 1125
     invoke-virtual {p3}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v7
@@ -513,13 +513,13 @@
 
     invoke-static {v7, v8, v9}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 1126
+    .line 1127
     :cond_c
     sget-object v7, Landroid/telephony/AssistDialPhoneNumberUtils;->afterNumber:Ljava/lang/String;
 
     goto/16 :goto_0
 
-    .line 1129
+    .line 1130
     .end local v4           #mReferAreaCodeLen:I
     :cond_d
     sget-boolean v7, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
@@ -532,19 +532,19 @@
 
     invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1175
+    .line 1176
     .end local v1           #dialfromContact:I
     .end local v3           #mRefer:Landroid/provider/ReferenceCountry;
     :cond_e
     :goto_2
     if-nez v6, :cond_17
 
-    .line 1177
+    .line 1178
     invoke-virtual {p2}, Landroid/provider/ReferenceCountry;->getNddPrefix()Ljava/lang/String;
 
     move-result-object v5
 
-    .line 1179
+    .line 1180
     const/4 v7, 0x0
 
     invoke-virtual {p1, v7}, Ljava/lang/String;->charAt(I)C
@@ -555,26 +555,26 @@
 
     if-ne v7, v8, :cond_14
 
-    .line 1181
+    .line 1182
     sget-object v7, Landroid/telephony/AssistDialPhoneNumberUtils;->afterNumber:Ljava/lang/String;
 
     goto/16 :goto_0
 
-    .line 1132
+    .line 1133
     .restart local v1       #dialfromContact:I
     :cond_f
     const/4 v6, 0x1
 
     goto :goto_2
 
-    .line 1135
+    .line 1136
     .end local v1           #dialfromContact:I
     :cond_10
     const/16 v7, 0xb
 
     if-lt v0, v7, :cond_e
 
-    .line 1137
+    .line 1138
     const/4 v7, 0x0
 
     invoke-virtual {p1, v7}, Ljava/lang/String;->charAt(I)C
@@ -585,7 +585,7 @@
 
     if-ne v7, v8, :cond_12
 
-    .line 1140
+    .line 1141
     const/4 v7, 0x1
 
     invoke-virtual {p1, v7}, Ljava/lang/String;->substring(I)Ljava/lang/String;
@@ -598,7 +598,7 @@
 
     if-nez v7, :cond_11
 
-    .line 1143
+    .line 1144
     new-instance v7, Ljava/lang/StringBuilder;
 
     invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
@@ -627,28 +627,28 @@
 
     sput-object v7, Landroid/telephony/AssistDialPhoneNumberUtils;->afterNumber:Ljava/lang/String;
 
-    .line 1145
+    .line 1146
     :cond_11
     const/4 v6, 0x1
 
-    .line 1146
+    .line 1147
     sget-object v7, Landroid/telephony/AssistDialPhoneNumberUtils;->afterNumber:Ljava/lang/String;
 
     goto/16 :goto_0
 
-    .line 1151
+    .line 1152
     :cond_12
     if-nez v6, :cond_13
 
-    .line 1153
+    .line 1154
     invoke-direct {p0, p1, p2, p3}, Landroid/telephony/AssistDialPhoneNumberUtils;->callAssistedDialing_Int_Numbers(Ljava/lang/String;Landroid/provider/ReferenceCountry;Landroid/content/Context;)Z
 
     move-result v6
 
-    .line 1155
+    .line 1156
     if-nez v6, :cond_13
 
-    .line 1157
+    .line 1158
     invoke-virtual {p0, p3}, Landroid/telephony/AssistDialPhoneNumberUtils;->getIsAssistedDialCheck(Landroid/content/Context;)I
 
     move-result v7
@@ -657,7 +657,7 @@
 
     if-ne v7, v8, :cond_13
 
-    .line 1159
+    .line 1160
     invoke-direct {p0, p1, p2, p3}, Landroid/telephony/AssistDialPhoneNumberUtils;->isNeeded_OTAIddPrefix(Ljava/lang/String;Landroid/provider/ReferenceCountry;Landroid/content/Context;)Z
 
     move-result v7
@@ -666,7 +666,7 @@
 
     if-ne v7, v8, :cond_13
 
-    .line 1161
+    .line 1162
     new-instance v7, Ljava/lang/StringBuilder;
 
     invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
@@ -689,10 +689,10 @@
 
     sput-object v7, Landroid/telephony/AssistDialPhoneNumberUtils;->afterNumber:Ljava/lang/String;
 
-    .line 1162
+    .line 1163
     const/4 v6, 0x1
 
-    .line 1164
+    .line 1165
     sget-object v7, Landroid/telephony/AssistDialPhoneNumberUtils;->afterNumber:Ljava/lang/String;
 
     invoke-static {p1, v7}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
@@ -701,7 +701,7 @@
 
     if-nez v7, :cond_13
 
-    .line 1165
+    .line 1166
     invoke-virtual {p3}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v7
@@ -712,7 +712,7 @@
 
     invoke-static {v7, v8, v9}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 1171
+    .line 1172
     :cond_13
     sget-boolean v7, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
@@ -744,7 +744,7 @@
 
     goto/16 :goto_2
 
-    .line 1184
+    .line 1185
     :cond_14
     if-eqz v5, :cond_15
 
@@ -766,12 +766,12 @@
 
     if-ne v7, v8, :cond_15
 
-    .line 1187
+    .line 1188
     sget-object v7, Landroid/telephony/AssistDialPhoneNumberUtils;->afterNumber:Ljava/lang/String;
 
     goto/16 :goto_0
 
-    .line 1191
+    .line 1192
     :cond_15
     invoke-virtual {p0, p3}, Landroid/telephony/AssistDialPhoneNumberUtils;->getIsAssistedDialCheck(Landroid/content/Context;)I
 
@@ -781,15 +781,15 @@
 
     if-ne v7, v8, :cond_18
 
-    .line 1192
+    .line 1193
     invoke-direct {p0, p1, v0, p2, p3}, Landroid/telephony/AssistDialPhoneNumberUtils;->callAssistedDial_NumLength(Ljava/lang/String;ILandroid/provider/ReferenceCountry;Landroid/content/Context;)Z
 
     move-result v6
 
-    .line 1193
+    .line 1194
     if-eqz v6, :cond_18
 
-    .line 1195
+    .line 1196
     sget-object v7, Landroid/telephony/AssistDialPhoneNumberUtils;->afterNumber:Ljava/lang/String;
 
     invoke-static {p1, v7}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
@@ -798,7 +798,7 @@
 
     if-nez v7, :cond_16
 
-    .line 1196
+    .line 1197
     invoke-virtual {p3}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v7
@@ -809,13 +809,13 @@
 
     invoke-static {v7, v8, v9}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 1198
+    .line 1199
     :cond_16
     sget-object v7, Landroid/telephony/AssistDialPhoneNumberUtils;->afterNumber:Ljava/lang/String;
 
     goto/16 :goto_0
 
-    .line 1205
+    .line 1206
     :cond_17
     sget-boolean v7, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
@@ -845,7 +845,7 @@
 
     invoke-static {v7, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1207
+    .line 1208
     :cond_18
     sget-object v7, Landroid/telephony/AssistDialPhoneNumberUtils;->afterNumber:Ljava/lang/String;
 
@@ -865,23 +865,23 @@
 
     const/4 v8, 0x1
 
-    .line 958
+    .line 959
     const/4 v3, 0x0
 
-    .line 959
+    .line 960
     .local v3, retVal:Z
     const/4 v0, 0x0
 
-    .line 964
+    .line 965
     .local v0, bNumberPos:I
     invoke-static {p1}, Landroid/telephony/AssistDialPhoneNumberUtils;->getDialLengthBeforePause(Ljava/lang/String;)I
 
     move-result v0
 
-    .line 965
+    .line 966
     sput-object p1, Landroid/telephony/AssistDialPhoneNumberUtils;->afterNumber:Ljava/lang/String;
 
-    .line 967
+    .line 968
     invoke-virtual {p1, v9}, Ljava/lang/String;->charAt(I)C
 
     move-result v5
@@ -898,13 +898,13 @@
 
     if-ne v5, v6, :cond_1
 
-    .line 1059
+    .line 1060
     .end local p1
     :cond_0
     :goto_0
     return-object p1
 
-    .line 971
+    .line 972
     .restart local p1
     :cond_1
     if-gt v0, v7, :cond_0
@@ -915,23 +915,23 @@
 
     if-gt v5, v7, :cond_0
 
-    .line 978
+    .line 979
     const/16 v5, 0xb
 
     if-lt v0, v5, :cond_10
 
-    .line 980
+    .line 981
     invoke-virtual {p2}, Landroid/provider/ReferenceCountry;->getNddPrefix()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 981
+    .line 982
     .local v2, otaNdd:Ljava/lang/String;
     invoke-virtual {p2}, Landroid/provider/ReferenceCountry;->getCountryCode()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 983
+    .line 984
     .local v1, otaCC:Ljava/lang/String;
     invoke-virtual {p1, v9}, Ljava/lang/String;->charAt(I)C
 
@@ -941,10 +941,10 @@
 
     if-ne v5, v6, :cond_a
 
-    .line 986
+    .line 987
     if-eqz v2, :cond_4
 
-    .line 987
+    .line 988
     sget-boolean v5, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
     if-eqz v5, :cond_2
@@ -971,13 +971,13 @@
 
     invoke-static {v5, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 988
+    .line 989
     :cond_2
     invoke-virtual {p1, v8}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object v4
 
-    .line 989
+    .line 990
     .local v4, temp:Ljava/lang/String;
     invoke-virtual {v2}, Ljava/lang/String;->length()I
 
@@ -993,7 +993,7 @@
 
     if-eqz v5, :cond_9
 
-    .line 992
+    .line 993
     invoke-virtual {p1, v8}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object v5
@@ -1004,19 +1004,19 @@
 
     if-ne v5, v8, :cond_8
 
-    .line 993
+    .line 994
     invoke-virtual {p1, v8}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object v5
 
     sput-object v5, Landroid/telephony/AssistDialPhoneNumberUtils;->afterNumber:Ljava/lang/String;
 
-    .line 1006
+    .line 1007
     :cond_3
     :goto_1
     const/4 v3, 0x1
 
-    .line 1027
+    .line 1028
     .end local v4           #temp:Ljava/lang/String;
     :cond_4
     :goto_2
@@ -1024,7 +1024,7 @@
 
     if-eqz v1, :cond_5
 
-    .line 1028
+    .line 1029
     invoke-virtual {v1}, Ljava/lang/String;->length()I
 
     move-result v5
@@ -1039,25 +1039,25 @@
 
     if-ne v5, v8, :cond_e
 
-    .line 1031
+    .line 1032
     sput-object p1, Landroid/telephony/AssistDialPhoneNumberUtils;->afterNumber:Ljava/lang/String;
 
-    .line 1032
+    .line 1033
     const/4 v3, 0x1
 
-    .line 1037
+    .line 1038
     :cond_5
     :goto_3
     if-nez v3, :cond_6
 
-    .line 1039
+    .line 1040
     invoke-direct {p0, p1, p2, p3}, Landroid/telephony/AssistDialPhoneNumberUtils;->isNeeded_OTAIddPrefix(Ljava/lang/String;Landroid/provider/ReferenceCountry;Landroid/content/Context;)Z
 
     move-result v5
 
     if-ne v5, v8, :cond_f
 
-    .line 1040
+    .line 1041
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
@@ -1080,10 +1080,10 @@
 
     sput-object v5, Landroid/telephony/AssistDialPhoneNumberUtils;->afterNumber:Ljava/lang/String;
 
-    .line 1041
+    .line 1042
     const/4 v3, 0x1
 
-    .line 1042
+    .line 1043
     sget-boolean v5, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
     if-eqz v5, :cond_6
@@ -1112,7 +1112,7 @@
 
     invoke-static {v5, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1054
+    .line 1055
     :cond_6
     :goto_4
     sget-boolean v5, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
@@ -1143,7 +1143,7 @@
 
     invoke-static {v5, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1059
+    .line 1060
     .end local v1           #otaCC:Ljava/lang/String;
     .end local v2           #otaNdd:Ljava/lang/String;
     :cond_7
@@ -1152,7 +1152,7 @@
 
     goto/16 :goto_0
 
-    .line 996
+    .line 997
     .restart local v1       #otaCC:Ljava/lang/String;
     .restart local v2       #otaNdd:Ljava/lang/String;
     .restart local v4       #temp:Ljava/lang/String;
@@ -1163,7 +1163,7 @@
 
     sput-object v5, Landroid/telephony/AssistDialPhoneNumberUtils;->afterNumber:Ljava/lang/String;
 
-    .line 997
+    .line 998
     const-string/jumbo v5, "nsalty"
 
     new-instance v6, Ljava/lang/StringBuilder;
@@ -1190,7 +1190,7 @@
 
     goto/16 :goto_1
 
-    .line 1002
+    .line 1003
     :cond_9
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -1218,7 +1218,7 @@
 
     sput-object v5, Landroid/telephony/AssistDialPhoneNumberUtils;->afterNumber:Ljava/lang/String;
 
-    .line 1004
+    .line 1005
     sget-boolean v5, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
     if-eqz v5, :cond_3
@@ -1249,12 +1249,12 @@
 
     goto/16 :goto_1
 
-    .line 1010
+    .line 1011
     .end local v4           #temp:Ljava/lang/String;
     :cond_a
     if-eqz v2, :cond_4
 
-    .line 1011
+    .line 1012
     sget-boolean v5, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
     if-eqz v5, :cond_b
@@ -1289,7 +1289,7 @@
 
     invoke-static {v5, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1014
+    .line 1015
     :cond_b
     sget-boolean v5, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
@@ -1317,7 +1317,7 @@
 
     invoke-static {v5, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1015
+    .line 1016
     :cond_c
     invoke-virtual {v2}, Ljava/lang/String;->length()I
 
@@ -1339,27 +1339,27 @@
 
     if-ne v5, v8, :cond_d
 
-    .line 1019
+    .line 1020
     sput-object p1, Landroid/telephony/AssistDialPhoneNumberUtils;->afterNumber:Ljava/lang/String;
 
-    .line 1020
+    .line 1021
     const/4 v3, 0x1
 
     goto/16 :goto_2
 
-    .line 1022
+    .line 1023
     :cond_d
     const/4 v3, 0x0
 
     goto/16 :goto_2
 
-    .line 1034
+    .line 1035
     :cond_e
     const/4 v3, 0x0
 
     goto/16 :goto_3
 
-    .line 1046
+    .line 1047
     :cond_f
     invoke-virtual {p0, p3}, Landroid/telephony/AssistDialPhoneNumberUtils;->getIsAssistedDialCheck(Landroid/content/Context;)I
 
@@ -1367,15 +1367,15 @@
 
     if-ne v5, v8, :cond_6
 
-    .line 1047
+    .line 1048
     invoke-direct {p0, p1, p2, p3}, Landroid/telephony/AssistDialPhoneNumberUtils;->callAssistedNonUS_IDDPrefix(Ljava/lang/String;Landroid/provider/ReferenceCountry;Landroid/content/Context;)Z
 
     move-result v3
 
-    .line 1048
+    .line 1049
     if-eqz v3, :cond_6
 
-    .line 1049
+    .line 1050
     invoke-virtual {p3}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
@@ -1386,7 +1386,7 @@
 
     goto/16 :goto_4
 
-    .line 1057
+    .line 1058
     .end local v1           #otaCC:Ljava/lang/String;
     .end local v2           #otaNdd:Ljava/lang/String;
     :cond_10
@@ -1429,54 +1429,54 @@
     .parameter "context"
 
     .prologue
-    .line 845
+    .line 846
     const/4 v14, 0x0
 
-    .line 847
+    .line 848
     .local v14, retVal:Z
     const/4 v11, 0x0
 
-    .line 848
+    .line 849
     .local v11, refNdd:Ljava/lang/String;
     const/4 v7, 0x0
 
-    .line 849
+    .line 850
     .local v7, otaNdd:Ljava/lang/String;
     const/4 v6, 0x0
 
-    .line 850
+    .line 851
     .local v6, otaIDD:Ljava/lang/String;
     const/4 v10, 0x0
 
-    .line 851
+    .line 852
     .local v10, refCC:Ljava/lang/String;
     const/4 v5, 0x0
 
-    .line 852
+    .line 853
     .local v5, otaCC:Ljava/lang/String;
     const/4 v2, 0x0
 
-    .line 853
+    .line 854
     .local v2, areaCode:Ljava/lang/String;
     const/4 v9, 0x0
 
-    .line 854
+    .line 855
     .local v9, prefixNumber:Ljava/lang/String;
     const/4 v12, 0x0
 
-    .line 855
+    .line 856
     .local v12, refNddLen:I
     const/4 v8, 0x0
 
-    .line 856
+    .line 857
     .local v8, otaNddLen:I
     const/4 v3, 0x0
 
-    .line 857
+    .line 858
     .local v3, areaCodeLen:I
     const/4 v13, 0x0
 
-    .line 861
+    .line 862
     .local v13, refNumLen:I
     move-object/from16 v0, p0
 
@@ -1486,19 +1486,19 @@
 
     move-result-object v4
 
-    .line 863
+    .line 864
     .local v4, mRefer:Landroid/provider/ReferenceCountry;
     if-nez v4, :cond_0
 
     move v15, v14
 
-    .line 952
+    .line 953
     .end local v14           #retVal:Z
     .local v15, retVal:I
     :goto_0
     return v15
 
-    .line 867
+    .line 868
     .end local v15           #retVal:I
     .restart local v14       #retVal:Z
     :cond_0
@@ -1506,48 +1506,48 @@
 
     move-result-object v11
 
-    .line 868
+    .line 869
     if-eqz v11, :cond_1
 
-    .line 870
+    .line 871
     invoke-virtual {v11}, Ljava/lang/String;->length()I
 
     move-result v12
 
-    .line 872
+    .line 873
     :cond_1
     invoke-virtual/range {p3 .. p3}, Landroid/provider/ReferenceCountry;->getNddPrefix()Ljava/lang/String;
 
     move-result-object v7
 
-    .line 873
+    .line 874
     invoke-virtual/range {p3 .. p3}, Landroid/provider/ReferenceCountry;->getCountryCode()Ljava/lang/String;
 
     move-result-object v5
 
-    .line 875
+    .line 876
     if-eqz v7, :cond_2
 
-    .line 877
+    .line 878
     invoke-virtual {v7}, Ljava/lang/String;->length()I
 
     move-result v8
 
-    .line 878
+    .line 879
     move-object v9, v7
 
-    .line 881
+    .line 882
     :cond_2
     invoke-virtual/range {p3 .. p3}, Landroid/provider/ReferenceCountry;->getIddPrefix()Ljava/lang/String;
 
     move-result-object v6
 
-    .line 882
+    .line 883
     invoke-virtual {v4}, Landroid/provider/ReferenceCountry;->getCountryCode()Ljava/lang/String;
 
     move-result-object v10
 
-    .line 884
+    .line 885
     invoke-virtual {v4}, Landroid/provider/ReferenceCountry;->getNumLength()Ljava/lang/String;
 
     move-result-object v16
@@ -1556,7 +1556,7 @@
 
     move-result v13
 
-    .line 888
+    .line 889
     if-eqz v12, :cond_5
 
     const/16 v16, 0x0
@@ -1592,7 +1592,7 @@
 
     if-ne v0, v1, :cond_5
 
-    .line 891
+    .line 892
     invoke-static {v10, v5}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
     move-result v16
@@ -1605,18 +1605,18 @@
 
     if-ne v0, v1, :cond_4
 
-    .line 893
+    .line 894
     const/4 v14, 0x1
 
     :cond_3
     :goto_1
     move v15, v14
 
-    .line 952
+    .line 953
     .restart local v15       #retVal:I
     goto :goto_0
 
-    .line 897
+    .line 898
     .end local v15           #retVal:I
     :cond_4
     new-instance v16, Ljava/lang/StringBuilder;
@@ -1639,7 +1639,7 @@
 
     move-result-object v9
 
-    .line 898
+    .line 899
     new-instance v16, Ljava/lang/StringBuilder;
 
     invoke-direct/range {v16 .. v16}, Ljava/lang/StringBuilder;-><init>()V
@@ -1666,12 +1666,12 @@
 
     sput-object v16, Landroid/telephony/AssistDialPhoneNumberUtils;->afterNumber:Ljava/lang/String;
 
-    .line 899
+    .line 900
     const/4 v14, 0x1
 
     goto :goto_1
 
-    .line 903
+    .line 904
     :cond_5
     if-eqz v8, :cond_7
 
@@ -1707,7 +1707,7 @@
 
     if-ne v0, v1, :cond_7
 
-    .line 907
+    .line 908
     invoke-static {v10, v5}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
     move-result v16
@@ -1720,12 +1720,12 @@
 
     if-ne v0, v1, :cond_6
 
-    .line 909
+    .line 910
     const/4 v14, 0x1
 
     goto :goto_1
 
-    .line 913
+    .line 914
     :cond_6
     new-instance v16, Ljava/lang/StringBuilder;
 
@@ -1747,7 +1747,7 @@
 
     move-result-object v9
 
-    .line 914
+    .line 915
     new-instance v16, Ljava/lang/StringBuilder;
 
     invoke-direct/range {v16 .. v16}, Ljava/lang/StringBuilder;-><init>()V
@@ -1774,23 +1774,23 @@
 
     sput-object v16, Landroid/telephony/AssistDialPhoneNumberUtils;->afterNumber:Ljava/lang/String;
 
-    .line 915
+    .line 916
     const/4 v14, 0x1
 
     goto/16 :goto_1
 
-    .line 918
+    .line 919
     :cond_7
     move/from16 v0, p2
 
     if-gt v0, v13, :cond_a
 
-    .line 921
+    .line 922
     move/from16 v0, p2
 
     if-ne v0, v13, :cond_8
 
-    .line 923
+    .line 924
     new-instance v16, Ljava/lang/StringBuilder;
 
     invoke-direct/range {v16 .. v16}, Ljava/lang/StringBuilder;-><init>()V
@@ -1811,7 +1811,7 @@
 
     move-result-object v9
 
-    .line 924
+    .line 925
     new-instance v16, Ljava/lang/StringBuilder;
 
     invoke-direct/range {v16 .. v16}, Ljava/lang/StringBuilder;-><init>()V
@@ -1836,26 +1836,26 @@
 
     sput-object v16, Landroid/telephony/AssistDialPhoneNumberUtils;->afterNumber:Ljava/lang/String;
 
-    .line 925
+    .line 926
     const/4 v14, 0x1
 
     goto/16 :goto_1
 
-    .line 930
+    .line 931
     :cond_8
     invoke-virtual {v4}, Landroid/provider/ReferenceCountry;->getAreaCode()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 932
+    .line 933
     if-eqz v2, :cond_9
 
-    .line 934
+    .line 935
     invoke-virtual {v2}, Ljava/lang/String;->length()I
 
     move-result v3
 
-    .line 936
+    .line 937
     :cond_9
     sub-int v16, v13, v3
 
@@ -1865,7 +1865,7 @@
 
     if-ne v0, v1, :cond_3
 
-    .line 938
+    .line 939
     new-instance v16, Ljava/lang/StringBuilder;
 
     invoke-direct/range {v16 .. v16}, Ljava/lang/StringBuilder;-><init>()V
@@ -1886,7 +1886,7 @@
 
     move-result-object v9
 
-    .line 939
+    .line 940
     new-instance v16, Ljava/lang/StringBuilder;
 
     invoke-direct/range {v16 .. v16}, Ljava/lang/StringBuilder;-><init>()V
@@ -1907,7 +1907,7 @@
 
     move-result-object v9
 
-    .line 940
+    .line 941
     new-instance v16, Ljava/lang/StringBuilder;
 
     invoke-direct/range {v16 .. v16}, Ljava/lang/StringBuilder;-><init>()V
@@ -1934,18 +1934,18 @@
     :try_end_0
     .catch Ljava/lang/StringIndexOutOfBoundsException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 941
+    .line 942
     const/4 v14, 0x1
 
     goto/16 :goto_1
 
-    .line 947
+    .line 948
     :cond_a
     const/4 v14, 0x0
 
     goto/16 :goto_1
 
-    .line 949
+    .line 950
     :catch_0
     move-exception v16
 
@@ -1961,54 +1961,54 @@
     .prologue
     const/4 v10, 0x1
 
-    .line 773
+    .line 774
     const/4 v5, 0x0
 
-    .line 774
+    .line 775
     .local v5, refIdd:Ljava/lang/String;
     const/4 v4, 0x0
 
-    .line 775
+    .line 776
     .local v4, otaIdd:Ljava/lang/String;
     const/4 v2, 0x0
 
-    .line 776
+    .line 777
     .local v2, localCC:Ljava/lang/String;
     const/4 v0, 0x0
 
-    .line 777
+    .line 778
     .local v0, iddPrefixLen:I
     const/4 v6, 0x0
 
-    .line 778
+    .line 779
     .local v6, retVal:Z
     const/4 v1, 0x0
 
-    .line 784
+    .line 785
     .local v1, isAssistDialing:Z
     invoke-direct {p0, p3}, Landroid/telephony/AssistDialPhoneNumberUtils;->getRefCountry(Landroid/content/Context;)Landroid/provider/ReferenceCountry;
 
     move-result-object v3
 
-    .line 785
+    .line 786
     .local v3, mRefer:Landroid/provider/ReferenceCountry;
     if-eqz v3, :cond_0
 
-    .line 786
+    .line 787
     invoke-virtual {v3}, Landroid/provider/ReferenceCountry;->getIddPrefix()Ljava/lang/String;
 
     move-result-object v5
 
-    .line 788
+    .line 789
     :cond_0
     invoke-virtual {p2}, Landroid/provider/ReferenceCountry;->getIddPrefix()Ljava/lang/String;
 
     move-result-object v4
 
-    .line 791
+    .line 792
     if-eqz v4, :cond_1
 
-    .line 793
+    .line 794
     const/4 v8, 0x0
 
     :try_start_0
@@ -2026,21 +2026,21 @@
 
     if-ne v8, v10, :cond_1
 
-    .line 795
+    .line 796
     invoke-virtual {v4}, Ljava/lang/String;->length()I
 
     move-result v0
 
-    .line 796
+    .line 797
     const/4 v6, 0x1
 
-    .line 799
+    .line 800
     :cond_1
     if-nez v6, :cond_2
 
     if-eqz v5, :cond_2
 
-    .line 801
+    .line 802
     const/4 v8, 0x0
 
     invoke-virtual {v5}, Ljava/lang/String;->length()I
@@ -2057,42 +2057,42 @@
 
     if-ne v8, v10, :cond_2
 
-    .line 803
+    .line 804
     invoke-virtual {p0, p3}, Landroid/telephony/AssistDialPhoneNumberUtils;->getIsAssistedDialCheck(Landroid/content/Context;)I
 
     move-result v8
 
     if-ne v8, v10, :cond_2
 
-    .line 804
+    .line 805
     invoke-virtual {v5}, Ljava/lang/String;->length()I
 
     move-result v0
 
-    .line 805
+    .line 806
     const/4 v6, 0x1
 
-    .line 806
+    .line 807
     const/4 v1, 0x1
 
-    .line 810
+    .line 811
     :cond_2
     if-eqz v6, :cond_6
 
-    .line 812
+    .line 813
     invoke-virtual {p2}, Landroid/provider/ReferenceCountry;->getCountryCode()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 813
+    .line 814
     if-eqz v2, :cond_6
 
-    .line 816
+    .line 817
     invoke-virtual {p1, v0}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object v7
 
-    .line 817
+    .line 818
     .local v7, temp:Ljava/lang/String;
     const/4 v8, 0x0
 
@@ -2110,7 +2110,7 @@
 
     if-ne v8, v10, :cond_7
 
-    .line 820
+    .line 821
     new-instance v8, Ljava/lang/StringBuilder;
 
     invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
@@ -2143,7 +2143,7 @@
 
     sput-object v8, Landroid/telephony/AssistDialPhoneNumberUtils;->afterNumber:Ljava/lang/String;
 
-    .line 821
+    .line 822
     sget-boolean v8, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
     if-eqz v8, :cond_3
@@ -2174,7 +2174,7 @@
 
     invoke-static {v8, v9}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 822
+    .line 823
     :cond_3
     sget-boolean v8, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
@@ -2212,7 +2212,7 @@
 
     invoke-static {v8, v9}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 823
+    .line 824
     :cond_4
     sget-boolean v8, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
@@ -2242,7 +2242,7 @@
 
     invoke-static {v8, v9}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 832
+    .line 833
     :cond_5
     :goto_0
     if-eqz v1, :cond_6
@@ -2255,7 +2255,7 @@
 
     if-nez v8, :cond_6
 
-    .line 833
+    .line 834
     invoke-virtual {p3}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v8
@@ -2266,18 +2266,18 @@
 
     invoke-static {v8, v9, v10}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 841
+    .line 842
     .end local v7           #temp:Ljava/lang/String;
     :cond_6
     :goto_1
     return v6
 
-    .line 826
+    .line 827
     .restart local v7       #temp:Ljava/lang/String;
     :cond_7
     if-eqz v1, :cond_5
 
-    .line 829
+    .line 830
     new-instance v8, Ljava/lang/StringBuilder;
 
     invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
@@ -2308,7 +2308,7 @@
 
     goto :goto_0
 
-    .line 837
+    .line 838
     .end local v7           #temp:Ljava/lang/String;
     :catch_0
     move-exception v8
@@ -2322,20 +2322,20 @@
     .parameter "currentCountry"
 
     .prologue
-    .line 750
+    .line 751
     const/4 v1, 0x0
 
-    .line 753
+    .line 754
     .local v1, retVal:Z
     invoke-virtual {p2}, Landroid/provider/ReferenceCountry;->getCountryCode()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 755
+    .line 756
     .local v0, retOtaToken:Ljava/lang/String;
     if-eqz v0, :cond_1
 
-    .line 758
+    .line 759
     const/4 v2, 0x0
 
     :try_start_0
@@ -2355,7 +2355,7 @@
 
     if-ne v2, v3, :cond_1
 
-    .line 761
+    .line 762
     sget-boolean v2, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
     if-eqz v2, :cond_0
@@ -2384,7 +2384,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 762
+    .line 763
     :cond_0
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -2418,15 +2418,15 @@
     :try_end_0
     .catch Ljava/lang/StringIndexOutOfBoundsException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 763
+    .line 764
     const/4 v1, 0x1
 
-    .line 769
+    .line 770
     :cond_1
     :goto_0
     return v1
 
-    .line 766
+    .line 767
     :catch_0
     move-exception v2
 
@@ -2444,43 +2444,43 @@
 
     const/4 v7, 0x0
 
-    .line 610
+    .line 611
     const/4 v3, 0x0
 
-    .line 611
+    .line 612
     .local v3, otaIdd:Ljava/lang/String;
     const/4 v6, 0x0
 
-    .line 612
+    .line 613
     .local v6, refIdd:Ljava/lang/String;
     const/4 v5, 0x0
 
-    .line 613
+    .line 614
     .local v5, refCountryIdd:Ljava/lang/String;
     const/4 v4, 0x0
 
-    .line 615
+    .line 616
     .local v4, refCc:Ljava/lang/String;
     invoke-direct {p0, p3}, Landroid/telephony/AssistDialPhoneNumberUtils;->getRefCountry(Landroid/content/Context;)Landroid/provider/ReferenceCountry;
 
     move-result-object v2
 
-    .line 616
+    .line 617
     .local v2, mRefer:Landroid/provider/ReferenceCountry;
     if-eqz v2, :cond_0
 
-    .line 617
+    .line 618
     invoke-virtual {v2}, Landroid/provider/ReferenceCountry;->getIddPrefix()Ljava/lang/String;
 
     move-result-object v5
 
-    .line 620
+    .line 621
     :cond_0
     invoke-virtual {p2}, Landroid/provider/ReferenceCountry;->getIddPrefix()Ljava/lang/String;
 
     move-result-object v3
 
-    .line 622
+    .line 623
     sget-boolean v9, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
     if-eqz v9, :cond_1
@@ -2515,7 +2515,7 @@
 
     invoke-static {v9, v10}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 623
+    .line 624
     :cond_1
     sget-boolean v9, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
@@ -2543,16 +2543,16 @@
 
     invoke-static {v9, v10}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 624
+    .line 625
     :cond_2
     if-nez v3, :cond_4
 
-    .line 679
+    .line 680
     :cond_3
     :goto_0
     return v7
 
-    .line 628
+    .line 629
     :cond_4
     invoke-virtual {v3}, Ljava/lang/String;->length()I
 
@@ -2568,7 +2568,7 @@
 
     if-eq v9, v8, :cond_3
 
-    .line 634
+    .line 635
     if-eqz v5, :cond_7
 
     invoke-virtual {v5}, Ljava/lang/String;->length()I
@@ -2591,7 +2591,7 @@
 
     if-ne v9, v8, :cond_7
 
-    .line 638
+    .line 639
     const/4 v0, 0x0
 
     .local v0, i:I
@@ -2602,7 +2602,7 @@
 
     if-ge v0, v9, :cond_7
 
-    .line 639
+    .line 640
     iget-object v9, p0, Landroid/telephony/AssistDialPhoneNumberUtils;->mRefCountryList:[Landroid/provider/ReferenceCountry;
 
     aget-object v9, v9, v0
@@ -2611,7 +2611,7 @@
 
     move-result-object v4
 
-    .line 641
+    .line 642
     if-eqz v4, :cond_6
 
     invoke-virtual {v4}, Ljava/lang/String;->length()I
@@ -2620,7 +2620,7 @@
 
     if-lez v9, :cond_6
 
-    .line 643
+    .line 644
     invoke-virtual {v5}, Ljava/lang/String;->length()I
 
     move-result v9
@@ -2645,7 +2645,7 @@
 
     if-ne v9, v8, :cond_6
 
-    .line 644
+    .line 645
     sget-boolean v7, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
     if-eqz v7, :cond_5
@@ -2682,7 +2682,7 @@
 
     invoke-static {v7, v9}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 646
+    .line 647
     :cond_5
     new-instance v7, Ljava/lang/StringBuilder;
 
@@ -2712,16 +2712,16 @@
 
     move v7, v8
 
-    .line 647
+    .line 648
     goto/16 :goto_0
 
-    .line 638
+    .line 639
     :cond_6
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_1
 
-    .line 654
+    .line 655
     .end local v0           #i:I
     :cond_7
     const/4 v0, 0x0
@@ -2734,7 +2734,7 @@
 
     if-ge v0, v9, :cond_3
 
-    .line 656
+    .line 657
     iget-object v9, p0, Landroid/telephony/AssistDialPhoneNumberUtils;->mRefCountryList:[Landroid/provider/ReferenceCountry;
 
     aget-object v9, v9, v0
@@ -2743,7 +2743,7 @@
 
     move-result-object v6
 
-    .line 658
+    .line 659
     if-eqz v6, :cond_a
 
     invoke-virtual {v6}, Ljava/lang/String;->length()I
@@ -2752,7 +2752,7 @@
 
     if-lez v9, :cond_a
 
-    .line 660
+    .line 661
     invoke-virtual {v6}, Ljava/lang/String;->length()I
 
     move-result v9
@@ -2767,7 +2767,7 @@
 
     if-ne v9, v8, :cond_a
 
-    .line 662
+    .line 663
     const/4 v1, 0x0
 
     .local v1, j:I
@@ -2778,7 +2778,7 @@
 
     if-ge v1, v9, :cond_a
 
-    .line 663
+    .line 664
     iget-object v9, p0, Landroid/telephony/AssistDialPhoneNumberUtils;->mRefCountryList:[Landroid/provider/ReferenceCountry;
 
     aget-object v9, v9, v1
@@ -2787,7 +2787,7 @@
 
     move-result-object v4
 
-    .line 665
+    .line 666
     if-eqz v4, :cond_9
 
     invoke-virtual {v4}, Ljava/lang/String;->length()I
@@ -2796,7 +2796,7 @@
 
     if-lez v9, :cond_9
 
-    .line 667
+    .line 668
     invoke-virtual {v6}, Ljava/lang/String;->length()I
 
     move-result v9
@@ -2821,7 +2821,7 @@
 
     if-ne v9, v8, :cond_9
 
-    .line 668
+    .line 669
     sget-boolean v7, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
     if-eqz v7, :cond_8
@@ -2878,7 +2878,7 @@
 
     invoke-static {v7, v9}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 670
+    .line 671
     :cond_8
     new-instance v7, Ljava/lang/StringBuilder;
 
@@ -2908,16 +2908,16 @@
 
     move v7, v8
 
-    .line 671
+    .line 672
     goto/16 :goto_0
 
-    .line 662
+    .line 663
     :cond_9
     add-int/lit8 v1, v1, 0x1
 
     goto/16 :goto_3
 
-    .line 654
+    .line 655
     .end local v1           #j:I
     :cond_a
     add-int/lit8 v0, v0, 0x1
@@ -2930,10 +2930,10 @@
     .parameter "pNumber"
 
     .prologue
-    .line 361
+    .line 362
     const/4 v0, 0x0
 
-    .line 362
+    .line 363
     .local v0, count:I
     :goto_0
     invoke-virtual {p0}, Ljava/lang/String;->length()I
@@ -2942,7 +2942,7 @@
 
     if-ge v0, v1, :cond_2
 
-    .line 363
+    .line 364
     invoke-virtual {p0, v0}, Ljava/lang/String;->charAt(I)C
 
     move-result v1
@@ -2959,18 +2959,18 @@
 
     if-ne v1, v2, :cond_1
 
-    .line 370
+    .line 371
     :cond_0
     :goto_1
     return v0
 
-    .line 367
+    .line 368
     :cond_1
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 369
+    .line 370
     :cond_2
     sget-boolean v1, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
@@ -3006,10 +3006,10 @@
     .parameter "mcc"
 
     .prologue
-    .line 190
+    .line 191
     const/4 v3, 0x0
 
-    .line 191
+    .line 192
     .local v3, temp:I
     const/16 v4, 0xa
 
@@ -3017,13 +3017,13 @@
 
     fill-array-data v1, :array_0
 
-    .line 193
+    .line 194
     .local v1, conv_arr:[I
     const/16 v4, 0x3ff
 
     if-ne p1, v4, :cond_1
 
-    .line 195
+    .line 196
     sget-boolean v4, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
     if-eqz v4, :cond_0
@@ -3034,85 +3034,85 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 196
+    .line 197
     :cond_0
     invoke-static {p1}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
 
     move-result-object v4
 
-    .line 228
+    .line 229
     :goto_0
     return-object v4
 
-    .line 199
+    .line 200
     :cond_1
     add-int/lit8 v3, p1, 0x6f
 
-    .line 200
+    .line 201
     move p1, v3
 
-    .line 201
+    .line 202
     move v2, p1
 
-    .line 203
+    .line 204
     .local v2, ret_mcc:I
     rem-int/lit8 v4, p1, 0xa
 
     aget v0, v1, v4
 
-    .line 204
+    .line 205
     .local v0, check_digit:I
     if-nez v0, :cond_2
 
-    .line 206
+    .line 207
     add-int/lit8 v2, v3, -0xa
 
-    .line 207
+    .line 208
     move v3, v2
 
-    .line 210
+    .line 211
     :cond_2
     div-int/lit8 p1, p1, 0xa
 
-    .line 211
+    .line 212
     rem-int/lit8 v4, p1, 0xa
 
     aget v0, v1, v4
 
-    .line 212
+    .line 213
     if-nez v0, :cond_3
 
-    .line 214
+    .line 215
     add-int/lit8 v2, v3, -0x64
 
-    .line 215
+    .line 216
     move v3, v2
 
-    .line 218
+    .line 219
     :cond_3
     div-int/lit8 p1, p1, 0xa
 
-    .line 219
+    .line 220
     rem-int/lit8 v4, p1, 0xa
 
     aget v0, v1, v4
 
-    .line 220
+    .line 221
     if-nez v0, :cond_4
 
-    .line 222
+    .line 223
     add-int/lit16 v2, v3, -0x3e8
 
-    .line 224
+    .line 225
     :cond_4
     const/16 v4, 0x3e7
 
     if-le v2, v4, :cond_5
 
-    .line 226
+    .line 227
     const/4 v2, 0x0
 
-    .line 228
+    .line 229
     :cond_5
     invoke-static {v2}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
 
@@ -3120,7 +3120,7 @@
 
     goto :goto_0
 
-    .line 191
+    .line 192
     :array_0
     .array-data 0x4
         0x0t 0x0t 0x0t 0x0t
@@ -3143,10 +3143,10 @@
     .prologue
     const/4 v4, 0x0
 
-    .line 523
+    .line 524
     const/4 v10, 0x0
 
-    .line 524
+    .line 525
     .local v10, mRefCountry:Landroid/provider/ReferenceCountry;
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -3158,13 +3158,13 @@
 
     move-result-object v12
 
-    .line 526
+    .line 527
     .local v12, refCountryIndex:Ljava/lang/String;
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    .line 528
+    .line 529
     .local v0, mContentResolver:Landroid/content/ContentResolver;
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -3184,7 +3184,7 @@
 
     move-result-object v3
 
-    .line 531
+    .line 532
     .local v3, where:Ljava/lang/String;
     sget-boolean v1, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
@@ -3212,7 +3212,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 533
+    .line 534
     :cond_0
     sget-object v1, Landroid/provider/Settings$AssistDial;->CONTENT_URI:Landroid/net/Uri;
 
@@ -3224,11 +3224,11 @@
 
     move-result-object v8
 
-    .line 538
+    .line 539
     .local v8, cursor:Landroid/database/Cursor;
     if-nez v8, :cond_1
 
-    .line 539
+    .line 540
     const-string v1, "AssistDialPhoneNumberUtils"
 
     const-string v2, "cursor is null"
@@ -3237,13 +3237,13 @@
 
     move-object v11, v10
 
-    .line 605
+    .line 606
     .end local v10           #mRefCountry:Landroid/provider/ReferenceCountry;
     .local v11, mRefCountry:Landroid/provider/ReferenceCountry;
     :goto_0
     return-object v11
 
-    .line 544
+    .line 545
     .end local v11           #mRefCountry:Landroid/provider/ReferenceCountry;
     .restart local v10       #mRefCountry:Landroid/provider/ReferenceCountry;
     :cond_1
@@ -3254,7 +3254,7 @@
 
     if-eqz v1, :cond_5
 
-    .line 546
+    .line 547
     new-instance v11, Landroid/provider/ReferenceCountry;
 
     invoke-direct {v11}, Landroid/provider/ReferenceCountry;-><init>()V
@@ -3262,7 +3262,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 548
+    .line 549
     .end local v10           #mRefCountry:Landroid/provider/ReferenceCountry;
     .restart local v11       #mRefCountry:Landroid/provider/ReferenceCountry;
     :try_start_1
@@ -3272,7 +3272,7 @@
 
     move-result v7
 
-    .line 549
+    .line 550
     .local v7, columnIndex:I
     sget-boolean v1, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
@@ -3300,13 +3300,13 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 550
+    .line 551
     :cond_2
     invoke-interface {v8, v7}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v6
 
-    .line 551
+    .line 552
     .local v6, aa:I
     sget-boolean v1, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
@@ -3334,11 +3334,11 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 552
+    .line 553
     :cond_3
     invoke-virtual {v11, v6}, Landroid/provider/ReferenceCountry;->setIndex(I)V
 
-    .line 554
+    .line 555
     const-string v1, "countryindex"
 
     invoke-interface {v8, v1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
@@ -3351,7 +3351,7 @@
 
     invoke-virtual {v11, v1}, Landroid/provider/ReferenceCountry;->setIndex(I)V
 
-    .line 558
+    .line 559
     const-string v1, "countryname"
 
     invoke-interface {v8, v1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
@@ -3364,7 +3364,7 @@
 
     invoke-virtual {v11, v1}, Landroid/provider/ReferenceCountry;->setCountryName(Ljava/lang/String;)V
 
-    .line 563
+    .line 564
     const-string/jumbo v1, "mcc"
 
     invoke-interface {v8, v1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
@@ -3377,7 +3377,7 @@
 
     invoke-virtual {v11, v1}, Landroid/provider/ReferenceCountry;->setMccCode(Ljava/lang/String;)V
 
-    .line 566
+    .line 567
     const-string v1, "countrycode"
 
     invoke-interface {v8, v1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
@@ -3390,7 +3390,7 @@
 
     invoke-virtual {v11, v1}, Landroid/provider/ReferenceCountry;->setCountryCode(Ljava/lang/String;)V
 
-    .line 571
+    .line 572
     const-string v1, "iddprefix"
 
     invoke-interface {v8, v1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
@@ -3403,7 +3403,7 @@
 
     invoke-virtual {v11, v1}, Landroid/provider/ReferenceCountry;->setIddPrefix(Ljava/lang/String;)V
 
-    .line 576
+    .line 577
     const-string/jumbo v1, "nddprefix"
 
     invoke-interface {v8, v1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
@@ -3416,7 +3416,7 @@
 
     invoke-virtual {v11, v1}, Landroid/provider/ReferenceCountry;->setNddPrefix(Ljava/lang/String;)V
 
-    .line 581
+    .line 582
     const-string/jumbo v1, "nanp"
 
     invoke-interface {v8, v1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
@@ -3429,7 +3429,7 @@
 
     invoke-virtual {v11, v1}, Landroid/provider/ReferenceCountry;->setNanp(Ljava/lang/String;)V
 
-    .line 586
+    .line 587
     const-string v1, "area"
 
     invoke-interface {v8, v1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
@@ -3442,7 +3442,7 @@
 
     invoke-virtual {v11, v1}, Landroid/provider/ReferenceCountry;->setAreaCode(Ljava/lang/String;)V
 
-    .line 591
+    .line 592
     const-string/jumbo v1, "length"
 
     invoke-interface {v8, v1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
@@ -3455,7 +3455,7 @@
 
     invoke-virtual {v11, v1}, Landroid/provider/ReferenceCountry;->setNumLength(Ljava/lang/String;)V
 
-    .line 596
+    .line 597
     sget-boolean v1, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
     if-eqz v1, :cond_4
@@ -3492,7 +3492,7 @@
     :cond_4
     move-object v10, v11
 
-    .line 602
+    .line 603
     .end local v6           #aa:I
     .end local v7           #columnIndex:I
     .end local v11           #mRefCountry:Landroid/provider/ReferenceCountry;
@@ -3506,18 +3506,18 @@
     :goto_1
     move-object v11, v10
 
-    .line 605
+    .line 606
     .end local v10           #mRefCountry:Landroid/provider/ReferenceCountry;
     .restart local v11       #mRefCountry:Landroid/provider/ReferenceCountry;
     goto/16 :goto_0
 
-    .line 599
+    .line 600
     .end local v11           #mRefCountry:Landroid/provider/ReferenceCountry;
     .restart local v10       #mRefCountry:Landroid/provider/ReferenceCountry;
     :catch_0
     move-exception v9
 
-    .line 600
+    .line 601
     .local v9, e:Ljava/lang/Exception;
     :goto_2
     :try_start_2
@@ -3525,7 +3525,7 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 602
+    .line 603
     if-eqz v8, :cond_6
 
     invoke-interface {v8}, Landroid/database/Cursor;->close()V
@@ -3555,7 +3555,7 @@
     .restart local v10       #mRefCountry:Landroid/provider/ReferenceCountry;
     goto :goto_3
 
-    .line 599
+    .line 600
     .end local v10           #mRefCountry:Landroid/provider/ReferenceCountry;
     .restart local v11       #mRefCountry:Landroid/provider/ReferenceCountry;
     :catch_1
@@ -3574,12 +3574,12 @@
     .prologue
     const/4 v5, 0x0
 
-    .line 1211
+    .line 1212
     iget-object v0, p0, Landroid/telephony/AssistDialPhoneNumberUtils;->areacodeInfo:[Landroid/telephony/AssistDialPhoneNumberUtils$AreaCode;
 
     if-nez v0, :cond_0
 
-    .line 1212
+    .line 1213
     const/16 v0, 0x12d
 
     new-array v0, v0, [Landroid/telephony/AssistDialPhoneNumberUtils$AreaCode;
@@ -7198,7 +7198,7 @@
 
     iput-object v0, p0, Landroid/telephony/AssistDialPhoneNumberUtils;->areacodeInfo:[Landroid/telephony/AssistDialPhoneNumberUtils$AreaCode;
 
-    .line 1515
+    .line 1516
     :cond_0
     return-void
 .end method
@@ -7217,12 +7217,12 @@
 
     const/4 v7, 0x0
 
-    .line 1518
+    .line 1519
     iget-object v0, p0, Landroid/telephony/AssistDialPhoneNumberUtils;->countrySIDDataTable:[Landroid/telephony/AssistDialPhoneNumberUtils$SIDRangeType;
 
     if-nez v0, :cond_0
 
-    .line 1519
+    .line 1520
     const/16 v0, 0xe5
 
     new-array v0, v0, [Landroid/telephony/AssistDialPhoneNumberUtils$SIDRangeType;
@@ -10757,7 +10757,7 @@
 
     iput-object v0, p0, Landroid/telephony/AssistDialPhoneNumberUtils;->countrySIDDataTable:[Landroid/telephony/AssistDialPhoneNumberUtils$SIDRangeType;
 
-    .line 1751
+    .line 1752
     :cond_0
     return-void
 .end method
@@ -10767,10 +10767,10 @@
     .parameter "dialStr"
 
     .prologue
-    .line 1906
+    .line 1913
     const/4 v0, 0x0
 
-    .line 1908
+    .line 1915
     .local v0, retVal:Z
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -10780,7 +10780,7 @@
 
     if-ne v1, v2, :cond_0
 
-    .line 1909
+    .line 1916
     const/4 v1, 0x0
 
     invoke-virtual {p0, v1}, Ljava/lang/String;->charAt(I)C
@@ -10793,7 +10793,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 1910
+    .line 1917
     const/4 v1, 0x3
 
     invoke-virtual {p0, v1}, Ljava/lang/String;->charAt(I)C
@@ -10806,10 +10806,10 @@
 
     if-eqz v1, :cond_0
 
-    .line 1911
+    .line 1918
     const/4 v0, 0x1
 
-    .line 1916
+    .line 1923
     :cond_0
     return v0
 .end method
@@ -10825,46 +10825,46 @@
 
     const/4 v6, 0x0
 
-    .line 684
+    .line 685
     const/4 v4, 0x0
 
-    .line 685
+    .line 686
     .local v4, refCC:Ljava/lang/String;
     const/4 v2, 0x0
 
-    .line 686
+    .line 687
     .local v2, otaCC:Ljava/lang/String;
     const/4 v3, 0x0
 
-    .line 687
+    .line 688
     .local v3, otherCC:Ljava/lang/String;
     const/4 v5, 0x0
 
-    .line 689
+    .line 690
     .local v5, retVal:Z
     invoke-direct {p0, p3}, Landroid/telephony/AssistDialPhoneNumberUtils;->getRefCountry(Landroid/content/Context;)Landroid/provider/ReferenceCountry;
 
     move-result-object v1
 
-    .line 690
+    .line 691
     .local v1, mRefer:Landroid/provider/ReferenceCountry;
     if-eqz v1, :cond_0
 
-    .line 691
+    .line 692
     invoke-virtual {v1}, Landroid/provider/ReferenceCountry;->getCountryCode()Ljava/lang/String;
 
     move-result-object v4
 
-    .line 693
+    .line 694
     :cond_0
     invoke-virtual {p2}, Landroid/provider/ReferenceCountry;->getCountryCode()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 697
+    .line 698
     if-eqz v2, :cond_4
 
-    .line 699
+    .line 700
     :try_start_0
     sget-boolean v8, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
@@ -10902,7 +10902,7 @@
 
     invoke-static {v8, v9}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 701
+    .line 702
     :cond_1
     sget-boolean v8, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
@@ -10930,7 +10930,7 @@
 
     invoke-static {v8, v9}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 703
+    .line 704
     :cond_2
     const/4 v8, 0x0
 
@@ -10948,7 +10948,7 @@
 
     if-ne v8, v7, :cond_4
 
-    .line 705
+    .line 706
     invoke-virtual {p2}, Landroid/provider/ReferenceCountry;->getNanp()Ljava/lang/String;
 
     move-result-object v7
@@ -10969,7 +10969,7 @@
 
     if-le v7, v8, :cond_3
 
-    .line 708
+    .line 709
     invoke-virtual {v2}, Ljava/lang/String;->length()I
 
     move-result v7
@@ -10980,19 +10980,19 @@
 
     sput-object v7, Landroid/telephony/AssistDialPhoneNumberUtils;->afterNumber:Ljava/lang/String;
 
-    .line 710
+    .line 711
     :cond_3
     const/4 v5, 0x1
 
-    .line 744
+    .line 745
     :goto_0
     return v6
 
-    .line 715
+    .line 716
     :cond_4
     if-eqz v4, :cond_7
 
-    .line 717
+    .line 718
     sget-boolean v6, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
     if-eqz v6, :cond_5
@@ -11029,7 +11029,7 @@
 
     invoke-static {v6, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 719
+    .line 720
     :cond_5
     sget-boolean v6, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
@@ -11057,7 +11057,7 @@
 
     invoke-static {v6, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 720
+    .line 721
     :cond_6
     const/4 v6, 0x0
 
@@ -11075,24 +11075,24 @@
 
     if-ne v6, v7, :cond_7
 
-    .line 721
+    .line 722
     const/4 v5, 0x1
 
     move v6, v7
 
-    .line 722
+    .line 723
     goto :goto_0
 
-    .line 726
+    .line 727
     :cond_7
     if-nez v5, :cond_9
 
-    .line 728
+    .line 729
     iget-object v6, p0, Landroid/telephony/AssistDialPhoneNumberUtils;->mRefCountryList:[Landroid/provider/ReferenceCountry;
 
     if-eqz v6, :cond_9
 
-    .line 729
+    .line 730
     const/4 v0, 0x0
 
     .local v0, i:I
@@ -11103,7 +11103,7 @@
 
     if-ge v0, v6, :cond_9
 
-    .line 731
+    .line 732
     iget-object v6, p0, Landroid/telephony/AssistDialPhoneNumberUtils;->mRefCountryList:[Landroid/provider/ReferenceCountry;
 
     aget-object v6, v6, v0
@@ -11112,7 +11112,7 @@
 
     move-result-object v3
 
-    .line 732
+    .line 733
     if-eqz v3, :cond_8
 
     invoke-virtual {v3}, Ljava/lang/String;->length()I
@@ -11121,7 +11121,7 @@
 
     if-lez v6, :cond_8
 
-    .line 733
+    .line 734
     const/4 v6, 0x0
 
     invoke-virtual {v3}, Ljava/lang/String;->length()I
@@ -11140,21 +11140,21 @@
 
     if-ne v6, v7, :cond_8
 
-    .line 734
+    .line 735
     const/4 v5, 0x1
 
     move v6, v7
 
-    .line 735
+    .line 736
     goto/16 :goto_0
 
-    .line 729
+    .line 730
     :cond_8
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_1
 
-    .line 741
+    .line 742
     .end local v0           #i:I
     :catch_0
     move-exception v6
@@ -11162,7 +11162,7 @@
     :cond_9
     move v6, v5
 
-    .line 744
+    .line 745
     goto/16 :goto_0
 .end method
 
@@ -11171,7 +11171,7 @@
     .parameter "c"
 
     .prologue
-    .line 1894
+    .line 1901
     const/16 v0, 0x32
 
     if-lt p0, v0, :cond_0
@@ -11180,10 +11180,10 @@
 
     if-gt p0, v0, :cond_0
 
-    .line 1895
+    .line 1902
     const/4 v0, 0x1
 
-    .line 1897
+    .line 1904
     :goto_0
     return v0
 
@@ -11200,12 +11200,12 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 451
+    .line 452
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    .line 452
+    .line 453
     .local v0, mContentResolver:Landroid/content/ContentResolver;
     sget-object v1, Landroid/provider/Settings$AssistDial;->CONTENT_URI:Landroid/net/Uri;
 
@@ -11219,23 +11219,23 @@
 
     move-result-object v6
 
-    .line 457
+    .line 458
     .local v6, cursor:Landroid/database/Cursor;
     if-nez v6, :cond_1
 
-    .line 458
+    .line 459
     const-string v1, "AssistDialPhoneNumberUtils"
 
     const-string v2, "cursor is null"
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 520
+    .line 521
     :cond_0
     :goto_0
     return-void
 
-    .line 462
+    .line 463
     :cond_1
     invoke-interface {v6}, Landroid/database/Cursor;->getCount()I
 
@@ -11245,7 +11245,7 @@
 
     iput-object v1, p0, Landroid/telephony/AssistDialPhoneNumberUtils;->mRefCountryList:[Landroid/provider/ReferenceCountry;
 
-    .line 464
+    .line 465
     sget-boolean v1, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
     if-eqz v1, :cond_2
@@ -11276,7 +11276,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 467
+    .line 468
     :cond_2
     :try_start_0
     invoke-interface {v6}, Landroid/database/Cursor;->moveToFirst()Z
@@ -11285,7 +11285,7 @@
 
     if-eqz v1, :cond_3
 
-    .line 468
+    .line 469
     const/4 v8, 0x0
 
     .local v8, i:I
@@ -11296,12 +11296,12 @@
 
     if-ge v8, v1, :cond_3
 
-    .line 470
+    .line 471
     new-instance v9, Landroid/provider/ReferenceCountry;
 
     invoke-direct {v9}, Landroid/provider/ReferenceCountry;-><init>()V
 
-    .line 472
+    .line 473
     .local v9, mRc:Landroid/provider/ReferenceCountry;
     const-string v1, "countryindex"
 
@@ -11315,7 +11315,7 @@
 
     invoke-virtual {v9, v1}, Landroid/provider/ReferenceCountry;->setIndex(I)V
 
-    .line 476
+    .line 477
     const-string v1, "countryname"
 
     invoke-interface {v6, v1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
@@ -11328,7 +11328,7 @@
 
     invoke-virtual {v9, v1}, Landroid/provider/ReferenceCountry;->setCountryName(Ljava/lang/String;)V
 
-    .line 480
+    .line 481
     const-string/jumbo v1, "mcc"
 
     invoke-interface {v6, v1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
@@ -11341,7 +11341,7 @@
 
     invoke-virtual {v9, v1}, Landroid/provider/ReferenceCountry;->setMccCode(Ljava/lang/String;)V
 
-    .line 484
+    .line 485
     const-string v1, "countrycode"
 
     invoke-interface {v6, v1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
@@ -11354,7 +11354,7 @@
 
     invoke-virtual {v9, v1}, Landroid/provider/ReferenceCountry;->setCountryCode(Ljava/lang/String;)V
 
-    .line 488
+    .line 489
     const-string v1, "iddprefix"
 
     invoke-interface {v6, v1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
@@ -11367,7 +11367,7 @@
 
     invoke-virtual {v9, v1}, Landroid/provider/ReferenceCountry;->setIddPrefix(Ljava/lang/String;)V
 
-    .line 492
+    .line 493
     const-string/jumbo v1, "nddprefix"
 
     invoke-interface {v6, v1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
@@ -11380,7 +11380,7 @@
 
     invoke-virtual {v9, v1}, Landroid/provider/ReferenceCountry;->setNddPrefix(Ljava/lang/String;)V
 
-    .line 496
+    .line 497
     const-string/jumbo v1, "nanp"
 
     invoke-interface {v6, v1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
@@ -11393,7 +11393,7 @@
 
     invoke-virtual {v9, v1}, Landroid/provider/ReferenceCountry;->setNanp(Ljava/lang/String;)V
 
-    .line 500
+    .line 501
     const-string v1, "area"
 
     invoke-interface {v6, v1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
@@ -11406,7 +11406,7 @@
 
     invoke-virtual {v9, v1}, Landroid/provider/ReferenceCountry;->setAreaCode(Ljava/lang/String;)V
 
-    .line 504
+    .line 505
     const-string/jumbo v1, "length"
 
     invoke-interface {v6, v1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
@@ -11419,23 +11419,23 @@
 
     invoke-virtual {v9, v1}, Landroid/provider/ReferenceCountry;->setNumLength(Ljava/lang/String;)V
 
-    .line 508
+    .line 509
     iget-object v1, p0, Landroid/telephony/AssistDialPhoneNumberUtils;->mRefCountryList:[Landroid/provider/ReferenceCountry;
 
     aput-object v9, v1, v8
 
-    .line 510
+    .line 511
     invoke-interface {v6}, Landroid/database/Cursor;->moveToNext()Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 468
+    .line 469
     add-int/lit8 v8, v8, 0x1
 
     goto/16 :goto_1
 
-    .line 517
+    .line 518
     .end local v8           #i:I
     .end local v9           #mRc:Landroid/provider/ReferenceCountry;
     :cond_3
@@ -11445,18 +11445,18 @@
 
     goto/16 :goto_0
 
-    .line 514
+    .line 515
     :catch_0
     move-exception v7
 
-    .line 515
+    .line 516
     .local v7, e:Ljava/lang/Exception;
     :try_start_1
     invoke-virtual {v7}, Ljava/lang/Exception;->printStackTrace()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 517
+    .line 518
     if-eqz v6, :cond_0
 
     invoke-interface {v6}, Landroid/database/Cursor;->close()V
@@ -11482,32 +11482,32 @@
     .prologue
     const/4 v3, 0x0
 
-    .line 436
+    .line 437
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
-    .line 437
+    .line 438
     .local v1, mContentResolver:Landroid/content/ContentResolver;
     sget-object v2, Landroid/provider/Settings$AssistDial;->CONTENT_URI:Landroid/net/Uri;
 
     invoke-virtual {v1, v2, v3, v3}, Landroid/content/ContentResolver;->delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
 
-    .line 438
+    .line 439
     const-string v2, "assist_dial_check"
 
     const/4 v3, 0x0
 
     invoke-static {v1, v2, v3}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 439
+    .line 440
     const-string v2, "area"
 
     invoke-static {v1, v2}, Landroid/provider/Settings$System;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 441
+    .line 442
     .local v0, mAreaCode:Ljava/lang/String;
     sget-boolean v2, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
@@ -11519,7 +11519,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 443
+    .line 444
     :cond_0
     if-eqz v0, :cond_1
 
@@ -11533,15 +11533,15 @@
 
     if-ne v2, v3, :cond_2
 
-    .line 444
+    .line 445
     :cond_1
     invoke-static {v1}, Landroid/provider/Settings$AssistDial;->initAssistDialCountryDetailList(Landroid/content/ContentResolver;)V
 
-    .line 448
+    .line 449
     :goto_0
     return-void
 
-    .line 446
+    .line 447
     :cond_2
     invoke-static {v1, v0}, Landroid/provider/Settings$AssistDial;->initAssistDialCountryDetailList(Landroid/content/ContentResolver;Ljava/lang/String;)V
 
@@ -11551,47 +11551,180 @@
 
 # virtual methods
 .method public convertToCdma611Number(Ljava/lang/String;Landroid/content/Context;)Ljava/lang/String;
+    .locals 6
+    .parameter "number"
+    .parameter "context"
+
+    .prologue
+    .line 1876
+    const/4 v1, 0x0
+
+    .line 1877
+    .local v1, IddNumber:Ljava/lang/String;
+    const-string v0, "19085594899"
+
+    .line 1878
+    .local v0, Cdma611Number:Ljava/lang/String;
+    invoke-virtual {p0, p2}, Landroid/telephony/AssistDialPhoneNumberUtils;->getAssistedDialCurrentCountry(Landroid/content/Context;)Landroid/provider/ReferenceCountry;
+
+    move-result-object v2
+
+    .line 1880
+    .local v2, currentCountry:Landroid/provider/ReferenceCountry;
+    sget-boolean v3, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
+
+    if-eqz v3, :cond_0
+
+    const-string v3, "AssistDialPhoneNumberUtils"
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v5, "convertToCdma611Number()... before number "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 1882
+    :cond_0
+    invoke-virtual {p0, p2}, Landroid/telephony/AssistDialPhoneNumberUtils;->isCdmaVzWNetwork(Landroid/content/Context;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_1
+
+    .line 1883
+    invoke-virtual {p0, p2}, Landroid/telephony/AssistDialPhoneNumberUtils;->isInternationalCdmaIdd(Landroid/content/Context;)Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 1884
+    if-eqz v2, :cond_3
+
+    invoke-virtual {v2}, Landroid/provider/ReferenceCountry;->getNanp()Ljava/lang/String;
+
+    move-result-object v3
+
+    const-string v4, "1"
+
+    invoke-static {v3, v4}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
+
+    move-result v3
+
+    const/4 v4, 0x1
+
+    if-ne v3, v4, :cond_3
+
+    .line 1885
+    move-object p1, v0
+
+    .line 1893
+    :cond_1
+    :goto_0
+    sget-boolean v3, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
+
+    if-eqz v3, :cond_2
+
+    const-string v3, "AssistDialPhoneNumberUtils"
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v5, "convertToCdma611Number()... after number = "
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 1894
+    :cond_2
+    return-object p1
+
+    .line 1886
+    :cond_3
+    invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_4
+
+    .line 1887
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    goto :goto_0
+
+    .line 1889
+    :cond_4
+    move-object p1, v0
+
+    goto :goto_0
+.end method
+
+.method public convertToCdmaVoiceMailNumber(Ljava/lang/String;Landroid/content/Context;)Ljava/lang/String;
     .locals 5
     .parameter "number"
     .parameter "context"
 
     .prologue
-    .line 1872
-    const/4 v1, 0x0
+    .line 1856
+    const/4 v0, 0x0
 
-    .line 1873
-    .local v1, IddNumber:Ljava/lang/String;
-    const-string v0, "19085594899"
+    .line 1857
+    .local v0, IddNumber:Ljava/lang/String;
+    invoke-virtual {p0, p2}, Landroid/telephony/AssistDialPhoneNumberUtils;->getAssistedDialCurrentCountry(Landroid/content/Context;)Landroid/provider/ReferenceCountry;
 
-    .line 1875
-    .local v0, Cdma611Number:Ljava/lang/String;
+    move-result-object v1
+
+    .line 1858
+    .local v1, currentCountry:Landroid/provider/ReferenceCountry;
     sget-boolean v2, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
     if-eqz v2, :cond_0
 
     const-string v2, "AssistDialPhoneNumberUtils"
 
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v4, "convertToCdma611Number()... before number "
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
+    const-string v3, "convertToCdmaVoiceMailNumber()..."
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1877
+    .line 1860
     :cond_0
     invoke-virtual {p0, p2}, Landroid/telephony/AssistDialPhoneNumberUtils;->isCdmaVzWNetwork(Landroid/content/Context;)Z
 
@@ -11599,28 +11732,48 @@
 
     if-nez v2, :cond_1
 
-    .line 1878
+    .line 1861
     invoke-virtual {p0, p2}, Landroid/telephony/AssistDialPhoneNumberUtils;->isInternationalCdmaIdd(Landroid/content/Context;)Ljava/lang/String;
 
-    move-result-object v1
+    move-result-object v0
 
-    .line 1879
-    invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+    .line 1862
+    if-eqz v1, :cond_3
+
+    invoke-virtual {v1}, Landroid/provider/ReferenceCountry;->getNanp()Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v3, "1"
+
+    invoke-static {v2, v3}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
     move-result v2
 
-    if-nez v2, :cond_3
+    const/4 v3, 0x1
 
-    .line 1880
+    if-ne v2, v3, :cond_3
+
+    .line 1863
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v3, "1"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {}, Landroid/telephony/TelephonyManager;->getDefault()Landroid/telephony/TelephonyManager;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Landroid/telephony/TelephonyManager;->getLine1Number()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
@@ -11628,7 +11781,7 @@
 
     move-result-object p1
 
-    .line 1886
+    .line 1871
     :cond_1
     :goto_0
     sget-boolean v2, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
@@ -11641,7 +11794,7 @@
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v4, "convertToCdma611Number()... after number = "
+    const-string v4, "convertToCdmaVoiceMailNumber()... number = "
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -11657,147 +11810,76 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1887
+    .line 1872
     :cond_2
     return-object p1
 
-    .line 1882
+    .line 1864
     :cond_3
-    move-object p1, v0
-
-    goto :goto_0
-.end method
-
-.method public convertToCdmaVoiceMailNumber(Ljava/lang/String;Landroid/content/Context;)Ljava/lang/String;
-    .locals 4
-    .parameter "number"
-    .parameter "context"
-
-    .prologue
-    .line 1855
-    const/4 v0, 0x0
-
-    .line 1856
-    .local v0, IddNumber:Ljava/lang/String;
-    sget-boolean v1, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
-
-    if-eqz v1, :cond_0
-
-    const-string v1, "AssistDialPhoneNumberUtils"
-
-    const-string v2, "convertToCdmaVoiceMailNumber()..."
-
-    invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 1858
-    :cond_0
-    invoke-virtual {p0, p2}, Landroid/telephony/AssistDialPhoneNumberUtils;->isCdmaVzWNetwork(Landroid/content/Context;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_1
-
-    .line 1859
-    invoke-virtual {p0, p2}, Landroid/telephony/AssistDialPhoneNumberUtils;->isInternationalCdmaIdd(Landroid/content/Context;)Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 1860
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    move-result v1
+    move-result v2
 
-    if-nez v1, :cond_3
+    if-nez v2, :cond_4
 
-    .line 1861
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    const-string v2, "1"
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-static {}, Landroid/telephony/TelephonyManager;->getDefault()Landroid/telephony/TelephonyManager;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Landroid/telephony/TelephonyManager;->getLine1Number()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    .line 1867
-    :cond_1
-    :goto_0
-    sget-boolean v1, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
-
-    if-eqz v1, :cond_2
-
-    const-string v1, "AssistDialPhoneNumberUtils"
-
+    .line 1865
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v3, "convertToCdmaVoiceMailNumber()... number = "
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string v3, "1"
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {}, Landroid/telephony/TelephonyManager;->getDefault()Landroid/telephony/TelephonyManager;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Landroid/telephony/TelephonyManager;->getLine1Number()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    move-result-object p1
+
+    goto :goto_0
+
+    .line 1867
+    :cond_4
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "1"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     move-result-object v2
-
-    invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 1868
-    :cond_2
-    return-object p1
-
-    .line 1863
-    :cond_3
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v2, "1"
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
 
     invoke-static {}, Landroid/telephony/TelephonyManager;->getDefault()Landroid/telephony/TelephonyManager;
 
+    move-result-object v3
+
+    invoke-virtual {v3}, Landroid/telephony/TelephonyManager;->getLine1Number()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     move-result-object v2
 
-    invoke-virtual {v2}, Landroid/telephony/TelephonyManager;->getLine1Number()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
@@ -11813,14 +11895,14 @@
 
     const/4 v3, 0x0
 
-    .line 377
+    .line 378
     const/4 v1, 0x0
 
-    .line 378
+    .line 379
     .local v1, i:I
     const/4 v0, 0x0
 
-    .line 380
+    .line 381
     .local v0, areacode:Ljava/lang/String;
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
@@ -11830,7 +11912,7 @@
 
     if-le v4, v5, :cond_5
 
-    .line 381
+    .line 382
     invoke-virtual {p1, v3}, Ljava/lang/String;->charAt(I)C
 
     move-result v4
@@ -11839,14 +11921,14 @@
 
     if-ne v4, v5, :cond_3
 
-    .line 382
+    .line 383
     const/4 v4, 0x4
 
     invoke-virtual {p1, v2, v4}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 386
+    .line 387
     :goto_0
     sget-boolean v4, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
@@ -11874,7 +11956,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 388
+    .line 389
     :cond_0
     sget-boolean v4, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
@@ -11908,7 +11990,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 391
+    .line 392
     :cond_1
     const/4 v1, 0x0
 
@@ -11919,7 +12001,7 @@
 
     if-ge v1, v4, :cond_5
 
-    .line 392
+    .line 393
     sget-boolean v4, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
     if-eqz v4, :cond_2
@@ -11972,7 +12054,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 396
+    .line 397
     :cond_2
     iget-object v4, p0, Landroid/telephony/AssistDialPhoneNumberUtils;->areacodeInfo:[Landroid/telephony/AssistDialPhoneNumberUtils$AreaCode;
 
@@ -11988,11 +12070,11 @@
 
     if-eqz v4, :cond_4
 
-    .line 401
+    .line 402
     :goto_2
     return v2
 
-    .line 384
+    .line 385
     :cond_3
     const/4 v4, 0x3
 
@@ -12002,7 +12084,7 @@
 
     goto/16 :goto_0
 
-    .line 391
+    .line 392
     :cond_4
     add-int/lit8 v1, v1, 0x1
 
@@ -12011,7 +12093,7 @@
     :cond_5
     move v2, v3
 
-    .line 401
+    .line 402
     goto :goto_2
 .end method
 
@@ -12024,14 +12106,14 @@
 
     const/4 v3, 0x0
 
-    .line 405
+    .line 406
     const/4 v1, 0x0
 
-    .line 406
+    .line 407
     .local v1, i:I
     const/4 v0, 0x0
 
-    .line 408
+    .line 409
     .local v0, areacode:Ljava/lang/String;
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
@@ -12041,7 +12123,7 @@
 
     if-lt v4, v5, :cond_5
 
-    .line 409
+    .line 410
     invoke-virtual {p1, v3}, Ljava/lang/String;->charAt(I)C
 
     move-result v4
@@ -12050,14 +12132,14 @@
 
     if-ne v4, v5, :cond_3
 
-    .line 410
+    .line 411
     const/4 v4, 0x4
 
     invoke-virtual {p1, v2, v4}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 414
+    .line 415
     :goto_0
     sget-boolean v4, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
@@ -12085,7 +12167,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 416
+    .line 417
     :cond_0
     sget-boolean v4, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
@@ -12119,7 +12201,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 419
+    .line 420
     :cond_1
     const/4 v1, 0x0
 
@@ -12130,7 +12212,7 @@
 
     if-ge v1, v4, :cond_5
 
-    .line 420
+    .line 421
     sget-boolean v4, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
     if-eqz v4, :cond_2
@@ -12183,7 +12265,7 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 424
+    .line 425
     :cond_2
     iget-object v4, p0, Landroid/telephony/AssistDialPhoneNumberUtils;->areacodeInfo:[Landroid/telephony/AssistDialPhoneNumberUtils$AreaCode;
 
@@ -12199,11 +12281,11 @@
 
     if-eqz v4, :cond_4
 
-    .line 429
+    .line 430
     :goto_2
     return v2
 
-    .line 412
+    .line 413
     :cond_3
     const/4 v4, 0x3
 
@@ -12213,7 +12295,7 @@
 
     goto/16 :goto_0
 
-    .line 419
+    .line 420
     :cond_4
     add-int/lit8 v1, v1, 0x1
 
@@ -12222,7 +12304,7 @@
     :cond_5
     move v2, v3
 
-    .line 429
+    .line 430
     goto :goto_2
 .end method
 
@@ -12231,14 +12313,14 @@
     .parameter "context"
 
     .prologue
-    .line 235
+    .line 236
     const/4 v4, 0x0
 
-    .line 236
+    .line 237
     .local v4, currentCountry:Landroid/provider/ReferenceCountry;
     const/16 v2, 0x3ff
 
-    .line 238
+    .line 239
     .local v2, beforeMcc:I
     :try_start_0
     invoke-virtual/range {p1 .. p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -12253,7 +12335,7 @@
 
     move-result v2
 
-    .line 244
+    .line 245
     :goto_0
     const-string/jumbo v13, "phone"
 
@@ -12265,13 +12347,13 @@
 
     check-cast v11, Landroid/telephony/TelephonyManager;
 
-    .line 247
+    .line 248
     .local v11, telephonyManager:Landroid/telephony/TelephonyManager;
     invoke-static {v2}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
 
     move-result-object v9
 
-    .line 249
+    .line 250
     .local v9, mcc:Ljava/lang/String;
     sget-boolean v13, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
@@ -12299,7 +12381,7 @@
 
     invoke-static {v13, v14}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 251
+    .line 252
     :cond_0
     move-object/from16 v0, p0
 
@@ -12307,10 +12389,10 @@
 
     if-nez v13, :cond_1
 
-    .line 253
+    .line 254
     invoke-direct/range {p0 .. p1}, Landroid/telephony/AssistDialPhoneNumberUtils;->loadAllCountryForAssistedDial(Landroid/content/Context;)V
 
-    .line 256
+    .line 257
     :cond_1
     move-object/from16 v0, p0
 
@@ -12326,14 +12408,14 @@
 
     if-nez v13, :cond_5
 
-    .line 257
+    .line 258
     :cond_2
     invoke-direct/range {p0 .. p1}, Landroid/telephony/AssistDialPhoneNumberUtils;->reCreateReferenceCountryList(Landroid/content/Context;)V
 
-    .line 258
+    .line 259
     invoke-direct/range {p0 .. p1}, Landroid/telephony/AssistDialPhoneNumberUtils;->loadAllCountryForAssistedDial(Landroid/content/Context;)V
 
-    .line 259
+    .line 260
     move-object/from16 v0, p0
 
     iget-object v13, v0, Landroid/telephony/AssistDialPhoneNumberUtils;->mRefCountryList:[Landroid/provider/ReferenceCountry;
@@ -12348,7 +12430,7 @@
 
     if-nez v13, :cond_5
 
-    .line 260
+    .line 261
     :cond_3
     sget-boolean v13, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
@@ -12363,13 +12445,13 @@
     :cond_4
     move-object v5, v4
 
-    .line 351
+    .line 352
     .end local v4           #currentCountry:Landroid/provider/ReferenceCountry;
     .local v5, currentCountry:Landroid/provider/ReferenceCountry;
     :goto_1
     return-object v5
 
-    .line 239
+    .line 240
     .end local v5           #currentCountry:Landroid/provider/ReferenceCountry;
     .end local v9           #mcc:Ljava/lang/String;
     .end local v11           #telephonyManager:Landroid/telephony/TelephonyManager;
@@ -12377,13 +12459,13 @@
     :catch_0
     move-exception v6
 
-    .line 241
+    .line 242
     .local v6, e:Landroid/provider/Settings$SettingNotFoundException;
     invoke-virtual {v6}, Landroid/provider/Settings$SettingNotFoundException;->printStackTrace()V
 
     goto :goto_0
 
-    .line 265
+    .line 266
     .end local v6           #e:Landroid/provider/Settings$SettingNotFoundException;
     .restart local v9       #mcc:Ljava/lang/String;
     .restart local v11       #telephonyManager:Landroid/telephony/TelephonyManager;
@@ -12396,7 +12478,7 @@
 
     if-ne v13, v14, :cond_d
 
-    .line 266
+    .line 267
     sget-boolean v13, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
     if-eqz v13, :cond_6
@@ -12407,7 +12489,7 @@
 
     invoke-static {v13, v14}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 267
+    .line 268
     :cond_6
     const/4 v7, 0x0
 
@@ -12421,7 +12503,7 @@
 
     if-ge v7, v13, :cond_a
 
-    .line 268
+    .line 269
     move-object/from16 v0, p0
 
     iget-object v13, v0, Landroid/telephony/AssistDialPhoneNumberUtils;->mRefCountryList:[Landroid/provider/ReferenceCountry;
@@ -12432,7 +12514,7 @@
 
     move-result-object v12
 
-    .line 269
+    .line 270
     .local v12, tempMcc:Ljava/lang/String;
     const-string v13, ","
 
@@ -12440,7 +12522,7 @@
 
     move-result-object v1
 
-    .line 270
+    .line 271
     .local v1, allMccForOneCountry:[Ljava/lang/String;
     const/4 v8, 0x0
 
@@ -12450,7 +12532,7 @@
 
     if-ge v8, v13, :cond_9
 
-    .line 271
+    .line 272
     aget-object v13, v1, v8
 
     invoke-static {v9, v13}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
@@ -12459,13 +12541,13 @@
 
     if-eqz v13, :cond_8
 
-    .line 272
+    .line 273
     new-instance v4, Landroid/provider/ReferenceCountry;
 
     .end local v4           #currentCountry:Landroid/provider/ReferenceCountry;
     invoke-direct {v4}, Landroid/provider/ReferenceCountry;-><init>()V
 
-    .line 273
+    .line 274
     .restart local v4       #currentCountry:Landroid/provider/ReferenceCountry;
     move-object/from16 v0, p0
 
@@ -12473,10 +12555,10 @@
 
     aget-object v4, v13, v7
 
-    .line 274
+    .line 275
     if-eqz v4, :cond_7
 
-    .line 275
+    .line 276
     sget-boolean v13, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
     if-eqz v13, :cond_7
@@ -12510,12 +12592,12 @@
     :cond_7
     move-object v5, v4
 
-    .line 277
+    .line 278
     .end local v4           #currentCountry:Landroid/provider/ReferenceCountry;
     .restart local v5       #currentCountry:Landroid/provider/ReferenceCountry;
     goto :goto_1
 
-    .line 270
+    .line 271
     .end local v5           #currentCountry:Landroid/provider/ReferenceCountry;
     .restart local v4       #currentCountry:Landroid/provider/ReferenceCountry;
     :cond_8
@@ -12523,20 +12605,20 @@
 
     goto :goto_3
 
-    .line 267
+    .line 268
     :cond_9
     add-int/lit8 v7, v7, 0x1
 
     goto :goto_2
 
-    .line 282
+    .line 283
     .end local v1           #allMccForOneCountry:[Ljava/lang/String;
     .end local v8           #j:I
     .end local v12           #tempMcc:Ljava/lang/String;
     :cond_a
     const/4 v3, 0x0
 
-    .line 285
+    .line 286
     .local v3, countrySID:I
     :try_start_1
     invoke-virtual/range {p1 .. p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -12551,7 +12633,7 @@
 
     move-result v3
 
-    .line 293
+    .line 294
     :goto_4
     const/4 v7, 0x0
 
@@ -12564,7 +12646,7 @@
 
     if-ge v7, v13, :cond_15
 
-    .line 294
+    .line 295
     move-object/from16 v0, p0
 
     iget-object v13, v0, Landroid/telephony/AssistDialPhoneNumberUtils;->countrySIDDataTable:[Landroid/telephony/AssistDialPhoneNumberUtils$SIDRangeType;
@@ -12589,7 +12671,7 @@
 
     if-gt v3, v13, :cond_c
 
-    .line 296
+    .line 297
     move-object/from16 v0, p0
 
     iget-object v13, v0, Landroid/telephony/AssistDialPhoneNumberUtils;->countrySIDDataTable:[Landroid/telephony/AssistDialPhoneNumberUtils$SIDRangeType;
@@ -12600,14 +12682,14 @@
 
     move-result v10
 
-    .line 297
+    .line 298
     .local v10, otaIndex:I
     new-instance v4, Landroid/provider/ReferenceCountry;
 
     .end local v4           #currentCountry:Landroid/provider/ReferenceCountry;
     invoke-direct {v4}, Landroid/provider/ReferenceCountry;-><init>()V
 
-    .line 298
+    .line 299
     .restart local v4       #currentCountry:Landroid/provider/ReferenceCountry;
     move-object/from16 v0, p0
 
@@ -12615,10 +12697,10 @@
 
     aget-object v4, v13, v10
 
-    .line 299
+    .line 300
     if-eqz v4, :cond_b
 
-    .line 300
+    .line 301
     sget-boolean v13, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
     if-eqz v13, :cond_b
@@ -12652,32 +12734,32 @@
     :cond_b
     move-object v5, v4
 
-    .line 302
+    .line 303
     .end local v4           #currentCountry:Landroid/provider/ReferenceCountry;
     .restart local v5       #currentCountry:Landroid/provider/ReferenceCountry;
     goto/16 :goto_1
 
-    .line 288
+    .line 289
     .end local v5           #currentCountry:Landroid/provider/ReferenceCountry;
     .end local v10           #otaIndex:I
     .restart local v4       #currentCountry:Landroid/provider/ReferenceCountry;
     :catch_1
     move-exception v6
 
-    .line 290
+    .line 291
     .restart local v6       #e:Landroid/provider/Settings$SettingNotFoundException;
     invoke-virtual {v6}, Landroid/provider/Settings$SettingNotFoundException;->printStackTrace()V
 
     goto :goto_4
 
-    .line 293
+    .line 294
     .end local v6           #e:Landroid/provider/Settings$SettingNotFoundException;
     :cond_c
     add-int/lit8 v7, v7, 0x1
 
     goto :goto_5
 
-    .line 306
+    .line 307
     .end local v3           #countrySID:I
     .end local v7           #i:I
     :cond_d
@@ -12689,7 +12771,7 @@
 
     if-ne v13, v14, :cond_15
 
-    .line 307
+    .line 308
     sget-boolean v13, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
     if-eqz v13, :cond_e
@@ -12700,11 +12782,11 @@
 
     invoke-static {v13, v14}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 308
+    .line 309
     :cond_e
     const/4 v3, 0x0
 
-    .line 311
+    .line 312
     .restart local v3       #countrySID:I
     :try_start_2
     invoke-virtual/range {p1 .. p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -12719,11 +12801,11 @@
 
     move-result v3
 
-    .line 319
+    .line 320
     :goto_6
     if-eqz v3, :cond_11
 
-    .line 320
+    .line 321
     const/4 v7, 0x0
 
     .restart local v7       #i:I
@@ -12736,7 +12818,7 @@
 
     if-ge v7, v13, :cond_11
 
-    .line 321
+    .line 322
     move-object/from16 v0, p0
 
     iget-object v13, v0, Landroid/telephony/AssistDialPhoneNumberUtils;->countrySIDDataTable:[Landroid/telephony/AssistDialPhoneNumberUtils$SIDRangeType;
@@ -12761,7 +12843,7 @@
 
     if-gt v3, v13, :cond_10
 
-    .line 323
+    .line 324
     move-object/from16 v0, p0
 
     iget-object v13, v0, Landroid/telephony/AssistDialPhoneNumberUtils;->countrySIDDataTable:[Landroid/telephony/AssistDialPhoneNumberUtils$SIDRangeType;
@@ -12772,14 +12854,14 @@
 
     move-result v10
 
-    .line 324
+    .line 325
     .restart local v10       #otaIndex:I
     new-instance v4, Landroid/provider/ReferenceCountry;
 
     .end local v4           #currentCountry:Landroid/provider/ReferenceCountry;
     invoke-direct {v4}, Landroid/provider/ReferenceCountry;-><init>()V
 
-    .line 325
+    .line 326
     .restart local v4       #currentCountry:Landroid/provider/ReferenceCountry;
     move-object/from16 v0, p0
 
@@ -12787,10 +12869,10 @@
 
     aget-object v4, v13, v10
 
-    .line 326
+    .line 327
     if-eqz v4, :cond_f
 
-    .line 327
+    .line 328
     sget-boolean v13, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
     if-eqz v13, :cond_f
@@ -12824,12 +12906,12 @@
     :cond_f
     move-object v5, v4
 
-    .line 329
+    .line 330
     .end local v4           #currentCountry:Landroid/provider/ReferenceCountry;
     .restart local v5       #currentCountry:Landroid/provider/ReferenceCountry;
     goto/16 :goto_1
 
-    .line 314
+    .line 315
     .end local v5           #currentCountry:Landroid/provider/ReferenceCountry;
     .end local v7           #i:I
     .end local v10           #otaIndex:I
@@ -12837,13 +12919,13 @@
     :catch_2
     move-exception v6
 
-    .line 316
+    .line 317
     .restart local v6       #e:Landroid/provider/Settings$SettingNotFoundException;
     invoke-virtual {v6}, Landroid/provider/Settings$SettingNotFoundException;->printStackTrace()V
 
     goto :goto_6
 
-    .line 320
+    .line 321
     .end local v6           #e:Landroid/provider/Settings$SettingNotFoundException;
     .restart local v7       #i:I
     :cond_10
@@ -12851,7 +12933,7 @@
 
     goto :goto_7
 
-    .line 334
+    .line 335
     .end local v7           #i:I
     :cond_11
     const/4 v7, 0x0
@@ -12866,7 +12948,7 @@
 
     if-ge v7, v13, :cond_15
 
-    .line 335
+    .line 336
     move-object/from16 v0, p0
 
     iget-object v13, v0, Landroid/telephony/AssistDialPhoneNumberUtils;->mRefCountryList:[Landroid/provider/ReferenceCountry;
@@ -12877,7 +12959,7 @@
 
     move-result-object v12
 
-    .line 336
+    .line 337
     .restart local v12       #tempMcc:Ljava/lang/String;
     const-string v13, ","
 
@@ -12885,7 +12967,7 @@
 
     move-result-object v1
 
-    .line 337
+    .line 338
     .restart local v1       #allMccForOneCountry:[Ljava/lang/String;
     const/4 v8, 0x0
 
@@ -12895,7 +12977,7 @@
 
     if-ge v8, v13, :cond_14
 
-    .line 338
+    .line 339
     aget-object v13, v1, v8
 
     invoke-static {v9, v13}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
@@ -12904,13 +12986,13 @@
 
     if-eqz v13, :cond_13
 
-    .line 339
+    .line 340
     new-instance v4, Landroid/provider/ReferenceCountry;
 
     .end local v4           #currentCountry:Landroid/provider/ReferenceCountry;
     invoke-direct {v4}, Landroid/provider/ReferenceCountry;-><init>()V
 
-    .line 340
+    .line 341
     .restart local v4       #currentCountry:Landroid/provider/ReferenceCountry;
     move-object/from16 v0, p0
 
@@ -12918,10 +13000,10 @@
 
     aget-object v4, v13, v7
 
-    .line 341
+    .line 342
     if-eqz v4, :cond_12
 
-    .line 342
+    .line 343
     sget-boolean v13, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
     if-eqz v13, :cond_12
@@ -12955,12 +13037,12 @@
     :cond_12
     move-object v5, v4
 
-    .line 344
+    .line 345
     .end local v4           #currentCountry:Landroid/provider/ReferenceCountry;
     .restart local v5       #currentCountry:Landroid/provider/ReferenceCountry;
     goto/16 :goto_1
 
-    .line 337
+    .line 338
     .end local v5           #currentCountry:Landroid/provider/ReferenceCountry;
     .restart local v4       #currentCountry:Landroid/provider/ReferenceCountry;
     :cond_13
@@ -12968,7 +13050,7 @@
 
     goto :goto_9
 
-    .line 334
+    .line 335
     :cond_14
     add-int/lit8 v7, v7, 0x1
 
@@ -12982,7 +13064,7 @@
     :cond_15
     move-object v5, v4
 
-    .line 351
+    .line 352
     .end local v4           #currentCountry:Landroid/provider/ReferenceCountry;
     .restart local v5       #currentCountry:Landroid/provider/ReferenceCountry;
     goto/16 :goto_1
@@ -12994,7 +13076,7 @@
     .parameter "context"
 
     .prologue
-    .line 149
+    .line 150
     sget-boolean v2, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
     if-eqz v2, :cond_0
@@ -13021,7 +13103,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 151
+    .line 152
     :cond_0
     invoke-virtual {p2}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -13033,7 +13115,7 @@
 
     invoke-static {v2, v3, v4}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 154
+    .line 155
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     move-result v2
@@ -13042,7 +13124,7 @@
 
     if-ge v2, v3, :cond_2
 
-    .line 156
+    .line 157
     sget-boolean v2, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
     if-eqz v2, :cond_1
@@ -13072,13 +13154,13 @@
     :cond_1
     move-object v1, p1
 
-    .line 183
+    .line 184
     .end local p1
     .local v1, number:Ljava/lang/String;
     :goto_0
     return-object v1
 
-    .line 160
+    .line 161
     .end local v1           #number:Ljava/lang/String;
     .restart local p1
     :cond_2
@@ -13086,11 +13168,11 @@
 
     move-result-object v0
 
-    .line 161
+    .line 162
     .local v0, currentCountry:Landroid/provider/ReferenceCountry;
     if-nez v0, :cond_3
 
-    .line 163
+    .line 164
     sget-boolean v2, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
     if-eqz v2, :cond_3
@@ -13101,11 +13183,11 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 165
+    .line 166
     :cond_3
     if-eqz v0, :cond_9
 
-    .line 166
+    .line 167
     invoke-virtual {v0}, Landroid/provider/ReferenceCountry;->getNanp()Ljava/lang/String;
 
     move-result-object v2
@@ -13120,7 +13202,7 @@
 
     if-ne v2, v3, :cond_7
 
-    .line 168
+    .line 169
     sget-boolean v2, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
     if-eqz v2, :cond_4
@@ -13131,13 +13213,13 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 169
+    .line 170
     :cond_4
     invoke-direct {p0, p1, v0, p2}, Landroid/telephony/AssistDialPhoneNumberUtils;->callAssistedDialSetVZWNetwork(Ljava/lang/String;Landroid/provider/ReferenceCountry;Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 179
+    .line 180
     :cond_5
     :goto_1
     sget-boolean v2, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
@@ -13166,7 +13248,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 181
+    .line 182
     :cond_6
     const/4 v2, 0x0
 
@@ -13174,12 +13256,12 @@
 
     move-object v1, p1
 
-    .line 183
+    .line 184
     .end local p1
     .restart local v1       #number:Ljava/lang/String;
     goto :goto_0
 
-    .line 172
+    .line 173
     .end local v1           #number:Ljava/lang/String;
     .restart local p1
     :cond_7
@@ -13193,7 +13275,7 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 173
+    .line 174
     :cond_8
     invoke-direct {p0, p1, v0, p2}, Landroid/telephony/AssistDialPhoneNumberUtils;->callAssistedDialSetIntNetwork(Ljava/lang/String;Landroid/provider/ReferenceCountry;Landroid/content/Context;)Ljava/lang/String;
 
@@ -13201,7 +13283,7 @@
 
     goto :goto_1
 
-    .line 176
+    .line 177
     :cond_9
     sget-boolean v2, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
@@ -13222,10 +13304,10 @@
     .parameter "context"
 
     .prologue
-    .line 41
+    .line 42
     const/4 v9, 0x0
 
-    .line 42
+    .line 43
     .local v9, ret_val:Z
     sget-boolean v10, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
@@ -13253,17 +13335,17 @@
 
     invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 43
+    .line 44
     :cond_0
     invoke-virtual {p0, p2}, Landroid/telephony/AssistDialPhoneNumberUtils;->getIsAssistedDialCheck(Landroid/content/Context;)I
 
     move-result v0
 
-    .line 44
+    .line 45
     .local v0, assistDialCheck:I
     const/4 v2, 0x0
 
-    .line 45
+    .line 46
     .local v2, dialframContact:I
     if-eqz v0, :cond_1
 
@@ -13275,7 +13357,7 @@
 
     if-ge v10, v11, :cond_4
 
-    .line 47
+    .line 48
     :cond_1
     sget-boolean v10, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
@@ -13287,7 +13369,7 @@
 
     invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 48
+    .line 49
     :cond_2
     sget-boolean v10, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
@@ -13318,13 +13400,13 @@
     :cond_3
     move-object v6, p1
 
-    .line 141
+    .line 142
     .end local p1
     .local v6, number:Ljava/lang/String;
     :goto_0
     return-object v6
 
-    .line 52
+    .line 53
     .end local v6           #number:Ljava/lang/String;
     .restart local p1
     :cond_4
@@ -13332,11 +13414,11 @@
 
     move-result-object v1
 
-    .line 54
+    .line 55
     .local v1, currentCountry:Landroid/provider/ReferenceCountry;
     if-eqz v1, :cond_e
 
-    .line 56
+    .line 57
     sget-boolean v10, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
     if-eqz v10, :cond_5
@@ -13363,26 +13445,26 @@
 
     invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 57
+    .line 58
     :cond_5
     const/4 v7, 0x0
 
-    .line 58
+    .line 59
     .local v7, ref_Idd:Ljava/lang/String;
     invoke-direct {p0, p2}, Landroid/telephony/AssistDialPhoneNumberUtils;->getRefCountry(Landroid/content/Context;)Landroid/provider/ReferenceCountry;
 
     move-result-object v4
 
-    .line 59
+    .line 60
     .local v4, mRefer:Landroid/provider/ReferenceCountry;
     if-eqz v4, :cond_d
 
-    .line 60
+    .line 61
     invoke-virtual {v4}, Landroid/provider/ReferenceCountry;->getIddPrefix()Ljava/lang/String;
 
     move-result-object v7
 
-    .line 62
+    .line 63
     const-string v10, "AssistDialPhoneNumberUtils"
 
     new-instance v11, Ljava/lang/StringBuilder;
@@ -13405,7 +13487,7 @@
 
     invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 63
+    .line 64
     if-eqz v7, :cond_6
 
     invoke-virtual {p1}, Ljava/lang/String;->length()I
@@ -13418,7 +13500,7 @@
 
     if-lt v10, v11, :cond_6
 
-    .line 65
+    .line 66
     const/4 v10, 0x0
 
     invoke-virtual {v7}, Ljava/lang/String;->length()I
@@ -13437,7 +13519,7 @@
 
     if-ne v10, v11, :cond_6
 
-    .line 67
+    .line 68
     new-instance v10, Ljava/lang/StringBuilder;
 
     invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
@@ -13464,10 +13546,10 @@
 
     move-result-object p1
 
-    .line 68
+    .line 69
     const/4 v9, 0x1
 
-    .line 73
+    .line 74
     :cond_6
     :try_start_0
     invoke-virtual {p2}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -13482,7 +13564,7 @@
 
     move-result v2
 
-    .line 78
+    .line 79
     :goto_1
     const-string v10, "AssistDialPhoneNumberUtils"
 
@@ -13506,7 +13588,7 @@
 
     invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 79
+    .line 80
     const-string v10, "AssistDialPhoneNumberUtils"
 
     new-instance v11, Ljava/lang/StringBuilder;
@@ -13533,26 +13615,26 @@
 
     invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 80
+    .line 81
     const/4 v10, 0x1
 
     if-ne v2, v10, :cond_b
 
     if-nez v9, :cond_b
 
-    .line 82
+    .line 83
     const/4 v8, 0x0
 
-    .line 83
+    .line 84
     .local v8, ref_Ndd:Ljava/lang/String;
     if-eqz v4, :cond_7
 
-    .line 84
+    .line 85
     invoke-virtual {v4}, Landroid/provider/ReferenceCountry;->getNddPrefix()Ljava/lang/String;
 
     move-result-object v8
 
-    .line 86
+    .line 87
     :cond_7
     if-eqz v8, :cond_8
 
@@ -13564,14 +13646,14 @@
 
     if-le v10, v11, :cond_8
 
-    .line 88
+    .line 89
     const-string v10, "AssistDialPhoneNumberUtils"
 
     const-string v11, "****** 1 "
 
     invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 89
+    .line 90
     invoke-virtual {v8}, Ljava/lang/String;->length()I
 
     move-result v10
@@ -13588,7 +13670,7 @@
 
     if-gt v10, v11, :cond_8
 
-    .line 90
+    .line 91
     const/4 v10, 0x0
 
     invoke-virtual {v8}, Ljava/lang/String;->length()I
@@ -13607,14 +13689,14 @@
 
     if-ne v10, v11, :cond_8
 
-    .line 92
+    .line 93
     const-string v10, "AssistDialPhoneNumberUtils"
 
     const-string v11, "****** 2 "
 
     invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 93
+    .line 94
     new-instance v10, Ljava/lang/StringBuilder;
 
     invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
@@ -13649,10 +13731,10 @@
 
     move-result-object p1
 
-    .line 95
+    .line 96
     const/4 v9, 0x1
 
-    .line 100
+    .line 101
     :cond_8
     invoke-virtual {v4}, Landroid/provider/ReferenceCountry;->getIndex()I
 
@@ -13660,17 +13742,17 @@
 
     if-nez v10, :cond_b
 
-    .line 101
+    .line 102
     const-string v10, "AssistDialPhoneNumberUtils"
 
     const-string v11, "****** 3"
 
     invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 102
+    .line 103
     if-nez v9, :cond_9
 
-    .line 103
+    .line 104
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     move-result v10
@@ -13685,14 +13767,14 @@
 
     if-ne v10, v11, :cond_9
 
-    .line 104
+    .line 105
     const-string v10, "AssistDialPhoneNumberUtils"
 
     const-string v11, "****** 4"
 
     invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 105
+    .line 106
     invoke-virtual {p0, p1}, Landroid/telephony/AssistDialPhoneNumberUtils;->getAreacodeInfoforContactNumber(Ljava/lang/String;)Z
 
     move-result v10
@@ -13701,14 +13783,14 @@
 
     if-ne v10, v11, :cond_9
 
-    .line 107
+    .line 108
     const-string v10, "AssistDialPhoneNumberUtils"
 
     const-string v11, "****** 5"
 
     invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 108
+    .line 109
     new-instance v10, Ljava/lang/StringBuilder;
 
     invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
@@ -13735,24 +13817,24 @@
 
     move-result-object p1
 
-    .line 109
+    .line 110
     const/4 v9, 0x1
 
-    .line 113
+    .line 114
     :cond_9
     if-nez v9, :cond_b
 
-    .line 114
+    .line 115
     const-string v10, "AssistDialPhoneNumberUtils"
 
     const-string v11, "****** 6"
 
     invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 116
+    .line 117
     const/4 v5, 0x0
 
-    .line 117
+    .line 118
     .local v5, mReferAreaCodeLen:I
     invoke-virtual {v4}, Landroid/provider/ReferenceCountry;->getAreaCode()Ljava/lang/String;
 
@@ -13760,7 +13842,7 @@
 
     if-eqz v10, :cond_a
 
-    .line 118
+    .line 119
     invoke-virtual {v4}, Landroid/provider/ReferenceCountry;->getAreaCode()Ljava/lang/String;
 
     move-result-object v10
@@ -13769,7 +13851,7 @@
 
     move-result v5
 
-    .line 120
+    .line 121
     :cond_a
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
@@ -13787,14 +13869,14 @@
 
     if-ne v10, v11, :cond_b
 
-    .line 121
+    .line 122
     const-string v10, "AssistDialPhoneNumberUtils"
 
     const-string v11, "****** 7"
 
     invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 122
+    .line 123
     new-instance v10, Ljava/lang/StringBuilder;
 
     invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
@@ -13829,7 +13911,7 @@
 
     move-result-object p1
 
-    .line 136
+    .line 137
     .end local v4           #mRefer:Landroid/provider/ReferenceCountry;
     .end local v5           #mReferAreaCodeLen:I
     .end local v7           #ref_Idd:Ljava/lang/String;
@@ -13862,7 +13944,7 @@
 
     invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 137
+    .line 138
     :cond_c
     invoke-virtual {p2}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -13874,19 +13956,19 @@
 
     invoke-static {v10, v11, v12}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 139
+    .line 140
     const/4 v10, 0x0
 
     iput-object v10, p0, Landroid/telephony/AssistDialPhoneNumberUtils;->mRefCountryList:[Landroid/provider/ReferenceCountry;
 
     move-object v6, p1
 
-    .line 141
+    .line 142
     .end local p1
     .restart local v6       #number:Ljava/lang/String;
     goto/16 :goto_0
 
-    .line 74
+    .line 75
     .end local v6           #number:Ljava/lang/String;
     .restart local v4       #mRefer:Landroid/provider/ReferenceCountry;
     .restart local v7       #ref_Idd:Ljava/lang/String;
@@ -13894,13 +13976,13 @@
     :catch_0
     move-exception v3
 
-    .line 76
+    .line 77
     .local v3, e:Landroid/provider/Settings$SettingNotFoundException;
     invoke-virtual {v3}, Landroid/provider/Settings$SettingNotFoundException;->printStackTrace()V
 
     goto/16 :goto_1
 
-    .line 129
+    .line 130
     .end local v3           #e:Landroid/provider/Settings$SettingNotFoundException;
     :cond_d
     sget-boolean v10, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
@@ -13915,7 +13997,7 @@
 
     goto :goto_2
 
-    .line 133
+    .line 134
     .end local v4           #mRefer:Landroid/provider/ReferenceCountry;
     .end local v7           #ref_Idd:Ljava/lang/String;
     :cond_e
@@ -13937,7 +14019,7 @@
     .parameter "context"
 
     .prologue
-    .line 355
+    .line 356
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
@@ -13950,7 +14032,7 @@
 
     move-result v0
 
-    .line 357
+    .line 358
     .local v0, isAssistedDialCheck:I
     return v0
 .end method
@@ -13964,7 +14046,7 @@
 
     const/4 v3, 0x0
 
-    .line 1805
+    .line 1806
     const/4 v4, 0x7
 
     new-array v1, v4, [Ljava/lang/String;
@@ -14007,7 +14089,7 @@
 
     aput-object v5, v1, v4
 
-    .line 1808
+    .line 1809
     .local v1, vzwMcc:[Ljava/lang/String;
     const/4 v0, 0x0
 
@@ -14017,7 +14099,7 @@
 
     if-ge v0, v4, :cond_1
 
-    .line 1810
+    .line 1811
     aget-object v4, v1, v0
 
     invoke-static {p1, v4}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
@@ -14026,11 +14108,11 @@
 
     if-eqz v4, :cond_0
 
-    .line 1815
+    .line 1816
     :goto_1
     return v2
 
-    .line 1808
+    .line 1809
     :cond_0
     add-int/lit8 v0, v0, 0x1
 
@@ -14039,7 +14121,7 @@
     :cond_1
     move v2, v3
 
-    .line 1815
+    .line 1816
     goto :goto_1
 .end method
 
@@ -14048,85 +14130,85 @@
     .parameter "context"
 
     .prologue
-    const/4 v1, 0x1
+    const/4 v1, 0x0
 
-    const/4 v2, 0x0
-
-    .line 1820
+    .line 1821
     invoke-virtual {p0, p1}, Landroid/telephony/AssistDialPhoneNumberUtils;->getAssistedDialCurrentCountry(Landroid/content/Context;)Landroid/provider/ReferenceCountry;
 
     move-result-object v0
 
-    .line 1821
+    .line 1822
     .local v0, currentCountry:Landroid/provider/ReferenceCountry;
     if-nez v0, :cond_0
 
-    .line 1823
-    sget-boolean v3, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
-
-    if-eqz v3, :cond_0
-
-    const-string v3, "isCdmaVzWNetwork"
-
-    const-string v4, " ****** currentCountry ===> null "
-
-    invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 1825
-    :cond_0
-    if-eqz v0, :cond_4
-
-    .line 1826
-    invoke-virtual {v0}, Landroid/provider/ReferenceCountry;->getNanp()Ljava/lang/String;
-
-    move-result-object v3
-
-    const-string v4, "1"
-
-    invoke-static {v3, v4}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
-
-    move-result v3
-
-    if-ne v3, v1, :cond_2
-
-    .line 1827
+    .line 1824
     sget-boolean v2, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
-    if-eqz v2, :cond_1
+    if-eqz v2, :cond_0
 
-    const-string v2, "isCdmaVzWNetwork"
+    const-string/jumbo v2, "isCdmaVzWNetwork"
 
-    const-string v3, " ****** vzw "
+    const-string v3, " ****** currentCountry ===> null "
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1835
+    .line 1826
+    :cond_0
+    if-eqz v0, :cond_2
+
+    .line 1827
+    invoke-virtual {v0}, Landroid/provider/ReferenceCountry;->getCountryName()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {}, Landroid/content/res/Resources;->getSystem()Landroid/content/res/Resources;
+
+    move-result-object v3
+
+    const v4, 0x20b0185
+
+    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_3
+
+    .line 1828
+    sget-boolean v1, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
+
+    if-eqz v1, :cond_1
+
+    const-string/jumbo v1, "isCdmaVzWNetwork"
+
+    const-string v2, " ****** vzw "
+
+    invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 1829
     :cond_1
+    const/4 v1, 0x1
+
+    .line 1836
+    :cond_2
     :goto_0
     return v1
 
-    .line 1831
-    :cond_2
-    sget-boolean v1, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
+    .line 1832
+    :cond_3
+    sget-boolean v2, Landroid/telephony/AssistDialPhoneNumberUtils;->DBG:Z
 
-    if-eqz v1, :cond_3
+    if-eqz v2, :cond_2
 
-    const-string v1, "isCdmaVzWNetwork"
+    const-string/jumbo v2, "isCdmaVzWNetwork"
 
     const-string v3, " ****** non vzw "
 
-    invoke-static {v1, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    :cond_3
-    move v1, v2
-
-    .line 1832
-    goto :goto_0
-
-    :cond_4
-    move v1, v2
-
-    .line 1835
     goto :goto_0
 .end method
 
@@ -14135,21 +14217,21 @@
     .parameter "context"
 
     .prologue
-    .line 1841
+    .line 1842
     invoke-virtual {p0, p1}, Landroid/telephony/AssistDialPhoneNumberUtils;->getAssistedDialCurrentCountry(Landroid/content/Context;)Landroid/provider/ReferenceCountry;
 
     move-result-object v0
 
-    .line 1843
+    .line 1844
     .local v0, currentCountry:Landroid/provider/ReferenceCountry;
     if-eqz v0, :cond_0
 
-    .line 1844
+    .line 1845
     invoke-virtual {v0}, Landroid/provider/ReferenceCountry;->getIddPrefix()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 1846
+    .line 1847
     :goto_0
     return-object v1
 

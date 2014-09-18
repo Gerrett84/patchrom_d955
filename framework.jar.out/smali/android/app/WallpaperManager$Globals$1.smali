@@ -25,7 +25,7 @@
     .parameter "x0"
 
     .prologue
-    .line 239
+    .line 244
     iput-object p1, p0, Landroid/app/WallpaperManager$Globals$1;->this$0:Landroid/app/WallpaperManager$Globals;
 
     invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
@@ -40,20 +40,20 @@
     .parameter "msg"
 
     .prologue
-    .line 242
+    .line 247
     iget v0, p1, Landroid/os/Message;->what:I
 
     packed-switch v0, :pswitch_data_0
 
-    .line 250
+    .line 255
     :goto_0
     return-void
 
-    .line 244
+    .line 249
     :pswitch_0
     monitor-enter p0
 
-    .line 245
+    .line 250
     :try_start_0
     iget-object v0, p0, Landroid/app/WallpaperManager$Globals$1;->this$0:Landroid/app/WallpaperManager$Globals;
 
@@ -62,7 +62,7 @@
     #setter for: Landroid/app/WallpaperManager$Globals;->mWallpaper:Landroid/graphics/Bitmap;
     invoke-static {v0, v1}, Landroid/app/WallpaperManager$Globals;->access$002(Landroid/app/WallpaperManager$Globals;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
 
-    .line 246
+    .line 251
     iget-object v0, p0, Landroid/app/WallpaperManager$Globals$1;->this$0:Landroid/app/WallpaperManager$Globals;
 
     const/4 v1, 0x0
@@ -70,7 +70,7 @@
     #setter for: Landroid/app/WallpaperManager$Globals;->mDefaultWallpaper:Landroid/graphics/Bitmap;
     invoke-static {v0, v1}, Landroid/app/WallpaperManager$Globals;->access$102(Landroid/app/WallpaperManager$Globals;Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
 
-    .line 247
+    .line 252
     monitor-exit p0
 
     goto :goto_0
@@ -84,7 +84,7 @@
 
     throw v0
 
-    .line 242
+    .line 247
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0

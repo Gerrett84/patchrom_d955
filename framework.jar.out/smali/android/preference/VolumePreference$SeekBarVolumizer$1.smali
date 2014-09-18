@@ -40,9 +40,9 @@
     .parameter "intent"
 
     .prologue
-    const/4 v9, 0x2
+    const/4 v9, 0x1
 
-    const/4 v8, 0x1
+    const/4 v8, 0x2
 
     .line 267
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
@@ -81,7 +81,7 @@
 
     .line 271
     .local v1, headsetState:I
-    if-ne v1, v8, :cond_0
+    if-ne v1, v9, :cond_0
 
     .line 273
     :try_start_0
@@ -136,7 +136,7 @@
 
     move-result v5
 
-    if-eq v5, v9, :cond_1
+    if-eq v5, v8, :cond_1
 
     iget-object v5, p0, Landroid/preference/VolumePreference$SeekBarVolumizer$1;->this$1:Landroid/preference/VolumePreference$SeekBarVolumizer;
 
@@ -232,7 +232,7 @@
     .line 288
     const-string v5, "android.media.EXTRA_VOLUME_STREAM_TYPE"
 
-    invoke-virtual {p2, v5, v9}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
+    invoke-virtual {p2, v5, v8}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result v4
 
@@ -408,10 +408,43 @@
     iget-object v5, v5, Landroid/preference/VolumePreference$SeekBarVolumizer;->this$0:Landroid/preference/VolumePreference;
 
     #setter for: Landroid/preference/VolumePreference;->mIsActive:Z
-    invoke-static {v5, v8}, Landroid/preference/VolumePreference;->access$002(Landroid/preference/VolumePreference;Z)Z
+    invoke-static {v5, v9}, Landroid/preference/VolumePreference;->access$002(Landroid/preference/VolumePreference;Z)Z
 
-    .line 309
+    .line 310
     :cond_5
+    const-string v5, "android.media.RINGER_MODE_CHANGED"
+
+    invoke-virtual {v0, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_6
+
+    .line 311
+    const-string v5, "android.media.EXTRA_RINGER_MODE"
+
+    invoke-virtual {p2, v5, v8}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
+
+    move-result v5
+
+    if-eq v5, v8, :cond_6
+
+    .line 312
+    iget-object v5, p0, Landroid/preference/VolumePreference$SeekBarVolumizer$1;->this$1:Landroid/preference/VolumePreference$SeekBarVolumizer;
+
+    invoke-virtual {v5}, Landroid/preference/VolumePreference$SeekBarVolumizer;->isSamplePlaying()Z
+
+    move-result v5
+
+    if-eqz v5, :cond_6
+
+    .line 313
+    iget-object v5, p0, Landroid/preference/VolumePreference$SeekBarVolumizer$1;->this$1:Landroid/preference/VolumePreference$SeekBarVolumizer;
+
+    invoke-virtual {v5}, Landroid/preference/VolumePreference$SeekBarVolumizer;->stopSample()V
+
+    .line 318
+    :cond_6
     return-void
 
     .line 274

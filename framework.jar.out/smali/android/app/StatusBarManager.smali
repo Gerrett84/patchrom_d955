@@ -702,6 +702,44 @@
     throw v1
 .end method
 
+.method public setNavigationBackgroundColor(I)V
+    .locals 3
+    .parameter "color"
+
+    .prologue
+    .line 290
+    :try_start_0
+    invoke-direct {p0}, Landroid/app/StatusBarManager;->getService()Lcom/android/internal/statusbar/IStatusBarService;
+
+    move-result-object v1
+
+    .line 291
+    .local v1, svc:Lcom/android/internal/statusbar/IStatusBarService;
+    if-eqz v1, :cond_0
+
+    .line 292
+    invoke-interface {v1, p1}, Lcom/android/internal/statusbar/IStatusBarService;->setNavigationBackgroundColor(I)V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 298
+    :cond_0
+    return-void
+
+    .line 294
+    .end local v1           #svc:Lcom/android/internal/statusbar/IStatusBarService;
+    :catch_0
+    move-exception v0
+
+    .line 296
+    .local v0, ex:Landroid/os/RemoteException;
+    new-instance v2, Ljava/lang/RuntimeException;
+
+    invoke-direct {v2, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
+
+    throw v2
+.end method
+
 .method public setNavigationRotation(III)V
     .locals 3
     .parameter "rotation"
@@ -770,6 +808,43 @@
     :catch_0
     move-exception v0
 
+    .local v0, ex:Landroid/os/RemoteException;
+    new-instance v2, Ljava/lang/RuntimeException;
+
+    invoke-direct {v2, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
+
+    throw v2
+.end method
+
+.method public setSystemBarShift()V
+    .locals 3
+
+    .prologue
+    .line 270
+    :try_start_0
+    invoke-direct {p0}, Landroid/app/StatusBarManager;->getService()Lcom/android/internal/statusbar/IStatusBarService;
+
+    move-result-object v1
+
+    .line 271
+    .local v1, svc:Lcom/android/internal/statusbar/IStatusBarService;
+    if-eqz v1, :cond_0
+
+    .line 272
+    invoke-interface {v1}, Lcom/android/internal/statusbar/IStatusBarService;->setSystemBarShift()V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 278
+    :cond_0
+    return-void
+
+    .line 274
+    .end local v1           #svc:Lcom/android/internal/statusbar/IStatusBarService;
+    :catch_0
+    move-exception v0
+
+    .line 276
     .local v0, ex:Landroid/os/RemoteException;
     new-instance v2, Ljava/lang/RuntimeException;
 

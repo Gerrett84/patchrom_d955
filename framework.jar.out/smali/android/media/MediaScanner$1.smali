@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 2027
+    .line 1935
     iput-object p1, p0, Landroid/media/MediaScanner$1;->this$0:Landroid/media/MediaScanner;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +42,7 @@
     .parameter "pathname"
 
     .prologue
-    .line 2029
+    .line 1937
     invoke-virtual {p1}, Ljava/io/File;->isDirectory()Z
 
     move-result v0

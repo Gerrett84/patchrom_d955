@@ -44,6 +44,8 @@
 
 .field private static final EXTRA_ROUNDING:D = 0.5
 
+.field private static final LINEBREAK_LIST:[C = null
+
 .field private static final START:I = 0x0
 
 .field private static final START_MASK:I = 0x1fffffff
@@ -82,6 +84,34 @@
 
 
 # direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .prologue
+    .line 646
+    const/16 v0, 0x8
+
+    new-array v0, v0, [C
+
+    fill-array-data v0, :array_0
+
+    sput-object v0, Landroid/text/StaticLayout;->LINEBREAK_LIST:[C
+
+    return-void
+
+    :array_0
+    .array-data 0x2
+        0x1t 0x30t
+        0x2t 0x30t
+        0x11t 0xfet
+        0x12t 0xfet
+        0x61t 0xfft
+        0x64t 0xfft
+        0x1t 0xfft
+        0x1ft 0xfft
+    .end array-data
+.end method
+
 .method constructor <init>(Ljava/lang/CharSequence;)V
     .locals 7
     .parameter "text"
@@ -1349,6 +1379,53 @@
         0x30fd -> :sswitch_1
         0x30fe -> :sswitch_1
     .end sparse-switch
+.end method
+
+.method private static final isPunctuation(C)Z
+    .locals 5
+    .parameter "c"
+
+    .prologue
+    .line 648
+    sget-object v0, Landroid/text/StaticLayout;->LINEBREAK_LIST:[C
+
+    .local v0, arr$:[C
+    array-length v3, v0
+
+    .local v3, len$:I
+    const/4 v2, 0x0
+
+    .local v2, i$:I
+    :goto_0
+    if-ge v2, v3, :cond_1
+
+    aget-char v1, v0, v2
+
+    .line 649
+    .local v1, bc:C
+    if-ne p0, v1, :cond_0
+
+    .line 650
+    const/4 v4, 0x1
+
+    .line 653
+    .end local v1           #bc:C
+    :goto_1
+    return v4
+
+    .line 648
+    .restart local v1       #bc:C
+    :cond_0
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_0
+
+    .line 653
+    .end local v1           #bc:C
+    :cond_1
+    const/4 v4, 0x0
+
+    goto :goto_1
 .end method
 
 .method private out(Ljava/lang/CharSequence;IIIIIIIFF[Landroid/text/style/LineHeightSpan;[ILandroid/graphics/Paint$FontMetricsInt;ZZ[BIZIZZ[C[FILandroid/text/TextUtils$TruncateAt;FFLandroid/text/TextPaint;Z)I
@@ -2735,6 +2812,12 @@
     .line 497
     :cond_11
     if-nez v114, :cond_15
+
+    invoke-static/range {v95 .. v95}, Landroid/text/StaticLayout;->isPunctuation(C)Z
+
+    move-result v5
+
+    if-nez v5, :cond_15
 
     const/16 v5, 0x2f
 

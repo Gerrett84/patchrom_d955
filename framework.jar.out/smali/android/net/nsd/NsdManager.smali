@@ -470,7 +470,7 @@
     .local v0, e:Ljava/lang/InterruptedException;
     const-string v3, "NsdManager"
 
-    const-string v4, "interrupted wait at init"
+    const-string/jumbo v4, "interrupted wait at init"
 
     invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 

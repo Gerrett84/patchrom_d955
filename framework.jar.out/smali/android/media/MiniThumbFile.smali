@@ -143,8 +143,6 @@
     .parameter "id"
 
     .prologue
-    const-wide/16 v7, 0x0
-
     const/4 v4, 0x0
 
     const/4 v9, 0x0
@@ -152,16 +150,17 @@
     .line 318
     iget-object v0, p0, Landroid/media/MiniThumbFile;->mCr:Landroid/content/ContentResolver;
 
-    if-nez v0, :cond_0
+    if-nez v0, :cond_1
 
-    move-wide v0, v7
+    const-wide/16 v7, 0x0
 
-    .line 326
+    .line 327
+    :cond_0
     :goto_0
-    return-wide v0
+    return-wide v7
 
     .line 319
-    :cond_0
+    :cond_1
     iget-object v0, p0, Landroid/media/MiniThumbFile;->mCr:Landroid/content/ContentResolver;
 
     iget-object v1, p0, Landroid/media/MiniThumbFile;->mThumbUri:Landroid/net/Uri;
@@ -206,30 +205,28 @@
 
     .line 320
     .local v6, c:Landroid/database/Cursor;
-    if-eqz v6, :cond_2
+    const-wide/16 v7, 0x0
 
     .line 321
+    .local v7, mNewID:J
+    if-eqz v6, :cond_0
+
+    .line 322
     invoke-interface {v6}, Landroid/database/Cursor;->moveToFirst()Z
 
     move-result v0
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_2
 
-    .line 322
+    .line 323
     invoke-interface {v6, v9}, Landroid/database/Cursor;->getLong(I)J
 
-    move-result-wide v0
+    move-result-wide v7
 
-    goto :goto_0
-
-    .line 324
-    :cond_1
+    .line 325
+    :cond_2
     invoke-interface {v6}, Landroid/database/Cursor;->close()V
 
-    :cond_2
-    move-wide v0, v7
-
-    .line 326
     goto :goto_0
 .end method
 

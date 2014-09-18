@@ -38,6 +38,9 @@
 .method public abstract isDefaultRouteSet()Z
 .end method
 
+.method public abstract isPhoneIdle()Z
+.end method
+
 .method public abstract isPrivateDnsRouteSet()Z
 .end method
 

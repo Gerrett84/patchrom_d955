@@ -30,7 +30,7 @@
     .parameter
 
     .prologue
-    .line 9473
+    .line 9503
     iput-object p1, p0, Landroid/widget/TextView$ChangeWatcher;->this$0:Landroid/widget/TextView;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -44,7 +44,7 @@
     .parameter "x1"
 
     .prologue
-    .line 9473
+    .line 9503
     invoke-direct {p0, p1}, Landroid/widget/TextView$ChangeWatcher;-><init>(Landroid/widget/TextView;)V
 
     return-void
@@ -57,12 +57,12 @@
     .parameter "buffer"
 
     .prologue
-    .line 9505
+    .line 9535
     iget-object v0, p0, Landroid/widget/TextView$ChangeWatcher;->this$0:Landroid/widget/TextView;
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->sendAfterTextChanged(Landroid/text/Editable;)V
 
-    .line 9507
+    .line 9537
     const/16 v0, 0x800
 
     invoke-static {p1, v0}, Landroid/text/method/MetaKeyKeyListener;->getMetaState(Ljava/lang/CharSequence;I)I
@@ -71,12 +71,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 9508
+    .line 9538
     iget-object v0, p0, Landroid/widget/TextView$ChangeWatcher;->this$0:Landroid/widget/TextView;
 
     invoke-static {v0, p1}, Landroid/text/method/MetaKeyKeyListener;->stopSelecting(Landroid/view/View;Landroid/text/Spannable;)V
 
-    .line 9510
+    .line 9540
     :cond_0
     return-void
 .end method
@@ -89,7 +89,7 @@
     .parameter "after"
 
     .prologue
-    .line 9482
+    .line 9512
     iget-object v0, p0, Landroid/widget/TextView$ChangeWatcher;->this$0:Landroid/widget/TextView;
 
     #getter for: Landroid/widget/TextView;->mContext:Landroid/content/Context;
@@ -139,7 +139,7 @@
 
     if-eqz v0, :cond_2
 
-    .line 9485
+    .line 9515
     :cond_1
     invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
@@ -147,14 +147,14 @@
 
     iput-object v0, p0, Landroid/widget/TextView$ChangeWatcher;->mBeforeText:Ljava/lang/CharSequence;
 
-    .line 9488
+    .line 9518
     :cond_2
     iget-object v0, p0, Landroid/widget/TextView$ChangeWatcher;->this$0:Landroid/widget/TextView;
 
     #calls: Landroid/widget/TextView;->sendBeforeTextChanged(Ljava/lang/CharSequence;III)V
     invoke-static {v0, p1, p2, p3, p4}, Landroid/widget/TextView;->access$1100(Landroid/widget/TextView;Ljava/lang/CharSequence;III)V
 
-    .line 9489
+    .line 9519
     return-void
 .end method
 
@@ -168,7 +168,7 @@
     .prologue
     const/4 v3, -0x1
 
-    .line 9521
+    .line 9551
     iget-object v0, p0, Landroid/widget/TextView$ChangeWatcher;->this$0:Landroid/widget/TextView;
 
     move-object v1, p1
@@ -183,7 +183,7 @@
 
     invoke-virtual/range {v0 .. v6}, Landroid/widget/TextView;->spanChange(Landroid/text/Spanned;Ljava/lang/Object;IIII)V
 
-    .line 9522
+    .line 9552
     return-void
 .end method
 
@@ -197,7 +197,7 @@
     .parameter "en"
 
     .prologue
-    .line 9515
+    .line 9545
     iget-object v0, p0, Landroid/widget/TextView$ChangeWatcher;->this$0:Landroid/widget/TextView;
 
     move-object v1, p1
@@ -214,7 +214,7 @@
 
     invoke-virtual/range {v0 .. v6}, Landroid/widget/TextView;->spanChange(Landroid/text/Spanned;Ljava/lang/Object;IIII)V
 
-    .line 9516
+    .line 9546
     return-void
 .end method
 
@@ -228,7 +228,7 @@
     .prologue
     const/4 v4, -0x1
 
-    .line 9527
+    .line 9557
     iget-object v0, p0, Landroid/widget/TextView$ChangeWatcher;->this$0:Landroid/widget/TextView;
 
     move-object v1, p1
@@ -243,7 +243,7 @@
 
     invoke-virtual/range {v0 .. v6}, Landroid/widget/TextView;->spanChange(Landroid/text/Spanned;Ljava/lang/Object;IIII)V
 
-    .line 9528
+    .line 9558
     return-void
 .end method
 
@@ -255,12 +255,12 @@
     .parameter "after"
 
     .prologue
-    .line 9494
+    .line 9524
     iget-object v0, p0, Landroid/widget/TextView$ChangeWatcher;->this$0:Landroid/widget/TextView;
 
     invoke-virtual {v0, p1, p2, p3, p4}, Landroid/widget/TextView;->handleTextChanged(Ljava/lang/CharSequence;III)V
 
-    .line 9496
+    .line 9526
     iget-object v0, p0, Landroid/widget/TextView$ChangeWatcher;->this$0:Landroid/widget/TextView;
 
     #getter for: Landroid/widget/TextView;->mContext:Landroid/content/Context;
@@ -302,7 +302,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 9498
+    .line 9528
     :cond_0
     iget-object v0, p0, Landroid/widget/TextView$ChangeWatcher;->this$0:Landroid/widget/TextView;
 
@@ -310,12 +310,12 @@
 
     invoke-virtual {v0, v1, p2, p3, p4}, Landroid/widget/TextView;->sendAccessibilityEventTypeViewTextChanged(Ljava/lang/CharSequence;III)V
 
-    .line 9499
+    .line 9529
     const/4 v0, 0x0
 
     iput-object v0, p0, Landroid/widget/TextView$ChangeWatcher;->mBeforeText:Ljava/lang/CharSequence;
 
-    .line 9501
+    .line 9531
     :cond_1
     return-void
 .end method

@@ -319,7 +319,7 @@
 
     const/16 v1, 0x1c
 
-    const-string v2, "irdaobex://"
+    const-string/jumbo v2, "irdaobex://"
 
     aput-object v2, v0, v1
 
@@ -376,6 +376,8 @@
     return-void
 
     .line 185
+    nop
+
     :array_0
     .array-data 0x1
         0x53t

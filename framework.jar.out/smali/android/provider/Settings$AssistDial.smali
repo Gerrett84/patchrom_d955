@@ -52,7 +52,7 @@
     .locals 3
 
     .prologue
-    .line 7021
+    .line 7043
     const-string v0, "content://settings/assist_dial"
 
     invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
@@ -61,12 +61,12 @@
 
     sput-object v0, Landroid/provider/Settings$AssistDial;->CONTENT_URI:Landroid/net/Uri;
 
-    .line 7045
+    .line 7067
     const/4 v0, 0x0
 
     sput-object v0, Landroid/provider/Settings$AssistDial;->countryOriginDataTable:[Landroid/provider/ReferenceCountry;
 
-    .line 7047
+    .line 7069
     const/16 v0, 0x9
 
     new-array v0, v0, [Ljava/lang/String;
@@ -134,7 +134,7 @@
     .locals 0
 
     .prologue
-    .line 7019
+    .line 7041
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -145,51 +145,51 @@
     .parameter "resolver"
 
     .prologue
-    .line 7052
+    .line 7074
     const-string v5, "Settings"
 
     const-string v6, "initAssistDialCountryDetailList()"
 
     invoke-static {v5, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 7053
+    .line 7075
     invoke-static {}, Landroid/provider/Settings$AssistDial;->initCountryOriginDataTable()V
 
-    .line 7055
+    .line 7077
     const-string v0, "000"
 
-    .line 7056
+    .line 7078
     .local v0, areaCode:Ljava/lang/String;
     const-string v2, "10"
 
-    .line 7058
+    .line 7080
     .local v2, numLength:Ljava/lang/String;
     sget-object v5, Landroid/provider/Settings$AssistDial;->countryOriginDataTable:[Landroid/provider/ReferenceCountry;
 
     if-nez v5, :cond_0
 
-    .line 7059
+    .line 7081
     const-string v5, "Settings"
 
     const-string v6, "List is null"
 
     invoke-static {v5, v6}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 7086
+    .line 7108
     :goto_0
     return-void
 
-    .line 7061
+    .line 7083
     :cond_0
     sget-object v5, Landroid/provider/Settings$AssistDial;->countryOriginDataTable:[Landroid/provider/ReferenceCountry;
 
     array-length v3, v5
 
-    .line 7062
+    .line 7084
     .local v3, size:I
     new-array v4, v3, [Landroid/content/ContentValues;
 
-    .line 7064
+    .line 7086
     .local v4, values:[Landroid/content/ContentValues;
     const/4 v1, 0x0
 
@@ -197,14 +197,14 @@
     :goto_1
     if-ge v1, v3, :cond_1
 
-    .line 7065
+    .line 7087
     new-instance v5, Landroid/content/ContentValues;
 
     invoke-direct {v5}, Landroid/content/ContentValues;-><init>()V
 
     aput-object v5, v4, v1
 
-    .line 7066
+    .line 7088
     aget-object v5, v4, v1
 
     const-string v6, "countryindex"
@@ -223,7 +223,7 @@
 
     invoke-virtual {v5, v6, v7}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 7067
+    .line 7089
     aget-object v5, v4, v1
 
     const-string v6, "countryname"
@@ -238,7 +238,7 @@
 
     invoke-virtual {v5, v6, v7}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 7068
+    .line 7090
     aget-object v5, v4, v1
 
     const-string/jumbo v6, "mcc"
@@ -253,7 +253,7 @@
 
     invoke-virtual {v5, v6, v7}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 7069
+    .line 7091
     aget-object v5, v4, v1
 
     const-string v6, "countrycode"
@@ -268,7 +268,7 @@
 
     invoke-virtual {v5, v6, v7}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 7070
+    .line 7092
     aget-object v5, v4, v1
 
     const-string v6, "iddprefix"
@@ -283,7 +283,7 @@
 
     invoke-virtual {v5, v6, v7}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 7071
+    .line 7093
     aget-object v5, v4, v1
 
     const-string/jumbo v6, "nddprefix"
@@ -298,7 +298,7 @@
 
     invoke-virtual {v5, v6, v7}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 7072
+    .line 7094
     aget-object v5, v4, v1
 
     const-string/jumbo v6, "nanp"
@@ -313,30 +313,30 @@
 
     invoke-virtual {v5, v6, v7}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 7073
+    .line 7095
     aget-object v5, v4, v1
 
     const-string v6, "area"
 
     invoke-virtual {v5, v6, v0}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 7074
+    .line 7096
     aget-object v5, v4, v1
 
     const-string/jumbo v6, "length"
 
     invoke-virtual {v5, v6, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 7064
+    .line 7086
     add-int/lit8 v1, v1, 0x1
 
     goto/16 :goto_1
 
-    .line 7077
+    .line 7099
     :cond_1
     if-nez p0, :cond_2
 
-    .line 7079
+    .line 7101
     const-string v5, "Settings"
 
     const-string v6, "Resolver is null"
@@ -345,7 +345,7 @@
 
     goto/16 :goto_0
 
-    .line 7082
+    .line 7104
     :cond_2
     sget-object v5, Landroid/provider/Settings$AssistDial;->CONTENT_URI:Landroid/net/Uri;
 
@@ -360,47 +360,47 @@
     .parameter "areaCode"
 
     .prologue
-    .line 7090
+    .line 7112
     const-string v4, "Settings"
 
     const-string v5, "initAssistDialCountryDetailList()"
 
     invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 7091
+    .line 7113
     invoke-static {}, Landroid/provider/Settings$AssistDial;->initCountryOriginDataTable()V
 
-    .line 7094
+    .line 7116
     const-string v1, "10"
 
-    .line 7096
+    .line 7118
     .local v1, numLength:Ljava/lang/String;
     sget-object v4, Landroid/provider/Settings$AssistDial;->countryOriginDataTable:[Landroid/provider/ReferenceCountry;
 
     if-nez v4, :cond_0
 
-    .line 7097
+    .line 7119
     const-string v4, "Settings"
 
     const-string v5, "List is null"
 
     invoke-static {v4, v5}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 7123
+    .line 7145
     :goto_0
     return-void
 
-    .line 7099
+    .line 7121
     :cond_0
     sget-object v4, Landroid/provider/Settings$AssistDial;->countryOriginDataTable:[Landroid/provider/ReferenceCountry;
 
     array-length v2, v4
 
-    .line 7100
+    .line 7122
     .local v2, size:I
     new-array v3, v2, [Landroid/content/ContentValues;
 
-    .line 7102
+    .line 7124
     .local v3, values:[Landroid/content/ContentValues;
     const/4 v0, 0x0
 
@@ -408,14 +408,14 @@
     :goto_1
     if-ge v0, v2, :cond_1
 
-    .line 7103
+    .line 7125
     new-instance v4, Landroid/content/ContentValues;
 
     invoke-direct {v4}, Landroid/content/ContentValues;-><init>()V
 
     aput-object v4, v3, v0
 
-    .line 7104
+    .line 7126
     aget-object v4, v3, v0
 
     const-string v5, "countryindex"
@@ -434,7 +434,7 @@
 
     invoke-virtual {v4, v5, v6}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 7105
+    .line 7127
     aget-object v4, v3, v0
 
     const-string v5, "countryname"
@@ -449,7 +449,7 @@
 
     invoke-virtual {v4, v5, v6}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 7106
+    .line 7128
     aget-object v4, v3, v0
 
     const-string/jumbo v5, "mcc"
@@ -464,7 +464,7 @@
 
     invoke-virtual {v4, v5, v6}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 7107
+    .line 7129
     aget-object v4, v3, v0
 
     const-string v5, "countrycode"
@@ -479,7 +479,7 @@
 
     invoke-virtual {v4, v5, v6}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 7108
+    .line 7130
     aget-object v4, v3, v0
 
     const-string v5, "iddprefix"
@@ -494,7 +494,7 @@
 
     invoke-virtual {v4, v5, v6}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 7109
+    .line 7131
     aget-object v4, v3, v0
 
     const-string/jumbo v5, "nddprefix"
@@ -509,7 +509,7 @@
 
     invoke-virtual {v4, v5, v6}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 7110
+    .line 7132
     aget-object v4, v3, v0
 
     const-string/jumbo v5, "nanp"
@@ -524,30 +524,30 @@
 
     invoke-virtual {v4, v5, v6}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 7111
+    .line 7133
     aget-object v4, v3, v0
 
     const-string v5, "area"
 
     invoke-virtual {v4, v5, p1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 7112
+    .line 7134
     aget-object v4, v3, v0
 
     const-string/jumbo v5, "length"
 
     invoke-virtual {v4, v5, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 7102
+    .line 7124
     add-int/lit8 v0, v0, 0x1
 
     goto/16 :goto_1
 
-    .line 7115
+    .line 7137
     :cond_1
     if-nez p0, :cond_2
 
-    .line 7117
+    .line 7139
     const-string v4, "Settings"
 
     const-string v5, "Resolver is null"
@@ -556,7 +556,7 @@
 
     goto/16 :goto_0
 
-    .line 7120
+    .line 7142
     :cond_2
     sget-object v4, Landroid/provider/Settings$AssistDial;->CONTENT_URI:Landroid/net/Uri;
 
@@ -579,12 +579,12 @@
 
     const/4 v1, 0x0
 
-    .line 7127
+    .line 7149
     invoke-static {}, Landroid/content/res/Resources;->getSystem()Landroid/content/res/Resources;
 
     move-result-object v10
 
-    .line 7128
+    .line 7150
     .local v10, r:Landroid/content/res/Resources;
     const/16 v0, 0xdf
 
@@ -7270,6 +7270,6 @@
 
     sput-object v11, Landroid/provider/Settings$AssistDial;->countryOriginDataTable:[Landroid/provider/ReferenceCountry;
 
-    .line 7359
+    .line 7381
     return-void
 .end method

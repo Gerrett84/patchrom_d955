@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 3165
+    .line 3177
     iput-object p1, p0, Landroid/net/wifi/WifiStateMachine$DriverStartedStateExt;->this$0:Landroid/net/wifi/WifiStateMachine;
 
     invoke-direct {p0}, Lcom/android/internal/util/State;-><init>()V
@@ -39,11 +39,11 @@
     .parameter "message"
 
     .prologue
-    .line 3168
+    .line 3180
     iget-object v0, p0, Landroid/net/wifi/WifiStateMachine$DriverStartedStateExt;->this$0:Landroid/net/wifi/WifiStateMachine;
 
     #calls: Landroid/net/wifi/WifiStateMachine;->processMessageAtDriverStartedState(Landroid/os/Message;)Z
-    invoke-static {v0, p1}, Landroid/net/wifi/WifiStateMachine;->access$8800(Landroid/net/wifi/WifiStateMachine;Landroid/os/Message;)Z
+    invoke-static {v0, p1}, Landroid/net/wifi/WifiStateMachine;->access$8900(Landroid/net/wifi/WifiStateMachine;Landroid/os/Message;)Z
 
     move-result v0
 

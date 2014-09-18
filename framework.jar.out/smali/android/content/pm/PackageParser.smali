@@ -4144,7 +4144,7 @@
 
     move-result-object v2
 
-    const-string v3, "intent-filter"
+    const-string/jumbo v3, "intent-filter"
 
     invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -5301,7 +5301,7 @@
 
     move-result-object v2
 
-    const-string v3, "intent-filter"
+    const-string/jumbo v3, "intent-filter"
 
     invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -9968,7 +9968,7 @@
     .line 1287
     .end local v28           #name:Ljava/lang/String;
     :cond_2d
-    const-string v3, "instrumentation"
+    const-string/jumbo v3, "instrumentation"
 
     move-object/from16 v0, v43
 
@@ -11032,7 +11032,7 @@
 
     .line 891
     .local v1, attr:Ljava/lang/String;
-    const-string v12, "installLocation"
+    const-string/jumbo v12, "installLocation"
 
     invoke-virtual {v1, v12}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -14217,7 +14217,7 @@
 
     move-result-object v2
 
-    const-string v3, "intent-filter"
+    const-string/jumbo v3, "intent-filter"
 
     invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

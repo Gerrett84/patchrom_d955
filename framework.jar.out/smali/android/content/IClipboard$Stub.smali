@@ -30,7 +30,7 @@
 
 .field static final TRANSACTION_getInitialPrimaryClipAt:I = 0xd
 
-.field static final TRANSACTION_getInitialPrimaryClipCount:I = 0xf
+.field static final TRANSACTION_getInitialPrimaryClipCount:I = 0xe
 
 .field static final TRANSACTION_getPrimaryClip:I = 0x2
 
@@ -42,7 +42,7 @@
 
 .field static final TRANSACTION_getPrimaryClipDescriptionAt:I = 0x8
 
-.field static final TRANSACTION_hasClipboardText:I = 0xe
+.field static final TRANSACTION_hasClipboardText:I = 0xf
 
 .field static final TRANSACTION_hasPrimaryClip:I = 0x4
 
@@ -150,7 +150,7 @@
     .line 43
     sparse-switch p1, :sswitch_data_0
 
-    .line 219
+    .line 227
     invoke-super {p0, p1, p2, p3, p4}, Landroid/os/Binder;->onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
     move-result v4
@@ -611,7 +611,7 @@
     .end local v0           #_arg0:Ljava/lang/String;
     .end local v1           #_arg1:I
     .end local v2           #_result:Landroid/content/ClipData;
-	:sswitch_f
+    :sswitch_e
     const-string v3, "android.content.IClipboard"
 
     invoke-virtual {p2, v3}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
@@ -632,21 +632,21 @@
 
     .line 220
     .end local v2           #_result:I
-    :sswitch_e
+    :sswitch_f
     const-string v5, "android.content.IClipboard"
 
     invoke-virtual {p2, v5}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
 
-    .line 213
+    .line 221
     invoke-virtual {p0}, Landroid/content/IClipboard$Stub;->hasClipboardText()Z
 
     move-result v2
 
-    .line 214
+    .line 222
     .local v2, _result:Z
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
 
-    .line 215
+    .line 223
     if-eqz v2, :cond_a
 
     move v3, v4

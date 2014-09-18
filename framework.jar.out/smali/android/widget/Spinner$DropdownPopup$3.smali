@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 1002
+    .line 1024
     iput-object p1, p0, Landroid/widget/Spinner$DropdownPopup$3;->this$1:Landroid/widget/Spinner$DropdownPopup;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 1
 
     .prologue
-    .line 1005
+    .line 1027
     iget-object v0, p0, Landroid/widget/Spinner$DropdownPopup$3;->this$1:Landroid/widget/Spinner$DropdownPopup;
 
     iget-object v0, v0, Landroid/widget/Spinner$DropdownPopup;->this$0:Landroid/widget/Spinner;
@@ -53,12 +53,12 @@
 
     if-nez v0, :cond_0
 
-    .line 1006
+    .line 1028
     iget-object v0, p0, Landroid/widget/Spinner$DropdownPopup$3;->this$1:Landroid/widget/Spinner$DropdownPopup;
 
     invoke-virtual {v0}, Landroid/widget/Spinner$DropdownPopup;->dismiss()V
 
-    .line 1008
+    .line 1030
     :cond_0
     return-void
 .end method

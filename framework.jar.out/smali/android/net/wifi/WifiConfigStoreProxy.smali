@@ -112,6 +112,21 @@
     return v0
 .end method
 
+.method public forgetNetwork(I)Z
+    .locals 1
+    .parameter "netId"
+
+    .prologue
+    .line 90
+    iget-object v0, p0, Landroid/net/wifi/WifiConfigStoreProxy;->mWifiConfigStore:Landroid/net/wifi/WifiConfigStore;
+
+    invoke-virtual {v0, p1}, Landroid/net/wifi/WifiConfigStore;->forgetNetwork(I)Z
+
+    move-result v0
+
+    return v0
+.end method
+
 .method public getConfiguredNetworks()Ljava/util/List;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;

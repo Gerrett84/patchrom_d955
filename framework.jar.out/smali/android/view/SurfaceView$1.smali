@@ -48,7 +48,7 @@
 
     packed-switch v2, :pswitch_data_0
 
-    .line 159
+    .line 167
     :goto_0
     return-void
 
@@ -78,56 +78,35 @@
 
     goto :goto_0
 
-    .line 143
+    .line 144
     :pswitch_2
-    iget-object v0, p0, Landroid/view/SurfaceView$1;->this$0:Landroid/view/SurfaceView;
-
-    #calls: Landroid/view/SurfaceView;->updateWindow(ZZ)V
-    invoke-static {v0, v1, v1}, Landroid/view/SurfaceView;->access$000(Landroid/view/SurfaceView;ZZ)V
-
-    goto :goto_0
-
-    .line 148
-    :pswitch_3
     iget-object v2, p0, Landroid/view/SurfaceView$1;->this$0:Landroid/view/SurfaceView;
 
     iget-object v2, v2, Landroid/view/SurfaceView;->mSurfaceLock:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v2}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
 
-    .line 150
+    .line 146
     :try_start_0
-    iget-object v3, p0, Landroid/view/SurfaceView$1;->this$0:Landroid/view/SurfaceView;
-
-    iget v2, p1, Landroid/os/Message;->arg1:I
-
-    if-eqz v2, :cond_1
-
-    move v2, v0
-
-    :goto_2
-    iput-boolean v2, v3, Landroid/view/SurfaceView;->mReportDrawNeeded:Z
-
-    .line 151
     iget-object v2, p0, Landroid/view/SurfaceView$1;->this$0:Landroid/view/SurfaceView;
 
-    iget v3, p1, Landroid/os/Message;->arg2:I
+    iget v3, p1, Landroid/os/Message;->arg1:I
 
-    if-eqz v3, :cond_2
+    if-eqz v3, :cond_1
 
-    :goto_3
+    :goto_2
     iput-boolean v0, v2, Landroid/view/SurfaceView;->mUpdateWindowNeeded:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 153
+    .line 148
     iget-object v0, p0, Landroid/view/SurfaceView$1;->this$0:Landroid/view/SurfaceView;
 
     iget-object v0, v0, Landroid/view/SurfaceView;->mSurfaceLock:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
-    .line 155
+    .line 151
     iget-object v0, p0, Landroid/view/SurfaceView$1;->this$0:Landroid/view/SurfaceView;
 
     #calls: Landroid/view/SurfaceView;->updateWindow(ZZ)V
@@ -136,18 +115,12 @@
     goto :goto_0
 
     :cond_1
-    move v2, v1
-
-    .line 150
-    goto :goto_2
-
-    :cond_2
     move v0, v1
 
-    .line 151
-    goto :goto_3
+    .line 146
+    goto :goto_2
 
-    .line 153
+    .line 148
     :catchall_0
     move-exception v0
 
@@ -159,7 +132,81 @@
 
     throw v0
 
+    .line 156
+    :pswitch_3
+    iget-object v2, p0, Landroid/view/SurfaceView$1;->this$0:Landroid/view/SurfaceView;
+
+    iget-object v2, v2, Landroid/view/SurfaceView;->mSurfaceLock:Ljava/util/concurrent/locks/ReentrantLock;
+
+    invoke-virtual {v2}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
+
+    .line 158
+    :try_start_1
+    iget-object v3, p0, Landroid/view/SurfaceView$1;->this$0:Landroid/view/SurfaceView;
+
+    iget v2, p1, Landroid/os/Message;->arg1:I
+
+    if-eqz v2, :cond_2
+
+    move v2, v0
+
+    :goto_3
+    iput-boolean v2, v3, Landroid/view/SurfaceView;->mReportDrawNeeded:Z
+
+    .line 159
+    iget-object v2, p0, Landroid/view/SurfaceView$1;->this$0:Landroid/view/SurfaceView;
+
+    iget v3, p1, Landroid/os/Message;->arg2:I
+
+    if-eqz v3, :cond_3
+
+    :goto_4
+    iput-boolean v0, v2, Landroid/view/SurfaceView;->mUpdateWindowNeeded:Z
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+
+    .line 161
+    iget-object v0, p0, Landroid/view/SurfaceView$1;->this$0:Landroid/view/SurfaceView;
+
+    iget-object v0, v0, Landroid/view/SurfaceView;->mSurfaceLock:Ljava/util/concurrent/locks/ReentrantLock;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+
+    .line 163
+    iget-object v0, p0, Landroid/view/SurfaceView$1;->this$0:Landroid/view/SurfaceView;
+
+    #calls: Landroid/view/SurfaceView;->updateWindow(ZZ)V
+    invoke-static {v0, v1, v1}, Landroid/view/SurfaceView;->access$000(Landroid/view/SurfaceView;ZZ)V
+
+    goto :goto_0
+
+    :cond_2
+    move v2, v1
+
+    .line 158
+    goto :goto_3
+
+    :cond_3
+    move v0, v1
+
+    .line 159
+    goto :goto_4
+
+    .line 161
+    :catchall_1
+    move-exception v0
+
+    iget-object v1, p0, Landroid/view/SurfaceView$1;->this$0:Landroid/view/SurfaceView;
+
+    iget-object v1, v1, Landroid/view/SurfaceView;->mSurfaceLock:Ljava/util/concurrent/locks/ReentrantLock;
+
+    invoke-virtual {v1}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+
+    throw v0
+
     .line 135
+    nop
+
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0

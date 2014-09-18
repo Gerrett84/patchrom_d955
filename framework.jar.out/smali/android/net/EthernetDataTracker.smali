@@ -551,12 +551,12 @@
     .parameter "enabled"
 
     .prologue
-    .line 400
+    .line 406
     iget-object v0, p0, Landroid/net/EthernetDataTracker;->mDefaultRouteSet:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v0, p1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
-    .line 401
+    .line 407
     return-void
 .end method
 
@@ -682,7 +682,7 @@
     .locals 1
 
     .prologue
-    .line 386
+    .line 392
     iget-object v0, p0, Landroid/net/EthernetDataTracker;->mDefaultGatewayAddr:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
@@ -696,7 +696,7 @@
     .locals 2
 
     .prologue
-    .line 379
+    .line 385
     new-instance v0, Landroid/net/LinkCapabilities;
 
     iget-object v1, p0, Landroid/net/EthernetDataTracker;->mLinkCapabilities:Landroid/net/LinkCapabilities;
@@ -710,7 +710,7 @@
     .locals 2
 
     .prologue
-    .line 369
+    .line 375
     monitor-enter p0
 
     :try_start_0
@@ -738,7 +738,7 @@
     .locals 1
 
     .prologue
-    .line 362
+    .line 368
     monitor-enter p0
 
     :try_start_0
@@ -762,7 +762,7 @@
     .locals 1
 
     .prologue
-    .line 408
+    .line 414
     const-string/jumbo v0, "net.tcp.buffersize.wifi"
 
     return-object v0
@@ -800,7 +800,7 @@
     .locals 1
 
     .prologue
-    .line 393
+    .line 399
     iget-object v0, p0, Landroid/net/EthernetDataTracker;->mDefaultRouteSet:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
@@ -824,7 +824,7 @@
     .locals 1
 
     .prologue
-    .line 348
+    .line 354
     iget-object v0, p0, Landroid/net/EthernetDataTracker;->mPrivateDnsRouteSet:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
@@ -853,12 +853,12 @@
     .parameter "enabled"
 
     .prologue
-    .line 355
+    .line 361
     iget-object v0, p0, Landroid/net/EthernetDataTracker;->mPrivateDnsRouteSet:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v0, p1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
-    .line 356
+    .line 362
     return-void
 .end method
 
@@ -893,7 +893,7 @@
     .parameter "msger"
 
     .prologue
-    .line 417
+    .line 423
     return-void
 .end method
 
@@ -902,7 +902,7 @@
     .parameter "met"
 
     .prologue
-    .line 413
+    .line 419
     return-void
 .end method
 
@@ -911,7 +911,7 @@
     .parameter "enabled"
 
     .prologue
-    .line 341
+    .line 347
     const-string v0, "Ethernet"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -940,7 +940,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 342
+    .line 348
     return-void
 .end method
 
@@ -974,7 +974,7 @@
     .parameter "enabled"
 
     .prologue
-    .line 336
+    .line 342
     const-string v0, "Ethernet"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -1003,7 +1003,7 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 337
+    .line 343
     return-void
 .end method
 
@@ -1046,7 +1046,7 @@
 
     move-result-object v8
 
-    const v9, 0x1040033
+    const v9, 0x1040036
 
     invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -1257,7 +1257,7 @@
     .parameter "callingUid"
 
     .prologue
-    .line 314
+    .line 320
     const/4 v0, -0x1
 
     return v0
@@ -1270,7 +1270,7 @@
     .parameter "callingUid"
 
     .prologue
-    .line 331
+    .line 337
     const/4 v0, -0x1
 
     return v0

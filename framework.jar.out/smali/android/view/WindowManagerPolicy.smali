@@ -361,6 +361,9 @@
 .method public abstract systemReady()V
 .end method
 
+.method public abstract updateNavBarHidingStateBySetting(Ljava/lang/String;)Z
+.end method
+
 .method public abstract userActivity()V
 .end method
 

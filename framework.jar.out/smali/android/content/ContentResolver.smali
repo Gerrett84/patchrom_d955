@@ -3226,7 +3226,7 @@
 
     .line 870
     .local v1, durationMillis:J
-    const-string v4, "insert"
+    const-string/jumbo v4, "insert"
 
     const/4 v5, 0x0
 

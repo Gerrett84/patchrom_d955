@@ -33,22 +33,22 @@
     .parameter "end"
 
     .prologue
-    .line 1795
+    .line 1796
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1796
+    .line 1797
     iput p1, p0, Landroid/telephony/AssistDialPhoneNumberUtils$SIDRangeType;->index:I
 
-    .line 1797
+    .line 1798
     iput p2, p0, Landroid/telephony/AssistDialPhoneNumberUtils$SIDRangeType;->countryIndex:I
 
-    .line 1798
+    .line 1799
     iput p3, p0, Landroid/telephony/AssistDialPhoneNumberUtils$SIDRangeType;->start:I
 
-    .line 1799
+    .line 1800
     iput p4, p0, Landroid/telephony/AssistDialPhoneNumberUtils$SIDRangeType;->end:I
 
-    .line 1800
+    .line 1801
     return-void
 .end method
 
@@ -58,7 +58,7 @@
     .locals 1
 
     .prologue
-    .line 1788
+    .line 1789
     iget v0, p0, Landroid/telephony/AssistDialPhoneNumberUtils$SIDRangeType;->countryIndex:I
 
     return v0
@@ -68,7 +68,7 @@
     .locals 1
 
     .prologue
-    .line 1792
+    .line 1793
     iget v0, p0, Landroid/telephony/AssistDialPhoneNumberUtils$SIDRangeType;->end:I
 
     return v0
@@ -78,7 +78,7 @@
     .locals 1
 
     .prologue
-    .line 1784
+    .line 1785
     iget v0, p0, Landroid/telephony/AssistDialPhoneNumberUtils$SIDRangeType;->start:I
 
     return v0

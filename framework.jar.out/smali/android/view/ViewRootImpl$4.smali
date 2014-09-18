@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 5387
+    .line 5404
     iput-object p1, p0, Landroid/view/ViewRootImpl$4;->this$0:Landroid/view/ViewRootImpl;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +42,7 @@
     .parameter "callback"
 
     .prologue
-    .line 5401
+    .line 5418
     return-void
 .end method
 
@@ -50,7 +50,7 @@
     .locals 1
 
     .prologue
-    .line 5393
+    .line 5410
     iget-object v0, p0, Landroid/view/ViewRootImpl$4;->this$0:Landroid/view/ViewRootImpl;
 
     #getter for: Landroid/view/ViewRootImpl;->mSurface:Landroid/view/Surface;
@@ -65,7 +65,7 @@
     .locals 1
 
     .prologue
-    .line 5432
+    .line 5449
     const/4 v0, 0x0
 
     return-object v0
@@ -75,7 +75,7 @@
     .locals 1
 
     .prologue
-    .line 5397
+    .line 5414
     const/4 v0, 0x0
 
     return v0
@@ -85,7 +85,7 @@
     .locals 1
 
     .prologue
-    .line 5422
+    .line 5439
     const/4 v0, 0x0
 
     return-object v0
@@ -96,7 +96,7 @@
     .parameter "dirty"
 
     .prologue
-    .line 5426
+    .line 5443
     const/4 v0, 0x0
 
     return-object v0
@@ -107,7 +107,7 @@
     .parameter "callback"
 
     .prologue
-    .line 5404
+    .line 5421
     return-void
 .end method
 
@@ -117,7 +117,7 @@
     .parameter "height"
 
     .prologue
-    .line 5407
+    .line 5424
     return-void
 .end method
 
@@ -126,7 +126,7 @@
     .parameter "format"
 
     .prologue
-    .line 5413
+    .line 5430
     return-void
 .end method
 
@@ -135,7 +135,7 @@
     .parameter "screenOn"
 
     .prologue
-    .line 5419
+    .line 5436
     return-void
 .end method
 
@@ -143,7 +143,7 @@
     .locals 0
 
     .prologue
-    .line 5410
+    .line 5427
     return-void
 .end method
 
@@ -152,7 +152,7 @@
     .parameter "type"
 
     .prologue
-    .line 5416
+    .line 5433
     return-void
 .end method
 
@@ -161,6 +161,6 @@
     .parameter "canvas"
 
     .prologue
-    .line 5430
+    .line 5447
     return-void
 .end method

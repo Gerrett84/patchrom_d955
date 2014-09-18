@@ -36,41 +36,41 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 159
+    .line 164
     invoke-direct {p0}, Landroid/graphics/drawable/Drawable;-><init>()V
 
-    .line 160
+    .line 165
     iput-object p1, p0, Landroid/app/WallpaperManager$FastBitmapDrawable;->mBitmap:Landroid/graphics/Bitmap;
 
-    .line 161
+    .line 166
     invoke-virtual {p1}, Landroid/graphics/Bitmap;->getWidth()I
 
     move-result v0
 
     iput v0, p0, Landroid/app/WallpaperManager$FastBitmapDrawable;->mWidth:I
 
-    .line 162
+    .line 167
     invoke-virtual {p1}, Landroid/graphics/Bitmap;->getHeight()I
 
     move-result v0
 
     iput v0, p0, Landroid/app/WallpaperManager$FastBitmapDrawable;->mHeight:I
 
-    .line 164
+    .line 169
     iget v0, p0, Landroid/app/WallpaperManager$FastBitmapDrawable;->mWidth:I
 
     iget v1, p0, Landroid/app/WallpaperManager$FastBitmapDrawable;->mHeight:I
 
     invoke-virtual {p0, v2, v2, v0, v1}, Landroid/app/WallpaperManager$FastBitmapDrawable;->setBounds(IIII)V
 
-    .line 166
+    .line 171
     new-instance v0, Landroid/graphics/Paint;
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
     iput-object v0, p0, Landroid/app/WallpaperManager$FastBitmapDrawable;->mPaint:Landroid/graphics/Paint;
 
-    .line 167
+    .line 172
     iget-object v0, p0, Landroid/app/WallpaperManager$FastBitmapDrawable;->mPaint:Landroid/graphics/Paint;
 
     new-instance v1, Landroid/graphics/PorterDuffXfermode;
@@ -81,7 +81,7 @@
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setXfermode(Landroid/graphics/Xfermode;)Landroid/graphics/Xfermode;
 
-    .line 168
+    .line 173
     return-void
 .end method
 
@@ -91,7 +91,7 @@
     .parameter "x1"
 
     .prologue
-    .line 151
+    .line 156
     invoke-direct {p0, p1}, Landroid/app/WallpaperManager$FastBitmapDrawable;-><init>(Landroid/graphics/Bitmap;)V
 
     return-void
@@ -104,7 +104,7 @@
     .parameter "canvas"
 
     .prologue
-    .line 172
+    .line 177
     iget-object v0, p0, Landroid/app/WallpaperManager$FastBitmapDrawable;->mBitmap:Landroid/graphics/Bitmap;
 
     iget v1, p0, Landroid/app/WallpaperManager$FastBitmapDrawable;->mDrawLeft:I
@@ -119,7 +119,7 @@
 
     invoke-virtual {p1, v0, v1, v2, v3}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;FFLandroid/graphics/Paint;)V
 
-    .line 173
+    .line 178
     return-void
 .end method
 
@@ -127,7 +127,7 @@
     .locals 1
 
     .prologue
-    .line 213
+    .line 218
     iget v0, p0, Landroid/app/WallpaperManager$FastBitmapDrawable;->mHeight:I
 
     return v0
@@ -137,7 +137,7 @@
     .locals 1
 
     .prologue
-    .line 208
+    .line 213
     iget v0, p0, Landroid/app/WallpaperManager$FastBitmapDrawable;->mWidth:I
 
     return v0
@@ -147,7 +147,7 @@
     .locals 1
 
     .prologue
-    .line 223
+    .line 228
     iget v0, p0, Landroid/app/WallpaperManager$FastBitmapDrawable;->mHeight:I
 
     return v0
@@ -157,7 +157,7 @@
     .locals 1
 
     .prologue
-    .line 218
+    .line 223
     iget v0, p0, Landroid/app/WallpaperManager$FastBitmapDrawable;->mWidth:I
 
     return v0
@@ -167,7 +167,7 @@
     .locals 1
 
     .prologue
-    .line 177
+    .line 182
     const/4 v0, -0x1
 
     return v0
@@ -178,7 +178,7 @@
     .parameter "alpha"
 
     .prologue
-    .line 188
+    .line 193
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     const-string v1, "Not supported with this drawable"
@@ -196,7 +196,7 @@
     .parameter "bottom"
 
     .prologue
-    .line 182
+    .line 187
     sub-int v0, p3, p1
 
     iget v1, p0, Landroid/app/WallpaperManager$FastBitmapDrawable;->mWidth:I
@@ -209,7 +209,7 @@
 
     iput v0, p0, Landroid/app/WallpaperManager$FastBitmapDrawable;->mDrawLeft:I
 
-    .line 183
+    .line 188
     sub-int v0, p4, p2
 
     iget v1, p0, Landroid/app/WallpaperManager$FastBitmapDrawable;->mHeight:I
@@ -222,7 +222,7 @@
 
     iput v0, p0, Landroid/app/WallpaperManager$FastBitmapDrawable;->mDrawTop:I
 
-    .line 184
+    .line 189
     return-void
 .end method
 
@@ -231,7 +231,7 @@
     .parameter "cf"
 
     .prologue
-    .line 193
+    .line 198
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     const-string v1, "Not supported with this drawable"
@@ -246,7 +246,7 @@
     .parameter "dither"
 
     .prologue
-    .line 198
+    .line 203
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     const-string v1, "Not supported with this drawable"
@@ -261,7 +261,7 @@
     .parameter "filter"
 
     .prologue
-    .line 203
+    .line 208
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     const-string v1, "Not supported with this drawable"

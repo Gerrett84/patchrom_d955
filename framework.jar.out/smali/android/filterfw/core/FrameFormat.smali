@@ -161,13 +161,13 @@
 
     .line 348
     :pswitch_3
-    const-string v0, "int"
+    const-string/jumbo v0, "int"
 
     goto :goto_0
 
     .line 349
     :pswitch_4
-    const-string v0, "int"
+    const-string/jumbo v0, "int"
 
     goto :goto_0
 

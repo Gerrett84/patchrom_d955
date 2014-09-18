@@ -309,7 +309,7 @@
     .restart local v13       #writeToFile:Z
     :pswitch_2
     :try_start_7
-    const-string v14, "ipAssignment"
+    const-string/jumbo v14, "ipAssignment"
 
     invoke-virtual {v10, v14}, Ljava/io/DataOutputStream;->writeUTF(Ljava/lang/String;)V
 
@@ -641,7 +641,7 @@
     .line 869
     .end local v5           #i$:Ljava/util/Iterator;
     :pswitch_3
-    const-string v14, "ipAssignment"
+    const-string/jumbo v14, "ipAssignment"
 
     invoke-virtual {v10, v14}, Ljava/io/DataOutputStream;->writeUTF(Ljava/lang/String;)V
 

@@ -27,13 +27,13 @@
     .parameter "remote"
 
     .prologue
-    .line 225
+    .line 233
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 226
+    .line 234
     iput-object p1, p0, Landroid/content/IClipboard$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    .line 227
+    .line 235
     return-void
 .end method
 
@@ -49,25 +49,25 @@
     .end annotation
 
     .prologue
-    .line 321
+    .line 329
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 322
+    .line 330
     .local v0, _data:Landroid/os/Parcel;
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1
 
-    .line 324
+    .line 332
     .local v1, _reply:Landroid/os/Parcel;
     :try_start_0
     const-string v2, "android.content.IClipboard"
 
     invoke-virtual {v0, v2}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 325
+    .line 333
     if-eqz p1, :cond_0
 
     invoke-interface {p1}, Landroid/content/IOnPrimaryClipChangedListener;->asBinder()Landroid/os/IBinder;
@@ -77,7 +77,7 @@
     :goto_0
     invoke-virtual {v0, v2}, Landroid/os/Parcel;->writeStrongBinder(Landroid/os/IBinder;)V
 
-    .line 326
+    .line 334
     iget-object v2, p0, Landroid/content/IClipboard$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/4 v3, 0x5
@@ -86,33 +86,33 @@
 
     invoke-interface {v2, v3, v0, v1, v4}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
-    .line 327
+    .line 335
     invoke-virtual {v1}, Landroid/os/Parcel;->readException()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 330
+    .line 338
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 331
+    .line 339
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 333
+    .line 341
     return-void
 
-    .line 325
+    .line 333
     :cond_0
     const/4 v2, 0x0
 
     goto :goto_0
 
-    .line 330
+    .line 338
     :catchall_0
     move-exception v2
 
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 331
+    .line 339
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     throw v2
@@ -122,7 +122,7 @@
     .locals 1
 
     .prologue
-    .line 230
+    .line 238
     iget-object v0, p0, Landroid/content/IClipboard$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     return-object v0
@@ -139,31 +139,31 @@
     .end annotation
 
     .prologue
-    .line 471
+    .line 479
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 472
+    .line 480
     .local v0, _data:Landroid/os/Parcel;
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1
 
-    .line 475
+    .line 483
     .local v1, _reply:Landroid/os/Parcel;
     :try_start_0
     const-string v3, "android.content.IClipboard"
 
     invoke-virtual {v0, v3}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 476
+    .line 484
     invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 477
+    .line 485
     invoke-virtual {v0, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 478
+    .line 486
     iget-object v3, p0, Landroid/content/IClipboard$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/16 v4, 0xd
@@ -172,17 +172,17 @@
 
     invoke-interface {v3, v4, v0, v1, v5}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
-    .line 479
+    .line 487
     invoke-virtual {v1}, Landroid/os/Parcel;->readException()V
 
-    .line 480
+    .line 488
     invoke-virtual {v1}, Landroid/os/Parcel;->readInt()I
 
     move-result v3
 
     if-eqz v3, :cond_0
 
-    .line 481
+    .line 489
     sget-object v3, Landroid/content/ClipData;->CREATOR:Landroid/os/Parcelable$Creator;
 
     invoke-interface {v3, v1}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
@@ -193,18 +193,18 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 488
+    .line 496
     .local v2, _result:Landroid/content/ClipData;
     :goto_0
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 489
+    .line 497
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 491
+    .line 499
     return-object v2
 
-    .line 484
+    .line 492
     .end local v2           #_result:Landroid/content/ClipData;
     :cond_0
     const/4 v2, 0x0
@@ -212,14 +212,14 @@
     .restart local v2       #_result:Landroid/content/ClipData;
     goto :goto_0
 
-    .line 488
+    .line 496
     .end local v2           #_result:Landroid/content/ClipData;
     :catchall_0
     move-exception v3
 
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 489
+    .line 497
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     throw v3
@@ -255,7 +255,7 @@
     .line 508
     iget-object v3, p0, Landroid/content/IClipboard$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v4, 0xf
+    const/16 v4, 0xe
 
     const/4 v5, 0x0
 
@@ -298,7 +298,7 @@
     .locals 1
 
     .prologue
-    .line 234
+    .line 242
     const-string v0, "android.content.IClipboard"
 
     return-object v0
@@ -314,28 +314,28 @@
     .end annotation
 
     .prologue
-    .line 259
+    .line 267
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 260
+    .line 268
     .local v0, _data:Landroid/os/Parcel;
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1
 
-    .line 263
+    .line 271
     .local v1, _reply:Landroid/os/Parcel;
     :try_start_0
     const-string v3, "android.content.IClipboard"
 
     invoke-virtual {v0, v3}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 264
+    .line 272
     invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 265
+    .line 273
     iget-object v3, p0, Landroid/content/IClipboard$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/4 v4, 0x2
@@ -344,17 +344,17 @@
 
     invoke-interface {v3, v4, v0, v1, v5}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
-    .line 266
+    .line 274
     invoke-virtual {v1}, Landroid/os/Parcel;->readException()V
 
-    .line 267
+    .line 275
     invoke-virtual {v1}, Landroid/os/Parcel;->readInt()I
 
     move-result v3
 
     if-eqz v3, :cond_0
 
-    .line 268
+    .line 276
     sget-object v3, Landroid/content/ClipData;->CREATOR:Landroid/os/Parcelable$Creator;
 
     invoke-interface {v3, v1}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
@@ -365,18 +365,18 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 275
+    .line 283
     .local v2, _result:Landroid/content/ClipData;
     :goto_0
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 276
+    .line 284
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 278
+    .line 286
     return-object v2
 
-    .line 271
+    .line 279
     .end local v2           #_result:Landroid/content/ClipData;
     :cond_0
     const/4 v2, 0x0
@@ -384,14 +384,14 @@
     .restart local v2       #_result:Landroid/content/ClipData;
     goto :goto_0
 
-    .line 275
+    .line 283
     .end local v2           #_result:Landroid/content/ClipData;
     :catchall_0
     move-exception v3
 
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 276
+    .line 284
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     throw v3
@@ -408,31 +408,31 @@
     .end annotation
 
     .prologue
-    .line 353
+    .line 361
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 354
+    .line 362
     .local v0, _data:Landroid/os/Parcel;
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1
 
-    .line 357
+    .line 365
     .local v1, _reply:Landroid/os/Parcel;
     :try_start_0
     const-string v3, "android.content.IClipboard"
 
     invoke-virtual {v0, v3}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 358
+    .line 366
     invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 359
+    .line 367
     invoke-virtual {v0, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 360
+    .line 368
     iget-object v3, p0, Landroid/content/IClipboard$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/4 v4, 0x7
@@ -441,17 +441,17 @@
 
     invoke-interface {v3, v4, v0, v1, v5}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
-    .line 361
+    .line 369
     invoke-virtual {v1}, Landroid/os/Parcel;->readException()V
 
-    .line 362
+    .line 370
     invoke-virtual {v1}, Landroid/os/Parcel;->readInt()I
 
     move-result v3
 
     if-eqz v3, :cond_0
 
-    .line 363
+    .line 371
     sget-object v3, Landroid/content/ClipData;->CREATOR:Landroid/os/Parcelable$Creator;
 
     invoke-interface {v3, v1}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
@@ -462,18 +462,18 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 370
+    .line 378
     .local v2, _result:Landroid/content/ClipData;
     :goto_0
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 371
+    .line 379
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 373
+    .line 381
     return-object v2
 
-    .line 366
+    .line 374
     .end local v2           #_result:Landroid/content/ClipData;
     :cond_0
     const/4 v2, 0x0
@@ -481,14 +481,14 @@
     .restart local v2       #_result:Landroid/content/ClipData;
     goto :goto_0
 
-    .line 370
+    .line 378
     .end local v2           #_result:Landroid/content/ClipData;
     :catchall_0
     move-exception v3
 
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 371
+    .line 379
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     throw v3
@@ -503,25 +503,25 @@
     .end annotation
 
     .prologue
-    .line 400
+    .line 408
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 401
+    .line 409
     .local v0, _data:Landroid/os/Parcel;
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1
 
-    .line 404
+    .line 412
     .local v1, _reply:Landroid/os/Parcel;
     :try_start_0
     const-string v3, "android.content.IClipboard"
 
     invoke-virtual {v0, v3}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 405
+    .line 413
     iget-object v3, p0, Landroid/content/IClipboard$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/16 v4, 0x9
@@ -530,34 +530,34 @@
 
     invoke-interface {v3, v4, v0, v1, v5}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
-    .line 406
+    .line 414
     invoke-virtual {v1}, Landroid/os/Parcel;->readException()V
 
-    .line 407
+    .line 415
     invoke-virtual {v1}, Landroid/os/Parcel;->readInt()I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     move-result v2
 
-    .line 410
+    .line 418
     .local v2, _result:I
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 411
+    .line 419
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 413
+    .line 421
     return v2
 
-    .line 410
+    .line 418
     .end local v2           #_result:I
     :catchall_0
     move-exception v3
 
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 411
+    .line 419
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     throw v3
@@ -572,25 +572,25 @@
     .end annotation
 
     .prologue
-    .line 282
+    .line 290
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 283
+    .line 291
     .local v0, _data:Landroid/os/Parcel;
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1
 
-    .line 286
+    .line 294
     .local v1, _reply:Landroid/os/Parcel;
     :try_start_0
     const-string v3, "android.content.IClipboard"
 
     invoke-virtual {v0, v3}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 287
+    .line 295
     iget-object v3, p0, Landroid/content/IClipboard$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/4 v4, 0x3
@@ -599,17 +599,17 @@
 
     invoke-interface {v3, v4, v0, v1, v5}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
-    .line 288
+    .line 296
     invoke-virtual {v1}, Landroid/os/Parcel;->readException()V
 
-    .line 289
+    .line 297
     invoke-virtual {v1}, Landroid/os/Parcel;->readInt()I
 
     move-result v3
 
     if-eqz v3, :cond_0
 
-    .line 290
+    .line 298
     sget-object v3, Landroid/content/ClipDescription;->CREATOR:Landroid/os/Parcelable$Creator;
 
     invoke-interface {v3, v1}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
@@ -620,18 +620,18 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 297
+    .line 305
     .local v2, _result:Landroid/content/ClipDescription;
     :goto_0
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 298
+    .line 306
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 300
+    .line 308
     return-object v2
 
-    .line 293
+    .line 301
     .end local v2           #_result:Landroid/content/ClipDescription;
     :cond_0
     const/4 v2, 0x0
@@ -639,14 +639,14 @@
     .restart local v2       #_result:Landroid/content/ClipDescription;
     goto :goto_0
 
-    .line 297
+    .line 305
     .end local v2           #_result:Landroid/content/ClipDescription;
     :catchall_0
     move-exception v3
 
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 298
+    .line 306
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     throw v3
@@ -662,28 +662,28 @@
     .end annotation
 
     .prologue
-    .line 377
+    .line 385
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 378
+    .line 386
     .local v0, _data:Landroid/os/Parcel;
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1
 
-    .line 381
+    .line 389
     .local v1, _reply:Landroid/os/Parcel;
     :try_start_0
     const-string v3, "android.content.IClipboard"
 
     invoke-virtual {v0, v3}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 382
+    .line 390
     invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 383
+    .line 391
     iget-object v3, p0, Landroid/content/IClipboard$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/16 v4, 0x8
@@ -692,17 +692,17 @@
 
     invoke-interface {v3, v4, v0, v1, v5}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
-    .line 384
+    .line 392
     invoke-virtual {v1}, Landroid/os/Parcel;->readException()V
 
-    .line 385
+    .line 393
     invoke-virtual {v1}, Landroid/os/Parcel;->readInt()I
 
     move-result v3
 
     if-eqz v3, :cond_0
 
-    .line 386
+    .line 394
     sget-object v3, Landroid/content/ClipDescription;->CREATOR:Landroid/os/Parcelable$Creator;
 
     invoke-interface {v3, v1}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
@@ -713,18 +713,18 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 393
+    .line 401
     .local v2, _result:Landroid/content/ClipDescription;
     :goto_0
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 394
+    .line 402
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 396
+    .line 404
     return-object v2
 
-    .line 389
+    .line 397
     .end local v2           #_result:Landroid/content/ClipDescription;
     :cond_0
     const/4 v2, 0x0
@@ -732,14 +732,14 @@
     .restart local v2       #_result:Landroid/content/ClipDescription;
     goto :goto_0
 
-    .line 393
+    .line 401
     .end local v2           #_result:Landroid/content/ClipDescription;
     :catchall_0
     move-exception v3
 
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 394
+    .line 402
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     throw v3
@@ -756,37 +756,37 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 499
+    .line 524
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 500
+    .line 525
     .local v0, _data:Landroid/os/Parcel;
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1
 
-    .line 503
+    .line 528
     .local v1, _reply:Landroid/os/Parcel;
     :try_start_0
     const-string v3, "android.content.IClipboard"
 
     invoke-virtual {v0, v3}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 504
+    .line 529
     iget-object v3, p0, Landroid/content/IClipboard$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
-    const/16 v4, 0xe
+    const/16 v4, 0xf
 
     const/4 v5, 0x0
 
     invoke-interface {v3, v4, v0, v1, v5}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
-    .line 505
+    .line 530
     invoke-virtual {v1}, Landroid/os/Parcel;->readException()V
 
-    .line 506
+    .line 531
     invoke-virtual {v1}, Landroid/os/Parcel;->readInt()I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -797,25 +797,25 @@
 
     const/4 v2, 0x1
 
-    .line 509
+    .line 534
     .local v2, _result:Z
     :cond_0
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 510
+    .line 535
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 512
+    .line 537
     return v2
 
-    .line 509
+    .line 534
     .end local v2           #_result:Z
     :catchall_0
     move-exception v3
 
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 510
+    .line 535
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     throw v3
@@ -832,25 +832,25 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 304
+    .line 312
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 305
+    .line 313
     .local v0, _data:Landroid/os/Parcel;
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1
 
-    .line 308
+    .line 316
     .local v1, _reply:Landroid/os/Parcel;
     :try_start_0
     const-string v3, "android.content.IClipboard"
 
     invoke-virtual {v0, v3}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 309
+    .line 317
     iget-object v3, p0, Landroid/content/IClipboard$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/4 v4, 0x4
@@ -859,10 +859,10 @@
 
     invoke-interface {v3, v4, v0, v1, v5}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
-    .line 310
+    .line 318
     invoke-virtual {v1}, Landroid/os/Parcel;->readException()V
 
-    .line 311
+    .line 319
     invoke-virtual {v1}, Landroid/os/Parcel;->readInt()I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -873,25 +873,25 @@
 
     const/4 v2, 0x1
 
-    .line 314
+    .line 322
     .local v2, _result:Z
     :cond_0
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 315
+    .line 323
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 317
+    .line 325
     return v2
 
-    .line 314
+    .line 322
     .end local v2           #_result:Z
     :catchall_0
     move-exception v3
 
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 315
+    .line 323
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     throw v3
@@ -908,25 +908,25 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 454
+    .line 462
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 455
+    .line 463
     .local v0, _data:Landroid/os/Parcel;
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1
 
-    .line 458
+    .line 466
     .local v1, _reply:Landroid/os/Parcel;
     :try_start_0
     const-string v3, "android.content.IClipboard"
 
     invoke-virtual {v0, v3}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 459
+    .line 467
     iget-object v3, p0, Landroid/content/IClipboard$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/16 v4, 0xc
@@ -935,10 +935,10 @@
 
     invoke-interface {v3, v4, v0, v1, v5}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
-    .line 460
+    .line 468
     invoke-virtual {v1}, Landroid/os/Parcel;->readException()V
 
-    .line 461
+    .line 469
     invoke-virtual {v1}, Landroid/os/Parcel;->readInt()I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -949,25 +949,25 @@
 
     const/4 v2, 0x1
 
-    .line 464
+    .line 472
     .local v2, _result:Z
     :cond_0
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 465
+    .line 473
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 467
+    .line 475
     return v2
 
-    .line 464
+    .line 472
     .end local v2           #_result:Z
     :catchall_0
     move-exception v3
 
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 465
+    .line 473
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     throw v3
@@ -985,28 +985,28 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 436
+    .line 444
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 437
+    .line 445
     .local v0, _data:Landroid/os/Parcel;
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1
 
-    .line 440
+    .line 448
     .local v1, _reply:Landroid/os/Parcel;
     :try_start_0
     const-string v3, "android.content.IClipboard"
 
     invoke-virtual {v0, v3}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 441
+    .line 449
     invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 442
+    .line 450
     iget-object v3, p0, Landroid/content/IClipboard$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/16 v4, 0xb
@@ -1015,10 +1015,10 @@
 
     invoke-interface {v3, v4, v0, v1, v5}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
-    .line 443
+    .line 451
     invoke-virtual {v1}, Landroid/os/Parcel;->readException()V
 
-    .line 444
+    .line 452
     invoke-virtual {v1}, Landroid/os/Parcel;->readInt()I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -1029,25 +1029,25 @@
 
     const/4 v2, 0x1
 
-    .line 447
+    .line 455
     .local v2, _result:Z
     :cond_0
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 448
+    .line 456
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 450
+    .line 458
     return v2
 
-    .line 447
+    .line 455
     .end local v2           #_result:Z
     :catchall_0
     move-exception v3
 
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 448
+    .line 456
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     throw v3
@@ -1066,31 +1066,31 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 417
+    .line 425
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 418
+    .line 426
     .local v0, _data:Landroid/os/Parcel;
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1
 
-    .line 421
+    .line 429
     .local v1, _reply:Landroid/os/Parcel;
     :try_start_0
     const-string v3, "android.content.IClipboard"
 
     invoke-virtual {v0, v3}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 422
+    .line 430
     invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 423
+    .line 431
     invoke-virtual {v0, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 424
+    .line 432
     iget-object v3, p0, Landroid/content/IClipboard$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/16 v4, 0xa
@@ -1099,10 +1099,10 @@
 
     invoke-interface {v3, v4, v0, v1, v5}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
-    .line 425
+    .line 433
     invoke-virtual {v1}, Landroid/os/Parcel;->readException()V
 
-    .line 426
+    .line 434
     invoke-virtual {v1}, Landroid/os/Parcel;->readInt()I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -1113,25 +1113,25 @@
 
     const/4 v2, 0x1
 
-    .line 429
+    .line 437
     .local v2, _result:Z
     :cond_0
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 430
+    .line 438
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 432
+    .line 440
     return v2
 
-    .line 429
+    .line 437
     .end local v2           #_result:Z
     :catchall_0
     move-exception v3
 
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 430
+    .line 438
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     throw v3
@@ -1147,25 +1147,25 @@
     .end annotation
 
     .prologue
-    .line 336
+    .line 344
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 337
+    .line 345
     .local v0, _data:Landroid/os/Parcel;
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1
 
-    .line 339
+    .line 347
     .local v1, _reply:Landroid/os/Parcel;
     :try_start_0
     const-string v2, "android.content.IClipboard"
 
     invoke-virtual {v0, v2}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 340
+    .line 348
     if-eqz p1, :cond_0
 
     invoke-interface {p1}, Landroid/content/IOnPrimaryClipChangedListener;->asBinder()Landroid/os/IBinder;
@@ -1175,7 +1175,7 @@
     :goto_0
     invoke-virtual {v0, v2}, Landroid/os/Parcel;->writeStrongBinder(Landroid/os/IBinder;)V
 
-    .line 341
+    .line 349
     iget-object v2, p0, Landroid/content/IClipboard$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
     const/4 v3, 0x6
@@ -1184,33 +1184,33 @@
 
     invoke-interface {v2, v3, v0, v1, v4}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
-    .line 342
+    .line 350
     invoke-virtual {v1}, Landroid/os/Parcel;->readException()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 345
+    .line 353
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 346
+    .line 354
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 348
+    .line 356
     return-void
 
-    .line 340
+    .line 348
     :cond_0
     const/4 v2, 0x0
 
     goto :goto_0
 
-    .line 345
+    .line 353
     :catchall_0
     move-exception v2
 
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 346
+    .line 354
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     throw v2
@@ -1226,38 +1226,38 @@
     .end annotation
 
     .prologue
-    .line 238
+    .line 246
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 239
+    .line 247
     .local v0, _data:Landroid/os/Parcel;
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v1
 
-    .line 241
+    .line 249
     .local v1, _reply:Landroid/os/Parcel;
     :try_start_0
     const-string v2, "android.content.IClipboard"
 
     invoke-virtual {v0, v2}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
 
-    .line 242
+    .line 250
     if-eqz p1, :cond_0
 
-    .line 243
+    .line 251
     const/4 v2, 0x1
 
     invoke-virtual {v0, v2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 244
+    .line 252
     const/4 v2, 0x0
 
     invoke-virtual {p1, v0, v2}, Landroid/content/ClipData;->writeToParcel(Landroid/os/Parcel;I)V
 
-    .line 249
+    .line 257
     :goto_0
     iget-object v2, p0, Landroid/content/IClipboard$Stub$Proxy;->mRemote:Landroid/os/IBinder;
 
@@ -1267,21 +1267,21 @@
 
     invoke-interface {v2, v3, v0, v1, v4}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
 
-    .line 250
+    .line 258
     invoke-virtual {v1}, Landroid/os/Parcel;->readException()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 253
+    .line 261
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 254
+    .line 262
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 256
+    .line 264
     return-void
 
-    .line 247
+    .line 255
     :cond_0
     const/4 v2, 0x0
 
@@ -1292,13 +1292,13 @@
 
     goto :goto_0
 
-    .line 253
+    .line 261
     :catchall_0
     move-exception v2
 
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 254
+    .line 262
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     throw v2

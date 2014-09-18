@@ -66,7 +66,11 @@
 
 .field static final TRANSACTION_getPackageScanner:I = 0x2f
 
+.field static final TRANSACTION_getSecureOSVendorName:I = 0x3a
+
 .field static final TRANSACTION_getVersion:I = 0x2
+
+.field static final TRANSACTION_getWifiState:I = 0x3b
 
 .field static final TRANSACTION_installPackage:I = 0x13
 
@@ -1974,6 +1978,43 @@
     goto/16 :goto_0
 
     .line 39
+   :sswitch_3a
+    const-string v7, "android.os.IDeviceManager3LM"
+
+    invoke-virtual {p2, v7}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
+
+    invoke-virtual {p0}, Landroid/os/IDeviceManager3LM$Stub;->getSecureOSVendorName()Ljava/lang/String;
+
+    move-result-object v4
+
+    .restart local v4       #_result:Ljava/lang/String;
+    invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
+
+    invoke-virtual {p3, v4}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+
+    goto/16 :goto_0
+
+    :sswitch_3b
+    const-string v7, "android.os.IDeviceManager3LM"
+
+    invoke-virtual {p2, v7}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
+
+    .line 368
+    invoke-virtual {p0}, Landroid/os/IDeviceManager3LM$Stub;->getWifiState()I
+
+    move-result v4
+
+    .line 369
+    .local v4, _result:I
+    invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
+
+    .line 370
+    invoke-virtual {p3, v4}, Landroid/os/Parcel;->writeInt(I)V
+
+    goto/16 :goto_0
+
+    .line 375
+    .end local v4           #_result:I
     :sswitch_data_0
     .sparse-switch
         0x1 -> :sswitch_1
@@ -2033,6 +2074,8 @@
         0x37 -> :sswitch_37
         0x38 -> :sswitch_38
         0x39 -> :sswitch_39
+        0x3a -> :sswitch_3a
+        0x3b -> :sswitch_3b
         0x5f4e5446 -> :sswitch_0
     .end sparse-switch
 .end method

@@ -16422,145 +16422,214 @@
 .end method
 
 .method private showPasteWindow()V
-    .locals 10
+    .locals 13
 
     .prologue
-    const/4 v9, 0x1
+    const/4 v12, 0x1
 
-    const/4 v8, 0x0
+    const/4 v11, 0x0
 
-    .line 6030
-    iget-object v6, p0, Landroid/webkit/WebViewClassic;->mContext:Landroid/content/Context;
+    .line 6076
+    iget-object v9, p0, Landroid/webkit/WebViewClassic;->mContext:Landroid/content/Context;
 
-    const-string v7, "clipboard"
+    const-string v10, "clipboard"
 
-    invoke-virtual {v6, v7}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v9, v10}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
-    move-result-object v6
+    move-result-object v9
 
-    check-cast v6, Landroid/content/ClipboardManager;
+    check-cast v9, Landroid/content/ClipboardManager;
 
-    move-object v0, v6
+    move-object v0, v9
 
     check-cast v0, Landroid/content/ClipboardManager;
 
-    .line 6032
+    .line 6078
     .local v0, cm:Landroid/content/ClipboardManager;
     invoke-virtual {v0}, Landroid/content/ClipboardManager;->hasPrimaryClip()Z
 
-    move-result v6
+    move-result v9
 
-    if-eqz v6, :cond_1
+    if-eqz v9, :cond_2
 
-    .line 6033
+    .line 6079
     new-instance v1, Landroid/graphics/Point;
 
-    iget-object v6, p0, Landroid/webkit/WebViewClassic;->mSelectCursorBase:Landroid/graphics/Point;
+    iget-object v9, p0, Landroid/webkit/WebViewClassic;->mSelectCursorBase:Landroid/graphics/Point;
 
-    iget v6, v6, Landroid/graphics/Point;->x:I
+    iget v9, v9, Landroid/graphics/Point;->x:I
 
-    invoke-virtual {p0, v6}, Landroid/webkit/WebViewClassic;->contentToViewX(I)I
+    invoke-virtual {p0, v9}, Landroid/webkit/WebViewClassic;->contentToViewX(I)I
 
-    move-result v6
+    move-result v9
 
-    iget-object v7, p0, Landroid/webkit/WebViewClassic;->mSelectCursorBase:Landroid/graphics/Point;
+    iget-object v10, p0, Landroid/webkit/WebViewClassic;->mSelectCursorBase:Landroid/graphics/Point;
 
-    iget v7, v7, Landroid/graphics/Point;->y:I
+    iget v10, v10, Landroid/graphics/Point;->y:I
 
-    invoke-virtual {p0, v7}, Landroid/webkit/WebViewClassic;->contentToViewY(I)I
+    invoke-virtual {p0, v10}, Landroid/webkit/WebViewClassic;->contentToViewY(I)I
 
-    move-result v7
+    move-result v10
 
-    invoke-direct {v1, v6, v7}, Landroid/graphics/Point;-><init>(II)V
+    invoke-direct {v1, v9, v10}, Landroid/graphics/Point;-><init>(II)V
 
-    .line 6035
+    .line 6081
     .local v1, cursorPoint:Landroid/graphics/Point;
     invoke-direct {p0}, Landroid/webkit/WebViewClassic;->calculateBaseCaretTop()Landroid/graphics/Point;
 
     move-result-object v2
 
-    .line 6036
+    .line 6082
     .local v2, cursorTop:Landroid/graphics/Point;
-    iget v6, v2, Landroid/graphics/Point;->x:I
+    iget v9, v2, Landroid/graphics/Point;->x:I
 
-    invoke-virtual {p0, v6}, Landroid/webkit/WebViewClassic;->contentToViewX(I)I
+    invoke-virtual {p0, v9}, Landroid/webkit/WebViewClassic;->contentToViewX(I)I
 
-    move-result v6
+    move-result v9
 
-    iget v7, v2, Landroid/graphics/Point;->y:I
+    iget v10, v2, Landroid/graphics/Point;->y:I
 
-    invoke-virtual {p0, v7}, Landroid/webkit/WebViewClassic;->contentToViewY(I)I
+    invoke-virtual {p0, v10}, Landroid/webkit/WebViewClassic;->contentToViewY(I)I
 
-    move-result v7
+    move-result v10
 
-    invoke-virtual {v2, v6, v7}, Landroid/graphics/Point;->set(II)V
+    invoke-virtual {v2, v9, v10}, Landroid/graphics/Point;->set(II)V
 
-    .line 6039
-    const/4 v6, 0x2
+    .line 6085
+    const/4 v9, 0x2
 
-    new-array v3, v6, [I
+    new-array v3, v9, [I
 
-    .line 6040
+    .line 6086
     .local v3, location:[I
-    iget-object v6, p0, Landroid/webkit/WebViewClassic;->mWebView:Landroid/webkit/WebView;
+    iget-object v9, p0, Landroid/webkit/WebViewClassic;->mWebView:Landroid/webkit/WebView;
 
-    invoke-virtual {v6, v3}, Landroid/webkit/WebView;->getLocationInWindow([I)V
+    invoke-virtual {v9, v3}, Landroid/webkit/WebView;->getLocationInWindow([I)V
 
-    .line 6041
-    aget v6, v3, v8
+    .line 6089
+    sget-boolean v9, Lcom/lge/config/ConfigBuildFlags;->CAPP_SPLITWINDOW:Z
+
+    if-eqz v9, :cond_0
+
+    .line 6090
+    new-instance v6, Landroid/graphics/Rect;
+
+    invoke-direct {v6}, Landroid/graphics/Rect;-><init>()V
+
+    .line 6091
+    .local v6, r:Landroid/graphics/Rect;
+    iget-object v9, p0, Landroid/webkit/WebViewClassic;->mWebView:Landroid/webkit/WebView;
+
+    invoke-virtual {v9, v6}, Landroid/webkit/WebView;->getGlobalVisibleRect(Landroid/graphics/Rect;)Z
+
+    .line 6092
+    new-instance v7, Landroid/graphics/Rect;
+
+    invoke-direct {v7}, Landroid/graphics/Rect;-><init>()V
+
+    .line 6093
+    .local v7, splitWinRect:Landroid/graphics/Rect;
+    iget-object v9, p0, Landroid/webkit/WebViewClassic;->mWebView:Landroid/webkit/WebView;
+
+    invoke-virtual {v9, v7}, Landroid/webkit/WebView;->isWindowSplit(Landroid/graphics/Rect;)Z
+
+    move-result v9
+
+    if-eqz v9, :cond_0
+
+    .line 6094
+    iget-object v9, p0, Landroid/webkit/WebViewClassic;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v9}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v9
+
+    const v10, 0x105000c
+
+    invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v8
+
+    .line 6095
+    .local v8, statusBarHeight:I
+    iget v9, v6, Landroid/graphics/Rect;->left:I
+
+    iget v10, v7, Landroid/graphics/Rect;->left:I
+
+    add-int/2addr v9, v10
+
+    aput v9, v3, v11
+
+    .line 6096
+    iget v9, v6, Landroid/graphics/Rect;->top:I
+
+    iget v10, v7, Landroid/graphics/Rect;->top:I
+
+    add-int/2addr v9, v10
+
+    sub-int/2addr v9, v8
+
+    aput v9, v3, v12
+
+    .line 6101
+    .end local v6           #r:Landroid/graphics/Rect;
+    .end local v7           #splitWinRect:Landroid/graphics/Rect;
+    .end local v8           #statusBarHeight:I
+    :cond_0
+    aget v9, v3, v11
 
     invoke-virtual {p0}, Landroid/webkit/WebViewClassic;->getScrollX()I
 
-    move-result v7
+    move-result v10
 
-    sub-int v4, v6, v7
+    sub-int v4, v9, v10
 
-    .line 6042
+    .line 6102
     .local v4, offsetX:I
-    aget v6, v3, v9
+    aget v9, v3, v12
 
     invoke-virtual {p0}, Landroid/webkit/WebViewClassic;->getScrollY()I
 
-    move-result v7
+    move-result v10
 
-    sub-int v5, v6, v7
+    sub-int v5, v9, v10
 
-    .line 6043
+    .line 6103
     .local v5, offsetY:I
     invoke-virtual {v1, v4, v5}, Landroid/graphics/Point;->offset(II)V
 
-    .line 6044
+    .line 6104
     invoke-virtual {v2, v4, v5}, Landroid/graphics/Point;->offset(II)V
 
-    .line 6045
-    iget-object v6, p0, Landroid/webkit/WebViewClassic;->mPasteWindow:Landroid/webkit/WebViewClassic$PastePopupWindow;
+    .line 6105
+    iget-object v9, p0, Landroid/webkit/WebViewClassic;->mPasteWindow:Landroid/webkit/WebViewClassic$PastePopupWindow;
 
-    if-nez v6, :cond_0
+    if-nez v9, :cond_1
 
-    .line 6046
-    new-instance v6, Landroid/webkit/WebViewClassic$PastePopupWindow;
+    .line 6106
+    new-instance v9, Landroid/webkit/WebViewClassic$PastePopupWindow;
 
-    invoke-direct {v6, p0}, Landroid/webkit/WebViewClassic$PastePopupWindow;-><init>(Landroid/webkit/WebViewClassic;)V
+    invoke-direct {v9, p0}, Landroid/webkit/WebViewClassic$PastePopupWindow;-><init>(Landroid/webkit/WebViewClassic;)V
 
-    iput-object v6, p0, Landroid/webkit/WebViewClassic;->mPasteWindow:Landroid/webkit/WebViewClassic$PastePopupWindow;
+    iput-object v9, p0, Landroid/webkit/WebViewClassic;->mPasteWindow:Landroid/webkit/WebViewClassic$PastePopupWindow;
 
-    .line 6048
-    :cond_0
-    iget-object v6, p0, Landroid/webkit/WebViewClassic;->mPasteWindow:Landroid/webkit/WebViewClassic$PastePopupWindow;
+    .line 6108
+    :cond_1
+    iget-object v9, p0, Landroid/webkit/WebViewClassic;->mPasteWindow:Landroid/webkit/WebViewClassic$PastePopupWindow;
 
-    aget v7, v3, v8
+    aget v10, v3, v11
 
-    aget v8, v3, v9
+    aget v11, v3, v12
 
-    invoke-virtual {v6, v1, v2, v7, v8}, Landroid/webkit/WebViewClassic$PastePopupWindow;->show(Landroid/graphics/Point;Landroid/graphics/Point;II)V
+    invoke-virtual {v9, v1, v2, v10, v11}, Landroid/webkit/WebViewClassic$PastePopupWindow;->show(Landroid/graphics/Point;Landroid/graphics/Point;II)V
 
-    .line 6050
+    .line 6110
     .end local v1           #cursorPoint:Landroid/graphics/Point;
     .end local v2           #cursorTop:Landroid/graphics/Point;
     .end local v3           #location:[I
     .end local v4           #offsetX:I
     .end local v5           #offsetY:I
-    :cond_1
+    :cond_2
     return-void
 .end method
 

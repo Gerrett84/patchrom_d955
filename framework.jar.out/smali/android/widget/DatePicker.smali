@@ -258,7 +258,7 @@
 
     iput v7, v0, Landroid/widget/DatePicker;->mLayoutResId:I
 
-    const-string v13, "layout_inflater"
+    const-string/jumbo v13, "layout_inflater"
 
     move-object/from16 v0, p1
 

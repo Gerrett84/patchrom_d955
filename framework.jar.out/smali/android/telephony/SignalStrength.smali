@@ -1039,18 +1039,18 @@
     .locals 5
 
     .prologue
-    .line 1726
+    .line 1731
     invoke-virtual {p0}, Landroid/telephony/SignalStrength;->getCdmaDbm()I
 
     move-result v1
 
-    .line 1727
+    .line 1732
     .local v1, asu_dBm:I
     invoke-virtual {p0}, Landroid/telephony/SignalStrength;->getCdmaEcio()I
 
     move-result v0
 
-    .line 1734
+    .line 1739
     .local v0, asu_Ecio:I
     invoke-virtual {p0}, Landroid/telephony/SignalStrength;->getRadioTechnology()I
 
@@ -1058,7 +1058,7 @@
 
     packed-switch v3, :pswitch_data_0
 
-    .line 1754
+    .line 1759
     :pswitch_0
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -1104,22 +1104,22 @@
 
     invoke-static {v3}, Landroid/telephony/SignalStrength;->log(Ljava/lang/String;)V
 
-    .line 1756
+    .line 1761
     const v3, -0x37849
 
     if-ne v0, v3, :cond_0
 
-    .line 1758
+    .line 1763
     invoke-direct {p0, v1}, Landroid/telephony/SignalStrength;->getRSSIindexGSM(I)I
 
     move-result v2
 
-    .line 1766
+    .line 1771
     .local v2, level:I
     :goto_0
     return v2
 
-    .line 1739
+    .line 1744
     .end local v2           #level:I
     :pswitch_1
     new-instance v3, Ljava/lang/StringBuilder;
@@ -1142,16 +1142,16 @@
 
     invoke-static {v3}, Landroid/telephony/SignalStrength;->log(Ljava/lang/String;)V
 
-    .line 1740
+    .line 1745
     invoke-direct {p0, v1}, Landroid/telephony/SignalStrength;->getRSSIindexGSM(I)I
 
     move-result v2
 
-    .line 1742
+    .line 1747
     .restart local v2       #level:I
     goto :goto_0
 
-    .line 1748
+    .line 1753
     .end local v2           #level:I
     :pswitch_2
     new-instance v3, Ljava/lang/StringBuilder;
@@ -1184,16 +1184,16 @@
 
     invoke-static {v3}, Landroid/telephony/SignalStrength;->log(Ljava/lang/String;)V
 
-    .line 1750
+    .line 1755
     invoke-direct {p0, v1, v0}, Landroid/telephony/SignalStrength;->getRSSIindexUMTS(II)I
 
     move-result v2
 
-    .line 1751
+    .line 1756
     .restart local v2       #level:I
     goto :goto_0
 
-    .line 1760
+    .line 1765
     .end local v2           #level:I
     :cond_0
     invoke-direct {p0, v1, v0}, Landroid/telephony/SignalStrength;->getRSSIindexUMTS(II)I
@@ -1203,7 +1203,7 @@
     .restart local v2       #level:I
     goto :goto_0
 
-    .line 1734
+    .line 1739
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_1
@@ -1236,21 +1236,21 @@
 
     const/16 v2, 0x63
 
-    .line 1854
+    .line 1859
     const/4 v1, 0x0
 
-    .line 1857
+    .line 1862
     .local v1, level:I
     if-nez p3, :cond_0
 
-    .line 1858
+    .line 1863
     const/4 v2, -0x1
 
-    .line 1869
+    .line 1874
     :goto_0
     return v2
 
-    .line 1860
+    .line 1865
     :cond_0
     if-ne p2, v2, :cond_1
 
@@ -1264,13 +1264,13 @@
     :cond_2
     if-le p1, p2, :cond_4
 
-    .line 1861
+    .line 1866
     :cond_3
     const/4 v2, 0x0
 
     goto :goto_0
 
-    .line 1863
+    .line 1868
     :cond_4
     const/4 v0, 0x0
 
@@ -1280,12 +1280,12 @@
 
     if-ge v0, v2, :cond_5
 
-    .line 1864
+    .line 1869
     aget v2, p3, v0
 
     if-lt p1, v2, :cond_6
 
-    .line 1868
+    .line 1873
     :cond_5
     sget v2, Landroid/telephony/SignalStrength;->NUM_SIGNAL_STRENGTH_BINS:I
 
@@ -1295,10 +1295,10 @@
 
     move v2, v1
 
-    .line 1869
+    .line 1874
     goto :goto_0
 
-    .line 1863
+    .line 1868
     :cond_6
     add-int/lit8 v0, v0, 0x1
 
@@ -1311,21 +1311,21 @@
     .parameter "range"
 
     .prologue
-    .line 1874
+    .line 1879
     const/4 v1, 0x0
 
-    .line 1877
+    .line 1882
     .local v1, level:I
     if-nez p2, :cond_0
 
-    .line 1878
+    .line 1883
     const/4 v2, -0x1
 
-    .line 1885
+    .line 1890
     :goto_0
     return v2
 
-    .line 1879
+    .line 1884
     :cond_0
     const/4 v0, 0x0
 
@@ -1335,12 +1335,12 @@
 
     if-ge v0, v2, :cond_1
 
-    .line 1880
+    .line 1885
     aget v2, p2, v0
 
     if-lt p1, v2, :cond_2
 
-    .line 1884
+    .line 1889
     :cond_1
     sget v2, Landroid/telephony/SignalStrength;->NUM_SIGNAL_STRENGTH_BINS:I
 
@@ -1350,10 +1350,10 @@
 
     move v2, v1
 
-    .line 1885
+    .line 1890
     goto :goto_0
 
-    .line 1879
+    .line 1884
     :cond_2
     add-int/lit8 v0, v0, 0x1
 
@@ -1440,7 +1440,7 @@
 
     move-result v2
 
-    .line 1716
+    .line 1721
     :cond_1
     :goto_0
     new-instance v3, Ljava/lang/StringBuilder;
@@ -1463,7 +1463,7 @@
 
     invoke-static {v3}, Landroid/telephony/SignalStrength;->log(Ljava/lang/String;)V
 
-    .line 1717
+    .line 1722
     return v2
 
     .line 1703
@@ -1485,6 +1485,36 @@
     .line 1707
     move v2, v0
 
+    .line 1716
+    :goto_1
+    if-nez v2, :cond_1
+
+    .line 1717
+    invoke-virtual {p0}, Landroid/telephony/SignalStrength;->getLteLevel()I
+
+    move-result v2
+
+    .line 1718
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "CDMALEVEL is Unknown , getLteLevel: "
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v3}, Landroid/telephony/SignalStrength;->log(Ljava/lang/String;)V
+
     goto :goto_0
 
     .line 1708
@@ -1494,7 +1524,7 @@
     .line 1710
     move v2, v1
 
-    goto :goto_0
+    goto :goto_1
 
     .line 1713
     :cond_4
@@ -1502,13 +1532,13 @@
 
     move v2, v0
 
-    :goto_1
-    goto :goto_0
+    :goto_2
+    goto :goto_1
 
     :cond_5
     move v2, v1
 
-    goto :goto_1
+    goto :goto_2
 .end method
 
 .method private getLevelKR()I
@@ -1975,29 +2005,29 @@
     .locals 1
 
     .prologue
-    .line 1846
+    .line 1851
     sget-object v0, Landroid/telephony/SignalStrength;->mLgeRssiData:Lcom/android/internal/telephony/LgeRssiData;
 
     if-nez v0, :cond_0
 
-    .line 1847
+    .line 1852
     invoke-static {}, Lcom/android/internal/telephony/LgeRssiData;->getInstance()Lcom/android/internal/telephony/LgeRssiData;
 
     move-result-object v0
 
     sput-object v0, Landroid/telephony/SignalStrength;->mLgeRssiData:Lcom/android/internal/telephony/LgeRssiData;
 
-    .line 1848
+    .line 1853
     sget-object v0, Landroid/telephony/SignalStrength;->mLgeRssiData:Lcom/android/internal/telephony/LgeRssiData;
 
     invoke-virtual {v0}, Lcom/android/internal/telephony/LgeRssiData;->init()V
 
-    .line 1849
+    .line 1854
     const-string v0, "getLgeRssiData: mLgeRssiData is null"
 
     invoke-static {v0}, Landroid/telephony/SignalStrength;->log(Ljava/lang/String;)V
 
-    .line 1851
+    .line 1856
     :cond_0
     sget-object v0, Landroid/telephony/SignalStrength;->mLgeRssiData:Lcom/android/internal/telephony/LgeRssiData;
 
@@ -2185,20 +2215,20 @@
 
     const/16 v2, -0x61
 
-    .line 1770
+    .line 1775
     const/4 v0, 0x0
 
-    .line 1781
+    .line 1786
     .local v0, iconLevel:I
     if-lt p1, v3, :cond_0
 
     const/4 v0, 0x5
 
-    .line 1789
+    .line 1794
     :goto_0
     return v0
 
-    .line 1782
+    .line 1787
     :cond_0
     if-lt p1, v1, :cond_1
 
@@ -2208,7 +2238,7 @@
 
     goto :goto_0
 
-    .line 1783
+    .line 1788
     :cond_1
     if-lt p1, v2, :cond_2
 
@@ -2218,7 +2248,7 @@
 
     goto :goto_0
 
-    .line 1784
+    .line 1789
     :cond_2
     const/16 v1, -0x67
 
@@ -2230,7 +2260,7 @@
 
     goto :goto_0
 
-    .line 1785
+    .line 1790
     :cond_3
     const/16 v1, -0x68
 
@@ -2240,7 +2270,7 @@
 
     goto :goto_0
 
-    .line 1786
+    .line 1791
     :cond_4
     const/4 v0, 0x1
 
@@ -2261,28 +2291,28 @@
 
     const/16 v5, -0x69
 
-    .line 1793
+    .line 1798
     const/4 v1, 0x0
 
-    .line 1794
+    .line 1799
     .local v1, iconLevel_ecio:I
     const/4 v3, 0x0
 
-    .line 1795
+    .line 1800
     .local v3, iconLevel_ecio_sum:I
     const/4 v2, 0x0
 
-    .line 1796
+    .line 1801
     .local v2, iconLevel_ecio_avr:I
     const/4 v0, 0x0
 
-    .line 1806
+    .line 1811
     .local v0, iconLevel:I
     if-lt p1, v8, :cond_1
 
     const/4 v0, 0x5
 
-    .line 1813
+    .line 1818
     :goto_0
     const/16 v5, -0x64
 
@@ -2290,7 +2320,7 @@
 
     const/4 v1, 0x5
 
-    .line 1819
+    .line 1824
     :goto_1
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -2328,7 +2358,7 @@
 
     invoke-static {v5}, Landroid/telephony/SignalStrength;->log(Ljava/lang/String;)V
 
-    .line 1820
+    .line 1825
     sget-object v5, Landroid/telephony/SignalStrength;->lastEcIoValues:[I
 
     sget v6, Landroid/telephony/SignalStrength;->lastEcIoIndex:I
@@ -2339,7 +2369,7 @@
 
     aput v1, v5, v6
 
-    .line 1821
+    .line 1826
     sget v5, Landroid/telephony/SignalStrength;->lastEcIoIndex:I
 
     sget-object v6, Landroid/telephony/SignalStrength;->lastEcIoValues:[I
@@ -2352,7 +2382,7 @@
 
     sput v5, Landroid/telephony/SignalStrength;->lastEcIoIndex:I
 
-    .line 1823
+    .line 1828
     :cond_0
     const/4 v4, 0x0
 
@@ -2364,19 +2394,19 @@
 
     if-ge v4, v5, :cond_a
 
-    .line 1824
+    .line 1829
     sget-object v5, Landroid/telephony/SignalStrength;->lastEcIoValues:[I
 
     aget v5, v5, v4
 
     add-int/2addr v3, v5
 
-    .line 1823
+    .line 1828
     add-int/lit8 v4, v4, 0x1
 
     goto :goto_2
 
-    .line 1807
+    .line 1812
     .end local v4           #kk:I
     :cond_1
     if-lt p1, v7, :cond_2
@@ -2387,7 +2417,7 @@
 
     goto :goto_0
 
-    .line 1808
+    .line 1813
     :cond_2
     if-lt p1, v6, :cond_3
 
@@ -2397,7 +2427,7 @@
 
     goto :goto_0
 
-    .line 1809
+    .line 1814
     :cond_3
     if-lt p1, v5, :cond_4
 
@@ -2407,7 +2437,7 @@
 
     goto :goto_0
 
-    .line 1810
+    .line 1815
     :cond_4
     if-ge p1, v5, :cond_5
 
@@ -2415,13 +2445,13 @@
 
     goto :goto_0
 
-    .line 1811
+    .line 1816
     :cond_5
     const/4 v0, 0x1
 
     goto :goto_0
 
-    .line 1814
+    .line 1819
     :cond_6
     const/16 v5, -0x78
 
@@ -2431,7 +2461,7 @@
 
     goto :goto_1
 
-    .line 1815
+    .line 1820
     :cond_7
     const/16 v5, -0x8c
 
@@ -2441,7 +2471,7 @@
 
     goto :goto_1
 
-    .line 1816
+    .line 1821
     :cond_8
     const/16 v5, -0xa0
 
@@ -2451,13 +2481,13 @@
 
     goto :goto_1
 
-    .line 1817
+    .line 1822
     :cond_9
     const/4 v1, 0x1
 
     goto :goto_1
 
-    .line 1826
+    .line 1831
     .restart local v4       #kk:I
     :cond_a
     sget-object v5, Landroid/telephony/SignalStrength;->lastEcIoValues:[I
@@ -2466,27 +2496,27 @@
 
     div-int v2, v3, v5
 
-    .line 1827
+    .line 1832
     if-le v1, v2, :cond_b
 
-    .line 1833
+    .line 1838
     :goto_3
     if-ge v0, v1, :cond_c
 
-    .line 1834
+    .line 1839
     :goto_4
     return v0
 
     :cond_b
     move v1, v2
 
-    .line 1827
+    .line 1832
     goto :goto_3
 
     :cond_c
     move v0, v1
 
-    .line 1833
+    .line 1838
     goto :goto_4
 .end method
 
@@ -6812,10 +6842,10 @@
     .parameter "instance"
 
     .prologue
-    .line 1842
+    .line 1847
     sput-object p1, Landroid/telephony/SignalStrength;->mLgeRssiData:Lcom/android/internal/telephony/LgeRssiData;
 
-    .line 1843
+    .line 1848
     return-void
 .end method
 

@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 403
+    .line 413
     iput-object p1, p0, Landroid/preference/VolumePreference$SeekBarVolumizer$3;->this$1:Landroid/preference/VolumePreference$SeekBarVolumizer;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
     .locals 4
 
     .prologue
-    .line 406
+    .line 416
     iget-object v0, p0, Landroid/preference/VolumePreference$SeekBarVolumizer$3;->this$1:Landroid/preference/VolumePreference$SeekBarVolumizer;
 
     #getter for: Landroid/preference/VolumePreference$SeekBarVolumizer;->mStreamType:I
@@ -53,7 +53,7 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 407
+    .line 417
     iget-object v0, p0, Landroid/preference/VolumePreference$SeekBarVolumizer$3;->this$1:Landroid/preference/VolumePreference$SeekBarVolumizer;
 
     #getter for: Landroid/preference/VolumePreference$SeekBarVolumizer;->mAudioManager:Landroid/media/AudioManager;
@@ -69,7 +69,7 @@
 
     invoke-virtual {v0, v1}, Landroid/media/AudioManager;->setRingerMode(I)V
 
-    .line 411
+    .line 421
     :cond_0
     iget-object v0, p0, Landroid/preference/VolumePreference$SeekBarVolumizer$3;->this$1:Landroid/preference/VolumePreference$SeekBarVolumizer;
 
@@ -96,6 +96,6 @@
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/media/AudioManager;->setStreamVolume(III)V
 
-    .line 413
+    .line 423
     return-void
 .end method

@@ -39,6 +39,14 @@
     .end annotation
 .end method
 
+.method public abstract changeFocusBetweenSplitScreen()Z
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
 .method public abstract clearForcedDisplayDensity(I)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -167,6 +175,14 @@
     .end annotation
 .end method
 
+.method public abstract getPartialScreenCaptureParam()Landroid/view/Surface$ScreenCaptureParam;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
 .method public abstract getPendingAppTransition()I
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -184,6 +200,14 @@
 .end method
 
 .method public abstract getRotation()I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract getTransparentsNavigation()Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -297,6 +321,14 @@
     .end annotation
 .end method
 
+.method public abstract isFullScreenFrameWithNavigation(Landroid/os/IBinder;II)I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
 .method public abstract isKeyguardLocked()Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -322,6 +354,14 @@
 .end method
 
 .method public abstract isViewServerRunning()Z
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract isWindowShown(Landroid/os/IBinder;)Z
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -597,6 +637,14 @@
     .end annotation
 .end method
 
+.method public abstract setFocusedAsScreenId(I)Z
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
 .method public abstract setForcedDisplayDensity(II)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -638,6 +686,14 @@
 .end method
 
 .method public abstract setStrictModeVisualIndicatorPreference(Ljava/lang/String;)V
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public abstract setTransparentsNavigation(Z)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;

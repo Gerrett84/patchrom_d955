@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 1509
+    .line 1533
     iput-object p1, p0, Landroid/view/VolumePanel$6;->this$0:Landroid/view/VolumePanel;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -40,12 +40,12 @@
     .parameter "intent"
 
     .prologue
-    .line 1512
+    .line 1536
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 1515
+    .line 1539
     .local v0, action:Ljava/lang/String;
     const-string v1, "android.intent.action.SCREEN_OFF"
 
@@ -55,7 +55,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 1516
+    .line 1540
     iget-object v1, p0, Landroid/view/VolumePanel$6;->this$0:Landroid/view/VolumePanel;
 
     #getter for: Landroid/view/VolumePanel;->mDialog:Landroid/app/Dialog;
@@ -69,7 +69,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 1517
+    .line 1541
     iget-object v1, p0, Landroid/view/VolumePanel$6;->this$0:Landroid/view/VolumePanel;
 
     #getter for: Landroid/view/VolumePanel;->mDialog:Landroid/app/Dialog;
@@ -79,7 +79,7 @@
 
     invoke-virtual {v1}, Landroid/app/Dialog;->dismiss()V
 
-    .line 1518
+    .line 1542
     iget-object v1, p0, Landroid/view/VolumePanel$6;->this$0:Landroid/view/VolumePanel;
 
     const/4 v2, -0x1
@@ -87,7 +87,7 @@
     #setter for: Landroid/view/VolumePanel;->mActiveStreamType:I
     invoke-static {v1, v2}, Landroid/view/VolumePanel;->access$402(Landroid/view/VolumePanel;I)I
 
-    .line 1521
+    .line 1545
     :cond_0
     return-void
 .end method

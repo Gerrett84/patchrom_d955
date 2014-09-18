@@ -26,17 +26,17 @@
     .parameter "init"
 
     .prologue
-    .line 490
+    .line 487
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 491
+    .line 488
     const-string v1, ","
 
     invoke-virtual {p1, v1}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v0
 
-    .line 492
+    .line 489
     .local v0, fragments:[Ljava/lang/String;
     const/4 v1, 0x0
 
@@ -48,7 +48,7 @@
 
     iput-object v1, p0, Landroid/app/WallpaperManager$Globals$SprintChameleonAttributes;->networkCode:Ljava/lang/String;
 
-    .line 493
+    .line 490
     const/4 v1, 0x3
 
     aget-object v1, v0, v1
@@ -59,6 +59,6 @@
 
     iput-object v1, p0, Landroid/app/WallpaperManager$Globals$SprintChameleonAttributes;->resourceName:Ljava/lang/String;
 
-    .line 494
+    .line 491
     return-void
 .end method

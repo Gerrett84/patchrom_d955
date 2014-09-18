@@ -1526,7 +1526,7 @@
 
     .prologue
     .line 570
-    const-string v1, "isAudioConnected()"
+    const-string/jumbo v1, "isAudioConnected()"
 
     invoke-static {v1}, Landroid/bluetooth/BluetoothHeadset;->log(Ljava/lang/String;)V
 
@@ -1604,7 +1604,7 @@
 
     .prologue
     .line 687
-    const-string v1, "isAudioOn()"
+    const-string/jumbo v1, "isAudioOn()"
 
     invoke-static {v1}, Landroid/bluetooth/BluetoothHeadset;->log(Ljava/lang/String;)V
 

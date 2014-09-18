@@ -28,7 +28,7 @@
     .parameter
 
     .prologue
-    .line 177
+    .line 180
     iput-object p1, p0, Landroid/hardware/SystemSensorManager$ListenerDelegate$1;->this$1:Landroid/hardware/SystemSensorManager$ListenerDelegate;
 
     iput-object p3, p0, Landroid/hardware/SystemSensorManager$ListenerDelegate$1;->val$this$0:Landroid/hardware/SystemSensorManager;
@@ -45,12 +45,12 @@
     .parameter "msg"
 
     .prologue
-    .line 180
+    .line 183
     iget-object v2, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     check-cast v2, Landroid/hardware/SensorEvent;
 
-    .line 181
+    .line 184
     .local v2, t:Landroid/hardware/SensorEvent;
     iget-object v3, v2, Landroid/hardware/SensorEvent;->sensor:Landroid/hardware/Sensor;
 
@@ -58,7 +58,7 @@
 
     move-result v1
 
-    .line 183
+    .line 186
     .local v1, handle:I
     iget-object v3, v2, Landroid/hardware/SensorEvent;->sensor:Landroid/hardware/Sensor;
 
@@ -68,7 +68,7 @@
 
     packed-switch v3, :pswitch_data_0
 
-    .line 196
+    .line 199
     iget-object v3, p0, Landroid/hardware/SystemSensorManager$ListenerDelegate$1;->this$1:Landroid/hardware/SystemSensorManager$ListenerDelegate;
 
     iget-object v3, v3, Landroid/hardware/SystemSensorManager$ListenerDelegate;->mFirstEvent:Landroid/util/SparseBooleanArray;
@@ -79,7 +79,7 @@
 
     if-nez v3, :cond_0
 
-    .line 197
+    .line 200
     iget-object v3, p0, Landroid/hardware/SystemSensorManager$ListenerDelegate$1;->this$1:Landroid/hardware/SystemSensorManager$ListenerDelegate;
 
     iget-object v3, v3, Landroid/hardware/SystemSensorManager$ListenerDelegate;->mFirstEvent:Landroid/util/SparseBooleanArray;
@@ -88,7 +88,7 @@
 
     invoke-virtual {v3, v1, v4}, Landroid/util/SparseBooleanArray;->put(IZ)V
 
-    .line 198
+    .line 201
     iget-object v3, p0, Landroid/hardware/SystemSensorManager$ListenerDelegate$1;->this$1:Landroid/hardware/SystemSensorManager$ListenerDelegate;
 
     #getter for: Landroid/hardware/SystemSensorManager$ListenerDelegate;->mSensorEventListener:Landroid/hardware/SensorEventListener;
@@ -102,7 +102,7 @@
 
     invoke-interface {v3, v4, v5}, Landroid/hardware/SensorEventListener;->onAccuracyChanged(Landroid/hardware/Sensor;I)V
 
-    .line 204
+    .line 207
     :cond_0
     :goto_0
     iget-object v3, p0, Landroid/hardware/SystemSensorManager$ListenerDelegate$1;->this$1:Landroid/hardware/SystemSensorManager$ListenerDelegate;
@@ -114,15 +114,15 @@
 
     invoke-interface {v3, v2}, Landroid/hardware/SensorEventListener;->onSensorChanged(Landroid/hardware/SensorEvent;)V
 
-    .line 205
+    .line 208
     sget-object v3, Landroid/hardware/SystemSensorManager;->sPool:Landroid/hardware/SensorManager$SensorEventPool;
 
     invoke-virtual {v3, v2}, Landroid/hardware/SensorManager$SensorEventPool;->returnToPool(Landroid/hardware/SensorEvent;)V
 
-    .line 206
+    .line 209
     return-void
 
-    .line 188
+    .line 191
     :pswitch_0
     iget-object v3, p0, Landroid/hardware/SystemSensorManager$ListenerDelegate$1;->this$1:Landroid/hardware/SystemSensorManager$ListenerDelegate;
 
@@ -132,7 +132,7 @@
 
     move-result v0
 
-    .line 189
+    .line 192
     .local v0, accuracy:I
     iget v3, v2, Landroid/hardware/SensorEvent;->accuracy:I
 
@@ -142,7 +142,7 @@
 
     if-eq v0, v3, :cond_0
 
-    .line 190
+    .line 193
     iget-object v3, p0, Landroid/hardware/SystemSensorManager$ListenerDelegate$1;->this$1:Landroid/hardware/SystemSensorManager$ListenerDelegate;
 
     iget-object v3, v3, Landroid/hardware/SystemSensorManager$ListenerDelegate;->mSensorAccuracies:Landroid/util/SparseIntArray;
@@ -151,7 +151,7 @@
 
     invoke-virtual {v3, v1, v4}, Landroid/util/SparseIntArray;->put(II)V
 
-    .line 191
+    .line 194
     iget-object v3, p0, Landroid/hardware/SystemSensorManager$ListenerDelegate$1;->this$1:Landroid/hardware/SystemSensorManager$ListenerDelegate;
 
     #getter for: Landroid/hardware/SystemSensorManager$ListenerDelegate;->mSensorEventListener:Landroid/hardware/SensorEventListener;
@@ -167,7 +167,7 @@
 
     goto :goto_0
 
-    .line 183
+    .line 186
     nop
 
     :pswitch_data_0

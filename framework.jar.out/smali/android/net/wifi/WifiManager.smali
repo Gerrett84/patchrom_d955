@@ -650,7 +650,7 @@
     .local v0, e:Ljava/lang/InterruptedException;
     const-string v1, "WifiManager"
 
-    const-string v2, "interrupted wait at init"
+    const-string/jumbo v2, "interrupted wait at init"
 
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 

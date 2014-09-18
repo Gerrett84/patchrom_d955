@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 989
+    .line 993
     iput-object p1, p0, Landroid/widget/ListPopupWindow$1;->this$0:Landroid/widget/ListPopupWindow;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -40,14 +40,14 @@
     .parameter "intent"
 
     .prologue
-    .line 992
+    .line 996
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 993
+    .line 997
     .local v0, action:Ljava/lang/String;
-    const-string v1, "com.lge.splitwindow.LAUNCH"
+    const-string v1, "com.lge.splitwindow.DISMISS_POPUP"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -63,12 +63,12 @@
 
     if-eqz v1, :cond_0
 
-    .line 994
+    .line 998
     iget-object v1, p0, Landroid/widget/ListPopupWindow$1;->this$0:Landroid/widget/ListPopupWindow;
 
     invoke-virtual {v1}, Landroid/widget/ListPopupWindow;->dismiss()V
 
-    .line 996
+    .line 1000
     :cond_0
     return-void
 .end method

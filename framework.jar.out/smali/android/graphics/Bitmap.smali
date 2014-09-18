@@ -144,7 +144,7 @@
     .line 113
     new-instance v0, Ljava/lang/RuntimeException;
 
-    const-string v1, "internal error: native bitmap is 0"
+    const-string/jumbo v1, "internal error: native bitmap is 0"
 
     invoke-direct {v0, v1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 

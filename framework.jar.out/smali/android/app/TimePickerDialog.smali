@@ -282,7 +282,7 @@
     .local v1, minute:I
     iget-object v2, p0, Landroid/app/TimePickerDialog;->mTimePicker:Landroid/widget/TimePicker;
 
-    const-string v3, "is24hour"
+    const-string/jumbo v3, "is24hour"
 
     invoke-virtual {p1, v3}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;)Z
 
@@ -357,7 +357,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     .line 146
-    const-string v1, "is24hour"
+    const-string/jumbo v1, "is24hour"
 
     iget-object v2, p0, Landroid/app/TimePickerDialog;->mTimePicker:Landroid/widget/TimePicker;
 

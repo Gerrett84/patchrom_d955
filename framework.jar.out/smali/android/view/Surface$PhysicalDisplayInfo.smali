@@ -35,10 +35,10 @@
     .locals 0
 
     .prologue
-    .line 787
+    .line 803
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 788
+    .line 804
     return-void
 .end method
 
@@ -47,13 +47,13 @@
     .parameter "other"
 
     .prologue
-    .line 790
+    .line 806
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 791
+    .line 807
     invoke-virtual {p0, p1}, Landroid/view/Surface$PhysicalDisplayInfo;->copyFrom(Landroid/view/Surface$PhysicalDisplayInfo;)V
 
-    .line 792
+    .line 808
     return-void
 .end method
 
@@ -64,42 +64,42 @@
     .parameter "other"
 
     .prologue
-    .line 816
+    .line 832
     iget v0, p1, Landroid/view/Surface$PhysicalDisplayInfo;->width:I
 
     iput v0, p0, Landroid/view/Surface$PhysicalDisplayInfo;->width:I
 
-    .line 817
+    .line 833
     iget v0, p1, Landroid/view/Surface$PhysicalDisplayInfo;->height:I
 
     iput v0, p0, Landroid/view/Surface$PhysicalDisplayInfo;->height:I
 
-    .line 818
+    .line 834
     iget v0, p1, Landroid/view/Surface$PhysicalDisplayInfo;->refreshRate:F
 
     iput v0, p0, Landroid/view/Surface$PhysicalDisplayInfo;->refreshRate:F
 
-    .line 819
+    .line 835
     iget v0, p1, Landroid/view/Surface$PhysicalDisplayInfo;->density:F
 
     iput v0, p0, Landroid/view/Surface$PhysicalDisplayInfo;->density:F
 
-    .line 820
+    .line 836
     iget v0, p1, Landroid/view/Surface$PhysicalDisplayInfo;->xDpi:F
 
     iput v0, p0, Landroid/view/Surface$PhysicalDisplayInfo;->xDpi:F
 
-    .line 821
+    .line 837
     iget v0, p1, Landroid/view/Surface$PhysicalDisplayInfo;->yDpi:F
 
     iput v0, p0, Landroid/view/Surface$PhysicalDisplayInfo;->yDpi:F
 
-    .line 822
+    .line 838
     iget-boolean v0, p1, Landroid/view/Surface$PhysicalDisplayInfo;->secure:Z
 
     iput-boolean v0, p0, Landroid/view/Surface$PhysicalDisplayInfo;->secure:Z
 
-    .line 823
+    .line 839
     return-void
 .end method
 
@@ -108,7 +108,7 @@
     .parameter "other"
 
     .prologue
-    .line 800
+    .line 816
     if-eqz p1, :cond_0
 
     iget v0, p0, Landroid/view/Surface$PhysicalDisplayInfo;->width:I
@@ -177,7 +177,7 @@
     .parameter "o"
 
     .prologue
-    .line 796
+    .line 812
     instance-of v0, p1, Landroid/view/Surface$PhysicalDisplayInfo;
 
     if-eqz v0, :cond_0
@@ -206,7 +206,7 @@
     .locals 1
 
     .prologue
-    .line 812
+    .line 828
     const/4 v0, 0x0
 
     return v0
@@ -216,7 +216,7 @@
     .locals 2
 
     .prologue
-    .line 828
+    .line 844
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

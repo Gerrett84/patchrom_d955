@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 5063
+    .line 5070
     iput-object p1, p0, Landroid/app/ActivityThread$2;->this$0:Landroid/app/ActivityThread;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
@@ -42,14 +42,14 @@
     .parameter "newConfig"
 
     .prologue
-    .line 5065
+    .line 5072
     iget-object v0, p0, Landroid/app/ActivityThread$2;->this$0:Landroid/app/ActivityThread;
 
     iget-object v1, v0, Landroid/app/ActivityThread;->mPackages:Ljava/util/HashMap;
 
     monitor-enter v1
 
-    .line 5069
+    .line 5076
     :try_start_0
     iget-object v0, p0, Landroid/app/ActivityThread$2;->this$0:Landroid/app/ActivityThread;
 
@@ -61,7 +61,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 5072
+    .line 5079
     iget-object v0, p0, Landroid/app/ActivityThread$2;->this$0:Landroid/app/ActivityThread;
 
     iget-object v0, v0, Landroid/app/ActivityThread;->mPendingConfiguration:Landroid/content/res/Configuration;
@@ -78,13 +78,13 @@
 
     if-eqz v0, :cond_1
 
-    .line 5074
+    .line 5081
     :cond_0
     iget-object v0, p0, Landroid/app/ActivityThread$2;->this$0:Landroid/app/ActivityThread;
 
     iput-object p1, v0, Landroid/app/ActivityThread;->mPendingConfiguration:Landroid/content/res/Configuration;
 
-    .line 5076
+    .line 5083
     iget-object v0, p0, Landroid/app/ActivityThread$2;->this$0:Landroid/app/ActivityThread;
 
     const/16 v2, 0x76
@@ -92,14 +92,14 @@
     #calls: Landroid/app/ActivityThread;->queueOrSendMessage(ILjava/lang/Object;)V
     invoke-static {v0, v2, p1}, Landroid/app/ActivityThread;->access$300(Landroid/app/ActivityThread;ILjava/lang/Object;)V
 
-    .line 5079
+    .line 5086
     :cond_1
     monitor-exit v1
 
-    .line 5080
+    .line 5087
     return-void
 
-    .line 5079
+    .line 5086
     :catchall_0
     move-exception v0
 
@@ -114,7 +114,7 @@
     .locals 0
 
     .prologue
-    .line 5082
+    .line 5089
     return-void
 .end method
 
@@ -123,6 +123,6 @@
     .parameter "level"
 
     .prologue
-    .line 5084
+    .line 5091
     return-void
 .end method

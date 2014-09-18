@@ -265,12 +265,12 @@
     .parameter "imgUri"
 
     .prologue
-    .line 117
+    .line 115
     iget-object v0, p0, Landroid/webkit/LGCliptrayManager;->mHandler:Landroid/os/Handler;
 
     if-eqz v0, :cond_0
 
-    .line 118
+    .line 116
     iget-object v0, p0, Landroid/webkit/LGCliptrayManager;->mHandler:Landroid/os/Handler;
 
     const/4 v1, 0x3
@@ -281,7 +281,7 @@
 
     invoke-virtual {v0}, Landroid/os/Message;->sendToTarget()V
 
-    .line 120
+    .line 118
     :cond_0
     return-void
 .end method
@@ -291,12 +291,12 @@
     .parameter "clip"
 
     .prologue
-    .line 111
+    .line 109
     iget-object v0, p0, Landroid/webkit/LGCliptrayManager;->mHandler:Landroid/os/Handler;
 
     if-eqz v0, :cond_0
 
-    .line 112
+    .line 110
     iget-object v0, p0, Landroid/webkit/LGCliptrayManager;->mHandler:Landroid/os/Handler;
 
     const/4 v1, 0x4
@@ -307,7 +307,7 @@
 
     invoke-virtual {v0}, Landroid/os/Message;->sendToTarget()V
 
-    .line 114
+    .line 112
     :cond_0
     return-void
 .end method
@@ -317,19 +317,19 @@
     .parameter "selectedText"
 
     .prologue
-    .line 104
+    .line 102
     iget-object v1, p0, Landroid/webkit/LGCliptrayManager;->mHandler:Landroid/os/Handler;
 
     if-eqz v1, :cond_0
 
-    .line 105
+    .line 103
     const/4 v1, 0x0
 
     invoke-static {v1, p1}, Landroid/content/ClipData;->newPlainText(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Landroid/content/ClipData;
 
     move-result-object v0
 
-    .line 106
+    .line 104
     .local v0, clip:Landroid/content/ClipData;
     iget-object v1, p0, Landroid/webkit/LGCliptrayManager;->mHandler:Landroid/os/Handler;
 
@@ -341,7 +341,7 @@
 
     invoke-virtual {v1}, Landroid/os/Message;->sendToTarget()V
 
-    .line 108
+    .line 106
     .end local v0           #clip:Landroid/content/ClipData;
     :cond_0
     return-void
@@ -351,7 +351,7 @@
     .locals 1
 
     .prologue
-    .line 96
+    .line 94
     iget-object v0, p0, Landroid/webkit/LGCliptrayManager;->mCliptrayManager:Lcom/lge/loader/cliptray/ICliptrayManagerLoader;
 
     if-eqz v0, :cond_0
@@ -372,18 +372,58 @@
 
     if-nez v0, :cond_0
 
-    .line 99
+    .line 97
     iget-object v0, p0, Landroid/webkit/LGCliptrayManager;->mCliptrayManager:Lcom/lge/loader/cliptray/ICliptrayManagerLoader;
 
     invoke-interface {v0}, Lcom/lge/loader/cliptray/ICliptrayManagerLoader;->hideCliptray()V
 
-    .line 101
+    .line 99
+    :cond_0
+    return-void
+.end method
+
+.method public setPasteListener(Landroid/webkit/WebViewClassic$WebViewInputConnection;)V
+    .locals 2
+    .parameter "inputConnection"
+
+    .prologue
+    .line 121
+    iget-object v0, p0, Landroid/webkit/LGCliptrayManager;->mCliptrayManager:Lcom/lge/loader/cliptray/ICliptrayManagerLoader;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Landroid/webkit/LGCliptrayManager;->mCliptrayManager:Lcom/lge/loader/cliptray/ICliptrayManagerLoader;
+
+    invoke-interface {v0}, Lcom/lge/loader/cliptray/ICliptrayManagerLoader;->isServiceConnected()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 122
+    iput-object p1, p0, Landroid/webkit/LGCliptrayManager;->mInputConnection:Landroid/webkit/WebViewClassic$WebViewInputConnection;
+
+    .line 123
+    iget-object v0, p0, Landroid/webkit/LGCliptrayManager;->mCliptrayManager:Lcom/lge/loader/cliptray/ICliptrayManagerLoader;
+
+    iget-object v1, p0, Landroid/webkit/LGCliptrayManager;->mClipTrayPasteListener:Lcom/lge/loader/cliptray/ICliptrayManagerLoader$OnPasteListener;
+
+    invoke-interface {v0, v1}, Lcom/lge/loader/cliptray/ICliptrayManagerLoader;->setPasteListener(Lcom/lge/loader/cliptray/ICliptrayManagerLoader$OnPasteListener;)V
+
+    .line 124
+    iget-object v0, p0, Landroid/webkit/LGCliptrayManager;->mCliptrayManager:Lcom/lge/loader/cliptray/ICliptrayManagerLoader;
+
+    const/4 v1, 0x0
+
+    invoke-interface {v0, v1}, Lcom/lge/loader/cliptray/ICliptrayManagerLoader;->setInputType(I)V
+
+    .line 126
     :cond_0
     return-void
 .end method
 
 .method public showCliptray(Landroid/webkit/WebViewClassic$WebViewInputConnection;)V
-    .locals 2
+    .locals 1
     .parameter "inputConnection"
 
     .prologue
@@ -401,28 +441,14 @@
     if-eqz v0, :cond_0
 
     .line 88
-    iput-object p1, p0, Landroid/webkit/LGCliptrayManager;->mInputConnection:Landroid/webkit/WebViewClassic$WebViewInputConnection;
+    invoke-virtual {p0, p1}, Landroid/webkit/LGCliptrayManager;->setPasteListener(Landroid/webkit/WebViewClassic$WebViewInputConnection;)V
 
     .line 89
     iget-object v0, p0, Landroid/webkit/LGCliptrayManager;->mCliptrayManager:Lcom/lge/loader/cliptray/ICliptrayManagerLoader;
 
-    iget-object v1, p0, Landroid/webkit/LGCliptrayManager;->mClipTrayPasteListener:Lcom/lge/loader/cliptray/ICliptrayManagerLoader$OnPasteListener;
-
-    invoke-interface {v0, v1}, Lcom/lge/loader/cliptray/ICliptrayManagerLoader;->setPasteListener(Lcom/lge/loader/cliptray/ICliptrayManagerLoader$OnPasteListener;)V
-
-    .line 90
-    iget-object v0, p0, Landroid/webkit/LGCliptrayManager;->mCliptrayManager:Lcom/lge/loader/cliptray/ICliptrayManagerLoader;
-
-    const/4 v1, 0x0
-
-    invoke-interface {v0, v1}, Lcom/lge/loader/cliptray/ICliptrayManagerLoader;->setInputType(I)V
-
-    .line 91
-    iget-object v0, p0, Landroid/webkit/LGCliptrayManager;->mCliptrayManager:Lcom/lge/loader/cliptray/ICliptrayManagerLoader;
-
     invoke-interface {v0}, Lcom/lge/loader/cliptray/ICliptrayManagerLoader;->showCliptray()V
 
-    .line 93
+    .line 91
     :cond_0
     return-void
 .end method

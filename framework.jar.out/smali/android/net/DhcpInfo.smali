@@ -163,7 +163,7 @@
 
     .line 62
     .local v0, str:Ljava/lang/StringBuffer;
-    const-string v1, "ipaddr "
+    const-string/jumbo v1, "ipaddr "
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 

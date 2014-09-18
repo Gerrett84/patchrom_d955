@@ -23829,7 +23829,7 @@
 
     move-result v1
 
-    .line 7778
+    .line 7780
     :cond_0
     :goto_0
     return v1
@@ -23839,6 +23839,7 @@
     invoke-virtual {p0, p1}, Landroid/view/View;->getWindowVisibleDisplayFrame(Landroid/graphics/Rect;)V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_1
 
     goto :goto_0
 
@@ -23848,6 +23849,15 @@
 
     .line 7775
     .local v0, e:Landroid/os/RemoteException;
+    goto :goto_0
+
+    .line 7776
+    .end local v0           #e:Landroid/os/RemoteException;
+    :catch_1
+    move-exception v0
+
+    .line 7777
+    .local v0, e:Ljava/lang/NullPointerException;
     goto :goto_0
 .end method
 

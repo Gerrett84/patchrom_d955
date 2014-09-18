@@ -572,7 +572,7 @@
 
     if-eqz v0, :cond_7
 
-    const-string v0, "is_visible_in_downloads_ui != \'0\'"
+    const-string/jumbo v0, "is_visible_in_downloads_ui != \'0\'"
 
     invoke-interface {v8, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 

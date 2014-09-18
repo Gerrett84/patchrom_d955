@@ -3322,7 +3322,7 @@
     .local v9, maskFilename:Ljava/lang/String;
     const-string v12, ""
 
-    const-string v13, "invert"
+    const-string/jumbo v13, "invert"
 
     move-object/from16 v0, p1
 
@@ -8720,7 +8720,7 @@
     .line 1559
     const-string v29, ""
 
-    const-string v30, "invert"
+    const-string/jumbo v30, "invert"
 
     invoke-virtual/range {v24 .. v24}, Landroid/media/videoeditor/TransitionAlpha;->isInvert()Z
 
