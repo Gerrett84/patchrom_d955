@@ -222,10 +222,6 @@
 
     sget-object v1, Landroid/os/Build;->TYPE:Ljava/lang/String;
 
-    invoke-static {v1}, Landroid/os/StrictMode;->ignoreDebugBuild(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -795,13 +791,13 @@
 
     move-result v6
 
-    if-eqz v6, :cond_2
+    if-eqz v6, :cond_1
 
     invoke-static {}, Landroid/os/StrictMode;->amTheSystemServerProcess()Z
 
     move-result v6
 
-    if-nez v6, :cond_2
+    if-nez v6, :cond_1
 
     move v0, v4
 
@@ -816,23 +812,16 @@
 
     .line 927
     .local v2, suppress:Z
-    sget-boolean v6, Landroid/os/StrictMode;->IS_USER_BUILD:Z
-
-    if-eqz v6, :cond_0
-
-    const/4 v0, 0x0
-
-    :cond_0
-    if-nez v0, :cond_3
+    if-nez v0, :cond_2
 
     sget-boolean v6, Landroid/os/StrictMode;->IS_USER_BUILD:Z
 
-    if-nez v6, :cond_1
+    if-nez v6, :cond_0
 
-    if-eqz v2, :cond_3
+    if-eqz v2, :cond_2
 
     .line 928
-    :cond_1
+    :cond_0
     invoke-static {v5}, Landroid/os/StrictMode;->setCloseGuardEnabled(Z)V
 
     .line 967
@@ -841,7 +830,7 @@
 
     .end local v0           #doFlashes:Z
     .end local v2           #suppress:Z
-    :cond_2
+    :cond_1
     move v0, v5
 
     .line 920
@@ -850,49 +839,49 @@
     .line 935
     .restart local v0       #doFlashes:Z
     .restart local v2       #suppress:Z
-    :cond_3
+    :cond_2
     sget-boolean v6, Landroid/os/StrictMode;->IS_ENG_BUILD:Z
 
-    if-eqz v6, :cond_4
+    if-eqz v6, :cond_3
 
     .line 936
     const/4 v0, 0x1
 
     .line 940
-    :cond_4
+    :cond_3
     const/4 v3, 0x7
 
     .line 945
     .local v3, threadPolicyMask:I
     sget-boolean v6, Landroid/os/StrictMode;->IS_USER_BUILD:Z
 
-    if-nez v6, :cond_5
+    if-nez v6, :cond_4
 
-    if-nez v2, :cond_5
+    if-nez v2, :cond_4
 
     .line 946
     or-int/lit16 v3, v3, 0x80
 
     .line 948
-    :cond_5
-    if-eqz v0, :cond_6
+    :cond_4
+    if-eqz v0, :cond_5
 
     .line 949
     or-int/lit16 v3, v3, 0x800
 
     .line 952
-    :cond_6
+    :cond_5
     invoke-static {v3}, Landroid/os/StrictMode;->setThreadPolicyMask(I)V
 
     .line 957
     sget-boolean v6, Landroid/os/StrictMode;->IS_USER_BUILD:Z
 
-    if-nez v6, :cond_7
+    if-nez v6, :cond_6
 
-    if-eqz v2, :cond_8
+    if-eqz v2, :cond_7
 
     .line 958
-    :cond_7
+    :cond_6
     invoke-static {v5}, Landroid/os/StrictMode;->setCloseGuardEnabled(Z)V
 
     :goto_2
@@ -902,7 +891,7 @@
     goto :goto_1
 
     .line 960
-    :cond_8
+    :cond_7
     new-instance v5, Landroid/os/StrictMode$VmPolicy$Builder;
 
     invoke-direct {v5}, Landroid/os/StrictMode$VmPolicy$Builder;-><init>()V
@@ -919,13 +908,13 @@
     .local v1, policyBuilder:Landroid/os/StrictMode$VmPolicy$Builder;
     sget-boolean v5, Landroid/os/StrictMode;->IS_ENG_BUILD:Z
 
-    if-eqz v5, :cond_9
+    if-eqz v5, :cond_8
 
     .line 962
     invoke-virtual {v1}, Landroid/os/StrictMode$VmPolicy$Builder;->penaltyLog()Landroid/os/StrictMode$VmPolicy$Builder;
 
     .line 964
-    :cond_9
+    :cond_8
     invoke-virtual {v1}, Landroid/os/StrictMode$VmPolicy$Builder;->build()Landroid/os/StrictMode$VmPolicy;
 
     move-result-object v5
@@ -1561,26 +1550,6 @@
     const/4 v0, 0x0
 
     goto :goto_0
-.end method
-
-.method static ignoreDebugBuild(Ljava/lang/String;)Ljava/lang/String;
-    .locals 1
-    .parameter "build"
-
-    .prologue
-    const-string/jumbo v0, "userdebug"
-
-    invoke-virtual {v0, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    const-string/jumbo p0, "user"
-
-    .end local p0
-    :cond_0
-    return-object p0
 .end method
 
 .method public static incrementExpectedActivityCount(Ljava/lang/Class;)V

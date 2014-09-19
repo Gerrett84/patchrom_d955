@@ -209,6 +209,8 @@
 
 .field public static final MANAGE_APP_TOKENS:Ljava/lang/String; = "android.permission.MANAGE_APP_TOKENS"
 
+.field public static final MANAGE_CPA:Ljava/lang/String; = "com.kddi.android.permission.MANAGE_CPA"
+
 .field public static final MANAGE_NETWORK_POLICY:Ljava/lang/String; = "android.permission.MANAGE_NETWORK_POLICY"
 
 .field public static final MANAGE_USB:Ljava/lang/String; = "android.permission.MANAGE_USB"

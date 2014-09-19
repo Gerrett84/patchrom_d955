@@ -40,6 +40,8 @@
 
 .field static final TRANSACTION_addUpstreamV6Interface:I = 0x24
 
+.field static final TRANSACTION_appendRouteWithMetric:I = 0x6f
+
 .field static final TRANSACTION_attachPppd:I = 0x27
 
 .field static final TRANSACTION_blockIPv6Interface:I = 0x59
@@ -163,6 +165,8 @@
 .field static final TRANSACTION_runSetPortRedirectRule:I = 0x44
 
 .field static final TRANSACTION_runShellCommand:I = 0x43
+
+.field static final TRANSACTION_runShowRouteCommand:I = 0x70
 
 .field static final TRANSACTION_setAccessPoint:I = 0x2c
 
@@ -4499,8 +4503,136 @@
     const/4 v3, 0x1
 
     goto/16 :goto_0
+    :sswitch_6f
+    const-string v3, "android.os.INetworkManagementService"
 
+    move-object/from16 v0, p2
+
+    invoke-virtual {v0, v3}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
+
+    .line 876
+    invoke-virtual/range {p2 .. p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
+    move-result-object v4
+
+    .line 878
+    .restart local v4       #_arg0:Ljava/lang/String;
+    invoke-virtual/range {p2 .. p2}, Landroid/os/Parcel;->readInt()I
+
+    move-result v5
+
+    .line 880
+    .restart local v5       #_arg1:I
+    invoke-virtual/range {p2 .. p2}, Landroid/os/Parcel;->readInt()I
+
+    move-result v3
+
+    if-eqz v3, :cond_2c
+
+    .line 881
+    sget-object v3, Landroid/net/RouteInfo;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    move-object/from16 v0, p2
+
+    invoke-interface {v3, v0}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+
+    move-result-object v6
+
+    check-cast v6, Landroid/net/RouteInfo;
+
+    .line 886
+    .restart local v6       #_arg2:Landroid/net/RouteInfo;
+    :goto_2d
+    move-object/from16 v0, p0
+
+    invoke-virtual {v0, v4, v5, v6}, Landroid/os/INetworkManagementService$Stub;->appendRouteWithMetric(Ljava/lang/String;ILandroid/net/RouteInfo;)Z
+
+    move-result v28
+
+    .line 887
+    .restart local v28       #_result:Z
+    invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
+
+    .line 888
+    if-eqz v28, :cond_2d
+
+    const/4 v3, 0x1
+
+    :goto_2e
+    move-object/from16 v0, p3
+
+    invoke-virtual {v0, v3}, Landroid/os/Parcel;->writeInt(I)V
+
+    .line 889
+    const/4 v3, 0x1
+
+    goto/16 :goto_0
+
+    .line 884
+    .end local v6           #_arg2:Landroid/net/RouteInfo;
+    .end local v28           #_result:Z
+    :cond_2c
+    const/4 v6, 0x0
+
+    .restart local v6       #_arg2:Landroid/net/RouteInfo;
+    goto :goto_2d
+
+    .line 888
+    .restart local v28       #_result:Z
+    :cond_2d
+    const/4 v3, 0x0
+
+    goto :goto_2e
+
+    .line 893
+    .end local v4           #_arg0:Ljava/lang/String;
+    .end local v5           #_arg1:I
+    .end local v6           #_arg2:Landroid/net/RouteInfo;
+    .end local v28           #_result:Z
+    :sswitch_70
+    const-string v3, "android.os.INetworkManagementService"
+
+    move-object/from16 v0, p2
+
+    invoke-virtual {v0, v3}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
+
+    .line 963
+    invoke-virtual/range {p2 .. p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
+    move-result-object v4
+
+    .line 965
+    .restart local v4       #_arg0:Ljava/lang/String;
+    invoke-virtual/range {p2 .. p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
+    move-result-object v5
+
+    .line 967
+    .restart local v5       #_arg1:Ljava/lang/String;
+    invoke-virtual/range {p2 .. p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
+    move-result-object v6
+
+    .line 968
+    .local v6, _arg2:Ljava/lang/String;
+    move-object/from16 v0, p0
+
+    invoke-virtual {v0, v4, v5, v6}, Landroid/os/INetworkManagementService$Stub;->runShowRouteCommand(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 969
+    invoke-virtual/range {p3 .. p3}, Landroid/os/Parcel;->writeNoException()V
+
+    .line 970
+    const/4 v3, 0x1
+
+    goto/16 :goto_0
+
+    .line 974
+    .end local v4           #_arg0:Ljava/lang/String;
+    .end local v5           #_arg1:Ljava/lang/String;
+    .end local v6           #_arg2:Ljava/lang/String;
     .line 42
+
     :sswitch_data_0
     .sparse-switch
         0x1 -> :sswitch_1
@@ -4613,6 +4745,8 @@
         0x6c -> :sswitch_6c
         0x6d -> :sswitch_6d
         0x6e -> :sswitch_6e
+        0x6f -> :sswitch_6f
+        0x70 -> :sswitch_70
         0x5f4e5446 -> :sswitch_0
     .end sparse-switch
 .end method
