@@ -41,22 +41,27 @@
 
     .prologue
     .line 66
-    iget v0, p1, Landroid/os/Message;->what:I
+    iget v1, p1, Landroid/os/Message;->what:I
 
-    packed-switch v0, :pswitch_data_0
+    packed-switch v1, :pswitch_data_0
 
-    .line 75
+    .line 80
     :goto_0
     return-void
 
     .line 68
     :pswitch_0
-    iget-object v0, p0, Lcom/android/server/display/LocalDisplayAdapter$1;->this$0:Lcom/android/server/display/LocalDisplayAdapter;
+    iget-object v1, p0, Lcom/android/server/display/LocalDisplayAdapter$1;->this$0:Lcom/android/server/display/LocalDisplayAdapter;
 
-    invoke-virtual {v0}, Lcom/android/server/display/LocalDisplayAdapter;->getContext()Landroid/content/Context;
+    invoke-virtual {v1}, Lcom/android/server/display/LocalDisplayAdapter;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
+    .line 69
+    .local v0, context:Landroid/content/Context;
+    if-eqz v0, :cond_0
+
+    .line 70
     iget-object v1, p0, Lcom/android/server/display/LocalDisplayAdapter$1;->this$0:Lcom/android/server/display/LocalDisplayAdapter;
 
     #getter for: Lcom/android/server/display/LocalDisplayAdapter;->mBroadcastReceiver:Landroid/content/BroadcastReceiver;
@@ -82,7 +87,20 @@
 
     goto :goto_0
 
+    .line 74
+    :cond_0
+    iget-object v1, p0, Lcom/android/server/display/LocalDisplayAdapter$1;->this$0:Lcom/android/server/display/LocalDisplayAdapter;
+
+    const/4 v2, 0x1
+
+    #setter for: Lcom/android/server/display/LocalDisplayAdapter;->firstboot:Z
+    invoke-static {v1, v2}, Lcom/android/server/display/LocalDisplayAdapter;->access$102(Lcom/android/server/display/LocalDisplayAdapter;Z)Z
+
+    goto :goto_0
+
     .line 66
+    nop
+
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_0

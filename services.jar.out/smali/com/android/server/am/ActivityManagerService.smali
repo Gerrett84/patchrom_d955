@@ -18,6 +18,7 @@
         Lcom/android/server/am/ActivityManagerService$CpuBinder;,
         Lcom/android/server/am/ActivityManagerService$DbBinder;,
         Lcom/android/server/am/ActivityManagerService$GraphicsBinder;,
+        Lcom/android/server/am/ActivityManagerService$GmemBinder;,
         Lcom/android/server/am/ActivityManagerService$MemBinder;,
         Lcom/android/server/am/ActivityManagerService$AThread;,
         Lcom/android/server/am/ActivityManagerService$AppDeathRecipient;,
@@ -25375,7 +25376,16 @@
 
     invoke-static {v4, v5}, Landroid/os/ServiceManager;->addService(Ljava/lang/String;Landroid/os/IBinder;)V
 
-    .line 1496
+    .line 1514
+    const-string v4, "gmeminfo"
+
+    new-instance v5, Lcom/android/server/am/ActivityManagerService$GmemBinder;
+
+    invoke-direct {v5, v3}, Lcom/android/server/am/ActivityManagerService$GmemBinder;-><init>(Lcom/android/server/am/ActivityManagerService;)V
+
+    invoke-static {v4, v5}, Landroid/os/ServiceManager;->addService(Ljava/lang/String;Landroid/os/IBinder;)V
+
+    .line 1515
     const-string v4, "gfxinfo"
 
     new-instance v5, Lcom/android/server/am/ActivityManagerService$GraphicsBinder;
@@ -50307,22 +50317,28 @@
     .parameter "receiver"
 
     .prologue
+    .line 6068
     new-instance v10, Ljava/util/ArrayList;
 
     invoke-direct {v10}, Ljava/util/ArrayList;-><init>()V
 
+    .line 6070
     .local v10, list:Ljava/util/ArrayList;
     const/4 v15, 0x0
 
+    .line 6071
     .local v15, pending:Lcom/android/server/am/PendingThumbnailsRecord;
     const/16 v21, 0x0
 
+    .line 6072
     .local v21, topThumbnail:Landroid/app/IApplicationThread;
     const/16 v20, 0x0
 
+    .line 6074
     .local v20, topRecord:Lcom/android/server/am/ActivityRecord;
     monitor-enter p0
 
+    .line 6079
     :try_start_0
     const-string v1, "android.permission.GET_TASKS"
 
@@ -50336,14 +50352,17 @@
 
     if-eqz v1, :cond_1
 
+    .line 6081
     if-eqz p3, :cond_0
 
+    .line 6085
     :try_start_1
     invoke-interface/range {p3 .. p3}, Landroid/app/IThumbnailReceiver;->finished()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
     .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_1
 
+    .line 6089
     :cond_0
     :goto_0
     :try_start_2
@@ -50395,17 +50414,20 @@
 
     move-result-object v11
 
+    .line 6093
     .local v11, msg:Ljava/lang/String;
     const-string v1, "ActivityManager"
 
     invoke-static {v1, v11}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;)I
 
+    .line 6094
     new-instance v1, Ljava/lang/SecurityException;
 
     invoke-direct {v1, v11}, Ljava/lang/SecurityException;-><init>(Ljava/lang/String;)V
 
     throw v1
 
+    .line 6182
     .end local v11           #msg:Ljava/lang/String;
     :catchall_0
     move-exception v1
@@ -50417,6 +50439,7 @@
 
     throw v1
 
+    .line 6097
     :cond_1
     :try_start_3
     move-object/from16 v0, p0
@@ -50431,8 +50454,54 @@
 
     add-int/lit8 v17, v1, -0x1
 
+    .line 6098
     .local v17, pos:I
-    if-ltz v17, :cond_9
+    if-ltz v17, :cond_a
+
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lcom/android/server/am/ActivityManagerService;->mMainStack:Lcom/android/server/am/ActivityStack;
+
+    iget-object v1, v1, Lcom/android/server/am/ActivityStack;->mHistory:Ljava/util/ArrayList;
+
+    move/from16 v0, v17
+
+    invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/android/server/am/ActivityRecord;
+
+    move-object v12, v1
+
+    .line 6101
+    .local v12, next:Lcom/android/server/am/ActivityRecord;
+    :goto_2
+    sget-boolean v1, Lcom/lge/config/ConfigBuildFlags;->CAPP_SPLITWINDOW:Z
+
+    if-eqz v1, :cond_2
+
+    .line 6102
+    if-eqz v12, :cond_2
+
+    iget-object v1, v12, Lcom/android/server/am/ActivityRecord;->task:Lcom/android/server/am/TaskRecord;
+
+    iget v1, v1, Lcom/android/server/am/TaskRecord;->numActivities:I
+
+    if-nez v1, :cond_2
+
+    .line 6103
+    const/4 v1, 0x1
+
+    move/from16 v0, v17
+
+    if-le v0, v1, :cond_2
+
+    .line 6104
+    add-int/lit8 v17, v17, -0x1
+
+    .line 6105
+    if-ltz v17, :cond_b
 
     move-object/from16 v0, p0
 
@@ -50452,35 +50521,43 @@
 
     move-object v12, v1
 
-    .local v12, next:Lcom/android/server/am/ActivityRecord;
-    :goto_2
+    .line 6109
+    :cond_2
+    :goto_3
     const/16 v19, 0x0
 
+    .line 6110
     .local v19, top:Lcom/android/server/am/ActivityRecord;
     const/4 v8, 0x0
 
+    .line 6111
     .local v8, curTask:Lcom/android/server/am/TaskRecord;
     const/4 v13, 0x0
 
+    .line 6112
     .local v13, numActivities:I
     const/4 v14, 0x0
 
     .local v14, numRunning:I
     move-object/from16 v16, v15
 
+    .line 6113
     .end local v15           #pending:Lcom/android/server/am/PendingThumbnailsRecord;
     .local v16, pending:Lcom/android/server/am/PendingThumbnailsRecord;
-    :goto_3
-    if-ltz v17, :cond_c
+    :goto_4
+    if-ltz v17, :cond_e
 
-    if-lez p1, :cond_c
+    if-lez p1, :cond_e
 
+    .line 6114
     move-object/from16 v18, v12
 
+    .line 6115
     .local v18, r:Lcom/android/server/am/ActivityRecord;
     add-int/lit8 v17, v17, -0x1
 
-    if-ltz v17, :cond_a
+    .line 6116
+    if-ltz v17, :cond_c
 
     :try_start_4
     move-object/from16 v0, p0
@@ -50499,8 +50576,9 @@
 
     move-object v12, v1
 
-    :goto_4
-    if-eqz v19, :cond_2
+    .line 6119
+    :goto_5
+    if-eqz v19, :cond_3
 
     move-object/from16 v0, v19
 
@@ -50508,7 +50586,7 @@
 
     sget-object v2, Lcom/android/server/am/ActivityStack$ActivityState;->INITIALIZING:Lcom/android/server/am/ActivityStack$ActivityState;
 
-    if-ne v1, v2, :cond_3
+    if-ne v1, v2, :cond_4
 
     move-object/from16 v0, v19
 
@@ -50518,27 +50596,32 @@
 
     iget-object v2, v0, Lcom/android/server/am/ActivityRecord;->task:Lcom/android/server/am/TaskRecord;
 
-    if-ne v1, v2, :cond_3
+    if-ne v1, v2, :cond_4
 
-    :cond_2
+    .line 6122
+    :cond_3
     move-object/from16 v19, v18
 
+    .line 6123
     move-object/from16 v0, v18
 
     iget-object v8, v0, Lcom/android/server/am/ActivityRecord;->task:Lcom/android/server/am/TaskRecord;
 
+    .line 6124
     const/4 v14, 0x0
 
     move v13, v14
 
-    :cond_3
+    .line 6128
+    :cond_4
     add-int/lit8 v13, v13, 0x1
 
+    .line 6129
     move-object/from16 v0, v18
 
     iget-object v1, v0, Lcom/android/server/am/ActivityRecord;->app:Lcom/android/server/am/ProcessRecord;
 
-    if-eqz v1, :cond_4
+    if-eqz v1, :cond_5
 
     move-object/from16 v0, v18
 
@@ -50546,27 +50629,32 @@
 
     iget-object v1, v1, Lcom/android/server/am/ProcessRecord;->thread:Landroid/app/IApplicationThread;
 
-    if-eqz v1, :cond_4
+    if-eqz v1, :cond_5
 
+    .line 6130
     add-int/lit8 v14, v14, 0x1
 
-    :cond_4
-    if-eqz v12, :cond_5
+    .line 6139
+    :cond_5
+    if-eqz v12, :cond_6
 
     iget-object v1, v12, Lcom/android/server/am/ActivityRecord;->task:Lcom/android/server/am/TaskRecord;
 
-    if-eq v1, v8, :cond_12
+    if-eq v1, v8, :cond_14
 
-    :cond_5
+    .line 6140
+    :cond_6
     new-instance v7, Landroid/app/ActivityManager$RunningTaskInfo;
 
     invoke-direct {v7}, Landroid/app/ActivityManager$RunningTaskInfo;-><init>()V
 
+    .line 6142
     .local v7, ci:Landroid/app/ActivityManager$RunningTaskInfo;
     iget v1, v8, Lcom/android/server/am/TaskRecord;->taskId:I
 
     iput v1, v7, Landroid/app/ActivityManager$RunningTaskInfo;->id:I
 
+    .line 6143
     move-object/from16 v0, v18
 
     iget-object v1, v0, Lcom/android/server/am/ActivityRecord;->intent:Landroid/content/Intent;
@@ -50577,6 +50665,7 @@
 
     iput-object v1, v7, Landroid/app/ActivityManager$RunningTaskInfo;->baseActivity:Landroid/content/ComponentName;
 
+    .line 6144
     move-object/from16 v0, v19
 
     iget-object v1, v0, Lcom/android/server/am/ActivityRecord;->intent:Landroid/content/Intent;
@@ -50587,12 +50676,14 @@
 
     iput-object v1, v7, Landroid/app/ActivityManager$RunningTaskInfo;->topActivity:Landroid/content/ComponentName;
 
+    .line 6145
     move-object/from16 v0, v19
 
     iget-object v1, v0, Lcom/android/server/am/ActivityRecord;->thumbHolder:Lcom/android/server/am/ThumbnailHolder;
 
-    if-eqz v1, :cond_6
+    if-eqz v1, :cond_7
 
+    .line 6146
     move-object/from16 v0, v19
 
     iget-object v1, v0, Lcom/android/server/am/ActivityRecord;->thumbHolder:Lcom/android/server/am/ThumbnailHolder;
@@ -50601,24 +50692,28 @@
 
     iput-object v1, v7, Landroid/app/ActivityManager$RunningTaskInfo;->description:Ljava/lang/CharSequence;
 
-    :cond_6
+    .line 6148
+    :cond_7
     iput v13, v7, Landroid/app/ActivityManager$RunningTaskInfo;->numActivities:I
 
+    .line 6149
     iput v14, v7, Landroid/app/ActivityManager$RunningTaskInfo;->numRunning:I
 
+    .line 6152
     iget-object v1, v7, Landroid/app/ActivityManager$RunningTaskInfo;->thumbnail:Landroid/graphics/Bitmap;
 
-    if-nez v1, :cond_11
+    if-nez v1, :cond_13
 
-    if-eqz p3, :cond_11
+    if-eqz p3, :cond_13
 
+    .line 6157
     move-object/from16 v0, v19
 
     iget-object v1, v0, Lcom/android/server/am/ActivityRecord;->state:Lcom/android/server/am/ActivityStack$ActivityState;
 
     sget-object v2, Lcom/android/server/am/ActivityStack$ActivityState;->RESUMED:Lcom/android/server/am/ActivityStack$ActivityState;
 
-    if-eq v1, v2, :cond_7
+    if-eq v1, v2, :cond_8
 
     move-object/from16 v0, v19
 
@@ -50626,20 +50721,21 @@
 
     sget-object v2, Lcom/android/server/am/ActivityStack$ActivityState;->PAUSING:Lcom/android/server/am/ActivityStack$ActivityState;
 
-    if-ne v1, v2, :cond_8
+    if-ne v1, v2, :cond_9
 
-    :cond_7
+    .line 6159
+    :cond_8
     move-object/from16 v0, v19
 
     iget-boolean v1, v0, Lcom/android/server/am/ActivityRecord;->idle:Z
 
-    if-eqz v1, :cond_b
+    if-eqz v1, :cond_d
 
     move-object/from16 v0, v19
 
     iget-object v1, v0, Lcom/android/server/am/ActivityRecord;->app:Lcom/android/server/am/ProcessRecord;
 
-    if-eqz v1, :cond_b
+    if-eqz v1, :cond_d
 
     move-object/from16 v0, v19
 
@@ -50647,10 +50743,12 @@
 
     iget-object v1, v1, Lcom/android/server/am/ProcessRecord;->thread:Landroid/app/IApplicationThread;
 
-    if-eqz v1, :cond_b
+    if-eqz v1, :cond_d
 
+    .line 6161
     move-object/from16 v20, v19
 
+    .line 6162
     move-object/from16 v0, v19
 
     iget-object v1, v0, Lcom/android/server/am/ActivityRecord;->app:Lcom/android/server/am/ProcessRecord;
@@ -50659,10 +50757,12 @@
 
     move-object/from16 v21, v0
 
-    :cond_8
-    :goto_5
-    if-nez v16, :cond_10
+    .line 6167
+    :cond_9
+    :goto_6
+    if-nez v16, :cond_12
 
+    .line 6168
     new-instance v15, Lcom/android/server/am/PendingThumbnailsRecord;
 
     move-object/from16 v0, p3
@@ -50671,9 +50771,10 @@
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
+    .line 6170
     .end local v16           #pending:Lcom/android/server/am/PendingThumbnailsRecord;
     .restart local v15       #pending:Lcom/android/server/am/PendingThumbnailsRecord;
-    :goto_6
+    :goto_7
     :try_start_5
     iget-object v1, v15, Lcom/android/server/am/PendingThumbnailsRecord;->pendingRecords:Ljava/util/HashSet;
 
@@ -50681,23 +50782,28 @@
 
     invoke-virtual {v1, v0}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    :goto_7
+    .line 6173
+    :goto_8
     invoke-virtual {v10, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
+    .line 6174
     add-int/lit8 p1, p1, -0x1
 
+    .line 6175
     const/16 v19, 0x0
 
     .end local v7           #ci:Landroid/app/ActivityManager$RunningTaskInfo;
-    :goto_8
+    :goto_9
     move-object/from16 v16, v15
 
+    .line 6177
     .end local v15           #pending:Lcom/android/server/am/PendingThumbnailsRecord;
     .restart local v16       #pending:Lcom/android/server/am/PendingThumbnailsRecord;
-    goto/16 :goto_3
+    goto/16 :goto_4
 
+    .line 6098
     .end local v8           #curTask:Lcom/android/server/am/TaskRecord;
     .end local v12           #next:Lcom/android/server/am/ActivityRecord;
     .end local v13           #numActivities:I
@@ -50706,26 +50812,34 @@
     .end local v18           #r:Lcom/android/server/am/ActivityRecord;
     .end local v19           #top:Lcom/android/server/am/ActivityRecord;
     .restart local v15       #pending:Lcom/android/server/am/PendingThumbnailsRecord;
-    :cond_9
+    :cond_a
     const/4 v12, 0x0
 
     goto/16 :goto_2
 
+    .line 6105
+    .restart local v12       #next:Lcom/android/server/am/ActivityRecord;
+    :cond_b
+    const/4 v12, 0x0
+
+    goto/16 :goto_3
+
+    .line 6116
     .end local v15           #pending:Lcom/android/server/am/PendingThumbnailsRecord;
     .restart local v8       #curTask:Lcom/android/server/am/TaskRecord;
-    .restart local v12       #next:Lcom/android/server/am/ActivityRecord;
     .restart local v13       #numActivities:I
     .restart local v14       #numRunning:I
     .restart local v16       #pending:Lcom/android/server/am/PendingThumbnailsRecord;
     .restart local v18       #r:Lcom/android/server/am/ActivityRecord;
     .restart local v19       #top:Lcom/android/server/am/ActivityRecord;
-    :cond_a
+    :cond_c
     const/4 v12, 0x0
 
-    goto/16 :goto_4
+    goto/16 :goto_5
 
+    .line 6164
     .restart local v7       #ci:Landroid/app/ActivityManager$RunningTaskInfo;
-    :cond_b
+    :cond_d
     const/4 v1, 0x1
 
     :try_start_6
@@ -50733,8 +50847,9 @@
 
     iput-boolean v1, v0, Lcom/android/server/am/ActivityRecord;->thumbnailNeeded:Z
 
-    goto :goto_5
+    goto :goto_6
 
+    .line 6182
     .end local v7           #ci:Landroid/app/ActivityManager$RunningTaskInfo;
     .end local v18           #r:Lcom/android/server/am/ActivityRecord;
     :catchall_1
@@ -50746,11 +50861,13 @@
     .restart local v15       #pending:Lcom/android/server/am/PendingThumbnailsRecord;
     goto/16 :goto_1
 
+    .line 6179
     .end local v15           #pending:Lcom/android/server/am/PendingThumbnailsRecord;
     .restart local v16       #pending:Lcom/android/server/am/PendingThumbnailsRecord;
-    :cond_c
-    if-eqz v16, :cond_d
+    :cond_e
+    if-eqz v16, :cond_f
 
+    .line 6180
     move-object/from16 v0, p0
 
     iget-object v1, v0, Lcom/android/server/am/ActivityManagerService;->mPendingThumbnails:Ljava/util/ArrayList;
@@ -50759,13 +50876,16 @@
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    :cond_d
+    .line 6182
+    :cond_f
     monitor-exit p0
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_1
 
-    if-eqz v21, :cond_e
+    .line 6186
+    if-eqz v21, :cond_10
 
+    .line 6189
     :try_start_7
     move-object/from16 v0, v20
 
@@ -50777,24 +50897,29 @@
     :try_end_7
     .catch Ljava/lang/Exception; {:try_start_7 .. :try_end_7} :catch_0
 
-    :cond_e
-    :goto_9
-    if-nez v16, :cond_f
+    .line 6196
+    :cond_10
+    :goto_a
+    if-nez v16, :cond_11
 
-    if-eqz p3, :cond_f
+    if-eqz p3, :cond_11
 
+    .line 6202
     :try_start_8
     invoke-interface/range {p3 .. p3}, Landroid/app/IThumbnailReceiver;->finished()V
     :try_end_8
     .catch Landroid/os/RemoteException; {:try_start_8 .. :try_end_8} :catch_2
 
-    :cond_f
-    :goto_a
+    .line 6207
+    :cond_11
+    :goto_b
     return-object v10
 
+    .line 6190
     :catch_0
     move-exception v9
 
+    .line 6191
     .local v9, e:Ljava/lang/Exception;
     const-string v1, "ActivityManager"
 
@@ -50802,6 +50927,7 @@
 
     invoke-static {v1, v2, v9}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
+    .line 6192
     const/4 v2, 0x0
 
     move-object/from16 v0, v20
@@ -50818,8 +50944,9 @@
 
     invoke-virtual/range {v1 .. v6}, Lcom/android/server/am/ActivityManagerService;->sendPendingThumbnail(Lcom/android/server/am/ActivityRecord;Landroid/os/IBinder;Landroid/graphics/Bitmap;Ljava/lang/CharSequence;Z)V
 
-    goto :goto_9
+    goto :goto_a
 
+    .line 6086
     .end local v8           #curTask:Lcom/android/server/am/TaskRecord;
     .end local v9           #e:Ljava/lang/Exception;
     .end local v12           #next:Lcom/android/server/am/ActivityRecord;
@@ -50834,6 +50961,7 @@
 
     goto/16 :goto_0
 
+    .line 6203
     .end local v15           #pending:Lcom/android/server/am/PendingThumbnailsRecord;
     .restart local v8       #curTask:Lcom/android/server/am/TaskRecord;
     .restart local v12       #next:Lcom/android/server/am/ActivityRecord;
@@ -50845,35 +50973,35 @@
     :catch_2
     move-exception v1
 
-    goto :goto_a
+    goto :goto_b
 
     .restart local v7       #ci:Landroid/app/ActivityManager$RunningTaskInfo;
     .restart local v18       #r:Lcom/android/server/am/ActivityRecord;
-    :cond_10
-    move-object/from16 v15, v16
-
-    .end local v16           #pending:Lcom/android/server/am/PendingThumbnailsRecord;
-    .restart local v15       #pending:Lcom/android/server/am/PendingThumbnailsRecord;
-    goto :goto_6
-
-    .end local v15           #pending:Lcom/android/server/am/PendingThumbnailsRecord;
-    .restart local v16       #pending:Lcom/android/server/am/PendingThumbnailsRecord;
-    :cond_11
+    :cond_12
     move-object/from16 v15, v16
 
     .end local v16           #pending:Lcom/android/server/am/PendingThumbnailsRecord;
     .restart local v15       #pending:Lcom/android/server/am/PendingThumbnailsRecord;
     goto :goto_7
 
-    .end local v7           #ci:Landroid/app/ActivityManager$RunningTaskInfo;
     .end local v15           #pending:Lcom/android/server/am/PendingThumbnailsRecord;
     .restart local v16       #pending:Lcom/android/server/am/PendingThumbnailsRecord;
-    :cond_12
+    :cond_13
     move-object/from16 v15, v16
 
     .end local v16           #pending:Lcom/android/server/am/PendingThumbnailsRecord;
     .restart local v15       #pending:Lcom/android/server/am/PendingThumbnailsRecord;
     goto :goto_8
+
+    .end local v7           #ci:Landroid/app/ActivityManager$RunningTaskInfo;
+    .end local v15           #pending:Lcom/android/server/am/PendingThumbnailsRecord;
+    .restart local v16       #pending:Lcom/android/server/am/PendingThumbnailsRecord;
+    :cond_14
+    move-object/from16 v15, v16
+
+    .end local v16           #pending:Lcom/android/server/am/PendingThumbnailsRecord;
+    .restart local v15       #pending:Lcom/android/server/am/PendingThumbnailsRecord;
+    goto :goto_9
 .end method
 
 .method public getTopRunningTaskInfo(I)Landroid/app/ActivityManager$RunningTaskInfo;
@@ -70721,6 +70849,11 @@
 
     move-result-object v1
 
+    .line 2457
+    .local v1, splitWindowservice:Lcom/lge/loader/splitwindow/ISplitWindow$ISplitWindowPolicy;
+    if-eqz v1, :cond_0
+
+    .line 2458
     invoke-virtual {v11}, Landroid/content/ComponentName;->getClassName()Ljava/lang/String;
 
     move-result-object v3
@@ -70803,6 +70936,8 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 2467
+    .end local v1           #splitWindowservice:Lcom/lge/loader/splitwindow/ISplitWindow$ISplitWindowPolicy;
     .end local v4           #screenId:I
     .end local v7           #bIsScreenFull:Z
     .end local v10           #taskId:I

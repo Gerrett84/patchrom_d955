@@ -234,6 +234,8 @@
 
 .field mSlideAsideMoveToBackTransition:Z
 
+.field mSplitWindowPolicy:Lcom/lge/loader/splitwindow/ISplitWindow$ISplitWindowPolicy;
+
 .field final mStartingUsers:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -473,6 +475,10 @@
 
     iput-object v1, p0, Lcom/android/server/am/ActivityStack;->mPausingActivities:Ljava/util/ArrayList;
 
+    .line 312
+    iput-object v4, p0, Lcom/android/server/am/ActivityStack;->mSplitWindowPolicy:Lcom/lge/loader/splitwindow/ISplitWindow$ISplitWindowPolicy;
+
+    .line 314
     iput-boolean v3, p0, Lcom/android/server/am/ActivityStack;->mIsInSplitWindowState:Z
 
     iput-boolean v3, p0, Lcom/android/server/am/ActivityStack;->mIsSkipMoveHomeToFrontFlag:Z
@@ -567,6 +573,293 @@
     iput-object v1, p0, Lcom/android/server/am/ActivityStack;->mCpuBooster:Lcom/android/server/am/ActivityStack$CpuBooster;
 
     return-void
+.end method
+
+.method private SplitViewExitNavigationBackground(Ljava/lang/String;)V
+    .locals 11
+    .parameter "packageName"
+
+    .prologue
+    const/4 v10, -0x1
+
+    .line 6322
+    :try_start_0
+    iget-object v1, p0, Lcom/android/server/am/ActivityStack;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    move-result-object v1
+
+    const/16 v9, 0x80
+
+    invoke-virtual {v1, p1, v9}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+
+    move-result-object v1
+
+    iget-object v1, v1, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
+
+    iget-object v8, v1, Landroid/content/pm/ApplicationInfo;->metaData:Landroid/os/Bundle;
+
+    .line 6324
+    .local v8, metaData:Landroid/os/Bundle;
+    if-eqz v8, :cond_1
+
+    .line 6325
+    const-string v1, "navi_bar_bg_disabled"
+
+    invoke-virtual {v8, v1}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;)Z
+
+    move-result v6
+
+    .line 6326
+    .local v6, disabled:Z
+    const-string v1, "navi_bar_bg_port_res_id"
+
+    const/4 v9, -0x1
+
+    invoke-virtual {v8, v1, v9}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
+
+    move-result v2
+
+    .line 6327
+    .local v2, portResId:I
+    const-string v1, "navi_bar_bg_land_res_id"
+
+    const/4 v9, -0x1
+
+    invoke-virtual {v8, v1, v9}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
+
+    move-result v3
+
+    .line 6328
+    .local v3, landResId:I
+    const-string v1, "navi_bar_bg_alpha"
+
+    invoke-virtual {v8, v1}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
+
+    move-result v4
+
+    .line 6329
+    .local v4, alpha:I
+    const-string v1, "navi_bar_bg_reserved"
+
+    invoke-virtual {v8, v1}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
+
+    move-result v5
+
+    .line 6331
+    .local v5, reserved:I
+    if-nez v6, :cond_3
+
+    .line 6332
+    iget-object v1, p0, Lcom/android/server/am/ActivityStack;->mContext:Landroid/content/Context;
+
+    const-string v9, "statusbar"
+
+    invoke-virtual {v1, v9}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/app/StatusBarManager;
+
+    .line 6333
+    .local v0, statusBarManager:Landroid/app/StatusBarManager;
+    if-eqz v0, :cond_1
+
+    .line 6335
+    if-eq v2, v10, :cond_0
+
+    if-ne v3, v10, :cond_2
+
+    .line 6336
+    :cond_0
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    move-object v1, p1
+
+    invoke-virtual/range {v0 .. v5}, Landroid/app/StatusBarManager;->setNavigationBackground(Ljava/lang/String;IIII)V
+
+    .line 6337
+    .end local v2           #portResId:I
+    .end local v3           #landResId:I
+    .end local v4           #alpha:I
+    .end local v5           #reserved:I
+    const-string v1, "ActivityManager"
+
+    new-instance v9, Ljava/lang/StringBuilder;
+
+    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v10, "SplitViewExitNavigationBackground, packageName : "
+
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v9
+
+    invoke-virtual {v9, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v9
+
+    const-string v10, ", invalid data, set default Navi"
+
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v9
+
+    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v9
+
+    invoke-static {v1, v9}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 6350
+    .end local v0           #statusBarManager:Landroid/app/StatusBarManager;
+    .end local v6           #disabled:Z
+    .end local v8           #metaData:Landroid/os/Bundle;
+    :cond_1
+    :goto_0
+    return-void
+
+    .restart local v0       #statusBarManager:Landroid/app/StatusBarManager;
+    .restart local v2       #portResId:I
+    .restart local v3       #landResId:I
+    .restart local v4       #alpha:I
+    .restart local v5       #reserved:I
+    .restart local v6       #disabled:Z
+    .restart local v8       #metaData:Landroid/os/Bundle;
+    :cond_2
+    move-object v1, p1
+
+    .line 6339
+    invoke-virtual/range {v0 .. v5}, Landroid/app/StatusBarManager;->setNavigationBackground(Ljava/lang/String;IIII)V
+
+    .line 6340
+    const-string v1, "ActivityManager"
+
+    new-instance v9, Ljava/lang/StringBuilder;
+
+    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v10, "SplitViewExitNavigationBackground, packageName : "
+
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v9
+
+    invoke-virtual {v9, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v9
+
+    const-string v10, ", valid data, set valid custom Navi"
+
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v9
+
+    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v9
+
+    invoke-static {v1, v9}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    .line 6347
+    .end local v0           #statusBarManager:Landroid/app/StatusBarManager;
+    .end local v2           #portResId:I
+    .end local v3           #landResId:I
+    .end local v4           #alpha:I
+    .end local v5           #reserved:I
+    .end local v6           #disabled:Z
+    .end local v8           #metaData:Landroid/os/Bundle;
+    :catch_0
+    move-exception v7
+
+    .line 6348
+    .local v7, e:Ljava/lang/Exception;
+    const-string v1, "ActivityManager"
+
+    new-instance v9, Ljava/lang/StringBuilder;
+
+    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v10, "SplitViewExitNavigationBackground, packageName : "
+
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v9
+
+    invoke-virtual {v9, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v9
+
+    const-string v10, ", exception : "
+
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v9
+
+    invoke-virtual {v9, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v9
+
+    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v9
+
+    invoke-static {v1, v9}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_0
+
+    .line 6344
+    .end local v7           #e:Ljava/lang/Exception;
+    .restart local v2       #portResId:I
+    .restart local v3       #landResId:I
+    .restart local v4       #alpha:I
+    .restart local v5       #reserved:I
+    .restart local v6       #disabled:Z
+    .restart local v8       #metaData:Landroid/os/Bundle;
+    :cond_3
+    :try_start_1
+    const-string v1, "ActivityManager"
+
+    new-instance v9, Ljava/lang/StringBuilder;
+
+    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v10, "SplitViewExitNavigationBackground, packageName : "
+
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v9
+
+    invoke-virtual {v9, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v9
+
+    const-string v10, ", disabled for app, do nothing on Navi"
+
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v9
+
+    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v9
+
+    invoke-static {v1, v9}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
+
+    goto :goto_0
 .end method
 
 .method static synthetic access$000(Lcom/android/server/am/ActivityStack;ZLjava/lang/String;)Z

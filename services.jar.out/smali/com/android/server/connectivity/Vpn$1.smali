@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 305
+    .line 312
     iput-object p1, p0, Lcom/android/server/connectivity/Vpn$1;->this$0:Lcom/android/server/connectivity/Vpn;
 
     invoke-direct {p0}, Landroid/content/pm/IPackageDataObserver$Stub;-><init>()V
@@ -45,7 +45,7 @@
     .end annotation
 
     .prologue
-    .line 308
+    .line 315
     const-string v0, "Vpn"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -78,12 +78,12 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 309
+    .line 316
     iget-object v0, p0, Lcom/android/server/connectivity/Vpn$1;->this$0:Lcom/android/server/connectivity/Vpn;
 
     #calls: Lcom/android/server/connectivity/Vpn;->removeMvpClientFromList(Ljava/lang/String;)V
     invoke-static {v0, p1}, Lcom/android/server/connectivity/Vpn;->access$000(Lcom/android/server/connectivity/Vpn;Ljava/lang/String;)V
 
-    .line 310
+    .line 317
     return-void
 .end method

@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 3135
+    .line 3174
     iput-object p1, p0, Lcom/android/server/connectivity/Tethering$EntitlementCheckService$3;->this$0:Lcom/android/server/connectivity/Tethering$EntitlementCheckService;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -42,12 +42,12 @@
     .prologue
     const/4 v5, 0x0
 
-    .line 3138
+    .line 3177
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 3140
+    .line 3179
     .local v0, action:Ljava/lang/String;
     const-string v3, "Tethering"
 
@@ -55,7 +55,7 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3141
+    .line 3180
     const-string v3, "android.net.conn.DATA_CONNECTED_STATUS"
 
     invoke-virtual {v3, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -64,14 +64,14 @@
 
     if-eqz v3, :cond_1
 
-    .line 3142
+    .line 3181
     const-string v3, "success"
 
     invoke-virtual {p2, v3, v5}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result v2
 
-    .line 3143
+    .line 3182
     .local v2, result:I
     const-string v3, "fail_cause"
 
@@ -79,24 +79,24 @@
 
     move-result v1
 
-    .line 3144
+    .line 3183
     .local v1, reason:I
     const/4 v3, 0x1
 
     if-eq v2, v3, :cond_0
 
-    .line 3145
+    .line 3184
     iget-object v3, p0, Lcom/android/server/connectivity/Tethering$EntitlementCheckService$3;->this$0:Lcom/android/server/connectivity/Tethering$EntitlementCheckService;
 
     invoke-virtual {v3}, Lcom/android/server/connectivity/Tethering$EntitlementCheckService;->disableTethering()V
 
-    .line 3147
+    .line 3186
     :cond_0
     iget-object v3, p0, Lcom/android/server/connectivity/Tethering$EntitlementCheckService$3;->this$0:Lcom/android/server/connectivity/Tethering$EntitlementCheckService;
 
     invoke-virtual {v3}, Lcom/android/server/connectivity/Tethering$EntitlementCheckService;->stopSelf()V
 
-    .line 3149
+    .line 3188
     .end local v1           #reason:I
     .end local v2           #result:I
     :cond_1

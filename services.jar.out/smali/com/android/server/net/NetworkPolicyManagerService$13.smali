@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 696
+    .line 702
     iput-object p1, p0, Lcom/android/server/net/NetworkPolicyManagerService$13;->this$0:Lcom/android/server/net/NetworkPolicyManagerService;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -40,12 +40,12 @@
     .parameter "intent"
 
     .prologue
-    .line 700
+    .line 706
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 701
+    .line 707
     .local v0, action:Ljava/lang/String;
     const-string v2, "state"
 
@@ -55,7 +55,7 @@
 
     move-result v1
 
-    .line 702
+    .line 708
     .local v1, enabled:Z
     const-string v2, "android.intent.action.AIRPLANE_MODE"
 
@@ -68,7 +68,7 @@
     iget-object v2, p0, Lcom/android/server/net/NetworkPolicyManagerService$13;->this$0:Lcom/android/server/net/NetworkPolicyManagerService;
 
     #getter for: Lcom/android/server/net/NetworkPolicyManagerService;->mLGfeature:Lcom/android/internal/telephony/LGfeature;
-    invoke-static {v2}, Lcom/android/server/net/NetworkPolicyManagerService;->access$1600(Lcom/android/server/net/NetworkPolicyManagerService;)Lcom/android/internal/telephony/LGfeature;
+    invoke-static {v2}, Lcom/android/server/net/NetworkPolicyManagerService;->access$1100(Lcom/android/server/net/NetworkPolicyManagerService;)Lcom/android/internal/telephony/LGfeature;
 
     move-result-object v2
 
@@ -76,7 +76,7 @@
 
     if-eqz v2, :cond_0
 
-    .line 704
+    .line 710
     iget-object v2, p0, Lcom/android/server/net/NetworkPolicyManagerService$13;->this$0:Lcom/android/server/net/NetworkPolicyManagerService;
 
     #getter for: Lcom/android/server/net/NetworkPolicyManagerService;->mActiveNotifs:Ljava/util/HashSet;
@@ -94,7 +94,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 705
+    .line 711
     iget-object v2, p0, Lcom/android/server/net/NetworkPolicyManagerService$13;->this$0:Lcom/android/server/net/NetworkPolicyManagerService;
 
     const-string v3, "NetworkPolicy:allowBackground"
@@ -102,12 +102,12 @@
     #calls: Lcom/android/server/net/NetworkPolicyManagerService;->cancelNotification(Ljava/lang/String;)V
     invoke-static {v2, v3}, Lcom/android/server/net/NetworkPolicyManagerService;->access$1800(Lcom/android/server/net/NetworkPolicyManagerService;Ljava/lang/String;)V
 
-    .line 712
+    .line 718
     :cond_0
     :goto_0
     return-void
 
-    .line 707
+    .line 713
     :cond_1
     iget-object v2, p0, Lcom/android/server/net/NetworkPolicyManagerService$13;->this$0:Lcom/android/server/net/NetworkPolicyManagerService;
 
@@ -135,7 +135,7 @@
 
     if-nez v1, :cond_0
 
-    .line 708
+    .line 714
     iget-object v2, p0, Lcom/android/server/net/NetworkPolicyManagerService$13;->this$0:Lcom/android/server/net/NetworkPolicyManagerService;
 
     const-string v3, "NetworkPolicy:allowBackground"

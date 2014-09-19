@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 559
+    .line 575
     iput-object p1, p0, Lcom/android/server/am/ActivityStack$2;->this$0:Lcom/android/server/am/ActivityStack;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -40,12 +40,12 @@
     .parameter "intent"
 
     .prologue
-    .line 562
+    .line 578
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 563
+    .line 579
     .local v0, action:Ljava/lang/String;
     const-string v1, "android.intent.action.MEDIA_SCANNER_STARTED"
 
@@ -55,19 +55,19 @@
 
     if-eqz v1, :cond_1
 
-    .line 564
+    .line 580
     iget-object v1, p0, Lcom/android/server/am/ActivityStack$2;->this$0:Lcom/android/server/am/ActivityStack;
 
     const/4 v2, 0x0
 
     iput-boolean v2, v1, Lcom/android/server/am/ActivityStack;->mMediaScanEnd:Z
 
-    .line 569
+    .line 585
     :cond_0
     :goto_0
     return-void
 
-    .line 566
+    .line 582
     :cond_1
     const-string v1, "android.intent.action.MEDIA_SCANNER_FINISHED"
 
@@ -77,7 +77,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 567
+    .line 583
     iget-object v1, p0, Lcom/android/server/am/ActivityStack$2;->this$0:Lcom/android/server/am/ActivityStack;
 
     const/4 v2, 0x1

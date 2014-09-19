@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 139
+    .line 144
     iput-object p1, p0, Lcom/android/server/display/LocalDisplayAdapter$2;->this$0:Lcom/android/server/display/LocalDisplayAdapter;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -44,7 +44,7 @@
 
     const/4 v5, 0x0
 
-    .line 142
+    .line 147
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v3
@@ -67,7 +67,7 @@
 
     if-ne v3, v4, :cond_0
 
-    .line 144
+    .line 149
     iget-object v3, p0, Lcom/android/server/display/LocalDisplayAdapter$2;->this$0:Lcom/android/server/display/LocalDisplayAdapter;
 
     const-string v4, "hdcp_enabled"
@@ -77,30 +77,30 @@
     move-result v4
 
     #setter for: Lcom/android/server/display/LocalDisplayAdapter;->wfdSecureConnect:Z
-    invoke-static {v3, v4}, Lcom/android/server/display/LocalDisplayAdapter;->access$102(Lcom/android/server/display/LocalDisplayAdapter;Z)Z
+    invoke-static {v3, v4}, Lcom/android/server/display/LocalDisplayAdapter;->access$202(Lcom/android/server/display/LocalDisplayAdapter;Z)Z
 
-    .line 145
+    .line 150
     iget-object v3, p0, Lcom/android/server/display/LocalDisplayAdapter$2;->this$0:Lcom/android/server/display/LocalDisplayAdapter;
 
     #getter for: Lcom/android/server/display/LocalDisplayAdapter;->wfdSecureConnect:Z
-    invoke-static {v3}, Lcom/android/server/display/LocalDisplayAdapter;->access$100(Lcom/android/server/display/LocalDisplayAdapter;)Z
+    invoke-static {v3}, Lcom/android/server/display/LocalDisplayAdapter;->access$200(Lcom/android/server/display/LocalDisplayAdapter;)Z
 
     move-result v3
 
     if-nez v3, :cond_0
 
-    .line 146
+    .line 151
     invoke-static {v6}, Landroid/view/Surface;->getBuiltInDisplay(I)Landroid/os/IBinder;
 
     move-result-object v1
 
-    .line 147
+    .line 152
     .local v1, displayToken:Landroid/os/IBinder;
     new-instance v2, Landroid/view/Surface$PhysicalDisplayInfo;
 
     invoke-direct {v2}, Landroid/view/Surface$PhysicalDisplayInfo;-><init>()V
 
-    .line 148
+    .line 153
     .local v2, wfdPhys:Landroid/view/Surface$PhysicalDisplayInfo;
     if-eqz v1, :cond_0
 
@@ -110,11 +110,11 @@
 
     if-eqz v3, :cond_0
 
-    .line 149
+    .line 154
     iget-object v3, p0, Lcom/android/server/display/LocalDisplayAdapter$2;->this$0:Lcom/android/server/display/LocalDisplayAdapter;
 
     #getter for: Lcom/android/server/display/LocalDisplayAdapter;->mDevices:Landroid/util/SparseArray;
-    invoke-static {v3}, Lcom/android/server/display/LocalDisplayAdapter;->access$200(Lcom/android/server/display/LocalDisplayAdapter;)Landroid/util/SparseArray;
+    invoke-static {v3}, Lcom/android/server/display/LocalDisplayAdapter;->access$300(Lcom/android/server/display/LocalDisplayAdapter;)Landroid/util/SparseArray;
 
     move-result-object v3
 
@@ -124,28 +124,28 @@
 
     check-cast v0, Lcom/android/server/display/LocalDisplayAdapter$LocalDisplayDevice;
 
-    .line 150
+    .line 155
     .local v0, device:Lcom/android/server/display/LocalDisplayAdapter$LocalDisplayDevice;
     if-eqz v0, :cond_0
 
-    .line 151
+    .line 156
     iput-boolean v5, v2, Landroid/view/Surface$PhysicalDisplayInfo;->secure:Z
 
-    .line 152
+    .line 157
     invoke-virtual {v0, v2}, Lcom/android/server/display/LocalDisplayAdapter$LocalDisplayDevice;->updatePhysicalDisplayInfoLocked(Landroid/view/Surface$PhysicalDisplayInfo;)Z
 
     move-result v3
 
     if-eqz v3, :cond_0
 
-    .line 153
+    .line 158
     iget-object v3, p0, Lcom/android/server/display/LocalDisplayAdapter$2;->this$0:Lcom/android/server/display/LocalDisplayAdapter;
 
     const/4 v4, 0x2
 
     invoke-virtual {v3, v0, v4}, Lcom/android/server/display/LocalDisplayAdapter;->sendDisplayDeviceEventLocked(Lcom/android/server/display/DisplayDevice;I)V
 
-    .line 159
+    .line 164
     .end local v0           #device:Lcom/android/server/display/LocalDisplayAdapter$LocalDisplayDevice;
     .end local v1           #displayToken:Landroid/os/IBinder;
     .end local v2           #wfdPhys:Landroid/view/Surface$PhysicalDisplayInfo;

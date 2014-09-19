@@ -815,7 +815,7 @@
     .end annotation
 
     .prologue
-    .line 700
+    .line 720
     .local p1, list:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/server/AlarmManagerService$Alarm;>;"
     invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
 
@@ -827,14 +827,14 @@
     :goto_0
     if-ltz v1, :cond_0
 
-    .line 701
+    .line 721
     invoke-virtual {p1, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lcom/android/server/AlarmManagerService$Alarm;
 
-    .line 702
+    .line 722
     .local v0, a:Lcom/android/server/AlarmManagerService$Alarm;
     invoke-virtual {p0, p2}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
@@ -846,14 +846,14 @@
 
     invoke-virtual {p0, v1}, Ljava/io/PrintWriter;->print(I)V
 
-    .line 703
+    .line 723
     const-string v2, ": "
 
     invoke-virtual {p0, v2}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     invoke-virtual {p0, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/Object;)V
 
-    .line 704
+    .line 724
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -874,12 +874,12 @@
 
     invoke-virtual {v0, p0, v2, p4, p5}, Lcom/android/server/AlarmManagerService$Alarm;->dump(Ljava/io/PrintWriter;Ljava/lang/String;J)V
 
-    .line 700
+    .line 720
     add-int/lit8 v1, v1, -0x1
 
     goto :goto_0
 
-    .line 706
+    .line 726
     .end local v0           #a:Lcom/android/server/AlarmManagerService$Alarm;
     :cond_0
     return-void
@@ -949,12 +949,12 @@
     .parameter "pi"
 
     .prologue
-    .line 1146
+    .line 1170
     invoke-virtual {p1}, Landroid/app/PendingIntent;->getTargetPackage()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 1147
+    .line 1171
     .local v1, pkg:Ljava/lang/String;
     iget-object v2, p0, Lcom/android/server/AlarmManagerService;->mBroadcastStats:Ljava/util/HashMap;
 
@@ -964,23 +964,23 @@
 
     check-cast v0, Lcom/android/server/AlarmManagerService$BroadcastStats;
 
-    .line 1148
+    .line 1172
     .local v0, bs:Lcom/android/server/AlarmManagerService$BroadcastStats;
     if-nez v0, :cond_0
 
-    .line 1149
+    .line 1173
     new-instance v0, Lcom/android/server/AlarmManagerService$BroadcastStats;
 
     .end local v0           #bs:Lcom/android/server/AlarmManagerService$BroadcastStats;
     invoke-direct {v0, v1}, Lcom/android/server/AlarmManagerService$BroadcastStats;-><init>(Ljava/lang/String;)V
 
-    .line 1150
+    .line 1174
     .restart local v0       #bs:Lcom/android/server/AlarmManagerService$BroadcastStats;
     iget-object v2, p0, Lcom/android/server/AlarmManagerService;->mBroadcastStats:Ljava/util/HashMap;
 
     invoke-virtual {v2, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1152
+    .line 1176
     :cond_0
     return-object v0
 .end method
@@ -1281,14 +1281,14 @@
 
     const-wide/16 v10, 0x3e8
 
-    .line 533
+    .line 553
     iget v0, p0, Lcom/android/server/AlarmManagerService;->mDescriptor:I
 
     const/4 v1, -0x1
 
     if-eq v0, v1, :cond_1
 
-    .line 538
+    .line 558
     iget-wide v0, p1, Lcom/android/server/AlarmManagerService$Alarm;->when:J
 
     const-wide/16 v8, 0x0
@@ -1297,14 +1297,14 @@
 
     if-gez v0, :cond_0
 
-    .line 539
+    .line 559
     const-wide/16 v3, 0x0
 
-    .line 540
+    .line 560
     .local v3, alarmSeconds:J
     const-wide/16 v5, 0x0
 
-    .line 546
+    .line 566
     .local v5, alarmNanoseconds:J
     :goto_0
     iget v1, p0, Lcom/android/server/AlarmManagerService;->mDescriptor:I
@@ -1315,19 +1315,19 @@
 
     invoke-direct/range {v0 .. v6}, Lcom/android/server/AlarmManagerService;->set(IIJJ)V
 
-    .line 556
+    .line 576
     .end local v3           #alarmSeconds:J
     .end local v5           #alarmNanoseconds:J
     :goto_1
     return-void
 
-    .line 542
+    .line 562
     :cond_0
     iget-wide v0, p1, Lcom/android/server/AlarmManagerService$Alarm;->when:J
 
     div-long v3, v0, v10
 
-    .line 543
+    .line 563
     .restart local v3       #alarmSeconds:J
     iget-wide v0, p1, Lcom/android/server/AlarmManagerService$Alarm;->when:J
 
@@ -1340,7 +1340,7 @@
     .restart local v5       #alarmNanoseconds:J
     goto :goto_0
 
-    .line 550
+    .line 570
     .end local v3           #alarmSeconds:J
     .end local v5           #alarmNanoseconds:J
     :cond_1
@@ -1348,16 +1348,16 @@
 
     move-result-object v7
 
-    .line 551
+    .line 571
     .local v7, msg:Landroid/os/Message;
     iput v2, v7, Landroid/os/Message;->what:I
 
-    .line 553
+    .line 573
     iget-object v0, p0, Lcom/android/server/AlarmManagerService;->mHandler:Lcom/android/server/AlarmManagerService$AlarmHandler;
 
     invoke-virtual {v0, v2}, Lcom/android/server/AlarmManagerService$AlarmHandler;->removeMessages(I)V
 
-    .line 554
+    .line 574
     iget-object v0, p0, Lcom/android/server/AlarmManagerService;->mHandler:Lcom/android/server/AlarmManagerService$AlarmHandler;
 
     iget-wide v1, p1, Lcom/android/server/AlarmManagerService$Alarm;->when:J
@@ -1391,18 +1391,18 @@
     .local p2, triggerList:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/server/AlarmManagerService$Alarm;>;"
     const-wide/16 v9, 0x0
 
-    .line 718
+    .line 742
     invoke-virtual {p1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
 
-    .line 719
+    .line 743
     .local v1, it:Ljava/util/Iterator;,"Ljava/util/Iterator<Lcom/android/server/AlarmManagerService$Alarm;>;"
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
-    .line 721
+    .line 745
     .local v2, repeats:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/server/AlarmManagerService$Alarm;>;"
     :cond_0
     :goto_0
@@ -1412,14 +1412,14 @@
 
     if-eqz v3, :cond_1
 
-    .line 723
+    .line 747
     invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lcom/android/server/AlarmManagerService$Alarm;
 
-    .line 727
+    .line 751
     .local v0, alarm:Lcom/android/server/AlarmManagerService$Alarm;
     iget-wide v3, v0, Lcom/android/server/AlarmManagerService$Alarm;->when:J
 
@@ -1427,14 +1427,14 @@
 
     if-lez v3, :cond_2
 
-    .line 763
+    .line 787
     .end local v0           #alarm:Lcom/android/server/AlarmManagerService$Alarm;
     :cond_1
     invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
 
-    .line 764
+    .line 788
     :goto_1
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
@@ -1442,14 +1442,14 @@
 
     if-eqz v3, :cond_4
 
-    .line 765
+    .line 789
     invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lcom/android/server/AlarmManagerService$Alarm;
 
-    .line 766
+    .line 790
     .restart local v0       #alarm:Lcom/android/server/AlarmManagerService$Alarm;
     iget-wide v3, v0, Lcom/android/server/AlarmManagerService$Alarm;->when:J
 
@@ -1465,25 +1465,25 @@
 
     iput-wide v3, v0, Lcom/android/server/AlarmManagerService$Alarm;->when:J
 
-    .line 767
+    .line 791
     invoke-direct {p0, v0}, Lcom/android/server/AlarmManagerService;->addAlarmLocked(Lcom/android/server/AlarmManagerService$Alarm;)I
 
     goto :goto_1
 
-    .line 745
+    .line 769
     :cond_2
     const/4 v3, 0x1
 
     iput v3, v0, Lcom/android/server/AlarmManagerService$Alarm;->count:I
 
-    .line 746
+    .line 770
     iget-wide v3, v0, Lcom/android/server/AlarmManagerService$Alarm;->repeatInterval:J
 
     cmp-long v3, v3, v9
 
     if-lez v3, :cond_3
 
-    .line 749
+    .line 773
     iget v3, v0, Lcom/android/server/AlarmManagerService$Alarm;->count:I
 
     int-to-long v3, v3
@@ -1502,26 +1502,26 @@
 
     iput v3, v0, Lcom/android/server/AlarmManagerService$Alarm;->count:I
 
-    .line 751
+    .line 775
     :cond_3
     invoke-virtual {p2, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 754
+    .line 778
     invoke-interface {v1}, Ljava/util/Iterator;->remove()V
 
-    .line 757
+    .line 781
     iget-wide v3, v0, Lcom/android/server/AlarmManagerService$Alarm;->repeatInterval:J
 
     cmp-long v3, v3, v9
 
     if-lez v3, :cond_0
 
-    .line 758
+    .line 782
     invoke-virtual {v2, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 770
+    .line 794
     .end local v0           #alarm:Lcom/android/server/AlarmManagerService$Alarm;
     :cond_4
     invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
@@ -1530,7 +1530,7 @@
 
     if-lez v3, :cond_5
 
-    .line 771
+    .line 795
     const/4 v3, 0x0
 
     invoke-virtual {p1, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -1541,7 +1541,7 @@
 
     invoke-direct {p0, v3}, Lcom/android/server/AlarmManagerService;->setLocked(Lcom/android/server/AlarmManagerService$Alarm;)V
 
-    .line 773
+    .line 797
     :cond_5
     return-void
 .end method
@@ -1647,7 +1647,7 @@
     .parameter "args"
 
     .prologue
-    .line 560
+    .line 580
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/server/AlarmManagerService;->mContext:Landroid/content/Context;
@@ -1660,7 +1660,7 @@
 
     if-eqz v3, :cond_0
 
-    .line 562
+    .line 582
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -1701,11 +1701,11 @@
 
     invoke-virtual {v0, v3}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 696
+    .line 716
     :goto_0
     return-void
 
-    .line 568
+    .line 588
     :cond_0
     move-object/from16 v0, p0
 
@@ -1715,7 +1715,7 @@
 
     monitor-enter v23
 
-    .line 569
+    .line 589
     :try_start_0
     const-string v3, "Current Alarm Manager state:"
 
@@ -1723,7 +1723,7 @@
 
     invoke-virtual {v0, v3}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 570
+    .line 590
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/server/AlarmManagerService;->mRtcWakeupAlarms:Ljava/util/ArrayList;
@@ -1744,13 +1744,13 @@
 
     if-lez v3, :cond_3
 
-    .line 571
+    .line 591
     :cond_1
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v7
 
-    .line 572
+    .line 592
     .local v7, now:J
     new-instance v20, Ljava/text/SimpleDateFormat;
 
@@ -1760,7 +1760,7 @@
 
     invoke-direct {v0, v3}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;)V
 
-    .line 573
+    .line 593
     .local v20, sdf:Ljava/text/SimpleDateFormat;
     const-string v3, " "
 
@@ -1768,14 +1768,14 @@
 
     invoke-virtual {v0, v3}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 574
+    .line 594
     const-string v3, "  Realtime wakeup (now="
 
     move-object/from16 v0, p2
 
     invoke-virtual {v0, v3}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 575
+    .line 595
     new-instance v3, Ljava/util/Date;
 
     invoke-direct {v3, v7, v8}, Ljava/util/Date;-><init>(J)V
@@ -1796,7 +1796,7 @@
 
     invoke-virtual {v0, v3}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 576
+    .line 596
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/server/AlarmManagerService;->mRtcWakeupAlarms:Ljava/util/ArrayList;
@@ -1807,7 +1807,7 @@
 
     if-lez v3, :cond_2
 
-    .line 577
+    .line 597
     move-object/from16 v0, p0
 
     iget-object v4, v0, Lcom/android/server/AlarmManagerService;->mRtcWakeupAlarms:Ljava/util/ArrayList;
@@ -1820,7 +1820,7 @@
 
     invoke-static/range {v3 .. v8}, Lcom/android/server/AlarmManagerService;->dumpAlarmList(Ljava/io/PrintWriter;Ljava/util/ArrayList;Ljava/lang/String;Ljava/lang/String;J)V
 
-    .line 579
+    .line 599
     :cond_2
     move-object/from16 v0, p0
 
@@ -1832,7 +1832,7 @@
 
     if-lez v3, :cond_3
 
-    .line 580
+    .line 600
     move-object/from16 v0, p0
 
     iget-object v4, v0, Lcom/android/server/AlarmManagerService;->mRtcAlarms:Ljava/util/ArrayList;
@@ -1845,7 +1845,7 @@
 
     invoke-static/range {v3 .. v8}, Lcom/android/server/AlarmManagerService;->dumpAlarmList(Ljava/io/PrintWriter;Ljava/util/ArrayList;Ljava/lang/String;Ljava/lang/String;J)V
 
-    .line 583
+    .line 603
     .end local v7           #now:J
     .end local v20           #sdf:Ljava/text/SimpleDateFormat;
     :cond_3
@@ -1869,13 +1869,13 @@
 
     if-lez v3, :cond_6
 
-    .line 584
+    .line 604
     :cond_4
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v7
 
-    .line 585
+    .line 605
     .restart local v7       #now:J
     const-string v3, " "
 
@@ -1883,14 +1883,14 @@
 
     invoke-virtual {v0, v3}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 586
+    .line 606
     const-string v3, "  Elapsed realtime wakeup (now="
 
     move-object/from16 v0, p2
 
     invoke-virtual {v0, v3}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 587
+    .line 607
     move-object/from16 v0, p2
 
     invoke-static {v7, v8, v0}, Landroid/util/TimeUtils;->formatDuration(JLjava/io/PrintWriter;)V
@@ -1901,7 +1901,7 @@
 
     invoke-virtual {v0, v3}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 588
+    .line 608
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/server/AlarmManagerService;->mElapsedRealtimeWakeupAlarms:Ljava/util/ArrayList;
@@ -1912,7 +1912,7 @@
 
     if-lez v3, :cond_5
 
-    .line 589
+    .line 609
     move-object/from16 v0, p0
 
     iget-object v4, v0, Lcom/android/server/AlarmManagerService;->mElapsedRealtimeWakeupAlarms:Ljava/util/ArrayList;
@@ -1925,7 +1925,7 @@
 
     invoke-static/range {v3 .. v8}, Lcom/android/server/AlarmManagerService;->dumpAlarmList(Ljava/io/PrintWriter;Ljava/util/ArrayList;Ljava/lang/String;Ljava/lang/String;J)V
 
-    .line 591
+    .line 611
     :cond_5
     move-object/from16 v0, p0
 
@@ -1937,7 +1937,7 @@
 
     if-lez v3, :cond_6
 
-    .line 592
+    .line 612
     move-object/from16 v0, p0
 
     iget-object v4, v0, Lcom/android/server/AlarmManagerService;->mElapsedRealtimeAlarms:Ljava/util/ArrayList;
@@ -1950,12 +1950,12 @@
 
     invoke-static/range {v3 .. v8}, Lcom/android/server/AlarmManagerService;->dumpAlarmList(Ljava/io/PrintWriter;Ljava/util/ArrayList;Ljava/lang/String;Ljava/lang/String;J)V
 
-    .line 596
+    .line 616
     .end local v7           #now:J
     :cond_6
     invoke-virtual/range {p2 .. p2}, Ljava/io/PrintWriter;->println()V
 
-    .line 597
+    .line 617
     const-string v3, "  Broadcast ref count: "
 
     move-object/from16 v0, p2
@@ -1970,10 +1970,10 @@
 
     invoke-virtual {v0, v3}, Ljava/io/PrintWriter;->println(I)V
 
-    .line 598
+    .line 618
     invoke-virtual/range {p2 .. p2}, Ljava/io/PrintWriter;->println()V
 
-    .line 600
+    .line 620
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lcom/android/server/AlarmManagerService;->mLog:Lcom/android/internal/util/LocalLog;
@@ -1990,10 +1990,10 @@
 
     if-eqz v3, :cond_7
 
-    .line 601
+    .line 621
     invoke-virtual/range {p2 .. p2}, Ljava/io/PrintWriter;->println()V
 
-    .line 604
+    .line 624
     :cond_7
     const/16 v3, 0xa
 
@@ -2001,7 +2001,7 @@
 
     move-object/from16 v22, v0
 
-    .line 605
+    .line 625
     .local v22, topFilters:[Lcom/android/server/AlarmManagerService$FilterStats;
     new-instance v11, Lcom/android/server/AlarmManagerService$1;
 
@@ -2009,11 +2009,11 @@
 
     invoke-direct {v11, v0}, Lcom/android/server/AlarmManagerService$1;-><init>(Lcom/android/server/AlarmManagerService;)V
 
-    .line 616
+    .line 636
     .local v11, comparator:Ljava/util/Comparator;,"Ljava/util/Comparator<Lcom/android/server/AlarmManagerService$FilterStats;>;"
     const/16 v18, 0x0
 
-    .line 617
+    .line 637
     .local v18, len:I
     move-object/from16 v0, p0
 
@@ -2040,7 +2040,7 @@
 
     check-cast v9, Ljava/util/Map$Entry;
 
-    .line 618
+    .line 638
     .local v9, be:Ljava/util/Map$Entry;,"Ljava/util/Map$Entry<Ljava/lang/String;Lcom/android/server/AlarmManagerService$BroadcastStats;>;"
     invoke-interface {v9}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -2048,7 +2048,7 @@
 
     check-cast v10, Lcom/android/server/AlarmManagerService$BroadcastStats;
 
-    .line 620
+    .line 640
     .local v10, bs:Lcom/android/server/AlarmManagerService$BroadcastStats;
     iget-object v3, v10, Lcom/android/server/AlarmManagerService$BroadcastStats;->filterStats:Ljava/util/HashMap;
 
@@ -2075,7 +2075,7 @@
 
     check-cast v13, Ljava/util/Map$Entry;
 
-    .line 621
+    .line 641
     .local v13, fe:Ljava/util/Map$Entry;,"Ljava/util/Map$Entry<Landroid/util/Pair<Ljava/lang/String;Landroid/content/ComponentName;>;Lcom/android/server/AlarmManagerService$FilterStats;>;"
     invoke-interface {v13}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -2083,7 +2083,7 @@
 
     check-cast v14, Lcom/android/server/AlarmManagerService$FilterStats;
 
-    .line 622
+    .line 642
     .local v14, fs:Lcom/android/server/AlarmManagerService$FilterStats;
     if-lez v18, :cond_c
 
@@ -2097,19 +2097,19 @@
 
     move-result v19
 
-    .line 624
+    .line 644
     .local v19, pos:I
     :goto_2
     if-gez v19, :cond_a
 
-    .line 625
+    .line 645
     move/from16 v0, v19
 
     neg-int v3, v0
 
     add-int/lit8 v19, v3, -0x1
 
-    .line 627
+    .line 647
     :cond_a
     move-object/from16 v0, v22
 
@@ -2119,7 +2119,7 @@
 
     if-ge v0, v3, :cond_9
 
-    .line 628
+    .line 648
     move-object/from16 v0, v22
 
     array-length v3, v0
@@ -2128,11 +2128,11 @@
 
     add-int/lit8 v12, v3, -0x1
 
-    .line 629
+    .line 649
     .local v12, copylen:I
     if-lez v12, :cond_b
 
-    .line 630
+    .line 650
     add-int/lit8 v3, v19, 0x1
 
     move-object/from16 v0, v22
@@ -2143,11 +2143,11 @@
 
     invoke-static {v0, v1, v2, v3, v12}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 632
+    .line 652
     :cond_b
     aput-object v14, v22, v19
 
-    .line 633
+    .line 653
     move-object/from16 v0, v22
 
     array-length v3, v0
@@ -2156,12 +2156,12 @@
 
     if-ge v0, v3, :cond_9
 
-    .line 634
+    .line 654
     add-int/lit8 v18, v18, 0x1
 
     goto :goto_1
 
-    .line 622
+    .line 642
     .end local v12           #copylen:I
     .end local v19           #pos:I
     :cond_c
@@ -2169,7 +2169,7 @@
 
     goto :goto_2
 
-    .line 639
+    .line 659
     .end local v9           #be:Ljava/util/Map$Entry;,"Ljava/util/Map$Entry<Ljava/lang/String;Lcom/android/server/AlarmManagerService$BroadcastStats;>;"
     .end local v10           #bs:Lcom/android/server/AlarmManagerService$BroadcastStats;
     .end local v13           #fe:Ljava/util/Map$Entry;,"Ljava/util/Map$Entry<Landroid/util/Pair<Ljava/lang/String;Landroid/content/ComponentName;>;Lcom/android/server/AlarmManagerService$FilterStats;>;"
@@ -2178,14 +2178,14 @@
     :cond_d
     if-lez v18, :cond_11
 
-    .line 640
+    .line 660
     const-string v3, "  Top Alarms:"
 
     move-object/from16 v0, p2
 
     invoke-virtual {v0, v3}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 641
+    .line 661
     const/4 v15, 0x0
 
     .local v15, i:I
@@ -2194,10 +2194,10 @@
 
     if-ge v15, v0, :cond_11
 
-    .line 642
+    .line 662
     aget-object v14, v22, v15
 
-    .line 643
+    .line 663
     .restart local v14       #fs:Lcom/android/server/AlarmManagerService$FilterStats;
     const-string v3, "    "
 
@@ -2205,7 +2205,7 @@
 
     invoke-virtual {v0, v3}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 644
+    .line 664
     iget v3, v14, Lcom/android/server/AlarmManagerService$FilterStats;->nesting:I
 
     if-lez v3, :cond_e
@@ -2216,7 +2216,7 @@
 
     invoke-virtual {v0, v3}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 645
+    .line 665
     :cond_e
     iget-wide v3, v14, Lcom/android/server/AlarmManagerService$FilterStats;->aggregateTime:J
 
@@ -2224,7 +2224,7 @@
 
     invoke-static {v3, v4, v0}, Landroid/util/TimeUtils;->formatDuration(JLjava/io/PrintWriter;)V
 
-    .line 646
+    .line 666
     const-string v3, " running, "
 
     move-object/from16 v0, p2
@@ -2237,7 +2237,7 @@
 
     invoke-virtual {v0, v3}, Ljava/io/PrintWriter;->print(I)V
 
-    .line 647
+    .line 667
     const-string v3, " wakeups, "
 
     move-object/from16 v0, p2
@@ -2250,7 +2250,7 @@
 
     invoke-virtual {v0, v3}, Ljava/io/PrintWriter;->print(I)V
 
-    .line 648
+    .line 668
     const-string v3, " alarms: "
 
     move-object/from16 v0, p2
@@ -2265,24 +2265,24 @@
 
     invoke-virtual {v0, v3}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 649
+    .line 669
     invoke-virtual/range {p2 .. p2}, Ljava/io/PrintWriter;->println()V
 
-    .line 650
+    .line 670
     const-string v3, "      "
 
     move-object/from16 v0, p2
 
     invoke-virtual {v0, v3}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 651
+    .line 671
     iget-object v3, v14, Lcom/android/server/AlarmManagerService$FilterStats;->mTarget:Landroid/util/Pair;
 
     iget-object v3, v3, Landroid/util/Pair;->first:Ljava/lang/Object;
 
     if-eqz v3, :cond_f
 
-    .line 652
+    .line 672
     const-string v3, " act="
 
     move-object/from16 v0, p2
@@ -2299,7 +2299,7 @@
 
     invoke-virtual {v0, v3}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 654
+    .line 674
     :cond_f
     iget-object v3, v14, Lcom/android/server/AlarmManagerService$FilterStats;->mTarget:Landroid/util/Pair;
 
@@ -2307,7 +2307,7 @@
 
     if-eqz v3, :cond_10
 
-    .line 655
+    .line 675
     const-string v3, " cmp="
 
     move-object/from16 v0, p2
@@ -2328,16 +2328,16 @@
 
     invoke-virtual {v0, v3}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 657
+    .line 677
     :cond_10
     invoke-virtual/range {p2 .. p2}, Ljava/io/PrintWriter;->println()V
 
-    .line 641
+    .line 661
     add-int/lit8 v15, v15, 0x1
 
     goto/16 :goto_3
 
-    .line 661
+    .line 681
     .end local v14           #fs:Lcom/android/server/AlarmManagerService$FilterStats;
     .end local v15           #i:I
     :cond_11
@@ -2347,19 +2347,19 @@
 
     invoke-virtual {v0, v3}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 662
+    .line 682
     const-string v3, "  Alarm Stats:"
 
     move-object/from16 v0, p2
 
     invoke-virtual {v0, v3}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 663
+    .line 683
     new-instance v21, Ljava/util/ArrayList;
 
     invoke-direct/range {v21 .. v21}, Ljava/util/ArrayList;-><init>()V
 
-    .line 664
+    .line 684
     .local v21, tmpFilters:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/server/AlarmManagerService$FilterStats;>;"
     move-object/from16 v0, p0
 
@@ -2386,7 +2386,7 @@
 
     check-cast v9, Ljava/util/Map$Entry;
 
-    .line 665
+    .line 685
     .restart local v9       #be:Ljava/util/Map$Entry;,"Ljava/util/Map$Entry<Ljava/lang/String;Lcom/android/server/AlarmManagerService$BroadcastStats;>;"
     invoke-interface {v9}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -2394,7 +2394,7 @@
 
     check-cast v10, Lcom/android/server/AlarmManagerService$BroadcastStats;
 
-    .line 666
+    .line 686
     .restart local v10       #bs:Lcom/android/server/AlarmManagerService$BroadcastStats;
     const-string v3, "  "
 
@@ -2402,7 +2402,7 @@
 
     invoke-virtual {v0, v3}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 667
+    .line 687
     iget v3, v10, Lcom/android/server/AlarmManagerService$BroadcastStats;->nesting:I
 
     if-lez v3, :cond_13
@@ -2413,7 +2413,7 @@
 
     invoke-virtual {v0, v3}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 668
+    .line 688
     :cond_13
     invoke-interface {v9}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
@@ -2425,7 +2425,7 @@
 
     invoke-virtual {v0, v3}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 669
+    .line 689
     const-string v3, " "
 
     move-object/from16 v0, p2
@@ -2438,7 +2438,7 @@
 
     invoke-static {v3, v4, v0}, Landroid/util/TimeUtils;->formatDuration(JLjava/io/PrintWriter;)V
 
-    .line 670
+    .line 690
     const-string v3, " running, "
 
     move-object/from16 v0, p2
@@ -2451,17 +2451,17 @@
 
     invoke-virtual {v0, v3}, Ljava/io/PrintWriter;->print(I)V
 
-    .line 671
+    .line 691
     const-string v3, " wakeups:"
 
     move-object/from16 v0, p2
 
     invoke-virtual {v0, v3}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 672
+    .line 692
     invoke-virtual/range {v21 .. v21}, Ljava/util/ArrayList;->clear()V
 
-    .line 674
+    .line 694
     iget-object v3, v10, Lcom/android/server/AlarmManagerService$BroadcastStats;->filterStats:Ljava/util/HashMap;
 
     invoke-virtual {v3}, Ljava/util/HashMap;->entrySet()Ljava/util/Set;
@@ -2486,7 +2486,7 @@
 
     check-cast v13, Ljava/util/Map$Entry;
 
-    .line 675
+    .line 695
     .restart local v13       #fe:Ljava/util/Map$Entry;,"Ljava/util/Map$Entry<Landroid/util/Pair<Ljava/lang/String;Landroid/content/ComponentName;>;Lcom/android/server/AlarmManagerService$FilterStats;>;"
     invoke-interface {v13}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -2498,7 +2498,7 @@
 
     goto :goto_4
 
-    .line 695
+    .line 715
     .end local v9           #be:Ljava/util/Map$Entry;,"Ljava/util/Map$Entry<Ljava/lang/String;Lcom/android/server/AlarmManagerService$BroadcastStats;>;"
     .end local v10           #bs:Lcom/android/server/AlarmManagerService$BroadcastStats;
     .end local v11           #comparator:Ljava/util/Comparator;,"Ljava/util/Comparator<Lcom/android/server/AlarmManagerService$FilterStats;>;"
@@ -2516,7 +2516,7 @@
 
     throw v3
 
-    .line 677
+    .line 697
     .restart local v9       #be:Ljava/util/Map$Entry;,"Ljava/util/Map$Entry<Ljava/lang/String;Lcom/android/server/AlarmManagerService$BroadcastStats;>;"
     .restart local v10       #bs:Lcom/android/server/AlarmManagerService$BroadcastStats;
     .restart local v11       #comparator:Ljava/util/Comparator;,"Ljava/util/Comparator<Lcom/android/server/AlarmManagerService$FilterStats;>;"
@@ -2530,7 +2530,7 @@
 
     invoke-static {v0, v11}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
-    .line 678
+    .line 698
     const/4 v15, 0x0
 
     .restart local v15       #i:I
@@ -2541,7 +2541,7 @@
 
     if-ge v15, v3, :cond_12
 
-    .line 679
+    .line 699
     move-object/from16 v0, v21
 
     invoke-virtual {v0, v15}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -2550,7 +2550,7 @@
 
     check-cast v14, Lcom/android/server/AlarmManagerService$FilterStats;
 
-    .line 680
+    .line 700
     .restart local v14       #fs:Lcom/android/server/AlarmManagerService$FilterStats;
     const-string v3, "    "
 
@@ -2558,7 +2558,7 @@
 
     invoke-virtual {v0, v3}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 681
+    .line 701
     iget v3, v14, Lcom/android/server/AlarmManagerService$FilterStats;->nesting:I
 
     if-lez v3, :cond_15
@@ -2569,7 +2569,7 @@
 
     invoke-virtual {v0, v3}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 682
+    .line 702
     :cond_15
     iget-wide v3, v14, Lcom/android/server/AlarmManagerService$FilterStats;->aggregateTime:J
 
@@ -2577,7 +2577,7 @@
 
     invoke-static {v3, v4, v0}, Landroid/util/TimeUtils;->formatDuration(JLjava/io/PrintWriter;)V
 
-    .line 683
+    .line 703
     const-string v3, " "
 
     move-object/from16 v0, p2
@@ -2590,7 +2590,7 @@
 
     invoke-virtual {v0, v3}, Ljava/io/PrintWriter;->print(I)V
 
-    .line 684
+    .line 704
     const-string v3, " wakes "
 
     move-object/from16 v0, p2
@@ -2603,21 +2603,21 @@
 
     invoke-virtual {v0, v3}, Ljava/io/PrintWriter;->print(I)V
 
-    .line 685
+    .line 705
     const-string v3, " alarms:"
 
     move-object/from16 v0, p2
 
     invoke-virtual {v0, v3}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 686
+    .line 706
     iget-object v3, v14, Lcom/android/server/AlarmManagerService$FilterStats;->mTarget:Landroid/util/Pair;
 
     iget-object v3, v3, Landroid/util/Pair;->first:Ljava/lang/Object;
 
     if-eqz v3, :cond_16
 
-    .line 687
+    .line 707
     const-string v3, " act="
 
     move-object/from16 v0, p2
@@ -2634,7 +2634,7 @@
 
     invoke-virtual {v0, v3}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 689
+    .line 709
     :cond_16
     iget-object v3, v14, Lcom/android/server/AlarmManagerService$FilterStats;->mTarget:Landroid/util/Pair;
 
@@ -2642,7 +2642,7 @@
 
     if-eqz v3, :cond_17
 
-    .line 690
+    .line 710
     const-string v3, " cmp="
 
     move-object/from16 v0, p2
@@ -2663,16 +2663,16 @@
 
     invoke-virtual {v0, v3}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
-    .line 692
+    .line 712
     :cond_17
     invoke-virtual/range {p2 .. p2}, Ljava/io/PrintWriter;->println()V
 
-    .line 678
+    .line 698
     add-int/lit8 v15, v15, 0x1
 
     goto/16 :goto_5
 
-    .line 695
+    .line 715
     .end local v9           #be:Ljava/util/Map$Entry;,"Ljava/util/Map$Entry<Ljava/lang/String;Lcom/android/server/AlarmManagerService$BroadcastStats;>;"
     .end local v10           #bs:Lcom/android/server/AlarmManagerService$BroadcastStats;
     .end local v14           #fs:Lcom/android/server/AlarmManagerService$FilterStats;
@@ -3096,17 +3096,21 @@
     .parameter "operation"
 
     .prologue
+    .line 220
     if-nez p6, :cond_0
 
+    .line 221
     const-string v2, "AlarmManager"
 
     const-string v3, "set/setRepeating ignored because there is no intent"
 
     invoke-static {v2, v3}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;)I
 
+    .line 241
     :goto_0
     return-void
 
+    .line 224
     :cond_0
     iget-object v0, p0, Lcom/android/server/AlarmManagerService;->mContext:Landroid/content/Context;
 
@@ -3132,31 +3136,41 @@
 
     monitor-enter v3
 
+    .line 225
     :try_start_0
     new-instance v0, Lcom/android/server/AlarmManagerService$Alarm;
 
     invoke-direct {v0}, Lcom/android/server/AlarmManagerService$Alarm;-><init>()V
 
+    .line 226
     .local v0, alarm:Lcom/android/server/AlarmManagerService$Alarm;
     iput p1, v0, Lcom/android/server/AlarmManagerService$Alarm;->type:I
 
+    .line 227
     iput-wide p2, v0, Lcom/android/server/AlarmManagerService$Alarm;->when:J
 
+    .line 228
     iput-wide p4, v0, Lcom/android/server/AlarmManagerService$Alarm;->repeatInterval:J
 
+    .line 229
     iput-object p6, v0, Lcom/android/server/AlarmManagerService$Alarm;->operation:Landroid/app/PendingIntent;
 
+    .line 232
     invoke-virtual {p0, p6}, Lcom/android/server/AlarmManagerService;->removeLocked(Landroid/app/PendingIntent;)V
 
+    .line 236
     invoke-direct {p0, v0}, Lcom/android/server/AlarmManagerService;->addAlarmLocked(Lcom/android/server/AlarmManagerService$Alarm;)I
 
     move-result v1
 
+    .line 237
     .local v1, index:I
     if-nez v1, :cond_1
 
+    .line 238
     invoke-direct {p0, v0}, Lcom/android/server/AlarmManagerService;->setLocked(Lcom/android/server/AlarmManagerService$Alarm;)V
 
+    .line 240
     :cond_1
     monitor-exit v3
 
@@ -3390,7 +3404,7 @@
     .parameter "pi"
 
     .prologue
-    .line 979
+    .line 1003
     :try_start_0
     invoke-static {}, Landroid/app/ActivityManagerNative;->getDefault()Landroid/app/IActivityManager;
 
@@ -3404,11 +3418,11 @@
 
     move-result v0
 
-    .line 981
+    .line 1005
     .local v0, uid:I
     if-ltz v0, :cond_0
 
-    .line 982
+    .line 1006
     iget-object v1, p0, Lcom/android/server/AlarmManagerService;->mWakeLock:Landroid/os/PowerManager$WakeLock;
 
     new-instance v2, Landroid/os/WorkSource;
@@ -3417,12 +3431,12 @@
 
     invoke-virtual {v1, v2}, Landroid/os/PowerManager$WakeLock;->setWorkSource(Landroid/os/WorkSource;)V
 
-    .line 989
+    .line 1013
     .end local v0           #uid:I
     :goto_0
     return-void
 
-    .line 986
+    .line 1010
     .restart local v0       #uid:I
     :cond_0
     iget-object v1, p0, Lcom/android/server/AlarmManagerService;->mWakeLock:Landroid/os/PowerManager$WakeLock;
@@ -3435,7 +3449,7 @@
 
     goto :goto_0
 
-    .line 987
+    .line 1011
     .end local v0           #uid:I
     :catch_0
     move-exception v1
@@ -3447,32 +3461,32 @@
     .locals 9
 
     .prologue
-    .line 515
+    .line 535
     const-wide v3, 0x7fffffffffffffffL
 
-    .line 516
+    .line 536
     .local v3, nextAlarm:J
     iget-object v6, p0, Lcom/android/server/AlarmManagerService;->mLock:Ljava/lang/Object;
 
     monitor-enter v6
 
-    .line 517
+    .line 537
     const/4 v2, 0x0
 
-    .line 518
+    .line 538
     .local v2, i:I
     :goto_0
     const/4 v5, 0x3
 
     if-gt v2, v5, :cond_1
 
-    .line 519
+    .line 539
     :try_start_0
     invoke-direct {p0, v2}, Lcom/android/server/AlarmManagerService;->getAlarmList(I)Ljava/util/ArrayList;
 
     move-result-object v1
 
-    .line 520
+    .line 540
     .local v1, alarmList:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/server/AlarmManagerService$Alarm;>;"
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
@@ -3480,7 +3494,7 @@
 
     if-lez v5, :cond_0
 
-    .line 521
+    .line 541
     const/4 v5, 0x0
 
     invoke-virtual {v1, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -3489,7 +3503,7 @@
 
     check-cast v0, Lcom/android/server/AlarmManagerService$Alarm;
 
-    .line 522
+    .line 542
     .local v0, a:Lcom/android/server/AlarmManagerService$Alarm;
     iget-wide v7, v0, Lcom/android/server/AlarmManagerService$Alarm;->when:J
 
@@ -3497,25 +3511,25 @@
 
     if-gez v5, :cond_0
 
-    .line 523
+    .line 543
     iget-wide v3, v0, Lcom/android/server/AlarmManagerService$Alarm;->when:J
 
-    .line 518
+    .line 538
     .end local v0           #a:Lcom/android/server/AlarmManagerService$Alarm;
     :cond_0
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 527
+    .line 547
     .end local v1           #alarmList:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Lcom/android/server/AlarmManagerService$Alarm;>;"
     :cond_1
     monitor-exit v6
 
-    .line 528
+    .line 548
     return-wide v3
 
-    .line 527
+    .line 547
     :catchall_0
     move-exception v5
 

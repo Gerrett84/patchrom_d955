@@ -30,7 +30,7 @@
     .parameter
 
     .prologue
-    .line 849
+    .line 851
     iput-object p1, p0, Lcom/android/server/pm/UserManagerService$3;->this$0:Lcom/android/server/pm/UserManagerService;
 
     iput p2, p0, Lcom/android/server/pm/UserManagerService$3;->val$userHandle:I
@@ -46,7 +46,7 @@
     .locals 3
 
     .prologue
-    .line 852
+    .line 854
     iget-object v0, p0, Lcom/android/server/pm/UserManagerService$3;->this$0:Lcom/android/server/pm/UserManagerService;
 
     #getter for: Lcom/android/server/pm/UserManagerService;->mPackagesLock:Ljava/lang/Object;
@@ -56,7 +56,7 @@
 
     monitor-enter v1
 
-    .line 853
+    .line 855
     :try_start_0
     iget-object v0, p0, Lcom/android/server/pm/UserManagerService$3;->this$0:Lcom/android/server/pm/UserManagerService;
 
@@ -69,13 +69,13 @@
 
     invoke-virtual {v0, v2}, Landroid/util/SparseBooleanArray;->delete(I)V
 
-    .line 854
+    .line 856
     monitor-exit v1
 
-    .line 855
+    .line 857
     return-void
 
-    .line 854
+    .line 856
     :catchall_0
     move-exception v0
 

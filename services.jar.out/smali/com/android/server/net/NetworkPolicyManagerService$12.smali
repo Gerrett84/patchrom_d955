@@ -24,7 +24,7 @@
     .parameter
 
     .prologue
-    .line 679
+    .line 685
     iput-object p1, p0, Lcom/android/server/net/NetworkPolicyManagerService$12;->this$0:Lcom/android/server/net/NetworkPolicyManagerService;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -40,12 +40,12 @@
     .parameter "intent"
 
     .prologue
-    .line 682
+    .line 688
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 683
+    .line 689
     .local v0, action:Ljava/lang/String;
     const-string v2, "android.intent.extra.UID"
 
@@ -55,7 +55,7 @@
 
     move-result v1
 
-    .line 684
+    .line 690
     .local v1, uid:I
     const-string v2, "com.lge.net.policy.LG_DATA_ACTION_UID_REMOVED"
 
@@ -65,11 +65,11 @@
 
     if-eqz v2, :cond_0
 
-    .line 687
+    .line 693
     iget-object v2, p0, Lcom/android/server/net/NetworkPolicyManagerService$12;->this$0:Lcom/android/server/net/NetworkPolicyManagerService;
 
     #getter for: Lcom/android/server/net/NetworkPolicyManagerService;->removed_uid_lsit:Ljava/util/List;
-    invoke-static {v2}, Lcom/android/server/net/NetworkPolicyManagerService;->access$1500(Lcom/android/server/net/NetworkPolicyManagerService;)Ljava/util/List;
+    invoke-static {v2}, Lcom/android/server/net/NetworkPolicyManagerService;->access$1600(Lcom/android/server/net/NetworkPolicyManagerService;)Ljava/util/List;
 
     move-result-object v2
 
@@ -83,11 +83,11 @@
 
     if-nez v2, :cond_0
 
-    .line 688
+    .line 694
     iget-object v2, p0, Lcom/android/server/net/NetworkPolicyManagerService$12;->this$0:Lcom/android/server/net/NetworkPolicyManagerService;
 
     #getter for: Lcom/android/server/net/NetworkPolicyManagerService;->removed_uid_lsit:Ljava/util/List;
-    invoke-static {v2}, Lcom/android/server/net/NetworkPolicyManagerService;->access$1500(Lcom/android/server/net/NetworkPolicyManagerService;)Ljava/util/List;
+    invoke-static {v2}, Lcom/android/server/net/NetworkPolicyManagerService;->access$1600(Lcom/android/server/net/NetworkPolicyManagerService;)Ljava/util/List;
 
     move-result-object v2
 
@@ -97,13 +97,13 @@
 
     invoke-interface {v2, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 689
+    .line 695
     iget-object v2, p0, Lcom/android/server/net/NetworkPolicyManagerService$12;->this$0:Lcom/android/server/net/NetworkPolicyManagerService;
 
     #calls: Lcom/android/server/net/NetworkPolicyManagerService;->updateRulesForUidLocked(I)V
     invoke-static {v2, v1}, Lcom/android/server/net/NetworkPolicyManagerService;->access$200(Lcom/android/server/net/NetworkPolicyManagerService;I)V
 
-    .line 692
+    .line 698
     :cond_0
     return-void
 .end method
