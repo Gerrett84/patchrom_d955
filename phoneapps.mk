@@ -17,6 +17,7 @@ local-phone-apps := ApplicationsProvider \
 		    LGEIME_THEME_ZEEBLACK \
 		    LGLiveWallpapersPicker \
 		    LGSlideAside \
+		    LGQRemote \
 		    SystemUI_Provider \
 		    LgNfc \
 		    PermissionToAccessLgeApi \
@@ -28,6 +29,7 @@ local-phone-apps := ApplicationsProvider \
 		    SplitWindowService \
 		    Stk \
 		    TimeService \
+		    UnifiedEULA \
 		    UserDictionaryProvider \
 		    VpnDialogs \
 		    WAPPushManager \
