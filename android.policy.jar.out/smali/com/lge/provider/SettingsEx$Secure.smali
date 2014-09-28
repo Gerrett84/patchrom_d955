@@ -249,11 +249,15 @@
 
 .field public static final VZW_SPACE_UNIT_IN_GB:Ljava/lang/String; = "vzw_space_unit_in_gb"
 
+.field public static final WIFI_AP_BROADCAST_CHANNEL:Ljava/lang/String; = "wifi_ap_broadcast_channel"
+
 .field public static final WIFI_AP_CURRENT_MAX_CLIENT:Ljava/lang/String; = "wifi_ap_current_max_client"
 
 .field public static final WIFI_AP_DEFAULT_STATUS:Ljava/lang/String; = "wifi_ap_default_status"
 
 .field public static final WIFI_AP_PASSWD:Ljava/lang/String; = "wifi_ap_passwd"
+
+.field public static final WIFI_AP_POWER_MODE_HIGH:Ljava/lang/String; = "wifi_ap_power_mode_high"
 
 .field public static final WIFI_AP_SECURITY:Ljava/lang/String; = "wifi_ap_security"
 
@@ -291,7 +295,7 @@
     .locals 3
 
     .prologue
-    .line 1760
+    .line 1815
     const-string v0, "content://settings/secure"
 
     invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
@@ -300,7 +304,7 @@
 
     sput-object v0, Lcom/lge/provider/SettingsEx$Secure;->CONTENT_URI:Landroid/net/Uri;
 
-    .line 2653
+    .line 2723
     const/4 v0, 0x2
 
     new-array v0, v0, [Ljava/lang/String;
@@ -326,7 +330,7 @@
     .locals 0
 
     .prologue
-    .line 1755
+    .line 1810
     invoke-direct {p0}, Landroid/provider/Settings$NameValueTable;-><init>()V
 
     return-void
@@ -343,7 +347,7 @@
     .end annotation
 
     .prologue
-    .line 1813
+    .line 1868
     :try_start_0
     invoke-static {p0, p1}, Landroid/provider/Settings$Secure;->getFloat(Landroid/content/ContentResolver;Ljava/lang/String;)F
     :try_end_0
@@ -353,11 +357,11 @@
 
     return v1
 
-    .line 1814
+    .line 1869
     :catch_0
     move-exception v0
 
-    .line 1815
+    .line 1870
     .local v0, e:Landroid/provider/Settings$SettingNotFoundException;
     new-instance v1, Lcom/lge/provider/SettingsEx$SettingNotFoundException;
 
@@ -373,7 +377,7 @@
     .parameter "def"
 
     .prologue
-    .line 1808
+    .line 1863
     invoke-static {p0, p1, p2}, Landroid/provider/Settings$Secure;->getFloat(Landroid/content/ContentResolver;Ljava/lang/String;F)F
 
     move-result v0
@@ -392,7 +396,7 @@
     .end annotation
 
     .prologue
-    .line 1781
+    .line 1836
     :try_start_0
     invoke-static {p0, p1}, Landroid/provider/Settings$Secure;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;)I
     :try_end_0
@@ -402,11 +406,11 @@
 
     return v1
 
-    .line 1782
+    .line 1837
     :catch_0
     move-exception v0
 
-    .line 1783
+    .line 1838
     .local v0, e:Landroid/provider/Settings$SettingNotFoundException;
     new-instance v1, Lcom/lge/provider/SettingsEx$SettingNotFoundException;
 
@@ -422,7 +426,7 @@
     .parameter "def"
 
     .prologue
-    .line 1776
+    .line 1831
     invoke-static {p0, p1, p2}, Landroid/provider/Settings$Secure;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
     move-result v0
@@ -441,7 +445,7 @@
     .end annotation
 
     .prologue
-    .line 1797
+    .line 1852
     :try_start_0
     invoke-static {p0, p1}, Landroid/provider/Settings$Secure;->getLong(Landroid/content/ContentResolver;Ljava/lang/String;)J
     :try_end_0
@@ -451,11 +455,11 @@
 
     return-wide v1
 
-    .line 1798
+    .line 1853
     :catch_0
     move-exception v0
 
-    .line 1799
+    .line 1854
     .local v0, e:Landroid/provider/Settings$SettingNotFoundException;
     new-instance v1, Lcom/lge/provider/SettingsEx$SettingNotFoundException;
 
@@ -471,7 +475,7 @@
     .parameter "def"
 
     .prologue
-    .line 1792
+    .line 1847
     invoke-static {p0, p1, p2, p3}, Landroid/provider/Settings$Secure;->getLong(Landroid/content/ContentResolver;Ljava/lang/String;J)J
 
     move-result-wide v0
@@ -485,7 +489,7 @@
     .parameter "name"
 
     .prologue
-    .line 1764
+    .line 1819
     const-class v0, Lcom/lge/provider/SettingsEx$Secure;
 
     monitor-enter v0
@@ -514,7 +518,7 @@
     .parameter "name"
 
     .prologue
-    .line 1772
+    .line 1827
     invoke-static {p0}, Landroid/provider/Settings$Secure;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v0
@@ -529,7 +533,7 @@
     .parameter "value"
 
     .prologue
-    .line 1820
+    .line 1875
     invoke-static {p0, p1, p2}, Landroid/provider/Settings$Secure;->putFloat(Landroid/content/ContentResolver;Ljava/lang/String;F)Z
 
     move-result v0
@@ -544,7 +548,7 @@
     .parameter "value"
 
     .prologue
-    .line 1788
+    .line 1843
     invoke-static {p0, p1, p2}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     move-result v0
@@ -559,7 +563,7 @@
     .parameter "value"
 
     .prologue
-    .line 1804
+    .line 1859
     invoke-static {p0, p1, p2, p3}, Landroid/provider/Settings$Secure;->putLong(Landroid/content/ContentResolver;Ljava/lang/String;J)Z
 
     move-result v0
@@ -574,7 +578,7 @@
     .parameter "value"
 
     .prologue
-    .line 1768
+    .line 1823
     invoke-static {p0, p1, p2}, Landroid/provider/Settings$Secure;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0

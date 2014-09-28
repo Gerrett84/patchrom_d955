@@ -45,7 +45,7 @@
     .parameter
 
     .prologue
-    .line 178
+    .line 192
     iput-object p1, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar$1;->this$0:Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;
 
     iput p2, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar$1;->val$initScale:F
@@ -76,12 +76,12 @@
 
     const/high16 v6, 0x3f80
 
-    .line 181
+    .line 195
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedFraction()F
 
     move-result v1
 
-    .line 182
+    .line 196
     .local v1, r:F
     sub-float v4, v6, v1
 
@@ -95,7 +95,7 @@
 
     add-float v2, v4, v5
 
-    .line 183
+    .line 197
     .local v2, scale:F
     sub-float v4, v6, v1
 
@@ -109,7 +109,7 @@
 
     add-float v0, v4, v5
 
-    .line 184
+    .line 198
     .local v0, alpha:F
     sub-float v4, v6, v1
 
@@ -129,7 +129,7 @@
 
     float-to-int v3, v4
 
-    .line 185
+    .line 199
     .local v3, textAlpha:I
     iget-object v4, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar$1;->this$0:Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;
 
@@ -140,7 +140,7 @@
 
     invoke-virtual {v4, v2}, Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;->setScale(F)V
 
-    .line 186
+    .line 200
     iget-object v4, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar$1;->this$0:Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;
 
     #getter for: Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->mUserImage:Landroid/widget/ImageView;
@@ -150,7 +150,7 @@
 
     invoke-virtual {v4, v0}, Landroid/widget/ImageView;->setAlpha(F)V
 
-    .line 187
+    .line 201
     iget-object v4, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar$1;->this$0:Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;
 
     #getter for: Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->mUserName:Landroid/widget/TextView;
@@ -164,7 +164,7 @@
 
     invoke-virtual {v4, v5}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 188
+    .line 202
     iget-object v4, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar$1;->this$0:Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;
 
     #getter for: Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->mUserImage:Landroid/widget/ImageView;
@@ -174,6 +174,6 @@
 
     invoke-virtual {v4}, Landroid/widget/ImageView;->invalidate()V
 
-    .line 189
+    .line 203
     return-void
 .end method

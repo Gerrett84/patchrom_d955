@@ -174,6 +174,15 @@
     return-void
 .end method
 
+.method public onUserInfoChanged(I)V
+    .locals 0
+    .parameter "userId"
+
+    .prologue
+    .line 109
+    return-void
+.end method
+
 .method public onUserRemoved(I)V
     .locals 0
     .parameter "userId"

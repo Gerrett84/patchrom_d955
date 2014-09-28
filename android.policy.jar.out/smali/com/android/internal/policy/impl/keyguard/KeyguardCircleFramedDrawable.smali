@@ -315,7 +315,7 @@
 
     const/4 v8, 0x0
 
-    .line 106
+    .line 113
     invoke-virtual {p1}, Landroid/graphics/Canvas;->getWidth()I
 
     move-result v3
@@ -330,19 +330,19 @@
 
     int-to-float v1, v3
 
-    .line 107
+    .line 114
     .local v1, outside:F
     iget v3, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;->mScale:F
 
     mul-float v0, v3, v1
 
-    .line 108
+    .line 115
     .local v0, inside:F
     sub-float v3, v1, v0
 
     div-float v2, v3, v7
 
-    .line 110
+    .line 117
     .local v2, pad:F
     iget-object v3, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;->mDstRect:Landroid/graphics/RectF;
 
@@ -352,7 +352,7 @@
 
     invoke-virtual {v3, v2, v2, v4, v5}, Landroid/graphics/RectF;->set(FFFF)V
 
-    .line 111
+    .line 118
     iget-object v3, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;->mBitmap:Landroid/graphics/Bitmap;
 
     iget-object v4, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;->mSrcRect:Landroid/graphics/Rect;
@@ -363,14 +363,14 @@
 
     invoke-virtual {p1, v3, v4, v5, v6}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/RectF;Landroid/graphics/Paint;)V
 
-    .line 113
+    .line 120
     iget-object v3, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;->mFrameRect:Landroid/graphics/RectF;
 
     iget-object v4, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;->mDstRect:Landroid/graphics/RectF;
 
     invoke-virtual {v3, v4}, Landroid/graphics/RectF;->set(Landroid/graphics/RectF;)V
 
-    .line 114
+    .line 121
     iget-object v3, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;->mFrameRect:Landroid/graphics/RectF;
 
     iget v4, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;->mStrokeWidth:F
@@ -383,7 +383,7 @@
 
     invoke-virtual {v3, v4, v5}, Landroid/graphics/RectF;->inset(FF)V
 
-    .line 115
+    .line 122
     iget-object v3, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;->mFrameRect:Landroid/graphics/RectF;
 
     iget v4, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;->mShadowRadius:F
@@ -392,12 +392,12 @@
 
     invoke-virtual {v3, v4, v5}, Landroid/graphics/RectF;->inset(FF)V
 
-    .line 117
+    .line 124
     iget-object v3, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;->mFramePath:Landroid/graphics/Path;
 
     invoke-virtual {v3}, Landroid/graphics/Path;->reset()V
 
-    .line 118
+    .line 125
     iget-object v3, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;->mFramePath:Landroid/graphics/Path;
 
     iget-object v4, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;->mFrameRect:Landroid/graphics/RectF;
@@ -406,19 +406,19 @@
 
     invoke-virtual {v3, v4, v8, v5}, Landroid/graphics/Path;->addArc(Landroid/graphics/RectF;FF)V
 
-    .line 121
+    .line 128
     iget-boolean v3, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;->mPressed:Z
 
     if-eqz v3, :cond_0
 
-    .line 122
+    .line 129
     iget-object v3, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;->mPaint:Landroid/graphics/Paint;
 
     sget-object v4, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v3, v4}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 123
+    .line 130
     iget-object v3, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;->mPaint:Landroid/graphics/Paint;
 
     const/16 v4, 0x54
@@ -447,14 +447,14 @@
 
     invoke-virtual {v3, v4}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 127
+    .line 134
     iget-object v3, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;->mFramePath:Landroid/graphics/Path;
 
     iget-object v4, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;->mPaint:Landroid/graphics/Paint;
 
     invoke-virtual {p1, v3, v4}, Landroid/graphics/Canvas;->drawPath(Landroid/graphics/Path;Landroid/graphics/Paint;)V
 
-    .line 129
+    .line 136
     :cond_0
     iget-object v3, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;->mPaint:Landroid/graphics/Paint;
 
@@ -462,14 +462,14 @@
 
     invoke-virtual {v3, v4}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
-    .line 130
+    .line 137
     iget-object v3, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;->mPaint:Landroid/graphics/Paint;
 
     sget-object v4, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v3, v4}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 131
+    .line 138
     iget-object v4, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;->mPaint:Landroid/graphics/Paint;
 
     iget-boolean v3, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;->mPressed:Z
@@ -481,7 +481,7 @@
     :goto_0
     invoke-virtual {v4, v3}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 132
+    .line 139
     iget-object v3, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;->mPaint:Landroid/graphics/Paint;
 
     iget v4, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;->mShadowRadius:F
@@ -490,17 +490,17 @@
 
     invoke-virtual {v3, v4, v8, v8, v5}, Landroid/graphics/Paint;->setShadowLayer(FFFI)V
 
-    .line 133
+    .line 140
     iget-object v3, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;->mFramePath:Landroid/graphics/Path;
 
     iget-object v4, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;->mPaint:Landroid/graphics/Paint;
 
     invoke-virtual {p1, v3, v4}, Landroid/graphics/Canvas;->drawPath(Landroid/graphics/Path;Landroid/graphics/Paint;)V
 
-    .line 134
+    .line 141
     return-void
 
-    .line 131
+    .line 138
     :cond_1
     iget v3, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;->mFrameColor:I
 
@@ -511,7 +511,7 @@
     .locals 1
 
     .prologue
-    .line 150
+    .line 157
     const/4 v0, -0x3
 
     return v0
@@ -521,10 +521,28 @@
     .locals 1
 
     .prologue
-    .line 141
+    .line 148
     iget v0, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;->mScale:F
 
     return v0
+.end method
+
+.method public reset()V
+    .locals 1
+
+    .prologue
+    .line 106
+    const/high16 v0, 0x3f80
+
+    iput v0, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;->mScale:F
+
+    .line 107
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;->mPressed:Z
+
+    .line 108
+    return-void
 .end method
 
 .method public setAlpha(I)V
@@ -532,7 +550,7 @@
     .parameter "alpha"
 
     .prologue
-    .line 155
+    .line 162
     return-void
 .end method
 
@@ -541,7 +559,7 @@
     .parameter "cf"
 
     .prologue
-    .line 159
+    .line 166
     return-void
 .end method
 
@@ -550,10 +568,10 @@
     .parameter "pressed"
 
     .prologue
-    .line 145
+    .line 152
     iput-boolean p1, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;->mPressed:Z
 
-    .line 146
+    .line 153
     return-void
 .end method
 
@@ -562,9 +580,65 @@
     .parameter "scale"
 
     .prologue
-    .line 137
+    .line 144
     iput p1, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;->mScale:F
 
-    .line 138
+    .line 145
     return-void
+.end method
+
+.method public verifyParams(FIFIFI)Z
+    .locals 2
+    .parameter "iconSize"
+    .parameter "frameColor"
+    .parameter "stroke"
+    .parameter "frameShadowColor"
+    .parameter "shadowRadius"
+    .parameter "highlightColor"
+
+    .prologue
+    .line 172
+    iget v0, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;->mSize:I
+
+    float-to-int v1, p1
+
+    if-ne v0, v1, :cond_0
+
+    iget v0, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;->mFrameColor:I
+
+    if-ne v0, p2, :cond_0
+
+    iget v0, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;->mStrokeWidth:F
+
+    invoke-static {v0, p3}, Ljava/lang/Float;->compare(FF)I
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    iget v0, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;->mFrameShadowColor:I
+
+    if-ne v0, p4, :cond_0
+
+    iget v0, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;->mShadowRadius:F
+
+    invoke-static {v0, p5}, Ljava/lang/Float;->compare(FF)I
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    iget v0, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;->mHighlightColor:I
+
+    if-ne v0, p6, :cond_0
+
+    const/4 v0, 0x1
+
+    :goto_0
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_0
 .end method

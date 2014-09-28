@@ -15,6 +15,10 @@
 
 
 # static fields
+.field public static final A070_AUDIO_DOCK_EXTERNAL_SPEAKER:Ljava/lang/String; = "a070_audio_dock_external_speaker"
+
+.field public static final A070_AUDIO_DOCK_SOUND_EFFECT:Ljava/lang/String; = "a070_audio_dock_sound_effect"
+
 .field public static final ACTION_OFFLOADINGTIMER_START:Ljava/lang/String; = "com.lge.settings.wifi.WifiOffloadingTimeReceiver.start"
 
 .field public static final ACTION_OFFLOADINGTIMER_STOP:Ljava/lang/String; = "com.lge.settings.wifi.WifiOffloadingTimeReceiver.stop"
@@ -33,11 +37,15 @@
 
 .field public static final AUTORUN_SWITCH:Ljava/lang/String; = "autorun_switch"
 
+.field public static final AUTO_SPLIT_VIEW:Ljava/lang/String; = "auto_split_view"
+
 .field public static final BALANCE_CHANGE_VALUE:Ljava/lang/String; = "balance_change_value"
 
 .field public static final BATTERY_CONDITION:Ljava/lang/String; = "battery_condition"
 
 .field public static final CALL_GUARD:Ljava/lang/String; = "lg_call_guard"
+
+.field public static final CALL_MODE_SETTING:Ljava/lang/String; = "call_mode_setting"
 
 .field public static final CALL_WAITING_VIBRATE:Ljava/lang/String; = "call_waiting_vibrate"
 
@@ -131,9 +139,13 @@
 
 .field public static final DISTINCTIVE_VIBRATION_TYPE4:I = 0x4
 
+.field public static final DUAL_WINDOW:Ljava/lang/String; = "dual_window"
+
 .field public static final DURING_TIMED_SILENT:Ljava/lang/String; = "during_timed_silent"
 
 .field public static final ECO_MODE:Ljava/lang/String; = "eco_mode"
+
+.field public static final EMERGENCY_TONE:Ljava/lang/String; = "emergency_tone"
 
 .field public static final EMOTIONAL_LED_ALARM:Ljava/lang/String; = "emotional_led_alarm"
 
@@ -242,6 +254,8 @@
 .field public static final GESTURE_TILT_DEFAULT_USE:Ljava/lang/String; = "gesture_tilt_default_use"
 
 .field public static final GESTURE_TILT_VALUE:Ljava/lang/String; = "gesture_tilt_value"
+
+.field public static final GESTURE_TILT_VIEW:Ljava/lang/String; = "gesture_tilt_view"
 
 .field public static final GESTURE_VIDEO_PLAYER:Ljava/lang/String; = "gesture_video_player"
 
@@ -391,6 +405,8 @@
 
 .field public static final LOCKSCREEN_TYPE_UI:Ljava/lang/String; = "lockscreen_type_password_unspecified"
 
+.field public static final LOLLIPOP_COVER_ENABLE:Ljava/lang/String; = "lollipop_cover_enable"
+
 .field public static final LOLLIPOP_COVER_TYPE:Ljava/lang/String; = "lollipop_cover_type"
 
 .field public static final MEDIA_HOME_AUTO_LAUNCH:Ljava/lang/String; = "media_home_auto_launch"
@@ -487,6 +503,8 @@
 
 .field public static final POWER_SAVE_ANIMATIONS:Ljava/lang/String; = "power_save_animations"
 
+.field public static final POWER_SAVE_AUTO_BRIGHTNESS:Ljava/lang/String; = "power_save_auto_brightness"
+
 .field public static final POWER_SAVE_AUTO_SCREEN_TONE:Ljava/lang/String; = "power_save_auto_screen_tone"
 
 .field public static final POWER_SAVE_AUTO_SCREEN_TONE_RESTORE:Ljava/lang/String; = "power_save_auto_screen_tone_restore"
@@ -541,6 +559,14 @@
 
 .field public static final POWER_SAVE_NOTIFICATION_FLASH_RESTORE:Ljava/lang/String; = "power_save_notification_flash_restore"
 
+.field public static final POWER_SAVE_QUICK_CASE:Ljava/lang/String; = "power_save_quick_case"
+
+.field public static final POWER_SAVE_QUICK_CASE_RESTORE:Ljava/lang/String; = "power_save_quick_case_restore"
+
+.field public static final POWER_SAVE_QUICK_CASE_RESTORE_LOLLI_TYPE:Ljava/lang/String; = "power_save_quick_case_restore_lolli_type"
+
+.field public static final POWER_SAVE_QUICK_CASE_RESTORE_TYPE:Ljava/lang/String; = "power_save_quick_case_restore_type"
+
 .field public static final POWER_SAVE_SCREEN_TIMEOUT:Ljava/lang/String; = "power_save_screen_timeout"
 
 .field public static final POWER_SAVE_SCREEN_TIMEOUT_ADJUST:Ljava/lang/String; = "power_save_screen_timeout_adjust"
@@ -584,6 +610,8 @@
 .field public static final QUIET_MODE_CHECK_BLOCK_INCOMING_CALLS:Ljava/lang/String; = "quiet_mode_check_block_incoming_calls"
 
 .field public static final QUIET_MODE_CHECK_REPEATED_CALL:Ljava/lang/String; = "quiet_mode_check_repeated_call"
+
+.field public static final QUIET_MODE_CHECK_VIBRATE:Ljava/lang/String; = "quiet_mode_vibrate_check"
 
 .field public static final QUIET_MODE_STATUS:Ljava/lang/String; = "quiet_mode_status"
 
@@ -692,6 +720,8 @@
 
 .field public static final SMART_RINGTONE:Ljava/lang/String; = "smart_ringtone"
 
+.field public static final SOUND_SETTING_BACKUP:Ljava/lang/String; = "sound_setting_backup"
+
 .field public static final SPRINT_SUBSCRIBER_ACCTSUBTYPE:Ljava/lang/String; = "sprint_subscriber_acctsubtype"
 
 .field public static final SPRINT_SUBSCRIBER_ACCTTYPE:Ljava/lang/String; = "sprint_subscriber_accttype"
@@ -776,7 +806,11 @@
 
 .field public static final WIFI_AGGREGATION_VIBRATION:Ljava/lang/String; = "wifi_aggregation_vibration"
 
+.field public static final WIFI_AP_BROADCAST_CHANNEL:Ljava/lang/String; = "wifi_ap_broadcast_channel"
+
 .field public static final WIFI_AP_CURRENT_MAX_CLIENT:Ljava/lang/String; = "wifi_ap_current_max_client"
+
+.field public static final WIFI_AP_POWER_MODE_HIGH:Ljava/lang/String; = "wifi_ap_power_mode_high"
 
 .field public static final WIFI_AP_SSID_UPDATE:Ljava/lang/String; = "ssid_update_done"
 

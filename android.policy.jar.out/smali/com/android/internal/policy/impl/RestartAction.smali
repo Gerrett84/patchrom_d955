@@ -7,8 +7,7 @@
 
 
 # static fields
-#the value of this static final field might be set in the static constructor
-.field private static final DEBUG:Z = false
+.field private static final DEBUG:Z = true
 
 .field private static final MESSAGE_DISMISS:I = 0x0
 
@@ -34,45 +33,6 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
-
-    .prologue
-    .line 23
-    sget-object v0, Landroid/os/Build;->TYPE:Ljava/lang/String;
-
-    const-string v1, "eng"
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    sget-object v0, Landroid/os/Build;->TYPE:Ljava/lang/String;
-
-    const-string v1, "userdebug"
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    :cond_0
-    const/4 v0, 0x1
-
-    :goto_0
-    sput-boolean v0, Lcom/android/internal/policy/impl/RestartAction;->DEBUG:Z
-
-    return-void
-
-    :cond_1
-    const/4 v0, 0x0
-
-    goto :goto_0
-.end method
-
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
     .parameter "context"
@@ -148,17 +108,7 @@
     return-void
 .end method
 
-.method static synthetic access$000()Z
-    .locals 1
-
-    .prologue
-    .line 20
-    sget-boolean v0, Lcom/android/internal/policy/impl/RestartAction;->DEBUG:Z
-
-    return v0
-.end method
-
-.method static synthetic access$100(Lcom/android/internal/policy/impl/RestartAction;)Landroid/app/ProgressDialog;
+.method static synthetic access$000(Lcom/android/internal/policy/impl/RestartAction;)Landroid/app/ProgressDialog;
     .locals 1
     .parameter "x0"
 
@@ -169,7 +119,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$102(Lcom/android/internal/policy/impl/RestartAction;Landroid/app/ProgressDialog;)Landroid/app/ProgressDialog;
+.method static synthetic access$002(Lcom/android/internal/policy/impl/RestartAction;Landroid/app/ProgressDialog;)Landroid/app/ProgressDialog;
     .locals 0
     .parameter "x0"
     .parameter "x1"
@@ -181,7 +131,7 @@
     return-object p1
 .end method
 
-.method static synthetic access$200(Lcom/android/internal/policy/impl/RestartAction;)Landroid/os/Handler;
+.method static synthetic access$100(Lcom/android/internal/policy/impl/RestartAction;)Landroid/os/Handler;
     .locals 1
     .parameter "x0"
 
@@ -192,7 +142,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$300(Lcom/android/internal/policy/impl/RestartAction;)V
+.method static synthetic access$200(Lcom/android/internal/policy/impl/RestartAction;)V
     .locals 0
     .parameter "x0"
 
@@ -203,7 +153,7 @@
     return-void
 .end method
 
-.method static synthetic access$400(Lcom/android/internal/policy/impl/RestartAction;)V
+.method static synthetic access$300(Lcom/android/internal/policy/impl/RestartAction;)V
     .locals 0
     .parameter "x0"
 
@@ -218,11 +168,6 @@
     .locals 3
 
     .prologue
-    .line 82
-    sget-boolean v1, Lcom/android/internal/policy/impl/RestartAction;->DEBUG:Z
-
-    if-eqz v1, :cond_0
-
     .line 83
     const-string v1, "RestartAction"
 
@@ -231,7 +176,6 @@
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 86
-    :cond_0
     new-instance v0, Landroid/app/ProgressDialog;
 
     sget-object v1, Lcom/android/internal/policy/impl/RestartAction;->mContext:Landroid/content/Context;
@@ -266,11 +210,6 @@
 
     const/4 v10, 0x0
 
-    .line 137
-    sget-boolean v7, Lcom/android/internal/policy/impl/RestartAction;->DEBUG:Z
-
-    if-eqz v7, :cond_0
-
     .line 138
     const-string v7, "RestartAction"
 
@@ -295,7 +234,6 @@
     invoke-static {v7, v8}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 141
-    :cond_0
     new-instance v0, Landroid/text/SpannableStringBuilder;
 
     new-instance v7, Ljava/lang/StringBuilder;
@@ -341,7 +279,7 @@
     .line 144
     sget-object v7, Lcom/android/internal/policy/impl/RestartAction;->mContext:Landroid/content/Context;
 
-    const v8, 0x20b0014
+    const v8, 0x20b0017
 
     invoke-virtual {v7, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -395,12 +333,12 @@
 
     move-result v7
 
-    if-eqz v7, :cond_1
+    if-eqz v7, :cond_0
 
     .line 156
     sget-object v7, Lcom/android/internal/policy/impl/RestartAction;->mContext:Landroid/content/Context;
 
-    const v8, 0x20b0015
+    const v8, 0x20b0018
 
     invoke-virtual {v7, v8}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -430,9 +368,7 @@
     invoke-virtual {v6, v7}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
 
     .line 160
-    const-string v7, "2"
-
-    invoke-virtual {v6, v7}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
+    invoke-virtual {v6, v0}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
 
     .line 161
     const/4 v7, 0x1
@@ -446,7 +382,7 @@
     .line 168
     .end local v4           #embeddedFormat:Ljava/lang/String;
     .end local v5           #embeddedFormats:[Ljava/lang/String;
-    :cond_1
+    :cond_0
     :goto_0
     return-object v6
 
@@ -528,11 +464,6 @@
     .locals 3
 
     .prologue
-    .line 97
-    sget-boolean v0, Lcom/android/internal/policy/impl/RestartAction;->DEBUG:Z
-
-    if-eqz v0, :cond_0
-
     .line 98
     const-string v0, "RestartAction"
 
@@ -541,10 +472,9 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 102
-    :cond_0
     iget-boolean v0, p0, Lcom/android/internal/policy/impl/RestartAction;->mKeyguardShowing:Z
 
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_0
 
     .line 103
     iget-object v0, p0, Lcom/android/internal/policy/impl/RestartAction;->mDialog:Landroid/app/ProgressDialog;
@@ -557,13 +487,8 @@
 
     invoke-virtual {v0, v1}, Landroid/view/Window;->setType(I)V
 
-    .line 109
-    :goto_0
-    sget-boolean v0, Lcom/android/internal/policy/impl/RestartAction;->DEBUG:Z
-
-    if-eqz v0, :cond_1
-
     .line 110
+    :goto_0
     const-string v0, "RestartAction"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -589,7 +514,6 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 113
-    :cond_1
     iget v0, p0, Lcom/android/internal/policy/impl/RestartAction;->mDefalutCount:I
 
     iput v0, p0, Lcom/android/internal/policy/impl/RestartAction;->mCount:I
@@ -597,7 +521,7 @@
     .line 115
     iget-object v0, p0, Lcom/android/internal/policy/impl/RestartAction;->mDialog:Landroid/app/ProgressDialog;
 
-    const v1, 0x20b0011
+    const v1, 0x20b0014
 
     invoke-virtual {v0, v1}, Landroid/app/ProgressDialog;->setTitle(I)V
 
@@ -616,7 +540,7 @@
     return-void
 
     .line 105
-    :cond_2
+    :cond_0
     iget-object v0, p0, Lcom/android/internal/policy/impl/RestartAction;->mDialog:Landroid/app/ProgressDialog;
 
     invoke-virtual {v0}, Landroid/app/ProgressDialog;->getWindow()Landroid/view/Window;
@@ -635,11 +559,6 @@
 
     .prologue
     const/4 v3, 0x1
-
-    .line 120
-    sget-boolean v0, Lcom/android/internal/policy/impl/RestartAction;->DEBUG:Z
-
-    if-eqz v0, :cond_0
 
     .line 121
     const-string v0, "RestartAction"
@@ -667,10 +586,9 @@
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 124
-    :cond_0
     iget v0, p0, Lcom/android/internal/policy/impl/RestartAction;->mCount:I
 
-    if-le v0, v3, :cond_1
+    if-le v0, v3, :cond_0
 
     .line 125
     iget-object v0, p0, Lcom/android/internal/policy/impl/RestartAction;->mDialog:Landroid/app/ProgressDialog;
@@ -699,7 +617,7 @@
     return-void
 
     .line 128
-    :cond_1
+    :cond_0
     iget-object v0, p0, Lcom/android/internal/policy/impl/RestartAction;->mHandler:Landroid/os/Handler;
 
     const/4 v1, 0x0

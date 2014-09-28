@@ -30,6 +30,8 @@
 
 .field private static final PANELS_TAG:Ljava/lang/String; = "android:Panels"
 
+.field private static final SUPPORT_TRANSPARENT_NAVIGATION:Z = false
+
 .field private static final SWEEP_OPEN_MENU:Z = false
 
 .field private static final TAG:Ljava/lang/String; = "PhoneWindow"
@@ -95,6 +97,8 @@
 .field private mIsFloating:Z
 
 .field private mIsFocused:Z
+
+.field final mIsTablet:Z
 
 .field private mKeyguardManager:Landroid/app/KeyguardManager;
 

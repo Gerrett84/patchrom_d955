@@ -56,15 +56,8 @@
     :goto_0
     return-void
 
-    .line 179
-    :pswitch_0
-    invoke-static {}, Lcom/android/internal/policy/impl/RestartAction;->access$000()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
     .line 180
+    :pswitch_0
     const-string v0, "RestartAction"
 
     const-string v1, "handleMessage(): MESSAGE_DISMISS"
@@ -72,11 +65,10 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 182
-    :cond_1
     iget-object v0, p0, Lcom/android/internal/policy/impl/RestartAction$1;->this$0:Lcom/android/internal/policy/impl/RestartAction;
 
     #getter for: Lcom/android/internal/policy/impl/RestartAction;->mDialog:Landroid/app/ProgressDialog;
-    invoke-static {v0}, Lcom/android/internal/policy/impl/RestartAction;->access$100(Lcom/android/internal/policy/impl/RestartAction;)Landroid/app/ProgressDialog;
+    invoke-static {v0}, Lcom/android/internal/policy/impl/RestartAction;->access$000(Lcom/android/internal/policy/impl/RestartAction;)Landroid/app/ProgressDialog;
 
     move-result-object v0
 
@@ -86,7 +78,7 @@
     iget-object v0, p0, Lcom/android/internal/policy/impl/RestartAction$1;->this$0:Lcom/android/internal/policy/impl/RestartAction;
 
     #getter for: Lcom/android/internal/policy/impl/RestartAction;->mHandler:Landroid/os/Handler;
-    invoke-static {v0}, Lcom/android/internal/policy/impl/RestartAction;->access$200(Lcom/android/internal/policy/impl/RestartAction;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/android/internal/policy/impl/RestartAction;->access$100(Lcom/android/internal/policy/impl/RestartAction;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -98,7 +90,7 @@
     iget-object v0, p0, Lcom/android/internal/policy/impl/RestartAction$1;->this$0:Lcom/android/internal/policy/impl/RestartAction;
 
     #getter for: Lcom/android/internal/policy/impl/RestartAction;->mDialog:Landroid/app/ProgressDialog;
-    invoke-static {v0}, Lcom/android/internal/policy/impl/RestartAction;->access$100(Lcom/android/internal/policy/impl/RestartAction;)Landroid/app/ProgressDialog;
+    invoke-static {v0}, Lcom/android/internal/policy/impl/RestartAction;->access$000(Lcom/android/internal/policy/impl/RestartAction;)Landroid/app/ProgressDialog;
 
     move-result-object v0
 
@@ -110,19 +102,12 @@
     const/4 v1, 0x0
 
     #setter for: Lcom/android/internal/policy/impl/RestartAction;->mDialog:Landroid/app/ProgressDialog;
-    invoke-static {v0, v1}, Lcom/android/internal/policy/impl/RestartAction;->access$102(Lcom/android/internal/policy/impl/RestartAction;Landroid/app/ProgressDialog;)Landroid/app/ProgressDialog;
+    invoke-static {v0, v1}, Lcom/android/internal/policy/impl/RestartAction;->access$002(Lcom/android/internal/policy/impl/RestartAction;Landroid/app/ProgressDialog;)Landroid/app/ProgressDialog;
 
     goto :goto_0
 
-    .line 189
-    :pswitch_1
-    invoke-static {}, Lcom/android/internal/policy/impl/RestartAction;->access$000()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
     .line 190
+    :pswitch_1
     const-string v0, "RestartAction"
 
     const-string v1, "handleMessage(): MESSAGE_REFRESH"
@@ -130,11 +115,10 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 192
-    :cond_2
     iget-object v0, p0, Lcom/android/internal/policy/impl/RestartAction$1;->this$0:Lcom/android/internal/policy/impl/RestartAction;
 
     #calls: Lcom/android/internal/policy/impl/RestartAction;->refreshRestartDialog()V
-    invoke-static {v0}, Lcom/android/internal/policy/impl/RestartAction;->access$300(Lcom/android/internal/policy/impl/RestartAction;)V
+    invoke-static {v0}, Lcom/android/internal/policy/impl/RestartAction;->access$200(Lcom/android/internal/policy/impl/RestartAction;)V
 
     goto :goto_0
 
@@ -143,7 +127,7 @@
     iget-object v0, p0, Lcom/android/internal/policy/impl/RestartAction$1;->this$0:Lcom/android/internal/policy/impl/RestartAction;
 
     #calls: Lcom/android/internal/policy/impl/RestartAction;->handleShow()V
-    invoke-static {v0}, Lcom/android/internal/policy/impl/RestartAction;->access$400(Lcom/android/internal/policy/impl/RestartAction;)V
+    invoke-static {v0}, Lcom/android/internal/policy/impl/RestartAction;->access$300(Lcom/android/internal/policy/impl/RestartAction;)V
 
     goto :goto_0
 

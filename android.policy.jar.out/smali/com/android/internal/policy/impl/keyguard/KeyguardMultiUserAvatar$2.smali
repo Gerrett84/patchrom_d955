@@ -27,7 +27,7 @@
     .parameter
 
     .prologue
-    .line 191
+    .line 205
     iput-object p1, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar$2;->this$0:Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;
 
     iput-object p2, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar$2;->val$onComplete:Ljava/lang/Runnable;
@@ -44,17 +44,17 @@
     .parameter "animation"
 
     .prologue
-    .line 194
+    .line 208
     iget-object v0, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar$2;->val$onComplete:Ljava/lang/Runnable;
 
     if-eqz v0, :cond_0
 
-    .line 195
+    .line 209
     iget-object v0, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar$2;->val$onComplete:Ljava/lang/Runnable;
 
     invoke-interface {v0}, Ljava/lang/Runnable;->run()V
 
-    .line 197
+    .line 211
     :cond_0
     return-void
 .end method

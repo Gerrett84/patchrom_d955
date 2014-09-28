@@ -308,7 +308,7 @@
     .locals 1
 
     .prologue
-    .line 223
+    .line 237
     iget-object v0, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->mUserInfo:Landroid/content/pm/UserInfo;
 
     return-object v0
@@ -348,10 +348,51 @@
 
     iput-object v0, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->mUserName:Landroid/widget/TextView;
 
-    .line 126
+    .line 128
+    invoke-static {}, Lcom/android/internal/policy/impl/keyguard/KeyguardViewMediator;->getAvatarCache()Lcom/android/internal/policy/impl/keyguard/MultiUserAvatarCache;
+
+    move-result-object v0
+
+    iget v2, p1, Landroid/content/pm/UserInfo;->id:I
+
+    invoke-virtual {v0, v2}, Lcom/android/internal/policy/impl/keyguard/MultiUserAvatarCache;->get(I)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;
+
+    iput-object v0, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->mFramed:Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;
+
+    .line 132
+    iget-object v0, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->mFramed:Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->mFramed:Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;
+
+    iget v1, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->mIconSize:F
+
+    iget v2, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->mFrameColor:I
+
+    iget v3, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->mStroke:F
+
+    iget v4, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->mFrameShadowColor:I
+
+    iget v5, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->mShadowRadius:F
+
+    iget v6, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->mHighlightColor:I
+
+    invoke-virtual/range {v0 .. v6}, Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;->verifyParams(FIFIFI)Z
+
+    move-result v0
+
+    if-nez v0, :cond_3
+
+    .line 135
+    :cond_0
     const/4 v1, 0x0
 
-    .line 128
+    .line 137
     .local v1, icon:Landroid/graphics/Bitmap;
     :try_start_0
     iget-object v0, p1, Landroid/content/pm/UserInfo;->iconPath:Ljava/lang/String;
@@ -366,12 +407,12 @@
 
     move-result-object v1
 
-    .line 133
-    :cond_0
+    .line 142
+    :cond_1
     :goto_0
-    if-nez v1, :cond_1
+    if-nez v1, :cond_2
 
-    .line 134
+    .line 143
     iget-object v0, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -384,8 +425,8 @@
 
     move-result-object v1
 
-    .line 138
-    :cond_1
+    .line 147
+    :cond_2
     new-instance v0, Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;
 
     iget v2, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->mIconSize:F
@@ -406,14 +447,32 @@
 
     iput-object v0, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->mFramed:Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;
 
-    .line 140
+    .line 149
+    invoke-static {}, Lcom/android/internal/policy/impl/keyguard/KeyguardViewMediator;->getAvatarCache()Lcom/android/internal/policy/impl/keyguard/MultiUserAvatarCache;
+
+    move-result-object v0
+
+    iget v2, p1, Landroid/content/pm/UserInfo;->id:I
+
+    iget-object v3, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->mFramed:Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;
+
+    invoke-virtual {v0, v2, v3}, Lcom/android/internal/policy/impl/keyguard/MultiUserAvatarCache;->put(ILandroid/graphics/drawable/Drawable;)V
+
+    .line 152
+    .end local v1           #icon:Landroid/graphics/Bitmap;
+    :cond_3
+    iget-object v0, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->mFramed:Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;
+
+    invoke-virtual {v0}, Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;->reset()V
+
+    .line 154
     iget-object v0, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->mUserImage:Landroid/widget/ImageView;
 
     iget-object v2, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->mFramed:Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 141
+    .line 155
     iget-object v0, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->mUserName:Landroid/widget/TextView;
 
     iget-object v2, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->mUserInfo:Landroid/content/pm/UserInfo;
@@ -422,28 +481,29 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 142
+    .line 156
     iget-object v0, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->mUserSelector:Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserSelectorView;
 
     invoke-virtual {p0, v0}, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 143
+    .line 157
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->mInit:Z
 
-    .line 144
+    .line 158
     return-void
 
-    .line 129
+    .line 138
+    .restart local v1       #icon:Landroid/graphics/Bitmap;
     :catch_0
     move-exception v8
 
-    .line 130
+    .line 139
     .local v8, e:Ljava/lang/Exception;
     sget-boolean v0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->DEBUG:Z
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_1
 
     sget-object v0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->TAG:Ljava/lang/String;
 
@@ -516,7 +576,7 @@
     .parameter "onComplete"
 
     .prologue
-    .line 147
+    .line 161
     iget-boolean v1, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->mActive:Z
 
     if-ne v1, p1, :cond_0
@@ -525,25 +585,25 @@
 
     if-eqz v1, :cond_1
 
-    .line 148
+    .line 162
     :cond_0
     iput-boolean p1, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->mActive:Z
 
-    .line 150
+    .line 164
     if-eqz p1, :cond_2
 
-    .line 151
+    .line 165
     invoke-virtual {p0}, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->getParent()Landroid/view/ViewParent;
 
     move-result-object v0
 
     check-cast v0, Lcom/android/internal/policy/impl/keyguard/KeyguardLinearLayout;
 
-    .line 152
+    .line 166
     .local v0, parent:Lcom/android/internal/policy/impl/keyguard/KeyguardLinearLayout;
     invoke-virtual {v0, p0}, Lcom/android/internal/policy/impl/keyguard/KeyguardLinearLayout;->setTopChild(Landroid/view/View;)V
 
-    .line 154
+    .line 168
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -566,7 +626,7 @@
 
     iget-object v2, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->mContext:Landroid/content/Context;
 
-    const v3, 0x1040571
+    const v3, 0x1040574
 
     const/4 v4, 0x1
 
@@ -592,7 +652,7 @@
 
     invoke-virtual {p0, v1}, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->setContentDescription(Ljava/lang/CharSequence;)V
 
-    .line 160
+    .line 174
     .end local v0           #parent:Lcom/android/internal/policy/impl/keyguard/KeyguardLinearLayout;
     :cond_1
     :goto_0
@@ -602,10 +662,10 @@
 
     invoke-virtual {p0, v1, p2, v2, p3}, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->updateVisualsForActive(ZZILjava/lang/Runnable;)V
 
-    .line 161
+    .line 175
     return-void
 
-    .line 157
+    .line 171
     :cond_2
     iget-object v1, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->mUserName:Landroid/widget/TextView;
 
@@ -623,7 +683,7 @@
     .parameter "pressed"
 
     .prologue
-    .line 215
+    .line 229
     if-eqz p1, :cond_0
 
     invoke-virtual {p0}, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->isClickable()Z
@@ -632,21 +692,21 @@
 
     if-eqz v0, :cond_1
 
-    .line 216
+    .line 230
     :cond_0
     invoke-super {p0, p1}, Landroid/widget/FrameLayout;->setPressed(Z)V
 
-    .line 217
+    .line 231
     iget-object v0, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->mFramed:Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;
 
     invoke-virtual {v0, p1}, Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;->setPressed(Z)V
 
-    .line 218
+    .line 232
     iget-object v0, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->mUserImage:Landroid/widget/ImageView;
 
     invoke-virtual {v0}, Landroid/widget/ImageView;->invalidate()V
 
-    .line 220
+    .line 234
     :cond_1
     return-void
 .end method
@@ -665,24 +725,24 @@
 
     const/high16 v1, 0x437f
 
-    .line 165
+    .line 179
     if-eqz p1, :cond_1
 
     iget v5, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->mActiveAlpha:F
 
-    .line 166
+    .line 180
     .local v5, finalAlpha:F
     :goto_0
     if-eqz p1, :cond_2
 
     iget v4, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->mInactiveAlpha:F
 
-    .line 167
+    .line 181
     .local v4, initAlpha:F
     :goto_1
     if-eqz p1, :cond_3
 
-    .line 168
+    .line 182
     .local v3, finalScale:F
     :goto_2
     iget-object v0, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->mFramed:Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;
@@ -691,7 +751,7 @@
 
     move-result v2
 
-    .line 169
+    .line 183
     .local v2, initScale:F
     if-eqz p1, :cond_4
 
@@ -701,7 +761,7 @@
 
     float-to-int v7, v0
 
-    .line 171
+    .line 185
     .local v7, finalTextAlpha:I
     :goto_3
     if-eqz p1, :cond_5
@@ -712,25 +772,25 @@
 
     float-to-int v6, v0
 
-    .line 173
+    .line 187
     .local v6, initTextAlpha:I
     :goto_4
     iget v8, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->mTextColor:I
 
-    .line 174
+    .line 188
     .local v8, textColor:I
     iget-object v0, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->mUserName:Landroid/widget/TextView;
 
     invoke-virtual {v0, v8}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 176
+    .line 190
     if-eqz p2, :cond_6
 
     iget-boolean v0, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->mTouched:Z
 
     if-eqz v0, :cond_6
 
-    .line 177
+    .line 191
     const/4 v0, 0x2
 
     new-array v0, v0, [F
@@ -741,7 +801,7 @@
 
     move-result-object v9
 
-    .line 178
+    .line 192
     .local v9, va:Landroid/animation/ValueAnimator;
     new-instance v0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar$1;
 
@@ -751,22 +811,22 @@
 
     invoke-virtual {v9, v0}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
-    .line 191
+    .line 205
     new-instance v0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar$2;
 
     invoke-direct {v0, p0, p4}, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar$2;-><init>(Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;Ljava/lang/Runnable;)V
 
     invoke-virtual {v9, v0}, Landroid/animation/ValueAnimator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
-    .line 199
+    .line 213
     int-to-long v0, p3
 
     invoke-virtual {v9, v0, v1}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
-    .line 200
+    .line 214
     invoke-virtual {v9}, Landroid/animation/ValueAnimator;->start()V
 
-    .line 210
+    .line 224
     .end local v9           #va:Landroid/animation/ValueAnimator;
     :cond_0
     :goto_5
@@ -774,10 +834,10 @@
 
     iput-boolean v0, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->mTouched:Z
 
-    .line 211
+    .line 225
     return-void
 
-    .line 165
+    .line 179
     .end local v2           #initScale:F
     .end local v3           #finalScale:F
     .end local v4           #initAlpha:F
@@ -790,14 +850,14 @@
 
     goto :goto_0
 
-    .line 166
+    .line 180
     .restart local v5       #finalAlpha:F
     :cond_2
     iget v4, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->mActiveAlpha:F
 
     goto :goto_1
 
-    .line 167
+    .line 181
     .restart local v4       #initAlpha:F
     :cond_3
     iget v0, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->mActiveScale:F
@@ -806,7 +866,7 @@
 
     goto :goto_2
 
-    .line 169
+    .line 183
     .restart local v2       #initScale:F
     .restart local v3       #finalScale:F
     :cond_4
@@ -818,7 +878,7 @@
 
     goto :goto_3
 
-    .line 171
+    .line 185
     .restart local v7       #finalTextAlpha:I
     :cond_5
     iget v0, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->mActiveTextAlpha:F
@@ -829,7 +889,7 @@
 
     goto :goto_4
 
-    .line 202
+    .line 216
     .restart local v6       #initTextAlpha:I
     .restart local v8       #textColor:I
     :cond_6
@@ -837,12 +897,12 @@
 
     invoke-virtual {v0, v3}, Lcom/android/internal/policy/impl/keyguard/KeyguardCircleFramedDrawable;->setScale(F)V
 
-    .line 203
+    .line 217
     iget-object v0, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->mUserImage:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v5}, Landroid/widget/ImageView;->setAlpha(F)V
 
-    .line 204
+    .line 218
     iget-object v0, p0, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->mUserName:Landroid/widget/TextView;
 
     invoke-static {v7, v10, v10, v10}, Landroid/graphics/Color;->argb(IIII)I
@@ -851,15 +911,15 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 205
+    .line 219
     if-eqz p4, :cond_0
 
-    .line 206
+    .line 220
     invoke-virtual {p0, p4}, Lcom/android/internal/policy/impl/keyguard/KeyguardMultiUserAvatar;->post(Ljava/lang/Runnable;)Z
 
     goto :goto_5
 
-    .line 177
+    .line 191
     :array_0
     .array-data 0x4
         0x0t 0x0t 0x0t 0x0t
