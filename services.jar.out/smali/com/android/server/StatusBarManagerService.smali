@@ -2329,6 +2329,36 @@
     goto :goto_0
 .end method
 
+.method public setNavigationBackgroundColor(I)V
+    .locals 1
+    .parameter "color"
+
+    .prologue
+    .line 705
+    iget-object v0, p0, Lcom/android/server/StatusBarManagerService;->mBar:Lcom/android/internal/statusbar/IStatusBar;
+
+    if-eqz v0, :cond_0
+
+    .line 707
+    :try_start_0
+    iget-object v0, p0, Lcom/android/server/StatusBarManagerService;->mBar:Lcom/android/internal/statusbar/IStatusBar;
+
+    invoke-interface {v0, p1}, Lcom/android/internal/statusbar/IStatusBar;->setNavigationBackgroundColor(I)V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 710
+    :cond_0
+    :goto_0
+    return-void
+
+    .line 708
+    :catch_0
+    move-exception v0
+
+    goto :goto_0
+.end method
+
 .method public setNavigationRotation(III)V
     .locals 1
     .parameter "rotation"
@@ -2418,6 +2448,35 @@
 
     throw v0
 
+    :catch_0
+    move-exception v0
+
+    goto :goto_0
+.end method
+
+.method public setSystemBarShift()V
+    .locals 1
+
+    .prologue
+    .line 694
+    iget-object v0, p0, Lcom/android/server/StatusBarManagerService;->mBar:Lcom/android/internal/statusbar/IStatusBar;
+
+    if-eqz v0, :cond_0
+
+    .line 696
+    :try_start_0
+    iget-object v0, p0, Lcom/android/server/StatusBarManagerService;->mBar:Lcom/android/internal/statusbar/IStatusBar;
+
+    invoke-interface {v0}, Lcom/android/internal/statusbar/IStatusBar;->setSystemBarShift()V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 699
+    :cond_0
+    :goto_0
+    return-void
+
+    .line 697
     :catch_0
     move-exception v0
 

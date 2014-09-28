@@ -42,7 +42,7 @@
     .parameter
 
     .prologue
-    .line 328
+    .line 359
     iput-object p1, p0, Lcom/android/server/wm/DragState$1;->this$0:Lcom/android/server/wm/DragState;
 
     iput-object p2, p0, Lcom/android/server/wm/DragState$1;->val$endP:Landroid/graphics/PointF;
@@ -70,7 +70,7 @@
     .prologue
     const v8, 0x461c4000
 
-    .line 331
+    .line 362
     iget-object v6, p0, Lcom/android/server/wm/DragState$1;->val$endP:Landroid/graphics/PointF;
 
     iget v6, v6, Landroid/graphics/PointF;->x:F
@@ -81,7 +81,7 @@
 
     sub-float v2, v6, v7
 
-    .line 332
+    .line 363
     .local v2, varX:F
     iget-object v6, p0, Lcom/android/server/wm/DragState$1;->val$endP:Landroid/graphics/PointF;
 
@@ -93,14 +93,14 @@
 
     sub-float v3, v6, v7
 
-    .line 333
+    .line 364
     .local v3, varY:F
     div-float/2addr v2, v8
 
-    .line 334
+    .line 365
     div-float/2addr v3, v8
 
-    .line 336
+    .line 367
     const/4 v1, 0x2
 
     .local v1, i:I
@@ -109,12 +109,12 @@
 
     if-ge v1, v6, :cond_0
 
-    .line 337
+    .line 368
     mul-int v6, v1, v1
 
     int-to-float v0, v6
 
-    .line 338
+    .line 369
     .local v0, dxy:F
     iget-object v6, p0, Lcom/android/server/wm/DragState$1;->val$endP:Landroid/graphics/PointF;
 
@@ -124,7 +124,7 @@
 
     sub-float v4, v6, v7
 
-    .line 339
+    .line 370
     .local v4, x:F
     iget-object v6, p0, Lcom/android/server/wm/DragState$1;->val$endP:Landroid/graphics/PointF;
 
@@ -134,11 +134,11 @@
 
     sub-float v5, v6, v7
 
-    .line 341
+    .line 372
     .local v5, y:F
     invoke-static {}, Landroid/view/Surface;->openTransaction()V
 
-    .line 343
+    .line 374
     :try_start_0
     iget-object v6, p0, Lcom/android/server/wm/DragState$1;->val$surface:Landroid/view/Surface;
 
@@ -152,7 +152,7 @@
 
     invoke-virtual {v6, v7, v8}, Landroid/view/Surface;->setPosition(FF)V
 
-    .line 344
+    .line 375
     iget-object v6, p0, Lcom/android/server/wm/DragState$1;->val$surface:Landroid/view/Surface;
 
     const v7, 0x3e960419
@@ -161,7 +161,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 346
+    .line 377
     const-wide/16 v6, 0x2
 
     :try_start_1
@@ -170,16 +170,16 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
     .catch Ljava/lang/InterruptedException; {:try_start_1 .. :try_end_1} :catch_0
 
-    .line 350
+    .line 381
     :goto_1
     invoke-static {}, Landroid/view/Surface;->closeTransaction()V
 
-    .line 336
+    .line 367
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 350
+    .line 381
     :catchall_0
     move-exception v6
 
@@ -187,7 +187,7 @@
 
     throw v6
 
-    .line 353
+    .line 384
     .end local v0           #dxy:F
     .end local v4           #x:F
     .end local v5           #y:F
@@ -198,17 +198,17 @@
 
     invoke-virtual {v6}, Lcom/android/server/wm/DragState;->reset()V
 
-    .line 354
+    .line 385
     iget-object v6, p0, Lcom/android/server/wm/DragState$1;->val$service:Lcom/android/server/wm/WindowManagerService;
 
     const/4 v7, 0x0
 
     iput-object v7, v6, Lcom/android/server/wm/WindowManagerService;->mDragState:Lcom/android/server/wm/DragState;
 
-    .line 355
+    .line 386
     return-void
 
-    .line 347
+    .line 378
     .restart local v0       #dxy:F
     .restart local v4       #x:F
     .restart local v5       #y:F

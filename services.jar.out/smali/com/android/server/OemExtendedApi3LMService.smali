@@ -282,13 +282,35 @@
     .locals 5
 
     .prologue
-    .line 287
+    .line 292
+    const-string v2, "ro.build.target_operator"
+
+    const-string v3, "error"
+
+    invoke-static {v2, v3}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v3, "DCM"
+
+    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_0
+
+    .line 304
+    :goto_0
+    return-void
+
+    .line 296
+    :cond_0
     :try_start_0
     new-instance v1, Landroid/content/Intent;
 
     invoke-direct {v1}, Landroid/content/Intent;-><init>()V
 
-    .line 288
+    .line 297
     .local v1, i:Landroid/content/Intent;
     const-string v2, "com.lge.nfclock"
 
@@ -296,35 +318,33 @@
 
     invoke-virtual {v1, v2, v3}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 289
+    .line 298
     const-string v2, "$func"
 
     const-string v3, "r-lock"
 
     invoke-virtual {v1, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 290
+    .line 299
     const/high16 v2, 0x1000
 
     invoke-virtual {v1, v2}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 291
+    .line 300
     iget-object v2, p0, Lcom/android/server/OemExtendedApi3LMService;->mContext:Landroid/content/Context;
 
     invoke-virtual {v2, v1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 295
-    .end local v1           #i:Landroid/content/Intent;
-    :goto_0
-    return-void
+    goto :goto_0
 
-    .line 292
+    .line 301
+    .end local v1           #i:Landroid/content/Intent;
     :catch_0
     move-exception v0
 
-    .line 293
+    .line 302
     .local v0, e:Ljava/lang/Exception;
     const-string v2, "OemExtendedApi3LM"
 
@@ -432,55 +452,74 @@
 .end method
 
 .method public getFelicaState()I
-    .locals 4
+    .locals 2
 
     .prologue
-    const/4 v3, 0x1
-
     .line 210
-    const-string v0, "OemExtendedApi3LM"
+    const-string v0, "ro.build.target_operator"
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    const-string v1, "error"
 
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-static {v0, v1}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
-    const-string v2, "getFelicaState : "
+    move-result-object v0
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v1, "DCM"
 
-    move-result-object v1
-
-    const-string v2, "persist.security.felica.lockout"
-
-    invoke-static {v2, v3}, Landroid/os/SystemProperties;->getInt(Ljava/lang/String;I)I
-
-    move-result v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 211
-    const-string v0, "persist.security.felica.lockout"
-
-    invoke-static {v0, v3}, Landroid/os/SystemProperties;->getInt(Ljava/lang/String;I)I
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
+    if-nez v0, :cond_0
+
+    .line 211
+    const/4 v0, -0x1
+
+    .line 213
+    :goto_0
     return v0
+
+    :cond_0
+    const-string v0, "persist.security.felica.lockout"
+
+    const/4 v1, 0x1
+
+    invoke-static {v0, v1}, Landroid/os/SystemProperties;->getInt(Ljava/lang/String;I)I
+
+    move-result v0
+
+    goto :goto_0
 .end method
 
 .method public getInfraredState()I
     .locals 2
 
     .prologue
-    .line 324
+    .line 333
+    const-string v0, "ro.product.name"
+
+    const-string v1, "error"
+
+    invoke-static {v0, v1}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "z_jp_kdi"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 334
+    const/4 v0, -0x1
+
+    .line 337
+    :goto_0
+    return v0
+
+    :cond_0
     const-string v0, "persist.security.irda.lockout"
 
     const/4 v1, 0x1
@@ -489,14 +528,14 @@
 
     move-result v0
 
-    return v0
+    goto :goto_0
 .end method
 
 .method public getOneSegState()I
     .locals 2
 
     .prologue
-    .line 302
+    .line 311
     const-string v0, "persist.security.oneseg.lockout"
 
     const/4 v1, 0x1
@@ -529,7 +568,7 @@
 
     const/4 v6, 0x0
 
-    .line 459
+    .line 502
     const-string v4, "ro.product.name"
 
     const-string v7, "error"
@@ -546,28 +585,53 @@
 
     if-eqz v4, :cond_1
 
-    .line 460
+    .line 503
     invoke-virtual {p0, p1, p2, p3}, Lcom/android/server/OemExtendedApi3LMService;->setEmergencyLockGJ(ZLjava/lang/String;Z)Z
 
     move-result v6
 
-    .line 509
+    .line 555
     :cond_0
     :goto_0
     return v6
 
-    .line 464
+    .line 506
     :cond_1
+    const-string v4, "ro.build.target_operator"
+
+    const-string v7, "error"
+
+    invoke-static {v4, v7}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v4
+
+    const-string v7, "KDDI"
+
+    invoke-virtual {v4, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_2
+
+    .line 507
+    invoke-virtual {p0, p1, p2, p3}, Lcom/android/server/OemExtendedApi3LMService;->setEmergencyLockforKDDI(ZLjava/lang/String;Z)Z
+
+    move-result v6
+
+    goto :goto_0
+
+    .line 510
+    :cond_2
     invoke-direct {p0}, Lcom/android/server/OemExtendedApi3LMService;->isAccessPermitted()Z
 
     move-result v4
 
     if-eqz v4, :cond_0
 
-    .line 466
+    .line 512
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
-    .line 469
+    .line 515
     iget-object v4, p0, Lcom/android/server/OemExtendedApi3LMService;->mContext:Landroid/content/Context;
 
     invoke-virtual {v4}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -580,14 +644,14 @@
 
     move-result v4
 
-    if-lez v4, :cond_3
+    if-lez v4, :cond_4
 
     move v4, v5
 
     :goto_1
     invoke-static {v7, v8, v4}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 473
+    .line 519
     iget-object v4, p0, Lcom/android/server/OemExtendedApi3LMService;->mContext:Landroid/content/Context;
 
     invoke-virtual {v4}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -598,37 +662,37 @@
 
     invoke-static {v4, v7, p2}, Landroid/provider/Settings$Secure;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
 
-    .line 477
-    if-eqz p1, :cond_4
+    .line 523
+    if-eqz p1, :cond_5
 
     move v2, v5
 
-    .line 479
+    .line 525
     .local v2, newState:I
     :goto_2
     invoke-virtual {p0, v2}, Lcom/android/server/OemExtendedApi3LMService;->setOneSegState(I)V
 
-    .line 480
+    .line 526
     invoke-virtual {p0, v2}, Lcom/android/server/OemExtendedApi3LMService;->setInfraredState(I)V
 
-    .line 483
-    if-eqz p1, :cond_5
+    .line 529
+    if-eqz p1, :cond_6
 
-    .line 485
+    .line 531
     :try_start_0
     invoke-virtual {p0}, Lcom/android/server/OemExtendedApi3LMService;->getFelicaState()I
 
     move-result v4
 
-    if-ne v4, v5, :cond_2
+    if-ne v4, v5, :cond_3
 
-    .line 486
+    .line 532
     const/4 v4, 0x1
 
     invoke-virtual {p0, v4}, Lcom/android/server/OemExtendedApi3LMService;->setFelicaState(I)V
 
-    .line 489
-    :cond_2
+    .line 535
+    :cond_3
     iget-object v4, p0, Lcom/android/server/OemExtendedApi3LMService;->mDeviceManager:Landroid/os/IDeviceManager3LM;
 
     const/4 v7, 0x0
@@ -638,35 +702,35 @@
     :goto_3
     move v6, v5
 
-    .line 509
+    .line 555
     goto :goto_0
 
     .end local v2           #newState:I
-    :cond_3
+    :cond_4
     move v4, v6
 
-    .line 469
+    .line 515
     goto :goto_1
 
-    :cond_4
+    :cond_5
     move v2, v6
 
-    .line 477
+    .line 523
     goto :goto_2
 
-    .line 494
+    .line 540
     .restart local v2       #newState:I
-    :cond_5
+    :cond_6
     invoke-direct {p0}, Lcom/android/server/OemExtendedApi3LMService;->setFelicaStateForEmergencyLock()V
 
-    .line 496
+    .line 542
     iget-object v4, p0, Lcom/android/server/OemExtendedApi3LMService;->mDeviceManager:Landroid/os/IDeviceManager3LM;
 
     const/4 v7, 0x1
 
     invoke-interface {v4, v7}, Landroid/os/IDeviceManager3LM;->blockAdb(Z)V
 
-    .line 498
+    .line 544
     iget-object v4, p0, Lcom/android/server/OemExtendedApi3LMService;->mContext:Landroid/content/Context;
 
     const-string v7, "wifi"
@@ -677,19 +741,19 @@
 
     check-cast v3, Landroid/net/wifi/WifiManager;
 
-    .line 499
+    .line 545
     .local v3, wifiManager:Landroid/net/wifi/WifiManager;
     invoke-static {}, Landroid/bluetooth/BluetoothAdapter;->getDefaultAdapter()Landroid/bluetooth/BluetoothAdapter;
 
     move-result-object v0
 
-    .line 500
+    .line 546
     .local v0, btAdapter:Landroid/bluetooth/BluetoothAdapter;
     const/4 v4, 0x0
 
     invoke-virtual {v3, v4}, Landroid/net/wifi/WifiManager;->setWifiEnabled(Z)Z
 
-    .line 501
+    .line 547
     invoke-virtual {v0}, Landroid/bluetooth/BluetoothAdapter;->disable()Z
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
@@ -697,13 +761,13 @@
 
     goto :goto_3
 
-    .line 503
+    .line 549
     .end local v0           #btAdapter:Landroid/bluetooth/BluetoothAdapter;
     .end local v3           #wifiManager:Landroid/net/wifi/WifiManager;
     :catch_0
     move-exception v1
 
-    .line 504
+    .line 550
     .local v1, e:Ljava/lang/NullPointerException;
     const-string v4, "OemExtendedApi3LM"
 
@@ -727,14 +791,14 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    goto :goto_0
+    goto/16 :goto_0
 
-    .line 506
+    .line 552
     .end local v1           #e:Ljava/lang/NullPointerException;
     :catch_1
     move-exception v1
 
-    .line 507
+    .line 553
     .local v1, e:Landroid/os/RemoteException;
     goto/16 :goto_0
 .end method
@@ -750,22 +814,22 @@
 
     const/4 v7, 0x0
 
-    .line 371
+    .line 385
     invoke-direct {p0}, Lcom/android/server/OemExtendedApi3LMService;->isAccessPermitted()Z
 
     move-result v5
 
     if-nez v5, :cond_0
 
-    .line 422
+    .line 436
     :goto_0
     return v7
 
-    .line 373
+    .line 387
     :cond_0
     invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
 
-    .line 376
+    .line 390
     iget-object v5, p0, Lcom/android/server/OemExtendedApi3LMService;->mContext:Landroid/content/Context;
 
     invoke-virtual {v5}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -785,7 +849,7 @@
     :goto_1
     invoke-static {v8, v9, v5}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 381
+    .line 395
     iget-object v5, p0, Lcom/android/server/OemExtendedApi3LMService;->mContext:Landroid/content/Context;
 
     invoke-virtual {v5}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -796,26 +860,26 @@
 
     invoke-static {v5, v8, p2}, Landroid/provider/Settings$Secure;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
 
-    .line 385
+    .line 399
     if-eqz p1, :cond_2
 
     move v3, v6
 
-    .line 387
+    .line 401
     .local v3, newState:I
     :goto_2
     invoke-virtual {p0, v3}, Lcom/android/server/OemExtendedApi3LMService;->setFelicaState(I)V
 
-    .line 388
+    .line 402
     invoke-virtual {p0, v3}, Lcom/android/server/OemExtendedApi3LMService;->setOneSegState(I)V
 
-    .line 389
+    .line 403
     invoke-virtual {p0, v3}, Lcom/android/server/OemExtendedApi3LMService;->setInfraredState(I)V
 
-    .line 392
+    .line 406
     if-eqz p1, :cond_3
 
-    .line 395
+    .line 409
     :try_start_0
     iget-object v5, p0, Lcom/android/server/OemExtendedApi3LMService;->mDeviceManager:Landroid/os/IDeviceManager3LM;
 
@@ -826,23 +890,23 @@
     :goto_3
     move v7, v6
 
-    .line 422
+    .line 436
     goto :goto_0
 
     .end local v3           #newState:I
     :cond_1
     move v5, v7
 
-    .line 376
+    .line 390
     goto :goto_1
 
     :cond_2
     move v3, v7
 
-    .line 385
+    .line 399
     goto :goto_2
 
-    .line 400
+    .line 414
     .restart local v3       #newState:I
     :cond_3
     iget-object v5, p0, Lcom/android/server/OemExtendedApi3LMService;->mDeviceManager:Landroid/os/IDeviceManager3LM;
@@ -851,7 +915,7 @@
 
     invoke-interface {v5, v8}, Landroid/os/IDeviceManager3LM;->blockAdb(Z)V
 
-    .line 402
+    .line 416
     iget-object v5, p0, Lcom/android/server/OemExtendedApi3LMService;->mContext:Landroid/content/Context;
 
     const-string v8, "wifi"
@@ -862,25 +926,25 @@
 
     check-cast v4, Landroid/net/wifi/WifiManager;
 
-    .line 403
+    .line 417
     .local v4, wifiManager:Landroid/net/wifi/WifiManager;
     const/4 v5, 0x0
 
     invoke-virtual {v4, v5}, Landroid/net/wifi/WifiManager;->setWifiEnabled(Z)Z
 
-    .line 405
+    .line 419
     invoke-static {}, Landroid/bluetooth/BluetoothAdapter;->getDefaultAdapter()Landroid/bluetooth/BluetoothAdapter;
 
     move-result-object v0
 
-    .line 406
+    .line 420
     .local v0, btAdapter:Landroid/bluetooth/BluetoothAdapter;
     invoke-virtual {v0}, Landroid/bluetooth/BluetoothAdapter;->disable()Z
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_2
 
-    .line 409
+    .line 423
     :try_start_1
     iget-object v5, p0, Lcom/android/server/OemExtendedApi3LMService;->mContext:Landroid/content/Context;
 
@@ -892,7 +956,7 @@
 
     check-cast v2, Landroid/hardware/usb/UsbManager;
 
-    .line 410
+    .line 424
     .local v2, mUsbManager:Landroid/hardware/usb/UsbManager;
     const-string v5, "charge_only"
 
@@ -906,12 +970,12 @@
 
     goto :goto_3
 
-    .line 411
+    .line 425
     .end local v2           #mUsbManager:Landroid/hardware/usb/UsbManager;
     :catch_0
     move-exception v1
 
-    .line 412
+    .line 426
     .local v1, e:Ljava/lang/Exception;
     :try_start_2
     const-string v5, "OemExtendedApi3LM"
@@ -925,14 +989,14 @@
 
     goto :goto_3
 
-    .line 415
+    .line 429
     .end local v0           #btAdapter:Landroid/bluetooth/BluetoothAdapter;
     .end local v1           #e:Ljava/lang/Exception;
     .end local v4           #wifiManager:Landroid/net/wifi/WifiManager;
     :catch_1
     move-exception v1
 
-    .line 416
+    .line 430
     .local v1, e:Ljava/lang/NullPointerException;
     const-string v5, "OemExtendedApi3LM"
 
@@ -958,12 +1022,12 @@
 
     goto/16 :goto_0
 
-    .line 418
+    .line 432
     .end local v1           #e:Ljava/lang/NullPointerException;
     :catch_2
     move-exception v1
 
-    .line 419
+    .line 433
     .local v1, e:Landroid/os/RemoteException;
     const-string v5, "OemExtendedApi3LM"
 
@@ -990,12 +1054,186 @@
     goto/16 :goto_0
 .end method
 
+.method public setEmergencyLockforKDDI(ZLjava/lang/String;Z)Z
+    .locals 9
+    .parameter "enable"
+    .parameter "text"
+    .parameter "alarm"
+
+    .prologue
+    const/4 v5, 0x1
+
+    const/4 v6, 0x0
+
+    .line 473
+    invoke-direct {p0}, Lcom/android/server/OemExtendedApi3LMService;->isAccessPermitted()Z
+
+    move-result v4
+
+    if-nez v4, :cond_0
+
+    .line 498
+    :goto_0
+    return v6
+
+    .line 474
+    :cond_0
+    invoke-static {}, Landroid/os/Binder;->clearCallingIdentity()J
+
+    .line 475
+    if-eqz p1, :cond_1
+
+    move v3, v5
+
+    .line 476
+    .local v3, newState:I
+    :goto_1
+    if-ne v3, v5, :cond_2
+
+    const-string v1, "false"
+
+    .line 478
+    .local v1, emergency:Ljava/lang/String;
+    :goto_2
+    iget-object v4, p0, Lcom/android/server/OemExtendedApi3LMService;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v4}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v7
+
+    const-string v8, "lock_screen_owner_info_enabled"
+
+    invoke-virtual {p2}, Ljava/lang/String;->length()I
+
+    move-result v4
+
+    if-lez v4, :cond_3
+
+    move v4, v5
+
+    :goto_3
+    invoke-static {v7, v8, v4}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+
+    .line 482
+    iget-object v4, p0, Lcom/android/server/OemExtendedApi3LMService;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v4}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v4
+
+    const-string v7, "lock_screen_owner_info"
+
+    invoke-static {v4, v7, p2}, Landroid/provider/Settings$Secure;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
+
+    .line 485
+    iget-object v4, p0, Lcom/android/server/OemExtendedApi3LMService;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v4}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v4
+
+    const-string v7, "emergency_lock"
+
+    invoke-static {v4, v7, v1}, Landroid/provider/Settings$Secure;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
+
+    .line 487
+    iget-object v4, p0, Lcom/android/server/OemExtendedApi3LMService;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v4}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v4
+
+    const-string v7, "emergency_lock"
+
+    invoke-static {v4, v7}, Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    .line 490
+    .local v2, imsilog:Ljava/lang/String;
+    invoke-virtual {p0, v3}, Lcom/android/server/OemExtendedApi3LMService;->setFelicaState(I)V
+
+    .line 491
+    invoke-virtual {p0, v3}, Lcom/android/server/OemExtendedApi3LMService;->setOneSegState(I)V
+
+    .line 492
+    invoke-virtual {p0, v3}, Lcom/android/server/OemExtendedApi3LMService;->setInfraredState(I)V
+
+    .line 494
+    :try_start_0
+    iget-object v4, p0, Lcom/android/server/OemExtendedApi3LMService;->mDeviceManager:Landroid/os/IDeviceManager3LM;
+
+    invoke-interface {v4, v3}, Landroid/os/IDeviceManager3LM;->setNfcState(I)V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    move v6, v5
+
+    .line 498
+    goto :goto_0
+
+    .end local v1           #emergency:Ljava/lang/String;
+    .end local v2           #imsilog:Ljava/lang/String;
+    .end local v3           #newState:I
+    :cond_1
+    move v3, v6
+
+    .line 475
+    goto :goto_1
+
+    .line 476
+    .restart local v3       #newState:I
+    :cond_2
+    const-string v1, "true"
+
+    goto :goto_2
+
+    .restart local v1       #emergency:Ljava/lang/String;
+    :cond_3
+    move v4, v6
+
+    .line 478
+    goto :goto_3
+
+    .line 495
+    .restart local v2       #imsilog:Ljava/lang/String;
+    :catch_0
+    move-exception v0
+
+    .line 496
+    .local v0, e:Landroid/os/RemoteException;
+    goto :goto_0
+.end method
+
 .method public setFelicaState(I)V
     .locals 5
     .parameter "state"
 
     .prologue
-    .line 253
+    .line 255
+    const-string v2, "ro.build.target_operator"
+
+    const-string v3, "error"
+
+    invoke-static {v2, v3}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v3, "DCM"
+
+    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_1
+
+    .line 289
+    :cond_0
+    :goto_0
+    return-void
+
+    .line 259
+    :cond_1
     const-string v2, "ro.product.name"
 
     const-string v3, "error"
@@ -1010,25 +1248,22 @@
 
     move-result v2
 
-    if-eqz v2, :cond_1
+    if-eqz v2, :cond_2
 
-    .line 254
+    .line 260
     invoke-virtual {p0, p1}, Lcom/android/server/OemExtendedApi3LMService;->setFelicaStateGJ(I)V
 
-    .line 283
-    :cond_0
-    :goto_0
-    return-void
+    goto :goto_0
 
-    .line 259
-    :cond_1
+    .line 265
+    :cond_2
     invoke-direct {p0}, Lcom/android/server/OemExtendedApi3LMService;->isAccessPermitted()Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    .line 260
+    .line 266
     const-string v2, "persist.security.felica.lockout"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -1051,16 +1286,16 @@
 
     invoke-static {v2, v3}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 263
-    if-nez p1, :cond_2
+    .line 269
+    if-nez p1, :cond_3
 
-    .line 265
+    .line 271
     :try_start_0
     new-instance v1, Landroid/content/Intent;
 
     invoke-direct {v1}, Landroid/content/Intent;-><init>()V
 
-    .line 266
+    .line 272
     .local v1, i:Landroid/content/Intent;
     const-string v2, "com.lge.nfclock"
 
@@ -1068,19 +1303,19 @@
 
     invoke-virtual {v1, v2, v3}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 267
+    .line 273
     const-string v2, "$func"
 
     const-string v3, "r-lock"
 
     invoke-virtual {v1, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 268
+    .line 274
     const/high16 v2, 0x1000
 
     invoke-virtual {v1, v2}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 269
+    .line 275
     iget-object v2, p0, Lcom/android/server/OemExtendedApi3LMService;->mContext:Landroid/content/Context;
 
     invoke-virtual {v2, v1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
@@ -1089,12 +1324,12 @@
 
     goto :goto_0
 
-    .line 279
+    .line 285
     .end local v1           #i:Landroid/content/Intent;
     :catch_0
     move-exception v0
 
-    .line 280
+    .line 286
     .local v0, e:Ljava/lang/Exception;
     const-string v2, "OemExtendedApi3LM"
 
@@ -1120,15 +1355,15 @@
 
     goto :goto_0
 
-    .line 273
+    .line 279
     .end local v0           #e:Ljava/lang/Exception;
-    :cond_2
+    :cond_3
     :try_start_1
     new-instance v1, Landroid/content/Intent;
 
     invoke-direct {v1}, Landroid/content/Intent;-><init>()V
 
-    .line 274
+    .line 280
     .restart local v1       #i:Landroid/content/Intent;
     const-string v2, "com.lge.nfclock"
 
@@ -1136,26 +1371,26 @@
 
     invoke-virtual {v1, v2, v3}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 275
+    .line 281
     const-string v2, "$func"
 
     const-string v3, "r-unlock"
 
     invoke-virtual {v1, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 276
+    .line 282
     const/high16 v2, 0x1000
 
     invoke-virtual {v1, v2}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 277
+    .line 283
     iget-object v2, p0, Lcom/android/server/OemExtendedApi3LMService;->mContext:Landroid/content/Context;
 
     invoke-virtual {v2, v1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
-    goto :goto_0
+    goto/16 :goto_0
 .end method
 
 .method public setFelicaStateGJ(I)V
@@ -1163,18 +1398,18 @@
     .parameter "state"
 
     .prologue
-    .line 427
+    .line 441
     invoke-direct {p0}, Lcom/android/server/OemExtendedApi3LMService;->isAccessPermitted()Z
 
     move-result v2
 
     if-nez v2, :cond_0
 
-    .line 456
+    .line 470
     :goto_0
     return-void
 
-    .line 429
+    .line 443
     :cond_0
     const-string v2, "persist.security.felica.lockout"
 
@@ -1198,16 +1433,16 @@
 
     invoke-static {v2, v3}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 431
+    .line 445
     if-nez p1, :cond_1
 
-    .line 433
+    .line 447
     :try_start_0
     new-instance v1, Landroid/content/Intent;
 
     invoke-direct {v1}, Landroid/content/Intent;-><init>()V
 
-    .line 435
+    .line 449
     .local v1, i:Landroid/content/Intent;
     const-string v2, "jp.co.fsi.felicalock"
 
@@ -1215,19 +1450,19 @@
 
     invoke-virtual {v1, v2, v3}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 436
+    .line 450
     const-string v2, "$func"
 
     const-string v3, "lock"
 
     invoke-virtual {v1, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 438
+    .line 452
     const/high16 v2, 0x1000
 
     invoke-virtual {v1, v2}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 440
+    .line 454
     iget-object v2, p0, Lcom/android/server/OemExtendedApi3LMService;->mContext:Landroid/content/Context;
 
     invoke-virtual {v2, v1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
@@ -1236,12 +1471,12 @@
 
     goto :goto_0
 
-    .line 453
+    .line 467
     .end local v1           #i:Landroid/content/Intent;
     :catch_0
     move-exception v0
 
-    .line 454
+    .line 468
     .local v0, e:Ljava/lang/Exception;
     const-string v2, "OemExtendedApi3LM"
 
@@ -1267,7 +1502,7 @@
 
     goto :goto_0
 
-    .line 444
+    .line 458
     .end local v0           #e:Ljava/lang/Exception;
     :cond_1
     :try_start_1
@@ -1275,7 +1510,7 @@
 
     invoke-direct {v1}, Landroid/content/Intent;-><init>()V
 
-    .line 446
+    .line 460
     .restart local v1       #i:Landroid/content/Intent;
     const-string v2, "jp.co.fsi.felicalock"
 
@@ -1283,19 +1518,19 @@
 
     invoke-virtual {v1, v2, v3}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 447
+    .line 461
     const-string v2, "$func"
 
     const-string v3, "unlock"
 
     invoke-virtual {v1, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 448
+    .line 462
     const/high16 v2, 0x1000
 
     invoke-virtual {v1, v2}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 450
+    .line 464
     iget-object v2, p0, Lcom/android/server/OemExtendedApi3LMService;->mContext:Landroid/content/Context;
 
     invoke-virtual {v2, v1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
@@ -1312,18 +1547,18 @@
     .prologue
     const/4 v2, 0x1
 
-    .line 333
+    .line 347
     invoke-direct {p0}, Lcom/android/server/OemExtendedApi3LMService;->isAccessPermitted()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    .line 353
+    .line 367
     :goto_0
     return-void
 
-    .line 342
+    .line 356
     :cond_0
     const-string v1, "persist.security.3lm.activated"
 
@@ -1333,23 +1568,23 @@
 
     if-ne v1, v2, :cond_1
 
-    .line 343
+    .line 357
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 344
+    .line 358
     .local v0, intent:Landroid/content/Intent;
     const-string v1, "3LM_MDM_ACTIVATED"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 345
+    .line 359
     iget-object v1, p0, Lcom/android/server/OemExtendedApi3LMService;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 347
+    .line 361
     .end local v0           #intent:Landroid/content/Intent;
     :cond_1
     const-string v1, "persist.security.3lm.activated"
@@ -1358,7 +1593,7 @@
 
     invoke-static {v1, v2}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 352
+    .line 366
     const-string v1, "persist.security.irda.lockout"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -1389,18 +1624,18 @@
     .parameter "state"
 
     .prologue
-    .line 311
+    .line 320
     invoke-direct {p0}, Lcom/android/server/OemExtendedApi3LMService;->isAccessPermitted()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 317
+    .line 326
     :goto_0
     return-void
 
-    .line 315
+    .line 324
     :cond_0
     const-string v0, "persist.security.oneseg.lockout"
 

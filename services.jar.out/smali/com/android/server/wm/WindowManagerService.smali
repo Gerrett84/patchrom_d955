@@ -193,6 +193,8 @@
 
 .field static final WINDOW_LAYER_MULTIPLIER:I = 0x5
 
+.field private static isFullscreenNeededWithNavRegion:Z
+
 .field static final localLOGV:Z
 
 .field public static mDsdpMode:I
@@ -225,6 +227,8 @@
 .field final mAnimator:Lcom/android/server/wm/WindowAnimator;
 
 .field mAnimatorDurationScale:F
+
+.field private mAppDrawerReceiver:Landroid/content/BroadcastReceiver;
 
 .field final mAppTokens:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
@@ -452,6 +456,8 @@
 
 .field mIsTouchDevice:Z
 
+.field private mIsUseTransParentsNavigation:Z
+
 .field mIsWaitingFocusChangeWhenSplit:Z
 
 .field private final mKeyguardDisableHandler:Lcom/android/server/wm/KeyguardDisableHandler;
@@ -549,6 +555,8 @@
 
 .field mPendingRemoveTmp:[Lcom/android/server/wm/WindowState;
 
+.field private mPhoneStateReceiver:Landroid/content/BroadcastReceiver;
+
 .field mPhoneTypeWindowOrderHelper:Lcom/android/server/wm/WindowManagerService$PhoneTypeWindowOrderHelper;
 
 .field final mPolicy:Landroid/view/WindowManagerPolicy;
@@ -616,6 +624,8 @@
 .field mShowingBootMessages:Z
 
 .field mSkipAppTransitionAnimation:Z
+
+.field private mSplitLayoutChangeNeeded:Z
 
 .field private mSplitSubWindowList:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
@@ -786,6 +796,9 @@
 
     .line 3629
     sput v1, Lcom/android/server/wm/WindowManagerService;->mDsdpMode:I
+
+    .line 5039
+    sput-boolean v1, Lcom/android/server/wm/WindowManagerService;->isFullscreenNeededWithNavRegion:Z
 
     return-void
 .end method
@@ -30371,6 +30384,673 @@
     goto :goto_0
 .end method
 
+.method public getPartialScreenCaptureParam()Landroid/view/Surface$ScreenCaptureParam;
+    .locals 15
+
+    .prologue
+    const/4 v9, 0x0
+
+    const/4 v14, 0x0
+
+    .line 13759
+    new-instance v4, Landroid/view/Surface$ScreenCaptureParam;
+
+    invoke-direct {v4}, Landroid/view/Surface$ScreenCaptureParam;-><init>()V
+
+    .line 13763
+    .local v4, param:Landroid/view/Surface$ScreenCaptureParam;
+    iput v14, v4, Landroid/view/Surface$ScreenCaptureParam;->x:I
+
+    .line 13764
+    iput v14, v4, Landroid/view/Surface$ScreenCaptureParam;->y:I
+
+    .line 13765
+    iput v14, v4, Landroid/view/Surface$ScreenCaptureParam;->width:I
+
+    .line 13766
+    iput v14, v4, Landroid/view/Surface$ScreenCaptureParam;->height:I
+
+    .line 13767
+    iput v14, v4, Landroid/view/Surface$ScreenCaptureParam;->droppedLayer1:I
+
+    .line 13768
+    iput v14, v4, Landroid/view/Surface$ScreenCaptureParam;->droppedLayer2:I
+
+    .line 13769
+    iput v14, v4, Landroid/view/Surface$ScreenCaptureParam;->droppedLayer3:I
+
+    .line 13773
+    invoke-virtual {p0}, Lcom/android/server/wm/WindowManagerService;->getDefaultDisplayContentLocked()Lcom/android/server/wm/DisplayContent;
+
+    move-result-object v10
+
+    invoke-virtual {v10}, Lcom/android/server/wm/DisplayContent;->getDisplay()Landroid/view/Display;
+
+    move-result-object v0
+
+    .line 13774
+    .local v0, capturedDisplay:Landroid/view/Display;
+    new-instance v1, Landroid/util/DisplayMetrics;
+
+    invoke-direct {v1}, Landroid/util/DisplayMetrics;-><init>()V
+
+    .line 13775
+    .local v1, capturedDisplayMetrics:Landroid/util/DisplayMetrics;
+    const/4 v5, 0x0
+
+    .line 13777
+    .local v5, rot:I
+    if-eqz v0, :cond_1
+
+    if-eqz v1, :cond_1
+
+    .line 13778
+    invoke-virtual {v0, v1}, Landroid/view/Display;->getRealMetrics(Landroid/util/DisplayMetrics;)V
+
+    .line 13779
+    invoke-virtual {v0}, Landroid/view/Display;->getRotation()I
+
+    move-result v5
+
+    .line 13785
+    const/4 v6, 0x0
+
+    .line 13786
+    .local v6, statusBarSize:I
+    const/4 v3, 0x0
+
+    .line 13789
+    .local v3, navigationBarSize:I
+    iget-object v10, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
+
+    monitor-enter v10
+
+    .line 13790
+    :try_start_0
+    new-instance v2, Lcom/android/server/wm/WindowManagerService$AllWindowsIterator;
+
+    invoke-direct {v2, p0}, Lcom/android/server/wm/WindowManagerService$AllWindowsIterator;-><init>(Lcom/android/server/wm/WindowManagerService;)V
+
+    .line 13791
+    .local v2, iterator:Lcom/android/server/wm/WindowManagerService$AllWindowsIterator;
+    :cond_0
+    :goto_0
+    invoke-virtual {v2}, Lcom/android/server/wm/WindowManagerService$AllWindowsIterator;->hasNext()Z
+
+    move-result v11
+
+    if-eqz v11, :cond_7
+
+    .line 13792
+    invoke-virtual {v2}, Lcom/android/server/wm/WindowManagerService$AllWindowsIterator;->next()Lcom/android/server/wm/WindowState;
+
+    move-result-object v8
+
+    .line 13794
+    .local v8, w:Lcom/android/server/wm/WindowState;
+    iget-object v11, v8, Lcom/android/server/wm/WindowState;->mAttrs:Landroid/view/WindowManager$LayoutParams;
+
+    invoke-virtual {v11}, Landroid/view/WindowManager$LayoutParams;->getTitle()Ljava/lang/CharSequence;
+
+    move-result-object v11
+
+    invoke-virtual {v11}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v11
+
+    const-string v12, "StatusBar"
+
+    invoke-virtual {v11, v12}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v11
+
+    if-eqz v11, :cond_3
+
+    iget-object v11, v8, Lcom/android/server/wm/WindowState;->mAttrs:Landroid/view/WindowManager$LayoutParams;
+
+    iget v11, v11, Landroid/view/WindowManager$LayoutParams;->type:I
+
+    const/16 v12, 0x7d0
+
+    if-ne v11, v12, :cond_3
+
+    .line 13796
+    const-string v11, "WindowManager"
+
+    new-instance v12, Ljava/lang/StringBuilder;
+
+    invoke-direct {v12}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v13, "[Capture] StatusBar Surface Layer :"
+
+    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v12
+
+    invoke-virtual {v8}, Lcom/android/server/wm/WindowState;->getSurfaceLayer()I
+
+    move-result v13
+
+    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v12
+
+    invoke-virtual {v12}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v12
+
+    invoke-static {v11, v12}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 13797
+    invoke-virtual {v8}, Lcom/android/server/wm/WindowState;->getSurfaceLayer()I
+
+    move-result v11
+
+    iput v11, v4, Landroid/view/Surface$ScreenCaptureParam;->droppedLayer1:I
+
+    .line 13798
+    iget-object v11, v8, Lcom/android/server/wm/WindowState;->mWinAnimator:Lcom/android/server/wm/WindowStateAnimator;
+
+    if-eqz v11, :cond_0
+
+    iget-object v11, v8, Lcom/android/server/wm/WindowState;->mFrame:Landroid/graphics/Rect;
+
+    if-eqz v11, :cond_0
+
+    iget-object v11, v8, Lcom/android/server/wm/WindowState;->mWinAnimator:Lcom/android/server/wm/WindowStateAnimator;
+
+    iget-boolean v11, v11, Lcom/android/server/wm/WindowStateAnimator;->mSurfaceShown:Z
+
+    if-eqz v11, :cond_0
+
+    .line 13799
+    iget-object v11, v8, Lcom/android/server/wm/WindowState;->mFrame:Landroid/graphics/Rect;
+
+    iget v11, v11, Landroid/graphics/Rect;->bottom:I
+
+    iget-object v12, v8, Lcom/android/server/wm/WindowState;->mFrame:Landroid/graphics/Rect;
+
+    iget v12, v12, Landroid/graphics/Rect;->top:I
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    sub-int v6, v11, v12
+
+    goto :goto_0
+
+    .line 13781
+    .end local v2           #iterator:Lcom/android/server/wm/WindowManagerService$AllWindowsIterator;
+    .end local v3           #navigationBarSize:I
+    .end local v6           #statusBarSize:I
+    .end local v8           #w:Lcom/android/server/wm/WindowState;
+    :cond_1
+    const-string v10, "WindowManager"
+
+    const-string v11, "[Capture] Display, DisplayMetrics instance is null, return null"
+
+    invoke-static {v10, v11}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    move-object v4, v9
+
+    .line 13876
+    .end local v4           #param:Landroid/view/Surface$ScreenCaptureParam;
+    :cond_2
+    :goto_1
+    return-object v4
+
+    .line 13803
+    .restart local v2       #iterator:Lcom/android/server/wm/WindowManagerService$AllWindowsIterator;
+    .restart local v3       #navigationBarSize:I
+    .restart local v4       #param:Landroid/view/Surface$ScreenCaptureParam;
+    .restart local v6       #statusBarSize:I
+    .restart local v8       #w:Lcom/android/server/wm/WindowState;
+    :cond_3
+    :try_start_1
+    iget-object v11, v8, Lcom/android/server/wm/WindowState;->mAttrs:Landroid/view/WindowManager$LayoutParams;
+
+    invoke-virtual {v11}, Landroid/view/WindowManager$LayoutParams;->getTitle()Ljava/lang/CharSequence;
+
+    move-result-object v11
+
+    invoke-virtual {v11}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v11
+
+    const-string v12, "NavigationBar"
+
+    invoke-virtual {v11, v12}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v11
+
+    if-eqz v11, :cond_6
+
+    iget-object v11, v8, Lcom/android/server/wm/WindowState;->mAttrs:Landroid/view/WindowManager$LayoutParams;
+
+    iget v11, v11, Landroid/view/WindowManager$LayoutParams;->type:I
+
+    const/16 v12, 0x7e3
+
+    if-ne v11, v12, :cond_6
+
+    .line 13805
+    const-string v11, "WindowManager"
+
+    new-instance v12, Ljava/lang/StringBuilder;
+
+    invoke-direct {v12}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v13, "[Capture] NavigationBar Surface Layer :"
+
+    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v12
+
+    invoke-virtual {v8}, Lcom/android/server/wm/WindowState;->getSurfaceLayer()I
+
+    move-result v13
+
+    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v12
+
+    invoke-virtual {v12}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v12
+
+    invoke-static {v11, v12}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 13806
+    invoke-virtual {v8}, Lcom/android/server/wm/WindowState;->getSurfaceLayer()I
+
+    move-result v11
+
+    iput v11, v4, Landroid/view/Surface$ScreenCaptureParam;->droppedLayer2:I
+
+    .line 13807
+    iget-object v11, v8, Lcom/android/server/wm/WindowState;->mWinAnimator:Lcom/android/server/wm/WindowStateAnimator;
+
+    if-eqz v11, :cond_0
+
+    iget-object v11, v8, Lcom/android/server/wm/WindowState;->mFrame:Landroid/graphics/Rect;
+
+    if-eqz v11, :cond_0
+
+    iget-object v11, v8, Lcom/android/server/wm/WindowState;->mWinAnimator:Lcom/android/server/wm/WindowStateAnimator;
+
+    iget-boolean v11, v11, Lcom/android/server/wm/WindowStateAnimator;->mSurfaceShown:Z
+
+    if-eqz v11, :cond_0
+
+    .line 13808
+    const/4 v11, 0x1
+
+    if-eq v5, v11, :cond_4
+
+    const/4 v11, 0x3
+
+    if-ne v5, v11, :cond_5
+
+    .line 13809
+    :cond_4
+    iget-object v11, v8, Lcom/android/server/wm/WindowState;->mFrame:Landroid/graphics/Rect;
+
+    iget v11, v11, Landroid/graphics/Rect;->right:I
+
+    iget-object v12, v8, Lcom/android/server/wm/WindowState;->mFrame:Landroid/graphics/Rect;
+
+    iget v12, v12, Landroid/graphics/Rect;->left:I
+
+    sub-int v3, v11, v12
+
+    goto/16 :goto_0
+
+    .line 13811
+    :cond_5
+    iget-object v11, v8, Lcom/android/server/wm/WindowState;->mFrame:Landroid/graphics/Rect;
+
+    iget v11, v11, Landroid/graphics/Rect;->bottom:I
+
+    iget-object v12, v8, Lcom/android/server/wm/WindowState;->mFrame:Landroid/graphics/Rect;
+
+    iget v12, v12, Landroid/graphics/Rect;->top:I
+
+    sub-int v3, v11, v12
+
+    goto/16 :goto_0
+
+    .line 13822
+    :cond_6
+    iget-object v11, v8, Lcom/android/server/wm/WindowState;->mAttrs:Landroid/view/WindowManager$LayoutParams;
+
+    invoke-virtual {v11}, Landroid/view/WindowManager$LayoutParams;->getTitle()Ljava/lang/CharSequence;
+
+    move-result-object v11
+
+    invoke-virtual {v11}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v11
+
+    const-string v12, "NaviShowingButton"
+
+    invoke-virtual {v11, v12}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v11
+
+    if-eqz v11, :cond_0
+
+    iget-object v11, p0, Lcom/android/server/wm/WindowManagerService;->mPolicy:Landroid/view/WindowManagerPolicy;
+
+    iget-object v12, v8, Lcom/android/server/wm/WindowState;->mAttrs:Landroid/view/WindowManager$LayoutParams;
+
+    iget v12, v12, Landroid/view/WindowManager$LayoutParams;->type:I
+
+    invoke-interface {v11, v12}, Landroid/view/WindowManagerPolicy;->windowTypeToLayerLw(I)I
+
+    move-result v11
+
+    iget-object v12, p0, Lcom/android/server/wm/WindowManagerService;->mPolicy:Landroid/view/WindowManagerPolicy;
+
+    const/16 v13, 0x7d7
+
+    invoke-interface {v12, v13}, Landroid/view/WindowManagerPolicy;->windowTypeToLayerLw(I)I
+
+    move-result v12
+
+    if-lt v11, v12, :cond_0
+
+    .line 13824
+    const-string v11, "WindowManager"
+
+    new-instance v12, Ljava/lang/StringBuilder;
+
+    invoke-direct {v12}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v13, "[Capture] NaviShowingButton Surface Layer :"
+
+    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v12
+
+    invoke-virtual {v8}, Lcom/android/server/wm/WindowState;->getSurfaceLayer()I
+
+    move-result v13
+
+    invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v12
+
+    invoke-virtual {v12}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v12
+
+    invoke-static {v11, v12}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 13825
+    invoke-virtual {v8}, Lcom/android/server/wm/WindowState;->getSurfaceLayer()I
+
+    move-result v11
+
+    iput v11, v4, Landroid/view/Surface$ScreenCaptureParam;->droppedLayer3:I
+
+    goto/16 :goto_0
+
+    .line 13828
+    .end local v2           #iterator:Lcom/android/server/wm/WindowManagerService$AllWindowsIterator;
+    .end local v8           #w:Lcom/android/server/wm/WindowState;
+    :catchall_0
+    move-exception v9
+
+    monitor-exit v10
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    throw v9
+
+    .restart local v2       #iterator:Lcom/android/server/wm/WindowManagerService$AllWindowsIterator;
+    :cond_7
+    :try_start_2
+    monitor-exit v10
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    .line 13833
+    iget-object v10, p0, Lcom/android/server/wm/WindowManagerService;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v10}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v10
+
+    const v11, 0x105000c
+
+    invoke-virtual {v10, v11}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    move-result v7
+
+    .line 13834
+    .local v7, unexpandedStatusBarSize:I
+    if-le v6, v7, :cond_8
+
+    .line 13835
+    const-string v10, "WindowManager"
+
+    const-string v11, "[Capture] statusBar is expanded state"
+
+    invoke-static {v10, v11}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 13839
+    const/4 v6, 0x0
+
+    .line 13840
+    iput v14, v4, Landroid/view/Surface$ScreenCaptureParam;->droppedLayer1:I
+
+    .line 13843
+    :cond_8
+    packed-switch v5, :pswitch_data_0
+
+    .line 13869
+    :goto_2
+    const-string v10, "WindowManager"
+
+    new-instance v11, Ljava/lang/StringBuilder;
+
+    invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v12, "[Capture] rotation = "
+
+    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v11
+
+    invoke-virtual {v11, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v11
+
+    const-string v12, ", x = "
+
+    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v11
+
+    iget v12, v4, Landroid/view/Surface$ScreenCaptureParam;->x:I
+
+    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v11
+
+    const-string v12, ", y = "
+
+    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v11
+
+    iget v12, v4, Landroid/view/Surface$ScreenCaptureParam;->y:I
+
+    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v11
+
+    const-string v12, ", width = "
+
+    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v11
+
+    iget v12, v4, Landroid/view/Surface$ScreenCaptureParam;->width:I
+
+    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v11
+
+    const-string v12, ", height = "
+
+    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v11
+
+    iget v12, v4, Landroid/view/Surface$ScreenCaptureParam;->height:I
+
+    invoke-virtual {v11, v12}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v11
+
+    invoke-virtual {v11}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v11
+
+    invoke-static {v10, v11}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 13871
+    iget v10, v4, Landroid/view/Surface$ScreenCaptureParam;->width:I
+
+    if-lez v10, :cond_9
+
+    iget v10, v4, Landroid/view/Surface$ScreenCaptureParam;->height:I
+
+    if-gtz v10, :cond_2
+
+    .line 13872
+    :cond_9
+    const-string v10, "WindowManager"
+
+    const-string v11, "[Capture] Bad point value.. return null"
+
+    invoke-static {v10, v11}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    move-object v4, v9
+
+    .line 13873
+    goto/16 :goto_1
+
+    .line 13845
+    :pswitch_0
+    iput v14, v4, Landroid/view/Surface$ScreenCaptureParam;->x:I
+
+    .line 13846
+    mul-int/lit8 v10, v3, -0x1
+
+    iput v10, v4, Landroid/view/Surface$ScreenCaptureParam;->y:I
+
+    .line 13847
+    iget v10, v1, Landroid/util/DisplayMetrics;->widthPixels:I
+
+    iput v10, v4, Landroid/view/Surface$ScreenCaptureParam;->width:I
+
+    .line 13848
+    iget v10, v1, Landroid/util/DisplayMetrics;->heightPixels:I
+
+    sub-int/2addr v10, v6
+
+    sub-int/2addr v10, v3
+
+    iput v10, v4, Landroid/view/Surface$ScreenCaptureParam;->height:I
+
+    goto :goto_2
+
+    .line 13851
+    :pswitch_1
+    iput v14, v4, Landroid/view/Surface$ScreenCaptureParam;->x:I
+
+    .line 13852
+    mul-int/lit8 v10, v3, -0x1
+
+    iput v10, v4, Landroid/view/Surface$ScreenCaptureParam;->y:I
+
+    .line 13853
+    iget v10, v1, Landroid/util/DisplayMetrics;->widthPixels:I
+
+    sub-int/2addr v10, v3
+
+    iput v10, v4, Landroid/view/Surface$ScreenCaptureParam;->width:I
+
+    .line 13854
+    iget v10, v1, Landroid/util/DisplayMetrics;->heightPixels:I
+
+    sub-int/2addr v10, v6
+
+    iput v10, v4, Landroid/view/Surface$ScreenCaptureParam;->height:I
+
+    goto :goto_2
+
+    .line 13857
+    :pswitch_2
+    iput v14, v4, Landroid/view/Surface$ScreenCaptureParam;->x:I
+
+    .line 13858
+    mul-int/lit8 v10, v6, -0x1
+
+    iput v10, v4, Landroid/view/Surface$ScreenCaptureParam;->y:I
+
+    .line 13859
+    iget v10, v1, Landroid/util/DisplayMetrics;->widthPixels:I
+
+    iput v10, v4, Landroid/view/Surface$ScreenCaptureParam;->width:I
+
+    .line 13860
+    iget v10, v1, Landroid/util/DisplayMetrics;->heightPixels:I
+
+    sub-int/2addr v10, v6
+
+    sub-int/2addr v10, v3
+
+    iput v10, v4, Landroid/view/Surface$ScreenCaptureParam;->height:I
+
+    goto/16 :goto_2
+
+    .line 13863
+    :pswitch_3
+    mul-int/lit8 v10, v6, -0x1
+
+    iput v10, v4, Landroid/view/Surface$ScreenCaptureParam;->x:I
+
+    .line 13864
+    iput v14, v4, Landroid/view/Surface$ScreenCaptureParam;->y:I
+
+    .line 13865
+    iget v10, v1, Landroid/util/DisplayMetrics;->widthPixels:I
+
+    sub-int/2addr v10, v3
+
+    iput v10, v4, Landroid/view/Surface$ScreenCaptureParam;->width:I
+
+    .line 13866
+    iget v10, v1, Landroid/util/DisplayMetrics;->heightPixels:I
+
+    sub-int/2addr v10, v6
+
+    iput v10, v4, Landroid/view/Surface$ScreenCaptureParam;->height:I
+
+    goto/16 :goto_2
+
+    .line 13843
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+        :pswitch_1
+        :pswitch_2
+        :pswitch_3
+    .end packed-switch
+.end method
+
 .method public getPendingAppTransition()I
     .locals 1
 
@@ -30883,6 +31563,16 @@
     .end local v2           #win:Lcom/android/server/wm/WindowState;
     :cond_1
     return-object v3
+.end method
+
+.method public getTransparentsNavigation()Z
+    .locals 1
+
+    .prologue
+    .line 13993
+    iget-boolean v0, p0, Lcom/android/server/wm/WindowManagerService;->mIsUseTransParentsNavigation:Z
+
+    return v0
 .end method
 
 .method public getViewBinder(I)Landroid/os/IBinder;
@@ -33252,6 +33942,433 @@
     goto :goto_0
 .end method
 
+.method public isFullScreenFrameWithNavigation(Landroid/os/IBinder;II)I
+    .locals 11
+    .parameter "token"
+    .parameter "right"
+    .parameter "bottom"
+
+    .prologue
+    .line 13900
+    const/4 v3, 0x0
+
+    .line 13903
+    .local v3, fullScreen:I
+    iget-object v9, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
+
+    monitor-enter v9
+
+    .line 13904
+    :try_start_0
+    iget-object v8, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
+
+    invoke-virtual {v8, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v6
+
+    check-cast v6, Lcom/android/server/wm/WindowState;
+
+    .line 13905
+    .local v6, window:Lcom/android/server/wm/WindowState;
+    if-eqz v6, :cond_a
+
+    .line 13906
+    iget-object v8, v6, Lcom/android/server/wm/WindowState;->mDisplayContent:Lcom/android/server/wm/DisplayContent;
+
+    invoke-virtual {v8}, Lcom/android/server/wm/DisplayContent;->getDisplayInfo()Landroid/view/DisplayInfo;
+
+    move-result-object v1
+
+    .line 13907
+    .local v1, displayInfo:Landroid/view/DisplayInfo;
+    if-eqz v1, :cond_a
+
+    .line 13910
+    iget-object v8, v6, Lcom/android/server/wm/WindowState;->mAttrs:Landroid/view/WindowManager$LayoutParams;
+
+    iget v8, v8, Landroid/view/WindowManager$LayoutParams;->type:I
+
+    const/4 v10, 0x1
+
+    if-ne v8, v10, :cond_9
+
+    .line 13912
+    iget v8, v1, Landroid/view/DisplayInfo;->logicalWidth:I
+
+    if-ne p2, v8, :cond_0
+
+    iget v8, v1, Landroid/view/DisplayInfo;->logicalHeight:I
+
+    if-ne p3, v8, :cond_0
+
+    .line 13913
+    const/4 v3, 0x1
+
+    .line 13949
+    :goto_0
+    monitor-exit v9
+
+    move v8, v3
+
+    .line 13981
+    .end local v1           #displayInfo:Landroid/view/DisplayInfo;
+    :goto_1
+    return v8
+
+    .line 13915
+    .restart local v1       #displayInfo:Landroid/view/DisplayInfo;
+    :cond_0
+    iget v8, v1, Landroid/view/DisplayInfo;->appWidth:I
+
+    if-ne p2, v8, :cond_7
+
+    iget v8, v1, Landroid/view/DisplayInfo;->appHeight:I
+
+    if-ne p3, v8, :cond_7
+
+    .line 13917
+    iget-object v8, v6, Lcom/android/server/wm/WindowState;->mAttrs:Landroid/view/WindowManager$LayoutParams;
+
+    invoke-virtual {v8}, Landroid/view/WindowManager$LayoutParams;->getTitle()Ljava/lang/CharSequence;
+
+    move-result-object v8
+
+    invoke-virtual {v8}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v7
+
+    .line 13918
+    .local v7, windowName:Ljava/lang/String;
+    if-eqz v7, :cond_6
+
+    .line 13919
+    const-string v8, "com.lge.QuickClip/com.lge.QuickClip.QuickClipActivity"
+
+    invoke-virtual {v8, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_1
+
+    .line 13920
+    const-string v8, "WindowManager"
+
+    const-string v10, "[Theme] isFullScreenFrameWithNavigation: Window is QMemo"
+
+    invoke-static {v8, v10}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 13921
+    const/4 v3, 0x4
+
+    goto :goto_0
+
+    .line 13922
+    :cond_1
+    const-string v8, "com.android.chrome/com.google.android.apps.chrome.Main"
+
+    invoke-virtual {v8, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v8
+
+    if-nez v8, :cond_2
+
+    const-string v8, "com.android.chrome/com.google.android.apps.chrome.preferences.PreferenceHeaders"
+
+    invoke-virtual {v8, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_3
+
+    .line 13924
+    :cond_2
+    const-string v8, "WindowManager"
+
+    const-string v10, "[Theme] isFullScreenFrameWithNavigation: Window is Chrome"
+
+    invoke-static {v8, v10}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 13925
+    const/4 v3, 0x5
+
+    goto :goto_0
+
+    .line 13926
+    :cond_3
+    const-string v8, "com.android.browser/com.android.browser.BrowserActivity"
+
+    invoke-virtual {v8, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_4
+
+    .line 13927
+    const-string v8, "WindowManager"
+
+    const-string v10, "[Theme] isFullScreenFrameWithNavigation: Window is Browser"
+
+    invoke-static {v8, v10}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 13928
+    const/4 v3, 0x6
+
+    goto :goto_0
+
+    .line 13929
+    :cond_4
+    const-string v8, "com.android.gallery3d/com.android.gallery3d.app.Gallery"
+
+    invoke-virtual {v8, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_5
+
+    .line 13930
+    const-string v8, "WindowManager"
+
+    const-string v10, "[Theme] isFullScreenFrameWithNavigation: Window is Galley"
+
+    invoke-static {v8, v10}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 13931
+    const/4 v3, 0x7
+
+    goto :goto_0
+
+    .line 13933
+    :cond_5
+    const/4 v3, 0x2
+
+    goto :goto_0
+
+    .line 13936
+    :cond_6
+    const/4 v3, 0x2
+
+    goto :goto_0
+
+    .line 13938
+    .end local v7           #windowName:Ljava/lang/String;
+    :cond_7
+    iget v8, v1, Landroid/view/DisplayInfo;->appWidth:I
+
+    iget v10, v1, Landroid/view/DisplayInfo;->appHeight:I
+
+    invoke-virtual {v6, v8, v10}, Lcom/android/server/wm/WindowState;->isFullscreen(II)Z
+
+    move-result v8
+
+    if-nez v8, :cond_8
+
+    invoke-virtual {v6}, Lcom/android/server/wm/WindowState;->getSplitScreenId()I
+
+    move-result v8
+
+    if-eqz v8, :cond_8
+
+    .line 13939
+    const-string v8, "WindowManager"
+
+    const-string v10, "[Theme] isFullScreenFrameWithNavigation: Window is split"
+
+    invoke-static {v8, v10}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 13940
+    const/4 v3, 0x3
+
+    goto :goto_0
+
+    .line 13942
+    :cond_8
+    const/4 v3, 0x0
+
+    goto/16 :goto_0
+
+    .line 13947
+    :cond_9
+    const/4 v3, 0x0
+
+    goto/16 :goto_0
+
+    .line 13952
+    .end local v1           #displayInfo:Landroid/view/DisplayInfo;
+    :cond_a
+    monitor-exit v9
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 13954
+    const-string v8, "WindowManager"
+
+    const-string v9, "[Theme] isFullScreenFrameWithNavigation: window is not yet attached, use frame metric"
+
+    invoke-static {v8, v9}, Landroid/util/Slog;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 13957
+    invoke-virtual {p0}, Lcom/android/server/wm/WindowManagerService;->getDefaultDisplayContentLocked()Lcom/android/server/wm/DisplayContent;
+
+    move-result-object v8
+
+    invoke-virtual {v8}, Lcom/android/server/wm/DisplayContent;->getDisplay()Landroid/view/Display;
+
+    move-result-object v0
+
+    .line 13958
+    .local v0, display:Landroid/view/Display;
+    new-instance v2, Landroid/util/DisplayMetrics;
+
+    invoke-direct {v2}, Landroid/util/DisplayMetrics;-><init>()V
+
+    .line 13959
+    .local v2, displayMetrics:Landroid/util/DisplayMetrics;
+    new-instance v4, Landroid/graphics/Point;
+
+    invoke-direct {v4}, Landroid/graphics/Point;-><init>()V
+
+    .line 13961
+    .local v4, point:Landroid/graphics/Point;
+    if-eqz v0, :cond_f
+
+    if-eqz v2, :cond_f
+
+    .line 13962
+    invoke-virtual {v0, v2}, Landroid/view/Display;->getMetrics(Landroid/util/DisplayMetrics;)V
+
+    .line 13963
+    invoke-virtual {v0, v4}, Landroid/view/Display;->getSize(Landroid/graphics/Point;)V
+
+    .line 13964
+    invoke-virtual {v0}, Landroid/view/Display;->getRotation()I
+
+    move-result v5
+
+    .line 13966
+    .local v5, rot:I
+    packed-switch v5, :pswitch_data_0
+
+    :goto_2
+    move v8, v3
+
+    .line 13981
+    goto/16 :goto_1
+
+    .line 13952
+    .end local v0           #display:Landroid/view/Display;
+    .end local v2           #displayMetrics:Landroid/util/DisplayMetrics;
+    .end local v4           #point:Landroid/graphics/Point;
+    .end local v5           #rot:I
+    .end local v6           #window:Lcom/android/server/wm/WindowState;
+    :catchall_0
+    move-exception v8
+
+    :try_start_1
+    monitor-exit v9
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    throw v8
+
+    .line 13969
+    .restart local v0       #display:Landroid/view/Display;
+    .restart local v2       #displayMetrics:Landroid/util/DisplayMetrics;
+    .restart local v4       #point:Landroid/graphics/Point;
+    .restart local v5       #rot:I
+    .restart local v6       #window:Lcom/android/server/wm/WindowState;
+    :pswitch_0
+    iget v8, v4, Landroid/graphics/Point;->x:I
+
+    if-ne v8, p2, :cond_b
+
+    iget v8, v4, Landroid/graphics/Point;->y:I
+
+    if-ne v8, p3, :cond_b
+
+    const/4 v3, 0x2
+
+    .line 13970
+    :goto_3
+    goto :goto_2
+
+    .line 13969
+    :cond_b
+    iget v8, v4, Landroid/graphics/Point;->x:I
+
+    if-ne v8, p2, :cond_c
+
+    iget v8, v4, Landroid/graphics/Point;->y:I
+
+    if-ge v8, p3, :cond_c
+
+    const/4 v3, 0x1
+
+    goto :goto_3
+
+    :cond_c
+    const/4 v3, 0x0
+
+    goto :goto_3
+
+    .line 13973
+    :pswitch_1
+    iget v8, v4, Landroid/graphics/Point;->x:I
+
+    if-ne v8, p2, :cond_d
+
+    iget v8, v4, Landroid/graphics/Point;->y:I
+
+    if-ne v8, p3, :cond_d
+
+    const/4 v3, 0x2
+
+    :goto_4
+    goto :goto_2
+
+    :cond_d
+    iget v8, v4, Landroid/graphics/Point;->x:I
+
+    if-ge v8, p2, :cond_e
+
+    iget v8, v4, Landroid/graphics/Point;->y:I
+
+    if-ne v8, p3, :cond_e
+
+    const/4 v3, 0x1
+
+    goto :goto_4
+
+    :cond_e
+    const/4 v3, 0x0
+
+    goto :goto_4
+
+    .line 13977
+    .end local v5           #rot:I
+    :cond_f
+    const-string v8, "WindowManager"
+
+    const-string v9, "[Theme] Display, DisplayMetrics instance is null, return 0"
+
+    invoke-static {v8, v9}, Landroid/util/Slog;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 13978
+    const/4 v8, 0x0
+
+    goto/16 :goto_1
+
+    .line 13966
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+        :pswitch_1
+        :pswitch_0
+        :pswitch_1
+    .end packed-switch
+.end method
+
 .method public isHardKeyboardAvailable()Z
     .locals 2
 
@@ -33449,6 +34566,90 @@
     const/4 v0, 0x0
 
     goto :goto_0
+.end method
+
+.method public isWindowShown(Landroid/os/IBinder;)Z
+    .locals 6
+    .parameter "token"
+
+    .prologue
+    const/4 v2, 0x0
+
+    .line 13999
+    iget-object v3, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
+
+    monitor-enter v3
+
+    .line 14000
+    :try_start_0
+    iget-object v4, p0, Lcom/android/server/wm/WindowManagerService;->mWindowMap:Ljava/util/HashMap;
+
+    invoke-virtual {v4, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/android/server/wm/WindowState;
+
+    .line 14001
+    .local v1, window:Lcom/android/server/wm/WindowState;
+    if-eqz v1, :cond_2
+
+    .line 14002
+    const/4 v0, 0x0
+
+    .line 14003
+    .local v0, isFocused:Z
+    iget-object v4, p0, Lcom/android/server/wm/WindowManagerService;->mFocusedApp:Lcom/android/server/wm/AppWindowToken;
+
+    if-eqz v4, :cond_0
+
+    iget-object v4, v1, Lcom/android/server/wm/WindowState;->mAppToken:Lcom/android/server/wm/AppWindowToken;
+
+    if-eqz v4, :cond_0
+
+    .line 14004
+    iget-object v4, p0, Lcom/android/server/wm/WindowManagerService;->mFocusedApp:Lcom/android/server/wm/AppWindowToken;
+
+    iget-object v5, v1, Lcom/android/server/wm/WindowState;->mAppToken:Lcom/android/server/wm/AppWindowToken;
+
+    if-ne v4, v5, :cond_0
+
+    .line 14005
+    const/4 v0, 0x1
+
+    .line 14009
+    :cond_0
+    iget-boolean v4, v1, Lcom/android/server/wm/WindowState;->mHasSurface:Z
+
+    if-eqz v4, :cond_1
+
+    if-eqz v0, :cond_1
+
+    const/4 v2, 0x1
+
+    :cond_1
+    monitor-exit v3
+
+    .line 14012
+    .end local v0           #isFocused:Z
+    :goto_0
+    return v2
+
+    .line 14011
+    :cond_2
+    monitor-exit v3
+
+    goto :goto_0
+
+    .end local v1           #window:Lcom/android/server/wm/WindowState;
+    :catchall_0
+    move-exception v2
+
+    monitor-exit v3
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v2
 .end method
 
 .method public isWindowSplit(Lcom/android/server/wm/Session;Landroid/view/IWindow;Landroid/graphics/Rect;)Z
@@ -47744,6 +48945,18 @@
     throw v3
 .end method
 
+.method public setTransparentsNavigation(Z)V
+    .locals 0
+    .parameter "enabled"
+
+    .prologue
+    .line 13987
+    iput-boolean p1, p0, Lcom/android/server/wm/WindowManagerService;->mIsUseTransParentsNavigation:Z
+
+    .line 13988
+    return-void
+.end method
+
 .method public setUniverseTransformLocked(Lcom/android/server/wm/WindowState;FFFFFFF)V
     .locals 10
     .parameter "window"
@@ -49492,6 +50705,321 @@
     return-void
 .end method
 
+.method public updateNavigationState(Ljava/lang/String;Landroid/os/IBinder;Landroid/content/ComponentName;)Z
+    .locals 8
+    .parameter "pkgName"
+    .parameter "token"
+    .parameter "realActivity"
+
+    .prologue
+    const/4 v3, 0x1
+
+    const/4 v4, 0x0
+
+    .line 5041
+    invoke-virtual {p0, p2}, Lcom/android/server/wm/WindowManagerService;->findAppWindowToken(Landroid/os/IBinder;)Lcom/android/server/wm/AppWindowToken;
+
+    move-result-object v0
+
+    .line 5042
+    .local v0, aToken:Lcom/android/server/wm/AppWindowToken;
+    const-string v5, "HideNav"
+
+    new-instance v6, Ljava/lang/StringBuilder;
+
+    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v7, "Activity Started.. pkgName = "
+
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    invoke-virtual {v6, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-static {v5, v6}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 5043
+    const/4 v1, 0x0
+
+    .line 5045
+    .local v1, isSplitMode:Z
+    :try_start_0
+    sget-boolean v5, Lcom/lge/config/ConfigBuildFlags;->CAPP_SPLITWINDOW:Z
+
+    if-eqz v5, :cond_2
+
+    iget-object v5, p0, Lcom/android/server/wm/WindowManagerService;->mSplitWindowManager:Lcom/lge/loader/splitwindow/ISplitWindow$ISplitWindowPolicy;
+
+    if-eqz v5, :cond_2
+
+    iget-object v5, p0, Lcom/android/server/wm/WindowManagerService;->mSplitWindowManager:Lcom/lge/loader/splitwindow/ISplitWindow$ISplitWindowPolicy;
+
+    invoke-interface {v5}, Lcom/lge/loader/splitwindow/ISplitWindow$ISplitWindowPolicy;->isSplitMode()Z
+
+    move-result v5
+
+    if-eqz v5, :cond_2
+
+    iget-object v5, p0, Lcom/android/server/wm/WindowManagerService;->mSplitUIWinList:Ljava/util/ArrayList;
+
+    invoke-virtual {v5}, Ljava/util/ArrayList;->size()I
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-result v5
+
+    if-lez v5, :cond_2
+
+    move v1, v3
+
+    .line 5053
+    :goto_0
+    if-eqz v0, :cond_6
+
+    .line 5054
+    if-nez v1, :cond_0
+
+    iget v5, v0, Lcom/android/server/wm/AppWindowToken;->screenId:I
+
+    if-eqz v5, :cond_3
+
+    iget-boolean v5, v0, Lcom/android/server/wm/AppWindowToken;->isFullscreen:Z
+
+    if-nez v5, :cond_3
+
+    .line 5055
+    :cond_0
+    sget-boolean v5, Lcom/android/server/wm/WindowManagerService;->isFullscreenNeededWithNavRegion:Z
+
+    if-nez v5, :cond_3
+
+    .line 5099
+    :cond_1
+    :goto_1
+    return v4
+
+    :cond_2
+    move v1, v4
+
+    .line 5045
+    goto :goto_0
+
+    .line 5059
+    :cond_3
+    iget-boolean v5, v0, Lcom/android/server/wm/AppWindowToken;->appFullscreen:Z
+
+    if-eqz v5, :cond_4
+
+    .line 5060
+    iget-object v5, p0, Lcom/android/server/wm/WindowManagerService;->mPolicy:Landroid/view/WindowManagerPolicy;
+
+    invoke-interface {v5, p1}, Landroid/view/WindowManagerPolicy;->updateNavBarHidingStateBySetting(Ljava/lang/String;)Z
+
+    move-result v2
+
+    .line 5061
+    .local v2, nextState:Z
+    sget-boolean v5, Lcom/android/server/wm/WindowManagerService;->isFullscreenNeededWithNavRegion:Z
+
+    if-eq v5, v2, :cond_1
+
+    .line 5062
+    const-string v4, "HideNav"
+
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v6, "configuration changed.. nextState = "
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    const-string v6, ", lastState = "
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    sget-boolean v6, Lcom/android/server/wm/WindowManagerService;->isFullscreenNeededWithNavRegion:Z
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 5063
+    sput-boolean v2, Lcom/android/server/wm/WindowManagerService;->isFullscreenNeededWithNavRegion:Z
+
+    .line 5064
+    invoke-virtual {p0}, Lcom/android/server/wm/WindowManagerService;->sendNewConfiguration()V
+
+    move v4, v3
+
+    .line 5065
+    goto :goto_1
+
+    .line 5068
+    .end local v2           #nextState:Z
+    :cond_4
+    if-eqz p3, :cond_5
+
+    invoke-virtual {p3}, Landroid/content/ComponentName;->getClassName()Ljava/lang/String;
+
+    move-result-object v5
+
+    const-string v6, "com.android.internal"
+
+    invoke-virtual {v5, v6}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_5
+
+    .line 5069
+    sget-boolean v4, Lcom/android/server/wm/WindowManagerService;->isFullscreenNeededWithNavRegion:Z
+
+    goto :goto_1
+
+    .line 5073
+    :cond_5
+    iget-object v5, p0, Lcom/android/server/wm/WindowManagerService;->mPolicy:Landroid/view/WindowManagerPolicy;
+
+    invoke-interface {v5, p1}, Landroid/view/WindowManagerPolicy;->updateNavBarHidingStateBySetting(Ljava/lang/String;)Z
+
+    move-result v2
+
+    .line 5074
+    .restart local v2       #nextState:Z
+    sget-boolean v5, Lcom/android/server/wm/WindowManagerService;->isFullscreenNeededWithNavRegion:Z
+
+    if-eq v5, v2, :cond_1
+
+    .line 5075
+    const-string v4, "HideNav"
+
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v6, "configuration changed.. nextState = "
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    const-string v6, ", lastState = "
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    sget-boolean v6, Lcom/android/server/wm/WindowManagerService;->isFullscreenNeededWithNavRegion:Z
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-static {v4, v5}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 5076
+    sput-boolean v2, Lcom/android/server/wm/WindowManagerService;->isFullscreenNeededWithNavRegion:Z
+
+    .line 5077
+    invoke-virtual {p0}, Lcom/android/server/wm/WindowManagerService;->sendNewConfiguration()V
+
+    move v4, v3
+
+    .line 5078
+    goto/16 :goto_1
+
+    .line 5082
+    .end local v2           #nextState:Z
+    :cond_6
+    if-eqz v1, :cond_7
+
+    .line 5083
+    sget-boolean v5, Lcom/android/server/wm/WindowManagerService;->isFullscreenNeededWithNavRegion:Z
+
+    if-eqz v5, :cond_1
+
+    .line 5086
+    :cond_7
+    if-nez p3, :cond_8
+
+    if-eqz p1, :cond_8
+
+    const-string v5, "android"
+
+    invoke-virtual {p1, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_8
+
+    .line 5087
+    sget-boolean v4, Lcom/android/server/wm/WindowManagerService;->isFullscreenNeededWithNavRegion:Z
+
+    goto/16 :goto_1
+
+    .line 5091
+    :cond_8
+    iget-object v5, p0, Lcom/android/server/wm/WindowManagerService;->mPolicy:Landroid/view/WindowManagerPolicy;
+
+    invoke-interface {v5, p1}, Landroid/view/WindowManagerPolicy;->updateNavBarHidingStateBySetting(Ljava/lang/String;)Z
+
+    move-result v2
+
+    .line 5092
+    .restart local v2       #nextState:Z
+    sget-boolean v5, Lcom/android/server/wm/WindowManagerService;->isFullscreenNeededWithNavRegion:Z
+
+    if-eq v5, v2, :cond_1
+
+    .line 5094
+    sput-boolean v2, Lcom/android/server/wm/WindowManagerService;->isFullscreenNeededWithNavRegion:Z
+
+    .line 5095
+    invoke-virtual {p0}, Lcom/android/server/wm/WindowManagerService;->sendNewConfiguration()V
+
+    move v4, v3
+
+    .line 5096
+    goto/16 :goto_1
+
+    .line 5050
+    .end local v2           #nextState:Z
+    :catch_0
+    move-exception v5
+
+    goto/16 :goto_0
+.end method
+
 .method public updateOrientationFromAppTokens(Landroid/content/res/Configuration;Landroid/os/IBinder;)Landroid/content/res/Configuration;
     .locals 5
     .parameter "currentConfig"
@@ -50127,7 +51655,12 @@
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 4646
+    const/4 v2, 0x1
+
     :try_start_1
+    iput-boolean v2, p0, Lcom/android/server/wm/WindowManagerService;->mSplitLayoutChangeNeeded:Z
+
+    .line 4812
     invoke-virtual {p0}, Lcom/android/server/wm/WindowManagerService;->getDefaultDisplayContentLocked()Lcom/android/server/wm/DisplayContent;
 
     move-result-object v2

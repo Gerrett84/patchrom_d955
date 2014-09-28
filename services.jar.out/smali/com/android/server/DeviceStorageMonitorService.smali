@@ -1429,7 +1429,7 @@
 
     iput v0, v10, Landroid/app/Notification;->flags:I
 
-    invoke-direct{p0, v10}, Lcom/android/server/DeviceStorageMonitorService;->useMiuiIconForNotification(Landroid/app/Notification;)V
+    invoke-direct {p0, v10}, Lcom/android/server/DeviceStorageMonitorService;->useMiuiIconForNotification(Landroid/app/Notification;)V
 
     .line 432
     iget-object v0, p0, Lcom/android/server/DeviceStorageMonitorService;->mContext:Landroid/content/Context;

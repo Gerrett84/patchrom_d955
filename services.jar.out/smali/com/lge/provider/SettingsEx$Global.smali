@@ -53,7 +53,7 @@
 
     const/4 v2, 0x0
 
-    .line 2671
+    .line 2741
     const-string v0, "content://settings/global"
 
     invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
@@ -62,7 +62,7 @@
 
     sput-object v0, Lcom/lge/provider/SettingsEx$Global;->CONTENT_URI:Landroid/net/Uri;
 
-    .line 2758
+    .line 2828
     new-array v0, v3, [Ljava/lang/String;
 
     const-string v1, "assisted_gps_enabled_for_cmcc"
@@ -71,7 +71,7 @@
 
     sput-object v0, Lcom/lge/provider/SettingsEx$Global;->SETTINGS_EX_TO_BACKUP:[Ljava/lang/String;
 
-    .line 2770
+    .line 2840
     const/4 v0, 0x4
 
     new-array v0, v0, [Ljava/lang/String;
@@ -105,7 +105,7 @@
     .locals 0
 
     .prologue
-    .line 2666
+    .line 2736
     invoke-direct {p0}, Landroid/provider/Settings$NameValueTable;-><init>()V
 
     return-void
@@ -122,7 +122,7 @@
     .end annotation
 
     .prologue
-    .line 2723
+    .line 2793
     :try_start_0
     invoke-static {p0, p1}, Landroid/provider/Settings$Global;->getFloat(Landroid/content/ContentResolver;Ljava/lang/String;)F
     :try_end_0
@@ -132,11 +132,11 @@
 
     return v1
 
-    .line 2724
+    .line 2794
     :catch_0
     move-exception v0
 
-    .line 2725
+    .line 2795
     .local v0, e:Landroid/provider/Settings$SettingNotFoundException;
     new-instance v1, Lcom/lge/provider/SettingsEx$SettingNotFoundException;
 
@@ -152,7 +152,7 @@
     .parameter "def"
 
     .prologue
-    .line 2718
+    .line 2788
     invoke-static {p0, p1, p2}, Landroid/provider/Settings$Global;->getFloat(Landroid/content/ContentResolver;Ljava/lang/String;F)F
 
     move-result v0
@@ -171,7 +171,7 @@
     .end annotation
 
     .prologue
-    .line 2691
+    .line 2761
     :try_start_0
     invoke-static {p0, p1}, Landroid/provider/Settings$Global;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;)I
     :try_end_0
@@ -181,11 +181,11 @@
 
     return v1
 
-    .line 2692
+    .line 2762
     :catch_0
     move-exception v0
 
-    .line 2693
+    .line 2763
     .local v0, e:Landroid/provider/Settings$SettingNotFoundException;
     new-instance v1, Lcom/lge/provider/SettingsEx$SettingNotFoundException;
 
@@ -201,7 +201,7 @@
     .parameter "def"
 
     .prologue
-    .line 2686
+    .line 2756
     invoke-static {p0, p1, p2}, Landroid/provider/Settings$Global;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
     move-result v0
@@ -220,7 +220,7 @@
     .end annotation
 
     .prologue
-    .line 2707
+    .line 2777
     :try_start_0
     invoke-static {p0, p1}, Landroid/provider/Settings$Global;->getLong(Landroid/content/ContentResolver;Ljava/lang/String;)J
     :try_end_0
@@ -230,11 +230,11 @@
 
     return-wide v1
 
-    .line 2708
+    .line 2778
     :catch_0
     move-exception v0
 
-    .line 2709
+    .line 2779
     .local v0, e:Landroid/provider/Settings$SettingNotFoundException;
     new-instance v1, Lcom/lge/provider/SettingsEx$SettingNotFoundException;
 
@@ -250,7 +250,7 @@
     .parameter "def"
 
     .prologue
-    .line 2702
+    .line 2772
     invoke-static {p0, p1, p2, p3}, Landroid/provider/Settings$Global;->getLong(Landroid/content/ContentResolver;Ljava/lang/String;J)J
 
     move-result-wide v0
@@ -264,7 +264,7 @@
     .parameter "name"
 
     .prologue
-    .line 2674
+    .line 2744
     const-class v0, Lcom/lge/provider/SettingsEx$Global;
 
     monitor-enter v0
@@ -293,7 +293,7 @@
     .parameter "name"
 
     .prologue
-    .line 2682
+    .line 2752
     invoke-static {p0}, Landroid/provider/Settings$Global;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v0
@@ -308,7 +308,7 @@
     .parameter "value"
 
     .prologue
-    .line 2730
+    .line 2800
     invoke-static {p0, p1, p2}, Landroid/provider/Settings$Global;->putFloat(Landroid/content/ContentResolver;Ljava/lang/String;F)Z
 
     move-result v0
@@ -323,7 +323,7 @@
     .parameter "value"
 
     .prologue
-    .line 2698
+    .line 2768
     invoke-static {p0, p1, p2}, Landroid/provider/Settings$Global;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     move-result v0
@@ -338,7 +338,7 @@
     .parameter "value"
 
     .prologue
-    .line 2714
+    .line 2784
     invoke-static {p0, p1, p2, p3}, Landroid/provider/Settings$Global;->putLong(Landroid/content/ContentResolver;Ljava/lang/String;J)Z
 
     move-result v0
@@ -353,7 +353,7 @@
     .parameter "value"
 
     .prologue
-    .line 2678
+    .line 2748
     invoke-static {p0, p1, p2}, Landroid/provider/Settings$Global;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0

@@ -37,25 +37,25 @@
     .end annotation
 
     .prologue
-    .line 1294
+    .line 1340
     iput-object p1, p0, Lcom/android/server/DeviceManager3LMService$RulesEngine$Rule;->this$1:Lcom/android/server/DeviceManager3LMService$RulesEngine;
 
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1295
+    .line 1341
     iput-object p2, p0, Lcom/android/server/DeviceManager3LMService$RulesEngine$Rule;->mRegexStr:Ljava/lang/String;
 
-    .line 1296
+    .line 1342
     invoke-static {p2}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/android/server/DeviceManager3LMService$RulesEngine$Rule;->mRegex:Ljava/util/regex/Pattern;
 
-    .line 1297
+    .line 1343
     iput-boolean p3, p0, Lcom/android/server/DeviceManager3LMService$RulesEngine$Rule;->mPermitted:Z
 
-    .line 1298
+    .line 1344
     return-void
 .end method
 
@@ -64,7 +64,7 @@
     .parameter "x0"
 
     .prologue
-    .line 1289
+    .line 1335
     iget-object v0, p0, Lcom/android/server/DeviceManager3LMService$RulesEngine$Rule;->mRegexStr:Ljava/lang/String;
 
     return-object v0
@@ -75,7 +75,7 @@
     .parameter "x0"
 
     .prologue
-    .line 1289
+    .line 1335
     iget-boolean v0, p0, Lcom/android/server/DeviceManager3LMService$RulesEngine$Rule;->mPermitted:Z
 
     return v0
@@ -87,7 +87,7 @@
     .parameter "x1"
 
     .prologue
-    .line 1289
+    .line 1335
     iput-boolean p1, p0, Lcom/android/server/DeviceManager3LMService$RulesEngine$Rule;->mPermitted:Z
 
     return p1
@@ -98,7 +98,7 @@
     .parameter "x0"
 
     .prologue
-    .line 1289
+    .line 1335
     iget-object v0, p0, Lcom/android/server/DeviceManager3LMService$RulesEngine$Rule;->mRegex:Ljava/util/regex/Pattern;
 
     return-object v0

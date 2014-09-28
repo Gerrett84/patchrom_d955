@@ -178,6 +178,8 @@
 
 .field final mShownFrame:Landroid/graphics/RectF;
 
+.field mSplitLayoutChanged:Z
+
 .field mStringNameCache:Ljava/lang/String;
 
 .field final mSubLayer:I
@@ -526,6 +528,10 @@
     const/4 v6, 0x0
 
     iput-boolean v6, p0, Lcom/android/server/wm/WindowState;->mIsSplitFullScreen:Z
+
+    const/4 v6, 0x0
+
+    iput-boolean v6, p0, Lcom/android/server/wm/WindowState;->mSplitLayoutChanged:Z
 
     .line 296
     iput-object p1, p0, Lcom/android/server/wm/WindowState;->mService:Lcom/android/server/wm/WindowManagerService;

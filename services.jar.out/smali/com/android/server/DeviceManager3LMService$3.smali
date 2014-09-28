@@ -1,14 +1,11 @@
 .class Lcom/android/server/DeviceManager3LMService$3;
-.super Ljava/lang/Object;
+.super Ljava/lang/Thread;
 .source "DeviceManager3LMService.java"
-
-# interfaces
-.implements Landroid/bluetooth/BluetoothProfile$ServiceListener;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/server/DeviceManager3LMService;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/android/server/DeviceManager3LMService;->clearNotification(I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,55 +17,44 @@
 # instance fields
 .field final synthetic this$0:Lcom/android/server/DeviceManager3LMService;
 
+.field final synthetic val$id:I
+
 
 # direct methods
-.method constructor <init>(Lcom/android/server/DeviceManager3LMService;)V
+.method constructor <init>(Lcom/android/server/DeviceManager3LMService;I)V
     .locals 0
+    .parameter
     .parameter
 
     .prologue
-    .line 1962
+    .line 425
     iput-object p1, p0, Lcom/android/server/DeviceManager3LMService$3;->this$0:Lcom/android/server/DeviceManager3LMService;
 
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    iput p2, p0, Lcom/android/server/DeviceManager3LMService$3;->val$id:I
+
+    invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onServiceConnected(ILandroid/bluetooth/BluetoothProfile;)V
-    .locals 1
-    .parameter "profile"
-    .parameter "proxy"
-
-    .prologue
-    .line 1964
-    iget-object v0, p0, Lcom/android/server/DeviceManager3LMService$3;->this$0:Lcom/android/server/DeviceManager3LMService;
-
-    check-cast p2, Landroid/bluetooth/BluetoothPan;
-
-    .end local p2
-    #setter for: Lcom/android/server/DeviceManager3LMService;->mBluetoothPan:Landroid/bluetooth/BluetoothPan;
-    invoke-static {v0, p2}, Lcom/android/server/DeviceManager3LMService;->access$702(Lcom/android/server/DeviceManager3LMService;Landroid/bluetooth/BluetoothPan;)Landroid/bluetooth/BluetoothPan;
-
-    .line 1965
-    return-void
-.end method
-
-.method public onServiceDisconnected(I)V
+.method public run()V
     .locals 2
-    .parameter "profile"
 
     .prologue
-    .line 1967
+    .line 427
     iget-object v0, p0, Lcom/android/server/DeviceManager3LMService$3;->this$0:Lcom/android/server/DeviceManager3LMService;
 
-    const/4 v1, 0x0
+    #getter for: Lcom/android/server/DeviceManager3LMService;->mNotificationManager:Landroid/app/NotificationManager;
+    invoke-static {v0}, Lcom/android/server/DeviceManager3LMService;->access$200(Lcom/android/server/DeviceManager3LMService;)Landroid/app/NotificationManager;
 
-    #setter for: Lcom/android/server/DeviceManager3LMService;->mBluetoothPan:Landroid/bluetooth/BluetoothPan;
-    invoke-static {v0, v1}, Lcom/android/server/DeviceManager3LMService;->access$702(Lcom/android/server/DeviceManager3LMService;Landroid/bluetooth/BluetoothPan;)Landroid/bluetooth/BluetoothPan;
+    move-result-object v0
 
-    .line 1968
+    iget v1, p0, Lcom/android/server/DeviceManager3LMService$3;->val$id:I
+
+    invoke-virtual {v0, v1}, Landroid/app/NotificationManager;->cancel(I)V
+
+    .line 428
     return-void
 .end method

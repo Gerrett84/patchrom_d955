@@ -3888,6 +3888,270 @@
     throw v1
 .end method
 
+.method public appendRouteWithMetric(Ljava/lang/String;ILandroid/net/RouteInfo;)Z
+    .locals 8
+    .parameter "iface"
+    .parameter "metric"
+    .parameter "route"
+
+    .prologue
+    const/4 v4, 0x0
+
+    .line 2472
+    iget-object v5, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
+
+    const-string v6, "android.permission.CONNECTIVITY_INTERNAL"
+
+    const-string v7, "NetworkManagementService"
+
+    invoke-virtual {v5, v6, v7}, Landroid/content/Context;->enforceCallingOrSelfPermission(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 2475
+    invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_0
+
+    .line 2476
+    const-string v5, "NetworkManagementService"
+
+    const-string v6, "route cmd failed - iface is invalid"
+
+    invoke-static {v5, v6}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 2522
+    :goto_0
+    return v4
+
+    .line 2480
+    :cond_0
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v5, "route add"
+
+    invoke-direct {v0, v5}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 2481
+    .local v0, cmd:Ljava/lang/StringBuilder;
+    invoke-virtual {p3}, Landroid/net/RouteInfo;->isDefaultRoute()Z
+
+    move-result v5
+
+    if-eqz v5, :cond_2
+
+    .line 2482
+    const-string v5, " def"
+
+    invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 2487
+    :goto_1
+    invoke-virtual {p3}, Landroid/net/RouteInfo;->getGateway()Ljava/net/InetAddress;
+
+    move-result-object v2
+
+    .line 2488
+    .local v2, gateway:Ljava/net/InetAddress;
+    instance-of v5, v2, Ljava/net/Inet4Address;
+
+    if-eqz v5, :cond_3
+
+    .line 2489
+    const-string v5, " v4 "
+
+    invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 2494
+    :goto_2
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v5, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    const-string v6, " "
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 2495
+    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 2497
+    const-string v5, "NetworkManagementService"
+
+    new-instance v6, Ljava/lang/StringBuilder;
+
+    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v7, "[LGE_DATA]isHostRoute = "
+
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    invoke-virtual {p3}, Landroid/net/RouteInfo;->isHostRoute()Z
+
+    move-result v7
+
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    const-string v7, " isDefaultRoute = "
+
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    invoke-virtual {p3}, Landroid/net/RouteInfo;->isDefaultRoute()Z
+
+    move-result v7
+
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v6
+
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-static {v5, v6}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 2499
+    invoke-virtual {p3}, Landroid/net/RouteInfo;->isHostRoute()Z
+
+    move-result v5
+
+    if-nez v5, :cond_1
+
+    invoke-virtual {p3}, Landroid/net/RouteInfo;->getDestination()Landroid/net/LinkAddress;
+
+    move-result-object v5
+
+    if-eqz v5, :cond_4
+
+    .line 2500
+    :cond_1
+    const/16 v5, 0x20
+
+    invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 2501
+    invoke-virtual {p3}, Landroid/net/RouteInfo;->getDestination()Landroid/net/LinkAddress;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Landroid/net/LinkAddress;->getAddress()Ljava/net/InetAddress;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Ljava/net/InetAddress;->getHostAddress()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 2508
+    :goto_3
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v6, " "
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    invoke-virtual {v2}, Ljava/net/InetAddress;->getHostAddress()Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 2511
+    :try_start_0
+    iget-object v5, p0, Lcom/android/server/NetworkManagementService;->mConnector:Lcom/android/server/NativeDaemonConnector;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-virtual {v5, v6}, Lcom/android/server/NativeDaemonConnector;->doCommand(Ljava/lang/String;)Ljava/util/ArrayList;
+    :try_end_0
+    .catch Lcom/android/server/NativeDaemonConnectorException; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-result-object v3
+
+    .line 2522
+    .local v3, rsp:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Ljava/lang/String;>;"
+    const/4 v4, 0x1
+
+    goto/16 :goto_0
+
+    .line 2484
+    .end local v2           #gateway:Ljava/net/InetAddress;
+    .end local v3           #rsp:Ljava/util/ArrayList;,"Ljava/util/ArrayList<Ljava/lang/String;>;"
+    :cond_2
+    const-string v5, " append"
+
+    invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    goto/16 :goto_1
+
+    .line 2491
+    .restart local v2       #gateway:Ljava/net/InetAddress;
+    :cond_3
+    const-string v5, " v6 "
+
+    invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    goto/16 :goto_2
+
+    .line 2505
+    :cond_4
+    const-string v5, "NetworkManagementService"
+
+    const-string v6, "[LGE_DATA] Skip destination addr"
+
+    invoke-static {v5, v6}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_3
+
+    .line 2512
+    :catch_0
+    move-exception v1
+
+    .line 2513
+    .local v1, e:Lcom/android/server/NativeDaemonConnectorException;
+    const-string v5, "NetworkManagementService"
+
+    const-string v6, "route cmd failed: "
+
+    invoke-static {v5, v6, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+
+    goto/16 :goto_0
+.end method
+
 .method public attachPppd(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 6
     .parameter "tty"
@@ -10016,6 +10280,75 @@
     const-string v3, "LGE_DATA runShellCommand done"
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    throw v1
+.end method
+
+.method public runShowRouteCommand(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 5
+    .parameter "tableName"
+    .parameter "ipVer"
+    .parameter "outFilePath"
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/IllegalStateException;
+        }
+    .end annotation
+
+    .prologue
+    .line 1374
+    iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mContext:Landroid/content/Context;
+
+    const-string v2, "android.permission.CHANGE_NETWORK_STATE"
+
+    const-string v3, "NetworkManagementService"
+
+    invoke-virtual {v1, v2, v3}, Landroid/content/Context;->enforceCallingOrSelfPermission(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 1379
+    :try_start_0
+    iget-object v1, p0, Lcom/android/server/NetworkManagementService;->mConnector:Lcom/android/server/NativeDaemonConnector;
+
+    const-string v2, "route show %s %s %s"
+
+    const/4 v3, 0x3
+
+    new-array v3, v3, [Ljava/lang/Object;
+
+    const/4 v4, 0x0
+
+    aput-object p1, v3, v4
+
+    const/4 v4, 0x1
+
+    aput-object p2, v3, v4
+
+    const/4 v4, 0x2
+
+    aput-object p3, v3, v4
+
+    invoke-static {v2, v3}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Lcom/android/server/NativeDaemonConnector;->doCommand(Ljava/lang/String;)Ljava/util/ArrayList;
+    :try_end_0
+    .catch Lcom/android/server/NativeDaemonConnectorException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 1386
+    return-void
+
+    .line 1381
+    :catch_0
+    move-exception v0
+
+    .line 1383
+    .local v0, e:Lcom/android/server/NativeDaemonConnectorException;
+    new-instance v1, Ljava/lang/IllegalStateException;
+
+    const-string v2, "Unable to communicate to native daemon for dropPacket"
+
+    invoke-direct {v1, v2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     throw v1
 .end method

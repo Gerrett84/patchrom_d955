@@ -26,20 +26,20 @@
     .parameter "context"
 
     .prologue
-    .line 1436
+    .line 1482
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
-    .line 1437
+    .line 1483
     iput-object p1, p0, Lcom/android/server/DeviceManager3LMService$PublicKey3LM;->mContext:Landroid/content/Context;
 
-    .line 1438
+    .line 1484
     iget-object v3, p0, Lcom/android/server/DeviceManager3LMService$PublicKey3LM;->mContext:Landroid/content/Context;
 
     invoke-virtual {v3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
-    .line 1440
+    .line 1486
     .local v2, resources:Landroid/content/res/Resources;
     const-string v3, "1"
 
@@ -55,14 +55,14 @@
 
     if-eqz v3, :cond_0
 
-    .line 1441
+    .line 1487
     const v3, 0x1040018
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 1445
+    .line 1491
     .local v0, cert:Ljava/lang/String;
     :goto_0
     const/4 v3, 0x0
@@ -75,22 +75,22 @@
 
     move-result-object v1
 
-    .line 1446
+    .line 1492
     .local v1, key:Ljava/security/PublicKey;
     if-eqz v1, :cond_1
 
-    .line 1447
+    .line 1493
     invoke-interface {v1}, Ljava/security/PublicKey;->getEncoded()[B
 
     move-result-object v3
 
     iput-object v3, p0, Lcom/android/server/DeviceManager3LMService$PublicKey3LM;->m3LMPublicKey:[B
 
-    .line 1451
+    .line 1497
     :goto_1
     return-void
 
-    .line 1443
+    .line 1489
     .end local v0           #cert:Ljava/lang/String;
     .end local v1           #key:Ljava/security/PublicKey;
     :cond_0
@@ -103,7 +103,7 @@
     .restart local v0       #cert:Ljava/lang/String;
     goto :goto_0
 
-    .line 1449
+    .line 1495
     .restart local v1       #key:Ljava/security/PublicKey;
     :cond_1
     const/4 v3, 0x0
@@ -118,7 +118,7 @@
     .parameter "blob"
 
     .prologue
-    .line 1457
+    .line 1503
     :try_start_0
     const-string v3, "X509"
 
@@ -126,7 +126,7 @@
 
     move-result-object v0
 
-    .line 1458
+    .line 1504
     .local v0, certFactory:Ljava/security/cert/CertificateFactory;
     new-instance v3, Ljava/io/ByteArrayInputStream;
 
@@ -136,7 +136,7 @@
 
     move-result-object v2
 
-    .line 1460
+    .line 1506
     .local v2, x509Cert:Ljava/security/cert/Certificate;
     invoke-virtual {v2}, Ljava/security/cert/Certificate;->getPublicKey()Ljava/security/PublicKey;
     :try_end_0
@@ -144,17 +144,17 @@
 
     move-result-object v3
 
-    .line 1466
+    .line 1512
     .end local v0           #certFactory:Ljava/security/cert/CertificateFactory;
     .end local v2           #x509Cert:Ljava/security/cert/Certificate;
     :goto_0
     return-object v3
 
-    .line 1462
+    .line 1508
     :catch_0
     move-exception v1
 
-    .line 1463
+    .line 1509
     .local v1, e:Ljava/security/cert/CertificateException;
     const-string v3, "DeviceManager3LM"
 
@@ -178,7 +178,7 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1466
+    .line 1512
     const/4 v3, 0x0
 
     goto :goto_0
@@ -191,16 +191,16 @@
     .parameter "blob"
 
     .prologue
-    .line 1470
+    .line 1516
     invoke-direct {p0, p1}, Lcom/android/server/DeviceManager3LMService$PublicKey3LM;->extractPublicKey([B)Ljava/security/PublicKey;
 
     move-result-object v0
 
-    .line 1471
+    .line 1517
     .local v0, blobKey:Ljava/security/PublicKey;
     if-eqz v0, :cond_0
 
-    .line 1472
+    .line 1518
     invoke-interface {v0}, Ljava/security/PublicKey;->getEncoded()[B
 
     move-result-object v1
@@ -211,7 +211,7 @@
 
     move-result v1
 
-    .line 1474
+    .line 1520
     :goto_0
     return v1
 
