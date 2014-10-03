@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Device>
+    <Ble>
+        <BLEAPP BLEAPP_DISABLE="true"/>
+    </Ble>
+    <OPPDIRECTORYBLUETOOTH>
+       <OPP_DIRECTORY_BLUETOOTH OPP_DIRECTORY_BLUETOOTH="true"/>
+   </OPPDIRECTORYBLUETOOTH>
+</Device>

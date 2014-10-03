@@ -1,0 +1,129 @@
+getprop("ro.product.device") == "zee" || abort("This package is for \"zee\" devices; this is a \"" + getprop("ro.product.device") + "\".");
+mount("ext4", "EMMC", "/dev/block/platform/msm_sdcc.1/by-name/userdata", "/data");
+show_progress(0.500000, 0);
+ui_print("Formatting system...");
+unmount("/system");
+ui_print("Installing system files...");
+mount("ext4", "EMMC", "/dev/block/platform/msm_sdcc.1/by-name/system", "/system");
+delete_recursive("/system");
+package_extract_dir("system", "/system");
+ui_print("Creating system links...");
+symlink("/data/misc/audio/mbhc.bin", "/system/etc/firmware/wcd9320/wcd9320_mbhc.bin");
+symlink("/data/misc/audio/wcd9320_anc.bin", "/system/etc/firmware/wcd9320/wcd9320_anc.bin");
+symlink("/data/misc/audio/wcd9320_mad_audio.bin", "/system/etc/firmware/wcd9320/wcd9320_mad_audio.bin");
+symlink("/etc/thermal-engine-8974.conf", "/system/etc/thermal-engine.conf");
+symlink("/etc/thermald-8974.conf", "/system/etc/thermald.conf");
+symlink("/firmware/image/dxhdcp2.b00", "/system/etc/firmware/dxhdcp2.b00");
+symlink("/firmware/image/dxhdcp2.b01", "/system/etc/firmware/dxhdcp2.b01");
+symlink("/firmware/image/dxhdcp2.b02", "/system/etc/firmware/dxhdcp2.b02");
+symlink("/firmware/image/dxhdcp2.b03", "/system/etc/firmware/dxhdcp2.b03");
+symlink("/firmware/image/dxhdcp2.mdt", "/system/etc/firmware/dxhdcp2.mdt");
+symlink("/firmware/image/mlserver.b00", "/system/etc/firmware/mlserverapp.b00");
+symlink("/firmware/image/mlserver.b01", "/system/etc/firmware/mlserverapp.b01");
+symlink("/firmware/image/mlserver.b02", "/system/etc/firmware/mlserverapp.b02");
+symlink("/firmware/image/mlserver.b03", "/system/etc/firmware/mlserverapp.b03");
+symlink("/firmware/image/mlserver.mdt", "/system/etc/firmware/mlserverapp.mdt");
+symlink("/firmware/image/tqs.b00", "/system/etc/firmware/tqs.b00");
+symlink("/firmware/image/tqs.b01", "/system/etc/firmware/tqs.b01");
+symlink("/firmware/image/tqs.b02", "/system/etc/firmware/tqs.b02");
+symlink("/firmware/image/tqs.b03", "/system/etc/firmware/tqs.b03");
+symlink("/firmware/image/tqs.mdt", "/system/etc/firmware/tqs.mdt");
+symlink("/persist-lg/firmware/widevine.b00", "/system/vendor/firmware/widevine.b00");
+symlink("/persist-lg/firmware/widevine.b01", "/system/vendor/firmware/widevine.b01");
+symlink("/persist-lg/firmware/widevine.b02", "/system/vendor/firmware/widevine.b02");
+symlink("/persist-lg/firmware/widevine.b03", "/system/vendor/firmware/widevine.b03");
+symlink("/persist-lg/firmware/widevine.mdt", "/system/vendor/firmware/widevine.mdt");
+symlink("/system/bin/mksh", "/system/bin/sh");
+symlink("/system/bin/toolbox", "/system/bin/cat", "/system/bin/chcon",
+        "/system/bin/chmod", "/system/bin/chown", "/system/bin/clear",
+        "/system/bin/cmp", "/system/bin/cp", "/system/bin/date",
+        "/system/bin/dd", "/system/bin/df", "/system/bin/dmesg",
+        "/system/bin/du", "/system/bin/getenforce", "/system/bin/getevent",
+        "/system/bin/getprop", "/system/bin/getsebool", "/system/bin/grep",
+        "/system/bin/hd", "/system/bin/id", "/system/bin/ifconfig",
+        "/system/bin/iftop", "/system/bin/insmod", "/system/bin/ioctl",
+        "/system/bin/ionice", "/system/bin/kill", "/system/bin/ln",
+        "/system/bin/load_policy", "/system/bin/log", "/system/bin/ls",
+        "/system/bin/lsmod", "/system/bin/lsof", "/system/bin/md5",
+        "/system/bin/mkdir", "/system/bin/mkswap", "/system/bin/mount",
+        "/system/bin/mv", "/system/bin/nandread", "/system/bin/netstat",
+        "/system/bin/newfs_msdos", "/system/bin/notify", "/system/bin/printenv",
+        "/system/bin/ps", "/system/bin/readlink", "/system/bin/renice",
+        "/system/bin/restorecon", "/system/bin/rm", "/system/bin/rmdir",
+        "/system/bin/rmmod", "/system/bin/route", "/system/bin/runcon",
+        "/system/bin/schedtop", "/system/bin/sendevent",
+        "/system/bin/setconsole", "/system/bin/setenforce",
+        "/system/bin/setprop", "/system/bin/setsebool", "/system/bin/sleep",
+        "/system/bin/smd", "/system/bin/start", "/system/bin/stop",
+        "/system/bin/swapoff", "/system/bin/swapon", "/system/bin/sync",
+        "/system/bin/top", "/system/bin/touch", "/system/bin/umount",
+        "/system/bin/uptime", "/system/bin/vmstat", "/system/bin/watchprops",
+        "/system/bin/wipe");
+symlink("/system/fonts/Roboto-Bold.ttf", "/system/fonts/DroidSans-Bold.ttf");
+symlink("/system/fonts/Roboto-Regular.ttf", "/system/fonts/DroidSans.ttf");
+symlink("/system/lib/libGLESv2.so", "/system/lib/libGLESv3.so");
+symlink("/system/lib/libuicc.so", "/system/lib/libusim_aka.so");
+ui_print("Set permission...");
+set_perm_recursive(0, 0, 0755, 0644, "/system");
+set_perm_recursive(0, 2000, 0755, 0755, "/system/bin");
+set_perm_recursive(0, 0, 0711, 0644, "/system/bin/.ext");
+set_perm(0, 3003, 02750, "/system/bin/netcfg");
+set_perm(0, 0, 0755, "/system/bin/ping");
+set_perm(0, 2000, 0750, "/system/bin/run-as");
+set_perm(1014, 2000, 0550, "/system/etc/dhcpcd/dhcpcd-run-hooks");
+set_perm(0, 0, 0544, "/system/etc/install-recovery.sh");
+set_perm_recursive(0, 0, 0755, 0555, "/system/etc/ppp");
+set_perm(0, 2000, 0755, "/system/vendor");
+set_perm_recursive(0, 2000, 0755, 0755, "/system/vendor/bin");
+set_perm(0, 2000, 0755, "/system/vendor/carrier");
+set_perm(0, 2000, 0755, "/system/vendor/carrier/system");
+set_perm(0, 2000, 0755, "/system/vendor/etc");
+set_perm(0, 2000, 0755, "/system/vendor/etc/chargerimages");
+set_perm(0, 2000, 0755, "/system/vendor/firmware");
+set_perm(0, 2000, 0755, "/system/vendor/lib");
+set_perm_recursive(0, 2000, 0755, 0644, "/system/vendor/lib/drm");
+set_perm(0, 0, 0644, "/system/vendor/lib/drm/libdrmwvmplugin.so");
+set_perm(0, 2000, 0755, "/system/vendor/lib/egl");
+set_perm(0, 2000, 0755, "/system/vendor/lib/hw");
+set_perm_recursive(0, 2000, 0755, 0644, "/system/vendor/lib/mediadrm");
+set_perm(0, 0, 0644, "/system/vendor/lib/mediadrm/libwvdrmengine.so");
+set_perm(0, 2000, 0755, "/system/vendor/media");
+set_perm(0, 2000, 0755, "/system/vendor/pittpatt");
+set_perm(0, 2000, 0755, "/system/vendor/pittpatt/models");
+set_perm(0, 2000, 0755, "/system/vendor/pittpatt/models/detection");
+set_perm(0, 2000, 0755, "/system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7");
+set_perm(0, 2000, 0755, "/system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6");
+set_perm_recursive(0, 2000, 0755, 0644, "/system/vendor/pittpatt/models/recognition");
+set_perm(0, 0, 0644, "/system/vendor/pittpatt/models/recognition/face.face.y0-y0-22-b-N.bin");
+set_perm_recursive(0, 2000, 0755, 0755, "/system/xbin");
+set_perm(0, 0, 0755, "/system/xbin/daemonsu");
+set_perm(0, 0, 0644, "/system/xbin/getfilesysteminfo");
+set_perm(0, 0, 0755, "/system/xbin/sugote");
+set_perm(0, 0, 0755, "/system/xbin/sugote-mksh");
+ui_print("Update Boot image...");
+package_extract_file("boot.img", "/dev/block/platform/msm_sdcc.1/by-name/boot");
+package_extract_file("modem.bin", "/dev/block/platform/msm_sdcc.1/by-name/modem");
+package_extract_file("aboot.bin", "/dev/block/platform/msm_sdcc.1/by-name/aboot");
+package_extract_file("dbi.bin", "/dev/block/platform/msm_sdcc.1/by-name/dbi");
+package_extract_file("laf.bin", "/dev/block/platform/msm_sdcc.1/by-name/laf");
+package_extract_file("persist.bin", "/dev/block/platform/msm_sdcc.1/by-name/persist");
+package_extract_file("rpm.bin", "/dev/block/platform/msm_sdcc.1/by-name/rpm");
+package_extract_file("sbl1.bin", "/dev/block/platform/msm_sdcc.1/by-name/sbl1");
+package_extract_file("cust.bin", "/dev/block/platform/msm_sdcc.1/by-name/cust");
+package_extract_file("tz.bin", "/dev/block/platform/msm_sdcc.1/by-name/tz");
+package_extract_file("recovery.bin", "/dev/block/platform/msm_sdcc.1/by-name/recovery");
+show_progress(0.200000, 0);
+show_progress(0.200000, 10);
+show_progress(0.100000, 0);
+package_extract_dir("data", "/data");
+set_perm(1000, 1000, 0666, "/data/miui/reinstall_apps");
+package_extract_file("META-INF/com/miui/relink", "/tmp/relink");
+set_perm(0, 0, 0555, "/tmp/relink");
+run_program("/tmp/relink");
+delete("/tmp/relink");
+set_perm_recursive(1000, 1000, 0755, 0644, "/data/miui");
+set_perm_recursive(1000, 1000, 0755, 0644, "/data/miui/cust");
+delete_recursive("/data/miui/preinstall_apps");
+delete_recursive("/data/miui/cust/preinstall_apps");
+unmount("/data");
+unmount("/system");

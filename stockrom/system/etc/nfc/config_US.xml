@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="EUC-KR" standalone="no" ?>
+<Configure>
+    <!-- AT&T / United States -->
+    <!-- T-Mobile / United States -->
+    <Config operator="" country="US" device="">
+        <AdvancedHCEEnable> true </AdvancedHCEEnable>
+        <HCEOnHostEnable TargetModel="b2l"> true </HCEOnHostEnable>
+        <HCEOnHostEnable TargetModel="geefhd"> true </HCEOnHostEnable>
+    </Config>
+    <!-- Sprint / United States -->
+    <Config operator="SPR" country="US" device="">
+        <SecureElementType> ese </SecureElementType>
+        <AccessControlEnable> false </AccessControlEnable>
+        <PermittedSeBroadcastEnable> false </PermittedSeBroadcastEnable>
+        <CardEnableInPowerOff> false </CardEnableInPowerOff>
+        <EmptyPopupSupport> false </EmptyPopupSupport>
+        <HCEOnHostEnable> true </HCEOnHostEnable>
+    </Config>
+    <!-- USC / United States -->
+    <Config operator="USC" country="US" device="">
+        <SecureElementType> INITVALUE </SecureElementType>
+        <AccessControlEnable> false </AccessControlEnable>
+        <PermittedSeBroadcastEnable> false </PermittedSeBroadcastEnable>
+        <CardEnableInPowerOff> false </CardEnableInPowerOff>
+        <EmptyPopupSupport> false </EmptyPopupSupport>
+        <HCEOnHostEnable> true </HCEOnHostEnable>
+    </Config>
+    <!-- Verizon / United States -->
+    <Config operator="VZW" country="US" device="">
+        <AdvancedHCEEnable> true </AdvancedHCEEnable>
+        <WCScenarioEnable> update </WCScenarioEnable>
+        <DefaultOnOffType> offp2p </DefaultOnOffType>
+        <RingSoundScenarioType> usevibrate </RingSoundScenarioType>
+        <PopupDialogType> vzw </PopupDialogType>
+        <NfcEERoutingEnable> true </NfcEERoutingEnable>
+        <EmptyPopupSupport> false </EmptyPopupSupport>
+        <AccessControlEnable> false </AccessControlEnable>
+        <VolatileCardModeEnable> true </VolatileCardModeEnable>
+    </Config>
+</Configure>
