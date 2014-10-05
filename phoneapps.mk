@@ -1,40 +1,41 @@
 local-phone-apps := ApplicationsProvider \
-		    BackupRestoreConfirmation \
-		    CameraTestApp \
 		    CertInstaller \
-		    CompatibilityMode \
-		    DefaultContainerService \
-		    DoubleTapWakeup \
-		    DrmProvider \
+		    DrmService \
+		    DocumentsUI \
 		    FaceLock \
 		    GnssAirTest \
 		    GnssPosTest \
 		    GnssTest \
+		    GpsBTWIFI \
 		    HiddenMenu \
+		    InterfacePermissions
 		    KeyChain \
-		    LteConfigs \
+		    LGApduService \
 		    LGBluetooth4 \
+		    LGEIME \
 		    LGEIME_THEME_ZEEBLACK \
-		    LGLiveWallpapersPicker \
-		    LGSlideAside \
+		    LGFmRadio \
+		    LGPCSuiteUI \
 		    LGQRemote \
-		    SystemUI_Provider \
+		    LGSmartcardService \
+		    LGSystemServer \
 		    LgNfc \
+		    LicenseProvider \
+		    LteConfigs \
+		    PacProcessor \
 		    PermissionToAccessLgeApi \
+		    PrintSpooler \
+		    QcomQMIPermissions \
 		    QuicksetSDK \
-		    MediaUploader \
-		    MediaProvider \
-		    NetworkLocation \
-		    SharedStorageBackup \
-		    SplitWindowService \
+		    SVIService \
 		    Stk \
 		    TimeService \
 		    UnifiedEULA \
 		    UserDictionaryProvider \
-		    VpnDialogs \
 		    WAPPushManager \
-		    WapService \
-		    WiseScreen \
+		    WfdService \
+		    com.lge.shutdownmonitor \
 		    com.qualcomm.location \
 		    com.qualcomm.services.location \
-		    qcrilmsgtunnel
+		    qcrilmsgtunnel \
+		    shutdownlistener

@@ -1,8 +1,8 @@
 #!/bin/bash
 
-STOCKROM="$PORT_ROOT/d955/stockrom/"
+DEVICE="$PORT_ROOT/d955"
 
-cd $STOCKROM
+cd $DEVICE
 
 echo "Download missing files..."
 wget -q http://roms.gerrett84.de/d955/miui/patchrom/kk/missing_files.zip
