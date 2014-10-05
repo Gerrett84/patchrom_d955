@@ -8,7 +8,7 @@ local-phone-apps := ApplicationsProvider \
 		    GnssTest \
 		    GpsBTWIFI \
 		    HiddenMenu \
-		    InterfacePermissions
+		    InterfacePermissions \
 		    KeyChain \
 		    LGApduService \
 		    LGBluetooth4 \
